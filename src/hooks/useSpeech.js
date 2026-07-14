@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { KANA_ALT_SPELLINGS } from "../data/kanaAltSpellings";
 
 let cachedJaVoice = null;
 
@@ -44,11 +45,34 @@ export function useSpeak() {
   return { speak, speaking, supported };
 }
 
+const KATAKANA_START = 0x30a1;
+const KATAKANA_END = 0x30f6;
+const HIRAGANA_OFFSET = 0x60;
+
+/** Converts katakana characters to their hiragana equivalent (same code-point order, offset by 0x60). */
+function katakanaToHiragana(str = "") {
+  let out = "";
+  for (const ch of str) {
+    const code = ch.codePointAt(0);
+    out += code >= KATAKANA_START && code <= KATAKANA_END ? String.fromCodePoint(code - HIRAGANA_OFFSET) : ch;
+  }
+  return out;
+}
+
 function normalizeJa(str = "") {
-  return str
-    .normalize("NFKC")
-    .replace(/[\s、。！？!?.,～〜ー・「」『』]/g, "")
-    .toLowerCase();
+  return katakanaToHiragana(
+    str
+      .normalize("NFKC")
+      .replace(/[\s、。！？!?.,～〜ー・「」『』]/g, "")
+      .toLowerCase()
+  );
+}
+
+const KANJI_RANGE = /[一-鿿]/;
+
+/** True if the string contains no kanji (i.e. is already pure hiragana/katakana/romaji). */
+export function isKanaOnly(str = "") {
+  return !KANJI_RANGE.test(str);
 }
 
 /** Rough match: compares a recognized transcript against the target Japanese text. */
@@ -56,39 +80,79 @@ export function matchesJapanese(transcript, target) {
   const a = normalizeJa(transcript);
   const b = normalizeJa(target);
   if (!a || !b) return false;
-  return a === b || a.includes(b) || b.includes(a);
+  if (a === b || a.includes(b) || b.includes(a)) return true;
+  const alts = KANA_ALT_SPELLINGS[target] || KANA_ALT_SPELLINGS[b];
+  if (alts) {
+    return alts.some((alt) => {
+      const n = normalizeJa(alt);
+      return a === n || a.includes(n) || n.includes(a);
+    });
+  }
+  return false;
 }
 
 const SpeechRecognitionCtor =
   typeof window !== "undefined" ? window.SpeechRecognition || window.webkitSpeechRecognition : undefined;
+
+const RECOGNITION_TIMEOUT_MS = 8000;
 
 /** Wraps the Web Speech API's SpeechRecognition for Japanese speaking practice. */
 export function useSpeechRecognition() {
   const supported = !!SpeechRecognitionCtor;
   const [listening, setListening] = useState(false);
   const recognitionRef = useRef(null);
+  const timeoutRef = useRef(null);
+  const settledRef = useRef(false);
 
   const start = useCallback(
     ({ onResult, onError, onEnd } = {}) => {
       if (!supported) return;
+      recognitionRef.current?.abort();
+      clearTimeout(timeoutRef.current);
+      settledRef.current = false;
+
       const recognition = new SpeechRecognitionCtor();
       recognition.lang = "ja-JP";
       recognition.interimResults = false;
-      recognition.maxAlternatives = 3;
+      recognition.maxAlternatives = 5;
+
+      const finish = () => {
+        clearTimeout(timeoutRef.current);
+        settledRef.current = true;
+      };
+
       recognition.onstart = () => setListening(true);
       recognition.onresult = (event) => {
-        const transcript = event.results?.[0]?.[0]?.transcript || "";
-        onResult?.(transcript);
+        finish();
+        const results = event.results?.[0];
+        const alternatives = results ? Array.from(results).map((alt) => alt.transcript) : [];
+        onResult?.(alternatives[0] || "", alternatives);
       };
       recognition.onerror = (event) => {
+        finish();
         onError?.(event.error);
       };
       recognition.onend = () => {
         setListening(false);
+        clearTimeout(timeoutRef.current);
+        // Some browsers end the session without ever firing onresult/onerror
+        // (e.g. permission hiccups). Without this, the UI looks "frozen".
+        if (!settledRef.current) {
+          settledRef.current = true;
+          onError?.("no-speech");
+        }
         onEnd?.();
       };
       recognitionRef.current = recognition;
       recognition.start();
+
+      // Defensive timeout in case no browser event ever fires.
+      timeoutRef.current = setTimeout(() => {
+        if (settledRef.current) return;
+        settledRef.current = true;
+        recognition.abort();
+        onError?.("timeout");
+      }, RECOGNITION_TIMEOUT_MS);
     },
     [supported]
   );
@@ -97,7 +161,13 @@ export function useSpeechRecognition() {
     recognitionRef.current?.stop();
   }, []);
 
-  useEffect(() => () => recognitionRef.current?.stop(), []);
+  useEffect(
+    () => () => {
+      clearTimeout(timeoutRef.current);
+      recognitionRef.current?.abort();
+    },
+    []
+  );
 
   return { supported, listening, start, stop };
 }

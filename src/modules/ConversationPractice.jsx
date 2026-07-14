@@ -1,22 +1,16 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Mascot from "../components/Mascot";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
-import { shuffle as shuffleArr } from "../utils/content";
 import conversations from "../data/conversations.json";
 
-function TopicPicker({ shuffleOn, onShuffleChange, onPick }) {
-  const topics = useMemo(() => (shuffleOn ? shuffleArr(conversations) : conversations), [shuffleOn]);
-
+function TopicPicker({ onPick }) {
   return (
     <div className="picker">
-      <div className="toggle-group blue">
-        <Toggle emoji="🔀" label="สุ่มลำดับสถานการณ์ (Shuffle)" checked={shuffleOn} onChange={onShuffleChange} />
-      </div>
       <section className="picker-section">
         <h3 className="picker-heading">💬 เลือกสถานการณ์ที่อยากฝึก</h3>
         <div className="topic-grid">
-          {topics.map((topic) => (
+          {conversations.map((topic) => (
             <button key={topic.id} className="topic-card" onClick={() => onPick(topic)}>
               <span className="module-emoji">{topic.emoji}</span>
               <span className="module-title">{topic.title}</span>
@@ -135,8 +129,7 @@ function DialogueView({ topic, onBack }) {
 
 export default function ConversationPractice() {
   const [topic, setTopic] = useState(null);
-  const [shuffleOn, setShuffleOn] = useState(false);
 
-  if (!topic) return <TopicPicker shuffleOn={shuffleOn} onShuffleChange={setShuffleOn} onPick={setTopic} />;
+  if (!topic) return <TopicPicker onPick={setTopic} />;
   return <DialogueView topic={topic} onBack={() => setTopic(null)} />;
 }

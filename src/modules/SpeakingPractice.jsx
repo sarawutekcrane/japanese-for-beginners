@@ -2,7 +2,7 @@ import { useState } from "react";
 import Mascot from "../components/Mascot";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
-import { useSpeak, useSpeechRecognition, matchesJapanese } from "../hooks/useSpeech";
+import { useSpeak, useSpeechRecognition, matchesJapanese, isKanaOnly } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
 
 function CategoryPicker({ shuffleOn, onShuffleChange, onPick }) {
@@ -50,9 +50,14 @@ function SpeakingView({ category, shuffleOn, onBack }) {
     setStatus(STATUS.listening);
     setHeard("");
     start({
-      onResult: (transcript) => {
-        setHeard(transcript);
-        const ok = matchesJapanese(transcript, card.answerText) || matchesJapanese(transcript, card.reading || "");
+      onResult: (transcript, alternatives = [transcript]) => {
+        // Prefer showing a kana-only alternative (Chrome often returns kanji
+        // for common words even though this app only teaches kana readings).
+        const displayText = alternatives.find(isKanaOnly) || transcript;
+        setHeard(displayText);
+        const ok = alternatives.some(
+          (alt) => matchesJapanese(alt, card.answerText) || matchesJapanese(alt, card.reading || "")
+        );
         setStatus(ok ? STATUS.match : STATUS.nomatch);
       },
       onError: () => setStatus(STATUS.error),
