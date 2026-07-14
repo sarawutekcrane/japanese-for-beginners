@@ -8,6 +8,9 @@ import { timeDaysIcons } from "./timeDays";
 import { householdIcons } from "./household";
 import { workIcons } from "./work";
 import { transportationIcons } from "./transportation";
+import { clothingIcons } from "./clothing";
+import { hobbiesIcons } from "./hobbies";
+import { shoppingIcons } from "./shopping";
 import NumberIllustration from "./NumberIllustration";
 import ColorIllustration from "./ColorIllustration";
 import KanaIllustration from "./KanaIllustration";
@@ -23,6 +26,9 @@ const VOCAB_ICONS = {
   ...householdIcons,
   ...workIcons,
   ...transportationIcons,
+  ...clothingIcons,
+  ...hobbiesIcons,
+  ...shoppingIcons,
 };
 
 /** Renders the correct flat-SVG illustration for a vocabulary or kana card. */

@@ -111,6 +111,76 @@
         "romaji": "Watashi wa ima terebi wo mimasu.",
         "thai": "ตอนนี้ฉันดูโทรทัศน์",
         "explanation": "いま (ตอนนี้) วางหลังหัวข้อเพื่อเน้นว่าเหตุการณ์นี้เกิดขึ้น ณ ปัจจุบัน"
+      },
+      {
+        "id": "affirmative-5",
+        "promptThai": "พูดว่า: ฉันกินผัก",
+        "chunks": [
+          "やさいを",
+          "たべます",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "やさいを",
+          "たべます"
+        ],
+        "romaji": "Watashi wa yasai wo tabemasu.",
+        "thai": "ฉันกินผัก",
+        "explanation": "โครงสร้างเดียวกับประโยคพื้นฐาน สลับแค่คำนามที่เป็นกรรม"
+      },
+      {
+        "id": "affirmative-6",
+        "promptThai": "พูดว่า: ฉันไปโรงพยาบาล",
+        "chunks": [
+          "びょういんへ",
+          "いきます",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "びょういんへ",
+          "いきます"
+        ],
+        "romaji": "Watashi wa byouin e ikimasu.",
+        "thai": "ฉันไปโรงพยาบาล",
+        "explanation": "へ ใช้บอกจุดหมายปลายทาง ใช้ได้กับสถานที่ต่างๆ ไม่ใช่แค่โรงเรียน"
+      },
+      {
+        "id": "affirmative-7",
+        "promptThai": "พูดว่า: เขาทำงาน",
+        "chunks": [
+          "しごとを",
+          "します",
+          "かれは"
+        ],
+        "correctOrder": [
+          "かれは",
+          "しごとを",
+          "します"
+        ],
+        "romaji": "Kare wa shigoto wo shimasu.",
+        "thai": "เขาทำงาน",
+        "explanation": "する เป็นกริยากลุ่ม 3 (ผันแบบพิเศษ) ますรูปคือ します"
+      },
+      {
+        "id": "affirmative-8",
+        "promptThai": "พูดว่า: ตอนเช้าฉันอ่านหนังสือ (เป็นงานอดิเรก)",
+        "chunks": [
+          "あさ",
+          "どくしょを",
+          "します",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "あさ",
+          "どくしょを",
+          "します"
+        ],
+        "romaji": "Watashi wa asa dokusho wo shimasu.",
+        "thai": "ตอนเช้าฉันอ่านหนังสือ (เป็นงานอดิเรก)",
+        "explanation": "どくしょを します เป็นวลีที่ใช้บอกว่า 'อ่านหนังสือเป็นงานอดิเรก' โดยใช้กริยา する"
       }
     ],
     "formLabel": "ます",
@@ -222,6 +292,74 @@
         "romaji": "Watashi wa hon wo kaimasen.",
         "thai": "ฉันไม่ซื้อหนังสือ",
         "explanation": "かう เป็นกริยากลุ่ม 1 (godan) ปฏิเสธด้วยการเปลี่ยนเสียงท้ายเป็น い แล้วเติม ません"
+      },
+      {
+        "id": "negative-5",
+        "promptThai": "พูดว่า: ฉันไม่กินผลไม้",
+        "chunks": [
+          "くだものを",
+          "たべません",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "くだものを",
+          "たべません"
+        ],
+        "romaji": "Watashi wa kudamono wo tabemasen.",
+        "thai": "ฉันไม่กินผลไม้",
+        "explanation": "たべる เป็นกริยากลุ่ม 2 ตัด る แล้วเติม ません ได้เลย"
+      },
+      {
+        "id": "negative-6",
+        "promptThai": "พูดว่า: เขาไม่เล่นกีฬา",
+        "chunks": [
+          "スポーツを",
+          "しません",
+          "かれは"
+        ],
+        "correctOrder": [
+          "かれは",
+          "スポーツを",
+          "しません"
+        ],
+        "romaji": "Kare wa supootsu wo shimasen.",
+        "thai": "เขาไม่เล่นกีฬา",
+        "explanation": "する ปฏิเสธด้วยรูปพิเศษ しません"
+      },
+      {
+        "id": "negative-7",
+        "promptThai": "พูดว่า: ฉันไม่ไปสถานี",
+        "chunks": [
+          "えきへ",
+          "いきません",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "えきへ",
+          "いきません"
+        ],
+        "romaji": "Watashi wa eki e ikimasen.",
+        "thai": "ฉันไม่ไปสถานี",
+        "explanation": "へ ยังคงบอกจุดหมายปลายทางเหมือนเดิมในประโยคปฏิเสธ"
+      },
+      {
+        "id": "negative-8",
+        "promptThai": "พูดว่า: เธอไม่เล่นเกม",
+        "chunks": [
+          "ゲームを",
+          "しません",
+          "かのじょは"
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "ゲームを",
+          "しません"
+        ],
+        "romaji": "Kanojo wa geemu wo shimasen.",
+        "thai": "เธอไม่เล่นเกม",
+        "explanation": "โครงสร้างเดียวกับประโยคปฏิเสธทั่วไป เปลี่ยนแค่หัวข้อและกรรม"
       }
     ],
     "formLabel": "ません",
@@ -337,6 +475,76 @@
         "romaji": "Anata wa tegami wo kakimasu ka.",
         "thai": "คุณเขียนจดหมายไหม",
         "explanation": "かく เป็นกริยากลุ่ม 1 ลงท้ายด้วย く เปลี่ยนเป็น き แล้วเติม ます"
+      },
+      {
+        "id": "question-masu-5",
+        "promptThai": "ถามว่า: คุณกินผักไหม",
+        "chunks": [
+          "やさいを",
+          "たべますか",
+          "あなたは"
+        ],
+        "correctOrder": [
+          "あなたは",
+          "やさいを",
+          "たべますか"
+        ],
+        "romaji": "Anata wa yasai wo tabemasu ka.",
+        "thai": "คุณกินผักไหม",
+        "explanation": "เติม か ท้ายรูป ます ได้กับกริยาทุกกลุ่มเหมือนกัน"
+      },
+      {
+        "id": "question-masu-6",
+        "promptThai": "ถามว่า: คุณไปสนามบินไหม",
+        "chunks": [
+          "くうこうへ",
+          "いきますか",
+          "あなたは"
+        ],
+        "correctOrder": [
+          "あなたは",
+          "くうこうへ",
+          "いきますか"
+        ],
+        "romaji": "Anata wa kuukou e ikimasu ka.",
+        "thai": "คุณไปสนามบินไหม",
+        "explanation": "へ บอกจุดหมายปลายทาง ใช้ได้กับสถานที่ใดก็ได้"
+      },
+      {
+        "id": "question-masu-7",
+        "promptThai": "ถามว่า: คุณถ่ายรูปไหม",
+        "chunks": [
+          "しゃしんを",
+          "とりますか",
+          "あなたは"
+        ],
+        "correctOrder": [
+          "あなたは",
+          "しゃしんを",
+          "とりますか"
+        ],
+        "romaji": "Anata wa shashin wo torimasu ka.",
+        "thai": "คุณถ่ายรูปไหม",
+        "explanation": "とる เป็นกริยากลุ่ม 1 ลงท้าย る เปลี่ยนเป็น り แล้วเติม ます"
+      },
+      {
+        "id": "question-masu-8",
+        "promptThai": "ถามว่า: คุณเล่นกีฬาทุกวันไหม",
+        "chunks": [
+          "まいにち",
+          "スポーツを",
+          "しますか",
+          "あなたは"
+        ],
+        "correctOrder": [
+          "あなたは",
+          "まいにち",
+          "スポーツを",
+          "しますか"
+        ],
+        "romaji": "Anata wa mainichi supootsu wo shimasu ka.",
+        "thai": "คุณเล่นกีฬาทุกวันไหม",
+        "explanation": "まいにち (ทุกวัน) วางหลังหัวข้อเพื่อบอกความถี่ของการกระทำ"
       }
     ],
     "formLabel": "ますか",
@@ -446,6 +654,74 @@
         "romaji": "Konban hon wo yomimasen ka.",
         "thai": "คืนนี้อ่านหนังสือด้วยกันไหม",
         "explanation": "เมื่อไม่ระบุประธาน ประโยคชวนจะฟังเป็นธรรมชาติกว่าในภาษาญี่ปุ่น"
+      },
+      {
+        "id": "invitation-5",
+        "promptThai": "ชวนว่า: อ่านหนังสือด้วยกันไหม (เป็นงานอดิเรก)",
+        "chunks": [
+          "どくしょを",
+          "しませんか",
+          "いっしょに"
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "どくしょを",
+          "しませんか"
+        ],
+        "romaji": "Issho ni dokusho wo shimasen ka.",
+        "thai": "อ่านหนังสือด้วยกันไหม (เป็นงานอดิเรก)",
+        "explanation": "する ในรูป ませんか ใช้ชวนทำกิจกรรมต่างๆ ได้หลากหลาย"
+      },
+      {
+        "id": "invitation-6",
+        "promptThai": "ชวนว่า: เล่นกีฬาด้วยกันไหม",
+        "chunks": [
+          "スポーツを",
+          "しませんか",
+          "いっしょに"
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "スポーツを",
+          "しませんか"
+        ],
+        "romaji": "Issho ni supootsu wo shimasen ka.",
+        "thai": "เล่นกีฬาด้วยกันไหม",
+        "explanation": "いっしょに (ด้วยกัน) มักนำหน้ากรรมเมื่อชวนทำกิจกรรมร่วมกัน"
+      },
+      {
+        "id": "invitation-7",
+        "promptThai": "ชวนว่า: ดูหนังด้วยกันไหม",
+        "chunks": [
+          "えいがを",
+          "みませんか",
+          "いっしょに"
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "えいがを",
+          "みませんか"
+        ],
+        "romaji": "Issho ni eiga wo mimasen ka.",
+        "thai": "ดูหนังด้วยกันไหม",
+        "explanation": "みる ตัด る แล้วเติม ませんか เพื่อชวนทำสิ่งนั้นด้วยกัน"
+      },
+      {
+        "id": "invitation-8",
+        "promptThai": "ชวนว่า: พรุ่งนี้ไปซูเปอร์มาร์เก็ตด้วยกันไหม",
+        "chunks": [
+          "あした",
+          "スーパーへ",
+          "いきませんか"
+        ],
+        "correctOrder": [
+          "あした",
+          "スーパーへ",
+          "いきませんか"
+        ],
+        "romaji": "Ashita suupaa e ikimasen ka.",
+        "thai": "พรุ่งนี้ไปซูเปอร์มาร์เก็ตด้วยกันไหม",
+        "explanation": "คำบอกเวลาวางต้นประโยคได้เมื่อละหัวข้อไว้ เช่นเดียวกับตัวอย่างอื่น"
       }
     ],
     "formLabel": "ませんか",
@@ -559,6 +835,74 @@
         "romaji": "Kanojo wa kinou hon wo kaimashita.",
         "thai": "เมื่อวานเธอซื้อหนังสือแล้ว",
         "explanation": "かう เปลี่ยนเสียงท้ายเป็น い ก่อนเติม ました เช่นเดียวกับการเติม ます"
+      },
+      {
+        "id": "past-5",
+        "promptThai": "พูดว่า: ฉันกินผลไม้แล้ว",
+        "chunks": [
+          "くだものを",
+          "たべました",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "くだものを",
+          "たべました"
+        ],
+        "romaji": "Watashi wa kudamono wo tabemashita.",
+        "thai": "ฉันกินผลไม้แล้ว",
+        "explanation": "たべる ตัด る แล้วเติม ました เพื่อบอกว่ากินไปแล้ว"
+      },
+      {
+        "id": "past-6",
+        "promptThai": "พูดว่า: เขาไปสนามบินแล้ว",
+        "chunks": [
+          "くうこうへ",
+          "かれは",
+          "いきました"
+        ],
+        "correctOrder": [
+          "かれは",
+          "くうこうへ",
+          "いきました"
+        ],
+        "romaji": "Kare wa kuukou e ikimashita.",
+        "thai": "เขาไปสนามบินแล้ว",
+        "explanation": "いく เปลี่ยนเป็นรูปอดีต いきました ไม่ว่าจุดหมายปลายทางจะเป็นที่ใด"
+      },
+      {
+        "id": "past-7",
+        "promptThai": "พูดว่า: ฉันเล่นกีฬาแล้ว",
+        "chunks": [
+          "スポーツを",
+          "しました",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "スポーツを",
+          "しました"
+        ],
+        "romaji": "Watashi wa supootsu wo shimashita.",
+        "thai": "ฉันเล่นกีฬาแล้ว",
+        "explanation": "する เปลี่ยนเป็นรูปอดีต しました"
+      },
+      {
+        "id": "past-8",
+        "promptThai": "พูดว่า: เธอถ่ายรูปแล้ว",
+        "chunks": [
+          "しゃしんを",
+          "とりました",
+          "かのじょは"
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "しゃしんを",
+          "とりました"
+        ],
+        "romaji": "Kanojo wa shashin wo torimashita.",
+        "thai": "เธอถ่ายรูปแล้ว",
+        "explanation": "とる เปลี่ยนเสียงท้ายเป็น り ก่อนเติม ました"
       }
     ],
     "formLabel": "ました",
@@ -672,6 +1016,74 @@
         "romaji": "Kare wa kinou hon wo kaimasendeshita.",
         "thai": "เมื่อวานเขาไม่ได้ซื้อหนังสือ",
         "explanation": "ประโยคปฏิเสธอดีตยังคงเรียงลำดับคำเหมือนประโยคบอกเล่า เปลี่ยนแค่ส่วนท้ายกริยา"
+      },
+      {
+        "id": "past-negative-5",
+        "promptThai": "พูดว่า: ฉันไม่ได้กินผัก",
+        "chunks": [
+          "やさいを",
+          "わたしは",
+          "たべませんでした"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "やさいを",
+          "たべませんでした"
+        ],
+        "romaji": "Watashi wa yasai wo tabemasendeshita.",
+        "thai": "ฉันไม่ได้กินผัก",
+        "explanation": "たべる ตัด る แล้วเติม ませんでした เพื่อปฏิเสธเหตุการณ์ในอดีต"
+      },
+      {
+        "id": "past-negative-6",
+        "promptThai": "พูดว่า: เธอไม่ได้ไปสนามบิน",
+        "chunks": [
+          "くうこうへ",
+          "かのじょは",
+          "いきませんでした"
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "くうこうへ",
+          "いきませんでした"
+        ],
+        "romaji": "Kanojo wa kuukou e ikimasendeshita.",
+        "thai": "เธอไม่ได้ไปสนามบิน",
+        "explanation": "いく เปลี่ยนเป็นรูปปฏิเสธอดีต いきませんでした"
+      },
+      {
+        "id": "past-negative-7",
+        "promptThai": "พูดว่า: ฉันไม่ได้อ่านหนังสือ (เป็นงานอดิเรก)",
+        "chunks": [
+          "どくしょを",
+          "しませんでした",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "どくしょを",
+          "しませんでした"
+        ],
+        "romaji": "Watashi wa dokusho wo shimasendeshita.",
+        "thai": "ฉันไม่ได้อ่านหนังสือ (เป็นงานอดิเรก)",
+        "explanation": "する เปลี่ยนเป็นรูปปฏิเสธอดีต しませんでした"
+      },
+      {
+        "id": "past-negative-8",
+        "promptThai": "พูดว่า: เขาไม่ได้ถ่ายรูป",
+        "chunks": [
+          "しゃしんを",
+          "とりませんでした",
+          "かれは"
+        ],
+        "correctOrder": [
+          "かれは",
+          "しゃしんを",
+          "とりませんでした"
+        ],
+        "romaji": "Kare wa shashin wo torimasendeshita.",
+        "thai": "เขาไม่ได้ถ่ายรูป",
+        "explanation": "とる เปลี่ยนเสียงท้ายเป็น り ก่อนเติม ませんでした"
       }
     ],
     "formLabel": "ませんでした",
@@ -769,6 +1181,66 @@
         "romaji": "Tegami wo kaite kudasai.",
         "thai": "กรุณาเขียนจดหมาย",
         "explanation": "かく เปลี่ยนเป็น いて (ข้อยกเว้นเสียง く→いて) ก่อนเติม ください"
+      },
+      {
+        "id": "te-kudasai-5",
+        "promptThai": "พูดว่า: กรุณากินผัก",
+        "chunks": [
+          "やさいを",
+          "たべてください"
+        ],
+        "correctOrder": [
+          "やさいを",
+          "たべてください"
+        ],
+        "romaji": "Yasai wo tabete kudasai.",
+        "thai": "กรุณากินผัก",
+        "explanation": "たべる เป็นกริยากลุ่ม 2 ตัด る แล้วเติม て ください ได้เลย"
+      },
+      {
+        "id": "te-kudasai-6",
+        "promptThai": "พูดว่า: กรุณาเล่นกีฬา",
+        "chunks": [
+          "スポーツを",
+          "してください"
+        ],
+        "correctOrder": [
+          "スポーツを",
+          "してください"
+        ],
+        "romaji": "Supootsu wo shite kudasai.",
+        "thai": "กรุณาเล่นกีฬา",
+        "explanation": "する เปลี่ยนเป็นรูปて คือ して ก่อนเติม ください"
+      },
+      {
+        "id": "te-kudasai-7",
+        "promptThai": "พูดว่า: กรุณาถ่ายรูป",
+        "chunks": [
+          "しゃしんを",
+          "とってください"
+        ],
+        "correctOrder": [
+          "しゃしんを",
+          "とってください"
+        ],
+        "romaji": "Shashin wo totte kudasai.",
+        "thai": "กรุณาถ่ายรูป",
+        "explanation": "とる ลงท้ายด้วย る (กลุ่ม う/つ/る) เปลี่ยนเป็น って ก่อนเติม ください"
+      },
+      {
+        "id": "te-kudasai-8",
+        "promptThai": "พูดว่า: กรุณาอ่านหนังสือ (เป็นงานอดิเรก)",
+        "chunks": [
+          "どくしょを",
+          "してください"
+        ],
+        "correctOrder": [
+          "どくしょを",
+          "してください"
+        ],
+        "romaji": "Dokusho wo shite kudasai.",
+        "thai": "กรุณาอ่านหนังสือ (เป็นงานอดิเรก)",
+        "explanation": "どくしょを する เป็นวลีที่ใช้กับกริยา する ได้เหมือนกิจกรรมอื่นๆ"
       }
     ],
     "formLabel": "てください",
@@ -872,6 +1344,74 @@
         "romaji": "Tegami wo kaite mo ii desu ka.",
         "thai": "เขียนจดหมายได้ไหม",
         "explanation": "โครงสร้างเดียวกับ てください เพียงเปลี่ยนส่วนท้ายเป็น もいいですか"
+      },
+      {
+        "id": "te-mo-ii-5",
+        "promptThai": "ถามขออนุญาตว่า: ถ่ายรูปตรงนี้ได้ไหม",
+        "chunks": [
+          "ここで",
+          "しゃしんを",
+          "とってもいいですか"
+        ],
+        "correctOrder": [
+          "ここで",
+          "しゃしんを",
+          "とってもいいですか"
+        ],
+        "romaji": "Koko de shashin wo totte mo ii desu ka.",
+        "thai": "ถ่ายรูปตรงนี้ได้ไหม",
+        "explanation": "とる เปลี่ยนเป็นรูปて คือ とって ก่อนเติม もいいですか"
+      },
+      {
+        "id": "te-mo-ii-6",
+        "promptThai": "ถามขออนุญาตว่า: อ่านหนังสือที่ห้องสมุดได้ไหม",
+        "chunks": [
+          "としょかんで",
+          "ほんを",
+          "よんでもいいですか"
+        ],
+        "correctOrder": [
+          "としょかんで",
+          "ほんを",
+          "よんでもいいですか"
+        ],
+        "romaji": "Toshokan de hon wo yonde mo ii desu ka.",
+        "thai": "อ่านหนังสือที่ห้องสมุดได้ไหม",
+        "explanation": "で บอกสถานที่ที่จะทำกิจกรรม ใช้ได้กับสถานที่ใดก็ได้"
+      },
+      {
+        "id": "te-mo-ii-7",
+        "promptThai": "ถามขออนุญาตว่า: เล่นกีฬาที่สวนสาธารณะได้ไหม",
+        "chunks": [
+          "こうえんで",
+          "スポーツを",
+          "してもいいですか"
+        ],
+        "correctOrder": [
+          "こうえんで",
+          "スポーツを",
+          "してもいいですか"
+        ],
+        "romaji": "Kouen de supootsu wo shite mo ii desu ka.",
+        "thai": "เล่นกีฬาที่สวนสาธารณะได้ไหม",
+        "explanation": "する เปลี่ยนเป็นรูปて คือ して ก่อนเติม もいいですか"
+      },
+      {
+        "id": "te-mo-ii-8",
+        "promptThai": "ถามขออนุญาตว่า: เล่นเกมที่บ้านได้ไหม",
+        "chunks": [
+          "いえで",
+          "ゲームを",
+          "してもいいですか"
+        ],
+        "correctOrder": [
+          "いえで",
+          "ゲームを",
+          "してもいいですか"
+        ],
+        "romaji": "Ie de geemu wo shite mo ii desu ka.",
+        "thai": "เล่นเกมที่บ้านได้ไหม",
+        "explanation": "いえで บอกว่าขออนุญาตทำกิจกรรมนี้ที่บ้าน"
       }
     ],
     "formLabel": "てもいいですか",
@@ -979,6 +1519,70 @@
         "romaji": "Koko de shashin wo totte wa ikemasen.",
         "thai": "ห้ามถ่ายรูปตรงนี้",
         "explanation": "とる เป็นกริยากลุ่ม 1 ลงท้าย る เปลี่ยนเป็น って (กลุ่มเดียวกับ う/つ/る)"
+      },
+      {
+        "id": "te-wa-ikemasen-5",
+        "promptThai": "พูดว่า: ห้ามเล่นเกมที่โรงเรียน",
+        "chunks": [
+          "がっこうで",
+          "ゲームを",
+          "してはいけません"
+        ],
+        "correctOrder": [
+          "がっこうで",
+          "ゲームを",
+          "してはいけません"
+        ],
+        "romaji": "Gakkou de geemu wo shite wa ikemasen.",
+        "thai": "ห้ามเล่นเกมที่โรงเรียน",
+        "explanation": "する เปลี่ยนเป็นรูปて คือ して ก่อนเติม はいけません"
+      },
+      {
+        "id": "te-wa-ikemasen-6",
+        "promptThai": "พูดว่า: ห้ามพูดคุยที่ห้องสมุด",
+        "chunks": [
+          "としょかんで",
+          "はなしてはいけません"
+        ],
+        "correctOrder": [
+          "としょかんで",
+          "はなしてはいけません"
+        ],
+        "romaji": "Toshokan de hanashite wa ikemasen.",
+        "thai": "ห้ามพูดคุยที่ห้องสมุด",
+        "explanation": "はなす เป็นกริยากลุ่ม 1 ลงท้าย す เปลี่ยนเป็น して ก่อนเติม はいけません"
+      },
+      {
+        "id": "te-wa-ikemasen-7",
+        "promptThai": "พูดว่า: ห้ามถ่ายรูปที่โรงพยาบาล",
+        "chunks": [
+          "びょういんで",
+          "しゃしんを",
+          "とってはいけません"
+        ],
+        "correctOrder": [
+          "びょういんで",
+          "しゃしんを",
+          "とってはいけません"
+        ],
+        "romaji": "Byouin de shashin wo totte wa ikemasen.",
+        "thai": "ห้ามถ่ายรูปที่โรงพยาบาล",
+        "explanation": "で ใช้บอกสถานที่ที่ห้ามทำกิจกรรมนั้น ใช้ได้กับสถานที่ต่างๆ"
+      },
+      {
+        "id": "te-wa-ikemasen-8",
+        "promptThai": "พูดว่า: ห้ามกินที่ศาลเจ้า",
+        "chunks": [
+          "じんじゃで",
+          "たべてはいけません"
+        ],
+        "correctOrder": [
+          "じんじゃで",
+          "たべてはいけません"
+        ],
+        "romaji": "Jinja de tabete wa ikemasen.",
+        "thai": "ห้ามกินที่ศาลเจ้า",
+        "explanation": "たべる ตัด る แล้วเติม て はいけません เพื่อสื่อความหมายห้ามทำ"
       }
     ],
     "formLabel": "てはいけません",
@@ -1084,6 +1688,74 @@
         "romaji": "Hon ga yomitai desu.",
         "thai": "อยากอ่านหนังสือ",
         "explanation": "よむ ตัด ます ออก เหลือ よみ แล้วเติม たいです"
+      },
+      {
+        "id": "tai-desu-5",
+        "promptThai": "พูดว่า: ฉันอยากกินผัก",
+        "chunks": [
+          "やさいが",
+          "たべたいです",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "やさいが",
+          "たべたいです"
+        ],
+        "romaji": "Watashi wa yasai ga tabetai desu.",
+        "thai": "ฉันอยากกินผัก",
+        "explanation": "たべる ตัด る แล้วเติม たいです และเปลี่ยน を เป็น が"
+      },
+      {
+        "id": "tai-desu-6",
+        "promptThai": "พูดว่า: ฉันอยากไปสนามบิน",
+        "chunks": [
+          "くうこうへ",
+          "いきたいです",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "くうこうへ",
+          "いきたいです"
+        ],
+        "romaji": "Watashi wa kuukou e ikitai desu.",
+        "thai": "ฉันอยากไปสนามบิน",
+        "explanation": "กริยาที่ใช้กับ へ ไม่เปลี่ยนเป็น が แม้อยู่ในรูป たいです"
+      },
+      {
+        "id": "tai-desu-7",
+        "promptThai": "พูดว่า: ฉันอยากเล่นกีฬา",
+        "chunks": [
+          "スポーツが",
+          "したいです",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "スポーツが",
+          "したいです"
+        ],
+        "romaji": "Watashi wa supootsu ga shitai desu.",
+        "thai": "ฉันอยากเล่นกีฬา",
+        "explanation": "する ตัด ます ออก เหลือ し แล้วเติม たいです"
+      },
+      {
+        "id": "tai-desu-8",
+        "promptThai": "พูดว่า: ฉันอยากถ่ายรูป",
+        "chunks": [
+          "しゃしんが",
+          "とりたいです",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "しゃしんが",
+          "とりたいです"
+        ],
+        "romaji": "Watashi wa shashin ga toritai desu.",
+        "thai": "ฉันอยากถ่ายรูป",
+        "explanation": "とる ตัด ます ออก เหลือ とり แล้วเติม たいです"
       }
     ],
     "formLabel": "たいです",

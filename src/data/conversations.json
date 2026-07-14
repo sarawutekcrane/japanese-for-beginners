@@ -468,5 +468,99 @@
         ]
       }
     ]
+  },
+  {
+    "id": "convenience-store",
+    "title": "コンビニで",
+    "emoji": "🏪",
+    "nodes": [
+      {
+        "system": { "japanese": "いらっしゃいませ。", "romaji": "Irasshaimase.", "thai": "ยินดีต้อนรับค่ะ" },
+        "options": [
+          { "japanese": "すみません、パンは どこですか。", "romaji": "Sumimasen, pan wa doko desu ka.", "thai": "ขอโทษครับ ขนมปังอยู่ที่ไหนครับ?" },
+          { "japanese": "トイレは ありますか。", "romaji": "Toire wa arimasu ka.", "thai": "มีห้องน้ำไหมครับ?" },
+          { "japanese": "ATMは どこですか。", "romaji": "Eetiiemu wa doko desu ka.", "thai": "ตู้เอทีเอ็มอยู่ที่ไหนครับ?" }
+        ]
+      },
+      {
+        "system": { "japanese": "パンは あちらに あります。", "romaji": "Pan wa achira ni arimasu.", "thai": "ขนมปังอยู่ทางนั้นค่ะ" },
+        "options": [
+          { "japanese": "ありがとうございます。", "romaji": "Arigatou gozaimasu.", "thai": "ขอบคุณครับ" },
+          { "japanese": "これを あたためて もらえますか。", "romaji": "Kore wo atatamete moraemasu ka.", "thai": "ช่วยอุ่นอันนี้ให้หน่อยได้ไหมครับ?" },
+          { "japanese": "ふくろは もらえますか。", "romaji": "Fukuro wa moraemasu ka.", "thai": "ขอถุงได้ไหมครับ?" }
+        ]
+      },
+      {
+        "system": { "japanese": "かしこまりました。ほかに なにか ありますか。", "romaji": "Kashikomarimashita. Hoka ni nanika arimasu ka.", "thai": "รับทราบค่ะ มีอย่างอื่นอีกไหมคะ?" },
+        "options": [
+          { "japanese": "いいえ、だいじょうぶです。", "romaji": "Iie, daijoubu desu.", "thai": "ไม่ครับ พอแล้วครับ" },
+          { "japanese": "これも おねがいします。", "romaji": "Kore mo onegaishimasu.", "thai": "เอาอันนี้ด้วยครับ" },
+          { "japanese": "ふくろは いりません。", "romaji": "Fukuro wa irimasen.", "thai": "ไม่ต้องใช้ถุงครับ" }
+        ]
+      },
+      {
+        "system": { "japanese": "ぜんぶで さんびゃくえんです。", "romaji": "Zenbu de sanbyaku en desu.", "thai": "รวมทั้งหมด 300 เยนค่ะ" },
+        "options": [
+          { "japanese": "カードで はらえますか。", "romaji": "Kaado de haraemasu ka.", "thai": "จ่ายด้วยบัตรได้ไหมครับ?" },
+          { "japanese": "げんきんで はらいます。", "romaji": "Genkin de haraimasu.", "thai": "จ่ายเงินสดครับ" },
+          { "japanese": "はい、どうぞ。", "romaji": "Hai, douzo.", "thai": "ครับ นี่ครับ" }
+        ]
+      },
+      {
+        "system": { "japanese": "ありがとうございました。", "romaji": "Arigatou gozaimashita.", "thai": "ขอบคุณค่ะ" },
+        "options": [
+          { "japanese": "ありがとうございました。", "romaji": "Arigatou gozaimashita.", "thai": "ขอบคุณครับ" },
+          { "japanese": "また きます。", "romaji": "Mata kimasu.", "thai": "จะแวะมาอีกนะครับ" },
+          { "japanese": "しつれいします。", "romaji": "Shitsurei shimasu.", "thai": "ขอตัวก่อนนะครับ" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "emergency",
+    "title": "きゅうきゅう・たすけて",
+    "emoji": "🚨",
+    "nodes": [
+      {
+        "system": { "japanese": "だいじょうぶですか。", "romaji": "Daijoubu desu ka.", "thai": "คุณโอเคไหมคะ?" },
+        "options": [
+          { "japanese": "たすけて ください。", "romaji": "Tasukete kudasai.", "thai": "ช่วยด้วยครับ" },
+          { "japanese": "きゅうきゅうしゃを よんでください。", "romaji": "Kyuukyuusha wo yonde kudasai.", "thai": "ช่วยเรียกรถพยาบาลให้หน่อยครับ" },
+          { "japanese": "けいさつを よんでください。", "romaji": "Keisatsu wo yonde kudasai.", "thai": "ช่วยเรียกตำรวจให้หน่อยครับ" }
+        ]
+      },
+      {
+        "system": { "japanese": "なにが ありましたか。", "romaji": "Nani ga arimashita ka.", "thai": "เกิดอะไรขึ้นคะ?" },
+        "options": [
+          { "japanese": "じこに あいました。", "romaji": "Jiko ni aimashita.", "thai": "ประสบอุบัติเหตุครับ" },
+          { "japanese": "ともだちが たおれました。", "romaji": "Tomodachi ga taoremashita.", "thai": "เพื่อนผมล้มครับ" },
+          { "japanese": "さいふを なくしました。", "romaji": "Saifu wo nakushimashita.", "thai": "กระเป๋าเงินหายครับ" }
+        ]
+      },
+      {
+        "system": { "japanese": "わかりました。", "romaji": "Wakarimashita.", "thai": "เข้าใจแล้วค่ะ" },
+        "options": [
+          { "japanese": "いちばん ちかい びょういんは どこですか。", "romaji": "Ichiban chikai byouin wa doko desu ka.", "thai": "โรงพยาบาลที่ใกล้ที่สุดอยู่ที่ไหนครับ?" },
+          { "japanese": "いちばん ちかい けいさつは どこですか。", "romaji": "Ichiban chikai keisatsu wa doko desu ka.", "thai": "สถานีตำรวจที่ใกล้ที่สุดอยู่ที่ไหนครับ?" },
+          { "japanese": "すぐ きて もらえますか。", "romaji": "Sugu kite moraemasu ka.", "thai": "มาให้เร็วที่สุดได้ไหมครับ?" }
+        ]
+      },
+      {
+        "system": { "japanese": "すぐ いきますから、まって いてください。", "romaji": "Sugu ikimasu kara, matte ite kudasai.", "thai": "จะไปเดี๋ยวนี้ค่ะ กรุณารอสักครู่นะคะ" },
+        "options": [
+          { "japanese": "はい、まっています。", "romaji": "Hai, matte imasu.", "thai": "ครับ รอครับ" },
+          { "japanese": "ありがとうございます。", "romaji": "Arigatou gozaimasu.", "thai": "ขอบคุณครับ" },
+          { "japanese": "はやく おねがいします。", "romaji": "Hayaku onegaishimasu.", "thai": "ช่วยรีบมาด้วยนะครับ" }
+        ]
+      },
+      {
+        "system": { "japanese": "もう だいじょうぶですよ。", "romaji": "Mou daijoubu desu yo.", "thai": "ตอนนี้ปลอดภัยแล้วนะคะ" },
+        "options": [
+          { "japanese": "ほんとうに ありがとうございました。", "romaji": "Hontou ni arigatou gozaimashita.", "thai": "ขอบคุณมากจริงๆครับ" },
+          { "japanese": "たすかりました。", "romaji": "Tasukarimashita.", "thai": "ช่วยชีวิตไว้เลยครับ" },
+          { "japanese": "おかげさまで あんしんしました。", "romaji": "Okagesama de anshin shimashita.", "thai": "โล่งใจแล้วครับ ต้องขอบคุณจริงๆ" }
+        ]
+      }
+    ]
   }
 ]
