@@ -2,7 +2,7 @@ import { useState } from "react";
 import Mascot from "../components/Mascot";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
-import { KANA_GROUPS, VOCAB_CATEGORIES, getKanaByGroup, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
+import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
 
 function PoolPicker({ shuffleOn, onShuffleChange, onPick }) {
   return (
@@ -12,23 +12,14 @@ function PoolPicker({ shuffleOn, onShuffleChange, onPick }) {
       </div>
 
       <section className="picker-section">
-        <h3 className="picker-heading">あ Hiragana</h3>
+        <h3 className="picker-heading">あ / ア ตัวอักษร (Characters)</h3>
         <div className="picker-row">
-          {KANA_GROUPS.map((g) => (
-            <button key={g.id} className="btn btn-outline btn-sm" onClick={() => onPick({ kind: "kana", script: "hiragana", group: g.id, label: `Hiragana · ${g.label}` })}>
-              {g.labelJa}
-            </button>
-          ))}
-        </div>
-      </section>
-      <section className="picker-section">
-        <h3 className="picker-heading">ア Katakana</h3>
-        <div className="picker-row">
-          {KANA_GROUPS.map((g) => (
-            <button key={g.id} className="btn btn-outline blue btn-sm" onClick={() => onPick({ kind: "kana", script: "katakana", group: g.id, label: `Katakana · ${g.label}` })}>
-              {g.labelJa}
-            </button>
-          ))}
+          <button className="btn btn-outline btn-sm" onClick={() => onPick({ kind: "kana", script: "hiragana", label: "Hiragana (ครบทุกกลุ่ม)" })}>
+            あ Hiragana
+          </button>
+          <button className="btn btn-outline blue btn-sm" onClick={() => onPick({ kind: "kana", script: "katakana", label: "Katakana (ครบทุกกลุ่ม)" })}>
+            ア Katakana
+          </button>
         </div>
       </section>
       <section className="picker-section">
@@ -58,7 +49,7 @@ function buildQuestion(pool, cursor, shuffleOn) {
 function QuizView({ selection, shuffleOn, onBack }) {
   const { speak } = useSpeak();
   const [pool] = useState(() => {
-    const raw = selection.kind === "kana" ? getKanaByGroup(selection.script, selection.group) : getVocab(selection.category);
+    const raw = selection.kind === "kana" ? getKanaCombinedDeck(selection.script) : getVocab(selection.category);
     return raw.map(toCard);
   });
 
