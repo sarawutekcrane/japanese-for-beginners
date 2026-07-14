@@ -1,7 +1,21 @@
-import { GreetingIllustration } from "./greetings";
+import { greetingIcons } from "./greetings";
+import { foodDrinksIcons } from "./foodDrinks";
+import { animalIcons } from "./animals";
+import { familyIcons } from "./family";
+import { bodyPartsIcons } from "./bodyParts";
+import { placesIcons } from "./places";
 import NumberIllustration from "./NumberIllustration";
 import ColorIllustration from "./ColorIllustration";
 import KanaIllustration from "./KanaIllustration";
+
+const VOCAB_ICONS = {
+  ...greetingIcons,
+  ...foodDrinksIcons,
+  ...animalIcons,
+  ...familyIcons,
+  ...bodyPartsIcons,
+  ...placesIcons,
+};
 
 /** Renders the correct flat-SVG illustration for a vocabulary or kana card. */
 export default function Illustration({ item }) {
@@ -15,5 +29,6 @@ export default function Illustration({ item }) {
   if (item.icon === "color") {
     return <ColorIllustration hex={item.hex} id={item.id} />;
   }
-  return <GreetingIllustration icon={item.icon} id={item.id} />;
+  const render = VOCAB_ICONS[item.icon] || VOCAB_ICONS["hello-wave"];
+  return render(item.id || item.icon);
 }

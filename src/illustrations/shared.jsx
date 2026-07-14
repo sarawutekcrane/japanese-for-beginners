@@ -20,6 +20,44 @@ export function Frame({ id = "", children }) {
 
 export const INK = "#5a4a52";
 
+export function Sparkle({ x, y, s = 1 }) {
+  return (
+    <path
+      transform={`translate(${x},${y}) scale(${s})`}
+      d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z"
+      fill="#ffd166"
+    />
+  );
+}
+
+export function Sun({ cx, cy, r, color = "#ffcf6b" }) {
+  const rays = [];
+  for (let i = 0; i < 8; i++) {
+    const a = (i * Math.PI) / 4;
+    const x1 = cx + Math.cos(a) * (r + 6);
+    const y1 = cy + Math.sin(a) * (r + 6);
+    const x2 = cx + Math.cos(a) * (r + 16);
+    const y2 = cy + Math.sin(a) * (r + 16);
+    rays.push(<line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={color} strokeWidth="5" strokeLinecap="round" />);
+  }
+  return (
+    <g>
+      {rays}
+      <circle cx={cx} cy={cy} r={r} fill={color} stroke={INK} strokeWidth="3" />
+    </g>
+  );
+}
+
+export function House({ x = 100, y = 120, roof = "#ff9ec7", wall = "#fff3da", door = "#8fcfff" }) {
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <rect x="-38" y="-6" width="76" height="46" rx="6" fill={wall} stroke={INK} strokeWidth="3" />
+      <path d="M -46 -6 L 0 -44 L 46 -6 Z" fill={roof} stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="-10" y="12" width="20" height="28" rx="3" fill={door} stroke={INK} strokeWidth="2.5" />
+    </g>
+  );
+}
+
 /** Cute round-headed chibi person used as the base for greeting illustrations. */
 export function Chibi({ shirt = "#8fcfff", armPose = "down", face = "smile", flip = false }) {
   return (
