@@ -178,4 +178,77 @@ export const timeDaysIcons = {
       <circle cx="100" cy="100" r="46" fill="none" stroke="#ff9ec7" strokeWidth="2" strokeDasharray="2 6" opacity="0.6" />
     </Frame>
   ),
+  "time-spring": (id) => (
+    <Frame id={id}>
+      <circle cx="76" cy="86" r="16" fill="#ffd6e8" stroke={INK} strokeWidth="2.5" />
+      <circle cx="112" cy="70" r="16" fill="#ffd6e8" stroke={INK} strokeWidth="2.5" />
+      <circle cx="132" cy="102" r="16" fill="#ffd6e8" stroke={INK} strokeWidth="2.5" />
+      <circle cx="94" cy="112" r="16" fill="#ffd6e8" stroke={INK} strokeWidth="2.5" />
+      <circle cx="76" cy="86" r="5" fill="#f6d34c" />
+      <circle cx="112" cy="70" r="5" fill="#f6d34c" />
+      <circle cx="132" cy="102" r="5" fill="#f6d34c" />
+      <circle cx="94" cy="112" r="5" fill="#f6d34c" />
+    </Frame>
+  ),
+  "time-summer": (id) => (
+    <Frame id={id}>
+      <Sun cx={100} cy={80} r={30} color="#ffcf6b" />
+      <path d="M 80 128 Q 76 108 88 96 M 120 128 Q 124 108 112 96" stroke="#5fbf77" strokeWidth="7" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "time-autumn": (id) => (
+    <Frame id={id}>
+      <path d="M 100 60 Q 130 70 128 100 Q 126 130 100 140 Q 74 130 72 100 Q 70 70 100 60 Z" fill="#f5924a" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <line x1="100" y1="60" x2="100" y2="140" stroke={INK} strokeWidth="1.5" opacity="0.4" />
+      <line x1="100" y1="140" x2="100" y2="156" stroke="#a2704c" strokeWidth="4" strokeLinecap="round" />
+    </Frame>
+  ),
+  "time-winter": (id) => (
+    <Frame id={id}>
+      <line x1="100" y1="54" x2="100" y2="154" stroke="#8fcfff" strokeWidth="5" strokeLinecap="round" />
+      <line x1="56" y1="76" x2="144" y2="132" stroke="#8fcfff" strokeWidth="5" strokeLinecap="round" />
+      <line x1="144" y1="76" x2="56" y2="132" stroke="#8fcfff" strokeWidth="5" strokeLinecap="round" />
+      <circle cx="100" cy="104" r="6" fill="#dff1ff" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "time-everyday": (id) => (
+    <Frame id={id}>
+      <Calendar headerColor="#7bcf9e" />
+      <path d="M 78 118 A 16 16 0 1 1 122 118 M 122 118 L 128 112 M 122 118 L 128 124" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "time-lastweek": (id) => (
+    <Frame id={id}>
+      <Calendar headerColor="#c9ccd6" />
+      <path d="M 112 108 L 88 118 L 112 128" fill="none" stroke={INK} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "time-nextweek": (id) => (
+    <Frame id={id}>
+      <Calendar headerColor="#8fcfff" />
+      <path d="M 88 108 L 112 118 L 88 128" fill="none" stroke={INK} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "time-lastmonth": (id) => (
+    <Frame id={id}>
+      <Calendar headerColor="#c9ccd6" />
+      {[0, 1, 2].flatMap((r) =>
+        [0, 1, 2, 3].map((c) => <rect key={`${r}-${c}`} x={64 + c * 14} y={98 + r * 14} width="8" height="8" rx="2" fill="#e8e2e5" opacity="0.5" />)
+      )}
+    </Frame>
+  ),
+  "time-nextmonth": (id) => (
+    <Frame id={id}>
+      <Calendar headerColor="#f6d34c" />
+      {[0, 1, 2].flatMap((r) =>
+        [0, 1, 2, 3].map((c) => <rect key={`${r}-${c}`} x={64 + c * 14} y={98 + r * 14} width="8" height="8" rx="2" fill="#ffd166" />)
+      )}
+    </Frame>
+  ),
+  "time-thisyear": (id) => (
+    <Frame id={id}>
+      <Calendar headerColor="#b07ae0" />
+      <Sparkle x={100} y={112} s={1.1} />
+    </Frame>
+  ),
 };

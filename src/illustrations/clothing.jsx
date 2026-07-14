@@ -148,4 +148,66 @@ export const clothingIcons = {
       <line x1="100" y1="102" x2="110" y2="108" stroke={INK} strokeWidth="2.5" strokeLinecap="round" />
     </Frame>
   ),
+  "clothing-pajamas": (id) => (
+    <Frame id={id}>
+      <path d="M 78 62 L 62 78 L 74 92 L 82 84 L 82 118 L 118 118 L 118 84 L 126 92 L 138 78 L 122 62 Z" fill="#8fd3f4" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 82 122 L 82 150 L 96 150 L 96 130 L 104 130 L 104 150 L 118 150 L 118 122 Z" fill="#c9e8f7" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <circle cx="100" cy="78" r="8" fill="#ffffff" opacity="0.5" />
+    </Frame>
+  ),
+  "clothing-swimsuit": (id) => (
+    <Frame id={id}>
+      <path d="M 74 70 Q 70 66 76 62 L 100 74 L 124 62 Q 130 66 126 70 L 118 90 Q 118 130 100 140 Q 82 130 82 90 Z" fill="#f5924a" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "clothing-necktie": (id) => (
+    <Frame id={id}>
+      <path d="M 90 56 L 110 56 L 106 74 L 122 118 L 100 148 L 78 118 L 94 74 Z" fill="#f45c5c" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 92 60 L 108 60 L 106 72 L 94 72 Z" fill="#c94040" stroke={INK} strokeWidth="1.5" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "clothing-sweater": (id) => (
+    <Frame id={id}>
+      <path d="M 74 64 L 56 82 L 70 98 L 80 88 L 80 146 L 120 146 L 120 88 L 130 98 L 144 82 L 126 64 Q 100 76 74 64 Z" fill="#c9822b" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 84 100 L 116 100 M 84 116 L 116 116 M 84 132 L 116 132" stroke={INK} strokeWidth="2" opacity="0.35" />
+    </Frame>
+  ),
+  "clothing-underwear": (id) => (
+    <Frame id={id}>
+      <path d="M 66 74 L 134 74 L 128 100 Q 100 96 100 118 Q 100 96 72 100 Z" fill="#8fcfff" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "clothing-coat": (id) => (
+    <Frame id={id}>
+      <path d="M 80 58 L 58 78 L 70 92 L 82 82 L 76 152 L 124 152 L 118 82 L 130 92 L 142 78 L 120 58 L 100 70 Z" fill="#a2704c" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <line x1="100" y1="80" x2="100" y2="150" stroke={INK} strokeWidth="2" opacity="0.4" />
+      <circle cx="100" cy="100" r="2.5" fill={INK} opacity="0.5" />
+      <circle cx="100" cy="118" r="2.5" fill={INK} opacity="0.5" />
+    </Frame>
+  ),
+  "clothing-sandals": (id) => (
+    <Frame id={id}>
+      <ellipse cx="100" cy="122" rx="46" ry="16" fill="#e0b978" stroke={INK} strokeWidth="3" />
+      <path d="M 84 108 L 100 122 L 116 108" fill="none" stroke="#a2704c" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M 100 122 L 100 108" stroke="#a2704c" strokeWidth="5" strokeLinecap="round" />
+    </Frame>
+  ),
+  "clothing-boots": (id) => (
+    <Frame id={id}>
+      <path d="M 76 60 L 118 60 L 118 108 L 140 122 Q 146 130 138 138 L 74 138 Q 68 134 70 126 L 76 108 Z" fill="#5a4a52" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <line x1="76" y1="86" x2="118" y2="86" stroke={INK} strokeWidth="2" opacity="0.4" />
+    </Frame>
+  ),
+  "clothing-ring": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="118" r="26" fill="none" stroke="#e0bb4b" strokeWidth="8" />
+      <path d="M 100 84 L 92 96 L 100 104 L 108 96 Z" fill="#8fd3f4" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "clothing-necklace": (id) => (
+    <Frame id={id}>
+      <path d="M 62 66 Q 62 116 100 122 Q 138 116 138 66" fill="none" stroke="#e0bb4b" strokeWidth="6" strokeLinecap="round" />
+      <path d="M 90 116 L 100 134 L 110 116 Z" fill="#ff9ec7" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+    </Frame>
+  ),
 };

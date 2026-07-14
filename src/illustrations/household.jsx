@@ -121,4 +121,83 @@ export const householdIcons = {
       <line x1="64" y1="112" x2="136" y2="112" stroke="#ffffff" strokeWidth="6" opacity="0.7" />
     </Frame>
   ),
+  "house-freezer": (id) => (
+    <Frame id={id}>
+      <rect x="66" y="60" width="68" height="90" rx="8" fill="#c9ccd6" stroke={INK} strokeWidth="3" />
+      <line x1="66" y1="98" x2="134" y2="98" stroke={INK} strokeWidth="2.5" />
+      <path d="M 100 70 L 100 88 M 91 74 L 109 84 M 109 74 L 91 84" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
+      <rect x="122" y="112" width="6" height="18" rx="3" fill="#8fcfff" />
+    </Frame>
+  ),
+  "house-washer": (id) => (
+    <Frame id={id}>
+      <rect x="60" y="56" width="80" height="90" rx="8" fill="#dff1ff" stroke={INK} strokeWidth="3" />
+      <circle cx="100" cy="102" r="28" fill="#8fcfff" stroke={INK} strokeWidth="3" />
+      <circle cx="100" cy="102" r="18" fill="#ffffff" opacity="0.6" />
+      <rect x="72" y="66" width="14" height="8" rx="3" fill="#5a4a52" opacity="0.5" />
+    </Frame>
+  ),
+  "house-microwave": (id) => (
+    <Frame id={id}>
+      <rect x="54" y="74" width="92" height="58" rx="6" fill="#c9ccd6" stroke={INK} strokeWidth="3" />
+      <rect x="62" y="82" width="58" height="42" rx="4" fill="#8fa0b8" stroke={INK} strokeWidth="2" />
+      <circle cx="132" cy="90" r="4" fill="#5a4a52" />
+      <rect x="126" y="100" width="12" height="6" fill="#5a4a52" opacity="0.6" />
+      <rect x="126" y="112" width="12" height="6" fill="#5a4a52" opacity="0.6" />
+    </Frame>
+  ),
+  "house-ricecooker": (id) => (
+    <Frame id={id}>
+      <path d="M 62 100 Q 62 138 100 140 Q 138 138 138 100 Z" fill="#e8e2e5" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="56" y="90" width="88" height="14" rx="6" fill="#f45c5c" stroke={INK} strokeWidth="2.5" />
+      <path d="M 84 76 Q 78 62 86 52 M 100 76 Q 94 62 102 52 M 116 76 Q 110 62 118 52" stroke="#c7b6bd" strokeWidth="3.5" fill="none" strokeLinecap="round" opacity="0.55" />
+    </Frame>
+  ),
+  "house-aircon": (id) => (
+    <Frame id={id}>
+      <rect x="52" y="70" width="96" height="34" rx="8" fill="#ffffff" stroke={INK} strokeWidth="3" />
+      <line x1="64" y1="88" x2="136" y2="88" stroke="#8fcfff" strokeWidth="3" opacity="0.6" />
+      <path d="M 70 104 Q 70 120 60 128 M 100 104 Q 100 124 92 132 M 130 104 Q 130 120 140 128" stroke="#8fcfff" strokeWidth="3" fill="none" strokeLinecap="round" opacity="0.6" />
+    </Frame>
+  ),
+  "house-curtain": (id) => (
+    <Frame id={id}>
+      <rect x="56" y="56" width="88" height="10" fill="#a2704c" stroke={INK} strokeWidth="2.5" />
+      <path d="M 60 66 Q 68 100 60 146 L 76 146 Q 70 100 78 66 Z" fill="#b07ae0" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M 140 66 Q 132 100 140 146 L 124 146 Q 130 100 122 66 Z" fill="#b07ae0" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "house-shelf": (id) => (
+    <Frame id={id}>
+      <rect x="56" y="56" width="88" height="90" rx="4" fill="#c08a5e" stroke={INK} strokeWidth="3" />
+      <line x1="56" y1="86" x2="144" y2="86" stroke={INK} strokeWidth="2.5" />
+      <line x1="56" y1="116" x2="144" y2="116" stroke={INK} strokeWidth="2.5" />
+      <rect x="64" y="64" width="10" height="20" fill="#8fcfff" stroke={INK} strokeWidth="1.5" />
+      <rect x="78" y="64" width="10" height="20" fill="#ff9ec7" stroke={INK} strokeWidth="1.5" />
+    </Frame>
+  ),
+  "house-mirror": (id) => (
+    <Frame id={id}>
+      <ellipse cx="100" cy="94" rx="38" ry="46" fill="#dff1ff" stroke={INK} strokeWidth="4" />
+      <ellipse cx="88" cy="72" rx="8" ry="14" fill="#ffffff" opacity="0.6" />
+      <rect x="94" y="138" width="12" height="18" fill="#c9ccd6" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "house-light": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="88" r="30" fill="#ffe9a6" stroke={INK} strokeWidth="3.5" />
+      <rect x="90" y="118" width="20" height="14" rx="3" fill="#c9ccd6" stroke={INK} strokeWidth="2" />
+      <line x1="94" y1="132" x2="94" y2="140" stroke={INK} strokeWidth="2" />
+      <line x1="106" y1="132" x2="106" y2="140" stroke={INK} strokeWidth="2" />
+      <path d="M 60 88 L 50 88 M 140 88 L 150 88 M 100 50 L 100 40" stroke="#ffcf6b" strokeWidth="3" strokeLinecap="round" opacity="0.7" />
+    </Frame>
+  ),
+  "house-trashcan": (id) => (
+    <Frame id={id}>
+      <path d="M 68 84 L 76 144 L 124 144 L 132 84 Z" fill="#c9ccd6" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="60" y="74" width="80" height="12" rx="4" fill="#a6a6ae" stroke={INK} strokeWidth="2.5" />
+      <line x1="90" y1="94" x2="94" y2="132" stroke={INK} strokeWidth="2" opacity="0.4" />
+      <line x1="110" y1="94" x2="106" y2="132" stroke={INK} strokeWidth="2" opacity="0.4" />
+    </Frame>
+  ),
 };

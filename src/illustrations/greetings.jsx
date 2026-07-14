@@ -116,6 +116,68 @@ export const greetingIcons = {
       <Chibi shirt="#8fcfff" armPose="wave" face="happy" />
     </Frame>
   ),
+  "youre-welcome": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#8fcfff" armPose="down" face="happy" />
+      <path d="M 148 56 L 158 68 L 178 42" fill="none" stroke="#4fae78" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" opacity="0.7" />
+    </Frame>
+  ),
+  "tired-thanks": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#c9ccd6" armPose="down" face="sad" />
+      <path d="M 132 52 Q 140 64 132 72 Q 124 64 132 52 Z" fill="#bfe6ff" stroke={INK} strokeWidth="2.5" />
+      <path d="M 88 50 Q 100 44 112 50" stroke={INK} strokeWidth="2.5" fill="none" strokeLinecap="round" opacity="0.4" />
+    </Frame>
+  ),
+  "excuse-me-leave": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#ffd6e8" armPose="bow" face="smile" flip />
+    </Frame>
+  ),
+  "okay-thumbsup": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#7bcf9e" armPose="up" face="wink" />
+      <circle cx="152" cy="60" r="14" fill="#ffe9d6" stroke={INK} strokeWidth="2.5" />
+      <path d="M 148 56 L 152 46 L 156 56 Z" fill="#ffe9d6" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "cheer-fist": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#f5924a" armPose="up" face="happy" />
+      <Sparkle x="148" y="52" s="0.8" />
+      <Sparkle x="56" y="60" s="0.6" />
+    </Frame>
+  ),
+  "congrats-confetti": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#ffd166" armPose="up" face="happy" />
+      <Sparkle x="146" y="44" s="1" />
+      <Sparkle x="60" y="50" s="0.7" />
+      <Sparkle x="100" y="36" s="0.6" />
+    </Frame>
+  ),
+  "care-safe": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#8fcfff" armPose="wave" face="smile" />
+      <path d="M 148 56 L 158 68 L 178 42" fill="none" stroke="#4fae78" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" opacity="0.6" />
+    </Frame>
+  ),
+  "please-offer": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#ff9ec7" armPose="praying" face="happy" flip />
+    </Frame>
+  ),
+  "thanks-casual": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#ffd6e8" armPose="down" face="wink" />
+      <path d="M 100 44 C 90 30 66 34 66 54 C 66 72 100 92 100 92 C 100 92 134 72 134 54 C 134 34 110 30 100 44 Z" fill="#ff9ec7" opacity="0.5" />
+    </Frame>
+  ),
+  "see-you-later": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#c9a0f5" armPose="wave" face="wink" flip />
+    </Frame>
+  ),
 };
 
 export function GreetingIllustration({ icon, id }) {

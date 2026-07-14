@@ -1,4 +1,4 @@
-import { Frame, Chibi, INK } from "./shared";
+import { Frame, Chibi, INK, Sparkle } from "./shared";
 
 export const familyIcons = {
   "family-father": (id) => (
@@ -113,6 +113,83 @@ export const familyIcons = {
       <g transform="translate(18,18) scale(0.8)">
         <Chibi shirt="#ffd6e8" armPose="wave" face="wink" />
       </g>
+    </Frame>
+  ),
+  "family-cousin": (id) => (
+    <Frame id={id}>
+      <g transform="translate(24,24) scale(0.75)">
+        <Chibi shirt="#f6d34c" armPose="wave" face="happy" />
+      </g>
+    </Frame>
+  ),
+  "family-grandchild": (id) => (
+    <Frame id={id}>
+      <g transform="translate(30,31) scale(0.7)">
+        <Chibi shirt="#7bcf9e" armPose="up" face="wink" />
+      </g>
+    </Frame>
+  ),
+  "family-relative": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#c9a0f5" armPose="down" face="smile" />
+    </Frame>
+  ),
+  "family-parents": (id) => (
+    <Frame id={id}>
+      <g transform="translate(-6,26) scale(0.62)">
+        <Chibi shirt="#4c8df0" armPose="down" face="smile" />
+      </g>
+      <g transform="translate(64,26) scale(0.62)">
+        <Chibi shirt="#ff9ec7" armPose="down" face="happy" />
+      </g>
+    </Frame>
+  ),
+  "family-siblings": (id) => (
+    <Frame id={id}>
+      <g transform="translate(-2,30) scale(0.58)">
+        <Chibi shirt="#8fcfff" armPose="up" face="happy" />
+      </g>
+      <g transform="translate(66,30) scale(0.58)">
+        <Chibi shirt="#ffd6e8" armPose="wave" face="wink" />
+      </g>
+    </Frame>
+  ),
+  "family-wife": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#ff9ec7" armPose="down" face="happy" />
+      <circle cx="88" cy="128" r="3" fill="#f6d34c" />
+    </Frame>
+  ),
+  "family-husband": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#4c8df0" armPose="down" face="smile" />
+      <path d="M 96 106 L 104 106 L 108 124 L 100 136 L 92 124 Z" fill="#5a4a52" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "family-husband-formal": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#dff1ff" armPose="down" face="smile" />
+      <path d="M 96 106 L 104 106 L 108 124 L 100 136 L 92 124 Z" fill="#4c8df0" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+      <rect x="82" y="76" width="16" height="10" rx="4" fill="none" stroke={INK} strokeWidth="2.5" />
+      <rect x="102" y="76" width="16" height="10" rx="4" fill="none" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
+  "family-wife-formal": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#ffd6e8" armPose="wave" face="smile" />
+      <path d="M 66 70 Q 60 100 68 130" stroke="#6b4a57" strokeWidth="8" fill="none" strokeLinecap="round" />
+      <path d="M 134 70 Q 140 100 132 130" stroke="#6b4a57" strokeWidth="8" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "family-couple": (id) => (
+    <Frame id={id}>
+      <g transform="translate(-2,20) scale(0.66)">
+        <Chibi shirt="#4c8df0" armPose="down" face="smile" />
+      </g>
+      <g transform="translate(62,20) scale(0.66)">
+        <Chibi shirt="#ff9ec7" armPose="down" face="happy" />
+      </g>
+      <Sparkle x="100" y="50" s="0.7" />
     </Frame>
   ),
 };

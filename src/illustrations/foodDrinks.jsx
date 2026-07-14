@@ -126,4 +126,78 @@ export const foodDrinksIcons = {
       <line x1="112" y1="60" x2="102" y2="94" stroke="#ff9ec7" strokeWidth="6" strokeLinecap="round" />
     </Frame>
   ),
+  "food-udon": (id) => (
+    <Frame id={id}>
+      <Bowl fill="#dff1ff" />
+      <path d="M 64 108 Q 74 98 84 108 Q 94 118 104 108 Q 114 98 124 108 Q 134 118 144 108" fill="none" stroke="#fff8ea" strokeWidth="7" strokeLinecap="round" />
+      <Steam x={80} y={72} />
+      <Steam x={118} y={70} />
+    </Frame>
+  ),
+  "food-soba": (id) => (
+    <Frame id={id}>
+      <Bowl fill="#5a4a52" />
+      <path d="M 64 108 Q 74 98 84 108 Q 94 118 104 108 Q 114 98 124 108 Q 134 118 144 108" fill="none" stroke="#a2704c" strokeWidth="6" strokeLinecap="round" />
+      <Steam x={80} y={72} />
+    </Frame>
+  ),
+  "food-onigiri": (id) => (
+    <Frame id={id}>
+      <path d="M 100 62 L 146 138 L 54 138 Z" fill="#ffffff" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="80" y="112" width="40" height="26" fill="#3a3a3a" opacity="0.85" />
+    </Frame>
+  ),
+  "food-curry": (id) => (
+    <Frame id={id}>
+      <ellipse cx="100" cy="118" rx="50" ry="22" fill="#ffffff" stroke={INK} strokeWidth="3" />
+      <ellipse cx="82" cy="112" rx="22" ry="14" fill="#fff8ea" stroke={INK} strokeWidth="2" />
+      <path d="M 100 108 Q 128 106 138 122 Q 130 132 108 130 Q 96 122 100 108 Z" fill="#c9822b" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "food-salad": (id) => (
+    <Frame id={id}>
+      <Bowl fill="#ffffff" />
+      <path d="M 66 104 Q 80 92 92 104 Q 78 108 66 104 Z M 100 100 Q 114 88 128 100 Q 114 106 100 100 Z" fill="#7bcf9e" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+      <circle cx="90" cy="112" r="7" fill="#f45c5c" stroke={INK} strokeWidth="2" />
+      <circle cx="118" cy="114" r="6" fill="#f45c5c" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "food-dessert": (id) => (
+    <Frame id={id}>
+      <path d="M 70 90 L 130 90 L 122 140 L 78 140 Z" fill="#ffd6e8" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 68 90 Q 100 70 132 90 Z" fill="#fff8ea" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="100" cy="66" r="8" fill="#f45c5c" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "food-icecream": (id) => (
+    <Frame id={id}>
+      <path d="M 84 100 L 116 100 L 100 148 Z" fill="#f3c988" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 100 60 Q 128 60 128 84 Q 128 100 100 100 Q 72 100 72 84 Q 72 60 100 60 Z" fill="#ffd6e8" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "food-chocolate": (id) => (
+    <Frame id={id}>
+      <rect x="58" y="76" width="84" height="56" rx="6" fill="#8a5a3a" stroke={INK} strokeWidth="3" />
+      <line x1="86" y1="76" x2="86" y2="132" stroke={INK} strokeWidth="2" opacity="0.5" />
+      <line x1="114" y1="76" x2="114" y2="132" stroke={INK} strokeWidth="2" opacity="0.5" />
+      <line x1="58" y1="104" x2="142" y2="104" stroke={INK} strokeWidth="2" opacity="0.5" />
+    </Frame>
+  ),
+  "food-tamagoyaki": (id) => (
+    <Frame id={id}>
+      <rect x="60" y="88" width="80" height="42" rx="8" fill="#ffcf6b" stroke={INK} strokeWidth="3" />
+      <line x1="80" y1="88" x2="80" y2="130" stroke="#e0b04a" strokeWidth="3" opacity="0.7" />
+      <line x1="100" y1="88" x2="100" y2="130" stroke="#e0b04a" strokeWidth="3" opacity="0.7" />
+      <line x1="120" y1="88" x2="120" y2="130" stroke="#e0b04a" strokeWidth="3" opacity="0.7" />
+    </Frame>
+  ),
+  "food-snack": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="106" r="42" fill="#e0b978" stroke={INK} strokeWidth="3.5" />
+      <circle cx="86" cy="94" r="4" fill="#a2704c" />
+      <circle cx="112" cy="98" r="4" fill="#a2704c" />
+      <circle cx="100" cy="118" r="4" fill="#a2704c" />
+      <circle cx="118" cy="116" r="4" fill="#a2704c" />
+    </Frame>
+  ),
 };

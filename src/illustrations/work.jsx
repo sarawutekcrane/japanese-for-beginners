@@ -110,4 +110,81 @@ export const workIcons = {
       <path d="M 96 106 L 104 106 L 108 124 L 100 136 L 92 124 Z" fill="#f6d34c" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
     </Frame>
   ),
+  "job-civil-servant": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#4c8df0" armPose="down" face="smile" />
+      <rect x="86" y="106" width="28" height="10" rx="3" fill="#f6d34c" stroke={INK} strokeWidth="1.5" />
+    </Frame>
+  ),
+  "job-lawyer": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#5a4a52" armPose="down" face="smile" />
+      <rect x="80" y="80" width="40" height="8" rx="3" fill="#ffffff" opacity="0.8" />
+      <circle cx="150" cy="120" r="12" fill="#a2704c" stroke={INK} strokeWidth="2" />
+      <rect x="144" y="112" width="12" height="6" fill="#a2704c" stroke={INK} strokeWidth="1.5" />
+    </Frame>
+  ),
+  "job-singer": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#ff9ec7" armPose="up" face="happy" />
+      <rect x="146" y="50" width="14" height="26" rx="7" fill="#5a4a52" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "job-artist": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#c9a0f5" armPose="praying" face="smile" />
+      <ellipse cx="150" cy="110" rx="18" ry="12" fill="#fff8ea" stroke={INK} strokeWidth="2" />
+      <circle cx="144" cy="108" r="2.5" fill="#f45c5c" />
+      <circle cx="152" cy="106" r="2.5" fill="#4c8df0" />
+      <circle cx="156" cy="112" r="2.5" fill="#f6d34c" />
+    </Frame>
+  ),
+  "job-farmer": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#7bcf9e" armPose="down" face="smile" />
+      <ellipse cx="100" cy="52" rx="34" ry="10" fill="#f6d34c" stroke={INK} strokeWidth="2.5" />
+      <path d="M 78 52 Q 78 36 100 38 Q 122 36 122 52 Z" fill="#ffcf6b" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "job-hairdresser": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#ffd6e8" armPose="up" face="happy" />
+      <path d="M 142 100 L 158 84 M 142 84 L 158 100" stroke="#c9ccd6" strokeWidth="4" strokeLinecap="round" />
+      <circle cx="142" cy="92" r="6" fill="none" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "job-interpreter": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#8fcfff" armPose="down" face="smile" />
+      <ellipse cx="60" cy="60" rx="16" ry="12" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <ellipse cx="140" cy="60" rx="16" ry="12" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <text x="60" y="65" fontSize="12" fontWeight="800" fill="#4c8df0" fontFamily="Baloo 2, sans-serif" textAnchor="middle">A</text>
+      <text x="140" y="65" fontSize="12" fontWeight="800" fill="#f45c5c" fontFamily="Baloo 2, sans-serif" textAnchor="middle">あ</text>
+    </Frame>
+  ),
+  "job-pilot": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#2f2b52" armPose="up" face="smile" />
+      <path d="M 66 58 Q 100 40 134 58 L 128 66 Q 100 52 72 66 Z" fill="#2f2b52" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="100" cy="58" r="5" fill="#f6d34c" />
+    </Frame>
+  ),
+  "job-salary": (id) => (
+    <Frame id={id}>
+      <path d="M 60 76 L 140 76 L 140 132 L 60 132 Z" fill="#fff3da" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 60 76 L 100 104 L 140 76" fill="none" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="100" cy="104" r="14" fill="#f6d34c" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "job-interview": (id) => (
+    <Frame id={id}>
+      <rect x="80" y="110" width="40" height="12" fill="#a2704c" stroke={INK} strokeWidth="2.5" />
+      <g transform="translate(-8,20) scale(0.55)">
+        <Chibi shirt="#4c8df0" armPose="down" face="smile" />
+      </g>
+      <g transform="translate(76,20) scale(0.55)">
+        <Chibi shirt="#ff9ec7" armPose="down" face="happy" />
+      </g>
+    </Frame>
+  ),
 };

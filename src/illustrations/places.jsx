@@ -129,4 +129,90 @@ export const placesIcons = {
       <House x={100} y={110} />
     </Frame>
   ),
+  "place-police-box": (id) => (
+    <Frame id={id}>
+      <rect x="66" y="86" width="68" height="56" rx="6" fill="#dff1ff" stroke={INK} strokeWidth="3" />
+      <path d="M 60 86 L 100 62 L 140 86 Z" fill="#4c8df0" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="100" cy="72" r="7" fill="#f45c5c" opacity="0.9" />
+      <rect x="90" y="104" width="20" height="26" fill="#8fcfff" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "place-city-hall": (id) => (
+    <Frame id={id}>
+      <rect x="58" y="82" width="84" height="60" rx="4" fill="#fff3da" stroke={INK} strokeWidth="3" />
+      <path d="M 58 82 L 100 58 L 142 82 Z" fill="#f45c5c" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <line x1="100" y1="58" x2="100" y2="38" stroke={INK} strokeWidth="2.5" />
+      <path d="M 100 38 L 122 44 L 100 50 Z" fill="#4c8df0" stroke={INK} strokeWidth="1.5" strokeLinejoin="round" />
+      <rect x="82" y="104" width="14" height="34" fill="#dff1ff" stroke={INK} strokeWidth="2" />
+      <rect x="104" y="104" width="14" height="34" fill="#dff1ff" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "place-office": (id) => (
+    <Frame id={id}>
+      <rect x="64" y="54" width="72" height="92" rx="4" fill="#8fcfff" stroke={INK} strokeWidth="3" />
+      <rect x="74" y="66" width="14" height="14" fill="#dff1ff" stroke={INK} strokeWidth="1.5" />
+      <rect x="93" y="66" width="14" height="14" fill="#dff1ff" stroke={INK} strokeWidth="1.5" />
+      <rect x="112" y="66" width="14" height="14" fill="#dff1ff" stroke={INK} strokeWidth="1.5" />
+      <rect x="74" y="88" width="14" height="14" fill="#dff1ff" stroke={INK} strokeWidth="1.5" />
+      <rect x="93" y="88" width="14" height="14" fill="#dff1ff" stroke={INK} strokeWidth="1.5" />
+      <rect x="112" y="88" width="14" height="14" fill="#dff1ff" stroke={INK} strokeWidth="1.5" />
+      <rect x="90" y="118" width="20" height="28" fill="#fff3da" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "place-university": (id) => (
+    <Frame id={id}>
+      <rect x="58" y="90" width="84" height="52" rx="4" fill="#fff3da" stroke={INK} strokeWidth="3" />
+      <rect x="92" y="52" width="16" height="38" fill="#c9ccd6" stroke={INK} strokeWidth="2.5" />
+      <path d="M 92 52 L 100 40 L 108 52 Z" fill="#c9ccd6" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+      <rect x="70" y="102" width="14" height="30" fill="#8fcfff" stroke={INK} strokeWidth="2" />
+      <rect x="116" y="102" width="14" height="30" fill="#8fcfff" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "place-museum": (id) => (
+    <Frame id={id}>
+      <path d="M 56 82 L 100 56 L 144 82 Z" fill="#b07ae0" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="56" y="82" width="88" height="10" fill="#9a63c9" stroke={INK} strokeWidth="2.5" />
+      <rect x="64" y="94" width="10" height="40" fill="#fff3da" stroke={INK} strokeWidth="2.5" />
+      <rect x="86" y="94" width="10" height="40" fill="#fff3da" stroke={INK} strokeWidth="2.5" />
+      <rect x="108" y="94" width="10" height="40" fill="#fff3da" stroke={INK} strokeWidth="2.5" />
+      <rect x="130" y="94" width="10" height="40" fill="#fff3da" stroke={INK} strokeWidth="2.5" />
+      <rect x="56" y="134" width="88" height="8" fill="#9a63c9" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
+  "place-zoo": (id) => (
+    <Frame id={id}>
+      <path d="M 60 70 L 60 140 M 76 70 L 76 140 M 92 70 L 92 140 M 108 70 L 108 140 M 124 70 L 124 140 M 140 70 L 140 140" stroke="#a2704c" strokeWidth="6" strokeLinecap="round" opacity="0.7" />
+      <circle cx="100" cy="106" r="26" fill="#f5924a" stroke={INK} strokeWidth="3" />
+      <circle cx="90" cy="100" r="3" fill={INK} />
+      <circle cx="110" cy="100" r="3" fill={INK} />
+    </Frame>
+  ),
+  "place-aquarium": (id) => (
+    <Frame id={id}>
+      <rect x="58" y="70" width="84" height="72" rx="8" fill="#8fcfff" stroke={INK} strokeWidth="3" />
+      <rect x="70" y="82" width="60" height="48" rx="4" fill="#dff1ff" stroke={INK} strokeWidth="2" />
+      <path d="M 90 106 Q 100 98 110 106 Q 100 114 90 106 Z" fill="#4c8df0" stroke={INK} strokeWidth="1.5" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "place-onsen": (id) => (
+    <Frame id={id}>
+      <ellipse cx="100" cy="122" rx="48" ry="22" fill="#8fcfff" stroke={INK} strokeWidth="3" />
+      <path d="M 78 90 Q 70 76 78 66 M 100 88 Q 92 74 100 64 M 122 90 Q 114 76 122 66" stroke="#c7b6bd" strokeWidth="3.5" fill="none" strokeLinecap="round" opacity="0.55" />
+    </Frame>
+  ),
+  "place-beach": (id) => (
+    <Frame id={id}>
+      <rect x="0" y="128" width="200" height="72" fill="#ffe9a6" />
+      <path d="M 54 128 Q 100 112 146 128" stroke="#8fcfff" strokeWidth="5" fill="none" strokeLinecap="round" />
+      <circle cx="150" cy="60" r="18" fill="#ffcf6b" stroke={INK} strokeWidth="2.5" />
+      <path d="M 100 128 L 100 90 M 100 90 Q 76 92 74 110 Q 100 100 100 90 Q 124 92 126 110 Q 100 100 100 90" fill="#f45c5c" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "place-mountain": (id) => (
+    <Frame id={id}>
+      <path d="M 50 140 L 90 76 L 116 112 L 132 90 L 158 140 Z" fill="#7bcf9e" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 90 76 L 100 92 L 80 92 Z" fill="#ffffff" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+      <path d="M 132 90 L 140 100 L 124 100 Z" fill="#ffffff" stroke={INK} strokeWidth="1.5" strokeLinejoin="round" />
+    </Frame>
+  ),
 };

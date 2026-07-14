@@ -118,4 +118,77 @@ export const hobbiesIcons = {
       <path d="M 100 100 L 90 146 L 110 146 Z" fill="#c08a5e" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
     </Frame>
   ),
+  "hobby-hiking": (id) => (
+    <Frame id={id}>
+      <path d="M 50 140 L 90 76 L 116 112 L 132 90 L 158 140 Z" fill="#7bcf9e" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="60" y="108" width="16" height="22" rx="4" fill="#f5924a" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "hobby-cycling": (id) => (
+    <Frame id={id}>
+      <circle cx="70" cy="120" r="20" fill="none" stroke={INK} strokeWidth="4" />
+      <circle cx="130" cy="120" r="20" fill="none" stroke={INK} strokeWidth="4" />
+      <path d="M 70 120 L 100 86 L 130 120 M 100 86 L 92 120 M 78 98 L 108 98" stroke="#f5924a" strokeWidth="4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "hobby-calligraphy": (id) => (
+    <Frame id={id}>
+      <rect x="60" y="70" width="80" height="70" rx="4" fill="#ffffff" stroke={INK} strokeWidth="3" />
+      <path d="M 78 100 Q 100 84 122 108" stroke="#3a3a3a" strokeWidth="6" fill="none" strokeLinecap="round" />
+      <path d="M 145 55 L 158 68 L 128 98 L 118 100 L 120 90 Z" fill="#5a4a52" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "hobby-knitting": (id) => (
+    <Frame id={id}>
+      <circle cx="90" cy="108" r="28" fill="#ff9ec7" stroke={INK} strokeWidth="3" />
+      <path d="M 76 96 Q 90 108 104 96 M 76 120 Q 90 108 104 120 M 78 108 L 102 108" stroke="#e85d7a" strokeWidth="2.5" fill="none" opacity="0.7" />
+      <line x1="122" y1="70" x2="140" y2="130" stroke="#a2704c" strokeWidth="4" strokeLinecap="round" />
+      <line x1="138" y1="70" x2="156" y2="130" stroke="#a2704c" strokeWidth="4" strokeLinecap="round" />
+    </Frame>
+  ),
+  "hobby-yoga": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="66" r="14" fill="#ffe9d6" stroke={INK} strokeWidth="2.5" />
+      <path d="M 100 80 L 100 108 M 100 84 L 70 100 M 100 84 L 130 100 M 100 108 Q 76 112 72 132 M 100 108 Q 124 112 128 132" stroke="#c9a0f5" strokeWidth="6" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "hobby-chess": (id) => (
+    <Frame id={id}>
+      <path d="M 90 130 L 110 130 L 106 108 L 118 108 L 118 98 L 106 98 L 106 86 L 116 74 L 100 62 L 84 74 L 94 86 L 94 98 L 82 98 L 82 108 L 94 108 Z" fill="#5a4a52" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <rect x="76" y="130" width="48" height="12" rx="3" fill="#5a4a52" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
+  "hobby-manga": (id) => (
+    <Frame id={id}>
+      <path d="M 56 68 L 144 68 L 144 132 L 100 132 L 88 148 L 90 132 L 56 132 Z" fill="#ffffff" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <line x1="70" y1="86" x2="130" y2="86" stroke={INK} strokeWidth="2.5" opacity="0.5" />
+      <line x1="70" y1="102" x2="118" y2="102" stroke={INK} strokeWidth="2.5" opacity="0.5" />
+    </Frame>
+  ),
+  "hobby-piano": (id) => (
+    <Frame id={id}>
+      <rect x="54" y="86" width="92" height="46" rx="4" fill="#2f2b52" stroke={INK} strokeWidth="3" />
+      <rect x="60" y="98" width="80" height="30" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <line x1="72" y1="98" x2="72" y2="128" stroke={INK} strokeWidth="1.5" opacity="0.4" />
+      <line x1="86" y1="98" x2="86" y2="128" stroke={INK} strokeWidth="1.5" opacity="0.4" />
+      <line x1="100" y1="98" x2="100" y2="128" stroke={INK} strokeWidth="1.5" opacity="0.4" />
+      <line x1="114" y1="98" x2="114" y2="128" stroke={INK} strokeWidth="1.5" opacity="0.4" />
+      <line x1="128" y1="98" x2="128" y2="128" stroke={INK} strokeWidth="1.5" opacity="0.4" />
+    </Frame>
+  ),
+  "hobby-guitar": (id) => (
+    <Frame id={id}>
+      <path d="M 84 118 Q 60 112 64 92 Q 68 76 88 80 Q 84 96 92 106 Q 108 118 130 108 Q 138 132 118 144 Q 92 152 84 118 Z" fill="#c9822b" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <line x1="88" y1="80" x2="70" y2="52" stroke="#5a4a52" strokeWidth="6" strokeLinecap="round" />
+      <circle cx="104" cy="128" r="10" fill="#5a4a52" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "hobby-collecting": (id) => (
+    <Frame id={id}>
+      <rect x="56" y="120" width="88" height="10" fill="#a2704c" stroke={INK} strokeWidth="2.5" />
+      <rect x="64" y="82" width="20" height="38" fill="#8fcfff" stroke={INK} strokeWidth="2.5" />
+      <rect x="90" y="94" width="20" height="26" fill="#ff9ec7" stroke={INK} strokeWidth="2.5" />
+      <rect x="116" y="70" width="20" height="50" fill="#f6d34c" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
 };

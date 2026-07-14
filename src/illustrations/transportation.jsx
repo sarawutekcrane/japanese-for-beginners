@@ -122,4 +122,80 @@ export const transportationIcons = {
       <line x1="70" y1="128" x2="130" y2="128" stroke="#f6d34c" strokeWidth="4" opacity="0.7" />
     </Frame>
   ),
+  "transport-ferry": (id) => (
+    <Frame id={id}>
+      <path d="M 52 120 L 148 120 L 134 148 L 66 148 Z" fill="#4c8df0" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="76" y="92" width="48" height="28" rx="4" fill="#dff1ff" stroke={INK} strokeWidth="2.5" />
+      <rect x="88" y="98" width="10" height="10" fill="#8fcfff" stroke={INK} strokeWidth="1.5" />
+      <rect x="102" y="98" width="10" height="10" fill="#8fcfff" stroke={INK} strokeWidth="1.5" />
+    </Frame>
+  ),
+  "transport-truck": (id) => (
+    <Frame id={id}>
+      <rect x="52" y="86" width="70" height="42" rx="4" fill="#f5924a" stroke={INK} strokeWidth="3" />
+      <path d="M 122 100 L 148 100 L 148 128 L 122 128 Z" fill="#dff1ff" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="76" cy="132" r="10" fill="#3a3a3a" />
+      <circle cx="132" cy="132" r="10" fill="#3a3a3a" />
+    </Frame>
+  ),
+  "transport-motorcycle": (id) => (
+    <Frame id={id}>
+      <circle cx="66" cy="126" r="18" fill="none" stroke={INK} strokeWidth="4" />
+      <circle cx="134" cy="126" r="18" fill="none" stroke={INK} strokeWidth="4" />
+      <path d="M 66 126 L 100 108 L 134 126 M 100 108 L 96 88" stroke="#f45c5c" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <ellipse cx="88" cy="100" rx="10" ry="7" fill="#f45c5c" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "transport-helicopter": (id) => (
+    <Frame id={id}>
+      <line x1="56" y1="66" x2="144" y2="66" stroke={INK} strokeWidth="4" strokeLinecap="round" />
+      <ellipse cx="100" cy="100" rx="34" ry="24" fill="#8fcfff" stroke={INK} strokeWidth="3" />
+      <path d="M 134 100 L 156 96 L 156 104 Z" fill="#8fcfff" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+      <line x1="100" y1="76" x2="100" y2="66" stroke={INK} strokeWidth="3" />
+    </Frame>
+  ),
+  "transport-ride": (id) => (
+    <Frame id={id}>
+      <rect x="66" y="90" width="68" height="46" rx="10" fill="#8fcfff" stroke={INK} strokeWidth="3" />
+      <path d="M 100 132 L 100 152 M 88 142 L 100 152 L 112 142" fill="none" stroke={INK} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "transport-getoff": (id) => (
+    <Frame id={id}>
+      <rect x="66" y="60" width="68" height="46" rx="10" fill="#c9ccd6" stroke={INK} strokeWidth="3" />
+      <path d="M 100 106 L 100 146 M 88 126 L 100 146 L 112 126" fill="none" stroke={INK} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" transform="rotate(180 100 126)" />
+      <path d="M 100 108 L 100 148 M 88 118 L 100 108 L 112 118" fill="none" stroke={INK} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "transport-transfer": (id) => (
+    <Frame id={id}>
+      <path d="M 60 90 L 130 90 M 116 78 L 130 90 L 116 102" fill="none" stroke="#4c8df0" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M 140 118 L 70 118 M 84 106 L 70 118 L 84 130" fill="none" stroke="#ff9ec7" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "transport-traffic": (id) => (
+    <Frame id={id}>
+      <path d="M 50 120 Q 54 100 70 100 L 90 100 Q 106 100 110 120 Z" fill="#f45c5c" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M 100 130 Q 104 112 118 112 L 136 112 Q 150 112 154 130 Z" fill="#8fcfff" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="64" cy="124" r="6" fill="#3a3a3a" />
+      <circle cx="96" cy="124" r="6" fill="#3a3a3a" />
+      <circle cx="118" cy="134" r="6" fill="#3a3a3a" />
+      <circle cx="146" cy="134" r="6" fill="#3a3a3a" />
+    </Frame>
+  ),
+  "transport-fare": (id) => (
+    <Frame id={id}>
+      <rect x="52" y="82" width="96" height="44" rx="8" fill="#fff3da" stroke={INK} strokeWidth="3" />
+      <circle cx="52" cy="104" r="6" fill="#ffe3ef" stroke={INK} strokeWidth="2" />
+      <circle cx="148" cy="104" r="6" fill="#ffe3ef" stroke={INK} strokeWidth="2" />
+      <text x="100" y="112" fontSize="20" fontWeight="800" fill="#f5924a" fontFamily="Baloo 2, sans-serif" textAnchor="middle">¥</text>
+    </Frame>
+  ),
+  "transport-seatbelt": (id) => (
+    <Frame id={id}>
+      <rect x="60" y="56" width="80" height="96" rx="10" fill="#ffe9d6" stroke={INK} strokeWidth="3" />
+      <path d="M 68 62 L 132 146" stroke="#5a4a52" strokeWidth="10" strokeLinecap="round" />
+      <rect x="90" y="94" width="20" height="16" rx="3" fill="#c9ccd6" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
 };

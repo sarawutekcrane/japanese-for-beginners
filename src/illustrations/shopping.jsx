@@ -121,4 +121,87 @@ export const shoppingIcons = {
       />
     </Frame>
   ),
+  "shop-cashier": (id) => (
+    <Frame id={id}>
+      <rect x="58" y="82" width="84" height="56" rx="6" fill="#c9ccd6" stroke={INK} strokeWidth="3" />
+      <rect x="70" y="92" width="60" height="24" rx="3" fill="#dff1ff" stroke={INK} strokeWidth="2" />
+      <rect x="86" y="122" width="28" height="10" rx="2" fill="#5a4a52" opacity="0.6" />
+    </Frame>
+  ),
+  "shop-basket": (id) => (
+    <Frame id={id}>
+      <path d="M 64 96 L 136 96 L 128 140 L 72 140 Z" fill="none" stroke="#e0b978" strokeWidth="5" strokeLinejoin="round" />
+      <path d="M 64 96 L 136 96 M 72 112 L 128 112 M 80 128 L 120 128" stroke="#e0b978" strokeWidth="3" opacity="0.7" />
+      <path d="M 80 96 Q 90 74 110 96" fill="none" stroke={INK} strokeWidth="3.5" />
+    </Frame>
+  ),
+  "shop-cart": (id) => (
+    <Frame id={id}>
+      <path d="M 56 66 L 72 66 L 90 118 L 138 118 L 150 84 L 82 84" fill="none" stroke={INK} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="96" cy="136" r="8" fill="#5a4a52" />
+      <circle cx="130" cy="136" r="8" fill="#5a4a52" />
+    </Frame>
+  ),
+  "shop-goods": (id) => (
+    <Frame id={id}>
+      <rect x="58" y="100" width="42" height="38" rx="4" fill="#f6d34c" stroke={INK} strokeWidth="2.5" />
+      <rect x="104" y="90" width="42" height="48" rx="4" fill="#8fcfff" stroke={INK} strokeWidth="2.5" />
+      <line x1="79" y1="100" x2="79" y2="138" stroke={INK} strokeWidth="1.5" opacity="0.4" />
+      <line x1="125" y1="90" x2="125" y2="138" stroke={INK} strokeWidth="1.5" opacity="0.4" />
+    </Frame>
+  ),
+  "shop-stock": (id) => (
+    <Frame id={id}>
+      <rect x="56" y="56" width="88" height="90" rx="4" fill="#c08a5e" stroke={INK} strokeWidth="3" />
+      <line x1="56" y1="86" x2="144" y2="86" stroke={INK} strokeWidth="2.5" />
+      <line x1="56" y1="116" x2="144" y2="116" stroke={INK} strokeWidth="2.5" />
+      <rect x="64" y="64" width="18" height="18" fill="#f6d34c" stroke={INK} strokeWidth="1.5" />
+      <rect x="88" y="64" width="18" height="18" fill="#ff9ec7" stroke={INK} strokeWidth="1.5" />
+      <rect x="112" y="64" width="18" height="18" fill="#8fcfff" stroke={INK} strokeWidth="1.5" />
+    </Frame>
+  ),
+  "shop-counter": (id) => (
+    <Frame id={id}>
+      <rect x="52" y="100" width="96" height="40" rx="6" fill="#8fd3f4" stroke={INK} strokeWidth="3" />
+      <rect x="52" y="92" width="96" height="12" rx="4" fill="#4c8df0" stroke={INK} strokeWidth="2.5" />
+      <circle cx="100" cy="120" r="10" fill="#fff3da" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "shop-point-card": (id) => (
+    <Frame id={id}>
+      <rect x="52" y="76" width="96" height="64" rx="10" fill="#ff9ec7" stroke={INK} strokeWidth="3" />
+      <path d="M78 100 L82 110 L92 110 L84 116 L87 126 L78 120 L69 126 L72 116 L64 110 L74 110 Z" fill="#fff3da" stroke={INK} strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M114 100 L118 110 L128 110 L120 116 L123 126 L114 120 L105 126 L108 116 L100 110 L110 110 Z" fill="#fff3da" stroke={INK} strokeWidth="1.5" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "shop-new-item": (id) => (
+    <Frame id={id}>
+      <path
+        d="M100 54 L110 78 L136 76 L120 96 L136 116 L110 114 L100 138 L90 114 L64 116 L80 96 L64 76 L90 78 Z"
+        fill="#7bcf9e"
+        stroke={INK}
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <text x="100" y="102" fontSize="18" fontWeight="800" fill="#ffffff" fontFamily="Baloo 2, sans-serif" textAnchor="middle">
+        NEW
+      </text>
+    </Frame>
+  ),
+  "shop-order": (id) => (
+    <Frame id={id}>
+      <rect x="62" y="66" width="76" height="88" rx="6" fill="#fff3da" stroke={INK} strokeWidth="3" />
+      <rect x="84" y="58" width="32" height="14" rx="4" fill="#c9ccd6" stroke={INK} strokeWidth="2" />
+      <path d="M 78 100 L 88 110 L 106 90" fill="none" stroke="#5fbf77" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+      <line x1="76" y1="128" x2="124" y2="128" stroke={INK} strokeWidth="2.5" opacity="0.4" />
+    </Frame>
+  ),
+  "shop-delivery": (id) => (
+    <Frame id={id}>
+      <rect x="52" y="90" width="60" height="42" rx="4" fill="#f5924a" stroke={INK} strokeWidth="3" />
+      <path d="M 112 104 L 138 104 L 150 118 L 150 132 L 112 132 Z" fill="#dff1ff" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="78" cy="140" r="9" fill="#3a3a3a" />
+      <circle cx="132" cy="140" r="9" fill="#3a3a3a" />
+    </Frame>
+  ),
 };
