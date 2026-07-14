@@ -1,0 +1,730 @@
+[
+  {
+    "id": "hiragana-seion-a",
+    "char": "あ",
+    "romaji": "a",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-i",
+    "char": "い",
+    "romaji": "i",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-u",
+    "char": "う",
+    "romaji": "u",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-e",
+    "char": "え",
+    "romaji": "e",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-o",
+    "char": "お",
+    "romaji": "o",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ka",
+    "char": "か",
+    "romaji": "ka",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ki",
+    "char": "き",
+    "romaji": "ki",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ku",
+    "char": "く",
+    "romaji": "ku",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ke",
+    "char": "け",
+    "romaji": "ke",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ko",
+    "char": "こ",
+    "romaji": "ko",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-sa",
+    "char": "さ",
+    "romaji": "sa",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-shi",
+    "char": "し",
+    "romaji": "shi",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-su",
+    "char": "す",
+    "romaji": "su",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-se",
+    "char": "せ",
+    "romaji": "se",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-so",
+    "char": "そ",
+    "romaji": "so",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ta",
+    "char": "た",
+    "romaji": "ta",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-chi",
+    "char": "ち",
+    "romaji": "chi",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-tsu",
+    "char": "つ",
+    "romaji": "tsu",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-te",
+    "char": "て",
+    "romaji": "te",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-to",
+    "char": "と",
+    "romaji": "to",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-na",
+    "char": "な",
+    "romaji": "na",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ni",
+    "char": "に",
+    "romaji": "ni",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-nu",
+    "char": "ぬ",
+    "romaji": "nu",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ne",
+    "char": "ね",
+    "romaji": "ne",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-no",
+    "char": "の",
+    "romaji": "no",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ha",
+    "char": "は",
+    "romaji": "ha",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-hi",
+    "char": "ひ",
+    "romaji": "hi",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-fu",
+    "char": "ふ",
+    "romaji": "fu",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-he",
+    "char": "へ",
+    "romaji": "he",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ho",
+    "char": "ほ",
+    "romaji": "ho",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ma",
+    "char": "ま",
+    "romaji": "ma",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-mi",
+    "char": "み",
+    "romaji": "mi",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-mu",
+    "char": "む",
+    "romaji": "mu",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-me",
+    "char": "め",
+    "romaji": "me",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-mo",
+    "char": "も",
+    "romaji": "mo",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ya",
+    "char": "や",
+    "romaji": "ya",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-yu",
+    "char": "ゆ",
+    "romaji": "yu",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-yo",
+    "char": "よ",
+    "romaji": "yo",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ra",
+    "char": "ら",
+    "romaji": "ra",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ri",
+    "char": "り",
+    "romaji": "ri",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ru",
+    "char": "る",
+    "romaji": "ru",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-re",
+    "char": "れ",
+    "romaji": "re",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-ro",
+    "char": "ろ",
+    "romaji": "ro",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-wa",
+    "char": "わ",
+    "romaji": "wa",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-wo",
+    "char": "を",
+    "romaji": "wo",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-seion-n",
+    "char": "ん",
+    "romaji": "n",
+    "script": "hiragana",
+    "group": "seion"
+  },
+  {
+    "id": "hiragana-dakuon-が",
+    "char": "が",
+    "romaji": "ga",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぎ",
+    "char": "ぎ",
+    "romaji": "gi",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぐ",
+    "char": "ぐ",
+    "romaji": "gu",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-げ",
+    "char": "げ",
+    "romaji": "ge",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ご",
+    "char": "ご",
+    "romaji": "go",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ざ",
+    "char": "ざ",
+    "romaji": "za",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-じ",
+    "char": "じ",
+    "romaji": "ji",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ず",
+    "char": "ず",
+    "romaji": "zu",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぜ",
+    "char": "ぜ",
+    "romaji": "ze",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぞ",
+    "char": "ぞ",
+    "romaji": "zo",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-だ",
+    "char": "だ",
+    "romaji": "da",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぢ",
+    "char": "ぢ",
+    "romaji": "ji",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-づ",
+    "char": "づ",
+    "romaji": "zu",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-で",
+    "char": "で",
+    "romaji": "de",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ど",
+    "char": "ど",
+    "romaji": "do",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ば",
+    "char": "ば",
+    "romaji": "ba",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-び",
+    "char": "び",
+    "romaji": "bi",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぶ",
+    "char": "ぶ",
+    "romaji": "bu",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-べ",
+    "char": "べ",
+    "romaji": "be",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぼ",
+    "char": "ぼ",
+    "romaji": "bo",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぱ",
+    "char": "ぱ",
+    "romaji": "pa",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぴ",
+    "char": "ぴ",
+    "romaji": "pi",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぷ",
+    "char": "ぷ",
+    "romaji": "pu",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぺ",
+    "char": "ぺ",
+    "romaji": "pe",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-dakuon-ぽ",
+    "char": "ぽ",
+    "romaji": "po",
+    "script": "hiragana",
+    "group": "dakuon"
+  },
+  {
+    "id": "hiragana-youon-きゃ",
+    "char": "きゃ",
+    "romaji": "kya",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-きゅ",
+    "char": "きゅ",
+    "romaji": "kyu",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-きょ",
+    "char": "きょ",
+    "romaji": "kyo",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-しゃ",
+    "char": "しゃ",
+    "romaji": "sha",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-しゅ",
+    "char": "しゅ",
+    "romaji": "shu",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-しょ",
+    "char": "しょ",
+    "romaji": "sho",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ちゃ",
+    "char": "ちゃ",
+    "romaji": "cha",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ちゅ",
+    "char": "ちゅ",
+    "romaji": "chu",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ちょ",
+    "char": "ちょ",
+    "romaji": "cho",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-にゃ",
+    "char": "にゃ",
+    "romaji": "nya",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-にゅ",
+    "char": "にゅ",
+    "romaji": "nyu",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-にょ",
+    "char": "にょ",
+    "romaji": "nyo",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ひゃ",
+    "char": "ひゃ",
+    "romaji": "hya",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ひゅ",
+    "char": "ひゅ",
+    "romaji": "hyu",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ひょ",
+    "char": "ひょ",
+    "romaji": "hyo",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-みゃ",
+    "char": "みゃ",
+    "romaji": "mya",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-みゅ",
+    "char": "みゅ",
+    "romaji": "myu",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-みょ",
+    "char": "みょ",
+    "romaji": "myo",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-りゃ",
+    "char": "りゃ",
+    "romaji": "rya",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-りゅ",
+    "char": "りゅ",
+    "romaji": "ryu",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-りょ",
+    "char": "りょ",
+    "romaji": "ryo",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ぎゃ",
+    "char": "ぎゃ",
+    "romaji": "gya",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ぎゅ",
+    "char": "ぎゅ",
+    "romaji": "gyu",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ぎょ",
+    "char": "ぎょ",
+    "romaji": "gyo",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-じゃ",
+    "char": "じゃ",
+    "romaji": "ja",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-じゅ",
+    "char": "じゅ",
+    "romaji": "ju",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-じょ",
+    "char": "じょ",
+    "romaji": "jo",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-びゃ",
+    "char": "びゃ",
+    "romaji": "bya",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-びゅ",
+    "char": "びゅ",
+    "romaji": "byu",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-びょ",
+    "char": "びょ",
+    "romaji": "byo",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ぴゃ",
+    "char": "ぴゃ",
+    "romaji": "pya",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ぴゅ",
+    "char": "ぴゅ",
+    "romaji": "pyu",
+    "script": "hiragana",
+    "group": "youon"
+  },
+  {
+    "id": "hiragana-youon-ぴょ",
+    "char": "ぴょ",
+    "romaji": "pyo",
+    "script": "hiragana",
+    "group": "youon"
+  }
+]
