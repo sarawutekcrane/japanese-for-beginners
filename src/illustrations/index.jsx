@@ -4,6 +4,10 @@ import { animalIcons } from "./animals";
 import { familyIcons } from "./family";
 import { bodyPartsIcons } from "./bodyParts";
 import { placesIcons } from "./places";
+import { timeDaysIcons } from "./timeDays";
+import { householdIcons } from "./household";
+import { workIcons } from "./work";
+import { transportationIcons } from "./transportation";
 import NumberIllustration from "./NumberIllustration";
 import ColorIllustration from "./ColorIllustration";
 import KanaIllustration from "./KanaIllustration";
@@ -15,6 +19,10 @@ const VOCAB_ICONS = {
   ...familyIcons,
   ...bodyPartsIcons,
   ...placesIcons,
+  ...timeDaysIcons,
+  ...householdIcons,
+  ...workIcons,
+  ...transportationIcons,
 };
 
 /** Renders the correct flat-SVG illustration for a vocabulary or kana card. */

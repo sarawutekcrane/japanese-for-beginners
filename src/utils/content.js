@@ -21,6 +21,10 @@ export const VOCAB_CATEGORIES = [
   { id: "family", label: "ครอบครัว", emoji: "👪" },
   { id: "bodyParts", label: "ส่วนต่างๆ ของร่างกาย", emoji: "✋" },
   { id: "places", label: "สถานที่", emoji: "🏫" },
+  { id: "timeDays", label: "เวลาและวัน", emoji: "🕐" },
+  { id: "household", label: "ของใช้ในบ้าน", emoji: "🛋️" },
+  { id: "work", label: "งานและอาชีพ", emoji: "💼" },
+  { id: "transportation", label: "การเดินทาง", emoji: "🚃" },
 ];
 
 export function getKana(script) {

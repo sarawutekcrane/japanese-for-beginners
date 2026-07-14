@@ -374,5 +374,99 @@
         ]
       }
     ]
+  },
+  {
+    "id": "hospital",
+    "title": "びょういんで",
+    "emoji": "🏥",
+    "nodes": [
+      {
+        "system": { "japanese": "どうしましたか。", "romaji": "Dou shimashita ka.", "thai": "เป็นอะไรมาคะ?" },
+        "options": [
+          { "japanese": "おなかが いたいです。", "romaji": "Onaka ga itai desu.", "thai": "ปวดท้องครับ" },
+          { "japanese": "あたまが いたいです。", "romaji": "Atama ga itai desu.", "thai": "ปวดหัวครับ" },
+          { "japanese": "ねつが あります。", "romaji": "Netsu ga arimasu.", "thai": "มีไข้ครับ" }
+        ]
+      },
+      {
+        "system": { "japanese": "いつから ぐあいが わるいですか。", "romaji": "Itsu kara guai ga warui desu ka.", "thai": "เป็นแบบนี้ตั้งแต่เมื่อไหร่คะ?" },
+        "options": [
+          { "japanese": "きのうからです。", "romaji": "Kinou kara desu.", "thai": "ตั้งแต่เมื่อวานครับ" },
+          { "japanese": "けさからです。", "romaji": "Kesa kara desu.", "thai": "ตั้งแต่เช้านี้ครับ" },
+          { "japanese": "みっかまえからです。", "romaji": "Mikka mae kara desu.", "thai": "ตั้งแต่สามวันก่อนครับ" }
+        ]
+      },
+      {
+        "system": { "japanese": "くすりの アレルギーは ありますか。", "romaji": "Kusuri no arerugii wa arimasu ka.", "thai": "แพ้ยาไหมคะ?" },
+        "options": [
+          { "japanese": "いいえ、ありません。", "romaji": "Iie, arimasen.", "thai": "ไม่แพ้ครับ" },
+          { "japanese": "はい、あります。", "romaji": "Hai, arimasu.", "thai": "แพ้ครับ" },
+          { "japanese": "わかりません。", "romaji": "Wakarimasen.", "thai": "ไม่แน่ใจครับ" }
+        ]
+      },
+      {
+        "system": { "japanese": "では、くすりを だしますね。いちにち さんかい のんでください。", "romaji": "Dewa, kusuri wo dashimasu ne. Ichinichi sankai nonde kudasai.", "thai": "งั้นจะให้ยานะคะ กินวันละ 3 ครั้งค่ะ" },
+        "options": [
+          { "japanese": "わかりました。ありがとうございます。", "romaji": "Wakarimashita. Arigatou gozaimasu.", "thai": "เข้าใจแล้วครับ ขอบคุณครับ" },
+          { "japanese": "しょくごに のみますか。", "romaji": "Shokugo ni nomimasu ka.", "thai": "กินหลังอาหารใช่ไหมครับ?" },
+          { "japanese": "なんかいぐらいで なおりますか。", "romaji": "Nankai gurai de naorimasu ka.", "thai": "ต้องกินกี่ครั้งถึงจะหายครับ?" }
+        ]
+      },
+      {
+        "system": { "japanese": "おだいじに。", "romaji": "Odaiji ni.", "thai": "ดูแลสุขภาพด้วยนะคะ" },
+        "options": [
+          { "japanese": "ありがとうございます。", "romaji": "Arigatou gozaimasu.", "thai": "ขอบคุณครับ" },
+          { "japanese": "しつれいします。", "romaji": "Shitsurei shimasu.", "thai": "ขอตัวก่อนนะครับ" },
+          { "japanese": "また きます。", "romaji": "Mata kimasu.", "thai": "จะมาอีกนะครับ" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bank",
+    "title": "ぎんこうで",
+    "emoji": "🏦",
+    "nodes": [
+      {
+        "system": { "japanese": "いらっしゃいませ。きょうは どうしましたか。", "romaji": "Irasshaimase. Kyou wa dou shimashita ka.", "thai": "ยินดีต้อนรับค่ะ วันนี้มาทำธุระอะไรคะ?" },
+        "options": [
+          { "japanese": "おかねを おろしたいです。", "romaji": "Okane wo oroshitai desu.", "thai": "อยากถอนเงินครับ" },
+          { "japanese": "おかねを あずけたいです。", "romaji": "Okane wo azuketai desu.", "thai": "อยากฝากเงินครับ" },
+          { "japanese": "こうざを つくりたいです。", "romaji": "Kouza wo tsukuritai desu.", "thai": "อยากเปิดบัญชีครับ" }
+        ]
+      },
+      {
+        "system": { "japanese": "つうちょうと みぶんしょうを おねがいします。", "romaji": "Tsuuchou to mibunshou wo onegaishimasu.", "thai": "ขอสมุดบัญชีกับบัตรประชาชนด้วยค่ะ" },
+        "options": [
+          { "japanese": "はい、どうぞ。", "romaji": "Hai, douzo.", "thai": "ครับ เชิญเลยครับ" },
+          { "japanese": "すみません、わすれました。", "romaji": "Sumimasen, wasuremashita.", "thai": "ขอโทษครับ ลืมเอามาครับ" },
+          { "japanese": "パスポートでも いいですか。", "romaji": "Pasupooto demo ii desu ka.", "thai": "ใช้พาสปอร์ตได้ไหมครับ?" }
+        ]
+      },
+      {
+        "system": { "japanese": "ATMの つかいかたが わかりますか。", "romaji": "Eetiiemu no tsukaikata ga wakarimasu ka.", "thai": "ใช้ตู้เอทีเอ็มเป็นไหมคะ?" },
+        "options": [
+          { "japanese": "いいえ、おしえてください。", "romaji": "Iie, oshiete kudasai.", "thai": "ไม่เป็นครับ ช่วยสอนหน่อยครับ" },
+          { "japanese": "はい、だいじょうぶです。", "romaji": "Hai, daijoubu desu.", "thai": "ครับ ใช้เป็นครับ" },
+          { "japanese": "すこし わかります。", "romaji": "Sukoshi wakarimasu.", "thai": "พอเข้าใจนิดหน่อยครับ" }
+        ]
+      },
+      {
+        "system": { "japanese": "きょうの レートは いくらですか。", "romaji": "Kyou no reeto wa ikura desu ka.", "thai": "เรตวันนี้เท่าไหร่คะ?" },
+        "options": [
+          { "japanese": "いちどる ひゃくえんです。", "romaji": "Ichi doru hyaku en desu.", "thai": "1 ดอลลาร์เท่ากับ 100 เยนครับ" },
+          { "japanese": "あんないを みてください。", "romaji": "Annai wo mite kudasai.", "thai": "ลองดูป้ายประกาศนะคะ" },
+          { "japanese": "まどぐちで きいてください。", "romaji": "Madoguchi de kiite kudasai.", "thai": "ลองถามที่เคาน์เตอร์นะคะ" }
+        ]
+      },
+      {
+        "system": { "japanese": "てつづきが おわりました。ありがとうございました。", "romaji": "Tetsuzuki ga owarimashita. Arigatou gozaimashita.", "thai": "ทำธุระเสร็จเรียบร้อยแล้วค่ะ ขอบคุณค่ะ" },
+        "options": [
+          { "japanese": "ありがとうございました。", "romaji": "Arigatou gozaimashita.", "thai": "ขอบคุณครับ" },
+          { "japanese": "おせわに なりました。", "romaji": "Osewa ni narimashita.", "thai": "ขอบคุณที่ช่วยเหลือครับ" },
+          { "japanese": "しつれいします。", "romaji": "Shitsurei shimasu.", "thai": "ขอตัวก่อนนะครับ" }
+        ]
+      }
+    ]
   }
 ]
