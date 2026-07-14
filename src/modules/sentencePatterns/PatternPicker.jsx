@@ -1,7 +1,6 @@
 import patterns from "../../data/sentencePatterns.json";
 
-const basicPatterns = patterns.filter((p) => p.level === "basic").sort((a, b) => a.order - b.order);
-const intermediatePatterns = patterns.filter((p) => p.level === "intermediate").sort((a, b) => a.order - b.order);
+const orderedPatterns = [...patterns].sort((a, b) => a.order - b.order);
 
 function PatternButton({ pattern, onPick }) {
   return (
@@ -20,18 +19,9 @@ export default function PatternPicker({ onPick, onBack }) {
       </button>
 
       <section className="picker-section">
-        <h3 className="picker-heading">🌱 ระดับพื้นฐาน (Basic)</h3>
+        <h3 className="picker-heading">📐 แพทเทิร์นประโยค</h3>
         <div className="pattern-list">
-          {basicPatterns.map((p) => (
-            <PatternButton key={p.id} pattern={p} onPick={onPick} />
-          ))}
-        </div>
-      </section>
-
-      <section className="picker-section">
-        <h3 className="picker-heading">🌿 ระดับกลาง (Intermediate)</h3>
-        <div className="pattern-list">
-          {intermediatePatterns.map((p) => (
+          {orderedPatterns.map((p) => (
             <PatternButton key={p.id} pattern={p} onPick={onPick} />
           ))}
         </div>

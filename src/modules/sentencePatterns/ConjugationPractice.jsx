@@ -2,21 +2,19 @@ import { useEffect, useMemo, useState } from "react";
 import Mascot from "../../components/Mascot";
 import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
-import { getConjugationQuestions, groupLabel } from "../../utils/grammar";
+import { getAllConjugationQuestions, groupLabel } from "../../utils/grammar";
 import { shuffle as shuffleArr } from "../../utils/content";
 
-export default function ConjugationPractice({ pattern, onLesson }) {
+const BASE_QUESTIONS = getAllConjugationQuestions();
+
+export default function ConjugationPractice({ onBack }) {
   const { speak } = useSpeak();
   const [shuffleOn, setShuffleOn] = useState(false);
   const [showThai, setShowThai] = useState(false);
   const [showRomaji, setShowRomaji] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
 
-  const baseQuestions = useMemo(() => getConjugationQuestions(pattern), [pattern]);
-  const questions = useMemo(
-    () => (shuffleOn ? shuffleArr(baseQuestions) : baseQuestions),
-    [baseQuestions, shuffleOn]
-  );
+  const questions = useMemo(() => (shuffleOn ? shuffleArr(BASE_QUESTIONS) : BASE_QUESTIONS), [shuffleOn]);
 
   const [index, setIndex] = useState(0);
   const question = questions[index % questions.length];
@@ -44,8 +42,8 @@ export default function ConjugationPractice({ pattern, onLesson }) {
   return (
     <div className="practice-view">
       <div className="practice-topbar">
-        <button className="btn btn-outline blue btn-sm" onClick={onLesson}>
-          🈺 กลับไปวิธีผันกริยา
+        <button className="btn btn-outline blue btn-sm" onClick={onBack}>
+          ← กลับ
         </button>
         <p className="progress-label">
           {(index % questions.length) + 1} / {questions.length} · คะแนน {score.correct}/{score.total}
@@ -70,7 +68,7 @@ export default function ConjugationPractice({ pattern, onLesson }) {
         </div>
 
         <p className="th-text conjugation-instruction">
-          จงผัน <span className="jp-text">{question.verb.dict}</span> เป็นรูป <span className="jp-text">{pattern.formLabel}</span>
+          จงผัน <span className="jp-text">{question.verb.dict}</span> เป็นรูป <span className="jp-text">{question.formLabel}</span>
         </p>
 
         <div className="quiz-options">
@@ -88,12 +86,13 @@ export default function ConjugationPractice({ pattern, onLesson }) {
           })}
         </div>
 
+        {showRomaji && <p className="flashcard-romaji">{question.correctRomaji}</p>}
+
         {answered && (
           <>
             <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
               {isCorrect ? "ถูกต้อง! เก่งมาก 🎉" : "ยังไม่ถูก ลองอ่านคำอธิบายด้านล่าง 💪"}
             </p>
-            {showRomaji && <p className="flashcard-romaji">{question.correctRomaji}</p>}
             <p className="explanation-box th-text">💡 {question.explanation}</p>
             <button className="btn btn-success btn-sm" onClick={next}>
               ข้อถัดไป →

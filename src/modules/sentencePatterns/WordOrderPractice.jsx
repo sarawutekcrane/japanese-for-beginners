@@ -8,10 +8,9 @@ function makeItems(chunks) {
   return shuffleArr(chunks.map((text, i) => ({ key: `${i}-${text}`, text })));
 }
 
-export default function WordOrderPractice({ pattern, onLesson }) {
+export default function WordOrderPractice({ pattern, onBack }) {
   const { speak } = useSpeak();
   const [shuffleOn, setShuffleOn] = useState(false);
-  const [showThai, setShowThai] = useState(false);
   const [showRomaji, setShowRomaji] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
 
@@ -63,9 +62,12 @@ export default function WordOrderPractice({ pattern, onLesson }) {
   return (
     <div className="practice-view">
       <div className="practice-topbar">
-        <button className="btn btn-outline btn-sm" onClick={onLesson}>
-          📖 กลับไปบทเรียน
+        <button className="btn btn-outline btn-sm" onClick={onBack}>
+          ← เปลี่ยนแพทเทิร์น
         </button>
+        <h3 className="pattern-detail-title">
+          {pattern.order}. {pattern.title}
+        </h3>
         <p className="progress-label">
           {(index % questions.length) + 1} / {questions.length} · คะแนน {score.correct}/{score.total}
         </p>
@@ -73,7 +75,6 @@ export default function WordOrderPractice({ pattern, onLesson }) {
 
       <div className="toggle-group">
         <Toggle emoji="🔀" label="สุ่มลำดับคำถาม" checked={shuffleOn} onChange={setShuffleOn} />
-        <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
         <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
@@ -81,10 +82,9 @@ export default function WordOrderPractice({ pattern, onLesson }) {
         <Mascot mood={!submitted ? "neutral" : isCorrect ? "excited" : "sad"} size={80} />
         <p className="th-text word-order-prompt">{question.promptThai}</p>
 
-        {(showRomaji || showThai) && (
+        {showRomaji && (
           <div className="word-order-hint">
-            {showRomaji && <p className="flashcard-romaji">{question.romaji}</p>}
-            {showThai && <p className="th-text flashcard-thai">{question.thai}</p>}
+            <p className="flashcard-romaji">{question.romaji}</p>
           </div>
         )}
 

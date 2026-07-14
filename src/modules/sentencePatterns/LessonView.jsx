@@ -1,10 +1,18 @@
 import { useSpeak } from "../../hooks/useSpeech";
 
-export default function LessonView({ pattern, onStartPractice }) {
+export default function LessonView({ pattern, onBack }) {
   const { speak } = useSpeak();
 
   return (
     <div className="lesson-view">
+      <button className="btn btn-outline btn-sm" onClick={onBack}>
+        ← เปลี่ยนแพทเทิร์น
+      </button>
+
+      <h3 className="pattern-detail-title">
+        {pattern.order}. {pattern.title}
+      </h3>
+
       <div className="lesson-card">
         <h3 className="lesson-heading">📐 โครงสร้างประโยค</h3>
         <p className="lesson-structure jp-text">{pattern.structure}</p>
@@ -37,10 +45,6 @@ export default function LessonView({ pattern, onStartPractice }) {
           ))}
         </div>
       </div>
-
-      <button className="btn btn-success" onClick={onStartPractice}>
-        ถัดไป: วิธีผันกริยา →
-      </button>
     </div>
   );
 }

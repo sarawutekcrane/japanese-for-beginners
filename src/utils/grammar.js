@@ -1,4 +1,5 @@
 import verbs from "../data/verbs.json";
+import patterns from "../data/sentencePatterns.json";
 import { shuffle } from "./content";
 
 export const CONJUGATION_FIELDS = ["masu", "masen", "mashita", "masendeshita", "te", "tai"];
@@ -50,6 +51,7 @@ export function buildConjugationQuestion(verb, pattern) {
   return {
     id: `${pattern.id}-${verb.id}`,
     verb,
+    formLabel: pattern.formLabel,
     correct,
     correctRomaji,
     options,
@@ -62,18 +64,34 @@ export function getConjugationQuestions(pattern) {
   return verbs.map((v) => buildConjugationQuestion(v, pattern));
 }
 
-/** One representative worked example per verb group (1/2/3) for the pattern's target form. */
-export function getGroupExamples(pattern) {
-  const suffix = pattern.conjugationSuffix || "";
+/** Combined pool: every verb x every sentence pattern's target form (used by practice mode). */
+export function getAllConjugationQuestions() {
+  return patterns.flatMap((pattern) => verbs.map((v) => buildConjugationQuestion(v, pattern)));
+}
+
+/** One representative worked example per verb group (1/2/3) for a { conjugationField, conjugationSuffix } shape. */
+export function getGroupExamples(formSpec) {
+  const suffix = formSpec.conjugationSuffix || "";
   return [1, 2, 3]
     .map((group) => verbs.find((v) => v.group === group))
     .filter(Boolean)
     .map((verb) => ({
       group: verb.group,
       verb,
-      conjugated: verb[pattern.conjugationField] + suffix,
-      explanation: explanationFor(verb, pattern.conjugationField),
+      conjugated: verb[formSpec.conjugationField] + suffix,
+      explanation: explanationFor(verb, formSpec.conjugationField),
     }));
+}
+
+/** Several worked examples per verb group for a given conjugation field (used by the conjugation lesson topics). */
+export function getGroupExamplesList(field, count = 4) {
+  return [1, 2, 3].map((group) => ({
+    group,
+    items: verbs
+      .filter((v) => v.group === group)
+      .slice(0, count)
+      .map((v) => ({ verb: v, conjugated: v[field], explanation: explanationFor(v, field) })),
+  }));
 }
 
 const TE_RULE_ORDER = ["u-tsu-ru", "mu-bu-nu", "ku", "gu", "su", "exception-iku"];
