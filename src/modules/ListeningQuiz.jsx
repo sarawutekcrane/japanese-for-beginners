@@ -64,6 +64,12 @@ function QuizView({ selection, shuffleOn, onBack }) {
   const isCorrect = selectedId === question.answer.id;
   const answered = selectedId !== null;
 
+  // Auto-reveal the Thai translation and Japanese reading on a correct
+  // answer, as if the toggles below were switched on.
+  const effectiveShowThai = showThai || (answered && isCorrect);
+  const effectiveShowRomaji = showRomaji || (answered && isCorrect);
+  const effectiveRevealed = revealed || (answered && isCorrect);
+
   const play = (rate) => speak(question.answer.audioText, { rate: rate ?? (question.answer.kind === "kana" ? 0.75 : 0.85) });
 
   const choose = (opt) => {
@@ -107,8 +113,8 @@ function QuizView({ selection, shuffleOn, onBack }) {
             return (
               <button key={opt.id} className={cls} onClick={() => choose(opt)} disabled={answered}>
                 <span className="jp-text">{opt.display}</span>
-                {showRomaji && <span className="quiz-option-hint">{opt.romaji}</span>}
-                {showThai && <span className="quiz-option-hint th-text">{opt.thai}</span>}
+                {effectiveShowRomaji && <span className="quiz-option-hint">{opt.romaji}</span>}
+                {effectiveShowThai && <span className="quiz-option-hint th-text">{opt.thai}</span>}
               </button>
             );
           })}
@@ -125,7 +131,7 @@ function QuizView({ selection, shuffleOn, onBack }) {
           </p>
         )}
 
-        {revealed && (
+        {effectiveRevealed && (
           <p className="quiz-reveal jp-text">
             เฉลย: {question.answer.display}
             {question.answer.romaji ? ` (${question.answer.romaji})` : ""}
