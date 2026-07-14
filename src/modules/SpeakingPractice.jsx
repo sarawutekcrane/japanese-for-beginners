@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Mascot from "../components/Mascot";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
-import { useSpeak, useSpeechRecognition, matchesJapanese, isKanaOnly } from "../hooks/useSpeech";
+import { useSpeak, useSpeechRecognition, matchesJapanese, isKanaOnly, kanjiToKana } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
+
+const NUMERIC_ONLY = /^\d+$/;
 
 function CategoryPicker({ shuffleOn, onShuffleChange, onPick }) {
   return (
@@ -44,6 +46,17 @@ function SpeakingView({ category, shuffleOn, onBack }) {
 
   const card = cards[index];
 
+  // Chrome's speech recognition transcribes spoken number words (e.g. "ろく")
+  // as bare Arabic numerals (e.g. "6"). This maps each number card's value
+  // back to its kana reading, for both matching and display.
+  const numberKanaMap = useMemo(() => {
+    const map = {};
+    for (const c of cards) {
+      if (c.value != null) map[c.value] = c.reading || c.answerText;
+    }
+    return map;
+  }, [cards]);
+
   const hearExample = () => speak(card.audioText, { rate: 0.85 });
 
   const record = () => {
@@ -51,13 +64,26 @@ function SpeakingView({ category, shuffleOn, onBack }) {
     setHeard("");
     start({
       onResult: (transcript, alternatives = [transcript]) => {
+        const numericAlt = alternatives.find((alt) => NUMERIC_ONLY.test(alt.trim()));
+        const numericValue = numericAlt != null ? parseInt(numericAlt, 10) : null;
+
         // Prefer showing a kana-only alternative (Chrome often returns kanji
         // for common words even though this app only teaches kana readings).
-        const displayText = alternatives.find(isKanaOnly) || transcript;
+        // Convert a recognized digit or kanji spelling back to kana so the
+        // displayed text is always Japanese, never a raw number or kanji.
+        let displayText;
+        if (numericValue != null && numberKanaMap[numericValue]) {
+          displayText = numberKanaMap[numericValue];
+        } else {
+          const kanaAlt = alternatives.find((alt) => isKanaOnly(alt) && !NUMERIC_ONLY.test(alt.trim()));
+          displayText = kanjiToKana(kanaAlt || transcript);
+        }
         setHeard(displayText);
-        const ok = alternatives.some(
-          (alt) => matchesJapanese(alt, card.answerText) || matchesJapanese(alt, card.reading || "")
-        );
+
+        const ok =
+          alternatives.some(
+            (alt) => matchesJapanese(alt, card.answerText) || matchesJapanese(alt, card.reading || "")
+          ) || (card.value != null && numericValue === card.value);
         setStatus(ok ? STATUS.match : STATUS.nomatch);
       },
       onError: () => setStatus(STATUS.error),

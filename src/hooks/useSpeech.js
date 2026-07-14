@@ -75,6 +75,18 @@ export function isKanaOnly(str = "") {
   return !KANJI_RANGE.test(str);
 }
 
+const KANJI_TO_KANA = {};
+for (const [kana, kanjiList] of Object.entries(KANA_ALT_SPELLINGS)) {
+  for (const kanji of kanjiList) {
+    if (!(kanji in KANJI_TO_KANA)) KANJI_TO_KANA[kanji] = kana;
+  }
+}
+
+/** Converts a known kanji spelling back to its hiragana reading, for display purposes. */
+export function kanjiToKana(str = "") {
+  return KANJI_TO_KANA[str.trim()] || str;
+}
+
 /** Rough match: compares a recognized transcript against the target Japanese text. */
 export function matchesJapanese(transcript, target) {
   const a = normalizeJa(transcript);
