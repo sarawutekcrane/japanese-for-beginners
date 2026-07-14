@@ -4,12 +4,14 @@ import Flashcards from "./modules/Flashcards";
 import ListeningQuiz from "./modules/ListeningQuiz";
 import SpeakingPractice from "./modules/SpeakingPractice";
 import ConversationPractice from "./modules/ConversationPractice";
+import SentencePatterns from "./modules/SentencePatterns";
 
 const TITLES = {
   flashcards: "แฟลชการ์ด",
   listening: "แบบทดสอบฟัง",
   speaking: "ฝึกพูด",
   conversation: "ฝึกสนทนา",
+  sentencePatterns: "แพทเทิร์นประโยค",
 };
 
 function App() {
@@ -42,6 +44,7 @@ function App() {
           {view === "listening" && <ListeningQuiz key={instanceKey} />}
           {view === "speaking" && <SpeakingPractice key={instanceKey} />}
           {view === "conversation" && <ConversationPractice key={instanceKey} />}
+          {view === "sentencePatterns" && <SentencePatterns key={instanceKey} />}
         </>
       )}
     </div>

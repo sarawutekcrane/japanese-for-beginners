@@ -29,6 +29,13 @@ const MODULES = [
     subtitle: "บทสนทนาสถานการณ์จริง",
     color: "blue",
   },
+  {
+    id: "sentencePatterns",
+    emoji: "🧩",
+    title: "แพทเทิร์นประโยค",
+    subtitle: "โครงสร้างประโยค & ผันกริยา",
+    color: "pink",
+  },
 ];
 
 export default function HomeMenu({ onSelect }) {

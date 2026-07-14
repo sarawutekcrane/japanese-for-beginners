@@ -1,0 +1,1092 @@
+[
+  {
+    "id": "affirmative",
+    "order": 1,
+    "level": "basic",
+    "title": "ประโยคบอกเล่า (ます)",
+    "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ます",
+    "particles": [
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค (topic marker) - บอกว่ากำลังพูดถึงใคร/อะไร"
+      },
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง (direct object marker) - บอกสิ่งที่ถูกกระทำ"
+      },
+      {
+        "particle": "へ",
+        "role": "ตัวบ่งชี้ทิศทาง/จุดหมายปลายทาง (ใช้กับกริยาการเคลื่อนที่ เช่น いく)"
+      }
+    ],
+    "timeNote": "รูป ます เป็นรูป non-past ใช้ได้ทั้งปัจจุบันและอนาคต ความหมายที่แท้จริงขึ้นอยู่กับคำบอกเวลาในประโยค เช่น いま (ตอนนี้) = ปัจจุบัน, あした (พรุ่งนี้) = อนาคต ถ้าไม่มีคำบอกเวลาเลยมักหมายถึงเหตุการณ์ที่ทำเป็นประจำ",
+    "conjugationField": "masu",
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "わたしは ごはんを たべます。",
+        "romaji": "Watashi wa gohan wo tabemasu.",
+        "thai": "ฉันกินข้าว"
+      },
+      {
+        "japanese": "あした がっこうへ いきます。",
+        "romaji": "Ashita gakkou e ikimasu.",
+        "thai": "พรุ่งนี้ฉันจะไปโรงเรียน"
+      },
+      {
+        "japanese": "いま コーヒーを のみます。",
+        "romaji": "Ima koohii wo nomimasu.",
+        "thai": "ตอนนี้ฉันดื่มกาแฟ"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "affirmative-1",
+        "promptThai": "พูดว่า: ฉันดื่มน้ำ",
+        "chunks": [
+          "のみます",
+          "みずを",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "みずを",
+          "のみます"
+        ],
+        "romaji": "Watashi wa mizu wo nomimasu.",
+        "thai": "ฉันดื่มน้ำ",
+        "explanation": "โครงสร้างพื้นฐาน: หัวข้อ+は ตามด้วยกรรม+を แล้วจบด้วยกริยารูป ます"
+      },
+      {
+        "id": "affirmative-2",
+        "promptThai": "พูดว่า: พรุ่งนี้ฉันจะอ่านหนังสือ",
+        "chunks": [
+          "あした",
+          "ほんを",
+          "よみます",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "あした",
+          "ほんを",
+          "よみます"
+        ],
+        "romaji": "Watashi wa ashita hon wo yomimasu.",
+        "thai": "พรุ่งนี้ฉันจะอ่านหนังสือ",
+        "explanation": "คำบอกเวลาอย่าง あした มักวางไว้หลังหัวข้อ (は) และก่อนกรรม เพื่อบอกว่าเหตุการณ์นี้จะเกิดขึ้นเมื่อไร"
+      },
+      {
+        "id": "affirmative-3",
+        "promptThai": "พูดว่า: เขาไปโรงเรียน",
+        "chunks": [
+          "がっこうへ",
+          "かれは",
+          "いきます"
+        ],
+        "correctOrder": [
+          "かれは",
+          "がっこうへ",
+          "いきます"
+        ],
+        "romaji": "Kare wa gakkou e ikimasu.",
+        "thai": "เขาไปโรงเรียน",
+        "explanation": "へ ใช้บอกทิศทาง/จุดหมายปลายทางที่จะไป วางไว้ก่อนกริยาเสมอ"
+      },
+      {
+        "id": "affirmative-4",
+        "promptThai": "พูดว่า: ตอนนี้ฉันดูโทรทัศน์",
+        "chunks": [
+          "いま",
+          "わたしは",
+          "テレビを",
+          "みます"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "いま",
+          "テレビを",
+          "みます"
+        ],
+        "romaji": "Watashi wa ima terebi wo mimasu.",
+        "thai": "ตอนนี้ฉันดูโทรทัศน์",
+        "explanation": "いま (ตอนนี้) วางหลังหัวข้อเพื่อเน้นว่าเหตุการณ์นี้เกิดขึ้น ณ ปัจจุบัน"
+      }
+    ],
+    "formLabel": "ます",
+    "conjugationSuffixRomaji": ""
+  },
+  {
+    "id": "negative",
+    "order": 2,
+    "level": "basic",
+    "title": "ประโยคปฏิเสธ (ません)",
+    "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ません",
+    "particles": [
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค"
+      },
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      }
+    ],
+    "timeNote": "ません เป็นรูปปฏิเสธของ ます ใช้ปฏิเสธเหตุการณ์ปัจจุบัน/อนาคตเช่นเดียวกับ ます โครงสร้างส่วนอื่นของประโยคไม่เปลี่ยนแปลง",
+    "conjugationField": "masen",
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "わたしは ごはんを たべません。",
+        "romaji": "Watashi wa gohan wo tabemasen.",
+        "thai": "ฉันไม่กินข้าว"
+      },
+      {
+        "japanese": "かのじょは がっこうへ いきません。",
+        "romaji": "Kanojo wa gakkou e ikimasen.",
+        "thai": "เธอไม่ไปโรงเรียน"
+      },
+      {
+        "japanese": "あした わたしは テレビを みません。",
+        "romaji": "Ashita watashi wa terebi wo mimasen.",
+        "thai": "พรุ่งนี้ฉันจะไม่ดูโทรทัศน์"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "negative-1",
+        "promptThai": "พูดว่า: ฉันไม่ดื่มกาแฟ",
+        "chunks": [
+          "のみません",
+          "わたしは",
+          "コーヒーを"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "コーヒーを",
+          "のみません"
+        ],
+        "romaji": "Watashi wa koohii wo nomimasen.",
+        "thai": "ฉันไม่ดื่มกาแฟ",
+        "explanation": "เปลี่ยน ます เป็น ません เพื่อทำเป็นประโยคปฏิเสธ โครงสร้างส่วนอื่นเหมือนเดิม"
+      },
+      {
+        "id": "negative-2",
+        "promptThai": "พูดว่า: คืนนี้ฉันจะไม่อ่านหนังสือ",
+        "chunks": [
+          "こんばん",
+          "ほんを",
+          "わたしは",
+          "よみません"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "こんばん",
+          "ほんを",
+          "よみません"
+        ],
+        "romaji": "Watashi wa konban hon wo yomimasen.",
+        "thai": "คืนนี้ฉันจะไม่อ่านหนังสือ",
+        "explanation": "คำบอกเวลาวางตำแหน่งเดียวกับประโยคบอกเล่า แม้จะเปลี่ยนกริยาเป็นปฏิเสธ"
+      },
+      {
+        "id": "negative-3",
+        "promptThai": "พูดว่า: เขาไม่ไปสวนสาธารณะ",
+        "chunks": [
+          "こうえんへ",
+          "いきません",
+          "かれは"
+        ],
+        "correctOrder": [
+          "かれは",
+          "こうえんへ",
+          "いきません"
+        ],
+        "romaji": "Kare wa kouen e ikimasen.",
+        "thai": "เขาไม่ไปสวนสาธารณะ",
+        "explanation": "へ ยังคงใช้บอกทิศทางเหมือนเดิมแม้เป็นประโยคปฏิเสธ"
+      },
+      {
+        "id": "negative-4",
+        "promptThai": "พูดว่า: ฉันไม่ซื้อหนังสือ",
+        "chunks": [
+          "ほんを",
+          "かいません",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ほんを",
+          "かいません"
+        ],
+        "romaji": "Watashi wa hon wo kaimasen.",
+        "thai": "ฉันไม่ซื้อหนังสือ",
+        "explanation": "かう เป็นกริยากลุ่ม 1 (godan) ปฏิเสธด้วยการเปลี่ยนเสียงท้ายเป็น い แล้วเติม ません"
+      }
+    ],
+    "formLabel": "ません",
+    "conjugationSuffixRomaji": ""
+  },
+  {
+    "id": "question-masu",
+    "order": 3,
+    "level": "basic",
+    "title": "ประโยคคำถาม (ますか)",
+    "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ますか",
+    "particles": [
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค"
+      },
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      },
+      {
+        "particle": "か",
+        "role": "ตัวบ่งชี้คำถาม เติมท้ายประโยคเพื่อทำเป็นประโยคคำถาม"
+      }
+    ],
+    "timeNote": "ประโยคคำถามใช้โครงสร้างเดียวกับประโยคบอกเล่าทุกประการ เพียงเติม か ท้ายประโยค (เสียงพูดจะขึ้นเล็กน้อยตอนพูด か)",
+    "conjugationField": "masu",
+    "conjugationSuffix": "か",
+    "examples": [
+      {
+        "japanese": "あなたは ごはんを たべますか。",
+        "romaji": "Anata wa gohan wo tabemasu ka.",
+        "thai": "คุณกินข้าวไหม"
+      },
+      {
+        "japanese": "あした がっこうへ いきますか。",
+        "romaji": "Ashita gakkou e ikimasu ka.",
+        "thai": "พรุ่งนี้คุณจะไปโรงเรียนไหม"
+      },
+      {
+        "japanese": "まいにち ほんを よみますか。",
+        "romaji": "Mainichi hon wo yomimasu ka.",
+        "thai": "คุณอ่านหนังสือทุกวันไหม"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "question-masu-1",
+        "promptThai": "ถามว่า: คุณดื่มน้ำไหม",
+        "chunks": [
+          "みずを",
+          "のみますか",
+          "あなたは"
+        ],
+        "correctOrder": [
+          "あなたは",
+          "みずを",
+          "のみますか"
+        ],
+        "romaji": "Anata wa mizu wo nomimasu ka.",
+        "thai": "คุณดื่มน้ำไหม",
+        "explanation": "เติม か ท้ายรูป ます เพื่อเปลี่ยนเป็นประโยคคำถาม"
+      },
+      {
+        "id": "question-masu-2",
+        "promptThai": "ถามว่า: พรุ่งนี้คุณจะดูหนังไหม",
+        "chunks": [
+          "あした",
+          "えいがを",
+          "みますか",
+          "あなたは"
+        ],
+        "correctOrder": [
+          "あなたは",
+          "あした",
+          "えいがを",
+          "みますか"
+        ],
+        "romaji": "Anata wa ashita eiga wo mimasu ka.",
+        "thai": "พรุ่งนี้คุณจะดูหนังไหม",
+        "explanation": "คำถามเกี่ยวกับอนาคตยังคงใช้รูป ます เพียงมีคำบอกเวลาอย่าง あした ช่วยบอกว่าเป็นอนาคต"
+      },
+      {
+        "id": "question-masu-3",
+        "promptThai": "ถามว่า: คุณไปสวนสาธารณะไหม",
+        "chunks": [
+          "いきますか",
+          "あなたは",
+          "こうえんへ"
+        ],
+        "correctOrder": [
+          "あなたは",
+          "こうえんへ",
+          "いきますか"
+        ],
+        "romaji": "Anata wa kouen e ikimasu ka.",
+        "thai": "คุณไปสวนสาธารณะไหม",
+        "explanation": "へ บอกจุดหมายปลายทาง วางก่อนกริยาเสมอ"
+      },
+      {
+        "id": "question-masu-4",
+        "promptThai": "ถามว่า: คุณเขียนจดหมายไหม",
+        "chunks": [
+          "てがみを",
+          "かきますか",
+          "あなたは"
+        ],
+        "correctOrder": [
+          "あなたは",
+          "てがみを",
+          "かきますか"
+        ],
+        "romaji": "Anata wa tegami wo kakimasu ka.",
+        "thai": "คุณเขียนจดหมายไหม",
+        "explanation": "かく เป็นกริยากลุ่ม 1 ลงท้ายด้วย く เปลี่ยนเป็น き แล้วเติม ます"
+      }
+    ],
+    "formLabel": "ますか",
+    "conjugationSuffixRomaji": " ka"
+  },
+  {
+    "id": "invitation",
+    "order": 4,
+    "level": "basic",
+    "title": "ชักชวนอย่างสุภาพ (ませんか)",
+    "structure": "([ประธานมักละไว้]) + [กรรม] + を + [กริยา]ませんか",
+    "particles": [
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      },
+      {
+        "particle": "か",
+        "role": "ตัวบ่งชี้คำถาม ทำให้เป็นคำชวนอย่างสุภาพเมื่อใช้กับรูปปฏิเสธ"
+      }
+    ],
+    "timeNote": "ませんか แปลตรงตัวว่า 'ไม่...เหรอ' แต่ใช้ในความหมายชักชวนอย่างสุภาพ เช่น 'ไปด้วยกันไหม' 'ทานด้วยกันไหม' มักละหัวข้อ (は) ไว้เพราะเป็นที่เข้าใจกันอยู่แล้วว่าชวนอีกฝ่าย",
+    "conjugationField": "masen",
+    "conjugationSuffix": "か",
+    "examples": [
+      {
+        "japanese": "いっしょに ごはんを たべませんか。",
+        "romaji": "Issho ni gohan wo tabemasen ka.",
+        "thai": "ทานข้าวด้วยกันไหม"
+      },
+      {
+        "japanese": "こんばん えいがを みませんか。",
+        "romaji": "Konban eiga wo mimasen ka.",
+        "thai": "คืนนี้ดูหนังด้วยกันไหม"
+      },
+      {
+        "japanese": "にちようび こうえんへ いきませんか。",
+        "romaji": "Nichiyoubi kouen e ikimasen ka.",
+        "thai": "วันอาทิตย์ไปสวนสาธารณะด้วยกันไหม"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "invitation-1",
+        "promptThai": "ชวนว่า: ดื่มกาแฟด้วยกันไหม",
+        "chunks": [
+          "コーヒーを",
+          "のみませんか",
+          "いっしょに"
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "コーヒーを",
+          "のみませんか"
+        ],
+        "romaji": "Issho ni koohii wo nomimasen ka.",
+        "thai": "ดื่มกาแฟด้วยกันไหม",
+        "explanation": "ませんか ใช้ชวนอย่างสุภาพ มักละหัวข้อ (は) ไว้ และเติม いっしょに (ด้วยกัน) นำหน้า"
+      },
+      {
+        "id": "invitation-2",
+        "promptThai": "ชวนว่า: พรุ่งนี้ไปสวนสาธารณะด้วยกันไหม",
+        "chunks": [
+          "あした",
+          "こうえんへ",
+          "いきませんか"
+        ],
+        "correctOrder": [
+          "あした",
+          "こうえんへ",
+          "いきませんか"
+        ],
+        "romaji": "Ashita kouen e ikimasen ka.",
+        "thai": "พรุ่งนี้ไปสวนสาธารณะด้วยกันไหม",
+        "explanation": "คำบอกเวลาวางต้นประโยคได้เมื่อไม่มีการระบุประธานไว้ชัดเจน"
+      },
+      {
+        "id": "invitation-3",
+        "promptThai": "ชวนว่า: ดูโทรทัศน์ด้วยกันไหม",
+        "chunks": [
+          "テレビを",
+          "みませんか",
+          "いっしょに"
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "テレビを",
+          "みませんか"
+        ],
+        "romaji": "Issho ni terebi wo mimasen ka.",
+        "thai": "ดูโทรทัศน์ด้วยกันไหม",
+        "explanation": "โครงสร้างเหมือน ませんか ทั่วไป เปลี่ยนแค่กริยาให้ตรงกับสิ่งที่จะชวนทำ"
+      },
+      {
+        "id": "invitation-4",
+        "promptThai": "ชวนว่า: คืนนี้อ่านหนังสือด้วยกันไหม",
+        "chunks": [
+          "こんばん",
+          "ほんを",
+          "よみませんか"
+        ],
+        "correctOrder": [
+          "こんばん",
+          "ほんを",
+          "よみませんか"
+        ],
+        "romaji": "Konban hon wo yomimasen ka.",
+        "thai": "คืนนี้อ่านหนังสือด้วยกันไหม",
+        "explanation": "เมื่อไม่ระบุประธาน ประโยคชวนจะฟังเป็นธรรมชาติกว่าในภาษาญี่ปุ่น"
+      }
+    ],
+    "formLabel": "ませんか",
+    "conjugationSuffixRomaji": " ka"
+  },
+  {
+    "id": "past",
+    "order": 5,
+    "level": "basic",
+    "title": "อดีต (ました)",
+    "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ました",
+    "particles": [
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค"
+      },
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      }
+    ],
+    "timeNote": "ました ใช้กับเหตุการณ์ที่จบไปแล้วในอดีตเท่านั้น (ต่างจาก ます ที่ใช้ได้ทั้งปัจจุบัน/อนาคต) มักใช้คู่กับคำบอกเวลาที่เป็นอดีต เช่น きのう (เมื่อวาน)",
+    "conjugationField": "mashita",
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "きのう ごはんを たべました。",
+        "romaji": "Kinou gohan wo tabemashita.",
+        "thai": "เมื่อวานฉันกินข้าวแล้ว"
+      },
+      {
+        "japanese": "わたしは がっこうへ いきました。",
+        "romaji": "Watashi wa gakkou e ikimashita.",
+        "thai": "ฉันไปโรงเรียนแล้ว"
+      },
+      {
+        "japanese": "きのう てがみを かきました。",
+        "romaji": "Kinou tegami wo kakimashita.",
+        "thai": "เมื่อวานฉันเขียนจดหมายแล้ว"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "past-1",
+        "promptThai": "พูดว่า: เมื่อวานฉันดื่มกาแฟแล้ว",
+        "chunks": [
+          "きのう",
+          "コーヒーを",
+          "わたしは",
+          "のみました"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "きのう",
+          "コーヒーを",
+          "のみました"
+        ],
+        "romaji": "Watashi wa kinou koohii wo nomimashita.",
+        "thai": "เมื่อวานฉันดื่มกาแฟแล้ว",
+        "explanation": "きのう (เมื่อวาน) เป็นสัญญาณบอกว่าต้องใช้รูปอดีต ました"
+      },
+      {
+        "id": "past-2",
+        "promptThai": "พูดว่า: เขาไปโรงเรียนแล้ว",
+        "chunks": [
+          "がっこうへ",
+          "かれは",
+          "いきました"
+        ],
+        "correctOrder": [
+          "かれは",
+          "がっこうへ",
+          "いきました"
+        ],
+        "romaji": "Kare wa gakkou e ikimashita.",
+        "thai": "เขาไปโรงเรียนแล้ว",
+        "explanation": "ました บอกว่าการกระทำนี้จบสมบูรณ์แล้วในอดีต"
+      },
+      {
+        "id": "past-3",
+        "promptThai": "พูดว่า: ฉันดูหนังแล้ว",
+        "chunks": [
+          "えいがを",
+          "みました",
+          "わたしは"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "えいがを",
+          "みました"
+        ],
+        "romaji": "Watashi wa eiga wo mimashita.",
+        "thai": "ฉันดูหนังแล้ว",
+        "explanation": "みる เป็นกริยากลุ่ม 2 (ichidan) ตัด る แล้วเติม ました ได้เลย"
+      },
+      {
+        "id": "past-4",
+        "promptThai": "พูดว่า: เมื่อวานเธอซื้อหนังสือแล้ว",
+        "chunks": [
+          "きのう",
+          "かのじょは",
+          "ほんを",
+          "かいました"
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "きのう",
+          "ほんを",
+          "かいました"
+        ],
+        "romaji": "Kanojo wa kinou hon wo kaimashita.",
+        "thai": "เมื่อวานเธอซื้อหนังสือแล้ว",
+        "explanation": "かう เปลี่ยนเสียงท้ายเป็น い ก่อนเติม ました เช่นเดียวกับการเติม ます"
+      }
+    ],
+    "formLabel": "ました",
+    "conjugationSuffixRomaji": ""
+  },
+  {
+    "id": "past-negative",
+    "order": 6,
+    "level": "basic",
+    "title": "อดีตปฏิเสธ (ませんでした)",
+    "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ませんでした",
+    "particles": [
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค"
+      },
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      }
+    ],
+    "timeNote": "ませんでした ใช้ปฏิเสธเหตุการณ์ในอดีต มักใช้คู่กับคำบอกเวลาที่เป็นอดีตเช่นเดียวกับ ました",
+    "conjugationField": "masendeshita",
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "きのう がっこうへ いきませんでした。",
+        "romaji": "Kinou gakkou e ikimasendeshita.",
+        "thai": "เมื่อวานฉันไม่ได้ไปโรงเรียน"
+      },
+      {
+        "japanese": "わたしは ごはんを たべませんでした。",
+        "romaji": "Watashi wa gohan wo tabemasendeshita.",
+        "thai": "ฉันไม่ได้กินข้าว"
+      },
+      {
+        "japanese": "かれは てがみを かきませんでした。",
+        "romaji": "Kare wa tegami wo kakimasendeshita.",
+        "thai": "เขาไม่ได้เขียนจดหมาย"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "past-negative-1",
+        "promptThai": "พูดว่า: เมื่อวานฉันไม่ได้ดื่มกาแฟ",
+        "chunks": [
+          "きのう",
+          "わたしは",
+          "コーヒーを",
+          "のみませんでした"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "きのう",
+          "コーヒーを",
+          "のみませんでした"
+        ],
+        "romaji": "Watashi wa kinou koohii wo nomimasendeshita.",
+        "thai": "เมื่อวานฉันไม่ได้ดื่มกาแฟ",
+        "explanation": "ました → ませんでした เพื่อปฏิเสธเหตุการณ์ในอดีต"
+      },
+      {
+        "id": "past-negative-2",
+        "promptThai": "พูดว่า: เธอไม่ได้ดูโทรทัศน์",
+        "chunks": [
+          "テレビを",
+          "かのじょは",
+          "みませんでした"
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "テレビを",
+          "みませんでした"
+        ],
+        "romaji": "Kanojo wa terebi wo mimasendeshita.",
+        "thai": "เธอไม่ได้ดูโทรทัศน์",
+        "explanation": "กริยากลุ่ม 2 อย่าง みる ตัด る แล้วเติม ませんでした ได้เลย"
+      },
+      {
+        "id": "past-negative-3",
+        "promptThai": "พูดว่า: ฉันไม่ได้ไปสวนสาธารณะ",
+        "chunks": [
+          "こうえんへ",
+          "わたしは",
+          "いきませんでした"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "こうえんへ",
+          "いきませんでした"
+        ],
+        "romaji": "Watashi wa kouen e ikimasendeshita.",
+        "thai": "ฉันไม่ได้ไปสวนสาธารณะ",
+        "explanation": "へ ยังคงบอกทิศทางเหมือนเดิมในประโยคปฏิเสธอดีต"
+      },
+      {
+        "id": "past-negative-4",
+        "promptThai": "พูดว่า: เมื่อวานเขาไม่ได้ซื้อหนังสือ",
+        "chunks": [
+          "きのう",
+          "かれは",
+          "ほんを",
+          "かいませんでした"
+        ],
+        "correctOrder": [
+          "かれは",
+          "きのう",
+          "ほんを",
+          "かいませんでした"
+        ],
+        "romaji": "Kare wa kinou hon wo kaimasendeshita.",
+        "thai": "เมื่อวานเขาไม่ได้ซื้อหนังสือ",
+        "explanation": "ประโยคปฏิเสธอดีตยังคงเรียงลำดับคำเหมือนประโยคบอกเล่า เปลี่ยนแค่ส่วนท้ายกริยา"
+      }
+    ],
+    "formLabel": "ませんでした",
+    "conjugationSuffixRomaji": ""
+  },
+  {
+    "id": "te-kudasai",
+    "order": 7,
+    "level": "intermediate",
+    "title": "ขอร้อง/สั่ง (てください)",
+    "structure": "[กรรม] + を + [กริยารูปて] + ください",
+    "particles": [
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      }
+    ],
+    "timeNote": "รูปて ใช้เชื่อมกริยากับ ください เพื่อขอร้อง/สั่งอย่างสุภาพให้ทำสิ่งใดสิ่งหนึ่งในตอนนี้หรืออนาคตอันใกล้ ไม่ใช้กับเหตุการณ์ในอดีต",
+    "conjugationField": "te",
+    "conjugationSuffix": "ください",
+    "examples": [
+      {
+        "japanese": "ごはんを たべてください。",
+        "romaji": "Gohan wo tabete kudasai.",
+        "thai": "กรุณากินข้าว"
+      },
+      {
+        "japanese": "ちょっと まってください。",
+        "romaji": "Chotto matte kudasai.",
+        "thai": "กรุณารอสักครู่"
+      },
+      {
+        "japanese": "ほんを よんでください。",
+        "romaji": "Hon wo yonde kudasai.",
+        "thai": "กรุณาอ่านหนังสือ"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "te-kudasai-1",
+        "promptThai": "พูดว่า: กรุณากินข้าว",
+        "chunks": [
+          "たべてください",
+          "ごはんを"
+        ],
+        "correctOrder": [
+          "ごはんを",
+          "たべてください"
+        ],
+        "romaji": "Gohan wo tabete kudasai.",
+        "thai": "กรุณากินข้าว",
+        "explanation": "เปลี่ยนกริยาเป็นรูปて แล้วเติม ください ต่อท้ายเพื่อขอร้องอย่างสุภาพ"
+      },
+      {
+        "id": "te-kudasai-2",
+        "promptThai": "พูดว่า: กรุณาดื่มน้ำ",
+        "chunks": [
+          "のんでください",
+          "みずを"
+        ],
+        "correctOrder": [
+          "みずを",
+          "のんでください"
+        ],
+        "romaji": "Mizu wo nonde kudasai.",
+        "thai": "กรุณาดื่มน้ำ",
+        "explanation": "のむ ลงท้ายด้วย む เปลี่ยนเป็น んで ก่อนเติม ください"
+      },
+      {
+        "id": "te-kudasai-3",
+        "promptThai": "พูดว่า: กรุณารอตอนนี้",
+        "chunks": [
+          "いま",
+          "まってください"
+        ],
+        "correctOrder": [
+          "いま",
+          "まってください"
+        ],
+        "romaji": "Ima matte kudasai.",
+        "thai": "กรุณารอตอนนี้",
+        "explanation": "คำบอกเวลาอย่าง いま วางไว้ต้นประโยคเพื่อเน้นว่าขอให้ทำทันที"
+      },
+      {
+        "id": "te-kudasai-4",
+        "promptThai": "พูดว่า: กรุณาเขียนจดหมาย",
+        "chunks": [
+          "てがみを",
+          "かいてください"
+        ],
+        "correctOrder": [
+          "てがみを",
+          "かいてください"
+        ],
+        "romaji": "Tegami wo kaite kudasai.",
+        "thai": "กรุณาเขียนจดหมาย",
+        "explanation": "かく เปลี่ยนเป็น いて (ข้อยกเว้นเสียง く→いて) ก่อนเติม ください"
+      }
+    ],
+    "formLabel": "てください",
+    "conjugationSuffixRomaji": " kudasai"
+  },
+  {
+    "id": "te-mo-ii",
+    "order": 8,
+    "level": "intermediate",
+    "title": "ขออนุญาต (てもいいですか)",
+    "structure": "[กรรม] + を + [กริยารูปて] + もいいですか",
+    "particles": [
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      },
+      {
+        "particle": "で",
+        "role": "ตัวบ่งชี้สถานที่ที่เกิดการกระทำ (location-of-action marker)"
+      }
+    ],
+    "timeNote": "てもいいですか ใช้ถามขออนุญาตทำสิ่งใดสิ่งหนึ่ง แปลว่า 'ทำ...ได้ไหม'",
+    "conjugationField": "te",
+    "conjugationSuffix": "もいいですか",
+    "examples": [
+      {
+        "japanese": "ここで たべてもいいですか。",
+        "romaji": "Koko de tabete mo ii desu ka.",
+        "thai": "กินตรงนี้ได้ไหม"
+      },
+      {
+        "japanese": "まどを あけてもいいですか。",
+        "romaji": "Mado wo akete mo ii desu ka.",
+        "thai": "เปิดหน้าต่างได้ไหม"
+      },
+      {
+        "japanese": "テレビを みてもいいですか。",
+        "romaji": "Terebi wo mite mo ii desu ka.",
+        "thai": "ดูโทรทัศน์ได้ไหม"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "te-mo-ii-1",
+        "promptThai": "ถามขออนุญาตว่า: กินตรงนี้ได้ไหม",
+        "chunks": [
+          "ここで",
+          "たべてもいいですか"
+        ],
+        "correctOrder": [
+          "ここで",
+          "たべてもいいですか"
+        ],
+        "romaji": "Koko de tabete mo ii desu ka.",
+        "thai": "กินตรงนี้ได้ไหม",
+        "explanation": "で บอกสถานที่ที่จะทำกิจกรรม วางก่อนกริยา"
+      },
+      {
+        "id": "te-mo-ii-2",
+        "promptThai": "ถามขออนุญาตว่า: ดื่มน้ำได้ไหม",
+        "chunks": [
+          "みずを",
+          "のんでもいいですか"
+        ],
+        "correctOrder": [
+          "みずを",
+          "のんでもいいですか"
+        ],
+        "romaji": "Mizu wo nonde mo ii desu ka.",
+        "thai": "ดื่มน้ำได้ไหม",
+        "explanation": "เปลี่ยนกริยาเป็นรูปて แล้วเติม もいいですか เพื่อขออนุญาต"
+      },
+      {
+        "id": "te-mo-ii-3",
+        "promptThai": "ถามขออนุญาตว่า: ตอนนี้ดูโทรทัศน์ได้ไหม",
+        "chunks": [
+          "いま",
+          "テレビを",
+          "みてもいいですか"
+        ],
+        "correctOrder": [
+          "いま",
+          "テレビを",
+          "みてもいいですか"
+        ],
+        "romaji": "Ima terebi wo mite mo ii desu ka.",
+        "thai": "ตอนนี้ดูโทรทัศน์ได้ไหม",
+        "explanation": "いま ใช้เน้นว่ากำลังขออนุญาตทำสิ่งนี้ ณ ตอนนี้เลย"
+      },
+      {
+        "id": "te-mo-ii-4",
+        "promptThai": "ถามขออนุญาตว่า: เขียนจดหมายได้ไหม",
+        "chunks": [
+          "てがみを",
+          "かいてもいいですか"
+        ],
+        "correctOrder": [
+          "てがみを",
+          "かいてもいいですか"
+        ],
+        "romaji": "Tegami wo kaite mo ii desu ka.",
+        "thai": "เขียนจดหมายได้ไหม",
+        "explanation": "โครงสร้างเดียวกับ てください เพียงเปลี่ยนส่วนท้ายเป็น もいいですか"
+      }
+    ],
+    "formLabel": "てもいいですか",
+    "conjugationSuffixRomaji": " mo ii desu ka"
+  },
+  {
+    "id": "te-wa-ikemasen",
+    "order": 9,
+    "level": "intermediate",
+    "title": "ข้อห้าม (てはいけません)",
+    "structure": "[กรรม] + を + [กริยารูปて] + はいけません",
+    "particles": [
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      },
+      {
+        "particle": "で",
+        "role": "ตัวบ่งชี้สถานที่ที่เกิดการกระทำ"
+      }
+    ],
+    "timeNote": "てはいけません ใช้ห้ามไม่ให้ทำสิ่งนั้น แปลว่า 'ห้าม...'",
+    "conjugationField": "te",
+    "conjugationSuffix": "はいけません",
+    "examples": [
+      {
+        "japanese": "ここで たべてはいけません。",
+        "romaji": "Koko de tabete wa ikemasen.",
+        "thai": "ห้ามกินตรงนี้"
+      },
+      {
+        "japanese": "まどを あけてはいけません。",
+        "romaji": "Mado wo akete wa ikemasen.",
+        "thai": "ห้ามเปิดหน้าต่าง"
+      },
+      {
+        "japanese": "ここで しゃしんを とってはいけません。",
+        "romaji": "Koko de shashin wo totte wa ikemasen.",
+        "thai": "ห้ามถ่ายรูปตรงนี้"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "te-wa-ikemasen-1",
+        "promptThai": "พูดว่า: ห้ามกินตรงนี้",
+        "chunks": [
+          "ここで",
+          "たべてはいけません"
+        ],
+        "correctOrder": [
+          "ここで",
+          "たべてはいけません"
+        ],
+        "romaji": "Koko de tabete wa ikemasen.",
+        "thai": "ห้ามกินตรงนี้",
+        "explanation": "てはいけません ใช้ห้ามการกระทำ มักใช้ で บอกสถานที่ที่ห้ามทำ"
+      },
+      {
+        "id": "te-wa-ikemasen-2",
+        "promptThai": "พูดว่า: ห้ามดื่มน้ำตรงนี้",
+        "chunks": [
+          "ここで",
+          "みずを",
+          "のんではいけません"
+        ],
+        "correctOrder": [
+          "ここで",
+          "みずを",
+          "のんではいけません"
+        ],
+        "romaji": "Koko de mizu wo nonde wa ikemasen.",
+        "thai": "ห้ามดื่มน้ำตรงนี้",
+        "explanation": "เปลี่ยนกริยาเป็นรูปて แล้วเติม はいけません เพื่อสื่อความหมายห้ามทำ"
+      },
+      {
+        "id": "te-wa-ikemasen-3",
+        "promptThai": "พูดว่า: ห้ามดูโทรทัศน์ตอนนี้",
+        "chunks": [
+          "いま",
+          "テレビを",
+          "みてはいけません"
+        ],
+        "correctOrder": [
+          "いま",
+          "テレビを",
+          "みてはいけません"
+        ],
+        "romaji": "Ima terebi wo mite wa ikemasen.",
+        "thai": "ห้ามดูโทรทัศน์ตอนนี้",
+        "explanation": "คำบอกเวลาอย่าง いま ช่วยเน้นว่าห้ามทำในช่วงเวลานี้"
+      },
+      {
+        "id": "te-wa-ikemasen-4",
+        "promptThai": "พูดว่า: ห้ามถ่ายรูปตรงนี้",
+        "chunks": [
+          "ここで",
+          "しゃしんを",
+          "とってはいけません"
+        ],
+        "correctOrder": [
+          "ここで",
+          "しゃしんを",
+          "とってはいけません"
+        ],
+        "romaji": "Koko de shashin wo totte wa ikemasen.",
+        "thai": "ห้ามถ่ายรูปตรงนี้",
+        "explanation": "とる เป็นกริยากลุ่ม 1 ลงท้าย る เปลี่ยนเป็น って (กลุ่มเดียวกับ う/つ/る)"
+      }
+    ],
+    "formLabel": "てはいけません",
+    "conjugationSuffixRomaji": " wa ikemasen"
+  },
+  {
+    "id": "tai-desu",
+    "order": 10,
+    "level": "intermediate",
+    "title": "บอกความต้องการ (たいです)",
+    "structure": "[ประธาน] + は + [กรรม] + が + [กริยาราก]たいです",
+    "particles": [
+      {
+        "particle": "が",
+        "role": "มักใช้แทน を เพื่อบอกสิ่งที่ต้องการเมื่อพูดถึงความปรารถนาของตัวเอง"
+      },
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค"
+      }
+    ],
+    "timeNote": "たいです ใช้บอกความต้องการของผู้พูดเอง (ฉันอยากจะ...) มักไม่ใช้พูดถึงความต้องการของคนอื่นโดยตรง",
+    "conjugationField": "tai",
+    "conjugationSuffix": "です",
+    "examples": [
+      {
+        "japanese": "わたしは ごはんが たべたいです。",
+        "romaji": "Watashi wa gohan ga tabetai desu.",
+        "thai": "ฉันอยากกินข้าว"
+      },
+      {
+        "japanese": "みずが のみたいです。",
+        "romaji": "Mizu ga nomitai desu.",
+        "thai": "อยากดื่มน้ำ"
+      },
+      {
+        "japanese": "あした こうえんへ いきたいです。",
+        "romaji": "Ashita kouen e ikitai desu.",
+        "thai": "พรุ่งนี้อยากไปสวนสาธารณะ"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "tai-desu-1",
+        "promptThai": "พูดว่า: ฉันอยากกินข้าว",
+        "chunks": [
+          "わたしは",
+          "ごはんが",
+          "たべたいです"
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ごはんが",
+          "たべたいです"
+        ],
+        "romaji": "Watashi wa gohan ga tabetai desu.",
+        "thai": "ฉันอยากกินข้าว",
+        "explanation": "ตัด ます ออกจากรูป ます แล้วเติม たいです และมักเปลี่ยน を เป็น が"
+      },
+      {
+        "id": "tai-desu-2",
+        "promptThai": "พูดว่า: พรุ่งนี้อยากดูหนัง",
+        "chunks": [
+          "あした",
+          "えいがが",
+          "みたいです"
+        ],
+        "correctOrder": [
+          "あした",
+          "えいがが",
+          "みたいです"
+        ],
+        "romaji": "Ashita eiga ga mitai desu.",
+        "thai": "พรุ่งนี้อยากดูหนัง",
+        "explanation": "แม้จะพูดถึงอนาคตด้วย あした โครงสร้าง たいです ก็ไม่เปลี่ยนรูป"
+      },
+      {
+        "id": "tai-desu-3",
+        "promptThai": "พูดว่า: อยากไปโรงเรียน",
+        "chunks": [
+          "がっこうへ",
+          "いきたいです"
+        ],
+        "correctOrder": [
+          "がっこうへ",
+          "いきたいです"
+        ],
+        "romaji": "Gakkou e ikitai desu.",
+        "thai": "อยากไปโรงเรียน",
+        "explanation": "กริยาที่ใช้กับ へ (ทิศทาง) ไม่เปลี่ยนเป็น が แม้อยู่ในรูป たいです"
+      },
+      {
+        "id": "tai-desu-4",
+        "promptThai": "พูดว่า: อยากอ่านหนังสือ",
+        "chunks": [
+          "ほんが",
+          "よみたいです"
+        ],
+        "correctOrder": [
+          "ほんが",
+          "よみたいです"
+        ],
+        "romaji": "Hon ga yomitai desu.",
+        "thai": "อยากอ่านหนังสือ",
+        "explanation": "よむ ตัด ます ออก เหลือ よみ แล้วเติม たいです"
+      }
+    ],
+    "formLabel": "たいです",
+    "conjugationSuffixRomaji": " desu"
+  }
+]

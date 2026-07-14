@@ -1,0 +1,275 @@
+[
+  {
+    "id": "taberu",
+    "dict": "たべる",
+    "group": 2,
+    "teGroup": "ichidan",
+    "meaningTh": "กิน",
+    "masu": "たべます",
+    "masen": "たべません",
+    "mashita": "たべました",
+    "masendeshita": "たべませんでした",
+    "te": "たべて",
+    "tai": "たべたい",
+    "romaji": {
+      "masu": "tabemasu",
+      "masen": "tabemasen",
+      "mashita": "tabemashita",
+      "masendeshita": "tabemasendeshita",
+      "te": "tabete",
+      "tai": "tabetai"
+    }
+  },
+  {
+    "id": "miru",
+    "dict": "みる",
+    "group": 2,
+    "teGroup": "ichidan",
+    "meaningTh": "ดู",
+    "masu": "みます",
+    "masen": "みません",
+    "mashita": "みました",
+    "masendeshita": "みませんでした",
+    "te": "みて",
+    "tai": "みたい",
+    "romaji": {
+      "masu": "mimasu",
+      "masen": "mimasen",
+      "mashita": "mimashita",
+      "masendeshita": "mimasendeshita",
+      "te": "mite",
+      "tai": "mitai"
+    }
+  },
+  {
+    "id": "neru",
+    "dict": "ねる",
+    "group": 2,
+    "teGroup": "ichidan",
+    "meaningTh": "นอน",
+    "masu": "ねます",
+    "masen": "ねません",
+    "mashita": "ねました",
+    "masendeshita": "ねませんでした",
+    "te": "ねて",
+    "tai": "ねたい",
+    "romaji": {
+      "masu": "nemasu",
+      "masen": "nemasen",
+      "mashita": "nemashita",
+      "masendeshita": "nemasendeshita",
+      "te": "nete",
+      "tai": "netai"
+    }
+  },
+  {
+    "id": "okiru",
+    "dict": "おきる",
+    "group": 2,
+    "teGroup": "ichidan",
+    "meaningTh": "ตื่นนอน",
+    "masu": "おきます",
+    "masen": "おきません",
+    "mashita": "おきました",
+    "masendeshita": "おきませんでした",
+    "te": "おきて",
+    "tai": "おきたい",
+    "romaji": {
+      "masu": "okimasu",
+      "masen": "okimasen",
+      "mashita": "okimashita",
+      "masendeshita": "okimasendeshita",
+      "te": "okite",
+      "tai": "okitai"
+    }
+  },
+  {
+    "id": "nomu",
+    "dict": "のむ",
+    "group": 1,
+    "teGroup": "mu-bu-nu",
+    "meaningTh": "ดื่ม",
+    "masu": "のみます",
+    "masen": "のみません",
+    "mashita": "のみました",
+    "masendeshita": "のみませんでした",
+    "te": "のんで",
+    "tai": "のみたい",
+    "romaji": {
+      "masu": "nomimasu",
+      "masen": "nomimasen",
+      "mashita": "nomimashita",
+      "masendeshita": "nomimasendeshita",
+      "te": "nonde",
+      "tai": "nomitai"
+    }
+  },
+  {
+    "id": "iku",
+    "dict": "いく",
+    "group": 1,
+    "teGroup": "exception-iku",
+    "meaningTh": "ไป",
+    "masu": "いきます",
+    "masen": "いきません",
+    "mashita": "いきました",
+    "masendeshita": "いきませんでした",
+    "te": "いって",
+    "tai": "いきたい",
+    "romaji": {
+      "masu": "ikimasu",
+      "masen": "ikimasen",
+      "mashita": "ikimashita",
+      "masendeshita": "ikimasendeshita",
+      "te": "itte",
+      "tai": "ikitai"
+    }
+  },
+  {
+    "id": "kaku",
+    "dict": "かく",
+    "group": 1,
+    "teGroup": "ku",
+    "meaningTh": "เขียน",
+    "masu": "かきます",
+    "masen": "かきません",
+    "mashita": "かきました",
+    "masendeshita": "かきませんでした",
+    "te": "かいて",
+    "tai": "かきたい",
+    "romaji": {
+      "masu": "kakimasu",
+      "masen": "kakimasen",
+      "mashita": "kakimashita",
+      "masendeshita": "kakimasendeshita",
+      "te": "kaite",
+      "tai": "kakitai"
+    }
+  },
+  {
+    "id": "yomu",
+    "dict": "よむ",
+    "group": 1,
+    "teGroup": "mu-bu-nu",
+    "meaningTh": "อ่าน",
+    "masu": "よみます",
+    "masen": "よみません",
+    "mashita": "よみました",
+    "masendeshita": "よみませんでした",
+    "te": "よんで",
+    "tai": "よみたい",
+    "romaji": {
+      "masu": "yomimasu",
+      "masen": "yomimasen",
+      "mashita": "yomimashita",
+      "masendeshita": "yomimasendeshita",
+      "te": "yonde",
+      "tai": "yomitai"
+    }
+  },
+  {
+    "id": "hanasu",
+    "dict": "はなす",
+    "group": 1,
+    "teGroup": "su",
+    "meaningTh": "พูด",
+    "masu": "はなします",
+    "masen": "はなしません",
+    "mashita": "はなしました",
+    "masendeshita": "はなしませんでした",
+    "te": "はなして",
+    "tai": "はなしたい",
+    "romaji": {
+      "masu": "hanashimasu",
+      "masen": "hanashimasen",
+      "mashita": "hanashimashita",
+      "masendeshita": "hanashimasendeshita",
+      "te": "hanashite",
+      "tai": "hanashitai"
+    }
+  },
+  {
+    "id": "kau",
+    "dict": "かう",
+    "group": 1,
+    "teGroup": "u-tsu-ru",
+    "meaningTh": "ซื้อ",
+    "masu": "かいます",
+    "masen": "かいません",
+    "mashita": "かいました",
+    "masendeshita": "かいませんでした",
+    "te": "かって",
+    "tai": "かいたい",
+    "romaji": {
+      "masu": "kaimasu",
+      "masen": "kaimasen",
+      "mashita": "kaimashita",
+      "masendeshita": "kaimasendeshita",
+      "te": "katte",
+      "tai": "kaitai"
+    }
+  },
+  {
+    "id": "matsu",
+    "dict": "まつ",
+    "group": 1,
+    "teGroup": "u-tsu-ru",
+    "meaningTh": "รอ",
+    "masu": "まちます",
+    "masen": "まちません",
+    "mashita": "まちました",
+    "masendeshita": "まちませんでした",
+    "te": "まって",
+    "tai": "まちたい",
+    "romaji": {
+      "masu": "machimasu",
+      "masen": "machimasen",
+      "mashita": "machimashita",
+      "masendeshita": "machimasendeshita",
+      "te": "matte",
+      "tai": "machitai"
+    }
+  },
+  {
+    "id": "suru",
+    "dict": "する",
+    "group": 3,
+    "teGroup": "irregular",
+    "meaningTh": "ทำ",
+    "masu": "します",
+    "masen": "しません",
+    "mashita": "しました",
+    "masendeshita": "しませんでした",
+    "te": "して",
+    "tai": "したい",
+    "romaji": {
+      "masu": "shimasu",
+      "masen": "shimasen",
+      "mashita": "shimashita",
+      "masendeshita": "shimasendeshita",
+      "te": "shite",
+      "tai": "shitai"
+    }
+  },
+  {
+    "id": "kuru",
+    "dict": "くる",
+    "group": 3,
+    "teGroup": "irregular",
+    "meaningTh": "มา",
+    "masu": "きます",
+    "masen": "きません",
+    "mashita": "きました",
+    "masendeshita": "きませんでした",
+    "te": "きて",
+    "tai": "きたい",
+    "romaji": {
+      "masu": "kimasu",
+      "masen": "kimasen",
+      "mashita": "kimashita",
+      "masendeshita": "kimasendeshita",
+      "te": "kite",
+      "tai": "kitai"
+    }
+  }
+]
