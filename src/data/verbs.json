@@ -271,5 +271,26 @@
       "te": "kite",
       "tai": "kitai"
     }
+  },
+  {
+    "id": "isogu",
+    "dict": "いそぐ",
+    "group": 1,
+    "teGroup": "gu",
+    "meaningTh": "รีบ",
+    "masu": "いそぎます",
+    "masen": "いそぎません",
+    "mashita": "いそぎました",
+    "masendeshita": "いそぎませんでした",
+    "te": "いそいで",
+    "tai": "いそぎたい",
+    "romaji": {
+      "masu": "isogimasu",
+      "masen": "isogimasen",
+      "mashita": "isogimashita",
+      "masendeshita": "isogimasendeshita",
+      "te": "isoide",
+      "tai": "isogitai"
+    }
   }
 ]

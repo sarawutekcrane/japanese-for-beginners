@@ -62,4 +62,29 @@ export function getConjugationQuestions(pattern) {
   return verbs.map((v) => buildConjugationQuestion(v, pattern));
 }
 
+/** One representative worked example per verb group (1/2/3) for the pattern's target form. */
+export function getGroupExamples(pattern) {
+  const suffix = pattern.conjugationSuffix || "";
+  return [1, 2, 3]
+    .map((group) => verbs.find((v) => v.group === group))
+    .filter(Boolean)
+    .map((verb) => ({
+      group: verb.group,
+      verb,
+      conjugated: verb[pattern.conjugationField] + suffix,
+      explanation: explanationFor(verb, pattern.conjugationField),
+    }));
+}
+
+const TE_RULE_ORDER = ["u-tsu-ru", "mu-bu-nu", "ku", "gu", "su", "exception-iku"];
+
+/** Sound-change breakdown table for the て form, one example verb per ending category. */
+export function getTeFormBreakdown() {
+  return TE_RULE_ORDER.map((key) => ({
+    key,
+    rule: TE_RULE_TH[key],
+    verb: verbs.find((v) => v.teGroup === key),
+  })).filter((row) => row.verb);
+}
+
 export { verbs };

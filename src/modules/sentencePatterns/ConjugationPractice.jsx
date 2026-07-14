@@ -45,7 +45,7 @@ export default function ConjugationPractice({ pattern, onLesson }) {
     <div className="practice-view">
       <div className="practice-topbar">
         <button className="btn btn-outline blue btn-sm" onClick={onLesson}>
-          📖 กลับไปบทเรียน
+          🈺 กลับไปวิธีผันกริยา
         </button>
         <p className="progress-label">
           {(index % questions.length) + 1} / {questions.length} · คะแนน {score.correct}/{score.total}

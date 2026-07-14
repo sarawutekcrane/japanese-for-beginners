@@ -39,7 +39,7 @@ export default function LessonView({ pattern, onStartPractice }) {
       </div>
 
       <button className="btn btn-success" onClick={onStartPractice}>
-        เริ่มฝึกฝน →
+        ถัดไป: วิธีผันกริยา →
       </button>
     </div>
   );
