@@ -997,6 +997,14 @@ button {
   color: var(--ink);
 }
 
+.word-order-hint {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  margin-top: -6px;
+}
+
 .answer-slot {
   width: 100%;
   min-height: 56px;

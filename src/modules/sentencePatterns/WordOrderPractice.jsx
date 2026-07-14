@@ -81,6 +81,13 @@ export default function WordOrderPractice({ pattern, onLesson }) {
         <Mascot mood={!submitted ? "neutral" : isCorrect ? "excited" : "sad"} size={80} />
         <p className="th-text word-order-prompt">{question.promptThai}</p>
 
+        {(showRomaji || showThai) && (
+          <div className="word-order-hint">
+            {showRomaji && <p className="flashcard-romaji">{question.romaji}</p>}
+            {showThai && <p className="th-text flashcard-thai">{question.thai}</p>}
+          </div>
+        )}
+
         <div className="answer-slot">
           {answerItems.length === 0 && <span className="answer-slot-hint th-text">แตะคำด้านล่างตามลำดับ</span>}
           {answerItems.map((item) => (
@@ -109,8 +116,6 @@ export default function WordOrderPractice({ pattern, onLesson }) {
             </p>
             <div className="quiz-reveal">
               <p className="jp-text">{question.correctOrder.join(" ")}</p>
-              {showRomaji && <p className="flashcard-romaji">{question.romaji}</p>}
-              {showThai && <p className="flashcard-thai th-text">{question.thai}</p>}
             </div>
             <button className="btn btn-outline btn-sm" onClick={playCorrect}>
               🔊 ฟังประโยคที่ถูกต้อง
