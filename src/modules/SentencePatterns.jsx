@@ -1,5 +1,6 @@
 import { useState } from "react";
 import patterns from "../data/sentencePatterns.json";
+import SectionPicker from "./sentencePatterns/SectionPicker";
 import PatternPicker from "./sentencePatterns/PatternPicker";
 import LessonView from "./sentencePatterns/LessonView";
 import ConjugationLesson from "./sentencePatterns/ConjugationLesson";
@@ -13,9 +14,9 @@ const TABS = [
   { id: "wordorder", label: "🧩 ฝึกเรียงประโยค" },
 ];
 
-function PatternDetail({ patternId, onBack }) {
+function PatternDetail({ patternId, initialSection, onBack }) {
   const pattern = patterns.find((p) => p.id === patternId);
-  const [section, setSection] = useState("lesson");
+  const [section, setSection] = useState(initialSection);
 
   return (
     <div className="pattern-detail">
@@ -44,8 +45,10 @@ function PatternDetail({ patternId, onBack }) {
 }
 
 export default function SentencePatterns() {
+  const [section, setSection] = useState(null);
   const [patternId, setPatternId] = useState(null);
 
-  if (!patternId) return <PatternPicker onPick={setPatternId} />;
-  return <PatternDetail patternId={patternId} onBack={() => setPatternId(null)} />;
+  if (!section) return <SectionPicker onPick={setSection} />;
+  if (!patternId) return <PatternPicker onPick={setPatternId} onBack={() => setSection(null)} />;
+  return <PatternDetail patternId={patternId} initialSection={section} onBack={() => setPatternId(null)} />;
 }

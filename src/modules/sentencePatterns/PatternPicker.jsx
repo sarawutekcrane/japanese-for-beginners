@@ -12,9 +12,13 @@ function PatternButton({ pattern, onPick }) {
   );
 }
 
-export default function PatternPicker({ onPick }) {
+export default function PatternPicker({ onPick, onBack }) {
   return (
     <div className="picker">
+      <button className="btn btn-outline btn-sm" onClick={onBack}>
+        ← เปลี่ยนหมวดหมู่
+      </button>
+
       <section className="picker-section">
         <h3 className="picker-heading">🌱 ระดับพื้นฐาน (Basic)</h3>
         <div className="pattern-list">
