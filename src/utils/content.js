@@ -54,6 +54,7 @@ export function toCard(entry) {
       audioText: entry.char,
       answerText: entry.char,
       romaji: entry.romaji,
+      thai: entry.thai,
       script: entry.script,
       group: entry.group,
     };

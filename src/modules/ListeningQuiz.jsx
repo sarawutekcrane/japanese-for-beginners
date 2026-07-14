@@ -67,6 +67,8 @@ function QuizView({ selection, shuffleOn, onBack }) {
   const [selectedId, setSelectedId] = useState(null);
   const [revealed, setRevealed] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
+  const [showThai, setShowThai] = useState(false);
+  const [showRomaji, setShowRomaji] = useState(false);
 
   const isCorrect = selectedId === question.answer.id;
   const answered = selectedId !== null;
@@ -114,9 +116,16 @@ function QuizView({ selection, shuffleOn, onBack }) {
             return (
               <button key={opt.id} className={cls} onClick={() => choose(opt)} disabled={answered}>
                 <span className="jp-text">{opt.display}</span>
+                {showRomaji && <span className="quiz-option-hint">{opt.romaji}</span>}
+                {showThai && <span className="quiz-option-hint th-text">{opt.thai}</span>}
               </button>
             );
           })}
+        </div>
+
+        <div className="toggle-group blue">
+          <Toggle label={selection.kind === "kana" ? "แสดงคำอ่านไทย" : "แสดงคำแปลภาษาไทย"} checked={showThai} onChange={setShowThai} />
+          <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
         </div>
 
         {answered && (

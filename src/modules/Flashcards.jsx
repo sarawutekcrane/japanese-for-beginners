@@ -77,17 +77,15 @@ function FlashcardView({ selection, shuffleOn, onBack }) {
           <Illustration item={card.kind === "kana" ? { script: card.script, group: card.group, id: card.id } : { icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
         </div>
         <p className={`flashcard-text jp-text ${card.kind === "kana" ? (isLongKana ? "" : "kana-big") : ""}`}>{card.display}</p>
-        {card.kind === "vocab" && showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
-        {card.kind === "vocab" && showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
+        {showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
+        {showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
         <p className="flashcard-hint th-text">แตะเพื่อฟังเสียง 🔊</p>
       </div>
 
-      {card.kind === "vocab" && (
-        <div className="toggle-group">
-          <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
-          <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
-        </div>
-      )}
+      <div className="toggle-group">
+        <Toggle label={card.kind === "kana" ? "แสดงคำอ่านไทย" : "แสดงคำแปลภาษาไทย"} checked={showThai} onChange={setShowThai} />
+        <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
+      </div>
 
       <div className="flashcard-nav">
         <button className="btn btn-round btn-outline" onClick={() => go(-1)} aria-label="ก่อนหน้า">

@@ -442,6 +442,16 @@ button {
   color: var(--ink);
   box-shadow: var(--shadow-soft);
   transition: transform 0.1s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.quiz-option-hint {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-soft);
 }
 
 .quiz-option:not(:disabled):hover {

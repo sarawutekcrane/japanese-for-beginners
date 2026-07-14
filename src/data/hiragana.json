@@ -4,839 +4,959 @@
     "char": "あ",
     "romaji": "a",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "อะ"
   },
   {
     "id": "hiragana-seion-i",
     "char": "い",
     "romaji": "i",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "อิ"
   },
   {
     "id": "hiragana-seion-u",
     "char": "う",
     "romaji": "u",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "อุ"
   },
   {
     "id": "hiragana-seion-e",
     "char": "え",
     "romaji": "e",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เอะ"
   },
   {
     "id": "hiragana-seion-o",
     "char": "お",
     "romaji": "o",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โอะ"
   },
   {
     "id": "hiragana-seion-ka",
     "char": "か",
     "romaji": "ka",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "คะ"
   },
   {
     "id": "hiragana-seion-ki",
     "char": "き",
     "romaji": "ki",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "คิ"
   },
   {
     "id": "hiragana-seion-ku",
     "char": "く",
     "romaji": "ku",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "คุ"
   },
   {
     "id": "hiragana-seion-ke",
     "char": "け",
     "romaji": "ke",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เคะ"
   },
   {
     "id": "hiragana-seion-ko",
     "char": "こ",
     "romaji": "ko",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โคะ"
   },
   {
     "id": "hiragana-seion-sa",
     "char": "さ",
     "romaji": "sa",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ซะ"
   },
   {
     "id": "hiragana-seion-shi",
     "char": "し",
     "romaji": "shi",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ชิ"
   },
   {
     "id": "hiragana-seion-su",
     "char": "す",
     "romaji": "su",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ซุ"
   },
   {
     "id": "hiragana-seion-se",
     "char": "せ",
     "romaji": "se",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เซะ"
   },
   {
     "id": "hiragana-seion-so",
     "char": "そ",
     "romaji": "so",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โซะ"
   },
   {
     "id": "hiragana-seion-ta",
     "char": "た",
     "romaji": "ta",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ทะ"
   },
   {
     "id": "hiragana-seion-chi",
     "char": "ち",
     "romaji": "chi",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ชิ"
   },
   {
     "id": "hiragana-seion-tsu",
     "char": "つ",
     "romaji": "tsu",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "สึ"
   },
   {
     "id": "hiragana-seion-te",
     "char": "て",
     "romaji": "te",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เทะ"
   },
   {
     "id": "hiragana-seion-to",
     "char": "と",
     "romaji": "to",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โทะ"
   },
   {
     "id": "hiragana-seion-na",
     "char": "な",
     "romaji": "na",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "นะ"
   },
   {
     "id": "hiragana-seion-ni",
     "char": "に",
     "romaji": "ni",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "นิ"
   },
   {
     "id": "hiragana-seion-nu",
     "char": "ぬ",
     "romaji": "nu",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "นุ"
   },
   {
     "id": "hiragana-seion-ne",
     "char": "ね",
     "romaji": "ne",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เนะ"
   },
   {
     "id": "hiragana-seion-no",
     "char": "の",
     "romaji": "no",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โนะ"
   },
   {
     "id": "hiragana-seion-ha",
     "char": "は",
     "romaji": "ha",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ฮะ"
   },
   {
     "id": "hiragana-seion-hi",
     "char": "ひ",
     "romaji": "hi",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ฮิ"
   },
   {
     "id": "hiragana-seion-fu",
     "char": "ふ",
     "romaji": "fu",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ฟุ"
   },
   {
     "id": "hiragana-seion-he",
     "char": "へ",
     "romaji": "he",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เฮะ"
   },
   {
     "id": "hiragana-seion-ho",
     "char": "ほ",
     "romaji": "ho",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โฮะ"
   },
   {
     "id": "hiragana-seion-ma",
     "char": "ま",
     "romaji": "ma",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "มะ"
   },
   {
     "id": "hiragana-seion-mi",
     "char": "み",
     "romaji": "mi",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "มิ"
   },
   {
     "id": "hiragana-seion-mu",
     "char": "む",
     "romaji": "mu",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "มุ"
   },
   {
     "id": "hiragana-seion-me",
     "char": "め",
     "romaji": "me",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เมะ"
   },
   {
     "id": "hiragana-seion-mo",
     "char": "も",
     "romaji": "mo",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โมะ"
   },
   {
     "id": "hiragana-seion-ya",
     "char": "や",
     "romaji": "ya",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ยะ"
   },
   {
     "id": "hiragana-seion-yu",
     "char": "ゆ",
     "romaji": "yu",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ยุ"
   },
   {
     "id": "hiragana-seion-yo",
     "char": "よ",
     "romaji": "yo",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โยะ"
   },
   {
     "id": "hiragana-seion-ra",
     "char": "ら",
     "romaji": "ra",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ระ"
   },
   {
     "id": "hiragana-seion-ri",
     "char": "り",
     "romaji": "ri",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ริ"
   },
   {
     "id": "hiragana-seion-ru",
     "char": "る",
     "romaji": "ru",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "รุ"
   },
   {
     "id": "hiragana-seion-re",
     "char": "れ",
     "romaji": "re",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เระ"
   },
   {
     "id": "hiragana-seion-ro",
     "char": "ろ",
     "romaji": "ro",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โระ"
   },
   {
     "id": "hiragana-seion-wa",
     "char": "わ",
     "romaji": "wa",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "วะ"
   },
   {
     "id": "hiragana-seion-wo",
     "char": "を",
     "romaji": "wo",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โอะ"
   },
   {
     "id": "hiragana-seion-n",
     "char": "ん",
     "romaji": "n",
     "script": "hiragana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ง"
   },
   {
     "id": "hiragana-dakuon-が",
     "char": "が",
     "romaji": "ga",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "กะ"
   },
   {
     "id": "hiragana-dakuon-ぎ",
     "char": "ぎ",
     "romaji": "gi",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "กิ"
   },
   {
     "id": "hiragana-dakuon-ぐ",
     "char": "ぐ",
     "romaji": "gu",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "กุ"
   },
   {
     "id": "hiragana-dakuon-げ",
     "char": "げ",
     "romaji": "ge",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "เกะ"
   },
   {
     "id": "hiragana-dakuon-ご",
     "char": "ご",
     "romaji": "go",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "โกะ"
   },
   {
     "id": "hiragana-dakuon-ざ",
     "char": "ざ",
     "romaji": "za",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ซะ"
   },
   {
     "id": "hiragana-dakuon-じ",
     "char": "じ",
     "romaji": "ji",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "จิ"
   },
   {
     "id": "hiragana-dakuon-ず",
     "char": "ず",
     "romaji": "zu",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ซึ"
   },
   {
     "id": "hiragana-dakuon-ぜ",
     "char": "ぜ",
     "romaji": "ze",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "เซะ"
   },
   {
     "id": "hiragana-dakuon-ぞ",
     "char": "ぞ",
     "romaji": "zo",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "โซะ"
   },
   {
     "id": "hiragana-dakuon-だ",
     "char": "だ",
     "romaji": "da",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ดะ"
   },
   {
     "id": "hiragana-dakuon-ぢ",
     "char": "ぢ",
     "romaji": "ji",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "จิ"
   },
   {
     "id": "hiragana-dakuon-づ",
     "char": "づ",
     "romaji": "zu",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ซึ"
   },
   {
     "id": "hiragana-dakuon-で",
     "char": "で",
     "romaji": "de",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "เดะ"
   },
   {
     "id": "hiragana-dakuon-ど",
     "char": "ど",
     "romaji": "do",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "โดะ"
   },
   {
     "id": "hiragana-dakuon-ば",
     "char": "ば",
     "romaji": "ba",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "บะ"
   },
   {
     "id": "hiragana-dakuon-び",
     "char": "び",
     "romaji": "bi",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "บิ"
   },
   {
     "id": "hiragana-dakuon-ぶ",
     "char": "ぶ",
     "romaji": "bu",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "บุ"
   },
   {
     "id": "hiragana-dakuon-べ",
     "char": "べ",
     "romaji": "be",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "เบะ"
   },
   {
     "id": "hiragana-dakuon-ぼ",
     "char": "ぼ",
     "romaji": "bo",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "โบะ"
   },
   {
     "id": "hiragana-dakuon-ぱ",
     "char": "ぱ",
     "romaji": "pa",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ปะ"
   },
   {
     "id": "hiragana-dakuon-ぴ",
     "char": "ぴ",
     "romaji": "pi",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ปิ"
   },
   {
     "id": "hiragana-dakuon-ぷ",
     "char": "ぷ",
     "romaji": "pu",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ปุ"
   },
   {
     "id": "hiragana-dakuon-ぺ",
     "char": "ぺ",
     "romaji": "pe",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "เปะ"
   },
   {
     "id": "hiragana-dakuon-ぽ",
     "char": "ぽ",
     "romaji": "po",
     "script": "hiragana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "โปะ"
   },
   {
     "id": "hiragana-youon-きゃ",
     "char": "きゃ",
     "romaji": "kya",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เคียะ"
   },
   {
     "id": "hiragana-youon-きゅ",
     "char": "きゅ",
     "romaji": "kyu",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "คิว"
   },
   {
     "id": "hiragana-youon-きょ",
     "char": "きょ",
     "romaji": "kyo",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เคียว"
   },
   {
     "id": "hiragana-youon-しゃ",
     "char": "しゃ",
     "romaji": "sha",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ชะ"
   },
   {
     "id": "hiragana-youon-しゅ",
     "char": "しゅ",
     "romaji": "shu",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ชุ"
   },
   {
     "id": "hiragana-youon-しょ",
     "char": "しょ",
     "romaji": "sho",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "โชะ"
   },
   {
     "id": "hiragana-youon-ちゃ",
     "char": "ちゃ",
     "romaji": "cha",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ชะ"
   },
   {
     "id": "hiragana-youon-ちゅ",
     "char": "ちゅ",
     "romaji": "chu",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ชุ"
   },
   {
     "id": "hiragana-youon-ちょ",
     "char": "ちょ",
     "romaji": "cho",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "โชะ"
   },
   {
     "id": "hiragana-youon-にゃ",
     "char": "にゃ",
     "romaji": "nya",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เนียะ"
   },
   {
     "id": "hiragana-youon-にゅ",
     "char": "にゅ",
     "romaji": "nyu",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "นิว"
   },
   {
     "id": "hiragana-youon-にょ",
     "char": "にょ",
     "romaji": "nyo",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เนียว"
   },
   {
     "id": "hiragana-youon-ひゃ",
     "char": "ひゃ",
     "romaji": "hya",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เฮียะ"
   },
   {
     "id": "hiragana-youon-ひゅ",
     "char": "ひゅ",
     "romaji": "hyu",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ฮิว"
   },
   {
     "id": "hiragana-youon-ひょ",
     "char": "ひょ",
     "romaji": "hyo",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เฮียว"
   },
   {
     "id": "hiragana-youon-みゃ",
     "char": "みゃ",
     "romaji": "mya",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เมียะ"
   },
   {
     "id": "hiragana-youon-みゅ",
     "char": "みゅ",
     "romaji": "myu",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "มิว"
   },
   {
     "id": "hiragana-youon-みょ",
     "char": "みょ",
     "romaji": "myo",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เมียว"
   },
   {
     "id": "hiragana-youon-りゃ",
     "char": "りゃ",
     "romaji": "rya",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เรียะ"
   },
   {
     "id": "hiragana-youon-りゅ",
     "char": "りゅ",
     "romaji": "ryu",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ริว"
   },
   {
     "id": "hiragana-youon-りょ",
     "char": "りょ",
     "romaji": "ryo",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เรียว"
   },
   {
     "id": "hiragana-youon-ぎゃ",
     "char": "ぎゃ",
     "romaji": "gya",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เกียะ"
   },
   {
     "id": "hiragana-youon-ぎゅ",
     "char": "ぎゅ",
     "romaji": "gyu",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "กิว"
   },
   {
     "id": "hiragana-youon-ぎょ",
     "char": "ぎょ",
     "romaji": "gyo",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เกียว"
   },
   {
     "id": "hiragana-youon-じゃ",
     "char": "じゃ",
     "romaji": "ja",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "จะ"
   },
   {
     "id": "hiragana-youon-じゅ",
     "char": "じゅ",
     "romaji": "ju",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "จุ"
   },
   {
     "id": "hiragana-youon-じょ",
     "char": "じょ",
     "romaji": "jo",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "โจะ"
   },
   {
     "id": "hiragana-youon-びゃ",
     "char": "びゃ",
     "romaji": "bya",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เบียะ"
   },
   {
     "id": "hiragana-youon-びゅ",
     "char": "びゅ",
     "romaji": "byu",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "บิว"
   },
   {
     "id": "hiragana-youon-びょ",
     "char": "びょ",
     "romaji": "byo",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เบียว"
   },
   {
     "id": "hiragana-youon-ぴゃ",
     "char": "ぴゃ",
     "romaji": "pya",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เปียะ"
   },
   {
     "id": "hiragana-youon-ぴゅ",
     "char": "ぴゅ",
     "romaji": "pyu",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ปิว"
   },
   {
     "id": "hiragana-youon-ぴょ",
     "char": "ぴょ",
     "romaji": "pyo",
     "script": "hiragana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เปียว"
   },
   {
     "id": "hiragana-sokuon-gakkou",
     "char": "がっこう",
     "romaji": "gakkou",
     "script": "hiragana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "กักโคอุ"
   },
   {
     "id": "hiragana-sokuon-kitte",
     "char": "きって",
     "romaji": "kitte",
     "script": "hiragana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "คิตเตะ"
   },
   {
     "id": "hiragana-sokuon-zasshi",
     "char": "ざっし",
     "romaji": "zasshi",
     "script": "hiragana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "ซัสชิ"
   },
   {
     "id": "hiragana-sokuon-kekkon",
     "char": "けっこん",
     "romaji": "kekkon",
     "script": "hiragana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "เค็กคง"
   },
   {
     "id": "hiragana-sokuon-sekken",
     "char": "せっけん",
     "romaji": "sekken",
     "script": "hiragana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "เซ็กเก็ง"
   },
   {
     "id": "hiragana-sokuon-chotto",
     "char": "ちょっと",
     "romaji": "chotto",
     "script": "hiragana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "ชอตโตะ"
   },
   {
     "id": "hiragana-sokuon-yukkuri",
     "char": "ゆっくり",
     "romaji": "yukkuri",
     "script": "hiragana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "ยุกกุริ"
   },
   {
     "id": "hiragana-sokuon-kippu",
     "char": "きっぷ",
     "romaji": "kippu",
     "script": "hiragana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "คิปปุ"
   },
   {
     "id": "hiragana-hatsuon-hon",
     "char": "ほん",
     "romaji": "hon",
     "script": "hiragana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "ฮง"
   },
   {
     "id": "hiragana-hatsuon-sensei",
     "char": "せんせい",
     "romaji": "sensei",
     "script": "hiragana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "เซนเซ"
   },
   {
     "id": "hiragana-hatsuon-nihon",
     "char": "にほん",
     "romaji": "nihon",
     "script": "hiragana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "นิฮง"
   },
   {
     "id": "hiragana-hatsuon-ongaku",
     "char": "おんがく",
     "romaji": "ongaku",
     "script": "hiragana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "องกาคุ"
   },
   {
     "id": "hiragana-hatsuon-tenki",
     "char": "てんき",
     "romaji": "tenki",
     "script": "hiragana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "เท็งคิ"
   },
   {
     "id": "hiragana-hatsuon-kanji",
     "char": "かんじ",
     "romaji": "kanji",
     "script": "hiragana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "คันจิ"
   },
   {
     "id": "hiragana-hatsuon-mikan",
     "char": "みかん",
     "romaji": "mikan",
     "script": "hiragana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "มิกัง"
   },
   {
     "id": "hiragana-hatsuon-sanpo",
     "char": "さんぽ",
     "romaji": "sanpo",
     "script": "hiragana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "ซันโปะ"
   }
 ]

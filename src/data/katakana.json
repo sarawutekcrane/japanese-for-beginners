@@ -4,839 +4,959 @@
     "char": "ア",
     "romaji": "a",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "อะ"
   },
   {
     "id": "katakana-seion-i",
     "char": "イ",
     "romaji": "i",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "อิ"
   },
   {
     "id": "katakana-seion-u",
     "char": "ウ",
     "romaji": "u",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "อุ"
   },
   {
     "id": "katakana-seion-e",
     "char": "エ",
     "romaji": "e",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เอะ"
   },
   {
     "id": "katakana-seion-o",
     "char": "オ",
     "romaji": "o",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โอะ"
   },
   {
     "id": "katakana-seion-ka",
     "char": "カ",
     "romaji": "ka",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "คะ"
   },
   {
     "id": "katakana-seion-ki",
     "char": "キ",
     "romaji": "ki",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "คิ"
   },
   {
     "id": "katakana-seion-ku",
     "char": "ク",
     "romaji": "ku",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "คุ"
   },
   {
     "id": "katakana-seion-ke",
     "char": "ケ",
     "romaji": "ke",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เคะ"
   },
   {
     "id": "katakana-seion-ko",
     "char": "コ",
     "romaji": "ko",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โคะ"
   },
   {
     "id": "katakana-seion-sa",
     "char": "サ",
     "romaji": "sa",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ซะ"
   },
   {
     "id": "katakana-seion-shi",
     "char": "シ",
     "romaji": "shi",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ชิ"
   },
   {
     "id": "katakana-seion-su",
     "char": "ス",
     "romaji": "su",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ซุ"
   },
   {
     "id": "katakana-seion-se",
     "char": "セ",
     "romaji": "se",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เซะ"
   },
   {
     "id": "katakana-seion-so",
     "char": "ソ",
     "romaji": "so",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โซะ"
   },
   {
     "id": "katakana-seion-ta",
     "char": "タ",
     "romaji": "ta",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ทะ"
   },
   {
     "id": "katakana-seion-chi",
     "char": "チ",
     "romaji": "chi",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ชิ"
   },
   {
     "id": "katakana-seion-tsu",
     "char": "ツ",
     "romaji": "tsu",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "สึ"
   },
   {
     "id": "katakana-seion-te",
     "char": "テ",
     "romaji": "te",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เทะ"
   },
   {
     "id": "katakana-seion-to",
     "char": "ト",
     "romaji": "to",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โทะ"
   },
   {
     "id": "katakana-seion-na",
     "char": "ナ",
     "romaji": "na",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "นะ"
   },
   {
     "id": "katakana-seion-ni",
     "char": "ニ",
     "romaji": "ni",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "นิ"
   },
   {
     "id": "katakana-seion-nu",
     "char": "ヌ",
     "romaji": "nu",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "นุ"
   },
   {
     "id": "katakana-seion-ne",
     "char": "ネ",
     "romaji": "ne",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เนะ"
   },
   {
     "id": "katakana-seion-no",
     "char": "ノ",
     "romaji": "no",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โนะ"
   },
   {
     "id": "katakana-seion-ha",
     "char": "ハ",
     "romaji": "ha",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ฮะ"
   },
   {
     "id": "katakana-seion-hi",
     "char": "ヒ",
     "romaji": "hi",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ฮิ"
   },
   {
     "id": "katakana-seion-fu",
     "char": "フ",
     "romaji": "fu",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ฟุ"
   },
   {
     "id": "katakana-seion-he",
     "char": "ヘ",
     "romaji": "he",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เฮะ"
   },
   {
     "id": "katakana-seion-ho",
     "char": "ホ",
     "romaji": "ho",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โฮะ"
   },
   {
     "id": "katakana-seion-ma",
     "char": "マ",
     "romaji": "ma",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "มะ"
   },
   {
     "id": "katakana-seion-mi",
     "char": "ミ",
     "romaji": "mi",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "มิ"
   },
   {
     "id": "katakana-seion-mu",
     "char": "ム",
     "romaji": "mu",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "มุ"
   },
   {
     "id": "katakana-seion-me",
     "char": "メ",
     "romaji": "me",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เมะ"
   },
   {
     "id": "katakana-seion-mo",
     "char": "モ",
     "romaji": "mo",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โมะ"
   },
   {
     "id": "katakana-seion-ya",
     "char": "ヤ",
     "romaji": "ya",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ยะ"
   },
   {
     "id": "katakana-seion-yu",
     "char": "ユ",
     "romaji": "yu",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ยุ"
   },
   {
     "id": "katakana-seion-yo",
     "char": "ヨ",
     "romaji": "yo",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โยะ"
   },
   {
     "id": "katakana-seion-ra",
     "char": "ラ",
     "romaji": "ra",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ระ"
   },
   {
     "id": "katakana-seion-ri",
     "char": "リ",
     "romaji": "ri",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ริ"
   },
   {
     "id": "katakana-seion-ru",
     "char": "ル",
     "romaji": "ru",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "รุ"
   },
   {
     "id": "katakana-seion-re",
     "char": "レ",
     "romaji": "re",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "เระ"
   },
   {
     "id": "katakana-seion-ro",
     "char": "ロ",
     "romaji": "ro",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โระ"
   },
   {
     "id": "katakana-seion-wa",
     "char": "ワ",
     "romaji": "wa",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "วะ"
   },
   {
     "id": "katakana-seion-wo",
     "char": "ヲ",
     "romaji": "wo",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "โอะ"
   },
   {
     "id": "katakana-seion-n",
     "char": "ン",
     "romaji": "n",
     "script": "katakana",
-    "group": "seion"
+    "group": "seion",
+    "thai": "ง"
   },
   {
     "id": "katakana-dakuon-ガ",
     "char": "ガ",
     "romaji": "ga",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "กะ"
   },
   {
     "id": "katakana-dakuon-ギ",
     "char": "ギ",
     "romaji": "gi",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "กิ"
   },
   {
     "id": "katakana-dakuon-グ",
     "char": "グ",
     "romaji": "gu",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "กุ"
   },
   {
     "id": "katakana-dakuon-ゲ",
     "char": "ゲ",
     "romaji": "ge",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "เกะ"
   },
   {
     "id": "katakana-dakuon-ゴ",
     "char": "ゴ",
     "romaji": "go",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "โกะ"
   },
   {
     "id": "katakana-dakuon-ザ",
     "char": "ザ",
     "romaji": "za",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ซะ"
   },
   {
     "id": "katakana-dakuon-ジ",
     "char": "ジ",
     "romaji": "ji",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "จิ"
   },
   {
     "id": "katakana-dakuon-ズ",
     "char": "ズ",
     "romaji": "zu",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ซึ"
   },
   {
     "id": "katakana-dakuon-ゼ",
     "char": "ゼ",
     "romaji": "ze",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "เซะ"
   },
   {
     "id": "katakana-dakuon-ゾ",
     "char": "ゾ",
     "romaji": "zo",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "โซะ"
   },
   {
     "id": "katakana-dakuon-ダ",
     "char": "ダ",
     "romaji": "da",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ดะ"
   },
   {
     "id": "katakana-dakuon-ヂ",
     "char": "ヂ",
     "romaji": "ji",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "จิ"
   },
   {
     "id": "katakana-dakuon-ヅ",
     "char": "ヅ",
     "romaji": "zu",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ซึ"
   },
   {
     "id": "katakana-dakuon-デ",
     "char": "デ",
     "romaji": "de",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "เดะ"
   },
   {
     "id": "katakana-dakuon-ド",
     "char": "ド",
     "romaji": "do",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "โดะ"
   },
   {
     "id": "katakana-dakuon-バ",
     "char": "バ",
     "romaji": "ba",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "บะ"
   },
   {
     "id": "katakana-dakuon-ビ",
     "char": "ビ",
     "romaji": "bi",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "บิ"
   },
   {
     "id": "katakana-dakuon-ブ",
     "char": "ブ",
     "romaji": "bu",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "บุ"
   },
   {
     "id": "katakana-dakuon-ベ",
     "char": "ベ",
     "romaji": "be",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "เบะ"
   },
   {
     "id": "katakana-dakuon-ボ",
     "char": "ボ",
     "romaji": "bo",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "โบะ"
   },
   {
     "id": "katakana-dakuon-パ",
     "char": "パ",
     "romaji": "pa",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ปะ"
   },
   {
     "id": "katakana-dakuon-ピ",
     "char": "ピ",
     "romaji": "pi",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ปิ"
   },
   {
     "id": "katakana-dakuon-プ",
     "char": "プ",
     "romaji": "pu",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "ปุ"
   },
   {
     "id": "katakana-dakuon-ペ",
     "char": "ペ",
     "romaji": "pe",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "เปะ"
   },
   {
     "id": "katakana-dakuon-ポ",
     "char": "ポ",
     "romaji": "po",
     "script": "katakana",
-    "group": "dakuon"
+    "group": "dakuon",
+    "thai": "โปะ"
   },
   {
     "id": "katakana-youon-キャ",
     "char": "キャ",
     "romaji": "kya",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เคียะ"
   },
   {
     "id": "katakana-youon-キュ",
     "char": "キュ",
     "romaji": "kyu",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "คิว"
   },
   {
     "id": "katakana-youon-キョ",
     "char": "キョ",
     "romaji": "kyo",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เคียว"
   },
   {
     "id": "katakana-youon-シャ",
     "char": "シャ",
     "romaji": "sha",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ชะ"
   },
   {
     "id": "katakana-youon-シュ",
     "char": "シュ",
     "romaji": "shu",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ชุ"
   },
   {
     "id": "katakana-youon-ショ",
     "char": "ショ",
     "romaji": "sho",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "โชะ"
   },
   {
     "id": "katakana-youon-チャ",
     "char": "チャ",
     "romaji": "cha",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ชะ"
   },
   {
     "id": "katakana-youon-チュ",
     "char": "チュ",
     "romaji": "chu",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ชุ"
   },
   {
     "id": "katakana-youon-チョ",
     "char": "チョ",
     "romaji": "cho",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "โชะ"
   },
   {
     "id": "katakana-youon-ニャ",
     "char": "ニャ",
     "romaji": "nya",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เนียะ"
   },
   {
     "id": "katakana-youon-ニュ",
     "char": "ニュ",
     "romaji": "nyu",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "นิว"
   },
   {
     "id": "katakana-youon-ニョ",
     "char": "ニョ",
     "romaji": "nyo",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เนียว"
   },
   {
     "id": "katakana-youon-ヒャ",
     "char": "ヒャ",
     "romaji": "hya",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เฮียะ"
   },
   {
     "id": "katakana-youon-ヒュ",
     "char": "ヒュ",
     "romaji": "hyu",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ฮิว"
   },
   {
     "id": "katakana-youon-ヒョ",
     "char": "ヒョ",
     "romaji": "hyo",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เฮียว"
   },
   {
     "id": "katakana-youon-ミャ",
     "char": "ミャ",
     "romaji": "mya",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เมียะ"
   },
   {
     "id": "katakana-youon-ミュ",
     "char": "ミュ",
     "romaji": "myu",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "มิว"
   },
   {
     "id": "katakana-youon-ミョ",
     "char": "ミョ",
     "romaji": "myo",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เมียว"
   },
   {
     "id": "katakana-youon-リャ",
     "char": "リャ",
     "romaji": "rya",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เรียะ"
   },
   {
     "id": "katakana-youon-リュ",
     "char": "リュ",
     "romaji": "ryu",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ริว"
   },
   {
     "id": "katakana-youon-リョ",
     "char": "リョ",
     "romaji": "ryo",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เรียว"
   },
   {
     "id": "katakana-youon-ギャ",
     "char": "ギャ",
     "romaji": "gya",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เกียะ"
   },
   {
     "id": "katakana-youon-ギュ",
     "char": "ギュ",
     "romaji": "gyu",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "กิว"
   },
   {
     "id": "katakana-youon-ギョ",
     "char": "ギョ",
     "romaji": "gyo",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เกียว"
   },
   {
     "id": "katakana-youon-ジャ",
     "char": "ジャ",
     "romaji": "ja",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "จะ"
   },
   {
     "id": "katakana-youon-ジュ",
     "char": "ジュ",
     "romaji": "ju",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "จุ"
   },
   {
     "id": "katakana-youon-ジョ",
     "char": "ジョ",
     "romaji": "jo",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "โจะ"
   },
   {
     "id": "katakana-youon-ビャ",
     "char": "ビャ",
     "romaji": "bya",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เบียะ"
   },
   {
     "id": "katakana-youon-ビュ",
     "char": "ビュ",
     "romaji": "byu",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "บิว"
   },
   {
     "id": "katakana-youon-ビョ",
     "char": "ビョ",
     "romaji": "byo",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เบียว"
   },
   {
     "id": "katakana-youon-ピャ",
     "char": "ピャ",
     "romaji": "pya",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เปียะ"
   },
   {
     "id": "katakana-youon-ピュ",
     "char": "ピュ",
     "romaji": "pyu",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "ปิว"
   },
   {
     "id": "katakana-youon-ピョ",
     "char": "ピョ",
     "romaji": "pyo",
     "script": "katakana",
-    "group": "youon"
+    "group": "youon",
+    "thai": "เปียว"
   },
   {
     "id": "katakana-sokuon-beddo",
     "char": "ベッド",
     "romaji": "beddo",
     "script": "katakana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "เบ็ดโดะ"
   },
   {
     "id": "katakana-sokuon-sakkaa",
     "char": "サッカー",
     "romaji": "sakkaa",
     "script": "katakana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "ซักกา"
   },
   {
     "id": "katakana-sokuon-poketto",
     "char": "ポケット",
     "romaji": "poketto",
     "script": "katakana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "โปเก็ตโตะ"
   },
   {
     "id": "katakana-sokuon-kappu",
     "char": "カップ",
     "romaji": "kappu",
     "script": "katakana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "คัปปุ"
   },
   {
     "id": "katakana-sokuon-roketto",
     "char": "ロケット",
     "romaji": "roketto",
     "script": "katakana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "โรเก็ตโตะ"
   },
   {
     "id": "katakana-sokuon-matchi",
     "char": "マッチ",
     "romaji": "matchi",
     "script": "katakana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "มัทชิ"
   },
   {
     "id": "katakana-sokuon-kukkii",
     "char": "クッキー",
     "romaji": "kukkii",
     "script": "katakana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "คุกกี้"
   },
   {
     "id": "katakana-sokuon-surippa",
     "char": "スリッパ",
     "romaji": "surippa",
     "script": "katakana",
-    "group": "sokuon"
+    "group": "sokuon",
+    "thai": "สุริปปะ"
   },
   {
     "id": "katakana-hatsuon-pan",
     "char": "パン",
     "romaji": "pan",
     "script": "katakana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "ปัง"
   },
   {
     "id": "katakana-hatsuon-pen",
     "char": "ペン",
     "romaji": "pen",
     "script": "katakana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "เปน"
   },
   {
     "id": "katakana-hatsuon-resutoran",
     "char": "レストラン",
     "romaji": "resutoran",
     "script": "katakana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "เรสุโตรัง"
   },
   {
     "id": "katakana-hatsuon-botan",
     "char": "ボタン",
     "romaji": "botan",
     "script": "katakana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "โบตัง"
   },
   {
     "id": "katakana-hatsuon-karendaa",
     "char": "カレンダー",
     "romaji": "karendaa",
     "script": "katakana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "คาเรนดา"
   },
   {
     "id": "katakana-hatsuon-konsaato",
     "char": "コンサート",
     "romaji": "konsaato",
     "script": "katakana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "คอนซาโตะ"
   },
   {
     "id": "katakana-hatsuon-raion",
     "char": "ライオン",
     "romaji": "raion",
     "script": "katakana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "ไรอง"
   },
   {
     "id": "katakana-hatsuon-supuun",
     "char": "スプーン",
     "romaji": "supuun",
     "script": "katakana",
-    "group": "hatsuon"
+    "group": "hatsuon",
+    "thai": "สุปูน"
   }
 ]

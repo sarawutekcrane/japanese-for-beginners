@@ -125,10 +125,10 @@ function SpeakingView({ category, shuffleOn, onBack }) {
         {revealed && (
           <div className="quiz-reveal jp-text">
             <p>เฉลย: {card.answerText}</p>
-            {showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
-            {showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
           </div>
         )}
+        {showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
+        {showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
 
         <div className="toggle-group">
           <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
