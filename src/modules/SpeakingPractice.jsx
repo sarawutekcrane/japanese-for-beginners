@@ -1,12 +1,16 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Mascot from "../components/Mascot";
 import Illustration from "../illustrations";
+import Toggle from "../components/Toggle";
 import { useSpeak, useSpeechRecognition, matchesJapanese } from "../hooks/useSpeech";
-import { VOCAB_CATEGORIES, getVocab, toCard, shuffle } from "../utils/content";
+import { VOCAB_CATEGORIES, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
 
-function CategoryPicker({ onPick }) {
+function CategoryPicker({ shuffleOn, onShuffleChange, onPick }) {
   return (
     <div className="picker">
+      <div className="toggle-group">
+        <Toggle emoji="🔀" label="สุ่มลำดับคำศัพท์ (Shuffle)" checked={shuffleOn} onChange={onShuffleChange} />
+      </div>
       <section className="picker-section">
         <h3 className="picker-heading">📚 เลือกหมวดคำศัพท์เพื่อฝึกพูด</h3>
         <div className="picker-row">
@@ -23,15 +27,20 @@ function CategoryPicker({ onPick }) {
 
 const STATUS = { idle: "idle", listening: "listening", match: "match", nomatch: "nomatch", error: "error" };
 
-function SpeakingView({ category, onBack }) {
+function SpeakingView({ category, shuffleOn, onBack }) {
   const { speak } = useSpeak();
   const { supported, listening, start } = useSpeechRecognition();
 
-  const cards = useMemo(() => shuffle(getVocab(category.id).map(toCard)), [category]);
+  const [cards] = useState(() => {
+    const base = getVocab(category.id).map(toCard);
+    return shuffleOn ? shuffleArr(base) : base;
+  });
   const [index, setIndex] = useState(0);
   const [status, setStatus] = useState(STATUS.idle);
   const [heard, setHeard] = useState("");
   const [revealed, setRevealed] = useState(false);
+  const [showThai, setShowThai] = useState(false);
+  const [showRomaji, setShowRomaji] = useState(false);
 
   const card = cards[index];
 
@@ -114,11 +123,17 @@ function SpeakingView({ category, onBack }) {
         )}
 
         {revealed && (
-          <p className="quiz-reveal jp-text">
-            เฉลย: {card.answerText}
-            {card.reading && card.reading !== card.answerText ? ` (${card.reading})` : ""}
-          </p>
+          <div className="quiz-reveal jp-text">
+            <p>เฉลย: {card.answerText}</p>
+            {showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
+            {showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
+          </div>
         )}
+
+        <div className="toggle-group">
+          <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
+          <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
+        </div>
 
         <div className="quiz-actions">
           <button className="btn btn-outline btn-sm" onClick={() => setRevealed(true)}>
@@ -140,6 +155,8 @@ function SpeakingView({ category, onBack }) {
 
 export default function SpeakingPractice() {
   const [category, setCategory] = useState(null);
-  if (!category) return <CategoryPicker onPick={setCategory} />;
-  return <SpeakingView category={category} onBack={() => setCategory(null)} />;
+  const [shuffleOn, setShuffleOn] = useState(false);
+
+  if (!category) return <CategoryPicker shuffleOn={shuffleOn} onShuffleChange={setShuffleOn} onPick={setCategory} />;
+  return <SpeakingView category={category} shuffleOn={shuffleOn} onBack={() => setCategory(null)} />;
 }

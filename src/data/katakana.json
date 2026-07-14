@@ -726,5 +726,117 @@
     "romaji": "pyo",
     "script": "katakana",
     "group": "youon"
+  },
+  {
+    "id": "katakana-sokuon-beddo",
+    "char": "ベッド",
+    "romaji": "beddo",
+    "script": "katakana",
+    "group": "sokuon"
+  },
+  {
+    "id": "katakana-sokuon-sakkaa",
+    "char": "サッカー",
+    "romaji": "sakkaa",
+    "script": "katakana",
+    "group": "sokuon"
+  },
+  {
+    "id": "katakana-sokuon-poketto",
+    "char": "ポケット",
+    "romaji": "poketto",
+    "script": "katakana",
+    "group": "sokuon"
+  },
+  {
+    "id": "katakana-sokuon-kappu",
+    "char": "カップ",
+    "romaji": "kappu",
+    "script": "katakana",
+    "group": "sokuon"
+  },
+  {
+    "id": "katakana-sokuon-roketto",
+    "char": "ロケット",
+    "romaji": "roketto",
+    "script": "katakana",
+    "group": "sokuon"
+  },
+  {
+    "id": "katakana-sokuon-matchi",
+    "char": "マッチ",
+    "romaji": "matchi",
+    "script": "katakana",
+    "group": "sokuon"
+  },
+  {
+    "id": "katakana-sokuon-kukkii",
+    "char": "クッキー",
+    "romaji": "kukkii",
+    "script": "katakana",
+    "group": "sokuon"
+  },
+  {
+    "id": "katakana-sokuon-surippa",
+    "char": "スリッパ",
+    "romaji": "surippa",
+    "script": "katakana",
+    "group": "sokuon"
+  },
+  {
+    "id": "katakana-hatsuon-pan",
+    "char": "パン",
+    "romaji": "pan",
+    "script": "katakana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "katakana-hatsuon-pen",
+    "char": "ペン",
+    "romaji": "pen",
+    "script": "katakana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "katakana-hatsuon-resutoran",
+    "char": "レストラン",
+    "romaji": "resutoran",
+    "script": "katakana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "katakana-hatsuon-botan",
+    "char": "ボタン",
+    "romaji": "botan",
+    "script": "katakana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "katakana-hatsuon-karendaa",
+    "char": "カレンダー",
+    "romaji": "karendaa",
+    "script": "katakana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "katakana-hatsuon-konsaato",
+    "char": "コンサート",
+    "romaji": "konsaato",
+    "script": "katakana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "katakana-hatsuon-raion",
+    "char": "ライオン",
+    "romaji": "raion",
+    "script": "katakana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "katakana-hatsuon-supuun",
+    "char": "スプーン",
+    "romaji": "supuun",
+    "script": "katakana",
+    "group": "hatsuon"
   }
 ]

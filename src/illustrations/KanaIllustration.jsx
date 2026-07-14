@@ -1,5 +1,13 @@
 import { Frame, INK } from "./shared";
 
+const GROUP_LABEL = {
+  seion: "清音",
+  dakuon: "濁音・半濁音",
+  youon: "拗音",
+  sokuon: "促音",
+  hatsuon: "撥音",
+};
+
 /** Light decorative backdrop for kana cards (character itself is rendered as text by the card). */
 export default function KanaIllustration({ script, group, id }) {
   const petal = script === "hiragana" ? "#ff9ec7" : "#8fcfff";
@@ -23,7 +31,7 @@ export default function KanaIllustration({ script, group, id }) {
         opacity="0.45"
         fontFamily="'Baloo 2', sans-serif"
       >
-        {group === "seion" ? "清音" : group === "dakuon" ? "濁音・半濁音" : "拗音"}
+        {GROUP_LABEL[group] || ""}
       </text>
     </Frame>
   );

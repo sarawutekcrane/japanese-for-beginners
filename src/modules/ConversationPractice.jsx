@@ -1,15 +1,22 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Mascot from "../components/Mascot";
+import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
+import { shuffle as shuffleArr } from "../utils/content";
 import conversations from "../data/conversations.json";
 
-function TopicPicker({ onPick }) {
+function TopicPicker({ shuffleOn, onShuffleChange, onPick }) {
+  const topics = useMemo(() => (shuffleOn ? shuffleArr(conversations) : conversations), [shuffleOn]);
+
   return (
     <div className="picker">
+      <div className="toggle-group blue">
+        <Toggle emoji="🔀" label="สุ่มลำดับสถานการณ์ (Shuffle)" checked={shuffleOn} onChange={onShuffleChange} />
+      </div>
       <section className="picker-section">
         <h3 className="picker-heading">💬 เลือกสถานการณ์ที่อยากฝึก</h3>
         <div className="topic-grid">
-          {conversations.map((topic) => (
+          {topics.map((topic) => (
             <button key={topic.id} className="topic-card" onClick={() => onPick(topic)}>
               <span className="module-emoji">{topic.emoji}</span>
               <span className="module-title">{topic.title}</span>
@@ -25,6 +32,7 @@ function DialogueView({ topic, onBack }) {
   const { speak } = useSpeak();
   const [nodeIndex, setNodeIndex] = useState(0);
   const [showRomaji, setShowRomaji] = useState(false);
+  const [showThai, setShowThai] = useState(false);
   const [history, setHistory] = useState([]);
   const [finished, setFinished] = useState(false);
 
@@ -62,10 +70,10 @@ function DialogueView({ topic, onBack }) {
         {topic.emoji} {topic.title} · {Math.min(nodeIndex + 1, topic.nodes.length)} / {topic.nodes.length}
       </p>
 
-      <label className="romaji-toggle th-text">
-        <input type="checkbox" checked={showRomaji} onChange={(e) => setShowRomaji(e.target.checked)} />
-        แสดง Romaji
-      </label>
+      <div className="toggle-group blue">
+        <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
+        <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
+      </div>
 
       <div className="conversation-history scroll-x-safe">
         {history.map((h, i) => (
@@ -73,12 +81,12 @@ function DialogueView({ topic, onBack }) {
             <div className="bubble bubble-system">
               <p className="jp-text">{h.system.japanese}</p>
               {showRomaji && <p className="bubble-romaji">{h.system.romaji}</p>}
-              <p className="th-text bubble-thai">{h.system.thai}</p>
+              {showThai && <p className="th-text bubble-thai">{h.system.thai}</p>}
             </div>
             <div className="bubble bubble-user">
               <p className="jp-text">{h.reply.japanese}</p>
               {showRomaji && <p className="bubble-romaji">{h.reply.romaji}</p>}
-              <p className="th-text bubble-thai">{h.reply.thai}</p>
+              {showThai && <p className="th-text bubble-thai">{h.reply.thai}</p>}
             </div>
           </div>
         ))}
@@ -90,7 +98,7 @@ function DialogueView({ topic, onBack }) {
           <div className="bubble bubble-system bubble-current">
             <p className="jp-text">{node.system.japanese}</p>
             {showRomaji && <p className="bubble-romaji">{node.system.romaji}</p>}
-            <p className="th-text bubble-thai">{node.system.thai}</p>
+            {showThai && <p className="th-text bubble-thai">{node.system.thai}</p>}
           </div>
           <button className="btn btn-outline blue btn-sm" onClick={replay}>
             🔊 ฟังอีกครั้ง
@@ -102,7 +110,7 @@ function DialogueView({ topic, onBack }) {
               <button key={i} className="reply-option" onClick={() => choose(opt)}>
                 <span className="jp-text">{opt.japanese}</span>
                 {showRomaji && <span className="bubble-romaji">{opt.romaji}</span>}
-                <span className="th-text bubble-thai">{opt.thai}</span>
+                {showThai && <span className="th-text bubble-thai">{opt.thai}</span>}
               </button>
             ))}
           </div>
@@ -127,6 +135,8 @@ function DialogueView({ topic, onBack }) {
 
 export default function ConversationPractice() {
   const [topic, setTopic] = useState(null);
-  if (!topic) return <TopicPicker onPick={setTopic} />;
+  const [shuffleOn, setShuffleOn] = useState(false);
+
+  if (!topic) return <TopicPicker shuffleOn={shuffleOn} onShuffleChange={setShuffleOn} onPick={setTopic} />;
   return <DialogueView topic={topic} onBack={() => setTopic(null)} />;
 }

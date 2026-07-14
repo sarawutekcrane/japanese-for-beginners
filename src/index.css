@@ -362,10 +362,27 @@ button {
   font-size: 2.4rem;
   font-weight: 700;
   color: var(--ink);
+  text-align: center;
 }
 
 .kana-big {
   font-size: 3.6rem;
+}
+
+.flashcard-romaji {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: -8px;
+}
+
+.flashcard-thai {
+  color: var(--pink-text);
+  font-weight: 700;
+  background: var(--pink);
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
 }
 
 .flashcard-hint {
@@ -459,8 +476,19 @@ button {
   color: var(--pink-text);
   font-weight: 700;
   background: var(--pink);
-  padding: 6px 14px;
-  border-radius: 999px;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.quiz-reveal p {
+  margin: 2px 0;
+}
+
+.quiz-reveal .flashcard-romaji,
+.quiz-reveal .flashcard-thai {
+  background: none;
+  padding: 0;
 }
 
 .quiz-actions {
@@ -551,13 +579,6 @@ button {
   width: 100%;
 }
 
-.romaji-toggle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--ink-soft);
-  font-size: 0.9rem;
-}
 
 .conversation-history {
   width: 100%;
@@ -671,4 +692,63 @@ button {
   .topic-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ---------- Toggle switch (shared) ---------- */
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.toggle-label {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.toggle-switch {
+  border: none;
+  width: 46px;
+  height: 26px;
+  border-radius: 999px;
+  background: #e3dde1;
+  padding: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  transition: background 0.15s ease;
+}
+
+.toggle-switch.on {
+  background: var(--pink-deep);
+  justify-content: flex-end;
+}
+
+.toggle-knob {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  display: block;
+}
+
+.toggle-group {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--white);
+  border: 3px solid var(--pink);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.toggle-group.blue {
+  border-color: var(--blue-deep);
 }

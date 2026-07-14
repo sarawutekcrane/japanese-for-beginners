@@ -6,7 +6,11 @@ export const KANA_GROUPS = [
   { id: "seion", label: "เสียงพื้นฐาน (清音)", labelJa: "清音" },
   { id: "dakuon", label: "เสียงก้อง/กึ่งก้อง (濁音・半濁音)", labelJa: "濁音・半濁音" },
   { id: "youon", label: "เสียงควบ (拗音)", labelJa: "拗音" },
+  { id: "sokuon", label: "เสียงกักซ้ำ (促音)", labelJa: "促音" },
+  { id: "hatsuon", label: "เสียงนาสิก (撥音)", labelJa: "撥音" },
 ];
+
+const KANA_GROUP_ORDER = ["seion", "dakuon", "youon", "sokuon", "hatsuon"];
 
 export const VOCAB_CATEGORIES = [
   { id: "greetings", label: "คำทักทาย", emoji: "👋" },
@@ -20,6 +24,12 @@ export function getKana(script) {
 
 export function getKanaByGroup(script, group) {
   return getKana(script).filter((k) => k.group === group);
+}
+
+/** Full deck for a script, ordered: basic -> voiced/semi-voiced -> combined -> sokuon -> hatsuon. */
+export function getKanaCombinedDeck(script) {
+  const all = getKana(script);
+  return KANA_GROUP_ORDER.flatMap((group) => all.filter((k) => k.group === group));
 }
 
 export function getVocab(category) {

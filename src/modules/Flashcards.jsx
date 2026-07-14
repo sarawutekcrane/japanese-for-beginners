@@ -1,30 +1,25 @@
 import { useMemo, useState } from "react";
 import Illustration from "../illustrations";
+import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
-import { KANA_GROUPS, VOCAB_CATEGORIES, getKanaByGroup, getVocab, toCard } from "../utils/content";
+import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
 
-function CategoryPicker({ onPick }) {
+function CategoryPicker({ shuffleOn, onShuffleChange, onPick }) {
   return (
     <div className="picker">
-      <section className="picker-section">
-        <h3 className="picker-heading">あ Hiragana</h3>
-        <div className="picker-row">
-          {KANA_GROUPS.map((g) => (
-            <button key={g.id} className="btn btn-outline btn-sm" onClick={() => onPick({ kind: "kana", script: "hiragana", group: g.id, label: `Hiragana · ${g.label}` })}>
-              {g.labelJa}
-            </button>
-          ))}
-        </div>
-      </section>
+      <div className="toggle-group">
+        <Toggle emoji="🔀" label="สุ่มลำดับการ์ด (Shuffle)" checked={shuffleOn} onChange={onShuffleChange} />
+      </div>
 
       <section className="picker-section">
-        <h3 className="picker-heading">ア Katakana</h3>
+        <h3 className="picker-heading">あ / ア ตัวอักษร (Characters)</h3>
         <div className="picker-row">
-          {KANA_GROUPS.map((g) => (
-            <button key={g.id} className="btn btn-outline blue btn-sm" onClick={() => onPick({ kind: "kana", script: "katakana", group: g.id, label: `Katakana · ${g.label}` })}>
-              {g.labelJa}
-            </button>
-          ))}
+          <button className="btn btn-outline btn-sm" onClick={() => onPick({ kind: "kana", script: "hiragana", label: "Hiragana (ครบทุกกลุ่ม)" })}>
+            あ Hiragana
+          </button>
+          <button className="btn btn-outline blue btn-sm" onClick={() => onPick({ kind: "kana", script: "katakana", label: "Katakana (ครบทุกกลุ่ม)" })}>
+            ア Katakana
+          </button>
         </div>
       </section>
 
@@ -42,14 +37,18 @@ function CategoryPicker({ onPick }) {
   );
 }
 
-function FlashcardView({ selection, onBack }) {
+function FlashcardView({ selection, shuffleOn, onBack }) {
   const { speak } = useSpeak();
   const [index, setIndex] = useState(0);
+  const [showThai, setShowThai] = useState(false);
+  const [showRomaji, setShowRomaji] = useState(false);
 
   const cards = useMemo(() => {
-    const raw = selection.kind === "kana" ? getKanaByGroup(selection.script, selection.group) : getVocab(selection.category);
-    return raw.map(toCard);
-  }, [selection]);
+    const raw = selection.kind === "kana" ? getKanaCombinedDeck(selection.script) : getVocab(selection.category);
+    const base = raw.map(toCard);
+    return shuffleOn ? shuffleArr(base) : base;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selection, shuffleOn]);
 
   const card = cards[index];
 
@@ -57,7 +56,11 @@ function FlashcardView({ selection, onBack }) {
 
   const go = (delta) => {
     setIndex((i) => (i + delta + cards.length) % cards.length);
+    setShowThai(false);
+    setShowRomaji(false);
   };
+
+  const isLongKana = card.kind === "kana" && card.display.length > 2;
 
   return (
     <div className="flashcards-view">
@@ -73,9 +76,18 @@ function FlashcardView({ selection, onBack }) {
         <div className="flashcard-illustration">
           <Illustration item={card.kind === "kana" ? { script: card.script, group: card.group, id: card.id } : { icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
         </div>
-        <p className={`flashcard-text ${card.kind === "kana" ? "jp-text kana-big" : "jp-text"}`}>{card.display}</p>
+        <p className={`flashcard-text jp-text ${card.kind === "kana" ? (isLongKana ? "" : "kana-big") : ""}`}>{card.display}</p>
+        {card.kind === "vocab" && showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
+        {card.kind === "vocab" && showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
         <p className="flashcard-hint th-text">แตะเพื่อฟังเสียง 🔊</p>
       </div>
+
+      {card.kind === "vocab" && (
+        <div className="toggle-group">
+          <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
+          <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
+        </div>
+      )}
 
       <div className="flashcard-nav">
         <button className="btn btn-round btn-outline" onClick={() => go(-1)} aria-label="ก่อนหน้า">
@@ -94,7 +106,8 @@ function FlashcardView({ selection, onBack }) {
 
 export default function Flashcards() {
   const [selection, setSelection] = useState(null);
+  const [shuffleOn, setShuffleOn] = useState(false);
 
-  if (!selection) return <CategoryPicker onPick={setSelection} />;
-  return <FlashcardView selection={selection} onBack={() => setSelection(null)} />;
+  if (!selection) return <CategoryPicker shuffleOn={shuffleOn} onShuffleChange={setShuffleOn} onPick={setSelection} />;
+  return <FlashcardView selection={selection} shuffleOn={shuffleOn} onBack={() => setSelection(null)} />;
 }

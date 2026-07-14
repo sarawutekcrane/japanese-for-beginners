@@ -1,11 +1,16 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Mascot from "../components/Mascot";
+import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
-import { KANA_GROUPS, VOCAB_CATEGORIES, getKanaByGroup, getVocab, toCard, sample } from "../utils/content";
+import { KANA_GROUPS, VOCAB_CATEGORIES, getKanaByGroup, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
 
-function PoolPicker({ onPick }) {
+function PoolPicker({ shuffleOn, onShuffleChange, onPick }) {
   return (
     <div className="picker">
+      <div className="toggle-group blue">
+        <Toggle emoji="🔀" label="สุ่มลำดับคำถาม (Shuffle)" checked={shuffleOn} onChange={onShuffleChange} />
+      </div>
+
       <section className="picker-section">
         <h3 className="picker-heading">あ Hiragana</h3>
         <div className="picker-row">
@@ -40,20 +45,25 @@ function PoolPicker({ onPick }) {
   );
 }
 
-function buildQuestion(pool) {
-  const [answer, ...distractors] = sample(pool, 4);
-  const options = [answer, ...distractors].sort(() => Math.random() - 0.5);
+function buildQuestion(pool, cursor, shuffleOn) {
+  const answer = shuffleOn ? pool[Math.floor(Math.random() * pool.length)] : pool[cursor % pool.length];
+  const distractors = sample(
+    pool.filter((p) => p.id !== answer.id),
+    3
+  );
+  const options = shuffleArr([answer, ...distractors]);
   return { answer, options };
 }
 
-function QuizView({ selection, onBack }) {
+function QuizView({ selection, shuffleOn, onBack }) {
   const { speak } = useSpeak();
-  const pool = useMemo(() => {
+  const [pool] = useState(() => {
     const raw = selection.kind === "kana" ? getKanaByGroup(selection.script, selection.group) : getVocab(selection.category);
     return raw.map(toCard);
-  }, [selection]);
+  });
 
-  const [question, setQuestion] = useState(() => buildQuestion(pool));
+  const [cursor, setCursor] = useState(0);
+  const [question, setQuestion] = useState(() => buildQuestion(pool, 0, shuffleOn));
   const [selectedId, setSelectedId] = useState(null);
   const [revealed, setRevealed] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
@@ -70,7 +80,9 @@ function QuizView({ selection, onBack }) {
   };
 
   const next = () => {
-    setQuestion(buildQuestion(pool));
+    const nextCursor = cursor + 1;
+    setCursor(nextCursor);
+    setQuestion(buildQuestion(pool, nextCursor, shuffleOn));
     setSelectedId(null);
     setRevealed(false);
   };
@@ -137,6 +149,8 @@ function QuizView({ selection, onBack }) {
 
 export default function ListeningQuiz() {
   const [selection, setSelection] = useState(null);
-  if (!selection) return <PoolPicker onPick={setSelection} />;
-  return <QuizView selection={selection} onBack={() => setSelection(null)} />;
+  const [shuffleOn, setShuffleOn] = useState(false);
+
+  if (!selection) return <PoolPicker shuffleOn={shuffleOn} onShuffleChange={setShuffleOn} onPick={setSelection} />;
+  return <QuizView selection={selection} shuffleOn={shuffleOn} onBack={() => setSelection(null)} />;
 }

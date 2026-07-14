@@ -726,5 +726,117 @@
     "romaji": "pyo",
     "script": "hiragana",
     "group": "youon"
+  },
+  {
+    "id": "hiragana-sokuon-gakkou",
+    "char": "がっこう",
+    "romaji": "gakkou",
+    "script": "hiragana",
+    "group": "sokuon"
+  },
+  {
+    "id": "hiragana-sokuon-kitte",
+    "char": "きって",
+    "romaji": "kitte",
+    "script": "hiragana",
+    "group": "sokuon"
+  },
+  {
+    "id": "hiragana-sokuon-zasshi",
+    "char": "ざっし",
+    "romaji": "zasshi",
+    "script": "hiragana",
+    "group": "sokuon"
+  },
+  {
+    "id": "hiragana-sokuon-kekkon",
+    "char": "けっこん",
+    "romaji": "kekkon",
+    "script": "hiragana",
+    "group": "sokuon"
+  },
+  {
+    "id": "hiragana-sokuon-sekken",
+    "char": "せっけん",
+    "romaji": "sekken",
+    "script": "hiragana",
+    "group": "sokuon"
+  },
+  {
+    "id": "hiragana-sokuon-chotto",
+    "char": "ちょっと",
+    "romaji": "chotto",
+    "script": "hiragana",
+    "group": "sokuon"
+  },
+  {
+    "id": "hiragana-sokuon-yukkuri",
+    "char": "ゆっくり",
+    "romaji": "yukkuri",
+    "script": "hiragana",
+    "group": "sokuon"
+  },
+  {
+    "id": "hiragana-sokuon-kippu",
+    "char": "きっぷ",
+    "romaji": "kippu",
+    "script": "hiragana",
+    "group": "sokuon"
+  },
+  {
+    "id": "hiragana-hatsuon-hon",
+    "char": "ほん",
+    "romaji": "hon",
+    "script": "hiragana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "hiragana-hatsuon-sensei",
+    "char": "せんせい",
+    "romaji": "sensei",
+    "script": "hiragana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "hiragana-hatsuon-nihon",
+    "char": "にほん",
+    "romaji": "nihon",
+    "script": "hiragana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "hiragana-hatsuon-ongaku",
+    "char": "おんがく",
+    "romaji": "ongaku",
+    "script": "hiragana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "hiragana-hatsuon-tenki",
+    "char": "てんき",
+    "romaji": "tenki",
+    "script": "hiragana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "hiragana-hatsuon-kanji",
+    "char": "かんじ",
+    "romaji": "kanji",
+    "script": "hiragana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "hiragana-hatsuon-mikan",
+    "char": "みかん",
+    "romaji": "mikan",
+    "script": "hiragana",
+    "group": "hatsuon"
+  },
+  {
+    "id": "hiragana-hatsuon-sanpo",
+    "char": "さんぽ",
+    "romaji": "sanpo",
+    "script": "hiragana",
+    "group": "hatsuon"
   }
 ]
