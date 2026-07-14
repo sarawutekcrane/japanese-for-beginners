@@ -104,6 +104,12 @@ function SpeakingView({ category, shuffleOn, onBack }) {
 
   const mood = status === STATUS.match ? "excited" : status === STATUS.nomatch ? "sad" : status === STATUS.listening ? "wink" : "neutral";
 
+  // Auto-reveal the Thai translation and Japanese reading on a correct
+  // answer, as if the toggles below were switched on.
+  const effectiveRevealed = revealed || status === STATUS.match;
+  const effectiveShowRomaji = showRomaji || status === STATUS.match;
+  const effectiveShowThai = showThai || status === STATUS.match;
+
   return (
     <div className="speaking-view">
       <button className="btn btn-outline btn-sm" onClick={onBack}>
@@ -153,13 +159,13 @@ function SpeakingView({ category, shuffleOn, onBack }) {
           </button>
         )}
 
-        {revealed && (
+        {effectiveRevealed && (
           <div className="quiz-reveal jp-text">
             <p>เฉลย: {card.answerText}</p>
           </div>
         )}
-        {showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
-        {showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
+        {effectiveShowRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
+        {effectiveShowThai && <p className="flashcard-thai th-text">{card.thai}</p>}
 
         <div className="toggle-group">
           <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
