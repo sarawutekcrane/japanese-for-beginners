@@ -39,7 +39,6 @@ function SpeakingView({ category, onBack }) {
   const [index, setIndex] = useState(0);
   const [status, setStatus] = useState(STATUS.idle);
   const [heard, setHeard] = useState("");
-  const [revealed, setRevealed] = useState(false);
   const [showThai, setShowThai] = useState(false);
   const [showRomaji, setShowRomaji] = useState(false);
 
@@ -47,7 +46,6 @@ function SpeakingView({ category, onBack }) {
     setIndex(0);
     setStatus(STATUS.idle);
     setHeard("");
-    setRevealed(false);
   }, [cards]);
 
   const card = cards[index];
@@ -68,11 +66,6 @@ function SpeakingView({ category, onBack }) {
   const speakTimeoutRef = useRef(null);
 
   useEffect(() => () => clearTimeout(speakTimeoutRef.current), []);
-
-  const reveal = () => {
-    setRevealed(true);
-    speak(card.audioText, { rate: 0.85 });
-  };
 
   const record = () => {
     setStatus(STATUS.listening);
@@ -121,12 +114,10 @@ function SpeakingView({ category, onBack }) {
     setIndex((i) => (i + 1) % cards.length);
     setStatus(STATUS.idle);
     setHeard("");
-    setRevealed(false);
   };
 
   // Auto-reveal the Thai translation and Japanese reading on a correct
   // answer, as if the toggles below were switched on.
-  const effectiveRevealed = revealed || status === STATUS.match;
   const effectiveShowRomaji = showRomaji || status === STATUS.match;
   const effectiveShowThai = showThai || status === STATUS.match;
 
@@ -184,11 +175,6 @@ function SpeakingView({ category, onBack }) {
           </button>
         )}
 
-        {effectiveRevealed && (
-          <div className="quiz-reveal jp-text">
-            <p>เฉลย: {card.answerText}</p>
-          </div>
-        )}
         {effectiveShowRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
         {effectiveShowThai && <p className="flashcard-thai th-text">{card.thai}</p>}
 
@@ -198,9 +184,6 @@ function SpeakingView({ category, onBack }) {
         </div>
 
         <div className="quiz-actions">
-          <button className="btn btn-outline btn-sm" onClick={reveal}>
-            เฉลยคำตอบ
-          </button>
           <button className="btn btn-success btn-sm" onClick={next}>
             คำถัดไป →
           </button>

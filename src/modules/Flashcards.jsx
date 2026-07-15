@@ -63,8 +63,6 @@ function FlashcardView({ selection, onBack }) {
     setShowRomaji(false);
   };
 
-  const isLongKana = card.kind === "kana" && card.display.length > 2;
-
   return (
     <div className="flashcards-view">
       <button className="btn btn-outline btn-sm" onClick={onBack}>
@@ -83,7 +81,7 @@ function FlashcardView({ selection, onBack }) {
         <div className="flashcard-illustration">
           <Illustration item={card.kind === "kana" ? { script: card.script, group: card.group, char: card.display, id: card.id } : { icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
         </div>
-        <p className={`flashcard-text jp-text ${card.kind === "kana" ? (isLongKana ? "" : "kana-big") : ""}`}>{card.display}</p>
+        {card.kind !== "kana" && <p className="flashcard-text jp-text">{card.display}</p>}
         {showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
         {showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
         <p className="flashcard-hint th-text">แตะเพื่อฟังเสียง 🔊</p>
