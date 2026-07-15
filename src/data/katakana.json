@@ -832,131 +832,19 @@
     "thai": "เปียว"
   },
   {
-    "id": "katakana-sokuon-beddo",
-    "char": "ベッド",
-    "romaji": "beddo",
+    "id": "katakana-sokuon",
+    "char": "ッ",
+    "romaji": "(sokuon)",
     "script": "katakana",
     "group": "sokuon",
-    "thai": "เบ็ดโดะ"
+    "thai": "ตัวเล็ก ทำให้พยัญชนะถัดไปเป็นเสียงกัก"
   },
   {
-    "id": "katakana-sokuon-sakkaa",
-    "char": "サッカー",
-    "romaji": "sakkaa",
-    "script": "katakana",
-    "group": "sokuon",
-    "thai": "ซักกา"
-  },
-  {
-    "id": "katakana-sokuon-poketto",
-    "char": "ポケット",
-    "romaji": "poketto",
-    "script": "katakana",
-    "group": "sokuon",
-    "thai": "โปเก็ตโตะ"
-  },
-  {
-    "id": "katakana-sokuon-kappu",
-    "char": "カップ",
-    "romaji": "kappu",
-    "script": "katakana",
-    "group": "sokuon",
-    "thai": "คัปปุ"
-  },
-  {
-    "id": "katakana-sokuon-roketto",
-    "char": "ロケット",
-    "romaji": "roketto",
-    "script": "katakana",
-    "group": "sokuon",
-    "thai": "โรเก็ตโตะ"
-  },
-  {
-    "id": "katakana-sokuon-matchi",
-    "char": "マッチ",
-    "romaji": "matchi",
-    "script": "katakana",
-    "group": "sokuon",
-    "thai": "มัทชิ"
-  },
-  {
-    "id": "katakana-sokuon-kukkii",
-    "char": "クッキー",
-    "romaji": "kukkii",
-    "script": "katakana",
-    "group": "sokuon",
-    "thai": "คุกกี้"
-  },
-  {
-    "id": "katakana-sokuon-surippa",
-    "char": "スリッパ",
-    "romaji": "surippa",
-    "script": "katakana",
-    "group": "sokuon",
-    "thai": "สุริปปะ"
-  },
-  {
-    "id": "katakana-hatsuon-pan",
-    "char": "パン",
-    "romaji": "pan",
+    "id": "katakana-hatsuon",
+    "char": "ン",
+    "romaji": "n",
     "script": "katakana",
     "group": "hatsuon",
-    "thai": "ปัง"
-  },
-  {
-    "id": "katakana-hatsuon-pen",
-    "char": "ペン",
-    "romaji": "pen",
-    "script": "katakana",
-    "group": "hatsuon",
-    "thai": "เปน"
-  },
-  {
-    "id": "katakana-hatsuon-resutoran",
-    "char": "レストラン",
-    "romaji": "resutoran",
-    "script": "katakana",
-    "group": "hatsuon",
-    "thai": "เรสุโตรัง"
-  },
-  {
-    "id": "katakana-hatsuon-botan",
-    "char": "ボタン",
-    "romaji": "botan",
-    "script": "katakana",
-    "group": "hatsuon",
-    "thai": "โบตัง"
-  },
-  {
-    "id": "katakana-hatsuon-karendaa",
-    "char": "カレンダー",
-    "romaji": "karendaa",
-    "script": "katakana",
-    "group": "hatsuon",
-    "thai": "คาเรนดา"
-  },
-  {
-    "id": "katakana-hatsuon-konsaato",
-    "char": "コンサート",
-    "romaji": "konsaato",
-    "script": "katakana",
-    "group": "hatsuon",
-    "thai": "คอนซาโตะ"
-  },
-  {
-    "id": "katakana-hatsuon-raion",
-    "char": "ライオン",
-    "romaji": "raion",
-    "script": "katakana",
-    "group": "hatsuon",
-    "thai": "ไรอง"
-  },
-  {
-    "id": "katakana-hatsuon-supuun",
-    "char": "スプーン",
-    "romaji": "supuun",
-    "script": "katakana",
-    "group": "hatsuon",
-    "thai": "สุปูน"
+    "thai": "เสียงนาสิก ง/น"
   }
 ]

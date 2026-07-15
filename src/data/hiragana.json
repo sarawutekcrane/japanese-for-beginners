@@ -832,131 +832,19 @@
     "thai": "เปียว"
   },
   {
-    "id": "hiragana-sokuon-gakkou",
-    "char": "がっこう",
-    "romaji": "gakkou",
+    "id": "hiragana-sokuon",
+    "char": "っ",
+    "romaji": "(sokuon)",
     "script": "hiragana",
     "group": "sokuon",
-    "thai": "กักโคอุ"
+    "thai": "ตัวเล็ก ทำให้พยัญชนะถัดไปเป็นเสียงกัก"
   },
   {
-    "id": "hiragana-sokuon-kitte",
-    "char": "きって",
-    "romaji": "kitte",
-    "script": "hiragana",
-    "group": "sokuon",
-    "thai": "คิตเตะ"
-  },
-  {
-    "id": "hiragana-sokuon-zasshi",
-    "char": "ざっし",
-    "romaji": "zasshi",
-    "script": "hiragana",
-    "group": "sokuon",
-    "thai": "ซัสชิ"
-  },
-  {
-    "id": "hiragana-sokuon-kekkon",
-    "char": "けっこん",
-    "romaji": "kekkon",
-    "script": "hiragana",
-    "group": "sokuon",
-    "thai": "เค็กคง"
-  },
-  {
-    "id": "hiragana-sokuon-sekken",
-    "char": "せっけん",
-    "romaji": "sekken",
-    "script": "hiragana",
-    "group": "sokuon",
-    "thai": "เซ็กเก็ง"
-  },
-  {
-    "id": "hiragana-sokuon-chotto",
-    "char": "ちょっと",
-    "romaji": "chotto",
-    "script": "hiragana",
-    "group": "sokuon",
-    "thai": "ชอตโตะ"
-  },
-  {
-    "id": "hiragana-sokuon-yukkuri",
-    "char": "ゆっくり",
-    "romaji": "yukkuri",
-    "script": "hiragana",
-    "group": "sokuon",
-    "thai": "ยุกกุริ"
-  },
-  {
-    "id": "hiragana-sokuon-kippu",
-    "char": "きっぷ",
-    "romaji": "kippu",
-    "script": "hiragana",
-    "group": "sokuon",
-    "thai": "คิปปุ"
-  },
-  {
-    "id": "hiragana-hatsuon-hon",
-    "char": "ほん",
-    "romaji": "hon",
+    "id": "hiragana-hatsuon",
+    "char": "ん",
+    "romaji": "n",
     "script": "hiragana",
     "group": "hatsuon",
-    "thai": "ฮง"
-  },
-  {
-    "id": "hiragana-hatsuon-sensei",
-    "char": "せんせい",
-    "romaji": "sensei",
-    "script": "hiragana",
-    "group": "hatsuon",
-    "thai": "เซนเซ"
-  },
-  {
-    "id": "hiragana-hatsuon-nihon",
-    "char": "にほん",
-    "romaji": "nihon",
-    "script": "hiragana",
-    "group": "hatsuon",
-    "thai": "นิฮง"
-  },
-  {
-    "id": "hiragana-hatsuon-ongaku",
-    "char": "おんがく",
-    "romaji": "ongaku",
-    "script": "hiragana",
-    "group": "hatsuon",
-    "thai": "องกาคุ"
-  },
-  {
-    "id": "hiragana-hatsuon-tenki",
-    "char": "てんき",
-    "romaji": "tenki",
-    "script": "hiragana",
-    "group": "hatsuon",
-    "thai": "เท็งคิ"
-  },
-  {
-    "id": "hiragana-hatsuon-kanji",
-    "char": "かんじ",
-    "romaji": "kanji",
-    "script": "hiragana",
-    "group": "hatsuon",
-    "thai": "คันจิ"
-  },
-  {
-    "id": "hiragana-hatsuon-mikan",
-    "char": "みかん",
-    "romaji": "mikan",
-    "script": "hiragana",
-    "group": "hatsuon",
-    "thai": "มิกัง"
-  },
-  {
-    "id": "hiragana-hatsuon-sanpo",
-    "char": "さんぽ",
-    "romaji": "sanpo",
-    "script": "hiragana",
-    "group": "hatsuon",
-    "thai": "ซันโปะ"
+    "thai": "เสียงนาสิก ง/น"
   }
 ]
