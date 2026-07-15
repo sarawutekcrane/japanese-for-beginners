@@ -5,7 +5,7 @@ const MODULES = [
     id: "flashcards",
     emoji: "🎴",
     title: "แฟลชการ์ด",
-    subtitle: "หัด อักษร & คำศัพท์",
+    subtitle: "อักษร & คำศัพท์",
     color: "pink",
   },
   {
@@ -46,7 +46,6 @@ export default function HomeMenu({ onSelect }) {
         <h1 className="home-title">
           Japanese <span>for</span> Beginners
         </h1>
-        <p className="home-subtitle th-text">เรียนภาษาญี่ปุ่นแบบน่ารักๆ ✨🌸🎌</p>
       </header>
 
       <div className="module-grid">
