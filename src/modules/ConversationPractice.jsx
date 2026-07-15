@@ -23,12 +23,13 @@ function TopicPicker({ onPick }) {
 }
 
 function DialogueView({ topic, onBack }) {
-  const { speak } = useSpeak();
+  const { speak, supported } = useSpeak();
   const [nodeIndex, setNodeIndex] = useState(0);
   const [showRomaji, setShowRomaji] = useState(false);
   const [showThai, setShowThai] = useState(false);
   const [history, setHistory] = useState([]);
   const [finished, setFinished] = useState(false);
+  const [pendingReply, setPendingReply] = useState(null);
 
   const node = topic.nodes[nodeIndex];
 
@@ -39,8 +40,9 @@ function DialogueView({ topic, onBack }) {
 
   const replay = () => node && speak(node.system.japanese, { rate: 0.85 });
 
-  const choose = (opt) => {
+  const advance = (opt) => {
     setHistory((h) => [...h, { system: node.system, reply: opt }]);
+    setPendingReply(null);
     if (nodeIndex + 1 < topic.nodes.length) {
       setNodeIndex((i) => i + 1);
     } else {
@@ -48,10 +50,18 @@ function DialogueView({ topic, onBack }) {
     }
   };
 
+  const choose = (opt) => {
+    setPendingReply(opt);
+    if (supported) speak(opt.japanese, { rate: 0.85 });
+  };
+
+  const replayReply = () => pendingReply && speak(pendingReply.japanese, { rate: 0.85 });
+
   const restart = () => {
     setNodeIndex(0);
     setHistory([]);
     setFinished(false);
+    setPendingReply(null);
   };
 
   return (
@@ -88,26 +98,45 @@ function DialogueView({ topic, onBack }) {
 
       {!finished ? (
         <div className="conversation-card">
-          <Mascot mood="happy" size={80} />
-          <div className="bubble bubble-system bubble-current">
-            <p className="jp-text">{node.system.japanese}</p>
-            {showRomaji && <p className="bubble-romaji">{node.system.romaji}</p>}
-            {showThai && <p className="th-text bubble-thai">{node.system.thai}</p>}
-          </div>
-          <button className="btn btn-outline blue btn-sm" onClick={replay}>
-            🔊 ฟังอีกครั้ง
-          </button>
-
-          <p className="th-text conversation-prompt">เลือกคำตอบของคุณ:</p>
-          <div className="reply-options">
-            {node.options.map((opt, i) => (
-              <button key={i} className="reply-option" onClick={() => choose(opt)}>
-                <span className="jp-text">{opt.japanese}</span>
-                {showRomaji && <span className="bubble-romaji">{opt.romaji}</span>}
-                {showThai && <span className="th-text bubble-thai">{opt.thai}</span>}
+          {!pendingReply ? (
+            <>
+              <Mascot mood="happy" size={80} />
+              <div className="bubble bubble-system bubble-current">
+                <p className="jp-text">{node.system.japanese}</p>
+                {showRomaji && <p className="bubble-romaji">{node.system.romaji}</p>}
+                {showThai && <p className="th-text bubble-thai">{node.system.thai}</p>}
+              </div>
+              <button className="btn btn-outline blue btn-sm" onClick={replay}>
+                🔊 ฟังอีกครั้ง
               </button>
-            ))}
-          </div>
+
+              <p className="th-text conversation-prompt">เลือกคำตอบของคุณ:</p>
+              <div className="reply-options">
+                {node.options.map((opt, i) => (
+                  <button key={i} className="reply-option" onClick={() => choose(opt)}>
+                    <span className="jp-text">{opt.japanese}</span>
+                    {showRomaji && <span className="bubble-romaji">{opt.romaji}</span>}
+                    {showThai && <span className="th-text bubble-thai">{opt.thai}</span>}
+                  </button>
+                ))}
+              </div>
+            </>
+          ) : (
+            <>
+              <Mascot mood="excited" size={80} />
+              <div className="bubble bubble-user bubble-current">
+                <p className="jp-text">{pendingReply.japanese}</p>
+                {showRomaji && <p className="bubble-romaji">{pendingReply.romaji}</p>}
+                {showThai && <p className="th-text bubble-thai">{pendingReply.thai}</p>}
+              </div>
+              <button className="btn btn-outline blue btn-sm" onClick={replayReply}>
+                🔊 ฟังอีกครั้ง
+              </button>
+              <button className="btn btn-success btn-sm" onClick={() => advance(pendingReply)}>
+                ดำเนินการต่อ →
+              </button>
+            </>
+          )}
         </div>
       ) : (
         <div className="conversation-card">

@@ -1,16 +1,12 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
 
-function CategoryPicker({ shuffleOn, onShuffleChange, onPick }) {
+function CategoryPicker({ onPick }) {
   return (
     <div className="picker">
-      <div className="toggle-group">
-        <Toggle emoji="🔀" label="สุ่มลำดับการ์ด (Shuffle)" checked={shuffleOn} onChange={onShuffleChange} />
-      </div>
-
       <section className="picker-section">
         <h3 className="picker-heading">あ / ア ตัวอักษร (Characters)</h3>
         <div className="picker-row">
@@ -37,8 +33,9 @@ function CategoryPicker({ shuffleOn, onShuffleChange, onPick }) {
   );
 }
 
-function FlashcardView({ selection, shuffleOn, onBack }) {
+function FlashcardView({ selection, onBack }) {
   const { speak } = useSpeak();
+  const [shuffleOn, setShuffleOn] = useState(false);
   const [index, setIndex] = useState(0);
   const [showThai, setShowThai] = useState(false);
   const [showRomaji, setShowRomaji] = useState(false);
@@ -49,6 +46,12 @@ function FlashcardView({ selection, shuffleOn, onBack }) {
     return shuffleOn ? shuffleArr(base) : base;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selection, shuffleOn]);
+
+  useEffect(() => {
+    setIndex(0);
+    setShowThai(false);
+    setShowRomaji(false);
+  }, [cards]);
 
   const card = cards[index];
 
@@ -71,6 +74,10 @@ function FlashcardView({ selection, shuffleOn, onBack }) {
       <p className="progress-label">
         {selection.label} · {index + 1} / {cards.length}
       </p>
+
+      <div className="toggle-group">
+        <Toggle emoji="🔀" label="สุ่มลำดับการ์ด (Shuffle)" checked={shuffleOn} onChange={setShuffleOn} />
+      </div>
 
       <div className="flashcard" onClick={say} role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && say()}>
         <div className="flashcard-illustration">
@@ -104,8 +111,7 @@ function FlashcardView({ selection, shuffleOn, onBack }) {
 
 export default function Flashcards() {
   const [selection, setSelection] = useState(null);
-  const [shuffleOn, setShuffleOn] = useState(false);
 
-  if (!selection) return <CategoryPicker shuffleOn={shuffleOn} onShuffleChange={setShuffleOn} onPick={setSelection} />;
-  return <FlashcardView selection={selection} shuffleOn={shuffleOn} onBack={() => setSelection(null)} />;
+  if (!selection) return <CategoryPicker onPick={setSelection} />;
+  return <FlashcardView selection={selection} onBack={() => setSelection(null)} />;
 }

@@ -3,6 +3,7 @@ import Mascot from "../../components/Mascot";
 import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
 import { shuffle as shuffleArr } from "../../utils/content";
+import { playCorrect as playCorrectSound, playIncorrect as playIncorrectSound } from "../../utils/sound";
 
 function makeItems(chunks) {
   return shuffleArr(chunks.map((text, i) => ({ key: `${i}-${text}`, text })));
@@ -53,6 +54,8 @@ export default function WordOrderPractice({ pattern, onBack }) {
     setIsCorrect(correct);
     setSubmitted(true);
     setScore((s) => ({ correct: s.correct + (correct ? 1 : 0), total: s.total + 1 }));
+    if (correct) playCorrectSound();
+    else playIncorrectSound();
   };
 
   const next = () => setIndex((i) => i + 1);

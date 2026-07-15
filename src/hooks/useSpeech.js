@@ -3,10 +3,22 @@ import { KANA_ALT_SPELLINGS } from "../data/kanaAltSpellings";
 
 let cachedJaVoice = null;
 
+/** Higher score = clearer/more natural-sounding voice, based on name hints and service type. */
+function voiceQualityScore(voice) {
+  const name = voice.name?.toLowerCase() || "";
+  let score = 0;
+  if (/google/.test(name)) score += 3;
+  if (/natural|neural|premium|enhanced/.test(name)) score += 2;
+  if (!voice.localService) score += 1; // network voices are usually higher fidelity
+  return score;
+}
+
 function pickJapaneseVoice() {
   if (cachedJaVoice) return cachedJaVoice;
   const voices = window.speechSynthesis?.getVoices() || [];
-  cachedJaVoice = voices.find((v) => v.lang?.toLowerCase().startsWith("ja")) || null;
+  const jaVoices = voices.filter((v) => v.lang?.toLowerCase().startsWith("ja"));
+  if (jaVoices.length === 0) return null;
+  cachedJaVoice = jaVoices.reduce((best, v) => (voiceQualityScore(v) > voiceQualityScore(best) ? v : best));
   return cachedJaVoice;
 }
 

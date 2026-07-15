@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import HomeMenu from "./components/HomeMenu";
 import Flashcards from "./modules/Flashcards";
 import ListeningQuiz from "./modules/ListeningQuiz";
 import SpeakingPractice from "./modules/SpeakingPractice";
 import ConversationPractice from "./modules/ConversationPractice";
 import SentencePatterns from "./modules/SentencePatterns";
+import { playClick } from "./utils/sound";
+
+const CLICKABLE_SELECTOR = "button, .topic-card, .reply-option, .quiz-option, .chunk-pill";
 
 const TITLES = {
   flashcards: "แฟลชการ์ด",
@@ -17,6 +20,15 @@ const TITLES = {
 function App() {
   const [view, setView] = useState("home");
   const [instanceKey, setInstanceKey] = useState(0);
+
+  useEffect(() => {
+    const onClick = (e) => {
+      const el = e.target.closest(CLICKABLE_SELECTOR);
+      if (el && !el.disabled) playClick();
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, []);
 
   const goHome = () => {
     setView("home");

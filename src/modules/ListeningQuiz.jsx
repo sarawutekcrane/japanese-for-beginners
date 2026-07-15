@@ -3,14 +3,11 @@ import Mascot from "../components/Mascot";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
+import { playCorrect, playIncorrect } from "../utils/sound";
 
-function PoolPicker({ shuffleOn, onShuffleChange, onPick }) {
+function PoolPicker({ onPick }) {
   return (
     <div className="picker">
-      <div className="toggle-group blue">
-        <Toggle emoji="🔀" label="สุ่มลำดับคำถาม (Shuffle)" checked={shuffleOn} onChange={onShuffleChange} />
-      </div>
-
       <section className="picker-section">
         <h3 className="picker-heading">あ / ア ตัวอักษร (Characters)</h3>
         <div className="picker-row">
@@ -46,8 +43,9 @@ function buildQuestion(pool, cursor, shuffleOn) {
   return { answer, options };
 }
 
-function QuizView({ selection, shuffleOn, onBack }) {
+function QuizView({ selection, onBack }) {
   const { speak } = useSpeak();
+  const [shuffleOn, setShuffleOn] = useState(false);
   const [pool] = useState(() => {
     const raw = selection.kind === "kana" ? getKanaCombinedDeck(selection.script) : getVocab(selection.category);
     return raw.map(toCard);
@@ -76,6 +74,8 @@ function QuizView({ selection, shuffleOn, onBack }) {
     if (answered) return;
     setSelectedId(opt.id);
     setScore((s) => ({ correct: s.correct + (opt.id === question.answer.id ? 1 : 0), total: s.total + 1 }));
+    if (opt.id === question.answer.id) playCorrect();
+    else playIncorrect();
   };
 
   const next = () => {
@@ -95,6 +95,10 @@ function QuizView({ selection, shuffleOn, onBack }) {
       <p className="progress-label">
         {selection.label} · คะแนน {score.correct} / {score.total}
       </p>
+
+      <div className="toggle-group blue">
+        <Toggle emoji="🔀" label="สุ่มลำดับคำถาม (Shuffle)" checked={shuffleOn} onChange={setShuffleOn} />
+      </div>
 
       <div className="quiz-card">
         <Mascot mood={!answered ? "neutral" : isCorrect ? "excited" : "sad"} size={90} />
@@ -155,8 +159,7 @@ function QuizView({ selection, shuffleOn, onBack }) {
 
 export default function ListeningQuiz() {
   const [selection, setSelection] = useState(null);
-  const [shuffleOn, setShuffleOn] = useState(false);
 
-  if (!selection) return <PoolPicker shuffleOn={shuffleOn} onShuffleChange={setShuffleOn} onPick={setSelection} />;
-  return <QuizView selection={selection} shuffleOn={shuffleOn} onBack={() => setSelection(null)} />;
+  if (!selection) return <PoolPicker onPick={setSelection} />;
+  return <QuizView selection={selection} onBack={() => setSelection(null)} />;
 }

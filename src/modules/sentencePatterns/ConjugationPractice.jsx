@@ -4,6 +4,7 @@ import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
 import { getAllConjugationQuestions, groupLabel } from "../../utils/grammar";
 import { shuffle as shuffleArr } from "../../utils/content";
+import { playCorrect, playIncorrect } from "../../utils/sound";
 
 const BASE_QUESTIONS = getAllConjugationQuestions();
 
@@ -32,6 +33,8 @@ export default function ConjugationPractice({ onBack }) {
     if (answered) return;
     setSelected(opt);
     setScore((s) => ({ correct: s.correct + (opt === question.correct ? 1 : 0), total: s.total + 1 }));
+    if (opt === question.correct) playCorrect();
+    else playIncorrect();
   };
 
   const next = () => {

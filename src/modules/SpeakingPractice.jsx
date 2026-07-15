@@ -1,18 +1,16 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Mascot from "../components/Mascot";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
 import { useSpeak, useSpeechRecognition, matchesJapanese, isKanaOnly, kanjiToKana } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
+import { playCorrect, playIncorrect } from "../utils/sound";
 
 const NUMERIC_ONLY = /^\d+$/;
 
-function CategoryPicker({ shuffleOn, onShuffleChange, onPick }) {
+function CategoryPicker({ onPick }) {
   return (
     <div className="picker">
-      <div className="toggle-group">
-        <Toggle emoji="🔀" label="สุ่มลำดับคำศัพท์ (Shuffle)" checked={shuffleOn} onChange={onShuffleChange} />
-      </div>
       <section className="picker-section">
         <h3 className="picker-heading">📚 เลือกหมวดคำศัพท์เพื่อฝึกพูด</h3>
         <div className="picker-row">
@@ -29,20 +27,29 @@ function CategoryPicker({ shuffleOn, onShuffleChange, onPick }) {
 
 const STATUS = { idle: "idle", listening: "listening", match: "match", nomatch: "nomatch", error: "error" };
 
-function SpeakingView({ category, shuffleOn, onBack }) {
+function SpeakingView({ category, onBack }) {
   const { speak } = useSpeak();
   const { supported, listening, start } = useSpeechRecognition();
 
-  const [cards] = useState(() => {
+  const [shuffleOn, setShuffleOn] = useState(false);
+  const cards = useMemo(() => {
     const base = getVocab(category.id).map(toCard);
     return shuffleOn ? shuffleArr(base) : base;
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [category, shuffleOn]);
   const [index, setIndex] = useState(0);
   const [status, setStatus] = useState(STATUS.idle);
   const [heard, setHeard] = useState("");
   const [revealed, setRevealed] = useState(false);
   const [showThai, setShowThai] = useState(false);
   const [showRomaji, setShowRomaji] = useState(false);
+
+  useEffect(() => {
+    setIndex(0);
+    setStatus(STATUS.idle);
+    setHeard("");
+    setRevealed(false);
+  }, [cards]);
 
   const card = cards[index];
 
@@ -85,6 +92,8 @@ function SpeakingView({ category, shuffleOn, onBack }) {
             (alt) => matchesJapanese(alt, card.answerText) || matchesJapanese(alt, card.reading || "")
           ) || (card.value != null && numericValue === card.value);
         setStatus(ok ? STATUS.match : STATUS.nomatch);
+        if (ok) playCorrect();
+        else playIncorrect();
       },
       onError: () => setStatus(STATUS.error),
     });
@@ -119,6 +128,10 @@ function SpeakingView({ category, shuffleOn, onBack }) {
       <p className="progress-label">
         {category.label} · {index + 1} / {cards.length}
       </p>
+
+      <div className="toggle-group">
+        <Toggle emoji="🔀" label="สุ่มลำดับคำศัพท์ (Shuffle)" checked={shuffleOn} onChange={setShuffleOn} />
+      </div>
 
       <div className="speaking-card">
         <Mascot mood={mood} size={90} />
@@ -192,8 +205,7 @@ function SpeakingView({ category, shuffleOn, onBack }) {
 
 export default function SpeakingPractice() {
   const [category, setCategory] = useState(null);
-  const [shuffleOn, setShuffleOn] = useState(false);
 
-  if (!category) return <CategoryPicker shuffleOn={shuffleOn} onShuffleChange={setShuffleOn} onPick={setCategory} />;
-  return <SpeakingView category={category} shuffleOn={shuffleOn} onBack={() => setCategory(null)} />;
+  if (!category) return <CategoryPicker onPick={setCategory} />;
+  return <SpeakingView category={category} onBack={() => setCategory(null)} />;
 }
