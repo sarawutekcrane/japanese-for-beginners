@@ -134,12 +134,32 @@ export const animalIcons = {
   ),
   "animal-lion": (id) => (
     <Frame id={id}>
-      <circle cx="100" cy="100" r="52" fill="#e0a94a" stroke={INK} strokeWidth="3.5" />
-      <circle cx="100" cy="100" r="36" fill="#f5d9a0" stroke={INK} strokeWidth="3" />
-      <ellipse cx="100" cy="112" rx="14" ry="10" fill="#f3d19c" stroke={INK} strokeWidth="2" />
-      <circle cx="88" cy="96" r="4" fill={INK} />
-      <circle cx="112" cy="96" r="4" fill={INK} />
-      <circle cx="100" cy="110" r="3" fill={INK} />
+      {Array.from({ length: 14 }).map((_, i) => {
+        const angleDeg = (i * 360) / 14;
+        const rad = (angleDeg * Math.PI) / 180;
+        const x = 100 + Math.cos(rad) * 44;
+        const y = 100 + Math.sin(rad) * 44;
+        return (
+          <ellipse
+            key={i}
+            cx={x}
+            cy={y}
+            rx="15"
+            ry="23"
+            fill="#d98a2e"
+            stroke={INK}
+            strokeWidth="2.5"
+            transform={`rotate(${angleDeg - 90} ${x} ${y})`}
+          />
+        );
+      })}
+      <circle cx="100" cy="100" r="36" fill="#f6c463" stroke={INK} strokeWidth="3.5" />
+      <ellipse cx="100" cy="114" rx="15" ry="11" fill="#fbe8c2" stroke={INK} strokeWidth="2.5" />
+      <circle cx="87" cy="94" r="4" fill={INK} />
+      <circle cx="113" cy="94" r="4" fill={INK} />
+      <path d="M 94 108 L 106 108 L 100 114 Z" fill={INK} />
+      <path d="M 70 114 L 52 110 M 70 118 L 52 120" stroke={INK} strokeWidth="2" opacity="0.6" />
+      <path d="M 130 114 L 148 110 M 130 118 L 148 120" stroke={INK} strokeWidth="2" opacity="0.6" />
     </Frame>
   ),
   "animal-panda": (id) => (

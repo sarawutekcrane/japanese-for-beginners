@@ -1,5 +1,21 @@
 import { Frame, INK } from "./shared";
 
+/** Muted full-body silhouette used as context behind whole-region body parts
+ * (chest, stomach, waist, back, shoulder, arm, leg) so an isolated colored
+ * shape reads as "part of a body" instead of an abstract blob. */
+function BodyOutline() {
+  return (
+    <g stroke={INK} strokeWidth="2.5" strokeLinejoin="round" fill="#e9e0e4" opacity="0.85">
+      <circle cx="100" cy="42" r="16" />
+      <path d="M 78 60 L 122 60 L 116 120 L 84 120 Z" />
+      <path d="M 78 64 Q 64 86 68 112" fill="none" strokeLinecap="round" />
+      <path d="M 122 64 Q 136 86 132 112" fill="none" strokeLinecap="round" />
+      <path d="M 90 120 L 86 162" fill="none" strokeWidth="10" strokeLinecap="round" />
+      <path d="M 110 120 L 114 162" fill="none" strokeWidth="10" strokeLinecap="round" />
+    </g>
+  );
+}
+
 export const bodyPartsIcons = {
   "body-head": (id) => (
     <Frame id={id}>
@@ -58,35 +74,37 @@ export const bodyPartsIcons = {
   ),
   "body-arm": (id) => (
     <Frame id={id}>
-      <path d="M 70 50 Q 130 60 120 110 Q 116 130 96 128" fill="none" stroke="#ffe9d6" strokeWidth="34" strokeLinecap="round" />
-      <path d="M 70 50 Q 130 60 120 110 Q 116 130 96 128" fill="none" stroke={INK} strokeWidth="3" strokeLinecap="round" opacity="0.5" />
-      <circle cx="96" cy="128" r="18" fill="#ffe9d6" stroke={INK} strokeWidth="3" />
+      <BodyOutline />
+      <path d="M 122 64 Q 136 86 132 112" fill="none" stroke="#ffb6cf" strokeWidth="13" strokeLinecap="round" />
+      <path d="M 122 64 Q 136 86 132 112" fill="none" stroke={INK} strokeWidth="2.5" strokeLinecap="round" opacity="0.4" />
+      <circle cx="132" cy="116" r="10" fill="#ffb6cf" stroke={INK} strokeWidth="2.5" />
     </Frame>
   ),
   "body-leg": (id) => (
     <Frame id={id}>
-      <path d="M 90 50 L 96 130" stroke="#ffe9d6" strokeWidth="34" strokeLinecap="round" />
-      <ellipse cx="98" cy="146" rx="26" ry="14" fill="#8fcfff" stroke={INK} strokeWidth="3" />
+      <BodyOutline />
+      <path d="M 110 120 L 114 162" stroke="#ffb6cf" strokeWidth="13" strokeLinecap="round" />
+      <ellipse cx="115" cy="166" rx="13" ry="8" fill="#8fcfff" stroke={INK} strokeWidth="2.5" />
     </Frame>
   ),
   "body-stomach": (id) => (
     <Frame id={id}>
-      <ellipse cx="100" cy="108" rx="48" ry="42" fill="#ffe9d6" stroke={INK} strokeWidth="3.5" />
-      <path d="M 100 88 L 100 128" stroke={INK} strokeWidth="2" opacity="0.4" />
-      <circle cx="100" cy="108" r="4" fill={INK} opacity="0.6" />
+      <BodyOutline />
+      <path d="M 81 90 L 119 90 L 117 108 L 83 108 Z" fill="#ffcf6b" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="100" cy="99" r="3" fill={INK} opacity="0.5" />
     </Frame>
   ),
   "body-back": (id) => (
     <Frame id={id}>
-      <path d="M 70 60 Q 60 108 78 150 L 122 150 Q 140 108 130 60 Q 100 44 70 60 Z" fill="#ffe9d6" stroke={INK} strokeWidth="3.5" strokeLinejoin="round" />
-      <path d="M 100 60 Q 96 100 100 148" stroke={INK} strokeWidth="2.5" opacity="0.4" fill="none" />
+      <BodyOutline />
+      <path d="M 78 60 L 122 60 L 116 120 L 84 120 Z" fill="#c9ccd6" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M 100 62 Q 96 90 100 118" stroke={INK} strokeWidth="2.5" opacity="0.5" fill="none" strokeLinecap="round" />
     </Frame>
   ),
   "body-neck": (id) => (
     <Frame id={id}>
-      <circle cx="100" cy="66" r="28" fill="#ffe9d6" stroke={INK} strokeWidth="3" />
-      <rect x="82" y="86" width="36" height="40" rx="10" fill="#ffe9d6" stroke={INK} strokeWidth="3.5" />
-      <path d="M 78 126 Q 100 138 122 126" fill="#8fcfff" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <BodyOutline />
+      <rect x="90" y="48" width="20" height="18" rx="6" fill="#ffb6cf" stroke={INK} strokeWidth="2.5" />
     </Frame>
   ),
   "body-tooth": (id) => (
@@ -149,22 +167,24 @@ export const bodyPartsIcons = {
   ),
   "body-shoulder": (id) => (
     <Frame id={id}>
-      <path d="M 60 130 Q 60 92 100 88 Q 140 92 140 130" fill="#ffe9d6" stroke={INK} strokeWidth="3.5" strokeLinejoin="round" />
-      <circle cx="100" cy="70" r="22" fill="#ffe9d6" stroke={INK} strokeWidth="3" />
+      <BodyOutline />
+      <circle cx="78" cy="64" r="15" fill="#ffb6cf" stroke={INK} strokeWidth="2.5" />
+      <circle cx="122" cy="64" r="15" fill="#ffb6cf" stroke={INK} strokeWidth="2.5" />
     </Frame>
   ),
   "body-waist": (id) => (
     <Frame id={id}>
-      <path d="M 68 60 Q 100 84 132 60 Q 140 108 132 148 Q 100 128 68 148 Q 60 108 68 60 Z" fill="#ffe9d6" stroke={INK} strokeWidth="3.5" strokeLinejoin="round" />
-      <path d="M 72 104 L 128 104" stroke={INK} strokeWidth="2" opacity="0.35" />
+      <BodyOutline />
+      <path d="M 83 108 L 117 108 L 116 120 L 84 120 Z" fill="#8fcfff" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M 85 114 L 115 114" stroke={INK} strokeWidth="2" opacity="0.5" />
     </Frame>
   ),
   "body-chest": (id) => (
     <Frame id={id}>
-      <rect x="62" y="70" width="76" height="70" rx="14" fill="#ffe9d6" stroke={INK} strokeWidth="3.5" />
-      <path d="M 100 84 L 100 126" stroke={INK} strokeWidth="2" opacity="0.35" />
-      <circle cx="82" cy="98" r="4" fill={INK} opacity="0.4" />
-      <circle cx="118" cy="98" r="4" fill={INK} opacity="0.4" />
+      <BodyOutline />
+      <path d="M 78 60 L 122 60 L 119 90 L 81 90 Z" fill="#ff9ec7" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="88" cy="80" r="3.5" fill={INK} opacity="0.4" />
+      <circle cx="112" cy="80" r="3.5" fill={INK} opacity="0.4" />
     </Frame>
   ),
 };
