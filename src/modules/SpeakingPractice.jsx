@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Mascot from "../components/Mascot";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
@@ -66,9 +66,19 @@ function SpeakingView({ category, onBack }) {
 
   const hearExample = () => speak(card.audioText, { rate: 0.85 });
 
+  const speakTimeoutRef = useRef(null);
+
+  useEffect(() => () => clearTimeout(speakTimeoutRef.current), []);
+
+  const reveal = () => {
+    setRevealed(true);
+    speak(card.audioText, { rate: 0.85 });
+  };
+
   const record = () => {
     setStatus(STATUS.listening);
     setHeard("");
+    clearTimeout(speakTimeoutRef.current);
     start({
       onResult: (transcript, alternatives = [transcript]) => {
         const numericAlt = alternatives.find((alt) => NUMERIC_ONLY.test(alt.trim()));
@@ -94,6 +104,9 @@ function SpeakingView({ category, onBack }) {
         setStatus(ok ? STATUS.match : STATUS.nomatch);
         if (ok) playCorrect();
         else playIncorrect();
+        speakTimeoutRef.current = setTimeout(() => {
+          speak(card.audioText, { rate: 0.85 });
+        }, 1000);
       },
       onError: () => setStatus(STATUS.error),
     });
@@ -105,6 +118,7 @@ function SpeakingView({ category, onBack }) {
   };
 
   const next = () => {
+    clearTimeout(speakTimeoutRef.current);
     setIndex((i) => (i + 1) % cards.length);
     setStatus(STATUS.idle);
     setHeard("");
@@ -186,7 +200,7 @@ function SpeakingView({ category, onBack }) {
         </div>
 
         <div className="quiz-actions">
-          <button className="btn btn-outline btn-sm" onClick={() => setRevealed(true)}>
+          <button className="btn btn-outline btn-sm" onClick={reveal}>
             เฉลยคำตอบ
           </button>
           <button className="btn btn-success btn-sm" onClick={next}>
