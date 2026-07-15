@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Mascot from "../../components/Mascot";
 import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
@@ -29,15 +29,24 @@ export default function ConjugationPractice({ onBack }) {
   const answered = selected !== null;
   const isCorrect = selected === question.correct;
 
+  const speakTimeoutRef = useRef(null);
+
+  useEffect(() => () => clearTimeout(speakTimeoutRef.current), []);
+
   const choose = (opt) => {
     if (answered) return;
     setSelected(opt);
     setScore((s) => ({ correct: s.correct + (opt === question.correct ? 1 : 0), total: s.total + 1 }));
     if (opt === question.correct) playCorrect();
     else playIncorrect();
+    clearTimeout(speakTimeoutRef.current);
+    speakTimeoutRef.current = setTimeout(() => {
+      speak(question.correct, { rate: 0.8 });
+    }, 1000);
   };
 
   const next = () => {
+    clearTimeout(speakTimeoutRef.current);
     setIndex((i) => i + 1);
     setSelected(null);
   };
