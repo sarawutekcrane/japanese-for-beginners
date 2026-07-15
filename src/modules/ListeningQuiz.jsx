@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Mascot from "../components/Mascot";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
@@ -70,15 +70,24 @@ function QuizView({ selection, onBack }) {
 
   const play = (rate) => speak(question.answer.audioText, { rate: rate ?? (question.answer.kind === "kana" ? 0.75 : 0.85) });
 
+  const speakTimeoutRef = useRef(null);
+
+  useEffect(() => () => clearTimeout(speakTimeoutRef.current), []);
+
   const choose = (opt) => {
     if (answered) return;
     setSelectedId(opt.id);
     setScore((s) => ({ correct: s.correct + (opt.id === question.answer.id ? 1 : 0), total: s.total + 1 }));
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
+    clearTimeout(speakTimeoutRef.current);
+    speakTimeoutRef.current = setTimeout(() => {
+      speak(question.answer.audioText, { rate: question.answer.kind === "kana" ? 0.75 : 0.85 });
+    }, 1000);
   };
 
   const next = () => {
+    clearTimeout(speakTimeoutRef.current);
     const nextCursor = cursor + 1;
     setCursor(nextCursor);
     setQuestion(buildQuestion(pool, nextCursor, shuffleOn));
