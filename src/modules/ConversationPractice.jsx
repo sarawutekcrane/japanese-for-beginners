@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Mascot from "../components/Mascot";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
 import conversations from "../data/conversations.json";
@@ -100,7 +99,6 @@ function DialogueView({ topic, onBack }) {
         <div className="conversation-card">
           {!pendingReply ? (
             <>
-              <Mascot mood="happy" size={80} />
               <div className="bubble bubble-system bubble-current">
                 <p className="jp-text">{node.system.japanese}</p>
                 {showRomaji && <p className="bubble-romaji">{node.system.romaji}</p>}
@@ -123,7 +121,6 @@ function DialogueView({ topic, onBack }) {
             </>
           ) : (
             <>
-              <Mascot mood="excited" size={80} />
               <div className="bubble bubble-system">
                 <p className="jp-text">{node.system.japanese}</p>
                 {showRomaji && <p className="bubble-romaji">{node.system.romaji}</p>}
@@ -145,7 +142,6 @@ function DialogueView({ topic, onBack }) {
         </div>
       ) : (
         <div className="conversation-card">
-          <Mascot mood="excited" size={100} />
           <p className="th-text conversation-complete">จบบทสนทนาแล้ว! เก่งมากๆ เลย 🌸✨</p>
           <div className="quiz-actions">
             <button className="btn btn-outline btn-sm" onClick={restart}>

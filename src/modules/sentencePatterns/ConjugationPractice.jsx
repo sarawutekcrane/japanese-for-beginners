@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import Mascot from "../../components/Mascot";
 import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
 import { getAllConjugationQuestions, groupLabel } from "../../utils/grammar";
@@ -69,8 +68,6 @@ export default function ConjugationPractice({ onBack }) {
       </div>
 
       <div className="practice-card blue">
-        <Mascot mood={!answered ? "neutral" : isCorrect ? "excited" : "sad"} size={80} />
-
         <div className="verb-card">
           <p className="jp-text verb-dict" onClick={() => speak(question.verb.dict, { rate: 0.8 })} role="button" tabIndex={0}>
             {question.verb.dict} 🔊

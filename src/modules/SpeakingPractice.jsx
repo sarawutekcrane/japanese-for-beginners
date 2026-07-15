@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import Mascot from "../components/Mascot";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
 import { useSpeak, useSpeechRecognition, matchesJapanese, isKanaOnly, kanjiToKana } from "../hooks/useSpeech";
@@ -125,8 +124,6 @@ function SpeakingView({ category, onBack }) {
     setRevealed(false);
   };
 
-  const mood = status === STATUS.match ? "excited" : status === STATUS.nomatch ? "sad" : status === STATUS.listening ? "wink" : "neutral";
-
   // Auto-reveal the Thai translation and Japanese reading on a correct
   // answer, as if the toggles below were switched on.
   const effectiveRevealed = revealed || status === STATUS.match;
@@ -148,7 +145,6 @@ function SpeakingView({ category, onBack }) {
       </div>
 
       <div className="speaking-card">
-        <Mascot mood={mood} size={90} />
         <div className="flashcard-illustration">
           <Illustration item={{ icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
         </div>

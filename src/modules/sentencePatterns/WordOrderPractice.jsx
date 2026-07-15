@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import Mascot from "../../components/Mascot";
 import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
 import { shuffle as shuffleArr } from "../../utils/content";
@@ -93,7 +92,6 @@ export default function WordOrderPractice({ pattern, onBack }) {
       </div>
 
       <div className="practice-card">
-        <Mascot mood={!submitted ? "neutral" : isCorrect ? "excited" : "sad"} size={80} />
         <p className="th-text word-order-prompt">{question.promptThai}</p>
 
         {showRomaji && (

@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import Mascot from "../components/Mascot";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
@@ -110,7 +109,6 @@ function QuizView({ selection, onBack }) {
       </div>
 
       <div className="quiz-card">
-        <Mascot mood={!answered ? "neutral" : isCorrect ? "excited" : "sad"} size={90} />
         <button className="btn btn-round btn-blue" onClick={() => play()} aria-label="เล่นเสียง">
           🔊
         </button>
