@@ -124,6 +124,11 @@ function DialogueView({ topic, onBack }) {
           ) : (
             <>
               <Mascot mood="excited" size={80} />
+              <div className="bubble bubble-system">
+                <p className="jp-text">{node.system.japanese}</p>
+                {showRomaji && <p className="bubble-romaji">{node.system.romaji}</p>}
+                {showThai && <p className="th-text bubble-thai">{node.system.thai}</p>}
+              </div>
               <div className="bubble bubble-user bubble-current">
                 <p className="jp-text">{pendingReply.japanese}</p>
                 {showRomaji && <p className="bubble-romaji">{pendingReply.romaji}</p>}
