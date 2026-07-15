@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Mascot from "../../components/Mascot";
 import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
@@ -48,6 +48,10 @@ export default function WordOrderPractice({ pattern, onBack }) {
     setPoolItems((p) => [...p, item]);
   };
 
+  const speakTimeoutRef = useRef(null);
+
+  useEffect(() => () => clearTimeout(speakTimeoutRef.current), []);
+
   const submit = () => {
     const userOrder = answerItems.map((a) => a.text);
     const correct = JSON.stringify(userOrder) === JSON.stringify(question.correctOrder);
@@ -56,9 +60,16 @@ export default function WordOrderPractice({ pattern, onBack }) {
     setScore((s) => ({ correct: s.correct + (correct ? 1 : 0), total: s.total + 1 }));
     if (correct) playCorrectSound();
     else playIncorrectSound();
+    clearTimeout(speakTimeoutRef.current);
+    speakTimeoutRef.current = setTimeout(() => {
+      speak(question.correctOrder.join(""), { rate: 0.8 });
+    }, 1000);
   };
 
-  const next = () => setIndex((i) => i + 1);
+  const next = () => {
+    clearTimeout(speakTimeoutRef.current);
+    setIndex((i) => i + 1);
+  };
 
   const playCorrect = () => speak(question.correctOrder.join(""), { rate: 0.8 });
 
