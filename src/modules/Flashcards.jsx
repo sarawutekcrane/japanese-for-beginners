@@ -81,7 +81,7 @@ function FlashcardView({ selection, onBack }) {
 
       <div className="flashcard" onClick={say} role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && say()}>
         <div className="flashcard-illustration">
-          <Illustration item={card.kind === "kana" ? { script: card.script, group: card.group, id: card.id } : { icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
+          <Illustration item={card.kind === "kana" ? { script: card.script, group: card.group, char: card.display, id: card.id } : { icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
         </div>
         <p className={`flashcard-text jp-text ${card.kind === "kana" ? (isLongKana ? "" : "kana-big") : ""}`}>{card.display}</p>
         {showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}

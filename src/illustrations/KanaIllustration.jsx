@@ -8,22 +8,26 @@ const GROUP_LABEL = {
   hatsuon: "撥音",
 };
 
-/** Light decorative backdrop for kana cards (character itself is rendered as text by the card). */
-export default function KanaIllustration({ script, group, id }) {
-  const petal = script === "hiragana" ? "#ff9ec7" : "#8fcfff";
+/** Kana card backdrop: shows the character itself, large and centered. */
+export default function KanaIllustration({ script, group, char = "", id }) {
+  const fontSize = char.length > 2 ? "52" : char.length > 1 ? "64" : "84";
   return (
     <Frame id={id || `${script}-${group}`}>
-      <g opacity="0.55">
-        <path d="M100 40 C 112 55 112 70 100 84 C 88 70 88 55 100 40 Z" fill={petal} />
-        <path d="M100 40 C 112 55 112 70 100 84 C 88 70 88 55 100 40 Z" fill={petal} transform="rotate(72 100 84)" />
-        <path d="M100 40 C 112 55 112 70 100 84 C 88 70 88 55 100 40 Z" fill={petal} transform="rotate(144 100 84)" />
-        <path d="M100 40 C 112 55 112 70 100 84 C 88 70 88 55 100 40 Z" fill={petal} transform="rotate(216 100 84)" />
-        <path d="M100 40 C 112 55 112 70 100 84 C 88 70 88 55 100 40 Z" fill={petal} transform="rotate(288 100 84)" />
-        <circle cx="100" cy="84" r="8" fill="#ffd166" stroke={INK} strokeWidth="2" />
-      </g>
       <text
         x="100"
-        y="160"
+        y="104"
+        fontSize={fontSize}
+        fontWeight="700"
+        textAnchor="middle"
+        dominantBaseline="central"
+        fill={INK}
+        fontFamily="'M PLUS Rounded 1c', 'Baloo 2', sans-serif"
+      >
+        {char}
+      </text>
+      <text
+        x="100"
+        y="164"
         fontSize="16"
         fontWeight="700"
         textAnchor="middle"

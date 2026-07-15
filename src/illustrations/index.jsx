@@ -35,7 +35,7 @@ const VOCAB_ICONS = {
 export default function Illustration({ item }) {
   if (!item) return null;
   if (item.script) {
-    return <KanaIllustration script={item.script} group={item.group} id={item.id} />;
+    return <KanaIllustration script={item.script} group={item.group} char={item.char} id={item.id} />;
   }
   if (item.icon === "number") {
     return <NumberIllustration value={item.value} id={item.id} />;
