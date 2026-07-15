@@ -153,6 +153,8 @@ function SpeakingView({ category, onBack }) {
           <Illustration item={{ icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
         </div>
 
+        <p className="flashcard-text jp-text">{card.answerText}</p>
+
         <button className="btn btn-outline btn-sm" onClick={hearExample}>
           🔊 ฟังตัวอย่างเสียง
         </button>
