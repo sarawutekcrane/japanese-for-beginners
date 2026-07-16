@@ -98,7 +98,7 @@ function SpeakingView({ category, onBack }) {
         else playIncorrect();
         speakTimeoutRef.current = setTimeout(() => {
           speak(card.audioText, { rate: 0.85 });
-        }, 1000);
+        }, 500);
       },
       onError: () => setStatus(STATUS.error),
     });

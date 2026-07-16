@@ -62,7 +62,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
     clearTimeout(speakTimeoutRef.current);
     speakTimeoutRef.current = setTimeout(() => {
       speak(question.correctOrder.join(""), { rate: 0.8 });
-    }, 1000);
+    }, 500);
   };
 
   const next = () => {

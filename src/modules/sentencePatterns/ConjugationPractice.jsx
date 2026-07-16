@@ -41,7 +41,7 @@ export default function ConjugationPractice({ onBack }) {
     clearTimeout(speakTimeoutRef.current);
     speakTimeoutRef.current = setTimeout(() => {
       speak(question.correct, { rate: 0.8 });
-    }, 1000);
+    }, 500);
   };
 
   const next = () => {

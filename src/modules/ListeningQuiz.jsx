@@ -88,7 +88,7 @@ function QuizView({ selection, onBack }) {
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
-    speakTimeoutRef.current = setTimeout(play, 1000);
+    speakTimeoutRef.current = setTimeout(play, 500);
   };
 
   const next = () => {
