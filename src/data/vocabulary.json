@@ -418,5 +418,39 @@
     { "id": "sh-23", "japanese": "しんぴん", "reading": "しんぴん", "romaji": "shinpin", "thai": "สินค้าใหม่", "icon": "shop-new-item" },
     { "id": "sh-24", "japanese": "ちゅうもん", "reading": "ちゅうもん", "romaji": "chuumon", "thai": "การสั่งซื้อ", "icon": "shop-order" },
     { "id": "sh-25", "japanese": "はいそう", "reading": "はいそう", "romaji": "haisou", "thai": "การจัดส่ง", "icon": "shop-delivery" }
+  ],
+  "adjectivesI": [
+    { "id": "ai-01", "japanese": "おおきい", "reading": "おおきい", "romaji": "ookii", "thai": "ใหญ่", "icon": "adj-big" },
+    { "id": "ai-02", "japanese": "ちいさい", "reading": "ちいさい", "romaji": "chiisai", "thai": "เล็ก", "icon": "adj-small" },
+    { "id": "ai-03", "japanese": "たかい", "reading": "たかい", "romaji": "takai", "thai": "แพง / สูง", "icon": "adj-expensive" },
+    { "id": "ai-04", "japanese": "やすい", "reading": "やすい", "romaji": "yasui", "thai": "ถูก (ราคา)", "icon": "adj-cheap" },
+    { "id": "ai-05", "japanese": "おいしい", "reading": "おいしい", "romaji": "oishii", "thai": "อร่อย", "icon": "adj-delicious" },
+    { "id": "ai-06", "japanese": "あつい", "reading": "あつい", "romaji": "atsui", "thai": "ร้อน", "icon": "adj-hot" },
+    { "id": "ai-07", "japanese": "さむい", "reading": "さむい", "romaji": "samui", "thai": "หนาว", "icon": "adj-cold" },
+    { "id": "ai-08", "japanese": "あたらしい", "reading": "あたらしい", "romaji": "atarashii", "thai": "ใหม่", "icon": "adj-new" },
+    { "id": "ai-09", "japanese": "ふるい", "reading": "ふるい", "romaji": "furui", "thai": "เก่า", "icon": "adj-old" },
+    { "id": "ai-10", "japanese": "はやい", "reading": "はやい", "romaji": "hayai", "thai": "เร็ว", "icon": "adj-fast" },
+    { "id": "ai-11", "japanese": "おそい", "reading": "おそい", "romaji": "osoi", "thai": "ช้า", "icon": "adj-slow" },
+    { "id": "ai-12", "japanese": "むずかしい", "reading": "むずかしい", "romaji": "muzukashii", "thai": "ยาก", "icon": "adj-difficult" },
+    { "id": "ai-13", "japanese": "やさしい", "reading": "やさしい", "romaji": "yasashii", "thai": "ง่าย", "icon": "adj-easy" },
+    { "id": "ai-14", "japanese": "たのしい", "reading": "たのしい", "romaji": "tanoshii", "thai": "สนุก", "icon": "adj-fun" },
+    { "id": "ai-15", "japanese": "つまらない", "reading": "つまらない", "romaji": "tsumaranai", "thai": "น่าเบื่อ", "icon": "adj-boring" }
+  ],
+  "adjectivesNa": [
+    { "id": "an-01", "japanese": "きれい", "reading": "きれい", "romaji": "kirei", "thai": "สวย / สะอาด", "icon": "adjna-pretty" },
+    { "id": "an-02", "japanese": "しずか", "reading": "しずか", "romaji": "shizuka", "thai": "เงียบ", "icon": "adjna-quiet" },
+    { "id": "an-03", "japanese": "げんき", "reading": "げんき", "romaji": "genki", "thai": "แข็งแรง / สดชื่น", "icon": "adjna-energetic" },
+    { "id": "an-04", "japanese": "べんり", "reading": "べんり", "romaji": "benri", "thai": "สะดวก", "icon": "adjna-convenient" },
+    { "id": "an-05", "japanese": "ゆうめい", "reading": "ゆうめい", "romaji": "yuumei", "thai": "มีชื่อเสียง", "icon": "adjna-famous" },
+    { "id": "an-06", "japanese": "しんせつ", "reading": "しんせつ", "romaji": "shinsetsu", "thai": "ใจดี", "icon": "adjna-kind" },
+    { "id": "an-07", "japanese": "ひま", "reading": "ひま", "romaji": "hima", "thai": "ว่าง (เวลาว่าง)", "icon": "adjna-free-time" },
+    { "id": "an-08", "japanese": "たいせつ", "reading": "たいせつ", "romaji": "taisetsu", "thai": "สำคัญ", "icon": "adjna-important" },
+    { "id": "an-09", "japanese": "かんたん", "reading": "かんたん", "romaji": "kantan", "thai": "ง่าย / ไม่ซับซ้อน", "icon": "adjna-simple" },
+    { "id": "an-10", "japanese": "すき", "reading": "すき", "romaji": "suki", "thai": "ชอบ", "icon": "adjna-favorite" },
+    { "id": "an-11", "japanese": "じょうず", "reading": "じょうず", "romaji": "jouzu", "thai": "เก่ง / ทำได้ดี", "icon": "adjna-skilled" },
+    { "id": "an-12", "japanese": "へた", "reading": "へた", "romaji": "heta", "thai": "ไม่เก่ง / ทำได้ไม่ดี", "icon": "adjna-unskilled" },
+    { "id": "an-13", "japanese": "にぎやか", "reading": "にぎやか", "romaji": "nigiyaka", "thai": "คึกคัก", "icon": "adjna-lively" },
+    { "id": "an-14", "japanese": "ふべん", "reading": "ふべん", "romaji": "fuben", "thai": "ไม่สะดวก", "icon": "adjna-inconvenient" },
+    { "id": "an-15", "japanese": "だいじょうぶ", "reading": "だいじょうぶ", "romaji": "daijoubu", "thai": "ไม่เป็นไร / โอเค", "icon": "adjna-okay" }
   ]
 }

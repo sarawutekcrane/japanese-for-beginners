@@ -3,6 +3,10 @@ const SECTIONS = [
   { id: "conjugationLesson", emoji: "🈺", title: "สอนและอธิบายวิธีการผันกริยา", subtitle: "กฎการผันตามกลุ่มกริยา", color: "blue" },
   { id: "conjugationPractice", emoji: "✏️", title: "ฝึกผันกริยา", subtitle: "เลือกรูปผันที่ถูกต้อง", color: "pink" },
   { id: "wordorder", emoji: "🧩", title: "ฝึกเรียงประโยค", subtitle: "แตะคำให้เรียงถูกลำดับ", color: "blue" },
+  { id: "counterLesson", emoji: "🔢", title: "สอนและอธิบายตัวนับ", subtitle: "助数詞 นับคน สัตว์ สิ่งของ", color: "pink" },
+  { id: "counterPractice", emoji: "🧮", title: "ฝึกใช้ตัวนับ", subtitle: "เลือกตัวนับที่ถูกต้อง", color: "blue" },
+  { id: "adjectiveLesson", emoji: "🎨", title: "สอนและอธิบายคำคุณศัพท์", subtitle: "い-adjective & な-adjective", color: "pink" },
+  { id: "adjectivePractice", emoji: "💫", title: "ฝึกผันคำคุณศัพท์", subtitle: "เลือกรูปผันที่ถูกต้อง", color: "blue" },
 ];
 
 export default function SectionPicker({ onPick }) {

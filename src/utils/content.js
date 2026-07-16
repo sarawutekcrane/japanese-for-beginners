@@ -28,6 +28,8 @@ export const VOCAB_CATEGORIES = [
   { id: "clothing", label: "เสื้อผ้า", emoji: "👕" },
   { id: "hobbies", label: "งานอดิเรก", emoji: "🎨" },
   { id: "shopping", label: "ช้อปปิ้ง", emoji: "🛒" },
+  { id: "adjectivesI", label: "い-Adjectives (คำคุณศัพท์)", emoji: "🌡️" },
+  { id: "adjectivesNa", label: "な-Adjectives (คำคุณศัพท์)", emoji: "🌸" },
 ];
 
 export function getKana(script) {

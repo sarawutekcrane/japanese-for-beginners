@@ -6,6 +6,10 @@ import LessonView from "./sentencePatterns/LessonView";
 import ConjugationTopics from "./sentencePatterns/ConjugationTopics";
 import ConjugationPractice from "./sentencePatterns/ConjugationPractice";
 import WordOrderPractice from "./sentencePatterns/WordOrderPractice";
+import CounterTopics from "./sentencePatterns/CounterTopics";
+import CounterPractice from "./sentencePatterns/CounterPractice";
+import AdjectiveTopics from "./sentencePatterns/AdjectiveTopics";
+import AdjectivePractice from "./sentencePatterns/AdjectivePractice";
 
 function PatternFlow({ Component, onBackToSections }) {
   const [patternId, setPatternId] = useState(null);
@@ -25,5 +29,9 @@ export default function SentencePatterns() {
   if (section === "conjugationLesson") return <ConjugationTopics onBack={backToSections} />;
   if (section === "conjugationPractice") return <ConjugationPractice onBack={backToSections} />;
   if (section === "wordorder") return <PatternFlow Component={WordOrderPractice} onBackToSections={backToSections} />;
+  if (section === "counterLesson") return <CounterTopics onBack={backToSections} />;
+  if (section === "counterPractice") return <CounterPractice onBack={backToSections} />;
+  if (section === "adjectiveLesson") return <AdjectiveTopics onBack={backToSections} />;
+  if (section === "adjectivePractice") return <AdjectivePractice onBack={backToSections} />;
   return null;
 }

@@ -1,0 +1,186 @@
+[
+  {
+    "id": "tsu",
+    "char": "つ",
+    "titleTh": "つ - ตัวนับสิ่งของทั่วไป",
+    "usageTh": "ตัวนับแบบดั้งเดิมของญี่ปุ่น ใช้นับสิ่งของทั่วไปเมื่อไม่รู้ว่าสิ่งนั้นมีตัวนับเฉพาะหรือไม่ ใช้ได้ตั้งแต่ 1-10 เท่านั้น (เกิน 10 ให้ใช้ こ แทน)",
+    "objects": [
+      { "th": "ขนมปัง", "unitTh": "ก้อน" },
+      { "th": "หมอน", "unitTh": "ใบ" },
+      { "th": "กล่อง", "unitTh": "กล่อง" }
+    ],
+    "counts": [
+      { "n": 1, "japanese": "ひとつ", "romaji": "hitotsu" },
+      { "n": 2, "japanese": "ふたつ", "romaji": "futatsu" },
+      { "n": 3, "japanese": "みっつ", "romaji": "mittsu" },
+      { "n": 4, "japanese": "よっつ", "romaji": "yottsu" },
+      { "n": 5, "japanese": "いつつ", "romaji": "itsutsu" },
+      { "n": 6, "japanese": "むっつ", "romaji": "muttsu" },
+      { "n": 7, "japanese": "ななつ", "romaji": "nanatsu" },
+      { "n": 8, "japanese": "やっつ", "romaji": "yattsu" },
+      { "n": 9, "japanese": "ここのつ", "romaji": "kokonotsu" },
+      { "n": 10, "japanese": "とお", "romaji": "too" }
+    ]
+  },
+  {
+    "id": "ko",
+    "char": "こ",
+    "titleTh": "こ - ตัวนับสิ่งของชิ้นเล็กทั่วไป",
+    "usageTh": "ใช้นับสิ่งของชิ้นเล็กๆ ทั่วไปที่ไม่มีตัวนับเฉพาะ เช่น ผลไม้ ขนม ไข่ กล่อง ใช้แทน つ ได้ตั้งแต่ 11 ขึ้นไป",
+    "objects": [
+      { "th": "ไข่", "unitTh": "ฟอง" },
+      { "th": "ลูกอม", "unitTh": "เม็ด" },
+      { "th": "แอปเปิ้ล", "unitTh": "ลูก" }
+    ],
+    "counts": [
+      { "n": 1, "japanese": "いっこ", "romaji": "ikko" },
+      { "n": 2, "japanese": "にこ", "romaji": "niko" },
+      { "n": 3, "japanese": "さんこ", "romaji": "sanko" },
+      { "n": 4, "japanese": "よんこ", "romaji": "yonko" },
+      { "n": 5, "japanese": "ごこ", "romaji": "goko" },
+      { "n": 6, "japanese": "ろっこ", "romaji": "rokko" },
+      { "n": 7, "japanese": "ななこ", "romaji": "nanako" },
+      { "n": 8, "japanese": "はっこ", "romaji": "hakko" },
+      { "n": 9, "japanese": "きゅうこ", "romaji": "kyuuko" },
+      { "n": 10, "japanese": "じゅっこ", "romaji": "jukko" }
+    ]
+  },
+  {
+    "id": "nin",
+    "char": "にん",
+    "titleTh": "にん - ตัวนับคน",
+    "usageTh": "ใช้นับจำนวนคน ข้อสังเกต: 1 คนและ 2 คนเป็นคำผิดกฎ (ひとり ふたり) ส่วน 3 คนขึ้นไปนับแบบปกติ",
+    "objects": [
+      { "th": "คน", "unitTh": "คน" },
+      { "th": "นักเรียน", "unitTh": "คน" },
+      { "th": "เพื่อน", "unitTh": "คน" }
+    ],
+    "counts": [
+      { "n": 1, "japanese": "ひとり", "romaji": "hitori" },
+      { "n": 2, "japanese": "ふたり", "romaji": "futari" },
+      { "n": 3, "japanese": "さんにん", "romaji": "sannin" },
+      { "n": 4, "japanese": "よにん", "romaji": "yonin" },
+      { "n": 5, "japanese": "ごにん", "romaji": "gonin" },
+      { "n": 6, "japanese": "ろくにん", "romaji": "rokunin" },
+      { "n": 7, "japanese": "ななにん", "romaji": "nananin" },
+      { "n": 8, "japanese": "はちにん", "romaji": "hachinin" },
+      { "n": 9, "japanese": "きゅうにん", "romaji": "kyuunin" },
+      { "n": 10, "japanese": "じゅうにん", "romaji": "juunin" }
+    ]
+  },
+  {
+    "id": "hon",
+    "char": "ほん",
+    "titleTh": "ほん - ตัวนับของยาวๆ",
+    "usageTh": "ใช้นับสิ่งของทรงยาวเรียว เช่น ปากกา ขวด ร่ม ต้นไม้ มีการเปลี่ยนเสียงตามตัวเลขข้างหน้า (ぽん/ほん/ぼん)",
+    "objects": [
+      { "th": "ปากกา", "unitTh": "ด้าม" },
+      { "th": "ขวดน้ำ", "unitTh": "ขวด" },
+      { "th": "ร่ม", "unitTh": "คัน" }
+    ],
+    "counts": [
+      { "n": 1, "japanese": "いっぽん", "romaji": "ippon" },
+      { "n": 2, "japanese": "にほん", "romaji": "nihon" },
+      { "n": 3, "japanese": "さんぼん", "romaji": "sanbon" },
+      { "n": 4, "japanese": "よんほん", "romaji": "yonhon" },
+      { "n": 5, "japanese": "ごほん", "romaji": "gohon" },
+      { "n": 6, "japanese": "ろっぽん", "romaji": "roppon" },
+      { "n": 7, "japanese": "ななほん", "romaji": "nanahon" },
+      { "n": 8, "japanese": "はっぽん", "romaji": "happon" },
+      { "n": 9, "japanese": "きゅうほん", "romaji": "kyuuhon" },
+      { "n": 10, "japanese": "じゅっぽん", "romaji": "juppon" }
+    ]
+  },
+  {
+    "id": "mai",
+    "char": "まい",
+    "titleTh": "まい - ตัวนับของแบนๆ",
+    "usageTh": "ใช้นับสิ่งของแผ่นแบน เช่น กระดาษ ตั๋ว เสื้อผ้า จาน ไม่มีการเปลี่ยนเสียง นับตรงไปตรงมา",
+    "objects": [
+      { "th": "กระดาษ", "unitTh": "แผ่น" },
+      { "th": "ตั๋ว", "unitTh": "ใบ" },
+      { "th": "เสื้อ", "unitTh": "ตัว" }
+    ],
+    "counts": [
+      { "n": 1, "japanese": "いちまい", "romaji": "ichimai" },
+      { "n": 2, "japanese": "にまい", "romaji": "nimai" },
+      { "n": 3, "japanese": "さんまい", "romaji": "sanmai" },
+      { "n": 4, "japanese": "よんまい", "romaji": "yonmai" },
+      { "n": 5, "japanese": "ごまい", "romaji": "gomai" },
+      { "n": 6, "japanese": "ろくまい", "romaji": "rokumai" },
+      { "n": 7, "japanese": "ななまい", "romaji": "nanamai" },
+      { "n": 8, "japanese": "はちまい", "romaji": "hachimai" },
+      { "n": 9, "japanese": "きゅうまい", "romaji": "kyuumai" },
+      { "n": 10, "japanese": "じゅうまい", "romaji": "juumai" }
+    ]
+  },
+  {
+    "id": "hiki",
+    "char": "ひき",
+    "titleTh": "ひき - ตัวนับสัตว์ตัวเล็ก",
+    "usageTh": "ใช้นับสัตว์ขนาดเล็ก-กลาง เช่น แมว สุนัข ปลา แมลง มีการเปลี่ยนเสียงคล้ายกับ ほん (ぴき/ひき/びき)",
+    "objects": [
+      { "th": "แมว", "unitTh": "ตัว" },
+      { "th": "สุนัข", "unitTh": "ตัว" },
+      { "th": "ปลา", "unitTh": "ตัว" }
+    ],
+    "counts": [
+      { "n": 1, "japanese": "いっぴき", "romaji": "ippiki" },
+      { "n": 2, "japanese": "にひき", "romaji": "nihiki" },
+      { "n": 3, "japanese": "さんびき", "romaji": "sanbiki" },
+      { "n": 4, "japanese": "よんひき", "romaji": "yonhiki" },
+      { "n": 5, "japanese": "ごひき", "romaji": "gohiki" },
+      { "n": 6, "japanese": "ろっぴき", "romaji": "roppiki" },
+      { "n": 7, "japanese": "ななひき", "romaji": "nanahiki" },
+      { "n": 8, "japanese": "はっぴき", "romaji": "happiki" },
+      { "n": 9, "japanese": "きゅうひき", "romaji": "kyuuhiki" },
+      { "n": 10, "japanese": "じゅっぴき", "romaji": "juppiki" }
+    ]
+  },
+  {
+    "id": "dai",
+    "char": "だい",
+    "titleTh": "だい - ตัวนับเครื่องจักร/ยานพาหนะ",
+    "usageTh": "ใช้นับเครื่องจักรและยานพาหนะ เช่น รถยนต์ คอมพิวเตอร์ โทรทัศน์ ไม่มีการเปลี่ยนเสียง นับตรงไปตรงมา",
+    "objects": [
+      { "th": "รถยนต์", "unitTh": "คัน" },
+      { "th": "คอมพิวเตอร์", "unitTh": "เครื่อง" },
+      { "th": "โทรทัศน์", "unitTh": "เครื่อง" }
+    ],
+    "counts": [
+      { "n": 1, "japanese": "いちだい", "romaji": "ichidai" },
+      { "n": 2, "japanese": "にだい", "romaji": "nidai" },
+      { "n": 3, "japanese": "さんだい", "romaji": "sandai" },
+      { "n": 4, "japanese": "よんだい", "romaji": "yondai" },
+      { "n": 5, "japanese": "ごだい", "romaji": "godai" },
+      { "n": 6, "japanese": "ろくだい", "romaji": "rokudai" },
+      { "n": 7, "japanese": "ななだい", "romaji": "nanadai" },
+      { "n": 8, "japanese": "はちだい", "romaji": "hachidai" },
+      { "n": 9, "japanese": "きゅうだい", "romaji": "kyuudai" },
+      { "n": 10, "japanese": "じゅうだい", "romaji": "juudai" }
+    ]
+  },
+  {
+    "id": "satsu",
+    "char": "さつ",
+    "titleTh": "さつ - ตัวนับหนังสือ",
+    "usageTh": "ใช้นับหนังสือ สมุด นิตยสาร และสิ่งพิมพ์เล่มต่างๆ มีการเปลี่ยนเสียงเล็กน้อยที่ 1, 8, 10",
+    "objects": [
+      { "th": "หนังสือ", "unitTh": "เล่ม" },
+      { "th": "สมุด", "unitTh": "เล่ม" },
+      { "th": "นิตยสาร", "unitTh": "เล่ม" }
+    ],
+    "counts": [
+      { "n": 1, "japanese": "いっさつ", "romaji": "issatsu" },
+      { "n": 2, "japanese": "にさつ", "romaji": "nisatsu" },
+      { "n": 3, "japanese": "さんさつ", "romaji": "sansatsu" },
+      { "n": 4, "japanese": "よんさつ", "romaji": "yonsatsu" },
+      { "n": 5, "japanese": "ごさつ", "romaji": "gosatsu" },
+      { "n": 6, "japanese": "ろくさつ", "romaji": "rokusatsu" },
+      { "n": 7, "japanese": "ななさつ", "romaji": "nanasatsu" },
+      { "n": 8, "japanese": "はっさつ", "romaji": "hassatsu" },
+      { "n": 9, "japanese": "きゅうさつ", "romaji": "kyuusatsu" },
+      { "n": 10, "japanese": "じゅっさつ", "romaji": "jussatsu" }
+    ]
+  }
+]

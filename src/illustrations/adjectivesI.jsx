@@ -1,0 +1,132 @@
+import { Frame, INK } from "./shared";
+
+export const adjectivesIIcons = {
+  "adj-big": (id) => (
+    <Frame id={id}>
+      <circle cx="88" cy="112" r="50" fill="#8fcfff" stroke={INK} strokeWidth="3.5" />
+      <circle cx="142" cy="136" r="18" fill="#dff1ff" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
+  "adj-small": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="118" r="18" fill="#ff9ec7" stroke={INK} strokeWidth="3" />
+      <circle cx="100" cy="118" r="46" fill="none" stroke={INK} strokeWidth="2" strokeDasharray="4 6" opacity="0.4" />
+    </Frame>
+  ),
+  "adj-expensive": (id) => (
+    <Frame id={id}>
+      <path d="M 70 70 L 118 70 L 148 100 L 108 140 L 60 100 Z" fill="#f6d34c" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <circle cx="86" cy="86" r="6" fill="#fff" />
+      <text x="100" y="112" fontSize="26" fontWeight="800" fill={INK} textAnchor="middle">¥</text>
+    </Frame>
+  ),
+  "adj-cheap": (id) => (
+    <Frame id={id}>
+      <path d="M 66 76 L 104 76 L 134 106 L 100 140 L 66 106 Z" fill="#5fbf77" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <circle cx="80" cy="90" r="5" fill="#fff" />
+      <text x="98" y="118" fontSize="20" fontWeight="800" fill={INK} textAnchor="middle">¥</text>
+      <path d="M 118 66 L 138 86" stroke={INK} strokeWidth="3" strokeLinecap="round" />
+    </Frame>
+  ),
+  "adj-delicious": (id) => (
+    <Frame id={id}>
+      <path d="M 62 118 Q 62 146 100 146 Q 138 146 138 118 Z" fill="#f5924a" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <ellipse cx="100" cy="116" rx="38" ry="10" fill="#ffd6a8" stroke={INK} strokeWidth="2.5" />
+      <path d="M 82 92 Q 78 76 86 66" fill="none" stroke="#d8d8d8" strokeWidth="4" strokeLinecap="round" opacity="0.7" />
+      <path d="M 100 92 Q 98 72 108 60" fill="none" stroke="#d8d8d8" strokeWidth="4" strokeLinecap="round" opacity="0.7" />
+    </Frame>
+  ),
+  "adj-hot": (id) => (
+    <Frame id={id}>
+      <rect x="90" y="60" width="20" height="66" rx="10" fill="#fff" stroke={INK} strokeWidth="3" />
+      <circle cx="100" cy="132" r="18" fill="#f45c5c" stroke={INK} strokeWidth="3" />
+      <rect x="94" y="70" width="12" height="50" rx="6" fill="#f45c5c" />
+      <path d="M 128 76 Q 138 82 128 90 M 138 92 Q 148 98 138 106" stroke="#f5924a" strokeWidth="3" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "adj-cold": (id) => (
+    <Frame id={id}>
+      <rect x="90" y="60" width="20" height="66" rx="10" fill="#fff" stroke={INK} strokeWidth="3" />
+      <circle cx="100" cy="132" r="18" fill="#4c8df0" stroke={INK} strokeWidth="3" />
+      <rect x="94" y="100" width="12" height="20" rx="6" fill="#4c8df0" />
+      <g stroke="#8fd3f4" strokeWidth="2.5" strokeLinecap="round">
+        <path d="M 132 70 L 132 88 M 123 74 L 141 84 M 141 74 L 123 84" />
+      </g>
+    </Frame>
+  ),
+  "adj-new": (id) => (
+    <Frame id={id}>
+      <rect x="66" y="88" width="68" height="52" rx="6" fill="#8fd3f4" stroke={INK} strokeWidth="3" />
+      <path d="M 66 100 L 134 100" stroke={INK} strokeWidth="3" />
+      <path d="M 92 88 L 100 74 L 108 88" fill="none" stroke="#ffd166" strokeWidth="4" strokeLinejoin="round" />
+      <path d="M 40 90 L 46 100 L 40 110 L 34 100 Z" fill="#ffd166" />
+      <path d="M 160 90 L 166 100 L 160 110 L 154 100 Z" fill="#ffd166" />
+    </Frame>
+  ),
+  "adj-old": (id) => (
+    <Frame id={id}>
+      <rect x="66" y="88" width="68" height="52" rx="6" fill="#c9a876" stroke={INK} strokeWidth="3" />
+      <path d="M 80 88 L 90 108 L 78 116 L 92 140" fill="none" stroke={INK} strokeWidth="2.5" strokeLinecap="round" opacity="0.6" />
+      <path d="M 110 88 L 118 104" fill="none" stroke={INK} strokeWidth="2.5" strokeLinecap="round" opacity="0.6" />
+      <circle cx="126" cy="122" r="3" fill={INK} opacity="0.5" />
+    </Frame>
+  ),
+  "adj-fast": (id) => (
+    <Frame id={id}>
+      <path d="M 108 56 L 76 108 L 96 108 L 88 148 L 128 96 L 106 96 Z" fill="#f6d34c" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 50 100 L 66 100 M 46 116 L 62 116" stroke={INK} strokeWidth="3" strokeLinecap="round" opacity="0.5" />
+    </Frame>
+  ),
+  "adj-slow": (id) => (
+    <Frame id={id}>
+      <ellipse cx="104" cy="118" rx="38" ry="20" fill="#8fd3a0" stroke={INK} strokeWidth="3" />
+      <circle cx="146" cy="106" r="16" fill="#8fd3a0" stroke={INK} strokeWidth="3" />
+      <circle cx="152" cy="100" r="2.5" fill={INK} />
+      <circle cx="80" cy="140" r="8" fill="#5a4a52" opacity="0.3" />
+      <circle cx="112" cy="142" r="8" fill="#5a4a52" opacity="0.3" />
+    </Frame>
+  ),
+  "adj-difficult": (id) => (
+    <Frame id={id}>
+      <path
+        d="M 70 70 L 100 70 L 100 90 Q 116 90 116 106 Q 116 122 100 122 L 100 140 L 70 140 Z"
+        fill="#b07ae0"
+        stroke={INK}
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <text x="85" y="112" fontSize="30" fontWeight="800" fill="#fff" textAnchor="middle">?</text>
+    </Frame>
+  ),
+  "adj-easy": (id) => (
+    <Frame id={id}>
+      <path
+        d="M 70 70 L 100 70 L 100 90 Q 116 90 116 106 Q 116 122 100 122 L 100 140 L 70 140 Z"
+        fill="#5fbf77"
+        stroke={INK}
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <path d="M 78 108 L 88 118 L 100 96" fill="none" stroke="#fff" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "adj-fun": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="106" r="42" fill="#ffd166" stroke={INK} strokeWidth="3.5" />
+      <path d="M 84 96 Q 90 88 96 96" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
+      <path d="M 104 96 Q 110 88 116 96" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
+      <path d="M 82 114 Q 100 132 118 114" stroke={INK} strokeWidth="3.5" fill="none" strokeLinecap="round" />
+      <path d="M 60 66 L 64 76 L 74 78 L 64 82 L 60 92 L 56 82 L 46 78 L 56 76 Z" fill="#ff9ec7" />
+    </Frame>
+  ),
+  "adj-boring": (id) => (
+    <Frame id={id}>
+      <circle cx="96" cy="110" r="42" fill="#c9c2ce" stroke={INK} strokeWidth="3.5" />
+      <path d="M 80 100 L 92 100" stroke={INK} strokeWidth="3" strokeLinecap="round" />
+      <path d="M 100 100 L 112 100" stroke={INK} strokeWidth="3" strokeLinecap="round" />
+      <path d="M 82 124 L 110 124" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
+      <text x="140" y="76" fontSize="16" fontWeight="700" fill={INK} opacity="0.6">Z</text>
+      <text x="150" y="64" fontSize="12" fontWeight="700" fill={INK} opacity="0.5">z</text>
+    </Frame>
+  ),
+};
