@@ -1,7 +1,15 @@
 import { useEffect, useState } from "react";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
+import { shuffle } from "../utils/content";
+import { playCorrect, playIncorrect } from "../utils/sound";
 import conversations from "../data/conversations.json";
+
+const MISUNDERSTANDING = {
+  japanese: "すみません、もういちど おねがいします。",
+  romaji: "Sumimasen, mou ichido onegaishimasu.",
+  thai: "ขอโทษค่ะ ช่วยพูดอีกครั้งได้ไหมคะ",
+};
 
 function TopicPicker({ onPick }) {
   return (
@@ -23,44 +31,66 @@ function TopicPicker({ onPick }) {
 
 function DialogueView({ topic, onBack }) {
   const { speak, supported } = useSpeak();
-  const [nodeIndex, setNodeIndex] = useState(0);
+  const [nodeId, setNodeId] = useState(topic.start);
+  const [options, setOptions] = useState(() => shuffle(topic.nodes[topic.start].options));
   const [showRomaji, setShowRomaji] = useState(false);
   const [showThai, setShowThai] = useState(false);
   const [history, setHistory] = useState([]);
   const [finished, setFinished] = useState(false);
   const [pendingReply, setPendingReply] = useState(null);
+  const [misunderstanding, setMisunderstanding] = useState(false);
 
-  const node = topic.nodes[nodeIndex];
+  const node = topic.nodes[nodeId];
+  const currentSystem = misunderstanding ? MISUNDERSTANDING : node.system;
 
   useEffect(() => {
-    if (node) speak(node.system.japanese, { rate: 0.85 });
+    speak(topic.nodes[topic.start].system.japanese, { rate: 0.85 });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [topic, nodeIndex]);
+  }, []);
 
-  const replay = () => node && speak(node.system.japanese, { rate: 0.85 });
+  const replay = () => speak(currentSystem.japanese, { rate: 0.85 });
 
-  const advance = (opt) => {
-    setHistory((h) => [...h, { system: node.system, reply: opt }]);
-    setPendingReply(null);
-    if (nodeIndex + 1 < topic.nodes.length) {
-      setNodeIndex((i) => i + 1);
-    } else {
-      setFinished(true);
-    }
-  };
+  const replayReply = () => pendingReply && speak(pendingReply.japanese, { rate: 0.85 });
 
   const choose = (opt) => {
     setPendingReply(opt);
     if (supported) speak(opt.japanese, { rate: 0.85 });
   };
 
-  const replayReply = () => pendingReply && speak(pendingReply.japanese, { rate: 0.85 });
+  const confirmAttempt = () => {
+    const opt = pendingReply;
+    setPendingReply(null);
+    if (opt.correct) {
+      playCorrect();
+      setHistory((h) => [...h, { system: node.system, reply: opt }]);
+      if (opt.next) {
+        const nextNode = topic.nodes[opt.next];
+        setNodeId(opt.next);
+        setOptions(shuffle(nextNode.options));
+        speak(nextNode.system.japanese, { rate: 0.85 });
+      } else {
+        setFinished(true);
+      }
+    } else {
+      playIncorrect();
+      setMisunderstanding(true);
+      speak(MISUNDERSTANDING.japanese, { rate: 0.85 });
+    }
+  };
+
+  const continueMisunderstanding = () => {
+    setMisunderstanding(false);
+    setOptions(shuffle(node.options));
+    speak(node.system.japanese, { rate: 0.85 });
+  };
 
   const restart = () => {
-    setNodeIndex(0);
+    setNodeId(topic.start);
+    setOptions(shuffle(topic.nodes[topic.start].options));
     setHistory([]);
     setFinished(false);
     setPendingReply(null);
+    setMisunderstanding(false);
   };
 
   return (
@@ -70,7 +100,7 @@ function DialogueView({ topic, onBack }) {
       </button>
 
       <p className="progress-label">
-        {topic.emoji} {topic.title} · {Math.min(nodeIndex + 1, topic.nodes.length)} / {topic.nodes.length}
+        {topic.emoji} {topic.title} · รอบที่ {history.length + 1}
       </p>
 
       <div className="toggle-group blue">
@@ -97,7 +127,21 @@ function DialogueView({ topic, onBack }) {
 
       {!finished ? (
         <div className="conversation-card">
-          {!pendingReply ? (
+          {misunderstanding ? (
+            <>
+              <div className="bubble bubble-system bubble-current">
+                <p className="jp-text">{MISUNDERSTANDING.japanese}</p>
+                {showRomaji && <p className="bubble-romaji">{MISUNDERSTANDING.romaji}</p>}
+                {showThai && <p className="th-text bubble-thai">{MISUNDERSTANDING.thai}</p>}
+              </div>
+              <button className="btn btn-outline blue btn-sm" onClick={replay}>
+                🔊 ฟังอีกครั้ง
+              </button>
+              <button className="btn btn-success btn-sm" onClick={continueMisunderstanding}>
+                ลองตอบอีกครั้ง →
+              </button>
+            </>
+          ) : !pendingReply ? (
             <>
               <div className="bubble bubble-system bubble-current">
                 <p className="jp-text">{node.system.japanese}</p>
@@ -110,7 +154,7 @@ function DialogueView({ topic, onBack }) {
 
               <p className="th-text conversation-prompt">เลือกคำตอบของคุณ:</p>
               <div className="reply-options">
-                {node.options.map((opt, i) => (
+                {options.map((opt, i) => (
                   <button key={i} className="reply-option" onClick={() => choose(opt)}>
                     <span className="jp-text">{opt.japanese}</span>
                     {showRomaji && <span className="bubble-romaji">{opt.romaji}</span>}
@@ -134,7 +178,7 @@ function DialogueView({ topic, onBack }) {
               <button className="btn btn-outline blue btn-sm" onClick={replayReply}>
                 🔊 ฟังอีกครั้ง
               </button>
-              <button className="btn btn-success btn-sm" onClick={() => advance(pendingReply)}>
+              <button className="btn btn-success btn-sm" onClick={confirmAttempt}>
                 ดำเนินการต่อ →
               </button>
             </>
@@ -161,5 +205,5 @@ export default function ConversationPractice() {
   const [topic, setTopic] = useState(null);
 
   if (!topic) return <TopicPicker onPick={setTopic} />;
-  return <DialogueView topic={topic} onBack={() => setTopic(null)} />;
+  return <DialogueView key={topic.id} topic={topic} onBack={() => setTopic(null)} />;
 }
