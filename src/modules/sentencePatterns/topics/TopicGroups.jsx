@@ -1,5 +1,6 @@
 import { useSpeak } from "../../../hooks/useSpeech";
-import { verbs, groupLabel } from "../../../utils/grammar";
+import { verbs, groupLabel, kanjiForVerbForm } from "../../../utils/grammar";
+import JapaneseText from "../../../components/JapaneseText";
 
 function GroupCard({ group, note, children }) {
   return (
@@ -25,7 +26,7 @@ export default function TopicGroups() {
       <GroupCard group={1} note="กริยาที่ลงท้ายด้วยเสียงแถว う เช่น う・つ・る・む・ぶ・ぬ・く・ぐ・す">
         {g1.map((v) => (
           <button key={v.id} className="verb-chip jp-text" onClick={() => say(v)}>
-            {v.dict} 🔊
+            <JapaneseText kana={v.dict} kanji={kanjiForVerbForm(v.dict)} /> 🔊
           </button>
         ))}
       </GroupCard>
@@ -34,7 +35,7 @@ export default function TopicGroups() {
       <GroupCard group={2} note="กริยาที่ลงท้ายด้วย いる หรือ える ส่วนใหญ่ (มีข้อยกเว้นบางคำ)">
         {g2.map((v) => (
           <button key={v.id} className="verb-chip jp-text" onClick={() => say(v)}>
-            {v.dict} 🔊
+            <JapaneseText kana={v.dict} kanji={kanjiForVerbForm(v.dict)} /> 🔊
           </button>
         ))}
       </GroupCard>
@@ -43,7 +44,7 @@ export default function TopicGroups() {
       <GroupCard group={3} note="ในภาษาญี่ปุ่นมีกริยากลุ่มนี้แค่ 2 คำเท่านั้น จำได้ง่าย">
         {g3.map((v) => (
           <button key={v.id} className="verb-chip jp-text" onClick={() => say(v)}>
-            {v.dict} 🔊
+            <JapaneseText kana={v.dict} kanji={kanjiForVerbForm(v.dict)} /> 🔊
           </button>
         ))}
       </GroupCard>

@@ -3,6 +3,19 @@ import { shuffle } from "./content";
 
 export { adjectives };
 
+const KANJI_MAP = new Map();
+for (const adj of adjectives) {
+  if (adj.kanji) KANJI_MAP.set(adj.dict, adj.kanji);
+  for (const form of Object.values(adj.forms)) {
+    if (form.kanji) KANJI_MAP.set(form.japanese, form.kanji);
+  }
+}
+
+/** Looks up Kanji+furigana segments for an adjective's kana string, e.g. "たかいです" -> 高いです segments. */
+export function kanjiForAdjective(kana) {
+  return KANJI_MAP.get(kana);
+}
+
 export const FORM_FIELDS = ["affirmative", "negative", "past", "pastNegative"];
 
 const FORM_LABEL_TH = {

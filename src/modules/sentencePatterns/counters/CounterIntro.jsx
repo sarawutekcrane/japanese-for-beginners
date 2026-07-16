@@ -1,5 +1,6 @@
 import { useSpeak } from "../../../hooks/useSpeech";
 import { counters } from "../../../utils/counters";
+import JapaneseText from "../../../components/JapaneseText";
 
 const SAMPLE_IDS = ["tsu", "hon", "nin"];
 
@@ -24,7 +25,7 @@ export default function CounterIntro() {
       <div className="conj-example-list">
         {samples.map((c) => (
           <div key={c.id} className="conj-example-row" onClick={() => speak(c.counts[0].japanese, { rate: 0.8 })} role="button" tabIndex={0}>
-            <span className="jp-text conj-word">{c.counts[0].japanese}</span>
+            <JapaneseText as="span" className="jp-text conj-word" kana={c.counts[0].japanese} kanji={c.counts[0].kanji} />
             <span className="example-play">🔊</span>
             <p className="th-text group-rule-explanation">{c.titleTh}</p>
           </div>

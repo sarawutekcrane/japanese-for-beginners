@@ -1,5 +1,6 @@
 import { useSpeak } from "../../../hooks/useSpeech";
 import { counters } from "../../../utils/counters";
+import JapaneseText from "../../../components/JapaneseText";
 
 /** Shared renderer for a single counter's 1-10 count list, used by each individual counter topic. */
 export default function CounterDetail({ counterId }) {
@@ -17,7 +18,7 @@ export default function CounterDetail({ counterId }) {
         {counter.counts.map((c) => (
           <div key={c.n} className="conj-example-row" onClick={() => speak(c.japanese, { rate: 0.8 })} role="button" tabIndex={0}>
             <span className="jp-text conj-word">
-              {c.n}. {c.japanese}
+              {c.n}. <JapaneseText kana={c.japanese} kanji={c.kanji} />
             </span>
             <span className="example-play">🔊</span>
           </div>

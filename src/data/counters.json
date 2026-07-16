@@ -10,16 +10,16 @@
       { "th": "กล่อง", "unitTh": "กล่อง" }
     ],
     "counts": [
-      { "n": 1, "japanese": "ひとつ", "romaji": "hitotsu" },
-      { "n": 2, "japanese": "ふたつ", "romaji": "futatsu" },
-      { "n": 3, "japanese": "みっつ", "romaji": "mittsu" },
-      { "n": 4, "japanese": "よっつ", "romaji": "yottsu" },
-      { "n": 5, "japanese": "いつつ", "romaji": "itsutsu" },
-      { "n": 6, "japanese": "むっつ", "romaji": "muttsu" },
-      { "n": 7, "japanese": "ななつ", "romaji": "nanatsu" },
-      { "n": 8, "japanese": "やっつ", "romaji": "yattsu" },
-      { "n": 9, "japanese": "ここのつ", "romaji": "kokonotsu" },
-      { "n": 10, "japanese": "とお", "romaji": "too" }
+      { "n": 1, "japanese": "ひとつ", "romaji": "hitotsu", "kanji": [{ "text": "一つ", "reading": "ひとつ" }] },
+      { "n": 2, "japanese": "ふたつ", "romaji": "futatsu", "kanji": [{ "text": "二つ", "reading": "ふたつ" }] },
+      { "n": 3, "japanese": "みっつ", "romaji": "mittsu", "kanji": [{ "text": "三つ", "reading": "みっつ" }] },
+      { "n": 4, "japanese": "よっつ", "romaji": "yottsu", "kanji": [{ "text": "四つ", "reading": "よっつ" }] },
+      { "n": 5, "japanese": "いつつ", "romaji": "itsutsu", "kanji": [{ "text": "五つ", "reading": "いつつ" }] },
+      { "n": 6, "japanese": "むっつ", "romaji": "muttsu", "kanji": [{ "text": "六つ", "reading": "むっつ" }] },
+      { "n": 7, "japanese": "ななつ", "romaji": "nanatsu", "kanji": [{ "text": "七つ", "reading": "ななつ" }] },
+      { "n": 8, "japanese": "やっつ", "romaji": "yattsu", "kanji": [{ "text": "八つ", "reading": "やっつ" }] },
+      { "n": 9, "japanese": "ここのつ", "romaji": "kokonotsu", "kanji": [{ "text": "九つ", "reading": "ここのつ" }] },
+      { "n": 10, "japanese": "とお", "romaji": "too", "kanji": [{ "text": "十", "reading": "とお" }] }
     ]
   },
   {
@@ -33,16 +33,16 @@
       { "th": "แอปเปิ้ล", "unitTh": "ลูก" }
     ],
     "counts": [
-      { "n": 1, "japanese": "いっこ", "romaji": "ikko" },
-      { "n": 2, "japanese": "にこ", "romaji": "niko" },
-      { "n": 3, "japanese": "さんこ", "romaji": "sanko" },
-      { "n": 4, "japanese": "よんこ", "romaji": "yonko" },
-      { "n": 5, "japanese": "ごこ", "romaji": "goko" },
-      { "n": 6, "japanese": "ろっこ", "romaji": "rokko" },
-      { "n": 7, "japanese": "ななこ", "romaji": "nanako" },
-      { "n": 8, "japanese": "はっこ", "romaji": "hakko" },
-      { "n": 9, "japanese": "きゅうこ", "romaji": "kyuuko" },
-      { "n": 10, "japanese": "じゅっこ", "romaji": "jukko" }
+      { "n": 1, "japanese": "いっこ", "romaji": "ikko", "kanji": [{ "text": "一個", "reading": "いっこ" }] },
+      { "n": 2, "japanese": "にこ", "romaji": "niko", "kanji": [{ "text": "二個", "reading": "にこ" }] },
+      { "n": 3, "japanese": "さんこ", "romaji": "sanko", "kanji": [{ "text": "三個", "reading": "さんこ" }] },
+      { "n": 4, "japanese": "よんこ", "romaji": "yonko", "kanji": [{ "text": "四個", "reading": "よんこ" }] },
+      { "n": 5, "japanese": "ごこ", "romaji": "goko", "kanji": [{ "text": "五個", "reading": "ごこ" }] },
+      { "n": 6, "japanese": "ろっこ", "romaji": "rokko", "kanji": [{ "text": "六個", "reading": "ろっこ" }] },
+      { "n": 7, "japanese": "ななこ", "romaji": "nanako", "kanji": [{ "text": "七個", "reading": "ななこ" }] },
+      { "n": 8, "japanese": "はっこ", "romaji": "hakko", "kanji": [{ "text": "八個", "reading": "はっこ" }] },
+      { "n": 9, "japanese": "きゅうこ", "romaji": "kyuuko", "kanji": [{ "text": "九個", "reading": "きゅうこ" }] },
+      { "n": 10, "japanese": "じゅっこ", "romaji": "jukko", "kanji": [{ "text": "十個", "reading": "じゅっこ" }] }
     ]
   },
   {
@@ -56,16 +56,16 @@
       { "th": "เพื่อน", "unitTh": "คน" }
     ],
     "counts": [
-      { "n": 1, "japanese": "ひとり", "romaji": "hitori" },
-      { "n": 2, "japanese": "ふたり", "romaji": "futari" },
-      { "n": 3, "japanese": "さんにん", "romaji": "sannin" },
-      { "n": 4, "japanese": "よにん", "romaji": "yonin" },
-      { "n": 5, "japanese": "ごにん", "romaji": "gonin" },
-      { "n": 6, "japanese": "ろくにん", "romaji": "rokunin" },
-      { "n": 7, "japanese": "ななにん", "romaji": "nananin" },
-      { "n": 8, "japanese": "はちにん", "romaji": "hachinin" },
-      { "n": 9, "japanese": "きゅうにん", "romaji": "kyuunin" },
-      { "n": 10, "japanese": "じゅうにん", "romaji": "juunin" }
+      { "n": 1, "japanese": "ひとり", "romaji": "hitori", "kanji": [{ "text": "一人", "reading": "ひとり" }] },
+      { "n": 2, "japanese": "ふたり", "romaji": "futari", "kanji": [{ "text": "二人", "reading": "ふたり" }] },
+      { "n": 3, "japanese": "さんにん", "romaji": "sannin", "kanji": [{ "text": "三人", "reading": "さんにん" }] },
+      { "n": 4, "japanese": "よにん", "romaji": "yonin", "kanji": [{ "text": "四人", "reading": "よにん" }] },
+      { "n": 5, "japanese": "ごにん", "romaji": "gonin", "kanji": [{ "text": "五人", "reading": "ごにん" }] },
+      { "n": 6, "japanese": "ろくにん", "romaji": "rokunin", "kanji": [{ "text": "六人", "reading": "ろくにん" }] },
+      { "n": 7, "japanese": "ななにん", "romaji": "nananin", "kanji": [{ "text": "七人", "reading": "ななにん" }] },
+      { "n": 8, "japanese": "はちにん", "romaji": "hachinin", "kanji": [{ "text": "八人", "reading": "はちにん" }] },
+      { "n": 9, "japanese": "きゅうにん", "romaji": "kyuunin", "kanji": [{ "text": "九人", "reading": "きゅうにん" }] },
+      { "n": 10, "japanese": "じゅうにん", "romaji": "juunin", "kanji": [{ "text": "十人", "reading": "じゅうにん" }] }
     ]
   },
   {
@@ -79,16 +79,16 @@
       { "th": "ร่ม", "unitTh": "คัน" }
     ],
     "counts": [
-      { "n": 1, "japanese": "いっぽん", "romaji": "ippon" },
-      { "n": 2, "japanese": "にほん", "romaji": "nihon" },
-      { "n": 3, "japanese": "さんぼん", "romaji": "sanbon" },
-      { "n": 4, "japanese": "よんほん", "romaji": "yonhon" },
-      { "n": 5, "japanese": "ごほん", "romaji": "gohon" },
-      { "n": 6, "japanese": "ろっぽん", "romaji": "roppon" },
-      { "n": 7, "japanese": "ななほん", "romaji": "nanahon" },
-      { "n": 8, "japanese": "はっぽん", "romaji": "happon" },
-      { "n": 9, "japanese": "きゅうほん", "romaji": "kyuuhon" },
-      { "n": 10, "japanese": "じゅっぽん", "romaji": "juppon" }
+      { "n": 1, "japanese": "いっぽん", "romaji": "ippon", "kanji": [{ "text": "一本", "reading": "いっぽん" }] },
+      { "n": 2, "japanese": "にほん", "romaji": "nihon", "kanji": [{ "text": "二本", "reading": "にほん" }] },
+      { "n": 3, "japanese": "さんぼん", "romaji": "sanbon", "kanji": [{ "text": "三本", "reading": "さんぼん" }] },
+      { "n": 4, "japanese": "よんほん", "romaji": "yonhon", "kanji": [{ "text": "四本", "reading": "よんほん" }] },
+      { "n": 5, "japanese": "ごほん", "romaji": "gohon", "kanji": [{ "text": "五本", "reading": "ごほん" }] },
+      { "n": 6, "japanese": "ろっぽん", "romaji": "roppon", "kanji": [{ "text": "六本", "reading": "ろっぽん" }] },
+      { "n": 7, "japanese": "ななほん", "romaji": "nanahon", "kanji": [{ "text": "七本", "reading": "ななほん" }] },
+      { "n": 8, "japanese": "はっぽん", "romaji": "happon", "kanji": [{ "text": "八本", "reading": "はっぽん" }] },
+      { "n": 9, "japanese": "きゅうほん", "romaji": "kyuuhon", "kanji": [{ "text": "九本", "reading": "きゅうほん" }] },
+      { "n": 10, "japanese": "じゅっぽん", "romaji": "juppon", "kanji": [{ "text": "十本", "reading": "じゅっぽん" }] }
     ]
   },
   {
@@ -102,16 +102,16 @@
       { "th": "เสื้อ", "unitTh": "ตัว" }
     ],
     "counts": [
-      { "n": 1, "japanese": "いちまい", "romaji": "ichimai" },
-      { "n": 2, "japanese": "にまい", "romaji": "nimai" },
-      { "n": 3, "japanese": "さんまい", "romaji": "sanmai" },
-      { "n": 4, "japanese": "よんまい", "romaji": "yonmai" },
-      { "n": 5, "japanese": "ごまい", "romaji": "gomai" },
-      { "n": 6, "japanese": "ろくまい", "romaji": "rokumai" },
-      { "n": 7, "japanese": "ななまい", "romaji": "nanamai" },
-      { "n": 8, "japanese": "はちまい", "romaji": "hachimai" },
-      { "n": 9, "japanese": "きゅうまい", "romaji": "kyuumai" },
-      { "n": 10, "japanese": "じゅうまい", "romaji": "juumai" }
+      { "n": 1, "japanese": "いちまい", "romaji": "ichimai", "kanji": [{ "text": "一枚", "reading": "いちまい" }] },
+      { "n": 2, "japanese": "にまい", "romaji": "nimai", "kanji": [{ "text": "二枚", "reading": "にまい" }] },
+      { "n": 3, "japanese": "さんまい", "romaji": "sanmai", "kanji": [{ "text": "三枚", "reading": "さんまい" }] },
+      { "n": 4, "japanese": "よんまい", "romaji": "yonmai", "kanji": [{ "text": "四枚", "reading": "よんまい" }] },
+      { "n": 5, "japanese": "ごまい", "romaji": "gomai", "kanji": [{ "text": "五枚", "reading": "ごまい" }] },
+      { "n": 6, "japanese": "ろくまい", "romaji": "rokumai", "kanji": [{ "text": "六枚", "reading": "ろくまい" }] },
+      { "n": 7, "japanese": "ななまい", "romaji": "nanamai", "kanji": [{ "text": "七枚", "reading": "ななまい" }] },
+      { "n": 8, "japanese": "はちまい", "romaji": "hachimai", "kanji": [{ "text": "八枚", "reading": "はちまい" }] },
+      { "n": 9, "japanese": "きゅうまい", "romaji": "kyuumai", "kanji": [{ "text": "九枚", "reading": "きゅうまい" }] },
+      { "n": 10, "japanese": "じゅうまい", "romaji": "juumai", "kanji": [{ "text": "十枚", "reading": "じゅうまい" }] }
     ]
   },
   {
@@ -125,16 +125,16 @@
       { "th": "ปลา", "unitTh": "ตัว" }
     ],
     "counts": [
-      { "n": 1, "japanese": "いっぴき", "romaji": "ippiki" },
-      { "n": 2, "japanese": "にひき", "romaji": "nihiki" },
-      { "n": 3, "japanese": "さんびき", "romaji": "sanbiki" },
-      { "n": 4, "japanese": "よんひき", "romaji": "yonhiki" },
-      { "n": 5, "japanese": "ごひき", "romaji": "gohiki" },
-      { "n": 6, "japanese": "ろっぴき", "romaji": "roppiki" },
-      { "n": 7, "japanese": "ななひき", "romaji": "nanahiki" },
-      { "n": 8, "japanese": "はっぴき", "romaji": "happiki" },
-      { "n": 9, "japanese": "きゅうひき", "romaji": "kyuuhiki" },
-      { "n": 10, "japanese": "じゅっぴき", "romaji": "juppiki" }
+      { "n": 1, "japanese": "いっぴき", "romaji": "ippiki", "kanji": [{ "text": "一匹", "reading": "いっぴき" }] },
+      { "n": 2, "japanese": "にひき", "romaji": "nihiki", "kanji": [{ "text": "二匹", "reading": "にひき" }] },
+      { "n": 3, "japanese": "さんびき", "romaji": "sanbiki", "kanji": [{ "text": "三匹", "reading": "さんびき" }] },
+      { "n": 4, "japanese": "よんひき", "romaji": "yonhiki", "kanji": [{ "text": "四匹", "reading": "よんひき" }] },
+      { "n": 5, "japanese": "ごひき", "romaji": "gohiki", "kanji": [{ "text": "五匹", "reading": "ごひき" }] },
+      { "n": 6, "japanese": "ろっぴき", "romaji": "roppiki", "kanji": [{ "text": "六匹", "reading": "ろっぴき" }] },
+      { "n": 7, "japanese": "ななひき", "romaji": "nanahiki", "kanji": [{ "text": "七匹", "reading": "ななひき" }] },
+      { "n": 8, "japanese": "はっぴき", "romaji": "happiki", "kanji": [{ "text": "八匹", "reading": "はっぴき" }] },
+      { "n": 9, "japanese": "きゅうひき", "romaji": "kyuuhiki", "kanji": [{ "text": "九匹", "reading": "きゅうひき" }] },
+      { "n": 10, "japanese": "じゅっぴき", "romaji": "juppiki", "kanji": [{ "text": "十匹", "reading": "じゅっぴき" }] }
     ]
   },
   {
@@ -148,16 +148,16 @@
       { "th": "โทรทัศน์", "unitTh": "เครื่อง" }
     ],
     "counts": [
-      { "n": 1, "japanese": "いちだい", "romaji": "ichidai" },
-      { "n": 2, "japanese": "にだい", "romaji": "nidai" },
-      { "n": 3, "japanese": "さんだい", "romaji": "sandai" },
-      { "n": 4, "japanese": "よんだい", "romaji": "yondai" },
-      { "n": 5, "japanese": "ごだい", "romaji": "godai" },
-      { "n": 6, "japanese": "ろくだい", "romaji": "rokudai" },
-      { "n": 7, "japanese": "ななだい", "romaji": "nanadai" },
-      { "n": 8, "japanese": "はちだい", "romaji": "hachidai" },
-      { "n": 9, "japanese": "きゅうだい", "romaji": "kyuudai" },
-      { "n": 10, "japanese": "じゅうだい", "romaji": "juudai" }
+      { "n": 1, "japanese": "いちだい", "romaji": "ichidai", "kanji": [{ "text": "一台", "reading": "いちだい" }] },
+      { "n": 2, "japanese": "にだい", "romaji": "nidai", "kanji": [{ "text": "二台", "reading": "にだい" }] },
+      { "n": 3, "japanese": "さんだい", "romaji": "sandai", "kanji": [{ "text": "三台", "reading": "さんだい" }] },
+      { "n": 4, "japanese": "よんだい", "romaji": "yondai", "kanji": [{ "text": "四台", "reading": "よんだい" }] },
+      { "n": 5, "japanese": "ごだい", "romaji": "godai", "kanji": [{ "text": "五台", "reading": "ごだい" }] },
+      { "n": 6, "japanese": "ろくだい", "romaji": "rokudai", "kanji": [{ "text": "六台", "reading": "ろくだい" }] },
+      { "n": 7, "japanese": "ななだい", "romaji": "nanadai", "kanji": [{ "text": "七台", "reading": "ななだい" }] },
+      { "n": 8, "japanese": "はちだい", "romaji": "hachidai", "kanji": [{ "text": "八台", "reading": "はちだい" }] },
+      { "n": 9, "japanese": "きゅうだい", "romaji": "kyuudai", "kanji": [{ "text": "九台", "reading": "きゅうだい" }] },
+      { "n": 10, "japanese": "じゅうだい", "romaji": "juudai", "kanji": [{ "text": "十台", "reading": "じゅうだい" }] }
     ]
   },
   {
@@ -171,16 +171,16 @@
       { "th": "นิตยสาร", "unitTh": "เล่ม" }
     ],
     "counts": [
-      { "n": 1, "japanese": "いっさつ", "romaji": "issatsu" },
-      { "n": 2, "japanese": "にさつ", "romaji": "nisatsu" },
-      { "n": 3, "japanese": "さんさつ", "romaji": "sansatsu" },
-      { "n": 4, "japanese": "よんさつ", "romaji": "yonsatsu" },
-      { "n": 5, "japanese": "ごさつ", "romaji": "gosatsu" },
-      { "n": 6, "japanese": "ろくさつ", "romaji": "rokusatsu" },
-      { "n": 7, "japanese": "ななさつ", "romaji": "nanasatsu" },
-      { "n": 8, "japanese": "はっさつ", "romaji": "hassatsu" },
-      { "n": 9, "japanese": "きゅうさつ", "romaji": "kyuusatsu" },
-      { "n": 10, "japanese": "じゅっさつ", "romaji": "jussatsu" }
+      { "n": 1, "japanese": "いっさつ", "romaji": "issatsu", "kanji": [{ "text": "一冊", "reading": "いっさつ" }] },
+      { "n": 2, "japanese": "にさつ", "romaji": "nisatsu", "kanji": [{ "text": "二冊", "reading": "にさつ" }] },
+      { "n": 3, "japanese": "さんさつ", "romaji": "sansatsu", "kanji": [{ "text": "三冊", "reading": "さんさつ" }] },
+      { "n": 4, "japanese": "よんさつ", "romaji": "yonsatsu", "kanji": [{ "text": "四冊", "reading": "よんさつ" }] },
+      { "n": 5, "japanese": "ごさつ", "romaji": "gosatsu", "kanji": [{ "text": "五冊", "reading": "ごさつ" }] },
+      { "n": 6, "japanese": "ろくさつ", "romaji": "rokusatsu", "kanji": [{ "text": "六冊", "reading": "ろくさつ" }] },
+      { "n": 7, "japanese": "ななさつ", "romaji": "nanasatsu", "kanji": [{ "text": "七冊", "reading": "ななさつ" }] },
+      { "n": 8, "japanese": "はっさつ", "romaji": "hassatsu", "kanji": [{ "text": "八冊", "reading": "はっさつ" }] },
+      { "n": 9, "japanese": "きゅうさつ", "romaji": "kyuusatsu", "kanji": [{ "text": "九冊", "reading": "きゅうさつ" }] },
+      { "n": 10, "japanese": "じゅっさつ", "romaji": "jussatsu", "kanji": [{ "text": "十冊", "reading": "じゅっさつ" }] }
     ]
   }
 ]

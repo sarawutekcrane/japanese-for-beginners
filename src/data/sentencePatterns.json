@@ -26,17 +26,20 @@
       {
         "japanese": "わたしは ごはんを たべます。",
         "romaji": "Watashi wa gohan wo tabemasu.",
-        "thai": "ฉันกินข้าว"
+        "thai": "ฉันกินข้าว",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べます" }, { "text": "。" }]
       },
       {
         "japanese": "あした がっこうへ いきます。",
         "romaji": "Ashita gakkou e ikimasu.",
-        "thai": "พรุ่งนี้ฉันจะไปโรงเรียน"
+        "thai": "พรุ่งนี้ฉันจะไปโรงเรียน",
+        "kanji": [{ "text": "明日", "reading": "あした" }, { "text": " " }, { "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きます" }, { "text": "。" }]
       },
       {
         "japanese": "いま コーヒーを のみます。",
         "romaji": "Ima koohii wo nomimasu.",
-        "thai": "ตอนนี้ฉันดื่มกาแฟ"
+        "thai": "ตอนนี้ฉันดื่มกาแฟ",
+        "kanji": [{ "text": "今", "reading": "いま" }, { "text": " " }, { "text": "コーヒーを" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -44,9 +47,9 @@
         "id": "affirmative-1",
         "promptThai": "พูดว่า: ฉันดื่มน้ำ",
         "chunks": [
-          "のみます",
-          "みずを",
-          "わたしは"
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }] },
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -61,10 +64,10 @@
         "id": "affirmative-2",
         "promptThai": "พูดว่า: พรุ่งนี้ฉันจะอ่านหนังสือ",
         "chunks": [
-          "あした",
-          "ほんを",
-          "よみます",
-          "わたしは"
+          { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }] },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }] },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -80,9 +83,9 @@
         "id": "affirmative-3",
         "promptThai": "พูดว่า: เขาไปโรงเรียน",
         "chunks": [
-          "がっこうへ",
-          "かれは",
-          "いきます"
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }] },
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }] },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }] }
         ],
         "correctOrder": [
           "かれは",
@@ -97,10 +100,10 @@
         "id": "affirmative-4",
         "promptThai": "พูดว่า: ตอนนี้ฉันดูโทรทัศน์",
         "chunks": [
-          "いま",
-          "わたしは",
-          "テレビを",
-          "みます"
+          { "text": "いま", "kanji": [{ "text": "今", "reading": "いま" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] },
+          { "text": "テレビを" },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -116,9 +119,9 @@
         "id": "affirmative-5",
         "promptThai": "พูดว่า: ฉันกินผัก",
         "chunks": [
-          "やさいを",
-          "たべます",
-          "わたしは"
+          { "text": "やさいを", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "を" }] },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -133,9 +136,9 @@
         "id": "affirmative-6",
         "promptThai": "พูดว่า: ฉันไปโรงพยาบาล",
         "chunks": [
-          "びょういんへ",
-          "いきます",
-          "わたしは"
+          { "text": "びょういんへ", "kanji": [{ "text": "病院", "reading": "びょういん" }, { "text": "へ" }] },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -150,9 +153,9 @@
         "id": "affirmative-7",
         "promptThai": "พูดว่า: เขาทำงาน",
         "chunks": [
-          "しごとを",
-          "します",
-          "かれは"
+          { "text": "しごとを", "kanji": [{ "text": "仕事", "reading": "しごと" }, { "text": "を" }] },
+          { "text": "します" },
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "かれは",
@@ -167,10 +170,10 @@
         "id": "affirmative-8",
         "promptThai": "พูดว่า: ตอนเช้าฉันอ่านหนังสือ (เป็นงานอดิเรก)",
         "chunks": [
-          "あさ",
-          "どくしょを",
-          "します",
-          "わたしは"
+          { "text": "あさ", "kanji": [{ "text": "朝", "reading": "あさ" }] },
+          { "text": "どくしょを", "kanji": [{ "text": "読書", "reading": "どくしょ" }, { "text": "を" }] },
+          { "text": "します" },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -209,17 +212,20 @@
       {
         "japanese": "わたしは ごはんを たべません。",
         "romaji": "Watashi wa gohan wo tabemasen.",
-        "thai": "ฉันไม่กินข้าว"
+        "thai": "ฉันไม่กินข้าว",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べません" }, { "text": "。" }]
       },
       {
         "japanese": "かのじょは がっこうへ いきません。",
         "romaji": "Kanojo wa gakkou e ikimasen.",
-        "thai": "เธอไม่ไปโรงเรียน"
+        "thai": "เธอไม่ไปโรงเรียน",
+        "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }, { "text": " " }, { "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きません" }, { "text": "。" }]
       },
       {
         "japanese": "あした わたしは テレビを みません。",
         "romaji": "Ashita watashi wa terebi wo mimasen.",
-        "thai": "พรุ่งนี้ฉันจะไม่ดูโทรทัศน์"
+        "thai": "พรุ่งนี้ฉันจะไม่ดูโทรทัศน์",
+        "kanji": [{ "text": "明日", "reading": "あした" }, { "text": " " }, { "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "テレビを" }, { "text": " " }, { "text": "みません" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -227,9 +233,9 @@
         "id": "negative-1",
         "promptThai": "พูดว่า: ฉันไม่ดื่มกาแฟ",
         "chunks": [
-          "のみません",
-          "わたしは",
-          "コーヒーを"
+          { "text": "のみません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みません" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] },
+          { "text": "コーヒーを" }
         ],
         "correctOrder": [
           "わたしは",
@@ -244,10 +250,10 @@
         "id": "negative-2",
         "promptThai": "พูดว่า: คืนนี้ฉันจะไม่อ่านหนังสือ",
         "chunks": [
-          "こんばん",
-          "ほんを",
-          "わたしは",
-          "よみません"
+          { "text": "こんばん", "kanji": [{ "text": "今晩", "reading": "こんばん" }] },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] },
+          { "text": "よみません", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みません" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -263,9 +269,9 @@
         "id": "negative-3",
         "promptThai": "พูดว่า: เขาไม่ไปสวนสาธารณะ",
         "chunks": [
-          "こうえんへ",
-          "いきません",
-          "かれは"
+          { "text": "こうえんへ", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "へ" }] },
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }] },
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "かれは",
@@ -280,9 +286,9 @@
         "id": "negative-4",
         "promptThai": "พูดว่า: ฉันไม่ซื้อหนังสือ",
         "chunks": [
-          "ほんを",
-          "かいません",
-          "わたしは"
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }] },
+          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -297,9 +303,9 @@
         "id": "negative-5",
         "promptThai": "พูดว่า: ฉันไม่กินผลไม้",
         "chunks": [
-          "くだものを",
-          "たべません",
-          "わたしは"
+          { "text": "くだものを", "kanji": [{ "text": "果物", "reading": "くだもの" }, { "text": "を" }] },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -314,9 +320,9 @@
         "id": "negative-6",
         "promptThai": "พูดว่า: เขาไม่เล่นกีฬา",
         "chunks": [
-          "スポーツを",
-          "しません",
-          "かれは"
+          { "text": "スポーツを" },
+          { "text": "しません" },
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "かれは",
@@ -331,9 +337,9 @@
         "id": "negative-7",
         "promptThai": "พูดว่า: ฉันไม่ไปสถานี",
         "chunks": [
-          "えきへ",
-          "いきません",
-          "わたしは"
+          { "text": "えきへ", "kanji": [{ "text": "駅", "reading": "えき" }, { "text": "へ" }] },
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -348,9 +354,9 @@
         "id": "negative-8",
         "promptThai": "พูดว่า: เธอไม่เล่นเกม",
         "chunks": [
-          "ゲームを",
-          "しません",
-          "かのじょは"
+          { "text": "ゲームを" },
+          { "text": "しません" },
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "かのじょは",
@@ -392,17 +398,20 @@
       {
         "japanese": "あなたは ごはんを たべますか。",
         "romaji": "Anata wa gohan wo tabemasu ka.",
-        "thai": "คุณกินข้าวไหม"
+        "thai": "คุณกินข้าวไหม",
+        "kanji": [{ "text": "あなたは" }, { "text": " " }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べますか" }, { "text": "。" }]
       },
       {
         "japanese": "あした がっこうへ いきますか。",
         "romaji": "Ashita gakkou e ikimasu ka.",
-        "thai": "พรุ่งนี้คุณจะไปโรงเรียนไหม"
+        "thai": "พรุ่งนี้คุณจะไปโรงเรียนไหม",
+        "kanji": [{ "text": "明日", "reading": "あした" }, { "text": " " }, { "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きますか" }, { "text": "。" }]
       },
       {
         "japanese": "まいにち ほんを よみますか。",
         "romaji": "Mainichi hon wo yomimasu ka.",
-        "thai": "คุณอ่านหนังสือทุกวันไหม"
+        "thai": "คุณอ่านหนังสือทุกวันไหม",
+        "kanji": [{ "text": "毎日", "reading": "まいにち" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "よみますか" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -410,9 +419,9 @@
         "id": "question-masu-1",
         "promptThai": "ถามว่า: คุณดื่มน้ำไหม",
         "chunks": [
-          "みずを",
-          "のみますか",
-          "あなたは"
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }] },
+          { "text": "のみますか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みますか" }] },
+          { "text": "あなたは" }
         ],
         "correctOrder": [
           "あなたは",
@@ -427,10 +436,10 @@
         "id": "question-masu-2",
         "promptThai": "ถามว่า: พรุ่งนี้คุณจะดูหนังไหม",
         "chunks": [
-          "あした",
-          "えいがを",
-          "みますか",
-          "あなたは"
+          { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }] },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }] },
+          { "text": "みますか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ますか" }] },
+          { "text": "あなたは" }
         ],
         "correctOrder": [
           "あなたは",
@@ -446,9 +455,9 @@
         "id": "question-masu-3",
         "promptThai": "ถามว่า: คุณไปสวนสาธารณะไหม",
         "chunks": [
-          "いきますか",
-          "あなたは",
-          "こうえんへ"
+          { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }] },
+          { "text": "あなたは" },
+          { "text": "こうえんへ", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "へ" }] }
         ],
         "correctOrder": [
           "あなたは",
@@ -463,9 +472,9 @@
         "id": "question-masu-4",
         "promptThai": "ถามว่า: คุณเขียนจดหมายไหม",
         "chunks": [
-          "てがみを",
-          "かきますか",
-          "あなたは"
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }] },
+          { "text": "かきますか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きますか" }] },
+          { "text": "あなたは" }
         ],
         "correctOrder": [
           "あなたは",
@@ -480,9 +489,9 @@
         "id": "question-masu-5",
         "promptThai": "ถามว่า: คุณกินผักไหม",
         "chunks": [
-          "やさいを",
-          "たべますか",
-          "あなたは"
+          { "text": "やさいを", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "を" }] },
+          { "text": "たべますか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べますか" }] },
+          { "text": "あなたは" }
         ],
         "correctOrder": [
           "あなたは",
@@ -497,9 +506,9 @@
         "id": "question-masu-6",
         "promptThai": "ถามว่า: คุณไปสนามบินไหม",
         "chunks": [
-          "くうこうへ",
-          "いきますか",
-          "あなたは"
+          { "text": "くうこうへ", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "へ" }] },
+          { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }] },
+          { "text": "あなたは" }
         ],
         "correctOrder": [
           "あなたは",
@@ -514,9 +523,9 @@
         "id": "question-masu-7",
         "promptThai": "ถามว่า: คุณถ่ายรูปไหม",
         "chunks": [
-          "しゃしんを",
-          "とりますか",
-          "あなたは"
+          { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }] },
+          { "text": "とりますか", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りますか" }] },
+          { "text": "あなたは" }
         ],
         "correctOrder": [
           "あなたは",
@@ -531,10 +540,10 @@
         "id": "question-masu-8",
         "promptThai": "ถามว่า: คุณเล่นกีฬาทุกวันไหม",
         "chunks": [
-          "まいにち",
-          "スポーツを",
-          "しますか",
-          "あなたは"
+          { "text": "まいにち", "kanji": [{ "text": "毎日", "reading": "まいにち" }] },
+          { "text": "スポーツを" },
+          { "text": "しますか" },
+          { "text": "あなたは" }
         ],
         "correctOrder": [
           "あなたは",
@@ -573,17 +582,20 @@
       {
         "japanese": "いっしょに ごはんを たべませんか。",
         "romaji": "Issho ni gohan wo tabemasen ka.",
-        "thai": "ทานข้าวด้วยกันไหม"
+        "thai": "ทานข้าวด้วยกันไหม",
+        "kanji": [{ "text": "一緒に", "reading": "いっしょに" }, { "text": " " }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "たべませんか" }, { "text": "。" }]
       },
       {
         "japanese": "こんばん えいがを みませんか。",
         "romaji": "Konban eiga wo mimasen ka.",
-        "thai": "คืนนี้ดูหนังด้วยกันไหม"
+        "thai": "คืนนี้ดูหนังด้วยกันไหม",
+        "kanji": [{ "text": "今晩", "reading": "こんばん" }, { "text": " " }, { "text": "映画", "reading": "えいが" }, { "text": "を" }, { "text": " " }, { "text": "見", "reading": "み" }, { "text": "ませんか" }, { "text": "。" }]
       },
       {
         "japanese": "にちようび こうえんへ いきませんか。",
         "romaji": "Nichiyoubi kouen e ikimasen ka.",
-        "thai": "วันอาทิตย์ไปสวนสาธารณะด้วยกันไหม"
+        "thai": "วันอาทิตย์ไปสวนสาธารณะด้วยกันไหม",
+        "kanji": [{ "text": "日曜日", "reading": "にちようび" }, { "text": " " }, { "text": "公園", "reading": "こうえん" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きませんか" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -591,9 +603,9 @@
         "id": "invitation-1",
         "promptThai": "ชวนว่า: ดื่มกาแฟด้วยกันไหม",
         "chunks": [
-          "コーヒーを",
-          "のみませんか",
-          "いっしょに"
+          { "text": "コーヒーを" },
+          { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }] },
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }] }
         ],
         "correctOrder": [
           "いっしょに",
@@ -608,9 +620,9 @@
         "id": "invitation-2",
         "promptThai": "ชวนว่า: พรุ่งนี้ไปสวนสาธารณะด้วยกันไหม",
         "chunks": [
-          "あした",
-          "こうえんへ",
-          "いきませんか"
+          { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }] },
+          { "text": "こうえんへ", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "へ" }] },
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }] }
         ],
         "correctOrder": [
           "あした",
@@ -625,9 +637,9 @@
         "id": "invitation-3",
         "promptThai": "ชวนว่า: ดูโทรทัศน์ด้วยกันไหม",
         "chunks": [
-          "テレビを",
-          "みませんか",
-          "いっしょに"
+          { "text": "テレビを" },
+          { "text": "みませんか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんか" }] },
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }] }
         ],
         "correctOrder": [
           "いっしょに",
@@ -642,9 +654,9 @@
         "id": "invitation-4",
         "promptThai": "ชวนว่า: คืนนี้อ่านหนังสือด้วยกันไหม",
         "chunks": [
-          "こんばん",
-          "ほんを",
-          "よみませんか"
+          { "text": "こんばん", "kanji": [{ "text": "今晩", "reading": "こんばん" }] },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }] },
+          { "text": "よみませんか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みませんか" }] }
         ],
         "correctOrder": [
           "こんばん",
@@ -659,9 +671,9 @@
         "id": "invitation-5",
         "promptThai": "ชวนว่า: อ่านหนังสือด้วยกันไหม (เป็นงานอดิเรก)",
         "chunks": [
-          "どくしょを",
-          "しませんか",
-          "いっしょに"
+          { "text": "どくしょを", "kanji": [{ "text": "読書", "reading": "どくしょ" }, { "text": "を" }] },
+          { "text": "しませんか" },
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }] }
         ],
         "correctOrder": [
           "いっしょに",
@@ -676,9 +688,9 @@
         "id": "invitation-6",
         "promptThai": "ชวนว่า: เล่นกีฬาด้วยกันไหม",
         "chunks": [
-          "スポーツを",
-          "しませんか",
-          "いっしょに"
+          { "text": "スポーツを" },
+          { "text": "しませんか" },
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }] }
         ],
         "correctOrder": [
           "いっしょに",
@@ -693,9 +705,9 @@
         "id": "invitation-7",
         "promptThai": "ชวนว่า: ดูหนังด้วยกันไหม",
         "chunks": [
-          "えいがを",
-          "みませんか",
-          "いっしょに"
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }] },
+          { "text": "みませんか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんか" }] },
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }] }
         ],
         "correctOrder": [
           "いっしょに",
@@ -710,9 +722,9 @@
         "id": "invitation-8",
         "promptThai": "ชวนว่า: พรุ่งนี้ไปซูเปอร์มาร์เก็ตด้วยกันไหม",
         "chunks": [
-          "あした",
-          "スーパーへ",
-          "いきませんか"
+          { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }] },
+          { "text": "スーパーへ" },
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }] }
         ],
         "correctOrder": [
           "あした",
@@ -750,17 +762,20 @@
       {
         "japanese": "きのう ごはんを たべました。",
         "romaji": "Kinou gohan wo tabemashita.",
-        "thai": "เมื่อวานฉันกินข้าวแล้ว"
+        "thai": "เมื่อวานฉันกินข้าวแล้ว",
+        "kanji": [{ "text": "昨日", "reading": "きのう" }, { "text": " " }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べました" }, { "text": "。" }]
       },
       {
         "japanese": "わたしは がっこうへ いきました。",
         "romaji": "Watashi wa gakkou e ikimashita.",
-        "thai": "ฉันไปโรงเรียนแล้ว"
+        "thai": "ฉันไปโรงเรียนแล้ว",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きました" }, { "text": "。" }]
       },
       {
         "japanese": "きのう てがみを かきました。",
         "romaji": "Kinou tegami wo kakimashita.",
-        "thai": "เมื่อวานฉันเขียนจดหมายแล้ว"
+        "thai": "เมื่อวานฉันเขียนจดหมายแล้ว",
+        "kanji": [{ "text": "昨日", "reading": "きのう" }, { "text": " " }, { "text": "手紙", "reading": "てがみ" }, { "text": "を" }, { "text": " " }, { "text": "かきました" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -768,10 +783,10 @@
         "id": "past-1",
         "promptThai": "พูดว่า: เมื่อวานฉันดื่มกาแฟแล้ว",
         "chunks": [
-          "きのう",
-          "コーヒーを",
-          "わたしは",
-          "のみました"
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }] },
+          { "text": "コーヒーを" },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] },
+          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -787,9 +802,9 @@
         "id": "past-2",
         "promptThai": "พูดว่า: เขาไปโรงเรียนแล้ว",
         "chunks": [
-          "がっこうへ",
-          "かれは",
-          "いきました"
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }] },
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }] },
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }] }
         ],
         "correctOrder": [
           "かれは",
@@ -804,9 +819,9 @@
         "id": "past-3",
         "promptThai": "พูดว่า: ฉันดูหนังแล้ว",
         "chunks": [
-          "えいがを",
-          "みました",
-          "わたしは"
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }] },
+          { "text": "みました", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ました" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -821,10 +836,10 @@
         "id": "past-4",
         "promptThai": "พูดว่า: เมื่อวานเธอซื้อหนังสือแล้ว",
         "chunks": [
-          "きのう",
-          "かのじょは",
-          "ほんを",
-          "かいました"
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }] },
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }] },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }] },
+          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }] }
         ],
         "correctOrder": [
           "かのじょは",
@@ -840,9 +855,9 @@
         "id": "past-5",
         "promptThai": "พูดว่า: ฉันกินผลไม้แล้ว",
         "chunks": [
-          "くだものを",
-          "たべました",
-          "わたしは"
+          { "text": "くだものを", "kanji": [{ "text": "果物", "reading": "くだもの" }, { "text": "を" }] },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -857,9 +872,9 @@
         "id": "past-6",
         "promptThai": "พูดว่า: เขาไปสนามบินแล้ว",
         "chunks": [
-          "くうこうへ",
-          "かれは",
-          "いきました"
+          { "text": "くうこうへ", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "へ" }] },
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }] },
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }] }
         ],
         "correctOrder": [
           "かれは",
@@ -874,9 +889,9 @@
         "id": "past-7",
         "promptThai": "พูดว่า: ฉันเล่นกีฬาแล้ว",
         "chunks": [
-          "スポーツを",
-          "しました",
-          "わたしは"
+          { "text": "スポーツを" },
+          { "text": "しました" },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -891,9 +906,9 @@
         "id": "past-8",
         "promptThai": "พูดว่า: เธอถ่ายรูปแล้ว",
         "chunks": [
-          "しゃしんを",
-          "とりました",
-          "かのじょは"
+          { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }] },
+          { "text": "とりました", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りました" }] },
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "かのじょは",
@@ -931,17 +946,20 @@
       {
         "japanese": "きのう がっこうへ いきませんでした。",
         "romaji": "Kinou gakkou e ikimasendeshita.",
-        "thai": "เมื่อวานฉันไม่ได้ไปโรงเรียน"
+        "thai": "เมื่อวานฉันไม่ได้ไปโรงเรียน",
+        "kanji": [{ "text": "昨日", "reading": "きのう" }, { "text": " " }, { "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きませんでした" }, { "text": "。" }]
       },
       {
         "japanese": "わたしは ごはんを たべませんでした。",
         "romaji": "Watashi wa gohan wo tabemasendeshita.",
-        "thai": "ฉันไม่ได้กินข้าว"
+        "thai": "ฉันไม่ได้กินข้าว",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べませんでした" }, { "text": "。" }]
       },
       {
         "japanese": "かれは てがみを かきませんでした。",
         "romaji": "Kare wa tegami wo kakimasendeshita.",
-        "thai": "เขาไม่ได้เขียนจดหมาย"
+        "thai": "เขาไม่ได้เขียนจดหมาย",
+        "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }, { "text": " " }, { "text": "手紙", "reading": "てがみ" }, { "text": "を" }, { "text": " " }, { "text": "かきませんでした" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -949,10 +967,10 @@
         "id": "past-negative-1",
         "promptThai": "พูดว่า: เมื่อวานฉันไม่ได้ดื่มกาแฟ",
         "chunks": [
-          "きのう",
-          "わたしは",
-          "コーヒーを",
-          "のみませんでした"
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] },
+          { "text": "コーヒーを" },
+          { "text": "のみませんでした", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんでした" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -968,9 +986,9 @@
         "id": "past-negative-2",
         "promptThai": "พูดว่า: เธอไม่ได้ดูโทรทัศน์",
         "chunks": [
-          "テレビを",
-          "かのじょは",
-          "みませんでした"
+          { "text": "テレビを" },
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }] },
+          { "text": "みませんでした", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんでした" }] }
         ],
         "correctOrder": [
           "かのじょは",
@@ -985,9 +1003,9 @@
         "id": "past-negative-3",
         "promptThai": "พูดว่า: ฉันไม่ได้ไปสวนสาธารณะ",
         "chunks": [
-          "こうえんへ",
-          "わたしは",
-          "いきませんでした"
+          { "text": "こうえんへ", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "へ" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] },
+          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -1002,10 +1020,10 @@
         "id": "past-negative-4",
         "promptThai": "พูดว่า: เมื่อวานเขาไม่ได้ซื้อหนังสือ",
         "chunks": [
-          "きのう",
-          "かれは",
-          "ほんを",
-          "かいませんでした"
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }] },
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }] },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }] },
+          { "text": "かいませんでした", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いませんでした" }] }
         ],
         "correctOrder": [
           "かれは",
@@ -1021,9 +1039,9 @@
         "id": "past-negative-5",
         "promptThai": "พูดว่า: ฉันไม่ได้กินผัก",
         "chunks": [
-          "やさいを",
-          "わたしは",
-          "たべませんでした"
+          { "text": "やさいを", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "を" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] },
+          { "text": "たべませんでした", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -1038,9 +1056,9 @@
         "id": "past-negative-6",
         "promptThai": "พูดว่า: เธอไม่ได้ไปสนามบิน",
         "chunks": [
-          "くうこうへ",
-          "かのじょは",
-          "いきませんでした"
+          { "text": "くうこうへ", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "へ" }] },
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }] },
+          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }] }
         ],
         "correctOrder": [
           "かのじょは",
@@ -1055,9 +1073,9 @@
         "id": "past-negative-7",
         "promptThai": "พูดว่า: ฉันไม่ได้อ่านหนังสือ (เป็นงานอดิเรก)",
         "chunks": [
-          "どくしょを",
-          "しませんでした",
-          "わたしは"
+          { "text": "どくしょを", "kanji": [{ "text": "読書", "reading": "どくしょ" }, { "text": "を" }] },
+          { "text": "しませんでした" },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -1072,9 +1090,9 @@
         "id": "past-negative-8",
         "promptThai": "พูดว่า: เขาไม่ได้ถ่ายรูป",
         "chunks": [
-          "しゃしんを",
-          "とりませんでした",
-          "かれは"
+          { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }] },
+          { "text": "とりませんでした", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りませんでした" }] },
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "かれは",
@@ -1108,17 +1126,20 @@
       {
         "japanese": "ごはんを たべてください。",
         "romaji": "Gohan wo tabete kudasai.",
-        "thai": "กรุณากินข้าว"
+        "thai": "กรุณากินข้าว",
+        "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べてください" }, { "text": "。" }]
       },
       {
         "japanese": "ちょっと まってください。",
         "romaji": "Chotto matte kudasai.",
-        "thai": "กรุณารอสักครู่"
+        "thai": "กรุณารอสักครู่",
+        "kanji": [{ "text": "ちょっと" }, { "text": " " }, { "text": "待", "reading": "ま" }, { "text": "ってください" }, { "text": "。" }]
       },
       {
         "japanese": "ほんを よんでください。",
         "romaji": "Hon wo yonde kudasai.",
-        "thai": "กรุณาอ่านหนังสือ"
+        "thai": "กรุณาอ่านหนังสือ",
+        "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "よんでください" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -1126,8 +1147,8 @@
         "id": "te-kudasai-1",
         "promptThai": "พูดว่า: กรุณากินข้าว",
         "chunks": [
-          "たべてください",
-          "ごはんを"
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }] },
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }] }
         ],
         "correctOrder": [
           "ごはんを",
@@ -1141,8 +1162,8 @@
         "id": "te-kudasai-2",
         "promptThai": "พูดว่า: กรุณาดื่มน้ำ",
         "chunks": [
-          "のんでください",
-          "みずを"
+          { "text": "のんでください", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでください" }] },
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }] }
         ],
         "correctOrder": [
           "みずを",
@@ -1156,8 +1177,8 @@
         "id": "te-kudasai-3",
         "promptThai": "พูดว่า: กรุณารอตอนนี้",
         "chunks": [
-          "いま",
-          "まってください"
+          { "text": "いま", "kanji": [{ "text": "今", "reading": "いま" }] },
+          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }] }
         ],
         "correctOrder": [
           "いま",
@@ -1171,8 +1192,8 @@
         "id": "te-kudasai-4",
         "promptThai": "พูดว่า: กรุณาเขียนจดหมาย",
         "chunks": [
-          "てがみを",
-          "かいてください"
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }] },
+          { "text": "かいてください", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてください" }] }
         ],
         "correctOrder": [
           "てがみを",
@@ -1186,8 +1207,8 @@
         "id": "te-kudasai-5",
         "promptThai": "พูดว่า: กรุณากินผัก",
         "chunks": [
-          "やさいを",
-          "たべてください"
+          { "text": "やさいを", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "を" }] },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }] }
         ],
         "correctOrder": [
           "やさいを",
@@ -1201,8 +1222,8 @@
         "id": "te-kudasai-6",
         "promptThai": "พูดว่า: กรุณาเล่นกีฬา",
         "chunks": [
-          "スポーツを",
-          "してください"
+          { "text": "スポーツを" },
+          { "text": "してください" }
         ],
         "correctOrder": [
           "スポーツを",
@@ -1216,8 +1237,8 @@
         "id": "te-kudasai-7",
         "promptThai": "พูดว่า: กรุณาถ่ายรูป",
         "chunks": [
-          "しゃしんを",
-          "とってください"
+          { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }] },
+          { "text": "とってください", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってください" }] }
         ],
         "correctOrder": [
           "しゃしんを",
@@ -1231,8 +1252,8 @@
         "id": "te-kudasai-8",
         "promptThai": "พูดว่า: กรุณาอ่านหนังสือ (เป็นงานอดิเรก)",
         "chunks": [
-          "どくしょを",
-          "してください"
+          { "text": "どくしょを", "kanji": [{ "text": "読書", "reading": "どくしょ" }, { "text": "を" }] },
+          { "text": "してください" }
         ],
         "correctOrder": [
           "どくしょを",
@@ -1269,17 +1290,20 @@
       {
         "japanese": "ここで たべてもいいですか。",
         "romaji": "Koko de tabete mo ii desu ka.",
-        "thai": "กินตรงนี้ได้ไหม"
+        "thai": "กินตรงนี้ได้ไหม",
+        "kanji": [{ "text": "ここで" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べてもいいですか" }, { "text": "。" }]
       },
       {
         "japanese": "まどを あけてもいいですか。",
         "romaji": "Mado wo akete mo ii desu ka.",
-        "thai": "เปิดหน้าต่างได้ไหม"
+        "thai": "เปิดหน้าต่างได้ไหม",
+        "kanji": [{ "text": "窓", "reading": "まど" }, { "text": "を" }, { "text": " " }, { "text": "開", "reading": "あ" }, { "text": "けてもいいですか" }, { "text": "。" }]
       },
       {
         "japanese": "テレビを みてもいいですか。",
         "romaji": "Terebi wo mite mo ii desu ka.",
-        "thai": "ดูโทรทัศน์ได้ไหม"
+        "thai": "ดูโทรทัศน์ได้ไหม",
+        "kanji": [{ "text": "テレビを" }, { "text": " " }, { "text": "見", "reading": "み" }, { "text": "てもいいですか" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -1287,8 +1311,8 @@
         "id": "te-mo-ii-1",
         "promptThai": "ถามขออนุญาตว่า: กินตรงนี้ได้ไหม",
         "chunks": [
-          "ここで",
-          "たべてもいいですか"
+          { "text": "ここで" },
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }] }
         ],
         "correctOrder": [
           "ここで",
@@ -1302,8 +1326,8 @@
         "id": "te-mo-ii-2",
         "promptThai": "ถามขออนุญาตว่า: ดื่มน้ำได้ไหม",
         "chunks": [
-          "みずを",
-          "のんでもいいですか"
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }] },
+          { "text": "のんでもいいですか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでもいいですか" }] }
         ],
         "correctOrder": [
           "みずを",
@@ -1317,9 +1341,9 @@
         "id": "te-mo-ii-3",
         "promptThai": "ถามขออนุญาตว่า: ตอนนี้ดูโทรทัศน์ได้ไหม",
         "chunks": [
-          "いま",
-          "テレビを",
-          "みてもいいですか"
+          { "text": "いま", "kanji": [{ "text": "今", "reading": "いま" }] },
+          { "text": "テレビを" },
+          { "text": "みてもいいですか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てもいいですか" }] }
         ],
         "correctOrder": [
           "いま",
@@ -1334,8 +1358,8 @@
         "id": "te-mo-ii-4",
         "promptThai": "ถามขออนุญาตว่า: เขียนจดหมายได้ไหม",
         "chunks": [
-          "てがみを",
-          "かいてもいいですか"
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }] },
+          { "text": "かいてもいいですか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてもいいですか" }] }
         ],
         "correctOrder": [
           "てがみを",
@@ -1349,9 +1373,9 @@
         "id": "te-mo-ii-5",
         "promptThai": "ถามขออนุญาตว่า: ถ่ายรูปตรงนี้ได้ไหม",
         "chunks": [
-          "ここで",
-          "しゃしんを",
-          "とってもいいですか"
+          { "text": "ここで" },
+          { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }] },
+          { "text": "とってもいいですか", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってもいいですか" }] }
         ],
         "correctOrder": [
           "ここで",
@@ -1366,9 +1390,9 @@
         "id": "te-mo-ii-6",
         "promptThai": "ถามขออนุญาตว่า: อ่านหนังสือที่ห้องสมุดได้ไหม",
         "chunks": [
-          "としょかんで",
-          "ほんを",
-          "よんでもいいですか"
+          { "text": "としょかんで", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "で" }] },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }] },
+          { "text": "よんでもいいですか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでもいいですか" }] }
         ],
         "correctOrder": [
           "としょかんで",
@@ -1383,9 +1407,9 @@
         "id": "te-mo-ii-7",
         "promptThai": "ถามขออนุญาตว่า: เล่นกีฬาที่สวนสาธารณะได้ไหม",
         "chunks": [
-          "こうえんで",
-          "スポーツを",
-          "してもいいですか"
+          { "text": "こうえんで", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "で" }] },
+          { "text": "スポーツを" },
+          { "text": "してもいいですか" }
         ],
         "correctOrder": [
           "こうえんで",
@@ -1400,9 +1424,9 @@
         "id": "te-mo-ii-8",
         "promptThai": "ถามขออนุญาตว่า: เล่นเกมที่บ้านได้ไหม",
         "chunks": [
-          "いえで",
-          "ゲームを",
-          "してもいいですか"
+          { "text": "いえで", "kanji": [{ "text": "家", "reading": "いえ" }, { "text": "で" }] },
+          { "text": "ゲームを" },
+          { "text": "してもいいですか" }
         ],
         "correctOrder": [
           "いえで",
@@ -1440,17 +1464,20 @@
       {
         "japanese": "ここで たべてはいけません。",
         "romaji": "Koko de tabete wa ikemasen.",
-        "thai": "ห้ามกินตรงนี้"
+        "thai": "ห้ามกินตรงนี้",
+        "kanji": [{ "text": "ここで" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べてはいけません" }, { "text": "。" }]
       },
       {
         "japanese": "まどを あけてはいけません。",
         "romaji": "Mado wo akete wa ikemasen.",
-        "thai": "ห้ามเปิดหน้าต่าง"
+        "thai": "ห้ามเปิดหน้าต่าง",
+        "kanji": [{ "text": "窓", "reading": "まど" }, { "text": "を" }, { "text": " " }, { "text": "開", "reading": "あ" }, { "text": "けてはいけません" }, { "text": "。" }]
       },
       {
         "japanese": "ここで しゃしんを とってはいけません。",
         "romaji": "Koko de shashin wo totte wa ikemasen.",
-        "thai": "ห้ามถ่ายรูปตรงนี้"
+        "thai": "ห้ามถ่ายรูปตรงนี้",
+        "kanji": [{ "text": "ここで" }, { "text": " " }, { "text": "写真", "reading": "しゃしん" }, { "text": "を" }, { "text": " " }, { "text": "撮", "reading": "と" }, { "text": "ってはいけません" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -1458,8 +1485,8 @@
         "id": "te-wa-ikemasen-1",
         "promptThai": "พูดว่า: ห้ามกินตรงนี้",
         "chunks": [
-          "ここで",
-          "たべてはいけません"
+          { "text": "ここで" },
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }] }
         ],
         "correctOrder": [
           "ここで",
@@ -1473,9 +1500,9 @@
         "id": "te-wa-ikemasen-2",
         "promptThai": "พูดว่า: ห้ามดื่มน้ำตรงนี้",
         "chunks": [
-          "ここで",
-          "みずを",
-          "のんではいけません"
+          { "text": "ここで" },
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }] },
+          { "text": "のんではいけません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んではいけません" }] }
         ],
         "correctOrder": [
           "ここで",
@@ -1490,9 +1517,9 @@
         "id": "te-wa-ikemasen-3",
         "promptThai": "พูดว่า: ห้ามดูโทรทัศน์ตอนนี้",
         "chunks": [
-          "いま",
-          "テレビを",
-          "みてはいけません"
+          { "text": "いま", "kanji": [{ "text": "今", "reading": "いま" }] },
+          { "text": "テレビを" },
+          { "text": "みてはいけません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てはいけません" }] }
         ],
         "correctOrder": [
           "いま",
@@ -1507,9 +1534,9 @@
         "id": "te-wa-ikemasen-4",
         "promptThai": "พูดว่า: ห้ามถ่ายรูปตรงนี้",
         "chunks": [
-          "ここで",
-          "しゃしんを",
-          "とってはいけません"
+          { "text": "ここで" },
+          { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }] },
+          { "text": "とってはいけません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってはいけません" }] }
         ],
         "correctOrder": [
           "ここで",
@@ -1524,9 +1551,9 @@
         "id": "te-wa-ikemasen-5",
         "promptThai": "พูดว่า: ห้ามเล่นเกมที่โรงเรียน",
         "chunks": [
-          "がっこうで",
-          "ゲームを",
-          "してはいけません"
+          { "text": "がっこうで", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "で" }] },
+          { "text": "ゲームを" },
+          { "text": "してはいけません" }
         ],
         "correctOrder": [
           "がっこうで",
@@ -1541,8 +1568,8 @@
         "id": "te-wa-ikemasen-6",
         "promptThai": "พูดว่า: ห้ามพูดคุยที่ห้องสมุด",
         "chunks": [
-          "としょかんで",
-          "はなしてはいけません"
+          { "text": "としょかんで", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "で" }] },
+          { "text": "はなしてはいけません", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "してはいけません" }] }
         ],
         "correctOrder": [
           "としょかんで",
@@ -1556,9 +1583,9 @@
         "id": "te-wa-ikemasen-7",
         "promptThai": "พูดว่า: ห้ามถ่ายรูปที่โรงพยาบาล",
         "chunks": [
-          "びょういんで",
-          "しゃしんを",
-          "とってはいけません"
+          { "text": "びょういんで", "kanji": [{ "text": "病院", "reading": "びょういん" }, { "text": "で" }] },
+          { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }] },
+          { "text": "とってはいけません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってはいけません" }] }
         ],
         "correctOrder": [
           "びょういんで",
@@ -1573,8 +1600,8 @@
         "id": "te-wa-ikemasen-8",
         "promptThai": "พูดว่า: ห้ามกินที่ศาลเจ้า",
         "chunks": [
-          "じんじゃで",
-          "たべてはいけません"
+          { "text": "じんじゃで", "kanji": [{ "text": "神社", "reading": "じんじゃ" }, { "text": "で" }] },
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }] }
         ],
         "correctOrder": [
           "じんじゃで",
@@ -1611,17 +1638,20 @@
       {
         "japanese": "わたしは ごはんが たべたいです。",
         "romaji": "Watashi wa gohan ga tabetai desu.",
-        "thai": "ฉันอยากกินข้าว"
+        "thai": "ฉันอยากกินข้าว",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "が" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べたいです" }, { "text": "。" }]
       },
       {
         "japanese": "みずが のみたいです。",
         "romaji": "Mizu ga nomitai desu.",
-        "thai": "อยากดื่มน้ำ"
+        "thai": "อยากดื่มน้ำ",
+        "kanji": [{ "text": "水", "reading": "みず" }, { "text": "が" }, { "text": " " }, { "text": "のみたいです" }, { "text": "。" }]
       },
       {
         "japanese": "あした こうえんへ いきたいです。",
         "romaji": "Ashita kouen e ikitai desu.",
-        "thai": "พรุ่งนี้อยากไปสวนสาธารณะ"
+        "thai": "พรุ่งนี้อยากไปสวนสาธารณะ",
+        "kanji": [{ "text": "明日", "reading": "あした" }, { "text": " " }, { "text": "公園", "reading": "こうえん" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きたいです" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -1629,9 +1659,9 @@
         "id": "tai-desu-1",
         "promptThai": "พูดว่า: ฉันอยากกินข้าว",
         "chunks": [
-          "わたしは",
-          "ごはんが",
-          "たべたいです"
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] },
+          { "text": "ごはんが", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "が" }] },
+          { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -1646,9 +1676,9 @@
         "id": "tai-desu-2",
         "promptThai": "พูดว่า: พรุ่งนี้อยากดูหนัง",
         "chunks": [
-          "あした",
-          "えいがが",
-          "みたいです"
+          { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }] },
+          { "text": "えいがが", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "が" }] },
+          { "text": "みたいです", "kanji": [{ "text": "見", "reading": "み" }, { "text": "たいです" }] }
         ],
         "correctOrder": [
           "あした",
@@ -1663,8 +1693,8 @@
         "id": "tai-desu-3",
         "promptThai": "พูดว่า: อยากไปโรงเรียน",
         "chunks": [
-          "がっこうへ",
-          "いきたいです"
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }] },
+          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }] }
         ],
         "correctOrder": [
           "がっこうへ",
@@ -1678,8 +1708,8 @@
         "id": "tai-desu-4",
         "promptThai": "พูดว่า: อยากอ่านหนังสือ",
         "chunks": [
-          "ほんが",
-          "よみたいです"
+          { "text": "ほんが", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "が" }] },
+          { "text": "よみたいです", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みたいです" }] }
         ],
         "correctOrder": [
           "ほんが",
@@ -1693,9 +1723,9 @@
         "id": "tai-desu-5",
         "promptThai": "พูดว่า: ฉันอยากกินผัก",
         "chunks": [
-          "やさいが",
-          "たべたいです",
-          "わたしは"
+          { "text": "やさいが", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "が" }] },
+          { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -1710,9 +1740,9 @@
         "id": "tai-desu-6",
         "promptThai": "พูดว่า: ฉันอยากไปสนามบิน",
         "chunks": [
-          "くうこうへ",
-          "いきたいです",
-          "わたしは"
+          { "text": "くうこうへ", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "へ" }] },
+          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -1727,9 +1757,9 @@
         "id": "tai-desu-7",
         "promptThai": "พูดว่า: ฉันอยากเล่นกีฬา",
         "chunks": [
-          "スポーツが",
-          "したいです",
-          "わたしは"
+          { "text": "スポーツが" },
+          { "text": "したいです" },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",
@@ -1744,9 +1774,9 @@
         "id": "tai-desu-8",
         "promptThai": "พูดว่า: ฉันอยากถ่ายรูป",
         "chunks": [
-          "しゃしんが",
-          "とりたいです",
-          "わたしは"
+          { "text": "しゃしんが", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "が" }] },
+          { "text": "とりたいです", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りたいです" }] },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }] }
         ],
         "correctOrder": [
           "わたしは",

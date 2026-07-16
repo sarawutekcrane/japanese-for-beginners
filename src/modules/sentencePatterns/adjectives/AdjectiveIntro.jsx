@@ -1,4 +1,6 @@
 import { useSpeak } from "../../../hooks/useSpeech";
+import { kanjiForAdjective } from "../../../utils/adjectives";
+import JapaneseText from "../../../components/JapaneseText";
 
 export default function AdjectiveIntro() {
   const { speak } = useSpeak();
@@ -17,7 +19,9 @@ export default function AdjectiveIntro() {
           ลงท้ายด้วย い เสมอในรูปพจนานุกรม เช่น おおきい (ใหญ่) ผันรูปได้ด้วยตัวเอง ไม่ต้องมีคำช่วยอื่น
         </p>
         <div className="verb-chip-row">
-          <span className="verb-chip jp-text">おおきい 🔊</span>
+          <span className="verb-chip jp-text">
+            <JapaneseText kana="おおきい" kanji={kanjiForAdjective("おおきい")} /> 🔊
+          </span>
         </div>
       </div>
 

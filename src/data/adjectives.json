@@ -5,11 +5,12 @@
     "dict": "おおきい",
     "meaningTh": "ใหญ่",
     "forms": {
-      "affirmative": { "japanese": "おおきいです", "romaji": "ookii desu" },
-      "negative": { "japanese": "おおきくないです", "romaji": "ookiku nai desu" },
-      "past": { "japanese": "おおきかったです", "romaji": "ookikatta desu" },
-      "pastNegative": { "japanese": "おおきくなかったです", "romaji": "ookiku nakatta desu" }
-    }
+      "affirmative": { "japanese": "おおきいです", "romaji": "ookii desu", "kanji": [{ "text": "大", "reading": "おお" }, { "text": "きいです" }] },
+      "negative": { "japanese": "おおきくないです", "romaji": "ookiku nai desu", "kanji": [{ "text": "大", "reading": "おお" }, { "text": "きくないです" }] },
+      "past": { "japanese": "おおきかったです", "romaji": "ookikatta desu", "kanji": [{ "text": "大", "reading": "おお" }, { "text": "きかったです" }] },
+      "pastNegative": { "japanese": "おおきくなかったです", "romaji": "ookiku nakatta desu", "kanji": [{ "text": "大", "reading": "おお" }, { "text": "きくなかったです" }] }
+    },
+    "kanji": [{ "text": "大", "reading": "おお" }, { "text": "きい" }]
   },
   {
     "id": "chiisai",
@@ -17,11 +18,12 @@
     "dict": "ちいさい",
     "meaningTh": "เล็ก",
     "forms": {
-      "affirmative": { "japanese": "ちいさいです", "romaji": "chiisai desu" },
-      "negative": { "japanese": "ちいさくないです", "romaji": "chiisaku nai desu" },
-      "past": { "japanese": "ちいさかったです", "romaji": "chiisakatta desu" },
-      "pastNegative": { "japanese": "ちいさくなかったです", "romaji": "chiisaku nakatta desu" }
-    }
+      "affirmative": { "japanese": "ちいさいです", "romaji": "chiisai desu", "kanji": [{ "text": "小", "reading": "ちい" }, { "text": "さいです" }] },
+      "negative": { "japanese": "ちいさくないです", "romaji": "chiisaku nai desu", "kanji": [{ "text": "小", "reading": "ちい" }, { "text": "さくないです" }] },
+      "past": { "japanese": "ちいさかったです", "romaji": "chiisakatta desu", "kanji": [{ "text": "小", "reading": "ちい" }, { "text": "さかったです" }] },
+      "pastNegative": { "japanese": "ちいさくなかったです", "romaji": "chiisaku nakatta desu", "kanji": [{ "text": "小", "reading": "ちい" }, { "text": "さくなかったです" }] }
+    },
+    "kanji": [{ "text": "小", "reading": "ちい" }, { "text": "さい" }]
   },
   {
     "id": "takai",
@@ -29,11 +31,12 @@
     "dict": "たかい",
     "meaningTh": "แพง / สูง",
     "forms": {
-      "affirmative": { "japanese": "たかいです", "romaji": "takai desu" },
-      "negative": { "japanese": "たかくないです", "romaji": "takaku nai desu" },
-      "past": { "japanese": "たかかったです", "romaji": "takakatta desu" },
-      "pastNegative": { "japanese": "たかくなかったです", "romaji": "takaku nakatta desu" }
-    }
+      "affirmative": { "japanese": "たかいです", "romaji": "takai desu", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いです" }] },
+      "negative": { "japanese": "たかくないです", "romaji": "takaku nai desu", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "くないです" }] },
+      "past": { "japanese": "たかかったです", "romaji": "takakatta desu", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "かったです" }] },
+      "pastNegative": { "japanese": "たかくなかったです", "romaji": "takaku nakatta desu", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "くなかったです" }] }
+    },
+    "kanji": [{ "text": "高", "reading": "たか" }, { "text": "い" }]
   },
   {
     "id": "yasui",
@@ -41,11 +44,12 @@
     "dict": "やすい",
     "meaningTh": "ถูก (ราคา)",
     "forms": {
-      "affirmative": { "japanese": "やすいです", "romaji": "yasui desu" },
-      "negative": { "japanese": "やすくないです", "romaji": "yasuku nai desu" },
-      "past": { "japanese": "やすかったです", "romaji": "yasukatta desu" },
-      "pastNegative": { "japanese": "やすくなかったです", "romaji": "yasuku nakatta desu" }
-    }
+      "affirmative": { "japanese": "やすいです", "romaji": "yasui desu", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "いです" }] },
+      "negative": { "japanese": "やすくないです", "romaji": "yasuku nai desu", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "くないです" }] },
+      "past": { "japanese": "やすかったです", "romaji": "yasukatta desu", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "かったです" }] },
+      "pastNegative": { "japanese": "やすくなかったです", "romaji": "yasuku nakatta desu", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "くなかったです" }] }
+    },
+    "kanji": [{ "text": "安", "reading": "やす" }, { "text": "い" }]
   },
   {
     "id": "oishii",
@@ -65,11 +69,12 @@
     "dict": "あつい",
     "meaningTh": "ร้อน",
     "forms": {
-      "affirmative": { "japanese": "あついです", "romaji": "atsui desu" },
-      "negative": { "japanese": "あつくないです", "romaji": "atsuku nai desu" },
-      "past": { "japanese": "あつかったです", "romaji": "atsukatta desu" },
-      "pastNegative": { "japanese": "あつくなかったです", "romaji": "atsuku nakatta desu" }
-    }
+      "affirmative": { "japanese": "あついです", "romaji": "atsui desu", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いです" }] },
+      "negative": { "japanese": "あつくないです", "romaji": "atsuku nai desu", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "くないです" }] },
+      "past": { "japanese": "あつかったです", "romaji": "atsukatta desu", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "かったです" }] },
+      "pastNegative": { "japanese": "あつくなかったです", "romaji": "atsuku nakatta desu", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "くなかったです" }] }
+    },
+    "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "い" }]
   },
   {
     "id": "samui",
@@ -77,11 +82,12 @@
     "dict": "さむい",
     "meaningTh": "หนาว",
     "forms": {
-      "affirmative": { "japanese": "さむいです", "romaji": "samui desu" },
-      "negative": { "japanese": "さむくないです", "romaji": "samuku nai desu" },
-      "past": { "japanese": "さむかったです", "romaji": "samukatta desu" },
-      "pastNegative": { "japanese": "さむくなかったです", "romaji": "samuku nakatta desu" }
-    }
+      "affirmative": { "japanese": "さむいです", "romaji": "samui desu", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "いです" }] },
+      "negative": { "japanese": "さむくないです", "romaji": "samuku nai desu", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "くないです" }] },
+      "past": { "japanese": "さむかったです", "romaji": "samukatta desu", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "かったです" }] },
+      "pastNegative": { "japanese": "さむくなかったです", "romaji": "samuku nakatta desu", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "くなかったです" }] }
+    },
+    "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "い" }]
   },
   {
     "id": "atarashii",
@@ -89,11 +95,12 @@
     "dict": "あたらしい",
     "meaningTh": "ใหม่",
     "forms": {
-      "affirmative": { "japanese": "あたらしいです", "romaji": "atarashii desu" },
-      "negative": { "japanese": "あたらしくないです", "romaji": "atarashiku nai desu" },
-      "past": { "japanese": "あたらしかったです", "romaji": "atarashikatta desu" },
-      "pastNegative": { "japanese": "あたらしくなかったです", "romaji": "atarashiku nakatta desu" }
-    }
+      "affirmative": { "japanese": "あたらしいです", "romaji": "atarashii desu", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しいです" }] },
+      "negative": { "japanese": "あたらしくないです", "romaji": "atarashiku nai desu", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しくないです" }] },
+      "past": { "japanese": "あたらしかったです", "romaji": "atarashikatta desu", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しかったです" }] },
+      "pastNegative": { "japanese": "あたらしくなかったです", "romaji": "atarashiku nakatta desu", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しくなかったです" }] }
+    },
+    "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しい" }]
   },
   {
     "id": "furui",
@@ -101,11 +108,12 @@
     "dict": "ふるい",
     "meaningTh": "เก่า",
     "forms": {
-      "affirmative": { "japanese": "ふるいです", "romaji": "furui desu" },
-      "negative": { "japanese": "ふるくないです", "romaji": "furuku nai desu" },
-      "past": { "japanese": "ふるかったです", "romaji": "furukatta desu" },
-      "pastNegative": { "japanese": "ふるくなかったです", "romaji": "furuku nakatta desu" }
-    }
+      "affirmative": { "japanese": "ふるいです", "romaji": "furui desu", "kanji": [{ "text": "古", "reading": "ふる" }, { "text": "いです" }] },
+      "negative": { "japanese": "ふるくないです", "romaji": "furuku nai desu", "kanji": [{ "text": "古", "reading": "ふる" }, { "text": "くないです" }] },
+      "past": { "japanese": "ふるかったです", "romaji": "furukatta desu", "kanji": [{ "text": "古", "reading": "ふる" }, { "text": "かったです" }] },
+      "pastNegative": { "japanese": "ふるくなかったです", "romaji": "furuku nakatta desu", "kanji": [{ "text": "古", "reading": "ふる" }, { "text": "くなかったです" }] }
+    },
+    "kanji": [{ "text": "古", "reading": "ふる" }, { "text": "い" }]
   },
   {
     "id": "hayai",
@@ -113,11 +121,12 @@
     "dict": "はやい",
     "meaningTh": "เร็ว",
     "forms": {
-      "affirmative": { "japanese": "はやいです", "romaji": "hayai desu" },
-      "negative": { "japanese": "はやくないです", "romaji": "hayaku nai desu" },
-      "past": { "japanese": "はやかったです", "romaji": "hayakatta desu" },
-      "pastNegative": { "japanese": "はやくなかったです", "romaji": "hayaku nakatta desu" }
-    }
+      "affirmative": { "japanese": "はやいです", "romaji": "hayai desu", "kanji": [{ "text": "早", "reading": "はや" }, { "text": "いです" }] },
+      "negative": { "japanese": "はやくないです", "romaji": "hayaku nai desu", "kanji": [{ "text": "早", "reading": "はや" }, { "text": "くないです" }] },
+      "past": { "japanese": "はやかったです", "romaji": "hayakatta desu", "kanji": [{ "text": "早", "reading": "はや" }, { "text": "かったです" }] },
+      "pastNegative": { "japanese": "はやくなかったです", "romaji": "hayaku nakatta desu", "kanji": [{ "text": "早", "reading": "はや" }, { "text": "くなかったです" }] }
+    },
+    "kanji": [{ "text": "早", "reading": "はや" }, { "text": "い" }]
   },
   {
     "id": "kirei",
@@ -137,11 +146,12 @@
     "dict": "しずか",
     "meaningTh": "เงียบ",
     "forms": {
-      "affirmative": { "japanese": "しずかです", "romaji": "shizuka desu" },
-      "negative": { "japanese": "しずかじゃないです", "romaji": "shizuka ja nai desu" },
-      "past": { "japanese": "しずかでした", "romaji": "shizuka deshita" },
-      "pastNegative": { "japanese": "しずかじゃなかったです", "romaji": "shizuka ja nakatta desu" }
-    }
+      "affirmative": { "japanese": "しずかです", "romaji": "shizuka desu", "kanji": [{ "text": "静", "reading": "しず" }, { "text": "かです" }] },
+      "negative": { "japanese": "しずかじゃないです", "romaji": "shizuka ja nai desu", "kanji": [{ "text": "静", "reading": "しず" }, { "text": "かじゃないです" }] },
+      "past": { "japanese": "しずかでした", "romaji": "shizuka deshita", "kanji": [{ "text": "静", "reading": "しず" }, { "text": "かでした" }] },
+      "pastNegative": { "japanese": "しずかじゃなかったです", "romaji": "shizuka ja nakatta desu", "kanji": [{ "text": "静", "reading": "しず" }, { "text": "かじゃなかったです" }] }
+    },
+    "kanji": [{ "text": "静", "reading": "しず" }, { "text": "か" }]
   },
   {
     "id": "genki",
@@ -149,11 +159,12 @@
     "dict": "げんき",
     "meaningTh": "แข็งแรง / สดชื่น",
     "forms": {
-      "affirmative": { "japanese": "げんきです", "romaji": "genki desu" },
-      "negative": { "japanese": "げんきじゃないです", "romaji": "genki ja nai desu" },
-      "past": { "japanese": "げんきでした", "romaji": "genki deshita" },
-      "pastNegative": { "japanese": "げんきじゃなかったです", "romaji": "genki ja nakatta desu" }
-    }
+      "affirmative": { "japanese": "げんきです", "romaji": "genki desu", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }] },
+      "negative": { "japanese": "げんきじゃないです", "romaji": "genki ja nai desu", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "じゃないです" }] },
+      "past": { "japanese": "げんきでした", "romaji": "genki deshita", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "でした" }] },
+      "pastNegative": { "japanese": "げんきじゃなかったです", "romaji": "genki ja nakatta desu", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "じゃなかったです" }] }
+    },
+    "kanji": [{ "text": "元気", "reading": "げんき" }]
   },
   {
     "id": "benri",
@@ -161,11 +172,12 @@
     "dict": "べんり",
     "meaningTh": "สะดวก",
     "forms": {
-      "affirmative": { "japanese": "べんりです", "romaji": "benri desu" },
-      "negative": { "japanese": "べんりじゃないです", "romaji": "benri ja nai desu" },
-      "past": { "japanese": "べんりでした", "romaji": "benri deshita" },
-      "pastNegative": { "japanese": "べんりじゃなかったです", "romaji": "benri ja nakatta desu" }
-    }
+      "affirmative": { "japanese": "べんりです", "romaji": "benri desu", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "です" }] },
+      "negative": { "japanese": "べんりじゃないです", "romaji": "benri ja nai desu", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "じゃないです" }] },
+      "past": { "japanese": "べんりでした", "romaji": "benri deshita", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "でした" }] },
+      "pastNegative": { "japanese": "べんりじゃなかったです", "romaji": "benri ja nakatta desu", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "じゃなかったです" }] }
+    },
+    "kanji": [{ "text": "便利", "reading": "べんり" }]
   },
   {
     "id": "yuumei",
@@ -173,11 +185,12 @@
     "dict": "ゆうめい",
     "meaningTh": "มีชื่อเสียง",
     "forms": {
-      "affirmative": { "japanese": "ゆうめいです", "romaji": "yuumei desu" },
-      "negative": { "japanese": "ゆうめいじゃないです", "romaji": "yuumei ja nai desu" },
-      "past": { "japanese": "ゆうめいでした", "romaji": "yuumei deshita" },
-      "pastNegative": { "japanese": "ゆうめいじゃなかったです", "romaji": "yuumei ja nakatta desu" }
-    }
+      "affirmative": { "japanese": "ゆうめいです", "romaji": "yuumei desu", "kanji": [{ "text": "有名", "reading": "ゆうめい" }, { "text": "です" }] },
+      "negative": { "japanese": "ゆうめいじゃないです", "romaji": "yuumei ja nai desu", "kanji": [{ "text": "有名", "reading": "ゆうめい" }, { "text": "じゃないです" }] },
+      "past": { "japanese": "ゆうめいでした", "romaji": "yuumei deshita", "kanji": [{ "text": "有名", "reading": "ゆうめい" }, { "text": "でした" }] },
+      "pastNegative": { "japanese": "ゆうめいじゃなかったです", "romaji": "yuumei ja nakatta desu", "kanji": [{ "text": "有名", "reading": "ゆうめい" }, { "text": "じゃなかったです" }] }
+    },
+    "kanji": [{ "text": "有名", "reading": "ゆうめい" }]
   },
   {
     "id": "shinsetsu",
@@ -185,11 +198,12 @@
     "dict": "しんせつ",
     "meaningTh": "ใจดี",
     "forms": {
-      "affirmative": { "japanese": "しんせつです", "romaji": "shinsetsu desu" },
-      "negative": { "japanese": "しんせつじゃないです", "romaji": "shinsetsu ja nai desu" },
-      "past": { "japanese": "しんせつでした", "romaji": "shinsetsu deshita" },
-      "pastNegative": { "japanese": "しんせつじゃなかったです", "romaji": "shinsetsu ja nakatta desu" }
-    }
+      "affirmative": { "japanese": "しんせつです", "romaji": "shinsetsu desu", "kanji": [{ "text": "親切", "reading": "しんせつ" }, { "text": "です" }] },
+      "negative": { "japanese": "しんせつじゃないです", "romaji": "shinsetsu ja nai desu", "kanji": [{ "text": "親切", "reading": "しんせつ" }, { "text": "じゃないです" }] },
+      "past": { "japanese": "しんせつでした", "romaji": "shinsetsu deshita", "kanji": [{ "text": "親切", "reading": "しんせつ" }, { "text": "でした" }] },
+      "pastNegative": { "japanese": "しんせつじゃなかったです", "romaji": "shinsetsu ja nakatta desu", "kanji": [{ "text": "親切", "reading": "しんせつ" }, { "text": "じゃなかったです" }] }
+    },
+    "kanji": [{ "text": "親切", "reading": "しんせつ" }]
   },
   {
     "id": "ii",

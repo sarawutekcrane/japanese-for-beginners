@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Toggle from "../../components/Toggle";
+import JapaneseText from "../../components/JapaneseText";
 import { useSpeak } from "../../hooks/useSpeech";
 import { shuffle as shuffleArr } from "../../utils/content";
 import { playCorrect as playCorrectSound, playIncorrect as playIncorrectSound } from "../../utils/sound";
@@ -8,7 +9,7 @@ import { useReviewQueue } from "../../utils/reviewQueue";
 const EMPTY = [];
 
 function makeItems(chunks) {
-  return shuffleArr(chunks.map((text, i) => ({ key: `${i}-${text}`, text })));
+  return shuffleArr(chunks.map((chunk, i) => ({ key: `${i}-${chunk.text}`, text: chunk.text, kanji: chunk.kanji })));
 }
 
 export default function WordOrderPractice({ pattern, onBack }) {
@@ -85,6 +86,8 @@ export default function WordOrderPractice({ pattern, onBack }) {
 
   const playCorrect = () => speak(question.correctOrder.join(""), { rate: 0.8 });
 
+  const kanjiByText = question ? Object.fromEntries(question.chunks.map((c) => [c.text, c.kanji])) : {};
+
   return (
     <div className="practice-view">
       <div className="practice-topbar">
@@ -128,7 +131,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
             {answerItems.length === 0 && <span className="answer-slot-hint th-text">แตะคำด้านล่างตามลำดับ</span>}
             {answerItems.map((item) => (
               <button key={item.key} className="chunk-pill placed jp-text" onClick={() => tapAnswer(item)} disabled={submitted}>
-                {item.text}
+                <JapaneseText kana={item.text} kanji={item.kanji} />
               </button>
             ))}
           </div>
@@ -136,7 +139,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
           <div className="chunk-pool">
             {poolItems.map((item) => (
               <button key={item.key} className="chunk-pill jp-text" onClick={() => tapPool(item)} disabled={submitted}>
-                {item.text}
+                <JapaneseText kana={item.text} kanji={item.kanji} />
               </button>
             ))}
           </div>
@@ -151,7 +154,14 @@ export default function WordOrderPractice({ pattern, onBack }) {
                 {isCorrect ? "เก่งมาก! เรียงถูกต้อง 🎉" : "ยังไม่ถูกนะ ลองดูเฉลยด้านล่าง 💪"}
               </p>
               <div className="quiz-reveal">
-                <p className="jp-text">{question.correctOrder.join(" ")}</p>
+                <p className="jp-text">
+                  {question.correctOrder.map((word, i) => (
+                    <span key={i}>
+                      {i > 0 && " "}
+                      <JapaneseText kana={word} kanji={kanjiByText[word]} />
+                    </span>
+                  ))}
+                </p>
               </div>
               <button className="btn btn-outline btn-sm" onClick={playCorrect}>
                 🔊 ฟังประโยคที่ถูกต้อง

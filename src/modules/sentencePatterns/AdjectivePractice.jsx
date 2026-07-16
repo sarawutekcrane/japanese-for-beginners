@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import Toggle from "../../components/Toggle";
+import JapaneseText from "../../components/JapaneseText";
 import { useSpeak } from "../../hooks/useSpeech";
-import { getAllAdjectiveQuestions, typeLabel } from "../../utils/adjectives";
+import { getAllAdjectiveQuestions, typeLabel, kanjiForAdjective } from "../../utils/adjectives";
 import { playCorrect, playIncorrect } from "../../utils/sound";
 import { useReviewQueue } from "../../utils/reviewQueue";
 
@@ -98,14 +99,15 @@ export default function AdjectivePractice({ onBack }) {
               role="button"
               tabIndex={0}
             >
-              {question.adj.dict} 🔊
+              <JapaneseText kana={question.adj.dict} kanji={question.adj.kanji} /> 🔊
             </p>
             <p className="verb-group th-text">{typeLabel(question.adj.type)}</p>
             {showThai && <p className="th-text verb-meaning">{question.adj.meaningTh}</p>}
           </div>
 
           <p className="th-text conjugation-instruction">
-            จงผัน <span className="jp-text">{question.adj.dict}</span> เป็นรูป <span className="th-text">{question.formLabel}</span>
+            จงผัน <JapaneseText className="jp-text" kana={question.adj.dict} kanji={question.adj.kanji} /> เป็นรูป{" "}
+            <span className="th-text">{question.formLabel}</span>
           </p>
 
           <div className="quiz-options">
@@ -117,7 +119,7 @@ export default function AdjectivePractice({ onBack }) {
               }
               return (
                 <button key={opt} className={cls} onClick={() => choose(opt)} disabled={answered}>
-                  <span className="jp-text">{opt}</span>
+                  <JapaneseText className="jp-text" kana={opt} kanji={kanjiForAdjective(opt)} />
                 </button>
               );
             })}

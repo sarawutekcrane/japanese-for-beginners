@@ -1,5 +1,6 @@
 import { useSpeak } from "../../../hooks/useSpeech";
 import { counters } from "../../../utils/counters";
+import JapaneseText from "../../../components/JapaneseText";
 
 const NUMBERS = Array.from({ length: 10 }, (_, i) => i + 1);
 
@@ -37,7 +38,7 @@ export default function CounterComparisonTable() {
                       role="button"
                       tabIndex={0}
                     >
-                      {count.japanese}
+                      <JapaneseText kana={count.japanese} kanji={count.kanji} />
                     </td>
                   );
                 })}

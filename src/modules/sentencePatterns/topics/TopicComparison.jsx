@@ -1,5 +1,6 @@
 import { useSpeak } from "../../../hooks/useSpeech";
-import { verbs, groupLabel } from "../../../utils/grammar";
+import { verbs, groupLabel, kanjiForVerbForm } from "../../../utils/grammar";
+import JapaneseText from "../../../components/JapaneseText";
 
 const COLUMNS = [
   { field: "masu", label: "ます" },
@@ -37,12 +38,12 @@ export default function TopicComparison() {
             {sampleVerbs.map((verb) => (
               <tr key={verb.id}>
                 <td>
-                  <span className="jp-text comparison-dict">{verb.dict}</span>
+                  <JapaneseText as="span" className="jp-text comparison-dict" kana={verb.dict} kanji={kanjiForVerbForm(verb.dict)} />
                   <span className="th-text comparison-group">{groupLabel(verb.group)}</span>
                 </td>
                 {COLUMNS.map((c) => (
                   <td key={c.field} className="jp-text comparison-cell" onClick={() => speak(verb[c.field], { rate: 0.8 })} role="button" tabIndex={0}>
-                    {verb[c.field]}
+                    <JapaneseText kana={verb[c.field]} kanji={kanjiForVerbForm(verb[c.field])} />
                   </td>
                 ))}
               </tr>

@@ -1,5 +1,6 @@
 import { useSpeak } from "../../../hooks/useSpeech";
 import { adjectives, FORM_FIELDS, formLabel, typeLabel } from "../../../utils/adjectives";
+import JapaneseText from "../../../components/JapaneseText";
 
 const SAMPLE_IDS = ["ookii", "takai", "kirei", "shizuka", "ii"];
 
@@ -28,7 +29,7 @@ export default function AdjectiveComparisonTable() {
             {samples.map((adj) => (
               <tr key={adj.id}>
                 <td>
-                  <span className="jp-text comparison-dict">{adj.dict}</span>
+                  <JapaneseText as="span" className="jp-text comparison-dict" kana={adj.dict} kanji={adj.kanji} />
                   <span className="th-text comparison-group">{typeLabel(adj.type)}</span>
                 </td>
                 {FORM_FIELDS.map((f) => (
@@ -39,7 +40,7 @@ export default function AdjectiveComparisonTable() {
                     role="button"
                     tabIndex={0}
                   >
-                    {adj.forms[f].japanese}
+                    <JapaneseText kana={adj.forms[f].japanese} kanji={adj.forms[f].kanji} />
                   </td>
                 ))}
               </tr>

@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import Toggle from "../../components/Toggle";
+import JapaneseText from "../../components/JapaneseText";
 import { useSpeak } from "../../hooks/useSpeech";
-import { getAllCounterQuestions } from "../../utils/counters";
+import { getAllCounterQuestions, kanjiForCount } from "../../utils/counters";
 import { playCorrect, playIncorrect } from "../../utils/sound";
 import { useReviewQueue } from "../../utils/reviewQueue";
 
@@ -107,7 +108,7 @@ export default function CounterPractice({ onBack }) {
               }
               return (
                 <button key={opt} className={cls} onClick={() => choose(opt)} disabled={answered}>
-                  <span className="jp-text">{opt}</span>
+                  <JapaneseText className="jp-text" kana={opt} kanji={kanjiForCount(opt)} />
                 </button>
               );
             })}

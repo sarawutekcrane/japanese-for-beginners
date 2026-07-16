@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import Toggle from "../../components/Toggle";
+import JapaneseText from "../../components/JapaneseText";
 import { useSpeak } from "../../hooks/useSpeech";
-import { getAllConjugationQuestions, groupLabel } from "../../utils/grammar";
+import { getAllConjugationQuestions, groupLabel, kanjiForVerbForm } from "../../utils/grammar";
 import { playCorrect, playIncorrect } from "../../utils/sound";
 import { useReviewQueue } from "../../utils/reviewQueue";
 
@@ -93,14 +94,15 @@ export default function ConjugationPractice({ onBack }) {
         <div className="practice-card blue">
           <div className="verb-card">
             <p className="jp-text verb-dict" onClick={() => speak(question.verb.dict, { rate: 0.8 })} role="button" tabIndex={0}>
-              {question.verb.dict} 🔊
+              <JapaneseText kana={question.verb.dict} kanji={kanjiForVerbForm(question.verb.dict)} /> 🔊
             </p>
             <p className="verb-group th-text">{groupLabel(question.verb.group)}</p>
             {showThai && <p className="th-text verb-meaning">{question.verb.meaningTh}</p>}
           </div>
 
           <p className="th-text conjugation-instruction">
-            จงผัน <span className="jp-text">{question.verb.dict}</span> เป็นรูป <span className="jp-text">{question.formLabel}</span>
+            จงผัน <JapaneseText kana={question.verb.dict} kanji={kanjiForVerbForm(question.verb.dict)} className="jp-text" /> เป็นรูป{" "}
+            <span className="jp-text">{question.formLabel}</span>
           </p>
 
           <div className="quiz-options">
@@ -112,7 +114,7 @@ export default function ConjugationPractice({ onBack }) {
               }
               return (
                 <button key={opt} className={cls} onClick={() => choose(opt)} disabled={answered}>
-                  <span className="jp-text">{opt}</span>
+                  <JapaneseText className="jp-text" kana={opt} kanji={kanjiForVerbForm(opt)} />
                 </button>
               );
             })}

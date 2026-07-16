@@ -1,4 +1,5 @@
 import { useSpeak } from "../../hooks/useSpeech";
+import JapaneseText from "../../components/JapaneseText";
 
 export default function LessonView({ pattern, onBack }) {
   const { speak } = useSpeak();
@@ -37,7 +38,7 @@ export default function LessonView({ pattern, onBack }) {
         <div className="example-list">
           {pattern.examples.map((ex, i) => (
             <div key={i} className="example-card" onClick={() => speak(ex.japanese, { rate: 0.8 })} role="button" tabIndex={0}>
-              <p className="jp-text example-jp">{ex.japanese}</p>
+              <JapaneseText as="p" className="jp-text example-jp" kana={ex.japanese} kanji={ex.kanji} />
               <p className="example-romaji">{ex.romaji}</p>
               <p className="th-text example-thai">{ex.thai}</p>
               <span className="example-play">🔊 แตะเพื่อฟัง</span>

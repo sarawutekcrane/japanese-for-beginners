@@ -18,6 +18,15 @@
       "masendeshita": "tabemasendeshita",
       "te": "tabete",
       "tai": "tabetai"
+    },
+    "kanji": {
+      "dict": [{ "text": "食", "reading": "た" }, { "text": "べる" }],
+      "masu": [{ "text": "食", "reading": "た" }, { "text": "べます" }],
+      "masen": [{ "text": "食", "reading": "た" }, { "text": "べません" }],
+      "mashita": [{ "text": "食", "reading": "た" }, { "text": "べました" }],
+      "masendeshita": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }],
+      "te": [{ "text": "食", "reading": "た" }, { "text": "べて" }],
+      "tai": [{ "text": "食", "reading": "た" }, { "text": "べたい" }]
     }
   },
   {
@@ -39,6 +48,15 @@
       "masendeshita": "mimasendeshita",
       "te": "mite",
       "tai": "mitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "見", "reading": "み" }, { "text": "る" }],
+      "masu": [{ "text": "見", "reading": "み" }, { "text": "ます" }],
+      "masen": [{ "text": "見", "reading": "み" }, { "text": "ません" }],
+      "mashita": [{ "text": "見", "reading": "み" }, { "text": "ました" }],
+      "masendeshita": [{ "text": "見", "reading": "み" }, { "text": "ませんでした" }],
+      "te": [{ "text": "見", "reading": "み" }, { "text": "て" }],
+      "tai": [{ "text": "見", "reading": "み" }, { "text": "たい" }]
     }
   },
   {
@@ -60,6 +78,15 @@
       "masendeshita": "nemasendeshita",
       "te": "nete",
       "tai": "netai"
+    },
+    "kanji": {
+      "dict": [{ "text": "寝", "reading": "ね" }, { "text": "る" }],
+      "masu": [{ "text": "寝", "reading": "ね" }, { "text": "ます" }],
+      "masen": [{ "text": "寝", "reading": "ね" }, { "text": "ません" }],
+      "mashita": [{ "text": "寝", "reading": "ね" }, { "text": "ました" }],
+      "masendeshita": [{ "text": "寝", "reading": "ね" }, { "text": "ませんでした" }],
+      "te": [{ "text": "寝", "reading": "ね" }, { "text": "て" }],
+      "tai": [{ "text": "寝", "reading": "ね" }, { "text": "たい" }]
     }
   },
   {
@@ -81,6 +108,15 @@
       "masendeshita": "okimasendeshita",
       "te": "okite",
       "tai": "okitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "起", "reading": "お" }, { "text": "きる" }],
+      "masu": [{ "text": "起", "reading": "お" }, { "text": "きます" }],
+      "masen": [{ "text": "起", "reading": "お" }, { "text": "きません" }],
+      "mashita": [{ "text": "起", "reading": "お" }, { "text": "きました" }],
+      "masendeshita": [{ "text": "起", "reading": "お" }, { "text": "きませんでした" }],
+      "te": [{ "text": "起", "reading": "お" }, { "text": "きて" }],
+      "tai": [{ "text": "起", "reading": "お" }, { "text": "きたい" }]
     }
   },
   {
@@ -102,6 +138,15 @@
       "masendeshita": "nomimasendeshita",
       "te": "nonde",
       "tai": "nomitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "飲", "reading": "の" }, { "text": "む" }],
+      "masu": [{ "text": "飲", "reading": "の" }, { "text": "みます" }],
+      "masen": [{ "text": "飲", "reading": "の" }, { "text": "みません" }],
+      "mashita": [{ "text": "飲", "reading": "の" }, { "text": "みました" }],
+      "masendeshita": [{ "text": "飲", "reading": "の" }, { "text": "みませんでした" }],
+      "te": [{ "text": "飲", "reading": "の" }, { "text": "んで" }],
+      "tai": [{ "text": "飲", "reading": "の" }, { "text": "みたい" }]
     }
   },
   {
@@ -123,6 +168,15 @@
       "masendeshita": "ikimasendeshita",
       "te": "itte",
       "tai": "ikitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "行", "reading": "い" }, { "text": "く" }],
+      "masu": [{ "text": "行", "reading": "い" }, { "text": "きます" }],
+      "masen": [{ "text": "行", "reading": "い" }, { "text": "きません" }],
+      "mashita": [{ "text": "行", "reading": "い" }, { "text": "きました" }],
+      "masendeshita": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }],
+      "te": [{ "text": "行", "reading": "い" }, { "text": "って" }],
+      "tai": [{ "text": "行", "reading": "い" }, { "text": "きたい" }]
     }
   },
   {
@@ -144,6 +198,15 @@
       "masendeshita": "kakimasendeshita",
       "te": "kaite",
       "tai": "kakitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "書", "reading": "か" }, { "text": "く" }],
+      "masu": [{ "text": "書", "reading": "か" }, { "text": "きます" }],
+      "masen": [{ "text": "書", "reading": "か" }, { "text": "きません" }],
+      "mashita": [{ "text": "書", "reading": "か" }, { "text": "きました" }],
+      "masendeshita": [{ "text": "書", "reading": "か" }, { "text": "きませんでした" }],
+      "te": [{ "text": "書", "reading": "か" }, { "text": "いて" }],
+      "tai": [{ "text": "書", "reading": "か" }, { "text": "きたい" }]
     }
   },
   {
@@ -165,6 +228,15 @@
       "masendeshita": "yomimasendeshita",
       "te": "yonde",
       "tai": "yomitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "読", "reading": "よ" }, { "text": "む" }],
+      "masu": [{ "text": "読", "reading": "よ" }, { "text": "みます" }],
+      "masen": [{ "text": "読", "reading": "よ" }, { "text": "みません" }],
+      "mashita": [{ "text": "読", "reading": "よ" }, { "text": "みました" }],
+      "masendeshita": [{ "text": "読", "reading": "よ" }, { "text": "みませんでした" }],
+      "te": [{ "text": "読", "reading": "よ" }, { "text": "んで" }],
+      "tai": [{ "text": "読", "reading": "よ" }, { "text": "みたい" }]
     }
   },
   {
@@ -186,6 +258,15 @@
       "masendeshita": "hanashimasendeshita",
       "te": "hanashite",
       "tai": "hanashitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "話", "reading": "はな" }, { "text": "す" }],
+      "masu": [{ "text": "話", "reading": "はな" }, { "text": "します" }],
+      "masen": [{ "text": "話", "reading": "はな" }, { "text": "しません" }],
+      "mashita": [{ "text": "話", "reading": "はな" }, { "text": "しました" }],
+      "masendeshita": [{ "text": "話", "reading": "はな" }, { "text": "しませんでした" }],
+      "te": [{ "text": "話", "reading": "はな" }, { "text": "して" }],
+      "tai": [{ "text": "話", "reading": "はな" }, { "text": "したい" }]
     }
   },
   {
@@ -207,6 +288,15 @@
       "masendeshita": "kaimasendeshita",
       "te": "katte",
       "tai": "kaitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "買", "reading": "か" }, { "text": "う" }],
+      "masu": [{ "text": "買", "reading": "か" }, { "text": "います" }],
+      "masen": [{ "text": "買", "reading": "か" }, { "text": "いません" }],
+      "mashita": [{ "text": "買", "reading": "か" }, { "text": "いました" }],
+      "masendeshita": [{ "text": "買", "reading": "か" }, { "text": "いませんでした" }],
+      "te": [{ "text": "買", "reading": "か" }, { "text": "って" }],
+      "tai": [{ "text": "買", "reading": "か" }, { "text": "いたい" }]
     }
   },
   {
@@ -228,6 +318,15 @@
       "masendeshita": "machimasendeshita",
       "te": "matte",
       "tai": "machitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "待", "reading": "ま" }, { "text": "つ" }],
+      "masu": [{ "text": "待", "reading": "ま" }, { "text": "ちます" }],
+      "masen": [{ "text": "待", "reading": "ま" }, { "text": "ちません" }],
+      "mashita": [{ "text": "待", "reading": "ま" }, { "text": "ちました" }],
+      "masendeshita": [{ "text": "待", "reading": "ま" }, { "text": "ちませんでした" }],
+      "te": [{ "text": "待", "reading": "ま" }, { "text": "って" }],
+      "tai": [{ "text": "待", "reading": "ま" }, { "text": "ちたい" }]
     }
   },
   {
@@ -270,6 +369,15 @@
       "masendeshita": "kimasendeshita",
       "te": "kite",
       "tai": "kitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "来", "reading": "く" }, { "text": "る" }],
+      "masu": [{ "text": "来", "reading": "き" }, { "text": "ます" }],
+      "masen": [{ "text": "来", "reading": "き" }, { "text": "ません" }],
+      "mashita": [{ "text": "来", "reading": "き" }, { "text": "ました" }],
+      "masendeshita": [{ "text": "来", "reading": "き" }, { "text": "ませんでした" }],
+      "te": [{ "text": "来", "reading": "き" }, { "text": "て" }],
+      "tai": [{ "text": "来", "reading": "き" }, { "text": "たい" }]
     }
   },
   {
@@ -291,6 +399,15 @@
       "masendeshita": "isogimasendeshita",
       "te": "isoide",
       "tai": "isogitai"
+    },
+    "kanji": {
+      "dict": [{ "text": "急", "reading": "いそ" }, { "text": "ぐ" }],
+      "masu": [{ "text": "急", "reading": "いそ" }, { "text": "ぎます" }],
+      "masen": [{ "text": "急", "reading": "いそ" }, { "text": "ぎません" }],
+      "mashita": [{ "text": "急", "reading": "いそ" }, { "text": "ぎました" }],
+      "masendeshita": [{ "text": "急", "reading": "いそ" }, { "text": "ぎませんでした" }],
+      "te": [{ "text": "急", "reading": "いそ" }, { "text": "いで" }],
+      "tai": [{ "text": "急", "reading": "いそ" }, { "text": "ぎたい" }]
     }
   }
 ]

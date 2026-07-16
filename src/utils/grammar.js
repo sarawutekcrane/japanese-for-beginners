@@ -4,6 +4,19 @@ import { shuffle } from "./content";
 
 export const CONJUGATION_FIELDS = ["masu", "masen", "mashita", "masendeshita", "te", "tai"];
 
+const KANJI_MAP = new Map();
+for (const verb of verbs) {
+  if (!verb.kanji) continue;
+  for (const [field, segs] of Object.entries(verb.kanji)) {
+    KANJI_MAP.set(verb[field], segs);
+  }
+}
+
+/** Looks up Kanji+furigana segments for a verb form's kana string, e.g. "たべます" -> 食べます segments. */
+export function kanjiForVerbForm(kana) {
+  return KANJI_MAP.get(kana);
+}
+
 const GROUP_LABEL_TH = {
   1: "กลุ่ม 1 (godan)",
   2: "กลุ่ม 2 (ichidan)",
