@@ -3,6 +3,7 @@ import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
+import { playKanaAudio } from "../utils/kanaAudio";
 
 function CategoryPicker({ onPick }) {
   return (
@@ -55,7 +56,13 @@ function FlashcardView({ selection, onBack }) {
 
   const card = cards[index];
 
-  const say = () => speak(card.audioText, { rate: card.kind === "kana" ? 0.75 : 0.85 });
+  const say = () => {
+    if (card.kind === "kana") {
+      playKanaAudio(card.script, card, { onFallback: () => speak(card.audioText, { rate: 0.75 }) });
+    } else {
+      speak(card.audioText, { rate: 0.85 });
+    }
+  };
 
   const go = (delta) => {
     setIndex((i) => (i + delta + cards.length) % cards.length);

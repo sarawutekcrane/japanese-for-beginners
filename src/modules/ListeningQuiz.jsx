@@ -3,6 +3,7 @@ import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
+import { playKanaAudio } from "../utils/kanaAudio";
 
 function PoolPicker({ onPick }) {
   return (
@@ -67,7 +68,14 @@ function QuizView({ selection, onBack }) {
   const effectiveShowRomaji = showRomaji || (answered && isCorrect);
   const effectiveRevealed = revealed || (answered && isCorrect);
 
-  const play = (rate) => speak(question.answer.audioText, { rate: rate ?? (question.answer.kind === "kana" ? 0.75 : 0.85) });
+  const play = () => {
+    const answer = question.answer;
+    if (answer.kind === "kana") {
+      playKanaAudio(answer.script, answer, { onFallback: () => speak(answer.audioText, { rate: 0.75 }) });
+    } else {
+      speak(answer.audioText, { rate: 0.85 });
+    }
+  };
 
   const speakTimeoutRef = useRef(null);
 
@@ -80,9 +88,7 @@ function QuizView({ selection, onBack }) {
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
-    speakTimeoutRef.current = setTimeout(() => {
-      speak(question.answer.audioText, { rate: question.answer.kind === "kana" ? 0.75 : 0.85 });
-    }, 1000);
+    speakTimeoutRef.current = setTimeout(play, 1000);
   };
 
   const next = () => {
