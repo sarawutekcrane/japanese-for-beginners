@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Toggle from "../components/Toggle";
+import JapaneseText from "../components/JapaneseText";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
@@ -157,7 +158,7 @@ function QuizView({ selection, onBack }) {
               }
               return (
                 <button key={opt.id} className={cls} onClick={() => choose(opt)} disabled={answered}>
-                  <span className="jp-text">{opt.display}</span>
+                  <JapaneseText className="jp-text" kana={opt.display} kanji={opt.kanji} />
                   {effectiveShowRomaji && <span className="quiz-option-hint">{opt.romaji}</span>}
                   {effectiveShowThai && <span className="quiz-option-hint th-text">{opt.thai}</span>}
                 </button>
@@ -178,7 +179,7 @@ function QuizView({ selection, onBack }) {
 
           {effectiveRevealed && (
             <p className="quiz-reveal jp-text">
-              เฉลย: {question.answer.display}
+              เฉลย: <JapaneseText kana={question.answer.display} kanji={question.answer.kanji} />
               {question.answer.romaji ? ` (${question.answer.romaji})` : ""}
             </p>
           )}

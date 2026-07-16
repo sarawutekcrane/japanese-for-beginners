@@ -1,4 +1,6 @@
+import { useState } from "react";
 import Mascot from "./Mascot";
+import SettingsPanel from "./SettingsPanel";
 
 const MODULES = [
   {
@@ -39,8 +41,14 @@ const MODULES = [
 ];
 
 export default function HomeMenu({ onSelect }) {
+  const [settingsOpen, setSettingsOpen] = useState(false);
+
   return (
     <div className="home-menu">
+      <button className="settings-btn" onClick={() => setSettingsOpen(true)} aria-label="ตั้งค่า">
+        ⚙️
+      </button>
+
       <header className="home-header">
         <Mascot mood="excited" size={110} />
         <h1 className="home-title">
@@ -63,6 +71,8 @@ export default function HomeMenu({ onSelect }) {
       </div>
 
       <p className="home-footer th-text">แตะโมดูลด้านบนเพื่อเริ่มเรียนรู้กันเลย! 🌸</p>
+
+      {settingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
     </div>
   );
 }

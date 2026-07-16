@@ -85,6 +85,7 @@ export function toCard(entry) {
     icon: entry.icon,
     value: entry.value,
     hex: entry.hex,
+    kanji: entry.kanji,
   };
 }
 

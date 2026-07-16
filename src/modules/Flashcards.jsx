@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
+import JapaneseText from "../components/JapaneseText";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
 import { playKanaAudio } from "../utils/kanaAudio";
@@ -111,7 +112,9 @@ function FlashcardView({ selection, onBack }) {
             <div className="flashcard-illustration">
               <Illustration item={card.kind === "kana" ? { script: card.script, group: card.group, char: card.display, id: card.id } : { icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
             </div>
-            {card.kind !== "kana" && <p className="flashcard-text jp-text">{card.display}</p>}
+            {card.kind !== "kana" && (
+              <JapaneseText as="p" className="flashcard-text jp-text" kana={card.display} kanji={card.kanji} />
+            )}
             {showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
             {showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
             <p className="flashcard-hint th-text">แตะเพื่อฟังเสียง 🔊</p>
