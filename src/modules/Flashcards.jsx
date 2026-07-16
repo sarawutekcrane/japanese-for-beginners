@@ -3,6 +3,7 @@ import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
 import JapaneseText from "../components/JapaneseText";
 import { useSpeak } from "../hooks/useSpeech";
+import { useSettings } from "../context/SettingsContext";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
 import { playKanaAudio } from "../utils/kanaAudio";
 
@@ -37,6 +38,7 @@ function CategoryPicker({ onPick }) {
 
 function FlashcardView({ selection, onBack }) {
   const { speak } = useSpeak();
+  const { speechRate } = useSettings();
   const [shuffleOn, setShuffleOn] = useState(false);
   const [index, setIndex] = useState(0);
   const [showThai, setShowThai] = useState(false);
@@ -62,9 +64,9 @@ function FlashcardView({ selection, onBack }) {
 
   const say = () => {
     if (card.kind === "kana") {
-      playKanaAudio(card.script, card, { onFallback: () => speak(card.audioText, { rate: 0.75 }) });
+      playKanaAudio(card.script, card, { rate: speechRate, onFallback: () => speak(card.audioText) });
     } else {
-      speak(card.audioText, { rate: 0.85 });
+      speak(card.audioText);
     }
   };
 

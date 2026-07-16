@@ -37,7 +37,7 @@ export default function LessonView({ pattern, onBack }) {
         <h3 className="lesson-heading">💬 ตัวอย่างประโยค</h3>
         <div className="example-list">
           {pattern.examples.map((ex, i) => (
-            <div key={i} className="example-card" onClick={() => speak(ex.japanese, { rate: 0.8 })} role="button" tabIndex={0}>
+            <div key={i} className="example-card" onClick={() => speak(ex.japanese)} role="button" tabIndex={0}>
               <JapaneseText as="p" className="jp-text example-jp" kana={ex.japanese} kanji={ex.kanji} />
               <p className="example-romaji">{ex.romaji}</p>
               <p className="th-text example-thai">{ex.thai}</p>

@@ -14,7 +14,7 @@ export default function AdjectiveException() {
         よい แทน ต้องจำแยกเป็นกรณีพิเศษ
       </div>
 
-      <div className="exception-box" onClick={() => speak(ii.dict, { rate: 0.8 })} role="button" tabIndex={0}>
+      <div className="exception-box" onClick={() => speak(ii.dict)} role="button" tabIndex={0}>
         <span className="exception-label th-text">⚠️ ข้อยกเว้นพิเศษ</span>
         <JapaneseText as="span" className="jp-text conj-word" kana={ii.dict} kanji={ii.kanji} />
         <span className="example-play">🔊</span>
@@ -26,7 +26,7 @@ export default function AdjectiveException() {
           <div
             key={field}
             className="conj-example-row"
-            onClick={() => speak(ii.forms[field].japanese, { rate: 0.8 })}
+            onClick={() => speak(ii.forms[field].japanese)}
             role="button"
             tabIndex={0}
           >

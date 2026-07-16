@@ -26,7 +26,7 @@ export default function AdjectiveIForm() {
               <div
                 key={field}
                 className="conj-example-row"
-                onClick={() => speak(adj.forms[field].japanese, { rate: 0.8 })}
+                onClick={() => speak(adj.forms[field].japanese)}
                 role="button"
                 tabIndex={0}
               >

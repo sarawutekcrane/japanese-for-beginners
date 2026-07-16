@@ -46,7 +46,7 @@ export default function AdjectivePractice({ onBack }) {
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
     speakTimeoutRef.current = setTimeout(() => {
-      speak(question.correct, { rate: 0.8 });
+      speak(question.correct);
     }, 500);
   };
 
@@ -95,7 +95,7 @@ export default function AdjectivePractice({ onBack }) {
           <div className="verb-card">
             <p
               className="jp-text verb-dict"
-              onClick={() => speak(question.adj.dict, { rate: 0.8 })}
+              onClick={() => speak(question.adj.dict)}
               role="button"
               tabIndex={0}
             >

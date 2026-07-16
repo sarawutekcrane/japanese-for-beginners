@@ -46,7 +46,7 @@ export default function CounterPractice({ onBack }) {
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
     speakTimeoutRef.current = setTimeout(() => {
-      speak(question.correct, { rate: 0.8 });
+      speak(question.correct);
     }, 500);
   };
 

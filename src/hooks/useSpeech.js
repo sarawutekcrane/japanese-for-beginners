@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { KANA_ALT_SPELLINGS } from "../data/kanaAltSpellings";
+import { useSettings } from "../context/SettingsContext";
 
 let cachedJaVoice = null;
 
@@ -25,6 +26,7 @@ function pickJapaneseVoice() {
 /** Speaks Japanese text aloud using the Web Speech API (speechSynthesis). No audio files needed. */
 export function useSpeak() {
   const [speaking, setSpeaking] = useState(false);
+  const { speechRate } = useSettings();
   const supported = typeof window !== "undefined" && "speechSynthesis" in window;
 
   useEffect(() => {
@@ -38,7 +40,7 @@ export function useSpeak() {
   }, [supported]);
 
   const speak = useCallback(
-    (text, { rate = 0.9 } = {}) => {
+    (text, { rate = speechRate } = {}) => {
       if (!supported || !text) return;
       window.speechSynthesis.cancel();
       const utter = new SpeechSynthesisUtterance(text);
@@ -51,7 +53,7 @@ export function useSpeak() {
       utter.onerror = () => setSpeaking(false);
       window.speechSynthesis.speak(utter);
     },
-    [supported]
+    [supported, speechRate]
   );
 
   return { speak, speaking, supported };

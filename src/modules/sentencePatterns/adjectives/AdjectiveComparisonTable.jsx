@@ -36,7 +36,7 @@ export default function AdjectiveComparisonTable() {
                   <td
                     key={f}
                     className="jp-text comparison-cell"
-                    onClick={() => speak(adj.forms[f].japanese, { rate: 0.8 })}
+                    onClick={() => speak(adj.forms[f].japanese)}
                     role="button"
                     tabIndex={0}
                   >

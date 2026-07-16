@@ -290,6 +290,48 @@ button {
   line-height: 1.5;
 }
 
+.speed-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.speed-stepper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.speed-btn {
+  border: 2px solid var(--pink);
+  background: var(--white);
+  border-radius: 999px;
+  width: 34px;
+  height: 34px;
+  font-size: 1.1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pink-text);
+  box-shadow: var(--shadow-soft);
+}
+
+.speed-btn:disabled {
+  opacity: 0.4;
+  box-shadow: none;
+}
+
+.speed-value {
+  min-width: 76px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
 .home-header {
   display: flex;
   flex-direction: column;

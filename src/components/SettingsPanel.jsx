@@ -1,8 +1,8 @@
 import Toggle from "./Toggle";
-import { useSettings } from "../context/SettingsContext";
+import { useSettings, SPEECH_RATE_MIN, SPEECH_RATE_MAX, SPEECH_RATE_STEP } from "../context/SettingsContext";
 
 export default function SettingsPanel({ onClose }) {
-  const { showKanji, setShowKanji, showFurigana, setShowFurigana } = useSettings();
+  const { showKanji, setShowKanji, showFurigana, setShowFurigana, speechRate, setSpeechRate } = useSettings();
 
   return (
     <div className="settings-overlay" onClick={onClose} role="presentation">
@@ -22,6 +22,38 @@ export default function SettingsPanel({ onClose }) {
         <p className="th-text settings-note">
           เมื่อเปิด "แสดงคันจิ" คำศัพท์ที่มีคันจิมาตรฐานจะแสดงเป็นคันจิแทนฮิรางานะ/คาตากานะทั่วทั้งแอป
           (ยกเว้นการ์ดฝึกอ่านตัวอักษรฮิรางานะ/คาตากานะซึ่งจะแสดงเป็นตัวอักษรเสมอ) การตั้งค่านี้จะถูกจดจำไว้ตลอดการใช้งาน
+        </p>
+
+        <div className="speed-control">
+          <span className="toggle-label">🔊 ความเร็วเสียงพูด (Speech Speed)</span>
+          <div className="speed-stepper">
+            <button
+              type="button"
+              className="speed-btn"
+              onClick={() => setSpeechRate(speechRate - SPEECH_RATE_STEP)}
+              disabled={speechRate <= SPEECH_RATE_MIN}
+              aria-label="ลดความเร็ว"
+            >
+              −
+            </button>
+            <span className="speed-value">
+              {speechRate.toFixed(2)}x{speechRate >= SPEECH_RATE_MAX ? " (ปกติ)" : ""}
+            </span>
+            <button
+              type="button"
+              className="speed-btn"
+              onClick={() => setSpeechRate(speechRate + SPEECH_RATE_STEP)}
+              disabled={speechRate >= SPEECH_RATE_MAX}
+              aria-label="เพิ่มความเร็ว"
+            >
+              +
+            </button>
+          </div>
+        </div>
+
+        <p className="th-text settings-note">
+          ปรับความเร็วเสียงพูดที่ใช้ทั่วทั้งแอป ตั้งแต่ 0.75x (ช้า เหมาะกับผู้เริ่มต้น) ถึง 1.00x
+          (ความเร็วปกติที่คนญี่ปุ่นใช้สื่อสารกัน) ทีละ 0.05
         </p>
       </div>
     </div>

@@ -46,7 +46,7 @@ export default function ConjugationPractice({ onBack }) {
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
     speakTimeoutRef.current = setTimeout(() => {
-      speak(question.correct, { rate: 0.8 });
+      speak(question.correct);
     }, 500);
   };
 
@@ -93,7 +93,7 @@ export default function ConjugationPractice({ onBack }) {
       ) : (
         <div className="practice-card blue">
           <div className="verb-card">
-            <p className="jp-text verb-dict" onClick={() => speak(question.verb.dict, { rate: 0.8 })} role="button" tabIndex={0}>
+            <p className="jp-text verb-dict" onClick={() => speak(question.verb.dict)} role="button" tabIndex={0}>
               <JapaneseText kana={question.verb.dict} kanji={kanjiForVerbForm(question.verb.dict)} /> 🔊
             </p>
             <p className="verb-group th-text">{groupLabel(question.verb.group)}</p>

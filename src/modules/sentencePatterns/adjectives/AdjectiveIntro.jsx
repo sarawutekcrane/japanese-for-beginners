@@ -13,7 +13,7 @@ export default function AdjectiveIntro() {
         และ な-adjective (คำที่ต้องเติม な ก่อนนำไปขยายคำนาม) ทั้งสองกลุ่มผันรูปต่างกัน จึงต้องแยกให้ออกก่อนผัน
       </p>
 
-      <div className="group-rule-card" onClick={() => speak("おおきい", { rate: 0.8 })} role="button" tabIndex={0}>
+      <div className="group-rule-card" onClick={() => speak("おおきい")} role="button" tabIndex={0}>
         <span className="verb-group th-text">い-adjective</span>
         <p className="th-text group-rule-explanation">
           ลงท้ายด้วย い เสมอในรูปพจนานุกรม เช่น おおきい (ใหญ่) ผันรูปได้ด้วยตัวเอง ไม่ต้องมีคำช่วยอื่น
@@ -25,7 +25,7 @@ export default function AdjectiveIntro() {
         </div>
       </div>
 
-      <div className="group-rule-card" onClick={() => speak("きれいなひと", { rate: 0.8 })} role="button" tabIndex={0}>
+      <div className="group-rule-card" onClick={() => speak("きれいなひと")} role="button" tabIndex={0}>
         <span className="verb-group th-text">な-adjective</span>
         <p className="th-text group-rule-explanation">
           ต้องเติม な ก่อนนำไปขยายคำนามโดยตรง เช่น きれいな ひと (คนสวย) แต่ผันรูป です/でした แบบเดียวกับคำนาม ไม่ผันแบบ い-adjective

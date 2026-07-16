@@ -56,17 +56,17 @@ function DialogueView({ topic, onBack }) {
   const currentSystem = misunderstanding ? MISUNDERSTANDING : node.system;
 
   useEffect(() => {
-    speak(topic.nodes[topic.start].system.japanese, { rate: 0.85 });
+    speak(topic.nodes[topic.start].system.japanese);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const replay = () => speak(currentSystem.japanese, { rate: 0.85 });
+  const replay = () => speak(currentSystem.japanese);
 
-  const replayReply = () => pendingReply && speak(pendingReply.japanese, { rate: 0.85 });
+  const replayReply = () => pendingReply && speak(pendingReply.japanese);
 
   const choose = (opt) => {
     setPendingReply(opt);
-    if (supported) speak(opt.japanese, { rate: 0.85 });
+    if (supported) speak(opt.japanese);
   };
 
   const confirmAttempt = () => {
@@ -79,21 +79,21 @@ function DialogueView({ topic, onBack }) {
         const nextNode = topic.nodes[opt.next];
         setNodeId(opt.next);
         setOptions(shuffle(nextNode.options));
-        speak(nextNode.system.japanese, { rate: 0.85 });
+        speak(nextNode.system.japanese);
       } else {
         setFinished(true);
       }
     } else {
       playIncorrect();
       setMisunderstanding(true);
-      speak(MISUNDERSTANDING.japanese, { rate: 0.85 });
+      speak(MISUNDERSTANDING.japanese);
     }
   };
 
   const continueMisunderstanding = () => {
     setMisunderstanding(false);
     setOptions(shuffle(node.options));
-    speak(node.system.japanese, { rate: 0.85 });
+    speak(node.system.japanese);
   };
 
   const restart = () => {

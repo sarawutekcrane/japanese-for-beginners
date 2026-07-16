@@ -42,7 +42,7 @@ export default function TopicComparison() {
                   <span className="th-text comparison-group">{groupLabel(verb.group)}</span>
                 </td>
                 {COLUMNS.map((c) => (
-                  <td key={c.field} className="jp-text comparison-cell" onClick={() => speak(verb[c.field], { rate: 0.8 })} role="button" tabIndex={0}>
+                  <td key={c.field} className="jp-text comparison-cell" onClick={() => speak(verb[c.field])} role="button" tabIndex={0}>
                     <JapaneseText kana={verb[c.field]} kanji={kanjiForVerbForm(verb[c.field])} />
                   </td>
                 ))}

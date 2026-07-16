@@ -24,7 +24,7 @@ export default function CounterIntro() {
       <h4 className="jp-text past-subheading">ตัวอย่าง: คำว่า "หนึ่ง (1)" ในบริบทต่างกัน</h4>
       <div className="conj-example-list">
         {samples.map((c) => (
-          <div key={c.id} className="conj-example-row" onClick={() => speak(c.counts[0].japanese, { rate: 0.8 })} role="button" tabIndex={0}>
+          <div key={c.id} className="conj-example-row" onClick={() => speak(c.counts[0].japanese)} role="button" tabIndex={0}>
             <JapaneseText as="span" className="jp-text conj-word" kana={c.counts[0].japanese} kanji={c.counts[0].kanji} />
             <span className="example-play">🔊</span>
             <p className="th-text group-rule-explanation">{c.titleTh}</p>

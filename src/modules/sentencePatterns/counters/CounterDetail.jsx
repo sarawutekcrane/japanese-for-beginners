@@ -16,7 +16,7 @@ export default function CounterDetail({ counterId }) {
 
       <div className="conj-example-list">
         {counter.counts.map((c) => (
-          <div key={c.n} className="conj-example-row" onClick={() => speak(c.japanese, { rate: 0.8 })} role="button" tabIndex={0}>
+          <div key={c.n} className="conj-example-row" onClick={() => speak(c.japanese)} role="button" tabIndex={0}>
             <span className="jp-text conj-word">
               {c.n}. <JapaneseText kana={c.japanese} kanji={c.kanji} />
             </span>

@@ -62,7 +62,7 @@ function SpeakingView({ category, onBack }) {
     return map;
   }, [baseCards]);
 
-  const hearExample = () => speak(card.audioText, { rate: 0.85 });
+  const hearExample = () => speak(card.audioText);
 
   const speakTimeoutRef = useRef(null);
 
@@ -98,7 +98,7 @@ function SpeakingView({ category, onBack }) {
         if (ok) playCorrect();
         else playIncorrect();
         speakTimeoutRef.current = setTimeout(() => {
-          speak(card.audioText, { rate: 0.85 });
+          speak(card.audioText);
         }, 500);
       },
       onError: () => setStatus(STATUS.error),

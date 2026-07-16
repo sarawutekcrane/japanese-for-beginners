@@ -68,7 +68,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
     else playIncorrectSound();
     clearTimeout(speakTimeoutRef.current);
     speakTimeoutRef.current = setTimeout(() => {
-      speak(question.correctOrder.join(""), { rate: 0.8 });
+      speak(question.correctOrder.join(""));
     }, 500);
   };
 
@@ -84,7 +84,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
     setScore({ correct: 0, total: 0 });
   };
 
-  const playCorrect = () => speak(question.correctOrder.join(""), { rate: 0.8 });
+  const playCorrect = () => speak(question.correctOrder.join(""));
 
   const kanjiByText = question ? Object.fromEntries(question.chunks.map((c) => [c.text, c.kanji])) : {};
 

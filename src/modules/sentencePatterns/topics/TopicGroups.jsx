@@ -18,7 +18,7 @@ export default function TopicGroups() {
   const g2 = verbs.filter((v) => v.group === 2).slice(0, 4);
   const g3 = verbs.filter((v) => v.group === 3);
 
-  const say = (verb) => speak(verb.dict, { rate: 0.8 });
+  const say = (verb) => speak(verb.dict);
 
   return (
     <div className="lesson-card">

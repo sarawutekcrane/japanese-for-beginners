@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Toggle from "../components/Toggle";
 import JapaneseText from "../components/JapaneseText";
 import { useSpeak } from "../hooks/useSpeech";
+import { useSettings } from "../context/SettingsContext";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
 import { playKanaAudio } from "../utils/kanaAudio";
@@ -48,6 +49,7 @@ function buildQuestion(pool, answer) {
 
 function QuizView({ selection, onBack }) {
   const { speak } = useSpeak();
+  const { speechRate } = useSettings();
   const [shuffleOn, setShuffleOn] = useState(false);
   const [pool] = useState(() => {
     const raw = selection.kind === "kana" ? getKanaCombinedDeck(selection.script) : getVocab(selection.category);
@@ -79,9 +81,9 @@ function QuizView({ selection, onBack }) {
   const play = () => {
     const answer = question.answer;
     if (answer.kind === "kana") {
-      playKanaAudio(answer.script, answer, { onFallback: () => speak(answer.audioText, { rate: 0.75 }) });
+      playKanaAudio(answer.script, answer, { rate: speechRate, onFallback: () => speak(answer.audioText) });
     } else {
-      speak(answer.audioText, { rate: 0.85 });
+      speak(answer.audioText);
     }
   };
 

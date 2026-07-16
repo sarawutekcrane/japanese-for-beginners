@@ -19,7 +19,7 @@ export default function TopicTe() {
       <h4 className="jp-text past-subheading">กริยากลุ่ม 1: กฎ 5 ข้อตามเสียงท้าย</h4>
       <div className="te-table">
         {regularRows.map((row) => (
-          <div key={row.key} className="te-table-row" onClick={() => speak(row.verb.te, { rate: 0.8 })} role="button" tabIndex={0}>
+          <div key={row.key} className="te-table-row" onClick={() => speak(row.verb.te)} role="button" tabIndex={0}>
             <ConjugatedWord dict={row.verb.dict} conjugated={row.verb.te} />
             <span className="example-play">🔊</span>
             <p className="th-text te-table-rule">{row.rule}</p>
@@ -28,7 +28,7 @@ export default function TopicTe() {
       </div>
 
       {exceptionRow && (
-        <div className="exception-box" onClick={() => speak(exceptionRow.verb.te, { rate: 0.8 })} role="button" tabIndex={0}>
+        <div className="exception-box" onClick={() => speak(exceptionRow.verb.te)} role="button" tabIndex={0}>
           <span className="exception-label th-text">⚠️ ข้อยกเว้นพิเศษ</span>
           <ConjugatedWord dict={exceptionRow.verb.dict} conjugated={exceptionRow.verb.te} />
           <span className="example-play">🔊</span>
@@ -45,7 +45,7 @@ export default function TopicTe() {
           </p>
           <div className="conj-example-list">
             {items.map(({ verb, conjugated }) => (
-              <div key={verb.id} className="conj-example-row" onClick={() => speak(conjugated, { rate: 0.8 })} role="button" tabIndex={0}>
+              <div key={verb.id} className="conj-example-row" onClick={() => speak(conjugated)} role="button" tabIndex={0}>
                 <ConjugatedWord dict={verb.dict} conjugated={conjugated} />
                 <span className="example-play">🔊</span>
               </div>

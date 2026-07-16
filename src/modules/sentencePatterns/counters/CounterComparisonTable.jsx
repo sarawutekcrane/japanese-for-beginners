@@ -34,7 +34,7 @@ export default function CounterComparisonTable() {
                     <td
                       key={c.id}
                       className="jp-text comparison-cell"
-                      onClick={() => speak(count.japanese, { rate: 0.8 })}
+                      onClick={() => speak(count.japanese)}
                       role="button"
                       tabIndex={0}
                     >

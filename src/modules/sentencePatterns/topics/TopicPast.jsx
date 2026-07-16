@@ -14,7 +14,7 @@ function FieldBlock({ field, title }) {
           <span className="verb-group th-text">{groupLabel(group)}</span>
           <div className="conj-example-list">
             {items.map(({ verb, conjugated }) => (
-              <div key={verb.id} className="conj-example-row" onClick={() => speak(conjugated, { rate: 0.8 })} role="button" tabIndex={0}>
+              <div key={verb.id} className="conj-example-row" onClick={() => speak(conjugated)} role="button" tabIndex={0}>
                 <ConjugatedWord dict={verb.dict} conjugated={conjugated} />
                 <span className="example-play">🔊</span>
               </div>
