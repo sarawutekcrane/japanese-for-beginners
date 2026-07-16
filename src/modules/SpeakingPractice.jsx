@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
+import JapaneseText from "../components/JapaneseText";
 import { useSpeak, useSpeechRecognition, matchesJapanese, isKanaOnly, kanjiToKana } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
@@ -157,7 +158,7 @@ function SpeakingView({ category, onBack }) {
             <Illustration item={{ icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
           </div>
 
-          <p className="flashcard-text jp-text">{card.answerText}</p>
+          <JapaneseText as="p" className="flashcard-text jp-text" kana={card.answerText} kanji={card.kanji} />
 
           <button className="btn btn-outline btn-sm" onClick={hearExample}>
             🔊 ฟังตัวอย่างเสียง

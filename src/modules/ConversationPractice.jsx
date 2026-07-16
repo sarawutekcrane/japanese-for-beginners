@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Toggle from "../components/Toggle";
+import JapaneseText from "../components/JapaneseText";
 import { useSpeak } from "../hooks/useSpeech";
 import { shuffle } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
@@ -9,6 +10,17 @@ const MISUNDERSTANDING = {
   japanese: "すみません、もういちど おねがいします。",
   romaji: "Sumimasen, mou ichido onegaishimasu.",
   thai: "ขอโทษค่ะ ช่วยพูดอีกครั้งได้ไหมคะ",
+  kanji: [
+    { text: "すみません" },
+    { text: "、" },
+    { text: "もう" },
+    { text: "一度", reading: "いちど" },
+    { text: " " },
+    { text: "お" },
+    { text: "願", reading: "ねが" },
+    { text: "いします" },
+    { text: "。" },
+  ],
 };
 
 function TopicPicker({ onPick }) {
@@ -112,12 +124,12 @@ function DialogueView({ topic, onBack }) {
         {history.map((h, i) => (
           <div key={i} className="history-turn">
             <div className="bubble bubble-system">
-              <p className="jp-text">{h.system.japanese}</p>
+              <JapaneseText as="p" className="jp-text" kana={h.system.japanese} kanji={h.system.kanji} />
               {showRomaji && <p className="bubble-romaji">{h.system.romaji}</p>}
               {showThai && <p className="th-text bubble-thai">{h.system.thai}</p>}
             </div>
             <div className="bubble bubble-user">
-              <p className="jp-text">{h.reply.japanese}</p>
+              <JapaneseText as="p" className="jp-text" kana={h.reply.japanese} kanji={h.reply.kanji} />
               {showRomaji && <p className="bubble-romaji">{h.reply.romaji}</p>}
               {showThai && <p className="th-text bubble-thai">{h.reply.thai}</p>}
             </div>
@@ -130,7 +142,7 @@ function DialogueView({ topic, onBack }) {
           {misunderstanding ? (
             <>
               <div className="bubble bubble-system bubble-current">
-                <p className="jp-text">{MISUNDERSTANDING.japanese}</p>
+                <JapaneseText as="p" className="jp-text" kana={MISUNDERSTANDING.japanese} kanji={MISUNDERSTANDING.kanji} />
                 {showRomaji && <p className="bubble-romaji">{MISUNDERSTANDING.romaji}</p>}
                 {showThai && <p className="th-text bubble-thai">{MISUNDERSTANDING.thai}</p>}
               </div>
@@ -144,7 +156,7 @@ function DialogueView({ topic, onBack }) {
           ) : !pendingReply ? (
             <>
               <div className="bubble bubble-system bubble-current">
-                <p className="jp-text">{node.system.japanese}</p>
+                <JapaneseText as="p" className="jp-text" kana={node.system.japanese} kanji={node.system.kanji} />
                 {showRomaji && <p className="bubble-romaji">{node.system.romaji}</p>}
                 {showThai && <p className="th-text bubble-thai">{node.system.thai}</p>}
               </div>
@@ -156,7 +168,7 @@ function DialogueView({ topic, onBack }) {
               <div className="reply-options">
                 {options.map((opt, i) => (
                   <button key={i} className="reply-option" onClick={() => choose(opt)}>
-                    <span className="jp-text">{opt.japanese}</span>
+                    <JapaneseText as="span" className="jp-text" kana={opt.japanese} kanji={opt.kanji} />
                     {showRomaji && <span className="bubble-romaji">{opt.romaji}</span>}
                     {showThai && <span className="th-text bubble-thai">{opt.thai}</span>}
                   </button>
@@ -166,12 +178,12 @@ function DialogueView({ topic, onBack }) {
           ) : (
             <>
               <div className="bubble bubble-system">
-                <p className="jp-text">{node.system.japanese}</p>
+                <JapaneseText as="p" className="jp-text" kana={node.system.japanese} kanji={node.system.kanji} />
                 {showRomaji && <p className="bubble-romaji">{node.system.romaji}</p>}
                 {showThai && <p className="th-text bubble-thai">{node.system.thai}</p>}
               </div>
               <div className="bubble bubble-user bubble-current">
-                <p className="jp-text">{pendingReply.japanese}</p>
+                <JapaneseText as="p" className="jp-text" kana={pendingReply.japanese} kanji={pendingReply.kanji} />
                 {showRomaji && <p className="bubble-romaji">{pendingReply.romaji}</p>}
                 {showThai && <p className="th-text bubble-thai">{pendingReply.thai}</p>}
               </div>

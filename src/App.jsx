@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import HomeMenu from "./components/HomeMenu";
+import SettingsPanel from "./components/SettingsPanel";
 import Flashcards from "./modules/Flashcards";
 import ListeningQuiz from "./modules/ListeningQuiz";
 import SpeakingPractice from "./modules/SpeakingPractice";
@@ -20,6 +21,7 @@ const TITLES = {
 function App() {
   const [view, setView] = useState("home");
   const [instanceKey, setInstanceKey] = useState(0);
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
   useEffect(() => {
     const onClick = (e) => {
@@ -51,12 +53,16 @@ function App() {
               ←
             </button>
             <h2>{TITLES[view]}</h2>
+            <button className="top-bar-settings-btn" onClick={() => setSettingsOpen(true)} aria-label="ตั้งค่า">
+              ⚙️
+            </button>
           </div>
           {view === "flashcards" && <Flashcards key={instanceKey} />}
           {view === "listening" && <ListeningQuiz key={instanceKey} />}
           {view === "speaking" && <SpeakingPractice key={instanceKey} />}
           {view === "conversation" && <ConversationPractice key={instanceKey} />}
           {view === "sentencePatterns" && <SentencePatterns key={instanceKey} />}
+          {settingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
         </>
       )}
     </div>

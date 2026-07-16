@@ -195,6 +195,21 @@ button {
 .top-bar h2 {
   font-size: 1.3rem;
   color: var(--pink-text);
+  flex: 1;
+}
+
+.top-bar-settings-btn {
+  border: 2px solid var(--pink);
+  background: var(--white);
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-soft);
+  flex-shrink: 0;
 }
 
 .scroll-x-safe {
