@@ -2,10 +2,12 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
 import { useSpeak, useSpeechRecognition, matchesJapanese, isKanaOnly, kanjiToKana } from "../hooks/useSpeech";
-import { VOCAB_CATEGORIES, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
+import { VOCAB_CATEGORIES, getVocab, toCard } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
+import { useReviewQueue } from "../utils/reviewQueue";
 
 const NUMERIC_ONLY = /^\d+$/;
+const EMPTY = [];
 
 function CategoryPicker({ onPick }) {
   return (
@@ -31,11 +33,8 @@ function SpeakingView({ category, onBack }) {
   const { supported, listening, start } = useSpeechRecognition();
 
   const [shuffleOn, setShuffleOn] = useState(false);
-  const cards = useMemo(() => {
-    const base = getVocab(category.id).map(toCard);
-    return shuffleOn ? shuffleArr(base) : base;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [category, shuffleOn]);
+  const baseCards = useMemo(() => getVocab(category.id).map(toCard), [category]);
+  const review = useReviewQueue(shuffleOn ? baseCards : EMPTY);
   const [index, setIndex] = useState(0);
   const [status, setStatus] = useState(STATUS.idle);
   const [heard, setHeard] = useState("");
@@ -46,20 +45,21 @@ function SpeakingView({ category, onBack }) {
     setIndex(0);
     setStatus(STATUS.idle);
     setHeard("");
-  }, [cards]);
+  }, [category, shuffleOn]);
 
-  const card = cards[index];
+  const finished = shuffleOn && review.finished;
+  const card = shuffleOn ? review.current : baseCards[index % baseCards.length];
 
   // Chrome's speech recognition transcribes spoken number words (e.g. "ろく")
   // as bare Arabic numerals (e.g. "6"). This maps each number card's value
   // back to its kana reading, for both matching and display.
   const numberKanaMap = useMemo(() => {
     const map = {};
-    for (const c of cards) {
+    for (const c of baseCards) {
       if (c.value != null) map[c.value] = c.reading || c.answerText;
     }
     return map;
-  }, [cards]);
+  }, [baseCards]);
 
   const hearExample = () => speak(card.audioText, { rate: 0.85 });
 
@@ -111,7 +111,15 @@ function SpeakingView({ category, onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    setIndex((i) => (i + 1) % cards.length);
+    if (shuffleOn) review.submit(status === STATUS.match);
+    else setIndex((i) => (i + 1) % baseCards.length);
+    setStatus(STATUS.idle);
+    setHeard("");
+  };
+
+  const restart = () => {
+    review.restart();
+    setIndex(0);
     setStatus(STATUS.idle);
     setHeard("");
   };
@@ -128,67 +136,77 @@ function SpeakingView({ category, onBack }) {
       </button>
 
       <p className="progress-label">
-        {category.label} · {index + 1} / {cards.length}
+        {category.label} ·{" "}
+        {shuffleOn ? `ตอบถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}` : `${index + 1} / ${baseCards.length}`}
       </p>
 
       <div className="toggle-group">
         <Toggle emoji="🔀" label="สุ่มลำดับคำศัพท์ (Shuffle)" checked={shuffleOn} onChange={setShuffleOn} />
       </div>
 
-      <div className="speaking-card">
-        <div className="flashcard-illustration">
-          <Illustration item={{ icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
+      {finished ? (
+        <div className="speaking-card">
+          <p className="th-text conversation-complete">เก่งมาก! คุณฝึกพูดครบทุกคำในหมวดนี้แล้ว 🎉🌸</p>
+          <button className="btn btn-success btn-sm" onClick={restart}>
+            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
+          </button>
         </div>
-
-        <p className="flashcard-text jp-text">{card.answerText}</p>
-
-        <button className="btn btn-outline btn-sm" onClick={hearExample}>
-          🔊 ฟังตัวอย่างเสียง
-        </button>
-
-        {!supported && (
-          <p className="speaking-note th-text">
-            เบราว์เซอร์นี้ไม่รองรับการรู้จำเสียงพูด กรุณาลองใช้ Google Chrome บนคอมพิวเตอร์
-          </p>
-        )}
-
-        <button className="btn btn-round" disabled={!supported || listening} onClick={record} aria-label="พูดออกเสียง">
-          🎤
-        </button>
-
-        {status === STATUS.listening && <p className="th-text">กำลังฟัง... พูดคำศัพท์ได้เลย</p>}
-
-        {status === STATUS.match && (
-          <p className="quiz-feedback feedback-correct th-text">เยี่ยมมาก! ออกเสียงตรงกันเลย 🎉</p>
-        )}
-        {status === STATUS.nomatch && (
-          <div className="speaking-feedback">
-            <p className="quiz-feedback feedback-incorrect th-text">ยังไม่ตรงนะ ลองอีกครั้ง 💪</p>
-            {heard && <p className="th-text speaking-heard">ระบบได้ยินว่า: 「{heard}」</p>}
+      ) : (
+        <div className="speaking-card">
+          <div className="flashcard-illustration">
+            <Illustration item={{ icon: card.icon, value: card.value, hex: card.hex, id: card.id }} />
           </div>
-        )}
-        {status === STATUS.error && <p className="th-text speaking-heard">ไม่ได้ยินเสียง กรุณาลองใหม่อีกครั้ง</p>}
 
-        {(status === STATUS.nomatch || status === STATUS.error) && (
-          <button className="btn btn-outline btn-sm" onClick={retry}>
-            🔁 ลองอีกครั้ง
+          <p className="flashcard-text jp-text">{card.answerText}</p>
+
+          <button className="btn btn-outline btn-sm" onClick={hearExample}>
+            🔊 ฟังตัวอย่างเสียง
           </button>
-        )}
 
-        {effectiveShowRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
-        {effectiveShowThai && <p className="flashcard-thai th-text">{card.thai}</p>}
+          {!supported && (
+            <p className="speaking-note th-text">
+              เบราว์เซอร์นี้ไม่รองรับการรู้จำเสียงพูด กรุณาลองใช้ Google Chrome บนคอมพิวเตอร์
+            </p>
+          )}
 
-        <div className="toggle-group">
-          <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
-          <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
-        </div>
-
-        <div className="quiz-actions">
-          <button className="btn btn-success btn-sm" onClick={next}>
-            คำถัดไป →
+          <button className="btn btn-round" disabled={!supported || listening} onClick={record} aria-label="พูดออกเสียง">
+            🎤
           </button>
+
+          {status === STATUS.listening && <p className="th-text">กำลังฟัง... พูดคำศัพท์ได้เลย</p>}
+
+          {status === STATUS.match && (
+            <p className="quiz-feedback feedback-correct th-text">เยี่ยมมาก! ออกเสียงตรงกันเลย 🎉</p>
+          )}
+          {status === STATUS.nomatch && (
+            <div className="speaking-feedback">
+              <p className="quiz-feedback feedback-incorrect th-text">ยังไม่ตรงนะ ลองอีกครั้ง 💪</p>
+              {heard && <p className="th-text speaking-heard">ระบบได้ยินว่า: 「{heard}」</p>}
+            </div>
+          )}
+          {status === STATUS.error && <p className="th-text speaking-heard">ไม่ได้ยินเสียง กรุณาลองใหม่อีกครั้ง</p>}
+
+          {(status === STATUS.nomatch || status === STATUS.error) && (
+            <button className="btn btn-outline btn-sm" onClick={retry}>
+              🔁 ลองอีกครั้ง
+            </button>
+          )}
+
+          {effectiveShowRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
+          {effectiveShowThai && <p className="flashcard-thai th-text">{card.thai}</p>}
+
+          <div className="toggle-group">
+            <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
+            <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
+          </div>
+
+          <div className="quiz-actions">
+            <button className="btn btn-success btn-sm" onClick={next}>
+              คำถัดไป →
+            </button>
+          </div>
         </div>
-      </div>
+      )}
 
       <p className="speaking-disclaimer th-text">
         💡 ฟีเจอร์นี้ทำงานได้ดีที่สุดบน <strong>Google Chrome บนคอมพิวเตอร์</strong> และเป็นเพียงการตรวจสอบคร่าวๆ

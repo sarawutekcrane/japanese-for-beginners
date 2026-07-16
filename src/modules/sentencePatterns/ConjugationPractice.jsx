@@ -1,11 +1,12 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
 import { getAllConjugationQuestions, groupLabel } from "../../utils/grammar";
-import { shuffle as shuffleArr } from "../../utils/content";
 import { playCorrect, playIncorrect } from "../../utils/sound";
+import { useReviewQueue } from "../../utils/reviewQueue";
 
 const BASE_QUESTIONS = getAllConjugationQuestions();
+const EMPTY = [];
 
 export default function ConjugationPractice({ onBack }) {
   const { speak } = useSpeak();
@@ -14,19 +15,23 @@ export default function ConjugationPractice({ onBack }) {
   const [showRomaji, setShowRomaji] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
 
-  const questions = useMemo(() => (shuffleOn ? shuffleArr(BASE_QUESTIONS) : BASE_QUESTIONS), [shuffleOn]);
-
+  const review = useReviewQueue(shuffleOn ? BASE_QUESTIONS : EMPTY);
   const [index, setIndex] = useState(0);
-  const question = questions[index % questions.length];
+  const finished = shuffleOn && review.finished;
+  const question = shuffleOn ? review.current : BASE_QUESTIONS[index % BASE_QUESTIONS.length];
   const [selected, setSelected] = useState(null);
 
   useEffect(() => {
     setIndex(0);
     setSelected(null);
-  }, [questions]);
+  }, [shuffleOn]);
+
+  useEffect(() => {
+    setSelected(null);
+  }, [question]);
 
   const answered = selected !== null;
-  const isCorrect = selected === question.correct;
+  const isCorrect = question ? selected === question.correct : false;
 
   const speakTimeoutRef = useRef(null);
 
@@ -46,8 +51,15 @@ export default function ConjugationPractice({ onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    setIndex((i) => i + 1);
+    if (shuffleOn) review.submit(isCorrect);
+    else setIndex((i) => i + 1);
+  };
+
+  const restart = () => {
+    review.restart();
+    setIndex(0);
     setSelected(null);
+    setScore({ correct: 0, total: 0 });
   };
 
   return (
@@ -57,7 +69,10 @@ export default function ConjugationPractice({ onBack }) {
           ← กลับ
         </button>
         <p className="progress-label">
-          {(index % questions.length) + 1} / {questions.length} · คะแนน {score.correct}/{score.total}
+          {shuffleOn
+            ? `ผันถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`
+            : `${(index % BASE_QUESTIONS.length) + 1} / ${BASE_QUESTIONS.length}`}{" "}
+          · คะแนน {score.correct}/{score.total}
         </p>
       </div>
 
@@ -67,48 +82,57 @@ export default function ConjugationPractice({ onBack }) {
         <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
-      <div className="practice-card blue">
-        <div className="verb-card">
-          <p className="jp-text verb-dict" onClick={() => speak(question.verb.dict, { rate: 0.8 })} role="button" tabIndex={0}>
-            {question.verb.dict} 🔊
-          </p>
-          <p className="verb-group th-text">{groupLabel(question.verb.group)}</p>
-          {showThai && <p className="th-text verb-meaning">{question.verb.meaningTh}</p>}
+      {finished ? (
+        <div className="practice-card blue">
+          <p className="th-text conversation-complete">เก่งมาก! คุณผันกริยาถูกครบทุกข้อในชุดนี้แล้ว 🎉🌸</p>
+          <button className="btn btn-success btn-sm" onClick={restart}>
+            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
+          </button>
         </div>
-
-        <p className="th-text conjugation-instruction">
-          จงผัน <span className="jp-text">{question.verb.dict}</span> เป็นรูป <span className="jp-text">{question.formLabel}</span>
-        </p>
-
-        <div className="quiz-options">
-          {question.options.map((opt) => {
-            let cls = "quiz-option";
-            if (answered) {
-              if (opt === question.correct) cls += " correct";
-              else if (opt === selected) cls += " incorrect";
-            }
-            return (
-              <button key={opt} className={cls} onClick={() => choose(opt)} disabled={answered}>
-                <span className="jp-text">{opt}</span>
-              </button>
-            );
-          })}
-        </div>
-
-        {showRomaji && <p className="flashcard-romaji">{question.correctRomaji}</p>}
-
-        {answered && (
-          <>
-            <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
-              {isCorrect ? "ถูกต้อง! เก่งมาก 🎉" : "ยังไม่ถูก ลองอ่านคำอธิบายด้านล่าง 💪"}
+      ) : (
+        <div className="practice-card blue">
+          <div className="verb-card">
+            <p className="jp-text verb-dict" onClick={() => speak(question.verb.dict, { rate: 0.8 })} role="button" tabIndex={0}>
+              {question.verb.dict} 🔊
             </p>
-            <p className="explanation-box th-text">💡 {question.explanation}</p>
-            <button className="btn btn-success btn-sm" onClick={next}>
-              ข้อถัดไป →
-            </button>
-          </>
-        )}
-      </div>
+            <p className="verb-group th-text">{groupLabel(question.verb.group)}</p>
+            {showThai && <p className="th-text verb-meaning">{question.verb.meaningTh}</p>}
+          </div>
+
+          <p className="th-text conjugation-instruction">
+            จงผัน <span className="jp-text">{question.verb.dict}</span> เป็นรูป <span className="jp-text">{question.formLabel}</span>
+          </p>
+
+          <div className="quiz-options">
+            {question.options.map((opt) => {
+              let cls = "quiz-option";
+              if (answered) {
+                if (opt === question.correct) cls += " correct";
+                else if (opt === selected) cls += " incorrect";
+              }
+              return (
+                <button key={opt} className={cls} onClick={() => choose(opt)} disabled={answered}>
+                  <span className="jp-text">{opt}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {showRomaji && <p className="flashcard-romaji">{question.correctRomaji}</p>}
+
+          {answered && (
+            <>
+              <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
+                {isCorrect ? "ถูกต้อง! เก่งมาก 🎉" : "ยังไม่ถูก ลองอ่านคำอธิบายด้านล่าง 💪"}
+              </p>
+              <p className="explanation-box th-text">💡 {question.explanation}</p>
+              <button className="btn btn-success btn-sm" onClick={next}>
+                ข้อถัดไป →
+              </button>
+            </>
+          )}
+        </div>
+      )}
     </div>
   );
 }

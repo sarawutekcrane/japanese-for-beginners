@@ -3,6 +3,9 @@ import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
 import { shuffle as shuffleArr } from "../../utils/content";
 import { playCorrect as playCorrectSound, playIncorrect as playIncorrectSound } from "../../utils/sound";
+import { useReviewQueue } from "../../utils/reviewQueue";
+
+const EMPTY = [];
 
 function makeItems(chunks) {
   return shuffleArr(chunks.map((text, i) => ({ key: `${i}-${text}`, text })));
@@ -14,26 +17,29 @@ export default function WordOrderPractice({ pattern, onBack }) {
   const [showRomaji, setShowRomaji] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
 
-  const questions = useMemo(
-    () => (shuffleOn ? shuffleArr(pattern.wordOrderQuestions) : pattern.wordOrderQuestions),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [pattern, shuffleOn]
-  );
-
+  const baseQuestions = useMemo(() => pattern.wordOrderQuestions, [pattern]);
+  const review = useReviewQueue(shuffleOn ? baseQuestions : EMPTY);
   const [index, setIndex] = useState(0);
-  const question = questions[index % questions.length];
+  const finished = shuffleOn && review.finished;
+  const question = shuffleOn ? review.current : baseQuestions[index % baseQuestions.length];
 
-  const [poolItems, setPoolItems] = useState(() => makeItems(question.chunks));
+  const [poolItems, setPoolItems] = useState(() => (question ? makeItems(question.chunks) : []));
   const [answerItems, setAnswerItems] = useState([]);
   const [submitted, setSubmitted] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
 
   useEffect(() => {
+    if (!question) return;
     setPoolItems(makeItems(question.chunks));
     setAnswerItems([]);
     setSubmitted(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [question]);
+
+  useEffect(() => {
+    setIndex(0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pattern, shuffleOn]);
 
   const tapPool = (item) => {
     if (submitted) return;
@@ -67,7 +73,14 @@ export default function WordOrderPractice({ pattern, onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    setIndex((i) => i + 1);
+    if (shuffleOn) review.submit(isCorrect);
+    else setIndex((i) => i + 1);
+  };
+
+  const restart = () => {
+    review.restart();
+    setIndex(0);
+    setScore({ correct: 0, total: 0 });
   };
 
   const playCorrect = () => speak(question.correctOrder.join(""), { rate: 0.8 });
@@ -82,7 +95,10 @@ export default function WordOrderPractice({ pattern, onBack }) {
           {pattern.order}. {pattern.title}
         </h3>
         <p className="progress-label">
-          {(index % questions.length) + 1} / {questions.length} · คะแนน {score.correct}/{score.total}
+          {shuffleOn
+            ? `เรียงถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`
+            : `${(index % baseQuestions.length) + 1} / ${baseQuestions.length}`}{" "}
+          · คะแนน {score.correct}/{score.total}
         </p>
       </div>
 
@@ -91,54 +107,63 @@ export default function WordOrderPractice({ pattern, onBack }) {
         <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
-      <div className="practice-card">
-        <p className="th-text word-order-prompt">{question.promptThai}</p>
-
-        {showRomaji && (
-          <div className="word-order-hint">
-            <p className="flashcard-romaji">{question.romaji}</p>
-          </div>
-        )}
-
-        <div className="answer-slot">
-          {answerItems.length === 0 && <span className="answer-slot-hint th-text">แตะคำด้านล่างตามลำดับ</span>}
-          {answerItems.map((item) => (
-            <button key={item.key} className="chunk-pill placed jp-text" onClick={() => tapAnswer(item)} disabled={submitted}>
-              {item.text}
-            </button>
-          ))}
-        </div>
-
-        <div className="chunk-pool">
-          {poolItems.map((item) => (
-            <button key={item.key} className="chunk-pill jp-text" onClick={() => tapPool(item)} disabled={submitted}>
-              {item.text}
-            </button>
-          ))}
-        </div>
-
-        {!submitted ? (
-          <button className="btn btn-success" onClick={submit} disabled={poolItems.length > 0}>
-            ตรวจคำตอบ
+      {finished ? (
+        <div className="practice-card">
+          <p className="th-text conversation-complete">เก่งมาก! คุณเรียงประโยคถูกครบทุกข้อในชุดนี้แล้ว 🎉🌸</p>
+          <button className="btn btn-success btn-sm" onClick={restart}>
+            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
           </button>
-        ) : (
-          <>
-            <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
-              {isCorrect ? "เก่งมาก! เรียงถูกต้อง 🎉" : "ยังไม่ถูกนะ ลองดูเฉลยด้านล่าง 💪"}
-            </p>
-            <div className="quiz-reveal">
-              <p className="jp-text">{question.correctOrder.join(" ")}</p>
+        </div>
+      ) : (
+        <div className="practice-card">
+          <p className="th-text word-order-prompt">{question.promptThai}</p>
+
+          {showRomaji && (
+            <div className="word-order-hint">
+              <p className="flashcard-romaji">{question.romaji}</p>
             </div>
-            <button className="btn btn-outline btn-sm" onClick={playCorrect}>
-              🔊 ฟังประโยคที่ถูกต้อง
+          )}
+
+          <div className="answer-slot">
+            {answerItems.length === 0 && <span className="answer-slot-hint th-text">แตะคำด้านล่างตามลำดับ</span>}
+            {answerItems.map((item) => (
+              <button key={item.key} className="chunk-pill placed jp-text" onClick={() => tapAnswer(item)} disabled={submitted}>
+                {item.text}
+              </button>
+            ))}
+          </div>
+
+          <div className="chunk-pool">
+            {poolItems.map((item) => (
+              <button key={item.key} className="chunk-pill jp-text" onClick={() => tapPool(item)} disabled={submitted}>
+                {item.text}
+              </button>
+            ))}
+          </div>
+
+          {!submitted ? (
+            <button className="btn btn-success" onClick={submit} disabled={poolItems.length > 0}>
+              ตรวจคำตอบ
             </button>
-            <p className="explanation-box th-text">💡 {question.explanation}</p>
-            <button className="btn btn-success btn-sm" onClick={next}>
-              ข้อถัดไป →
-            </button>
-          </>
-        )}
-      </div>
+          ) : (
+            <>
+              <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
+                {isCorrect ? "เก่งมาก! เรียงถูกต้อง 🎉" : "ยังไม่ถูกนะ ลองดูเฉลยด้านล่าง 💪"}
+              </p>
+              <div className="quiz-reveal">
+                <p className="jp-text">{question.correctOrder.join(" ")}</p>
+              </div>
+              <button className="btn btn-outline btn-sm" onClick={playCorrect}>
+                🔊 ฟังประโยคที่ถูกต้อง
+              </button>
+              <p className="explanation-box th-text">💡 {question.explanation}</p>
+              <button className="btn btn-success btn-sm" onClick={next}>
+                ข้อถัดไป →
+              </button>
+            </>
+          )}
+        </div>
+      )}
     </div>
   );
 }

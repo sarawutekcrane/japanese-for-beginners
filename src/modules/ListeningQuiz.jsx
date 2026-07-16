@@ -1,9 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
 import { playKanaAudio } from "../utils/kanaAudio";
+import { useReviewQueue } from "../utils/reviewQueue";
+
+const EMPTY = [];
 
 function PoolPicker({ onPick }) {
   return (
@@ -33,8 +36,7 @@ function PoolPicker({ onPick }) {
   );
 }
 
-function buildQuestion(pool, cursor, shuffleOn) {
-  const answer = shuffleOn ? pool[Math.floor(Math.random() * pool.length)] : pool[cursor % pool.length];
+function buildQuestion(pool, answer) {
   const distractors = sample(
     pool.filter((p) => p.id !== answer.id),
     3
@@ -52,15 +54,20 @@ function QuizView({ selection, onBack }) {
   });
 
   const [cursor, setCursor] = useState(0);
-  const [question, setQuestion] = useState(() => buildQuestion(pool, 0, shuffleOn));
+  const review = useReviewQueue(shuffleOn ? pool : EMPTY);
+  const activeAnswer = shuffleOn ? review.current : pool[cursor % pool.length];
+
   const [selectedId, setSelectedId] = useState(null);
   const [revealed, setRevealed] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
   const [showThai, setShowThai] = useState(false);
   const [showRomaji, setShowRomaji] = useState(false);
 
-  const isCorrect = selectedId === question.answer.id;
+  const question = useMemo(() => (activeAnswer ? buildQuestion(pool, activeAnswer) : null), [pool, activeAnswer]);
+
+  const isCorrect = question && selectedId === question.answer.id;
   const answered = selectedId !== null;
+  const finished = shuffleOn && review.finished;
 
   // Auto-reveal the Thai translation and Japanese reading on a correct
   // answer, as if the toggles below were switched on.
@@ -81,6 +88,12 @@ function QuizView({ selection, onBack }) {
 
   useEffect(() => () => clearTimeout(speakTimeoutRef.current), []);
 
+  useEffect(() => {
+    setSelectedId(null);
+    setRevealed(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [shuffleOn]);
+
   const choose = (opt) => {
     if (answered) return;
     setSelectedId(opt.id);
@@ -93,9 +106,15 @@ function QuizView({ selection, onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    const nextCursor = cursor + 1;
-    setCursor(nextCursor);
-    setQuestion(buildQuestion(pool, nextCursor, shuffleOn));
+    if (shuffleOn) review.submit(isCorrect);
+    else setCursor((c) => c + 1);
+    setSelectedId(null);
+    setRevealed(false);
+  };
+
+  const restart = () => {
+    review.restart();
+    setScore({ correct: 0, total: 0 });
     setSelectedId(null);
     setRevealed(false);
   };
@@ -108,64 +127,74 @@ function QuizView({ selection, onBack }) {
 
       <p className="progress-label">
         {selection.label} · คะแนน {score.correct} / {score.total}
+        {shuffleOn && ` · ตอบถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`}
       </p>
 
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่มลำดับคำถาม (Shuffle)" checked={shuffleOn} onChange={setShuffleOn} />
       </div>
 
-      <div className="quiz-card">
-        <button className="btn btn-round btn-blue" onClick={() => play()} aria-label="เล่นเสียง">
-          🔊
-        </button>
-        <p className="th-text quiz-instruction">ฟังเสียงแล้วเลือกตัวอักษร/คำที่ตรงกัน</p>
-
-        <div className="quiz-options">
-          {question.options.map((opt) => {
-            let cls = "quiz-option";
-            if (answered) {
-              if (opt.id === question.answer.id) cls += " correct";
-              else if (opt.id === selectedId) cls += " incorrect";
-            }
-            return (
-              <button key={opt.id} className={cls} onClick={() => choose(opt)} disabled={answered}>
-                <span className="jp-text">{opt.display}</span>
-                {effectiveShowRomaji && <span className="quiz-option-hint">{opt.romaji}</span>}
-                {effectiveShowThai && <span className="quiz-option-hint th-text">{opt.thai}</span>}
-              </button>
-            );
-          })}
-        </div>
-
-        <div className="toggle-group blue">
-          <Toggle label={selection.kind === "kana" ? "แสดงคำอ่านไทย" : "แสดงคำแปลภาษาไทย"} checked={showThai} onChange={setShowThai} />
-          <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
-        </div>
-
-        {answered && (
-          <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
-            {isCorrect ? "เก่งมาก! ถูกต้อง 🎉" : "ยังไม่ถูกนะ ลองฟังใหม่อีกครั้ง 💪"}
-          </p>
-        )}
-
-        {effectiveRevealed && (
-          <p className="quiz-reveal jp-text">
-            เฉลย: {question.answer.display}
-            {question.answer.romaji ? ` (${question.answer.romaji})` : ""}
-          </p>
-        )}
-
-        <div className="quiz-actions">
-          <button className="btn btn-outline btn-sm" onClick={() => setRevealed(true)}>
-            เฉลยคำตอบ
+      {finished ? (
+        <div className="quiz-card">
+          <p className="th-text conversation-complete">เก่งมาก! คุณตอบถูกครบทุกคำในชุดนี้แล้ว 🎉🌸</p>
+          <button className="btn btn-success btn-sm" onClick={restart}>
+            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
           </button>
-          {answered && (
-            <button className="btn btn-success btn-sm" onClick={next}>
-              ข้อถัดไป →
-            </button>
-          )}
         </div>
-      </div>
+      ) : (
+        <div className="quiz-card">
+          <button className="btn btn-round btn-blue" onClick={() => play()} aria-label="เล่นเสียง">
+            🔊
+          </button>
+          <p className="th-text quiz-instruction">ฟังเสียงแล้วเลือกตัวอักษร/คำที่ตรงกัน</p>
+
+          <div className="quiz-options">
+            {question.options.map((opt) => {
+              let cls = "quiz-option";
+              if (answered) {
+                if (opt.id === question.answer.id) cls += " correct";
+                else if (opt.id === selectedId) cls += " incorrect";
+              }
+              return (
+                <button key={opt.id} className={cls} onClick={() => choose(opt)} disabled={answered}>
+                  <span className="jp-text">{opt.display}</span>
+                  {effectiveShowRomaji && <span className="quiz-option-hint">{opt.romaji}</span>}
+                  {effectiveShowThai && <span className="quiz-option-hint th-text">{opt.thai}</span>}
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="toggle-group blue">
+            <Toggle label={selection.kind === "kana" ? "แสดงคำอ่านไทย" : "แสดงคำแปลภาษาไทย"} checked={showThai} onChange={setShowThai} />
+            <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
+          </div>
+
+          {answered && (
+            <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
+              {isCorrect ? "เก่งมาก! ถูกต้อง 🎉" : "ยังไม่ถูกนะ ลองฟังใหม่อีกครั้ง 💪"}
+            </p>
+          )}
+
+          {effectiveRevealed && (
+            <p className="quiz-reveal jp-text">
+              เฉลย: {question.answer.display}
+              {question.answer.romaji ? ` (${question.answer.romaji})` : ""}
+            </p>
+          )}
+
+          <div className="quiz-actions">
+            <button className="btn btn-outline btn-sm" onClick={() => setRevealed(true)}>
+              เฉลยคำตอบ
+            </button>
+            {answered && (
+              <button className="btn btn-success btn-sm" onClick={next}>
+                ข้อถัดไป →
+              </button>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
