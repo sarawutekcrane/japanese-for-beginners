@@ -1,8 +1,8 @@
 const SECTIONS = [
   { id: "lesson", emoji: "📖", title: "แพทเทิร์นประโยค", subtitle: "โครงสร้าง คำช่วย & ตัวอย่างประโยค", color: "pink" },
-  { id: "conjugationLesson", emoji: "🈺", title: "สอนและอธิบายวิธีการผันกริยา", subtitle: "กฎการผันตามกลุ่มกริยา", color: "blue" },
-  { id: "conjugationPractice", emoji: "✏️", title: "ฝึกผันกริยา", subtitle: "เลือกรูปผันที่ถูกต้อง", color: "pink" },
   { id: "wordorder", emoji: "🧩", title: "ฝึกเรียงประโยค", subtitle: "แตะคำให้เรียงถูกลำดับ", color: "blue" },
+  { id: "conjugationLesson", emoji: "🈺", title: "สอนและอธิบายวิธีการผันกริยา", subtitle: "กฎการผันตามกลุ่มกริยา", color: "pink" },
+  { id: "conjugationPractice", emoji: "✏️", title: "ฝึกผันกริยา", subtitle: "เลือกรูปผันที่ถูกต้อง", color: "blue" },
   { id: "counterLesson", emoji: "🔢", title: "สอนและอธิบายตัวนับ", subtitle: "助数詞 นับคน สัตว์ สิ่งของ", color: "pink" },
   { id: "counterPractice", emoji: "🧮", title: "ฝึกใช้ตัวนับ", subtitle: "เลือกตัวนับที่ถูกต้อง", color: "blue" },
   { id: "adjectiveLesson", emoji: "🎨", title: "สอนและอธิบายคำคุณศัพท์", subtitle: "い-adjective & な-adjective", color: "pink" },
