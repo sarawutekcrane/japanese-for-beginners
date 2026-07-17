@@ -143,6 +143,8 @@ function SpeakingView({ category, onBack }) {
 
       <div className="toggle-group">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
+        <Toggle label="แปล" checked={showThai} onChange={setShowThai} />
+        <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
       {finished ? (
@@ -195,11 +197,6 @@ function SpeakingView({ category, onBack }) {
 
           {effectiveShowRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
           {effectiveShowThai && <p className="flashcard-thai th-text">{card.thai}</p>}
-
-          <div className="toggle-group">
-            <Toggle label="แปล" checked={showThai} onChange={setShowThai} />
-            <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
-          </div>
 
           <div className="quiz-actions">
             <button className="btn btn-success btn-sm" onClick={next}>

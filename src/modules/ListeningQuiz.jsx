@@ -135,6 +135,8 @@ function QuizView({ selection, onBack }) {
 
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
+        <Toggle label="แปล" checked={showThai} onChange={setShowThai} />
+        <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
       {finished ? (
@@ -166,11 +168,6 @@ function QuizView({ selection, onBack }) {
                 </button>
               );
             })}
-          </div>
-
-          <div className="toggle-group blue">
-            <Toggle label="แปล" checked={showThai} onChange={setShowThai} />
-            <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
           </div>
 
           {answered && (
