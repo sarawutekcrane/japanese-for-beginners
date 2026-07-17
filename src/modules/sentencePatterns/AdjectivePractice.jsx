@@ -78,9 +78,9 @@ export default function AdjectivePractice({ onBack }) {
       </div>
 
       <div className="toggle-group blue">
-        <Toggle emoji="🔀" label="สุ่มลำดับคำถาม" checked={shuffleOn} onChange={setShuffleOn} />
-        <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
-        <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
+        <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
+        <Toggle label="แปล" checked={showThai} onChange={setShowThai} />
+        <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
       {finished ? (

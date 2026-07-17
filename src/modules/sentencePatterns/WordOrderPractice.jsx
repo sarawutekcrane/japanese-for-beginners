@@ -106,8 +106,8 @@ export default function WordOrderPractice({ pattern, onBack }) {
       </div>
 
       <div className="toggle-group">
-        <Toggle emoji="🔀" label="สุ่มลำดับคำถาม" checked={shuffleOn} onChange={setShuffleOn} />
-        <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
+        <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
+        <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
       {finished ? (

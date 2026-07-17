@@ -116,8 +116,8 @@ function DialogueView({ topic, onBack }) {
       </p>
 
       <div className="toggle-group blue">
-        <Toggle label="แสดงคำแปลภาษาไทย" checked={showThai} onChange={setShowThai} />
-        <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
+        <Toggle label="แปล" checked={showThai} onChange={setShowThai} />
+        <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
       <div className="conversation-history scroll-x-safe">

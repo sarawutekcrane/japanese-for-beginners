@@ -98,7 +98,7 @@ function FlashcardView({ selection, onBack }) {
       </p>
 
       <div className="toggle-group">
-        <Toggle emoji="🔀" label="สุ่มลำดับการ์ด (Shuffle)" checked={shuffleOn} onChange={setShuffleOn} />
+        <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
       </div>
 
       {completed ? (
@@ -123,8 +123,8 @@ function FlashcardView({ selection, onBack }) {
           </div>
 
           <div className="toggle-group">
-            <Toggle label={card.kind === "kana" ? "แสดงคำอ่านไทย" : "แสดงคำแปลภาษาไทย"} checked={showThai} onChange={setShowThai} />
-            <Toggle label="แสดง Romaji" checked={showRomaji} onChange={setShowRomaji} />
+            <Toggle label="แปล" checked={showThai} onChange={setShowThai} />
+            <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
           </div>
 
           <div className="flashcard-nav">

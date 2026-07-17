@@ -15,8 +15,8 @@ export default function SettingsPanel({ onClose }) {
         </div>
 
         <div className="toggle-group">
-          <Toggle label="แสดงคันจิ (Kanji)" checked={showKanji} onChange={setShowKanji} />
-          {showKanji && <Toggle label="แสดงฟุริงานะ (Furigana)" checked={showFurigana} onChange={setShowFurigana} />}
+          <Toggle label="คันจิ" checked={showKanji} onChange={setShowKanji} />
+          {showKanji && <Toggle label="เสียงอ่าน" checked={showFurigana} onChange={setShowFurigana} />}
         </div>
 
         <p className="th-text settings-note">
