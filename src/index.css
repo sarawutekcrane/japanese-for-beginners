@@ -447,6 +447,46 @@ button {
   gap: 10px;
 }
 
+.vocab-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+}
+
+.vocab-card {
+  border: 3px solid var(--pink);
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.vocab-card:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.vocab-card:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.vocab-emoji {
+  font-size: 2rem;
+}
+
+.vocab-label {
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: var(--pink-text);
+  text-align: center;
+  line-height: 1.25;
+}
+
 /* ---------- Flashcards ---------- */
 .flashcards-view {
   display: flex;

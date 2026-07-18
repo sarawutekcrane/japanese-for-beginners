@@ -26,10 +26,11 @@ function PoolPicker({ onPick }) {
       </section>
       <section className="picker-section">
         <h3 className="picker-heading">📚 คำศัพท์ (Vocabulary)</h3>
-        <div className="picker-row">
+        <div className="vocab-grid">
           {VOCAB_CATEGORIES.map((c) => (
-            <button key={c.id} className="btn btn-sm" onClick={() => onPick({ kind: "vocab", category: c.id, label: c.label })}>
-              {c.emoji} {c.label}
+            <button key={c.id} className="vocab-card" onClick={() => onPick({ kind: "vocab", category: c.id, label: c.label })}>
+              <span className="vocab-emoji">{c.emoji}</span>
+              <span className="vocab-label">{c.label}</span>
             </button>
           ))}
         </div>
