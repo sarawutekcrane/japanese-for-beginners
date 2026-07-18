@@ -12,7 +12,6 @@ const EMPTY = [];
 export default function CounterPractice({ onBack }) {
   const { speak } = useSpeak();
   const [shuffleOn, setShuffleOn] = useState(false);
-  const [showThai, setShowThai] = useState(false);
   const [showRomaji, setShowRomaji] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
 
@@ -79,7 +78,6 @@ export default function CounterPractice({ onBack }) {
 
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
-        <Toggle label="แปล" checked={showThai} onChange={setShowThai} />
         <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
@@ -94,7 +92,6 @@ export default function CounterPractice({ onBack }) {
         <div className="practice-card blue">
           <div className="verb-card">
             <p className="th-text word-order-prompt">{question.promptTh}</p>
-            {showThai && <p className="th-text verb-meaning">{question.counter.usageTh}</p>}
           </div>
 
           <p className="th-text conjugation-instruction">เลือกคำนับที่ถูกต้อง</p>
@@ -118,7 +115,7 @@ export default function CounterPractice({ onBack }) {
           {answered && (
             <>
               <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
-                {isCorrect ? "ถูกต้อง! เก่งมาก 🎉" : "ยังไม่ถูก ลองดูเฉลยด้านบน 💪"}
+                {isCorrect ? "ถูกต้อง! เก่งมาก 🎉" : "ยังไม่ถูก คำตอบที่ถูกต้องคือตัวเลือกสีเขียว 💪"}
               </p>
               <button className="btn btn-success btn-sm" onClick={next}>
                 ข้อถัดไป →

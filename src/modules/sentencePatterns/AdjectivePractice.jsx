@@ -130,7 +130,7 @@ export default function AdjectivePractice({ onBack }) {
           {answered && (
             <>
               <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
-                {isCorrect ? "ถูกต้อง! เก่งมาก 🎉" : "ยังไม่ถูก ลองดูเฉลยด้านบน 💪"}
+                {isCorrect ? "ถูกต้อง! เก่งมาก 🎉" : "ยังไม่ถูก คำตอบที่ถูกต้องคือตัวเลือกสีเขียว 💪"}
               </p>
               <button className="btn btn-success btn-sm" onClick={next}>
                 ข้อถัดไป →
