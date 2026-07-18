@@ -109,12 +109,11 @@ export default function CounterPractice({ onBack }) {
               return (
                 <button key={opt} className={cls} onClick={() => choose(opt)} disabled={answered}>
                   <JapaneseText className="jp-text" kana={opt} kanji={kanjiForCount(opt)} />
+                  {showRomaji && <span className="quiz-option-hint">{question.optionRomaji[opt]}</span>}
                 </button>
               );
             })}
           </div>
-
-          {showRomaji && <p className="flashcard-romaji">{question.correctRomaji}</p>}
 
           {answered && (
             <>

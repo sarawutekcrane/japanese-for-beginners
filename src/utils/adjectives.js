@@ -43,8 +43,13 @@ export function typeLabel(type) {
 export function buildAdjectiveQuestion(adj, field) {
   const correct = adj.forms[field].japanese;
   const correctRomaji = adj.forms[field].romaji;
-  const distractors = FORM_FIELDS.filter((f) => f !== field).map((f) => adj.forms[f].japanese);
-  const options = shuffle([correct, ...distractors]);
+  const otherFields = FORM_FIELDS.filter((f) => f !== field);
+  const optionPairs = shuffle([
+    { text: correct, romaji: correctRomaji },
+    ...otherFields.map((f) => ({ text: adj.forms[f].japanese, romaji: adj.forms[f].romaji })),
+  ]);
+  const options = optionPairs.map((p) => p.text);
+  const optionRomaji = Object.fromEntries(optionPairs.map((p) => [p.text, p.romaji]));
   return {
     id: `${adj.id}-${field}`,
     adj,
@@ -53,6 +58,7 @@ export function buildAdjectiveQuestion(adj, field) {
     correct,
     correctRomaji,
     options,
+    optionRomaji,
   };
 }
 

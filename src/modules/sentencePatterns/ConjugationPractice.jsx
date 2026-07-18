@@ -97,6 +97,7 @@ export default function ConjugationPractice({ onBack }) {
               <JapaneseText kana={question.verb.dict} kanji={kanjiForVerbForm(question.verb.dict)} /> 🔊
             </p>
             <p className="verb-group th-text">{groupLabel(question.verb.group)}</p>
+            {showRomaji && <p className="flashcard-romaji">{question.dictRomaji}</p>}
             {showThai && <p className="th-text verb-meaning">{question.verb.meaningTh}</p>}
           </div>
 
@@ -115,12 +116,11 @@ export default function ConjugationPractice({ onBack }) {
               return (
                 <button key={opt} className={cls} onClick={() => choose(opt)} disabled={answered}>
                   <JapaneseText className="jp-text" kana={opt} kanji={kanjiForVerbForm(opt)} />
+                  {showRomaji && <span className="quiz-option-hint">{question.optionRomaji[opt]}</span>}
                 </button>
               );
             })}
           </div>
-
-          {showRomaji && <p className="flashcard-romaji">{question.correctRomaji}</p>}
 
           {answered && (
             <>

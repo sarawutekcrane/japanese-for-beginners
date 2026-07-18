@@ -59,15 +59,19 @@ export function buildConjugationQuestion(verb, pattern) {
   const correct = verb[pattern.conjugationField] + suffix;
   const correctRomaji = verb.romaji[pattern.conjugationField] + suffixRomaji;
   const otherFields = shuffle(CONJUGATION_FIELDS.filter((f) => f !== pattern.conjugationField)).slice(0, 3);
-  const distractors = otherFields.map((f) => verb[f] + suffix);
-  const options = shuffle([correct, ...distractors]);
+  const distractorPairs = otherFields.map((f) => ({ text: verb[f] + suffix, romaji: verb.romaji[f] + suffixRomaji }));
+  const optionPairs = shuffle([{ text: correct, romaji: correctRomaji }, ...distractorPairs]);
+  const options = optionPairs.map((p) => p.text);
+  const optionRomaji = Object.fromEntries(optionPairs.map((p) => [p.text, p.romaji]));
   return {
     id: `${pattern.id}-${verb.id}`,
     verb,
     formLabel: pattern.formLabel,
     correct,
     correctRomaji,
+    dictRomaji: verb.romaji.dict,
     options,
+    optionRomaji,
     explanation: explanationFor(verb, pattern.conjugationField),
   };
 }

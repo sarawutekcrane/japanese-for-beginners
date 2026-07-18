@@ -3,6 +3,7 @@
     "id": "ookii",
     "type": "i",
     "dict": "おおきい",
+    "dictRomaji": "ookii",
     "meaningTh": "ใหญ่",
     "forms": {
       "affirmative": { "japanese": "おおきいです", "romaji": "ookii desu", "kanji": [{ "text": "大", "reading": "おお" }, { "text": "きいです" }] },
@@ -16,6 +17,7 @@
     "id": "chiisai",
     "type": "i",
     "dict": "ちいさい",
+    "dictRomaji": "chiisai",
     "meaningTh": "เล็ก",
     "forms": {
       "affirmative": { "japanese": "ちいさいです", "romaji": "chiisai desu", "kanji": [{ "text": "小", "reading": "ちい" }, { "text": "さいです" }] },
@@ -29,6 +31,7 @@
     "id": "takai",
     "type": "i",
     "dict": "たかい",
+    "dictRomaji": "takai",
     "meaningTh": "แพง / สูง",
     "forms": {
       "affirmative": { "japanese": "たかいです", "romaji": "takai desu", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いです" }] },
@@ -42,6 +45,7 @@
     "id": "yasui",
     "type": "i",
     "dict": "やすい",
+    "dictRomaji": "yasui",
     "meaningTh": "ถูก (ราคา)",
     "forms": {
       "affirmative": { "japanese": "やすいです", "romaji": "yasui desu", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "いです" }] },
@@ -55,6 +59,7 @@
     "id": "oishii",
     "type": "i",
     "dict": "おいしい",
+    "dictRomaji": "oishii",
     "meaningTh": "อร่อย",
     "forms": {
       "affirmative": { "japanese": "おいしいです", "romaji": "oishii desu" },
@@ -67,6 +72,7 @@
     "id": "atsui",
     "type": "i",
     "dict": "あつい",
+    "dictRomaji": "atsui",
     "meaningTh": "ร้อน",
     "forms": {
       "affirmative": { "japanese": "あついです", "romaji": "atsui desu", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いです" }] },
@@ -80,6 +86,7 @@
     "id": "samui",
     "type": "i",
     "dict": "さむい",
+    "dictRomaji": "samui",
     "meaningTh": "หนาว",
     "forms": {
       "affirmative": { "japanese": "さむいです", "romaji": "samui desu", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "いです" }] },
@@ -93,6 +100,7 @@
     "id": "atarashii",
     "type": "i",
     "dict": "あたらしい",
+    "dictRomaji": "atarashii",
     "meaningTh": "ใหม่",
     "forms": {
       "affirmative": { "japanese": "あたらしいです", "romaji": "atarashii desu", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しいです" }] },
@@ -106,6 +114,7 @@
     "id": "furui",
     "type": "i",
     "dict": "ふるい",
+    "dictRomaji": "furui",
     "meaningTh": "เก่า",
     "forms": {
       "affirmative": { "japanese": "ふるいです", "romaji": "furui desu", "kanji": [{ "text": "古", "reading": "ふる" }, { "text": "いです" }] },
@@ -119,6 +128,7 @@
     "id": "hayai",
     "type": "i",
     "dict": "はやい",
+    "dictRomaji": "hayai",
     "meaningTh": "เร็ว",
     "forms": {
       "affirmative": { "japanese": "はやいです", "romaji": "hayai desu", "kanji": [{ "text": "早", "reading": "はや" }, { "text": "いです" }] },
@@ -132,6 +142,7 @@
     "id": "kirei",
     "type": "na",
     "dict": "きれい",
+    "dictRomaji": "kirei",
     "meaningTh": "สวย / สะอาด",
     "forms": {
       "affirmative": { "japanese": "きれいです", "romaji": "kirei desu" },
@@ -144,6 +155,7 @@
     "id": "shizuka",
     "type": "na",
     "dict": "しずか",
+    "dictRomaji": "shizuka",
     "meaningTh": "เงียบ",
     "forms": {
       "affirmative": { "japanese": "しずかです", "romaji": "shizuka desu", "kanji": [{ "text": "静", "reading": "しず" }, { "text": "かです" }] },
@@ -157,6 +169,7 @@
     "id": "genki",
     "type": "na",
     "dict": "げんき",
+    "dictRomaji": "genki",
     "meaningTh": "แข็งแรง / สดชื่น",
     "forms": {
       "affirmative": { "japanese": "げんきです", "romaji": "genki desu", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }] },
@@ -170,6 +183,7 @@
     "id": "benri",
     "type": "na",
     "dict": "べんり",
+    "dictRomaji": "benri",
     "meaningTh": "สะดวก",
     "forms": {
       "affirmative": { "japanese": "べんりです", "romaji": "benri desu", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "です" }] },
@@ -183,6 +197,7 @@
     "id": "yuumei",
     "type": "na",
     "dict": "ゆうめい",
+    "dictRomaji": "yuumei",
     "meaningTh": "มีชื่อเสียง",
     "forms": {
       "affirmative": { "japanese": "ゆうめいです", "romaji": "yuumei desu", "kanji": [{ "text": "有名", "reading": "ゆうめい" }, { "text": "です" }] },
@@ -196,6 +211,7 @@
     "id": "shinsetsu",
     "type": "na",
     "dict": "しんせつ",
+    "dictRomaji": "shinsetsu",
     "meaningTh": "ใจดี",
     "forms": {
       "affirmative": { "japanese": "しんせつです", "romaji": "shinsetsu desu", "kanji": [{ "text": "親切", "reading": "しんせつ" }, { "text": "です" }] },
@@ -209,6 +225,7 @@
     "id": "ii",
     "type": "irregular",
     "dict": "いい",
+    "dictRomaji": "ii",
     "meaningTh": "ดี",
     "forms": {
       "affirmative": { "japanese": "いいです", "romaji": "ii desu" },

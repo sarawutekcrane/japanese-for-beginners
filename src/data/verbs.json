@@ -12,6 +12,7 @@
     "te": "たべて",
     "tai": "たべたい",
     "romaji": {
+      "dict": "taberu",
       "masu": "tabemasu",
       "masen": "tabemasen",
       "mashita": "tabemashita",
@@ -42,6 +43,7 @@
     "te": "みて",
     "tai": "みたい",
     "romaji": {
+      "dict": "miru",
       "masu": "mimasu",
       "masen": "mimasen",
       "mashita": "mimashita",
@@ -72,6 +74,7 @@
     "te": "ねて",
     "tai": "ねたい",
     "romaji": {
+      "dict": "neru",
       "masu": "nemasu",
       "masen": "nemasen",
       "mashita": "nemashita",
@@ -102,6 +105,7 @@
     "te": "おきて",
     "tai": "おきたい",
     "romaji": {
+      "dict": "okiru",
       "masu": "okimasu",
       "masen": "okimasen",
       "mashita": "okimashita",
@@ -132,6 +136,7 @@
     "te": "のんで",
     "tai": "のみたい",
     "romaji": {
+      "dict": "nomu",
       "masu": "nomimasu",
       "masen": "nomimasen",
       "mashita": "nomimashita",
@@ -162,6 +167,7 @@
     "te": "いって",
     "tai": "いきたい",
     "romaji": {
+      "dict": "iku",
       "masu": "ikimasu",
       "masen": "ikimasen",
       "mashita": "ikimashita",
@@ -192,6 +198,7 @@
     "te": "かいて",
     "tai": "かきたい",
     "romaji": {
+      "dict": "kaku",
       "masu": "kakimasu",
       "masen": "kakimasen",
       "mashita": "kakimashita",
@@ -222,6 +229,7 @@
     "te": "よんで",
     "tai": "よみたい",
     "romaji": {
+      "dict": "yomu",
       "masu": "yomimasu",
       "masen": "yomimasen",
       "mashita": "yomimashita",
@@ -252,6 +260,7 @@
     "te": "はなして",
     "tai": "はなしたい",
     "romaji": {
+      "dict": "hanasu",
       "masu": "hanashimasu",
       "masen": "hanashimasen",
       "mashita": "hanashimashita",
@@ -282,6 +291,7 @@
     "te": "かって",
     "tai": "かいたい",
     "romaji": {
+      "dict": "kau",
       "masu": "kaimasu",
       "masen": "kaimasen",
       "mashita": "kaimashita",
@@ -312,6 +322,7 @@
     "te": "まって",
     "tai": "まちたい",
     "romaji": {
+      "dict": "matsu",
       "masu": "machimasu",
       "masen": "machimasen",
       "mashita": "machimashita",
@@ -342,6 +353,7 @@
     "te": "して",
     "tai": "したい",
     "romaji": {
+      "dict": "suru",
       "masu": "shimasu",
       "masen": "shimasen",
       "mashita": "shimashita",
@@ -363,6 +375,7 @@
     "te": "きて",
     "tai": "きたい",
     "romaji": {
+      "dict": "kuru",
       "masu": "kimasu",
       "masen": "kimasen",
       "mashita": "kimashita",
@@ -393,6 +406,7 @@
     "te": "いそいで",
     "tai": "いそぎたい",
     "romaji": {
+      "dict": "isogu",
       "masu": "isogimasu",
       "masen": "isogimasen",
       "mashita": "isogimashita",

@@ -102,6 +102,7 @@ export default function AdjectivePractice({ onBack }) {
               <JapaneseText kana={question.adj.dict} kanji={question.adj.kanji} /> 🔊
             </p>
             <p className="verb-group th-text">{typeLabel(question.adj.type)}</p>
+            {showRomaji && <p className="flashcard-romaji">{question.adj.dictRomaji}</p>}
             {showThai && <p className="th-text verb-meaning">{question.adj.meaningTh}</p>}
           </div>
 
@@ -120,12 +121,11 @@ export default function AdjectivePractice({ onBack }) {
               return (
                 <button key={opt} className={cls} onClick={() => choose(opt)} disabled={answered}>
                   <JapaneseText className="jp-text" kana={opt} kanji={kanjiForAdjective(opt)} />
+                  {showRomaji && <span className="quiz-option-hint">{question.optionRomaji[opt]}</span>}
                 </button>
               );
             })}
           </div>
-
-          {showRomaji && <p className="flashcard-romaji">{question.correctRomaji}</p>}
 
           {answered && (
             <>

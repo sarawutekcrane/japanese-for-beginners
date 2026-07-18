@@ -20,7 +20,9 @@ function buildCounterQuestion(counter, count, object) {
     counter.counts.filter((c) => c.n !== count.n),
     3
   );
-  const options = shuffle([count.japanese, ...distractors.map((d) => d.japanese)]);
+  const optionPairs = shuffle([count, ...distractors]);
+  const options = optionPairs.map((c) => c.japanese);
+  const optionRomaji = Object.fromEntries(optionPairs.map((c) => [c.japanese, c.romaji]));
   return {
     id: `${counter.id}-${count.n}`,
     counter,
@@ -30,6 +32,7 @@ function buildCounterQuestion(counter, count, object) {
     correct: count.japanese,
     correctRomaji: count.romaji,
     options,
+    optionRomaji,
   };
 }
 
