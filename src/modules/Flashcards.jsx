@@ -56,8 +56,6 @@ function FlashcardView({ selection, onBack }) {
 
   useEffect(() => {
     setIndex(0);
-    setShowThai(false);
-    setShowRomaji(false);
     setCompleted(false);
   }, [cards]);
 
@@ -80,8 +78,6 @@ function FlashcardView({ selection, onBack }) {
       if (delta === -1 && index === 0) return;
     }
     setIndex((i) => (i + delta + cards.length) % cards.length);
-    setShowThai(false);
-    setShowRomaji(false);
   };
 
   const restart = () => {
