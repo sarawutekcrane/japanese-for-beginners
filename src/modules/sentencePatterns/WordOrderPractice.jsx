@@ -9,7 +9,7 @@ import { useReviewQueue } from "../../utils/reviewQueue";
 const EMPTY = [];
 
 function makeItems(chunks) {
-  return shuffleArr(chunks.map((chunk, i) => ({ key: `${i}-${chunk.text}`, text: chunk.text, kanji: chunk.kanji })));
+  return shuffleArr(chunks.map((chunk, i) => ({ key: `${i}-${chunk.text}`, text: chunk.text, kanji: chunk.kanji, romaji: chunk.romaji })));
 }
 
 export default function WordOrderPractice({ pattern, onBack }) {
@@ -121,17 +121,12 @@ export default function WordOrderPractice({ pattern, onBack }) {
         <div className="practice-card">
           <p className="th-text word-order-prompt">{question.promptThai}</p>
 
-          {showRomaji && (
-            <div className="word-order-hint">
-              <p className="flashcard-romaji">{question.romaji}</p>
-            </div>
-          )}
-
           <div className="answer-slot">
             {answerItems.length === 0 && <span className="answer-slot-hint th-text">แตะคำด้านล่างตามลำดับ</span>}
             {answerItems.map((item) => (
               <button key={item.key} className="chunk-pill placed jp-text" onClick={() => tapAnswer(item)} disabled={submitted}>
                 <JapaneseText kana={item.text} kanji={item.kanji} />
+                {showRomaji && <span className="chunk-romaji-hint">{item.romaji}</span>}
               </button>
             ))}
           </div>
@@ -140,6 +135,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
             {poolItems.map((item) => (
               <button key={item.key} className="chunk-pill jp-text" onClick={() => tapPool(item)} disabled={submitted}>
                 <JapaneseText kana={item.text} kanji={item.kanji} />
+                {showRomaji && <span className="chunk-romaji-hint">{item.romaji}</span>}
               </button>
             ))}
           </div>

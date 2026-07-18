@@ -1097,14 +1097,6 @@ button {
   color: var(--ink);
 }
 
-.word-order-hint {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  align-items: center;
-  margin-top: -6px;
-}
-
 .answer-slot {
   width: 100%;
   min-height: 56px;
@@ -1141,12 +1133,22 @@ button {
   font-weight: 700;
   color: var(--ink);
   box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
 .chunk-pill.placed {
   background: var(--white);
   border-color: var(--blue-deep);
   color: var(--blue-text);
+}
+
+.chunk-romaji-hint {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-soft);
 }
 
 .explanation-box {
