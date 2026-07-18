@@ -158,6 +158,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
                     </span>
                   ))}
                 </p>
+                <p className="flashcard-romaji">{question.romaji}</p>
               </div>
               <button className="btn btn-outline btn-sm" onClick={playCorrect}>
                 🔊 ฟังประโยคที่ถูกต้อง
