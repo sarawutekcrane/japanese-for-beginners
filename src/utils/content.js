@@ -30,6 +30,7 @@ export const VOCAB_CATEGORIES = [
   { id: "shopping", label: "ช้อปปิ้ง", emoji: "🛒" },
   { id: "adjectivesI", label: "い-Adjectives (คำคุณศัพท์)", emoji: "🌡️" },
   { id: "adjectivesNa", label: "な-Adjectives (คำคุณศัพท์)", emoji: "🌸" },
+  { id: "verbs", label: "กริยา (どうし)", emoji: "🏃" },
 ];
 
 export function getKana(script) {
@@ -86,6 +87,7 @@ export function toCard(entry) {
     value: entry.value,
     hex: entry.hex,
     kanji: entry.kanji,
+    verbGroup: entry.verbGroup,
   };
 }
 

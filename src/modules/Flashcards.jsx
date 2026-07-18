@@ -6,6 +6,7 @@ import { useSpeak } from "../hooks/useSpeech";
 import { useSettings } from "../context/SettingsContext";
 import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
 import { playKanaAudio } from "../utils/kanaAudio";
+import { groupLabel } from "../utils/grammar";
 
 function CategoryPicker({ onPick }) {
   return (
@@ -119,6 +120,7 @@ function FlashcardView({ selection, onBack }) {
             {card.kind !== "kana" && (
               <JapaneseText as="p" className="flashcard-text jp-text" kana={card.display} kanji={card.kanji} />
             )}
+            {card.verbGroup != null && <p className="verb-group th-text">{groupLabel(card.verbGroup)}</p>}
             {showRomaji && <p className="flashcard-romaji">{card.romaji}</p>}
             {showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
             <p className="flashcard-hint th-text">แตะเพื่อฟังเสียง 🔊</p>

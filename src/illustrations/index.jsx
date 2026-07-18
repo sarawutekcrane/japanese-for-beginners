@@ -13,6 +13,7 @@ import { hobbiesIcons } from "./hobbies";
 import { shoppingIcons } from "./shopping";
 import { adjectivesIIcons } from "./adjectivesI";
 import { adjectivesNaIcons } from "./adjectivesNa";
+import { verbsIcons } from "./verbs";
 import NumberIllustration from "./NumberIllustration";
 import ColorIllustration from "./ColorIllustration";
 import KanaIllustration from "./KanaIllustration";
@@ -33,6 +34,7 @@ const VOCAB_ICONS = {
   ...shoppingIcons,
   ...adjectivesIIcons,
   ...adjectivesNaIcons,
+  ...verbsIcons,
 };
 
 /** Renders the correct flat-SVG illustration for a vocabulary or kana card. */
