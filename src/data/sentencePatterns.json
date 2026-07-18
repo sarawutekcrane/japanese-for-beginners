@@ -17,6 +17,34 @@
       {
         "particle": "へ",
         "role": "ตัวบ่งชี้ทิศทาง/จุดหมายปลายทาง (ใช้กับกริยาการเคลื่อนที่ เช่น いく)"
+      },
+      {
+        "particle": "に",
+        "role": "ตัวบ่งชี้จุดหมายปลายทาง จุดเวลาที่แน่นอน หรือผู้รับของการกระทำ (เช่น がっこうに いきます, 7じに おきます, ともだちに あげます)"
+      },
+      {
+        "particle": "で",
+        "role": "ตัวบ่งชี้สถานที่ที่เกิดการกระทำ หรือวิธี/พาหนะที่ใช้ (เช่น としょかんで べんきょうします, バスで いきます)"
+      },
+      {
+        "particle": "と",
+        "role": "แปลว่า 'กับ' หรือ 'และ' ใช้เชื่อมคนหรือคำนาม (เช่น ともだちと いきます)"
+      },
+      {
+        "particle": "から",
+        "role": "ตัวบ่งชี้จุดเริ่มต้น แปลว่า 'จาก' มักใช้คู่กับ まで (เช่น くじから はたらきます)"
+      },
+      {
+        "particle": "まで",
+        "role": "ตัวบ่งชี้จุดสิ้นสุด แปลว่า 'ถึง/จนถึง' มักใช้คู่กับ から (เช่น ごじまで はたらきます)"
+      },
+      {
+        "particle": "も",
+        "role": "แปลว่า 'ด้วย/เหมือนกัน' ใช้แทนที่ は เมื่อต้องการเน้นว่าสิ่งนี้ก็เช่นกัน (เช่น わたしも いきます)"
+      },
+      {
+        "particle": "の",
+        "role": "ตัวบ่งชี้ความเป็นเจ้าของ แปลว่า 'ของ' (เช่น わたしの ほん)"
       }
     ],
     "timeNote": "รูป ます เป็นรูป non-past ใช้ได้ทั้งปัจจุบันและอนาคต ความหมายที่แท้จริงขึ้นอยู่กับคำบอกเวลาในประโยค เช่น いま (ตอนนี้) = ปัจจุบัน, あした (พรุ่งนี้) = อนาคต ถ้าไม่มีคำบอกเวลาเลยมักหมายถึงเหตุการณ์ที่ทำเป็นประจำ",
@@ -40,6 +68,42 @@
         "romaji": "Ima koohii wo nomimasu.",
         "thai": "ตอนนี้ฉันดื่มกาแฟ",
         "kanji": [{ "text": "今", "reading": "いま" }, { "text": " " }, { "text": "コーヒーを" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "ろくじに おきます。",
+        "romaji": "Rokuji ni okimasu.",
+        "thai": "ฉันตื่นนอนตอน 6 โมง",
+        "kanji": [{ "text": "六", "reading": "ろく" }, { "text": "時", "reading": "じ" }, { "text": "に" }, { "text": " " }, { "text": "起", "reading": "お" }, { "text": "きます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "こうえんで あそびます。",
+        "romaji": "Kouen de asobimasu.",
+        "thai": "ฉันเล่นที่สวนสาธารณะ",
+        "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "で" }, { "text": " " }, { "text": "遊", "reading": "あそ" }, { "text": "びます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "ともだちと えいがを みます。",
+        "romaji": "Tomodachi to eiga wo mimasu.",
+        "thai": "ฉันดูหนังกับเพื่อน",
+        "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "と" }, { "text": " " }, { "text": "映画", "reading": "えいが" }, { "text": "を" }, { "text": " " }, { "text": "見", "reading": "み" }, { "text": "ます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "わたしの ほんを よみます。",
+        "romaji": "Watashi no hon wo yomimasu.",
+        "thai": "ฉันอ่านหนังสือของฉัน",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "の" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "くじから ごじまで はたらきます。",
+        "romaji": "Kuji kara goji made hatarakimasu.",
+        "thai": "ฉันทำงานตั้งแต่ 9 โมงถึง 5 โมง",
+        "kanji": [{ "text": "九", "reading": "く" }, { "text": "時", "reading": "じ" }, { "text": "から" }, { "text": " " }, { "text": "五", "reading": "ご" }, { "text": "時", "reading": "じ" }, { "text": "まで" }, { "text": " " }, { "text": "働", "reading": "はたら" }, { "text": "きます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "わたしも いきます。",
+        "romaji": "Watashi mo ikimasu.",
+        "thai": "ฉันก็จะไปด้วย",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きます" }, { "text": "。" }]
       }
     ],
     "wordOrderQuestions": [
@@ -184,6 +248,70 @@
         "romaji": "Watashi wa asa dokusho wo shimasu.",
         "thai": "ตอนเช้าฉันอ่านหนังสือ (เป็นงานอดิเรก)",
         "explanation": "どくしょを します เป็นวลีที่ใช้บอกว่า 'อ่านหนังสือเป็นงานอดิเรก' โดยใช้กริยา する"
+      },
+      {
+        "id": "affirmative-9",
+        "promptThai": "พูดว่า: ฉันตื่นนอนตอน 6 โมง",
+        "chunks": [
+          { "text": "ろくじに", "kanji": [{ "text": "六", "reading": "ろく" }, { "text": "時", "reading": "じ" }, { "text": "に" }] },
+          { "text": "おきます", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きます" }] }
+        ],
+        "correctOrder": [
+          "ろくじに",
+          "おきます"
+        ],
+        "romaji": "Rokuji ni okimasu.",
+        "thai": "ฉันตื่นนอนตอน 6 โมง",
+        "explanation": "に ใช้บอกจุดเวลาที่แน่นอนที่เหตุการณ์เกิดขึ้น เช่น เวลานาฬิกา"
+      },
+      {
+        "id": "affirmative-10",
+        "promptThai": "พูดว่า: ฉันเล่นที่สวนสาธารณะ",
+        "chunks": [
+          { "text": "こうえんで", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "で" }] },
+          { "text": "あそびます", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "びます" }] }
+        ],
+        "correctOrder": [
+          "こうえんで",
+          "あそびます"
+        ],
+        "romaji": "Kouen de asobimasu.",
+        "thai": "ฉันเล่นที่สวนสาธารณะ",
+        "explanation": "で ใช้บอกสถานที่ที่เกิดการกระทำ ต่างจาก へ/に ที่บอกจุดหมายปลายทาง"
+      },
+      {
+        "id": "affirmative-11",
+        "promptThai": "พูดว่า: ฉันดูหนังกับเพื่อน",
+        "chunks": [
+          { "text": "ともだちと", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "と" }] },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }] },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }] }
+        ],
+        "correctOrder": [
+          "ともだちと",
+          "えいがを",
+          "みます"
+        ],
+        "romaji": "Tomodachi to eiga wo mimasu.",
+        "thai": "ฉันดูหนังกับเพื่อน",
+        "explanation": "と ใช้เชื่อมคนที่ทำกิจกรรมด้วยกัน แปลว่า 'กับ'"
+      },
+      {
+        "id": "affirmative-12",
+        "promptThai": "พูดว่า: ฉันอ่านหนังสือของฉัน",
+        "chunks": [
+          { "text": "わたしの", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "の" }] },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }] },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }] }
+        ],
+        "correctOrder": [
+          "わたしの",
+          "ほんを",
+          "よみます"
+        ],
+        "romaji": "Watashi no hon wo yomimasu.",
+        "thai": "ฉันอ่านหนังสือของฉัน",
+        "explanation": "の ใช้บอกความเป็นเจ้าของ วางไว้ระหว่างเจ้าของกับสิ่งของ"
       }
     ],
     "formLabel": "ます",
@@ -366,6 +494,40 @@
         "romaji": "Kanojo wa geemu wo shimasen.",
         "thai": "เธอไม่เล่นเกม",
         "explanation": "โครงสร้างเดียวกับประโยคปฏิเสธทั่วไป เปลี่ยนแค่หัวข้อและกรรม"
+      },
+      {
+        "id": "negative-9",
+        "promptThai": "พูดว่า: ฉันก็ไม่ไปโรงเรียนเหมือนกัน",
+        "chunks": [
+          { "text": "わたしも", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }] },
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }] },
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }] }
+        ],
+        "correctOrder": [
+          "わたしも",
+          "がっこうへ",
+          "いきません"
+        ],
+        "romaji": "Watashi mo gakkou e ikimasen.",
+        "thai": "ฉันก็ไม่ไปโรงเรียนเหมือนกัน",
+        "explanation": "も ใช้แทนที่ は เมื่อต้องการบอกว่า 'เช่นกัน/ก็เหมือนกัน'"
+      },
+      {
+        "id": "negative-10",
+        "promptThai": "พูดว่า: วันอาทิตย์ฉันไม่ไปโรงเรียน",
+        "chunks": [
+          { "text": "にちようびは", "kanji": [{ "text": "日曜日", "reading": "にちようび" }, { "text": "は" }] },
+          { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }] },
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }] }
+        ],
+        "correctOrder": [
+          "にちようびは",
+          "がっこうに",
+          "いきません"
+        ],
+        "romaji": "Nichiyoubi wa gakkou ni ikimasen.",
+        "thai": "วันอาทิตย์ฉันไม่ไปโรงเรียน",
+        "explanation": "に ใช้บอกจุดหมายปลายทางได้เช่นเดียวกับ へ กับกริยาการเคลื่อนที่"
       }
     ],
     "formLabel": "ません",
@@ -554,6 +716,53 @@
         "romaji": "Anata wa mainichi supootsu wo shimasu ka.",
         "thai": "คุณเล่นกีฬาทุกวันไหม",
         "explanation": "まいにち (ทุกวัน) วางหลังหัวข้อเพื่อบอกความถี่ของการกระทำ"
+      },
+      {
+        "id": "question-masu-9",
+        "promptThai": "ถามว่า: คุณอ่านหนังสือที่ห้องสมุดไหม",
+        "chunks": [
+          { "text": "としょかんで", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "で" }] },
+          { "text": "べんきょうしますか", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "しますか" }] }
+        ],
+        "correctOrder": [
+          "としょかんで",
+          "べんきょうしますか"
+        ],
+        "romaji": "Toshokan de benkyou shimasu ka.",
+        "thai": "คุณเรียนที่ห้องสมุดไหม",
+        "explanation": "で ใช้บอกสถานที่ที่เกิดการกระทำ วางไว้หลังคำนามสถานที่"
+      },
+      {
+        "id": "question-masu-10",
+        "promptThai": "ถามว่า: คุณไปกับใคร",
+        "chunks": [
+          { "text": "だれと" },
+          { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }] }
+        ],
+        "correctOrder": [
+          "だれと",
+          "いきますか"
+        ],
+        "romaji": "Dare to ikimasu ka.",
+        "thai": "คุณไปกับใคร",
+        "explanation": "と ใช้เชื่อมคนที่ทำกิจกรรมด้วยกัน ที่นี้ใช้กับคำถาม だれ (ใคร)"
+      },
+      {
+        "id": "question-masu-11",
+        "promptThai": "ถามว่า: คุณทำงานตั้งแต่กี่โมงถึงกี่โมง",
+        "chunks": [
+          { "text": "なんじから", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "時", "reading": "じ" }, { "text": "から" }] },
+          { "text": "なんじまで", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "時", "reading": "じ" }, { "text": "まで" }] },
+          { "text": "はたらきますか", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きますか" }] }
+        ],
+        "correctOrder": [
+          "なんじから",
+          "なんじまで",
+          "はたらきますか"
+        ],
+        "romaji": "Nanji kara nanji made hatarakimasu ka.",
+        "thai": "คุณทำงานตั้งแต่กี่โมงถึงกี่โมง",
+        "explanation": "から ใช้บอกจุดเริ่มต้น และ まで ใช้บอกจุดสิ้นสุด มักใช้คู่กันเป็น から~まで"
       }
     ],
     "formLabel": "ますか",
@@ -734,6 +943,38 @@
         "romaji": "Ashita suupaa e ikimasen ka.",
         "thai": "พรุ่งนี้ไปซูเปอร์มาร์เก็ตด้วยกันไหม",
         "explanation": "คำบอกเวลาวางต้นประโยคได้เมื่อละหัวข้อไว้ เช่นเดียวกับตัวอย่างอื่น"
+      },
+      {
+        "id": "invitation-9",
+        "promptThai": "ชวนว่า: ดูหนังกับฉันไหม",
+        "chunks": [
+          { "text": "わたしと", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "と" }] },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }] },
+          { "text": "みませんか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんか" }] }
+        ],
+        "correctOrder": [
+          "わたしと",
+          "えいがを",
+          "みませんか"
+        ],
+        "romaji": "Watashi to eiga wo mimasen ka.",
+        "thai": "ดูหนังกับฉันไหม",
+        "explanation": "と ใช้ชวนให้ทำกิจกรรมร่วมกับผู้พูด แปลว่า 'กับ'"
+      },
+      {
+        "id": "invitation-10",
+        "promptThai": "ชวนว่า: ดื่มกาแฟด้วยกันไหม (เช่นกัน)",
+        "chunks": [
+          { "text": "コーヒーも" },
+          { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }] }
+        ],
+        "correctOrder": [
+          "コーヒーも",
+          "のみませんか"
+        ],
+        "romaji": "Koohii mo nomimasen ka.",
+        "thai": "ดื่มกาแฟด้วยกันไหม (เช่นกัน)",
+        "explanation": "も ใช้ชวนแบบ 'สิ่งนี้ก็เช่นกัน' เมื่อมีสิ่งอื่นถูกพูดถึงไปแล้วก่อนหน้า"
       }
     ],
     "formLabel": "ませんか",
@@ -918,6 +1159,70 @@
         "romaji": "Kanojo wa shashin wo torimashita.",
         "thai": "เธอถ่ายรูปแล้ว",
         "explanation": "とる เปลี่ยนเสียงท้ายเป็น り ก่อนเติม ました"
+      },
+      {
+        "id": "past-9",
+        "promptThai": "พูดว่า: ฉันตื่นนอนตอน 6 โมง (แล้ว)",
+        "chunks": [
+          { "text": "ろくじに", "kanji": [{ "text": "六", "reading": "ろく" }, { "text": "時", "reading": "じ" }, { "text": "に" }] },
+          { "text": "おきました", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きました" }] }
+        ],
+        "correctOrder": [
+          "ろくじに",
+          "おきました"
+        ],
+        "romaji": "Rokuji ni okimashita.",
+        "thai": "ฉันตื่นนอนตอน 6 โมง (แล้ว)",
+        "explanation": "に ยังคงบอกจุดเวลาที่แน่นอนได้เหมือนเดิม แม้จะเปลี่ยนกริยาเป็นรูปอดีต"
+      },
+      {
+        "id": "past-10",
+        "promptThai": "พูดว่า: ฉันเล่นที่สวนสาธารณะ (แล้ว)",
+        "chunks": [
+          { "text": "こうえんで", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "で" }] },
+          { "text": "あそびました", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "びました" }] }
+        ],
+        "correctOrder": [
+          "こうえんで",
+          "あそびました"
+        ],
+        "romaji": "Kouen de asobimashita.",
+        "thai": "ฉันเล่นที่สวนสาธารณะ (แล้ว)",
+        "explanation": "で บอกสถานที่ที่เกิดการกระทำ ใช้ได้ทั้งประโยครูปปัจจุบันและอดีต"
+      },
+      {
+        "id": "past-11",
+        "promptThai": "พูดว่า: ฉันอ่านหนังสือของเพื่อน (แล้ว)",
+        "chunks": [
+          { "text": "ともだちの", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "の" }] },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }] },
+          { "text": "よみました", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みました" }] }
+        ],
+        "correctOrder": [
+          "ともだちの",
+          "ほんを",
+          "よみました"
+        ],
+        "romaji": "Tomodachi no hon wo yomimashita.",
+        "thai": "ฉันอ่านหนังสือของเพื่อน (แล้ว)",
+        "explanation": "の ใช้บอกความเป็นเจ้าของ ในที่นี้บอกว่าหนังสือเป็นของเพื่อน"
+      },
+      {
+        "id": "past-12",
+        "promptThai": "พูดว่า: ฉันทำงานตั้งแต่วันจันทร์ถึงวันศุกร์ (แล้ว)",
+        "chunks": [
+          { "text": "げつようびから", "kanji": [{ "text": "月曜日", "reading": "げつようび" }, { "text": "から" }] },
+          { "text": "きんようびまで", "kanji": [{ "text": "金曜日", "reading": "きんようび" }, { "text": "まで" }] },
+          { "text": "はたらきました", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きました" }] }
+        ],
+        "correctOrder": [
+          "げつようびから",
+          "きんようびまで",
+          "はたらきました"
+        ],
+        "romaji": "Getsuyoubi kara kin'youbi made hatarakimashita.",
+        "thai": "ฉันทำงานตั้งแต่วันจันทร์ถึงวันศุกร์ (แล้ว)",
+        "explanation": "から~まで ใช้บอกช่วงเวลาตั้งแต่จุดเริ่มต้นถึงจุดสิ้นสุด ใช้ได้ทั้งกับเวลานาฬิกาและวัน"
       }
     ],
     "formLabel": "ました",
@@ -1102,6 +1407,36 @@
         "romaji": "Kare wa shashin wo torimasendeshita.",
         "thai": "เขาไม่ได้ถ่ายรูป",
         "explanation": "とる เปลี่ยนเสียงท้ายเป็น り ก่อนเติม ませんでした"
+      },
+      {
+        "id": "past-negative-9",
+        "promptThai": "พูดว่า: ฉันไม่ได้ไปกับครอบครัว",
+        "chunks": [
+          { "text": "かぞくと", "kanji": [{ "text": "家族", "reading": "かぞく" }, { "text": "と" }] },
+          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }] }
+        ],
+        "correctOrder": [
+          "かぞくと",
+          "いきませんでした"
+        ],
+        "romaji": "Kazoku to ikimasendeshita.",
+        "thai": "ฉันไม่ได้ไปกับครอบครัว",
+        "explanation": "と ใช้บอกว่าทำกิจกรรมร่วมกับใคร ในที่นี้คือ 'กับครอบครัว'"
+      },
+      {
+        "id": "past-negative-10",
+        "promptThai": "พูดว่า: ฉันก็ไม่ได้กินเหมือนกัน",
+        "chunks": [
+          { "text": "わたしも", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }] },
+          { "text": "たべませんでした", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }] }
+        ],
+        "correctOrder": [
+          "わたしも",
+          "たべませんでした"
+        ],
+        "romaji": "Watashi mo tabemasendeshita.",
+        "thai": "ฉันก็ไม่ได้กินเหมือนกัน",
+        "explanation": "も ใช้บอกว่า 'เช่นกัน/ก็เหมือนกัน' แทนที่ は"
       }
     ],
     "formLabel": "ませんでした",
@@ -1262,6 +1597,36 @@
         "romaji": "Dokusho wo shite kudasai.",
         "thai": "กรุณาอ่านหนังสือ (เป็นงานอดิเรก)",
         "explanation": "どくしょを する เป็นวลีที่ใช้กับกริยา する ได้เหมือนกิจกรรมอื่นๆ"
+      },
+      {
+        "id": "te-kudasai-9",
+        "promptThai": "พูดว่า: กรุณามาตอน 7 โมง",
+        "chunks": [
+          { "text": "しちじに", "kanji": [{ "text": "七", "reading": "しち" }, { "text": "時", "reading": "じ" }, { "text": "に" }] },
+          { "text": "きてください", "kanji": [{ "text": "来", "reading": "き" }, { "text": "てください" }] }
+        ],
+        "correctOrder": [
+          "しちじに",
+          "きてください"
+        ],
+        "romaji": "Shichiji ni kite kudasai.",
+        "thai": "กรุณามาตอน 7 โมง",
+        "explanation": "に บอกจุดเวลาที่แน่นอน วางไว้หลังคำบอกเวลาก่อนกริยา"
+      },
+      {
+        "id": "te-kudasai-10",
+        "promptThai": "พูดว่า: กรุณารอที่สวนสาธารณะ",
+        "chunks": [
+          { "text": "こうえんで", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "で" }] },
+          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }] }
+        ],
+        "correctOrder": [
+          "こうえんで",
+          "まってください"
+        ],
+        "romaji": "Kouen de matte kudasai.",
+        "thai": "กรุณารอที่สวนสาธารณะ",
+        "explanation": "で บอกสถานที่ที่จะให้ทำการกระทำนั้น (รอ) เกิดขึ้น"
       }
     ],
     "formLabel": "てください",
@@ -1436,6 +1801,36 @@
         "romaji": "Ie de geemu wo shite mo ii desu ka.",
         "thai": "เล่นเกมที่บ้านได้ไหม",
         "explanation": "いえで บอกว่าขออนุญาตทำกิจกรรมนี้ที่บ้าน"
+      },
+      {
+        "id": "te-mo-ii-9",
+        "promptThai": "ถามขออนุญาตว่า: ไปกับเพื่อนได้ไหม",
+        "chunks": [
+          { "text": "ともだちと", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "と" }] },
+          { "text": "いってもいいですか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってもいいですか" }] }
+        ],
+        "correctOrder": [
+          "ともだちと",
+          "いってもいいですか"
+        ],
+        "romaji": "Tomodachi to itte mo ii desu ka.",
+        "thai": "ไปกับเพื่อนได้ไหม",
+        "explanation": "と ใช้บอกว่าจะทำกิจกรรมนี้ร่วมกับใคร"
+      },
+      {
+        "id": "te-mo-ii-10",
+        "promptThai": "ถามขออนุญาตว่า: ดื่มกาแฟด้วยได้ไหม (เช่นกัน)",
+        "chunks": [
+          { "text": "コーヒーも" },
+          { "text": "のんでもいいですか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでもいいですか" }] }
+        ],
+        "correctOrder": [
+          "コーヒーも",
+          "のんでもいいですか"
+        ],
+        "romaji": "Koohii mo nonde mo ii desu ka.",
+        "thai": "ดื่มกาแฟด้วยได้ไหม (เช่นกัน)",
+        "explanation": "も ใช้ถามขออนุญาตทำสิ่งนี้เพิ่มเติมด้วย เช่นกัน"
       }
     ],
     "formLabel": "てもいいですか",
@@ -1610,6 +2005,38 @@
         "romaji": "Jinja de tabete wa ikemasen.",
         "thai": "ห้ามกินที่ศาลเจ้า",
         "explanation": "たべる ตัด る แล้วเติม て はいけません เพื่อสื่อความหมายห้ามทำ"
+      },
+      {
+        "id": "te-wa-ikemasen-9",
+        "promptThai": "พูดว่า: ห้ามไปห้องสมุด",
+        "chunks": [
+          { "text": "としょかんに", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "に" }] },
+          { "text": "いってはいけません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってはいけません" }] }
+        ],
+        "correctOrder": [
+          "としょかんに",
+          "いってはいけません"
+        ],
+        "romaji": "Toshokan ni itte wa ikemasen.",
+        "thai": "ห้ามไปห้องสมุด",
+        "explanation": "に ใช้บอกจุดหมายปลายทางได้เหมือน へ กับกริยาการเคลื่อนที่ เช่น いく"
+      },
+      {
+        "id": "te-wa-ikemasen-10",
+        "promptThai": "พูดว่า: ห้ามหยิบหนังสือของเพื่อน",
+        "chunks": [
+          { "text": "ともだちの", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "の" }] },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }] },
+          { "text": "とってはいけません", "kanji": [{ "text": "取", "reading": "と" }, { "text": "ってはいけません" }] }
+        ],
+        "correctOrder": [
+          "ともだちの",
+          "ほんを",
+          "とってはいけません"
+        ],
+        "romaji": "Tomodachi no hon wo totte wa ikemasen.",
+        "thai": "ห้ามหยิบหนังสือของเพื่อน",
+        "explanation": "の ใช้บอกความเป็นเจ้าของ ในที่นี้บอกว่าหนังสือเป็นของเพื่อน ไม่ใช่ของตัวเอง"
       }
     ],
     "formLabel": "てはいけません",
@@ -1786,6 +2213,53 @@
         "romaji": "Watashi wa shashin ga toritai desu.",
         "thai": "ฉันอยากถ่ายรูป",
         "explanation": "とる ตัด ます ออก เหลือ とり แล้วเติม たいです"
+      },
+      {
+        "id": "tai-desu-9",
+        "promptThai": "พูดว่า: ฉันอยากไปโรงเรียน",
+        "chunks": [
+          { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }] },
+          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }] }
+        ],
+        "correctOrder": [
+          "がっこうに",
+          "いきたいです"
+        ],
+        "romaji": "Gakkou ni ikitai desu.",
+        "thai": "ฉันอยากไปโรงเรียน",
+        "explanation": "に ใช้บอกจุดหมายปลายทางได้เหมือน へ กับกริยาการเคลื่อนที่"
+      },
+      {
+        "id": "tai-desu-10",
+        "promptThai": "พูดว่า: ฉันอยากไปกับเพื่อน",
+        "chunks": [
+          { "text": "ともだちと", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "と" }] },
+          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }] }
+        ],
+        "correctOrder": [
+          "ともだちと",
+          "いきたいです"
+        ],
+        "romaji": "Tomodachi to ikitai desu.",
+        "thai": "ฉันอยากไปกับเพื่อน",
+        "explanation": "と ใช้บอกว่าอยากทำกิจกรรมนี้ร่วมกับใคร"
+      },
+      {
+        "id": "tai-desu-11",
+        "promptThai": "พูดว่า: ฉันอยากทำงานตั้งแต่ 9 โมงถึง 5 โมง",
+        "chunks": [
+          { "text": "くじから", "kanji": [{ "text": "九", "reading": "く" }, { "text": "時", "reading": "じ" }, { "text": "から" }] },
+          { "text": "ごじまで", "kanji": [{ "text": "五", "reading": "ご" }, { "text": "時", "reading": "じ" }, { "text": "まで" }] },
+          { "text": "はたらきたいです", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きたいです" }] }
+        ],
+        "correctOrder": [
+          "くじから",
+          "ごじまで",
+          "はたらきたいです"
+        ],
+        "romaji": "Kuji kara goji made hatarakitai desu.",
+        "thai": "ฉันอยากทำงานตั้งแต่ 9 โมงถึง 5 โมง",
+        "explanation": "から~まで ใช้บอกช่วงเวลาตั้งแต่จุดเริ่มต้นถึงจุดสิ้นสุด"
       }
     ],
     "formLabel": "たいです",
