@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Toggle from "../components/Toggle";
 import JapaneseText from "../components/JapaneseText";
+import { PracticeProgress, PracticeResults } from "../components/PracticeSessionUI";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
-import { useReviewQueue } from "../utils/reviewQueue";
+import { usePracticeSession } from "../utils/practiceSession";
 
 const EMPTY = [];
 
@@ -42,7 +43,7 @@ function QuizView({ category, onBack }) {
   const [pool] = useState(() => getVocab(category.id).map(toCard));
 
   const [cursor, setCursor] = useState(0);
-  const review = useReviewQueue(shuffleOn ? pool : EMPTY);
+  const review = usePracticeSession(shuffleOn ? pool : EMPTY);
   const activeAnswer = shuffleOn ? review.current : pool[cursor % pool.length];
 
   const [selectedId, setSelectedId] = useState(null);
@@ -94,10 +95,13 @@ function QuizView({ category, onBack }) {
         ← เปลี่ยนหมวดหมู่
       </button>
 
-      <p className="progress-label">
-        {category.label} · คะแนน {score.correct} / {score.total}
-        {shuffleOn && ` · ตอบถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`}
-      </p>
+      {shuffleOn ? (
+        <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
+      ) : (
+        <p className="progress-label">
+          {category.label} · คะแนน {score.correct} / {score.total}
+        </p>
+      )}
 
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
@@ -106,10 +110,13 @@ function QuizView({ category, onBack }) {
 
       {finished ? (
         <div className="quiz-card">
-          <p className="th-text conversation-complete">เก่งมาก! คุณตอบถูกครบทุกคำในชุดนี้แล้ว 🎉🌸</p>
-          <button className="btn btn-success btn-sm" onClick={restart}>
-            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
-          </button>
+          <PracticeResults
+            correct={review.correctCount}
+            total={review.totalCount}
+            celebration="เก่งมาก! คุณตอบถูกครบทุกคำในชุดนี้แล้ว 🎉🌸"
+            onRetryWrong={review.startRetryRound}
+            onRestart={restart}
+          />
         </div>
       ) : (
         <div className="quiz-card">

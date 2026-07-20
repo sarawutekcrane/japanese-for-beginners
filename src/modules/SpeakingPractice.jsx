@@ -3,10 +3,11 @@ import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
 import JapaneseText from "../components/JapaneseText";
 import InAppBrowserNotice from "../components/InAppBrowserNotice";
+import { PracticeProgress, PracticeResults } from "../components/PracticeSessionUI";
 import { useSpeak, useSpeechRecognition, matchesJapanese, isKanaOnly, kanjiToKana } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
-import { useReviewQueue } from "../utils/reviewQueue";
+import { usePracticeSession } from "../utils/practiceSession";
 
 const NUMERIC_ONLY = /^\d+$/;
 const EMPTY = [];
@@ -37,7 +38,7 @@ function SpeakingView({ category, onBack }) {
 
   const [shuffleOn, setShuffleOn] = useState(false);
   const baseCards = useMemo(() => getVocab(category.id).map(toCard), [category]);
-  const review = useReviewQueue(shuffleOn ? baseCards : EMPTY);
+  const review = usePracticeSession(shuffleOn ? baseCards : EMPTY);
   const [index, setIndex] = useState(0);
   const [status, setStatus] = useState(STATUS.idle);
   const [heard, setHeard] = useState("");
@@ -138,10 +139,13 @@ function SpeakingView({ category, onBack }) {
         ← เปลี่ยนหมวดหมู่
       </button>
 
-      <p className="progress-label">
-        {category.label} ·{" "}
-        {shuffleOn ? `ตอบถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}` : `${index + 1} / ${baseCards.length}`}
-      </p>
+      {shuffleOn ? (
+        <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
+      ) : (
+        <p className="progress-label">
+          {category.label} · {index + 1} / {baseCards.length}
+        </p>
+      )}
 
       <div className="toggle-group">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
@@ -151,10 +155,13 @@ function SpeakingView({ category, onBack }) {
 
       {finished ? (
         <div className="speaking-card">
-          <p className="th-text conversation-complete">เก่งมาก! คุณฝึกพูดครบทุกคำในหมวดนี้แล้ว 🎉🌸</p>
-          <button className="btn btn-success btn-sm" onClick={restart}>
-            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
-          </button>
+          <PracticeResults
+            correct={review.correctCount}
+            total={review.totalCount}
+            celebration="เก่งมาก! คุณฝึกพูดครบทุกคำในหมวดนี้แล้ว 🎉🌸"
+            onRetryWrong={review.startRetryRound}
+            onRestart={restart}
+          />
         </div>
       ) : (
         <div className="speaking-card">

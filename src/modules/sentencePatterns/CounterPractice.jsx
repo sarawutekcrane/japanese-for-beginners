@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import Toggle from "../../components/Toggle";
 import JapaneseText from "../../components/JapaneseText";
+import { PracticeProgress, PracticeResults } from "../../components/PracticeSessionUI";
 import { useSpeak } from "../../hooks/useSpeech";
 import { getAllCounterQuestions, kanjiForCount } from "../../utils/counters";
 import { playCorrect, playIncorrect } from "../../utils/sound";
-import { useReviewQueue } from "../../utils/reviewQueue";
+import { usePracticeSession } from "../../utils/practiceSession";
 
 const BASE_QUESTIONS = getAllCounterQuestions();
 const EMPTY = [];
@@ -15,7 +16,7 @@ export default function CounterPractice({ onBack }) {
   const [showRomaji, setShowRomaji] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
 
-  const review = useReviewQueue(shuffleOn ? BASE_QUESTIONS : EMPTY);
+  const review = usePracticeSession(shuffleOn ? BASE_QUESTIONS : EMPTY);
   const [index, setIndex] = useState(0);
   const finished = shuffleOn && review.finished;
   const question = shuffleOn ? review.current : BASE_QUESTIONS[index % BASE_QUESTIONS.length];
@@ -68,12 +69,13 @@ export default function CounterPractice({ onBack }) {
         <button className="btn btn-outline blue btn-sm" onClick={onBack}>
           ← กลับ
         </button>
-        <p className="progress-label">
-          {shuffleOn
-            ? `นับถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`
-            : `${(index % BASE_QUESTIONS.length) + 1} / ${BASE_QUESTIONS.length}`}{" "}
-          · คะแนน {score.correct}/{score.total}
-        </p>
+        {shuffleOn ? (
+          <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
+        ) : (
+          <p className="progress-label">
+            {(index % BASE_QUESTIONS.length) + 1} / {BASE_QUESTIONS.length} · คะแนน {score.correct}/{score.total}
+          </p>
+        )}
       </div>
 
       <div className="toggle-group blue">
@@ -83,10 +85,13 @@ export default function CounterPractice({ onBack }) {
 
       {finished ? (
         <div className="practice-card blue">
-          <p className="th-text conversation-complete">เก่งมาก! คุณนับถูกครบทุกข้อในชุดนี้แล้ว 🎉🌸</p>
-          <button className="btn btn-success btn-sm" onClick={restart}>
-            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
-          </button>
+          <PracticeResults
+            correct={review.correctCount}
+            total={review.totalCount}
+            celebration="เก่งมาก! คุณนับถูกครบทุกข้อในชุดนี้แล้ว 🎉🌸"
+            onRetryWrong={review.startRetryRound}
+            onRestart={restart}
+          />
         </div>
       ) : (
         <div className="practice-card blue">

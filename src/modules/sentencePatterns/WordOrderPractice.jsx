@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Toggle from "../../components/Toggle";
 import JapaneseText from "../../components/JapaneseText";
+import { PracticeProgress, PracticeResults } from "../../components/PracticeSessionUI";
 import { useSpeak } from "../../hooks/useSpeech";
 import { shuffle as shuffleArr } from "../../utils/content";
 import { playCorrect as playCorrectSound, playIncorrect as playIncorrectSound } from "../../utils/sound";
-import { useReviewQueue } from "../../utils/reviewQueue";
+import { usePracticeSession } from "../../utils/practiceSession";
 
 const EMPTY = [];
 
@@ -19,7 +20,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
   const [score, setScore] = useState({ correct: 0, total: 0 });
 
   const baseQuestions = useMemo(() => pattern.wordOrderQuestions, [pattern]);
-  const review = useReviewQueue(shuffleOn ? baseQuestions : EMPTY);
+  const review = usePracticeSession(shuffleOn ? baseQuestions : EMPTY);
   const [index, setIndex] = useState(0);
   const finished = shuffleOn && review.finished;
   const question = shuffleOn ? review.current : baseQuestions[index % baseQuestions.length];
@@ -97,12 +98,13 @@ export default function WordOrderPractice({ pattern, onBack }) {
         <h3 className="pattern-detail-title">
           {pattern.order}. {pattern.title}
         </h3>
-        <p className="progress-label">
-          {shuffleOn
-            ? `เรียงถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`
-            : `${(index % baseQuestions.length) + 1} / ${baseQuestions.length}`}{" "}
-          · คะแนน {score.correct}/{score.total}
-        </p>
+        {shuffleOn ? (
+          <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
+        ) : (
+          <p className="progress-label">
+            {(index % baseQuestions.length) + 1} / {baseQuestions.length} · คะแนน {score.correct}/{score.total}
+          </p>
+        )}
       </div>
 
       <div className="toggle-group">
@@ -112,10 +114,13 @@ export default function WordOrderPractice({ pattern, onBack }) {
 
       {finished ? (
         <div className="practice-card">
-          <p className="th-text conversation-complete">เก่งมาก! คุณเรียงประโยคถูกครบทุกข้อในชุดนี้แล้ว 🎉🌸</p>
-          <button className="btn btn-success btn-sm" onClick={restart}>
-            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
-          </button>
+          <PracticeResults
+            correct={review.correctCount}
+            total={review.totalCount}
+            celebration="เก่งมาก! คุณเรียงประโยคถูกครบทุกข้อในชุดนี้แล้ว 🎉🌸"
+            onRetryWrong={review.startRetryRound}
+            onRestart={restart}
+          />
         </div>
       ) : (
         <div className="practice-card">
