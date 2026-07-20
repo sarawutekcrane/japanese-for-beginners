@@ -10,7 +10,6 @@ import { playCorrect, playIncorrect } from "../utils/sound";
 import { usePracticeSession } from "../utils/practiceSession";
 
 const NUMERIC_ONLY = /^\d+$/;
-const EMPTY = [];
 
 function CategoryPicker({ onPick }) {
   return (
@@ -38,21 +37,19 @@ function SpeakingView({ category, onBack }) {
 
   const [shuffleOn, setShuffleOn] = useState(false);
   const baseCards = useMemo(() => getVocab(category.id).map(toCard), [category]);
-  const review = usePracticeSession(shuffleOn ? baseCards : EMPTY);
-  const [index, setIndex] = useState(0);
+  const review = usePracticeSession(baseCards, shuffleOn);
   const [status, setStatus] = useState(STATUS.idle);
   const [heard, setHeard] = useState("");
   const [showThai, setShowThai] = useState(false);
   const [showRomaji, setShowRomaji] = useState(false);
 
+  const finished = review.finished;
+  const card = review.current;
+
   useEffect(() => {
-    setIndex(0);
     setStatus(STATUS.idle);
     setHeard("");
-  }, [category, shuffleOn]);
-
-  const finished = shuffleOn && review.finished;
-  const card = shuffleOn ? review.current : baseCards[index % baseCards.length];
+  }, [card]);
 
   // Chrome's speech recognition transcribes spoken number words (e.g. "ろく")
   // as bare Arabic numerals (e.g. "6"). This maps each number card's value
@@ -115,17 +112,11 @@ function SpeakingView({ category, onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    if (shuffleOn) review.submit(status === STATUS.match);
-    else setIndex((i) => (i + 1) % baseCards.length);
-    setStatus(STATUS.idle);
-    setHeard("");
+    review.submit(status === STATUS.match);
   };
 
   const restart = () => {
     review.restart();
-    setIndex(0);
-    setStatus(STATUS.idle);
-    setHeard("");
   };
 
   // Auto-reveal the Thai translation and Japanese reading on a correct
@@ -139,13 +130,7 @@ function SpeakingView({ category, onBack }) {
         ← เปลี่ยนหมวดหมู่
       </button>
 
-      {shuffleOn ? (
-        <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
-      ) : (
-        <p className="progress-label">
-          {category.label} · {index + 1} / {baseCards.length}
-        </p>
-      )}
+      <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
 
       <div className="toggle-group">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />

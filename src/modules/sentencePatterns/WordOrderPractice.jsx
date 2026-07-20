@@ -7,8 +7,6 @@ import { shuffle as shuffleArr } from "../../utils/content";
 import { playCorrect as playCorrectSound, playIncorrect as playIncorrectSound } from "../../utils/sound";
 import { usePracticeSession } from "../../utils/practiceSession";
 
-const EMPTY = [];
-
 function makeItems(chunks) {
   return shuffleArr(chunks.map((chunk, i) => ({ key: `${i}-${chunk.text}`, text: chunk.text, kanji: chunk.kanji, romaji: chunk.romaji })));
 }
@@ -17,13 +15,11 @@ export default function WordOrderPractice({ pattern, onBack }) {
   const { speak } = useSpeak();
   const [shuffleOn, setShuffleOn] = useState(false);
   const [showRomaji, setShowRomaji] = useState(false);
-  const [score, setScore] = useState({ correct: 0, total: 0 });
 
   const baseQuestions = useMemo(() => pattern.wordOrderQuestions, [pattern]);
-  const review = usePracticeSession(shuffleOn ? baseQuestions : EMPTY);
-  const [index, setIndex] = useState(0);
-  const finished = shuffleOn && review.finished;
-  const question = shuffleOn ? review.current : baseQuestions[index % baseQuestions.length];
+  const review = usePracticeSession(baseQuestions, shuffleOn);
+  const finished = review.finished;
+  const question = review.current;
 
   const [poolItems, setPoolItems] = useState(() => (question ? makeItems(question.chunks) : []));
   const [answerItems, setAnswerItems] = useState([]);
@@ -37,11 +33,6 @@ export default function WordOrderPractice({ pattern, onBack }) {
     setSubmitted(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [question]);
-
-  useEffect(() => {
-    setIndex(0);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pattern, shuffleOn]);
 
   const tapPool = (item) => {
     if (submitted) return;
@@ -64,7 +55,6 @@ export default function WordOrderPractice({ pattern, onBack }) {
     const correct = JSON.stringify(userOrder) === JSON.stringify(question.correctOrder);
     setIsCorrect(correct);
     setSubmitted(true);
-    setScore((s) => ({ correct: s.correct + (correct ? 1 : 0), total: s.total + 1 }));
     if (correct) playCorrectSound();
     else playIncorrectSound();
     clearTimeout(speakTimeoutRef.current);
@@ -75,14 +65,11 @@ export default function WordOrderPractice({ pattern, onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    if (shuffleOn) review.submit(isCorrect);
-    else setIndex((i) => i + 1);
+    review.submit(isCorrect);
   };
 
   const restart = () => {
     review.restart();
-    setIndex(0);
-    setScore({ correct: 0, total: 0 });
   };
 
   const playCorrect = () => speak(question.correctOrder.join(""));
@@ -98,13 +85,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
         <h3 className="pattern-detail-title">
           {pattern.order}. {pattern.title}
         </h3>
-        {shuffleOn ? (
-          <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
-        ) : (
-          <p className="progress-label">
-            {(index % baseQuestions.length) + 1} / {baseQuestions.length} · คะแนน {score.correct}/{score.total}
-          </p>
-        )}
+        <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
       </div>
 
       <div className="toggle-group">

@@ -7,8 +7,6 @@ import { VOCAB_CATEGORIES, getVocab, toCard, sample, shuffle as shuffleArr } fro
 import { playCorrect, playIncorrect } from "../utils/sound";
 import { usePracticeSession } from "../utils/practiceSession";
 
-const EMPTY = [];
-
 function CategoryPicker({ onPick }) {
   return (
     <div className="picker">
@@ -42,18 +40,16 @@ function QuizView({ category, onBack }) {
   const [showRomaji, setShowRomaji] = useState(false);
   const [pool] = useState(() => getVocab(category.id).map(toCard));
 
-  const [cursor, setCursor] = useState(0);
-  const review = usePracticeSession(shuffleOn ? pool : EMPTY);
-  const activeAnswer = shuffleOn ? review.current : pool[cursor % pool.length];
+  const review = usePracticeSession(pool, shuffleOn);
+  const activeAnswer = review.current;
 
   const [selectedId, setSelectedId] = useState(null);
-  const [score, setScore] = useState({ correct: 0, total: 0 });
 
   const question = useMemo(() => (activeAnswer ? buildQuestion(pool, activeAnswer) : null), [pool, activeAnswer]);
 
   const isCorrect = question && selectedId === question.answer.id;
   const answered = selectedId !== null;
-  const finished = shuffleOn && review.finished;
+  const finished = review.finished;
 
   const playOption = (card) => speak(card.audioText);
 
@@ -64,12 +60,11 @@ function QuizView({ category, onBack }) {
   useEffect(() => {
     setSelectedId(null);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [shuffleOn]);
+  }, [activeAnswer]);
 
   const choose = (opt) => {
     if (answered) return;
     setSelectedId(opt.id);
-    setScore((s) => ({ correct: s.correct + (opt.id === question.answer.id ? 1 : 0), total: s.total + 1 }));
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
@@ -78,15 +73,11 @@ function QuizView({ category, onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    if (shuffleOn) review.submit(isCorrect);
-    else setCursor((c) => c + 1);
-    setSelectedId(null);
+    review.submit(isCorrect);
   };
 
   const restart = () => {
     review.restart();
-    setScore({ correct: 0, total: 0 });
-    setSelectedId(null);
   };
 
   return (
@@ -95,13 +86,7 @@ function QuizView({ category, onBack }) {
         ← เปลี่ยนหมวดหมู่
       </button>
 
-      {shuffleOn ? (
-        <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
-      ) : (
-        <p className="progress-label">
-          {category.label} · คะแนน {score.correct} / {score.total}
-        </p>
-      )}
+      <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
 
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />

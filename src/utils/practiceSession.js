@@ -1,35 +1,39 @@
 import { useState } from "react";
 import { shuffle } from "./content";
 
-function buildRound(items) {
-  return { queue: shuffle(items), index: 0, correctCount: 0, missed: [] };
+function buildRound(items, shuffleOrder) {
+  return { queue: shuffleOrder ? shuffle(items) : [...items], index: 0, correctCount: 0, missed: [] };
 }
 
 /**
- * Drives a single-pass, scored practice round over a fixed item list: shuffle
- * once, present each item exactly once in that order, and never re-insert a
- * missed item back into the same round. Tracks which items were answered
- * incorrectly so the caller can spin up a smaller "retry wrong answers only"
- * round afterward via startRetryRound — which itself follows the same
- * single-pass rule, so it can be called again on a retry round's own misses.
+ * Drives a single-pass, scored practice round over a fixed item list:
+ * present each item exactly once (shuffled, or in original order when
+ * `shuffleOrder` is false), and never re-insert a missed item back into the
+ * same round. Tracks which items were answered incorrectly so the caller can
+ * spin up a smaller "retry wrong answers only" round afterward via
+ * startRetryRound — which itself follows the same single-pass rule (and the
+ * same order preference), so it can be called again on a retry round's own
+ * misses.
  *
  * restart() always goes back to the original full item list, regardless of
  * which round (initial or a retry round) is currently active.
  *
- * Rebuilds as soon as `items` changes reference (e.g. a shuffle toggle
- * flipping on swaps in the real pool). The rebuild is computed into a local
+ * Rebuilds as soon as `items` changes reference or `shuffleOrder` flips (e.g.
+ * the user toggles shuffle mid-session). The rebuild is computed into a local
  * variable and used directly for this render's return value — not just
  * scheduled via setState — so there's never a render where a consumer reads
- * a stale/empty round for the old `items`.
+ * a stale/empty round for the old `items`/order.
  */
-export function usePracticeSession(items) {
-  const [round, setRound] = useState(() => buildRound(items));
+export function usePracticeSession(items, shuffleOrder = true) {
+  const [round, setRound] = useState(() => buildRound(items, shuffleOrder));
   const [trackedItems, setTrackedItems] = useState(items);
+  const [trackedShuffleOrder, setTrackedShuffleOrder] = useState(shuffleOrder);
 
   let activeRound = round;
-  if (items !== trackedItems) {
-    activeRound = buildRound(items);
+  if (items !== trackedItems || shuffleOrder !== trackedShuffleOrder) {
+    activeRound = buildRound(items, shuffleOrder);
     setTrackedItems(items);
+    setTrackedShuffleOrder(shuffleOrder);
     setRound(activeRound);
   }
 
@@ -45,9 +49,9 @@ export function usePracticeSession(items) {
     });
   };
 
-  const restart = () => setRound(buildRound(items));
+  const restart = () => setRound(buildRound(items, shuffleOrder));
 
-  const startRetryRound = () => setRound(buildRound(activeRound.missed));
+  const startRetryRound = () => setRound(buildRound(activeRound.missed, shuffleOrder));
 
   const totalCount = activeRound.queue.length;
 

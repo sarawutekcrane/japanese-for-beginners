@@ -9,8 +9,6 @@ import { playCorrect, playIncorrect } from "../utils/sound";
 import { playKanaAudio } from "../utils/kanaAudio";
 import { usePracticeSession } from "../utils/practiceSession";
 
-const EMPTY = [];
-
 function PoolPicker({ onPick }) {
   return (
     <div className="picker">
@@ -84,12 +82,10 @@ function QuizView({ selection, onBack }) {
     return raw.map(toCard);
   });
 
-  const [cursor, setCursor] = useState(0);
-  const review = usePracticeSession(shuffleOn ? pool : EMPTY);
-  const activeAnswer = shuffleOn ? review.current : pool[cursor % pool.length];
+  const review = usePracticeSession(pool, shuffleOn);
+  const activeAnswer = review.current;
 
   const [selectedId, setSelectedId] = useState(null);
-  const [score, setScore] = useState({ correct: 0, total: 0 });
 
   const question = useMemo(
     () => (activeAnswer ? (isKana ? buildKanaQuestion(pool, activeAnswer) : buildVocabQuestion(pool, activeAnswer)) : null),
@@ -98,7 +94,7 @@ function QuizView({ selection, onBack }) {
 
   const isCorrect = question && selectedId === question.answer.id;
   const answered = selectedId !== null;
-  const finished = shuffleOn && review.finished;
+  const finished = review.finished;
 
   // Auto-reveal the Japanese reading on a correct answer, as if the Romaji
   // toggle/reveal button were switched on (kana mode only).
@@ -122,12 +118,11 @@ function QuizView({ selection, onBack }) {
     setSelectedId(null);
     setRevealed(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [shuffleOn]);
+  }, [activeAnswer]);
 
   const choose = (opt) => {
     if (answered) return;
     setSelectedId(opt.id);
-    setScore((s) => ({ correct: s.correct + (opt.id === question.answer.id ? 1 : 0), total: s.total + 1 }));
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
@@ -136,17 +131,11 @@ function QuizView({ selection, onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    if (shuffleOn) review.submit(isCorrect);
-    else setCursor((c) => c + 1);
-    setSelectedId(null);
-    setRevealed(false);
+    review.submit(isCorrect);
   };
 
   const restart = () => {
     review.restart();
-    setScore({ correct: 0, total: 0 });
-    setSelectedId(null);
-    setRevealed(false);
   };
 
   return (
@@ -155,13 +144,7 @@ function QuizView({ selection, onBack }) {
         ← เปลี่ยนหมวดหมู่
       </button>
 
-      {shuffleOn ? (
-        <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
-      ) : (
-        <p className="progress-label">
-          {selection.label} · คะแนน {score.correct} / {score.total}
-        </p>
-      )}
+      <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
 
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />

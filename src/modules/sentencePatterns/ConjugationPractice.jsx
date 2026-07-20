@@ -8,25 +8,17 @@ import { playCorrect, playIncorrect } from "../../utils/sound";
 import { usePracticeSession } from "../../utils/practiceSession";
 
 const BASE_QUESTIONS = getAllConjugationQuestions();
-const EMPTY = [];
 
 export default function ConjugationPractice({ onBack }) {
   const { speak } = useSpeak();
   const [shuffleOn, setShuffleOn] = useState(false);
   const [showThai, setShowThai] = useState(false);
   const [showRomaji, setShowRomaji] = useState(false);
-  const [score, setScore] = useState({ correct: 0, total: 0 });
 
-  const review = usePracticeSession(shuffleOn ? BASE_QUESTIONS : EMPTY);
-  const [index, setIndex] = useState(0);
-  const finished = shuffleOn && review.finished;
-  const question = shuffleOn ? review.current : BASE_QUESTIONS[index % BASE_QUESTIONS.length];
+  const review = usePracticeSession(BASE_QUESTIONS, shuffleOn);
+  const finished = review.finished;
+  const question = review.current;
   const [selected, setSelected] = useState(null);
-
-  useEffect(() => {
-    setIndex(0);
-    setSelected(null);
-  }, [shuffleOn]);
 
   useEffect(() => {
     setSelected(null);
@@ -42,7 +34,6 @@ export default function ConjugationPractice({ onBack }) {
   const choose = (opt) => {
     if (answered) return;
     setSelected(opt);
-    setScore((s) => ({ correct: s.correct + (opt === question.correct ? 1 : 0), total: s.total + 1 }));
     if (opt === question.correct) playCorrect();
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
@@ -53,15 +44,11 @@ export default function ConjugationPractice({ onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    if (shuffleOn) review.submit(isCorrect);
-    else setIndex((i) => i + 1);
+    review.submit(isCorrect);
   };
 
   const restart = () => {
     review.restart();
-    setIndex(0);
-    setSelected(null);
-    setScore({ correct: 0, total: 0 });
   };
 
   return (
@@ -70,13 +57,7 @@ export default function ConjugationPractice({ onBack }) {
         <button className="btn btn-outline blue btn-sm" onClick={onBack}>
           ← กลับ
         </button>
-        {shuffleOn ? (
-          <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
-        ) : (
-          <p className="progress-label">
-            {(index % BASE_QUESTIONS.length) + 1} / {BASE_QUESTIONS.length} · คะแนน {score.correct}/{score.total}
-          </p>
-        )}
+        <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />
       </div>
 
       <div className="toggle-group blue">
