@@ -2,33 +2,20 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Toggle from "../components/Toggle";
 import JapaneseText from "../components/JapaneseText";
 import { useSpeak } from "../hooks/useSpeech";
-import { useSettings } from "../context/SettingsContext";
-import { VOCAB_CATEGORIES, getKanaCombinedDeck, getVocab, toCard, shuffle as shuffleArr } from "../utils/content";
+import { VOCAB_CATEGORIES, getVocab, toCard, sample, shuffle as shuffleArr } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
-import { playKanaAudio } from "../utils/kanaAudio";
 import { useReviewQueue } from "../utils/reviewQueue";
 
 const EMPTY = [];
 
-function PoolPicker({ onPick }) {
+function CategoryPicker({ onPick }) {
   return (
     <div className="picker">
       <section className="picker-section">
-        <h3 className="picker-heading">あ / ア ตัวอักษร (Characters)</h3>
-        <div className="picker-row">
-          <button className="btn btn-outline btn-sm" onClick={() => onPick({ kind: "kana", script: "hiragana", label: "Hiragana (ครบทุกกลุ่ม)" })}>
-            あ Hiragana
-          </button>
-          <button className="btn btn-outline blue btn-sm" onClick={() => onPick({ kind: "kana", script: "katakana", label: "Katakana (ครบทุกกลุ่ม)" })}>
-            ア Katakana
-          </button>
-        </div>
-      </section>
-      <section className="picker-section">
-        <h3 className="picker-heading">📚 คำศัพท์ (Vocabulary)</h3>
+        <h3 className="picker-heading">📚 เลือกหมวดคำศัพท์</h3>
         <div className="vocab-grid">
           {VOCAB_CATEGORIES.map((c) => (
-            <button key={c.id} className="vocab-card" onClick={() => onPick({ kind: "vocab", category: c.id, label: c.label })}>
+            <button key={c.id} className="vocab-card" onClick={() => onPick(c)}>
               <span className="vocab-emoji">{c.emoji}</span>
               <span className="vocab-label">{c.label}</span>
             </button>
@@ -39,35 +26,20 @@ function PoolPicker({ onPick }) {
   );
 }
 
-/** Builds one question: the correct item plus 3 distractors from the same pool,
- * each with a Thai translation distinct from every other option's (falls back to
- * allowing a duplicate only if the pool is too small to find 3 unique ones). */
 function buildQuestion(pool, answer) {
-  const candidates = shuffleArr(pool.filter((p) => p.id !== answer.id));
-  const seenThai = new Set([answer.thai]);
-  const distractors = [];
-  for (const cand of candidates) {
-    if (distractors.length === 3) break;
-    if (seenThai.has(cand.thai)) continue;
-    seenThai.add(cand.thai);
-    distractors.push(cand);
-  }
-  for (const cand of candidates) {
-    if (distractors.length === 3) break;
-    if (!distractors.includes(cand)) distractors.push(cand);
-  }
+  const distractors = sample(
+    pool.filter((p) => p.id !== answer.id),
+    3
+  );
   const options = shuffleArr([answer, ...distractors]);
   return { answer, options };
 }
 
-function QuizView({ selection, onBack }) {
+function QuizView({ category, onBack }) {
   const { speak } = useSpeak();
-  const { speechRate } = useSettings();
   const [shuffleOn, setShuffleOn] = useState(false);
-  const [pool] = useState(() => {
-    const raw = selection.kind === "kana" ? getKanaCombinedDeck(selection.script) : getVocab(selection.category);
-    return raw.map(toCard);
-  });
+  const [showRomaji, setShowRomaji] = useState(false);
+  const [pool] = useState(() => getVocab(category.id).map(toCard));
 
   const [cursor, setCursor] = useState(0);
   const review = useReviewQueue(shuffleOn ? pool : EMPTY);
@@ -82,14 +54,7 @@ function QuizView({ selection, onBack }) {
   const answered = selectedId !== null;
   const finished = shuffleOn && review.finished;
 
-  const play = () => {
-    const answer = question.answer;
-    if (answer.kind === "kana") {
-      playKanaAudio(answer.script, answer, { rate: speechRate, onFallback: () => speak(answer.audioText) });
-    } else {
-      speak(answer.audioText);
-    }
-  };
+  const playOption = (card) => speak(card.audioText);
 
   const speakTimeoutRef = useRef(null);
 
@@ -107,7 +72,7 @@ function QuizView({ selection, onBack }) {
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
-    speakTimeoutRef.current = setTimeout(play, 500);
+    speakTimeoutRef.current = setTimeout(() => playOption(question.answer), 500);
   };
 
   const next = () => {
@@ -130,12 +95,13 @@ function QuizView({ selection, onBack }) {
       </button>
 
       <p className="progress-label">
-        {selection.label} · คะแนน {score.correct} / {score.total}
+        {category.label} · คะแนน {score.correct} / {score.total}
         {shuffleOn && ` · ตอบถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`}
       </p>
 
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
+        <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
       {finished ? (
@@ -147,10 +113,8 @@ function QuizView({ selection, onBack }) {
         </div>
       ) : (
         <div className="quiz-card">
-          <button className="btn btn-round btn-blue" onClick={() => play()} aria-label="เล่นเสียง">
-            🔊
-          </button>
-          <p className="th-text quiz-instruction">ฟังเสียงแล้วเลือกคำแปลที่ตรงกัน</p>
+          <p className="th-text quiz-instruction">คำนี้ภาษาญี่ปุ่นเรียกว่าอะไร?</p>
+          <p className="th-text thai-prompt">{question.answer.thai}</p>
 
           <div className="quiz-options">
             {question.options.map((opt) => {
@@ -160,23 +124,30 @@ function QuizView({ selection, onBack }) {
                 else if (opt.id === selectedId) cls += " incorrect";
               }
               return (
-                <button key={opt.id} className={`${cls} th-text`} onClick={() => choose(opt)} disabled={answered}>
-                  {opt.thai}
-                </button>
+                <div key={opt.id} className="quiz-option-cell">
+                  <button className={cls} onClick={() => choose(opt)} disabled={answered}>
+                    <JapaneseText className="jp-text" kana={opt.display} kanji={opt.kanji} />
+                    {showRomaji && <span className="quiz-option-hint">{opt.romaji}</span>}
+                  </button>
+                  <button
+                    type="button"
+                    className="option-audio-btn"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      playOption(opt);
+                    }}
+                    aria-label="ฟังเสียง"
+                  >
+                    🔊
+                  </button>
+                </div>
               );
             })}
           </div>
 
           {answered && (
             <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
-              {isCorrect ? "เก่งมาก! ถูกต้อง 🎉" : "ยังไม่ถูกนะ ลองฟังใหม่อีกครั้ง 💪"}
-            </p>
-          )}
-
-          {answered && (
-            <p className="quiz-reveal jp-text">
-              เฉลย: <JapaneseText kana={question.answer.display} kanji={question.answer.kanji} />
-              {question.answer.romaji ? ` (${question.answer.romaji})` : ""}
+              {isCorrect ? "เก่งมาก! ถูกต้อง 🎉" : "ยังไม่ถูกนะ ลองฟังคำตอบที่ถูกต้องดู 💪"}
             </p>
           )}
 
@@ -193,9 +164,9 @@ function QuizView({ selection, onBack }) {
   );
 }
 
-export default function ListeningQuiz() {
-  const [selection, setSelection] = useState(null);
+export default function ThaiToJapaneseQuiz() {
+  const [category, setCategory] = useState(null);
 
-  if (!selection) return <PoolPicker onPick={setSelection} />;
-  return <QuizView selection={selection} onBack={() => setSelection(null)} />;
+  if (!category) return <CategoryPicker onPick={setCategory} />;
+  return <QuizView category={category} onBack={() => setCategory(null)} />;
 }

@@ -634,6 +634,39 @@ button {
   color: var(--error-deep);
 }
 
+.quiz-option-cell {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.quiz-option-cell .quiz-option {
+  flex: 1;
+  min-width: 0;
+}
+
+.option-audio-btn {
+  border: 3px solid var(--pink);
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  width: 40px;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  color: var(--pink-text);
+  box-shadow: var(--shadow-soft);
+}
+
+.option-audio-btn:active {
+  transform: scale(0.94);
+}
+
+.thai-prompt {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--ink);
+  text-align: center;
+}
+
 .quiz-feedback {
   font-weight: 700;
 }

@@ -38,6 +38,13 @@ const MODULES = [
     subtitle: "โครงสร้างประโยค & ผันกริยา",
     color: "pink",
   },
+  {
+    id: "thaiToJapanese",
+    emoji: "🧠",
+    title: "แปลไทย → ญี่ปุ่น",
+    subtitle: "อ่านคำแปล เลือกคำศัพท์",
+    color: "blue",
+  },
 ];
 
 export default function HomeMenu({ onSelect }) {

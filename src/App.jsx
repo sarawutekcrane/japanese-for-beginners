@@ -6,6 +6,7 @@ import ListeningQuiz from "./modules/ListeningQuiz";
 import SpeakingPractice from "./modules/SpeakingPractice";
 import ConversationPractice from "./modules/ConversationPractice";
 import SentencePatterns from "./modules/SentencePatterns";
+import ThaiToJapaneseQuiz from "./modules/ThaiToJapaneseQuiz";
 import { playClick } from "./utils/sound";
 
 const CLICKABLE_SELECTOR = "button, .topic-card, .reply-option, .quiz-option, .chunk-pill";
@@ -16,6 +17,7 @@ const TITLES = {
   speaking: "ฝึกพูด",
   conversation: "ฝึกสนทนา",
   sentencePatterns: "แพทเทิร์นประโยค",
+  thaiToJapanese: "แปลไทย → ญี่ปุ่น",
 };
 
 function App() {
@@ -62,6 +64,7 @@ function App() {
           {view === "speaking" && <SpeakingPractice key={instanceKey} />}
           {view === "conversation" && <ConversationPractice key={instanceKey} />}
           {view === "sentencePatterns" && <SentencePatterns key={instanceKey} />}
+          {view === "thaiToJapanese" && <ThaiToJapaneseQuiz key={instanceKey} />}
           {settingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
         </>
       )}
