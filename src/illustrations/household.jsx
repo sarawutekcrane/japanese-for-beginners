@@ -200,4 +200,45 @@ export const householdIcons = {
       <line x1="110" y1="94" x2="106" y2="132" stroke={INK} strokeWidth="2" opacity="0.4" />
     </Frame>
   ),
+  "house-sofa": (id) => (
+    <Frame id={id}>
+      <rect x="52" y="98" width="96" height="34" rx="8" fill="#ff9ec7" stroke={INK} strokeWidth="3" />
+      <rect x="52" y="76" width="20" height="34" rx="6" fill="#ff9ec7" stroke={INK} strokeWidth="3" />
+      <rect x="128" y="76" width="20" height="34" rx="6" fill="#ff9ec7" stroke={INK} strokeWidth="3" />
+      <rect x="60" y="86" width="80" height="20" rx="6" fill="#ffd6e8" stroke={INK} strokeWidth="2" />
+      <rect x="56" y="132" width="10" height="14" fill="#a2704c" />
+      <rect x="134" y="132" width="10" height="14" fill="#a2704c" />
+    </Frame>
+  ),
+  "house-wardrobe": (id) => (
+    <Frame id={id}>
+      <rect x="60" y="54" width="80" height="94" rx="4" fill="#c08a5e" stroke={INK} strokeWidth="3" />
+      <line x1="100" y1="54" x2="100" y2="148" stroke={INK} strokeWidth="2.5" />
+      <circle cx="92" cy="102" r="3" fill="#ffe9a6" />
+      <circle cx="108" cy="102" r="3" fill="#ffe9a6" />
+    </Frame>
+  ),
+  "house-fan": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="92" r="38" fill="#dff1ff" stroke={INK} strokeWidth="3" />
+      <path d="M 100 92 Q 100 62 122 60 Q 108 78 100 92 Z M 100 92 Q 130 92 136 112 Q 112 106 100 92 Z M 100 92 Q 80 116 60 108 Q 84 100 100 92 Z" fill="#8fcfff" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+      <circle cx="100" cy="92" r="6" fill={INK} />
+      <rect x="94" y="130" width="12" height="18" fill="#c9ccd6" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "house-vase": (id) => (
+    <Frame id={id}>
+      <path d="M 84 84 Q 76 116 84 140 Q 100 150 116 140 Q 124 116 116 84 Z" fill="#8fcfff" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 92 84 Q 82 60 96 44 M 100 84 Q 100 56 100 40 M 108 84 Q 118 60 104 44" stroke="#5fbf77" strokeWidth="5" fill="none" strokeLinecap="round" />
+      <circle cx="96" cy="42" r="6" fill="#ff9ec7" stroke={INK} strokeWidth="1.5" />
+      <circle cx="104" cy="42" r="6" fill="#f6d34c" stroke={INK} strokeWidth="1.5" />
+    </Frame>
+  ),
+  "house-carpet": (id) => (
+    <Frame id={id}>
+      <rect x="52" y="76" width="96" height="56" rx="6" fill="#e0876b" stroke={INK} strokeWidth="3" />
+      <rect x="66" y="90" width="68" height="28" rx="4" fill="#fff3da" stroke={INK} strokeWidth="2" />
+      <rect x="78" y="100" width="44" height="8" fill="#e0876b" opacity="0.6" />
+    </Frame>
+  ),
 };

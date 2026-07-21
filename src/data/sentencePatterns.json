@@ -312,6 +312,150 @@
         "romaji": "Watashi no hon wo yomimasu.",
         "thai": "ฉันอ่านหนังสือของฉัน",
         "explanation": "の ใช้บอกความเป็นเจ้าของ วางไว้ระหว่างเจ้าของกับสิ่งของ"
+      },
+      {
+        "id": "affirmative-13",
+        "promptThai": "พูดว่า: ฉันกินนัตโตะทุกวัน",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "まいにち", "kanji": [{ "text": "毎日", "reading": "まいにち" }], "romaji": "mainichi" },
+          { "text": "なっとうを", "romaji": "nattou wo" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "まいにち",
+          "なっとうを",
+          "たべます"
+        ],
+        "romaji": "Watashi wa mainichi nattou wo tabemasu.",
+        "thai": "ฉันกินนัตโตะทุกวัน",
+        "explanation": "まいにち (ทุกวัน) วางหลังหัวข้อเพื่อบอกความถี่ที่ทำเป็นประจำ"
+      },
+      {
+        "id": "affirmative-14",
+        "promptThai": "พูดว่า: คุณครูสอนที่โรงเรียน",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "がっこうで", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "で" }], "romaji": "gakkou de" },
+          { "text": "おしえます", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えます" }], "romaji": "oshiemasu" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "がっこうで",
+          "おしえます"
+        ],
+        "romaji": "Sensei wa gakkou de oshiemasu.",
+        "thai": "คุณครูสอนที่โรงเรียน",
+        "explanation": "おしえる เป็นกริยากลุ่ม 2 ตัด る แล้วเติม ます ได้เลย, で บอกสถานที่ที่เกิดการกระทำ"
+      },
+      {
+        "id": "affirmative-15",
+        "promptThai": "พูดว่า: ฉันดูเพนกวินที่สวนสัตว์",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "どうぶつえんで", "kanji": [{ "text": "動物園", "reading": "どうぶつえん" }, { "text": "で" }], "romaji": "doubutsuen de" },
+          { "text": "ペンギンを", "romaji": "pengin wo" },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "どうぶつえんで",
+          "ペンギンを",
+          "みます"
+        ],
+        "romaji": "Watashi wa doubutsuen de pengin wo mimasu.",
+        "thai": "ฉันดูเพนกวินที่สวนสัตว์",
+        "explanation": "で ใช้บอกสถานที่ที่เกิดการกระทำ ในที่นี้คือสวนสัตว์"
+      },
+      {
+        "id": "affirmative-16",
+        "promptThai": "พูดว่า: พ่อฉันทำงานที่โรงงาน",
+        "chunks": [
+          { "text": "ちちは", "kanji": [{ "text": "父", "reading": "ちち" }, { "text": "は" }], "romaji": "chichi wa" },
+          { "text": "こうじょうで", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "で" }], "romaji": "koujou de" },
+          { "text": "はたらきます", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きます" }], "romaji": "hatarakimasu" }
+        ],
+        "correctOrder": [
+          "ちちは",
+          "こうじょうで",
+          "はたらきます"
+        ],
+        "romaji": "Chichi wa koujou de hatarakimasu.",
+        "thai": "พ่อฉันทำงานที่โรงงาน",
+        "explanation": "ちち เป็นคำที่ใช้เรียกพ่อตัวเองตอนพูดกับคนนอก ต่างจาก おとうさん ที่ใช้เรียกพ่อคนอื่นหรือเรียกตรงๆ"
+      },
+      {
+        "id": "affirmative-17",
+        "promptThai": "พูดว่า: ฉันขึ้นรถไฟชินคันเซ็น",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
+          { "text": "のります", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ります" }], "romaji": "norimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "しんかんせんに",
+          "のります"
+        ],
+        "romaji": "Watashi wa shinkansen ni norimasu.",
+        "thai": "ฉันขึ้นรถไฟชินคันเซ็น",
+        "explanation": "に ใช้กับกริยา のる (ขึ้นพาหนะ) เพื่อบอกพาหนะที่จะขึ้น"
+      },
+      {
+        "id": "affirmative-18",
+        "promptThai": "พูดว่า: ฉันซื้อหมวกน่ารัก",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "かわいい", "romaji": "kawaii" },
+          { "text": "ぼうしを", "kanji": [{ "text": "帽子", "reading": "ぼうし" }, { "text": "を" }], "romaji": "boushi wo" },
+          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "かわいい",
+          "ぼうしを",
+          "かいます"
+        ],
+        "romaji": "Watashi wa kawaii boushi wo kaimasu.",
+        "thai": "ฉันซื้อหมวกน่ารัก",
+        "explanation": "คำคุณศัพท์ い เช่น かわいい สามารถวางไว้หน้าคำนามเพื่อขยายความได้โดยตรง ไม่ต้องเปลี่ยนรูป"
+      },
+      {
+        "id": "affirmative-19",
+        "promptThai": "พูดว่า: ฉันช่วยแม่",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ははを", "kanji": [{ "text": "母", "reading": "はは" }, { "text": "を" }], "romaji": "haha wo" },
+          { "text": "てつだいます", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "います" }], "romaji": "tetsudaimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ははを",
+          "てつだいます"
+        ],
+        "romaji": "Watashi wa haha wo tetsudaimasu.",
+        "thai": "ฉันช่วยแม่ (เรียกแม่ตัวเองกับคนนอก)",
+        "explanation": "てつだう เป็นกริยากลุ่ม 1 ลงท้าย う เปลี่ยนเป็น い แล้วเติม ます"
+      },
+      {
+        "id": "affirmative-20",
+        "promptThai": "พูดว่า: ฉันซื้อกระเป๋าสีครีม",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "クリームの", "romaji": "kuriimu no" },
+          { "text": "かばんを", "romaji": "kaban wo" },
+          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "クリームの",
+          "かばんを",
+          "かいます"
+        ],
+        "romaji": "Watashi wa kuriimu no kaban wo kaimasu.",
+        "thai": "ฉันซื้อกระเป๋าสีครีม",
+        "explanation": "の ใช้เชื่อมคำนามสี (ที่ไม่มีคำคุณศัพท์ในตัว) กับคำนามที่ตามมา เช่น สีครีม+の+กระเป๋า"
       }
     ],
     "formLabel": "ます",
@@ -528,6 +672,176 @@
         "romaji": "Nichiyoubi wa gakkou ni ikimasen.",
         "thai": "วันอาทิตย์ฉันไม่ไปโรงเรียน",
         "explanation": "に ใช้บอกจุดหมายปลายทางได้เช่นเดียวกับ へ กับกริยาการเคลื่อนที่"
+      },
+      {
+        "id": "negative-11",
+        "promptThai": "พูดว่า: ฉันไม่กินนัตโตะ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "なっとうを", "romaji": "nattou wo" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "なっとうを",
+          "たべません"
+        ],
+        "romaji": "Watashi wa nattou wo tabemasen.",
+        "thai": "ฉันไม่กินนัตโตะ",
+        "explanation": "โครงสร้างปฏิเสธเดียวกับ たべません ทั่วไป แค่เปลี่ยนกรรมเป็นคำศัพท์ใหม่"
+      },
+      {
+        "id": "negative-12",
+        "promptThai": "พูดว่า: เขาไม่กินเต้าหู้",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "とうふを", "kanji": [{ "text": "豆腐", "reading": "とうふ" }, { "text": "を" }], "romaji": "toufu wo" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "とうふを",
+          "たべません"
+        ],
+        "romaji": "Kare wa toufu wo tabemasen.",
+        "thai": "เขาไม่กินเต้าหู้",
+        "explanation": "たべる เป็นกริยากลุ่ม 2 ตัด る แล้วเติม ません ได้เลย"
+      },
+      {
+        "id": "negative-13",
+        "promptThai": "พูดว่า: ฉันไม่ไปร้านสะดวกซื้อ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "コンビニへ", "romaji": "konbini e" },
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "コンビニへ",
+          "いきません"
+        ],
+        "romaji": "Watashi wa konbini e ikimasen.",
+        "thai": "ฉันไม่ไปร้านสะดวกซื้อ",
+        "explanation": "へ ยังคงบอกจุดหมายปลายทางเหมือนเดิมในประโยคปฏิเสธ"
+      },
+      {
+        "id": "negative-14",
+        "promptThai": "พูดว่า: เธอไม่จ๊อกกิ้ง",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "ジョギングを", "romaji": "jogingu wo" },
+          { "text": "しません", "romaji": "shimasen" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "ジョギングを",
+          "しません"
+        ],
+        "romaji": "Kanojo wa jogingu wo shimasen.",
+        "thai": "เธอไม่จ๊อกกิ้ง",
+        "explanation": "する ปฏิเสธด้วยรูปพิเศษ しません ใช้ได้กับคำนามงานอดิเรกทับศัพท์หลายคำ"
+      },
+      {
+        "id": "negative-15",
+        "promptThai": "พูดว่า: ฉันไม่ทำงานพาร์ทไทม์",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "アルバイトを", "romaji": "arubaito wo" },
+          { "text": "しません", "romaji": "shimasen" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "アルバイトを",
+          "しません"
+        ],
+        "romaji": "Watashi wa arubaito wo shimasen.",
+        "thai": "ฉันไม่ทำงานพาร์ทไทม์",
+        "explanation": "アルバイトを します/しません ใช้พูดถึงการทำงานพาร์ทไทม์"
+      },
+      {
+        "id": "negative-16",
+        "promptThai": "พูดว่า: ฉันไม่ซื้อพรม",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "じゅうたんを", "romaji": "juutan wo" },
+          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "じゅうたんを",
+          "かいません"
+        ],
+        "romaji": "Watashi wa juutan wo kaimasen.",
+        "thai": "ฉันไม่ซื้อพรม",
+        "explanation": "かう เปลี่ยนเสียงท้ายเป็น い แล้วเติม ません"
+      },
+      {
+        "id": "negative-17",
+        "promptThai": "พูดว่า: ฉันไม่เรียนอย่างจริงจัง",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "まじめに", "kanji": [{ "text": "真面目", "reading": "まじめ" }, { "text": "に" }], "romaji": "majime ni" },
+          { "text": "べんきょうしません", "romaji": "benkyou shimasen" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "まじめに",
+          "べんきょうしません"
+        ],
+        "romaji": "Watashi wa majime ni benkyou shimasen.",
+        "thai": "ฉันไม่เรียนอย่างจริงจัง",
+        "explanation": "คำคุณศัพท์ な เช่น まじめ เติม に เพื่อทำหน้าที่ขยายกริยา (adverb)"
+      },
+      {
+        "id": "negative-18",
+        "promptThai": "พูดว่า: ฉันไม่กินอาหารเผ็ด",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "からい", "romaji": "karai" },
+          { "text": "りょうりを", "kanji": [{ "text": "料理", "reading": "りょうり" }, { "text": "を" }], "romaji": "ryouri wo" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "からい",
+          "りょうりを",
+          "たべません"
+        ],
+        "romaji": "Watashi wa karai ryouri wo tabemasen.",
+        "thai": "ฉันไม่กินอาหารเผ็ด",
+        "explanation": "からい เป็นคำคุณศัพท์ い วางหน้าคำนาม りょうり เพื่อขยายความโดยไม่ต้องเปลี่ยนรูป"
+      },
+      {
+        "id": "negative-19",
+        "promptThai": "พูดว่า: ฉันไม่ไปร้านขายยา",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "やっきょくへ", "kanji": [{ "text": "薬局", "reading": "やっきょく" }, { "text": "へ" }], "romaji": "yakkyoku e" },
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "やっきょくへ",
+          "いきません"
+        ],
+        "romaji": "Watashi wa yakkyoku e ikimasen.",
+        "thai": "ฉันไม่ไปร้านขายยา",
+        "explanation": "へ บอกจุดหมายปลายทาง ใช้ได้กับสถานที่ใหม่ๆ เช่นเดียวกับสถานที่อื่น"
+      },
+      {
+        "id": "negative-20",
+        "promptThai": "พูดว่า: ฉันก็ไม่ขับรถเหมือนกัน",
+        "chunks": [
+          { "text": "わたしも", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }], "romaji": "watashi mo" },
+          { "text": "うんてんしません", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しません" }], "romaji": "unten shimasen" }
+        ],
+        "correctOrder": [
+          "わたしも",
+          "うんてんしません"
+        ],
+        "romaji": "Watashi mo unten shimasen.",
+        "thai": "ฉันก็ไม่ขับรถเหมือนกัน",
+        "explanation": "も ใช้แทนที่ は เมื่อต้องการบอกว่า 'เช่นกัน' うんてんする เป็นกริยากลุ่ม 3"
       }
     ],
     "formLabel": "ません",
@@ -763,6 +1077,157 @@
         "romaji": "Nanji kara nanji made hatarakimasu ka.",
         "thai": "คุณทำงานตั้งแต่กี่โมงถึงกี่โมง",
         "explanation": "から ใช้บอกจุดเริ่มต้น และ まで ใช้บอกจุดสิ้นสุด มักใช้คู่กันเป็น から~まで"
+      },
+      {
+        "id": "question-masu-12",
+        "promptThai": "ถามว่า: คุณกินนัตโตะไหม",
+        "chunks": [
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "なっとうを", "romaji": "nattou wo" },
+          { "text": "たべますか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べますか" }], "romaji": "tabemasu ka" }
+        ],
+        "correctOrder": [
+          "あなたは",
+          "なっとうを",
+          "たべますか"
+        ],
+        "romaji": "Anata wa nattou wo tabemasu ka.",
+        "thai": "คุณกินนัตโตะไหม",
+        "explanation": "เติม か ท้ายรูป ます เพื่อเปลี่ยนเป็นประโยคคำถาม"
+      },
+      {
+        "id": "question-masu-13",
+        "promptThai": "ถามว่า: คุณกินไก่ย่างเสียบไม้ไหม",
+        "chunks": [
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "やきとりを", "kanji": [{ "text": "焼", "reading": "や" }, { "text": "き" }, { "text": "鳥", "reading": "とり" }, { "text": "を" }], "romaji": "yakitori wo" },
+          { "text": "たべますか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べますか" }], "romaji": "tabemasu ka" }
+        ],
+        "correctOrder": [
+          "あなたは",
+          "やきとりを",
+          "たべますか"
+        ],
+        "romaji": "Anata wa yakitori wo tabemasu ka.",
+        "thai": "คุณกินไก่ย่างเสียบไม้ไหม",
+        "explanation": "โครงสร้างคำถามเดียวกับ ますか ทั่วไป เปลี่ยนแค่คำนามที่เป็นกรรม"
+      },
+      {
+        "id": "question-masu-14",
+        "promptThai": "ถามว่า: คุณไปร้านสะดวกซื้อไหม",
+        "chunks": [
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "コンビニへ", "romaji": "konbini e" },
+          { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }], "romaji": "ikimasu ka" }
+        ],
+        "correctOrder": [
+          "あなたは",
+          "コンビニへ",
+          "いきますか"
+        ],
+        "romaji": "Anata wa konbini e ikimasu ka.",
+        "thai": "คุณไปร้านสะดวกซื้อไหม",
+        "explanation": "へ บอกจุดหมายปลายทาง วางก่อนกริยาเสมอ"
+      },
+      {
+        "id": "question-masu-15",
+        "promptThai": "ถามว่า: คุณทำงานพาร์ทไทม์ไหม",
+        "chunks": [
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "アルバイトを", "romaji": "arubaito wo" },
+          { "text": "しますか", "romaji": "shimasu ka" }
+        ],
+        "correctOrder": [
+          "あなたは",
+          "アルバイトを",
+          "しますか"
+        ],
+        "romaji": "Anata wa arubaito wo shimasu ka.",
+        "thai": "คุณทำงานพาร์ทไทม์ไหม",
+        "explanation": "アルバイトを します ใช้พูดถึงการทำงานพาร์ทไทม์ เติม か ให้เป็นคำถาม"
+      },
+      {
+        "id": "question-masu-16",
+        "promptThai": "ถามว่า: คุณจ๊อกกิ้งไหม",
+        "chunks": [
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "ジョギングを", "romaji": "jogingu wo" },
+          { "text": "しますか", "romaji": "shimasu ka" }
+        ],
+        "correctOrder": [
+          "あなたは",
+          "ジョギングを",
+          "しますか"
+        ],
+        "romaji": "Anata wa jogingu wo shimasu ka.",
+        "thai": "คุณจ๊อกกิ้งไหม",
+        "explanation": "คำนามงานอดิเรกทับศัพท์ เช่น ジョギング ใช้กับ します/しますか ได้เหมือนกัน"
+      },
+      {
+        "id": "question-masu-17",
+        "promptThai": "ถามว่า: คุณดื่มกาแฟที่ร้านกาแฟไหม",
+        "chunks": [
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
+          { "text": "コーヒーを", "romaji": "koohii wo" },
+          { "text": "のみますか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みますか" }], "romaji": "nomimasu ka" }
+        ],
+        "correctOrder": [
+          "あなたは",
+          "きっさてんで",
+          "コーヒーを",
+          "のみますか"
+        ],
+        "romaji": "Anata wa kissaten de koohii wo nomimasu ka.",
+        "thai": "คุณดื่มกาแฟที่ร้านกาแฟไหม",
+        "explanation": "で ใช้บอกสถานที่ที่เกิดการกระทำ ในที่นี้คือร้านกาแฟ"
+      },
+      {
+        "id": "question-masu-18",
+        "promptThai": "ถามว่า: คุณขับรถทุกวันไหม",
+        "chunks": [
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "まいにち", "kanji": [{ "text": "毎日", "reading": "まいにち" }], "romaji": "mainichi" },
+          { "text": "うんてんしますか", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しますか" }], "romaji": "unten shimasu ka" }
+        ],
+        "correctOrder": [
+          "あなたは",
+          "まいにち",
+          "うんてんしますか"
+        ],
+        "romaji": "Anata wa mainichi unten shimasu ka.",
+        "thai": "คุณขับรถทุกวันไหม",
+        "explanation": "まいにち (ทุกวัน) วางหลังหัวข้อเพื่อบอกความถี่ของการกระทำ"
+      },
+      {
+        "id": "question-masu-19",
+        "promptThai": "ถามว่า: คุณสอนนักเรียนไหม",
+        "chunks": [
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "がくせいに", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "に" }], "romaji": "gakusei ni" },
+          { "text": "おしえますか", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えますか" }], "romaji": "oshiemasu ka" }
+        ],
+        "correctOrder": [
+          "あなたは",
+          "がくせいに",
+          "おしえますか"
+        ],
+        "romaji": "Anata wa gakusei ni oshiemasu ka.",
+        "thai": "คุณสอนนักเรียนไหม",
+        "explanation": "に ใช้บอกผู้รับของการกระทำ (สอนให้ใคร) กับกริยา おしえる"
+      },
+      {
+        "id": "question-masu-20",
+        "promptThai": "ถามว่า: คุณเข้าใจไหม",
+        "chunks": [
+          { "text": "わかりますか", "kanji": [{ "text": "分", "reading": "わ" }, { "text": "かりますか" }], "romaji": "wakarimasu ka" }
+        ],
+        "correctOrder": [
+          "わかりますか"
+        ],
+        "romaji": "Wakarimasu ka.",
+        "thai": "คุณเข้าใจไหม",
+        "explanation": "わかる เป็นกริยาที่มักใช้แบบไม่ต้องมีกรรม を ชัดเจน เติม か เพื่อถาม"
       }
     ],
     "formLabel": "ますか",
@@ -975,6 +1440,174 @@
         "romaji": "Koohii mo nomimasen ka.",
         "thai": "ดื่มกาแฟด้วยกันไหม (เช่นกัน)",
         "explanation": "も ใช้ชวนแบบ 'สิ่งนี้ก็เช่นกัน' เมื่อมีสิ่งอื่นถูกพูดถึงไปแล้วก่อนหน้า"
+      },
+      {
+        "id": "invitation-11",
+        "promptThai": "ชวนว่า: กินนัตโตะด้วยกันไหม",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "なっとうを", "romaji": "nattou wo" },
+          { "text": "たべませんか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんか" }], "romaji": "tabemasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "なっとうを",
+          "たべませんか"
+        ],
+        "romaji": "Issho ni nattou wo tabemasen ka.",
+        "thai": "กินนัตโตะด้วยกันไหม",
+        "explanation": "ませんか ใช้ชวนอย่างสุภาพ เติม いっしょに (ด้วยกัน) นำหน้าได้"
+      },
+      {
+        "id": "invitation-12",
+        "promptThai": "ชวนว่า: ไปร้านสะดวกซื้อด้วยกันไหม",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "コンビニへ", "romaji": "konbini e" },
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "コンビニへ",
+          "いきませんか"
+        ],
+        "romaji": "Issho ni konbini e ikimasen ka.",
+        "thai": "ไปร้านสะดวกซื้อด้วยกันไหม",
+        "explanation": "へ ใช้บอกจุดหมายปลายทางในประโยคชวนได้เหมือนประโยคปกติ"
+      },
+      {
+        "id": "invitation-13",
+        "promptThai": "ชวนว่า: จ๊อกกิ้งด้วยกันไหม",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "ジョギングを", "romaji": "jogingu wo" },
+          { "text": "しませんか", "romaji": "shimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "ジョギングを",
+          "しませんか"
+        ],
+        "romaji": "Issho ni jogingu wo shimasen ka.",
+        "thai": "จ๊อกกิ้งด้วยกันไหม",
+        "explanation": "する ในรูป ませんか ใช้ชวนทำกิจกรรมทับศัพท์ต่างๆ ได้"
+      },
+      {
+        "id": "invitation-14",
+        "promptThai": "ชวนว่า: เล่นไพ่ด้วยกันไหม",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "トランプを", "romaji": "toranpu wo" },
+          { "text": "しませんか", "romaji": "shimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "トランプを",
+          "しませんか"
+        ],
+        "romaji": "Issho ni toranpu wo shimasen ka.",
+        "thai": "เล่นไพ่ด้วยกันไหม",
+        "explanation": "いっしょに (ด้วยกัน) มักนำหน้ากรรมเมื่อชวนทำกิจกรรมร่วมกัน"
+      },
+      {
+        "id": "invitation-15",
+        "promptThai": "ชวนว่า: เล่นเซิร์ฟด้วยกันไหม",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "サーフィンを", "romaji": "saafin wo" },
+          { "text": "しませんか", "romaji": "shimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "サーフィンを",
+          "しませんか"
+        ],
+        "romaji": "Issho ni saafin wo shimasen ka.",
+        "thai": "เล่นเซิร์ฟด้วยกันไหม",
+        "explanation": "โครงสร้างเดียวกับ ませんか ทั่วไป เปลี่ยนแค่กิจกรรมที่จะชวนทำ"
+      },
+      {
+        "id": "invitation-16",
+        "promptThai": "ชวนว่า: ดื่มกาแฟที่ร้านกาแฟด้วยกันไหม",
+        "chunks": [
+          { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
+          { "text": "コーヒーを", "romaji": "koohii wo" },
+          { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }], "romaji": "nomimasen ka" }
+        ],
+        "correctOrder": [
+          "きっさてんで",
+          "コーヒーを",
+          "のみませんか"
+        ],
+        "romaji": "Kissaten de koohii wo nomimasen ka.",
+        "thai": "ดื่มกาแฟที่ร้านกาแฟด้วยกันไหม",
+        "explanation": "で บอกสถานที่ที่จะทำกิจกรรมร่วมกัน วางไว้หลังคำนามสถานที่"
+      },
+      {
+        "id": "invitation-17",
+        "promptThai": "ชวนว่า: เล่นบอร์ดเกมกับฉันไหม",
+        "chunks": [
+          { "text": "わたしと", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "と" }], "romaji": "watashi to" },
+          { "text": "ボードゲームを", "romaji": "boodo geemu wo" },
+          { "text": "しませんか", "romaji": "shimasen ka" }
+        ],
+        "correctOrder": [
+          "わたしと",
+          "ボードゲームを",
+          "しませんか"
+        ],
+        "romaji": "Watashi to boodo geemu wo shimasen ka.",
+        "thai": "เล่นบอร์ดเกมกับฉันไหม",
+        "explanation": "と ใช้ชวนให้ทำกิจกรรมร่วมกับผู้พูด แปลว่า 'กับ'"
+      },
+      {
+        "id": "invitation-18",
+        "promptThai": "ชวนว่า: พรุ่งนี้ไปสวนสัตว์ด้วยกันไหม",
+        "chunks": [
+          { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }], "romaji": "ashita" },
+          { "text": "どうぶつえんへ", "kanji": [{ "text": "動物園", "reading": "どうぶつえん" }, { "text": "へ" }], "romaji": "doubutsuen e" },
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" }
+        ],
+        "correctOrder": [
+          "あした",
+          "どうぶつえんへ",
+          "いきませんか"
+        ],
+        "romaji": "Ashita doubutsuen e ikimasen ka.",
+        "thai": "พรุ่งนี้ไปสวนสัตว์ด้วยกันไหม",
+        "explanation": "คำบอกเวลาอย่าง あした วางต้นประโยคได้เมื่อละหัวข้อไว้"
+      },
+      {
+        "id": "invitation-19",
+        "promptThai": "ชวนว่า: กินนัตโตะด้วยกันไหม (เช่นกัน)",
+        "chunks": [
+          { "text": "なっとうも", "romaji": "nattou mo" },
+          { "text": "たべませんか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんか" }], "romaji": "tabemasen ka" }
+        ],
+        "correctOrder": [
+          "なっとうも",
+          "たべませんか"
+        ],
+        "romaji": "Nattou mo tabemasen ka.",
+        "thai": "กินนัตโตะด้วยกันไหม (เช่นกัน)",
+        "explanation": "も ใช้ชวนแบบ 'สิ่งนี้ก็เช่นกัน' เมื่อมีสิ่งอื่นถูกพูดถึงไปแล้วก่อนหน้า"
+      },
+      {
+        "id": "invitation-20",
+        "promptThai": "ชวนว่า: เรียนเขียนโปรแกรมด้วยกันไหม",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "プログラミングを", "romaji": "puroguramingu wo" },
+          { "text": "ならいませんか", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "いませんか" }], "romaji": "naraimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "プログラミングを",
+          "ならいませんか"
+        ],
+        "romaji": "Issho ni puroguramingu wo naraimasen ka.",
+        "thai": "เรียนเขียนโปรแกรมด้วยกันไหม",
+        "explanation": "ならう เปลี่ยนเป็นรูป ませんか คือ ならいませんか เพื่อชวนเรียนด้วยกัน"
       }
     ],
     "formLabel": "ませんか",
@@ -1223,6 +1856,146 @@
         "romaji": "Getsuyoubi kara kin'youbi made hatarakimashita.",
         "thai": "ฉันทำงานตั้งแต่วันจันทร์ถึงวันศุกร์ (แล้ว)",
         "explanation": "から~まで ใช้บอกช่วงเวลาตั้งแต่จุดเริ่มต้นถึงจุดสิ้นสุด ใช้ได้ทั้งกับเวลานาฬิกาและวัน"
+      },
+      {
+        "id": "past-13",
+        "promptThai": "พูดว่า: เมื่อวานฉันกินนัตโตะแล้ว",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "なっとうを", "romaji": "nattou wo" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "きのう",
+          "なっとうを",
+          "たべました"
+        ],
+        "romaji": "Watashi wa kinou nattou wo tabemashita.",
+        "thai": "เมื่อวานฉันกินนัตโตะแล้ว",
+        "explanation": "きのう (เมื่อวาน) เป็นสัญญาณบอกว่าต้องใช้รูปอดีต ました"
+      },
+      {
+        "id": "past-14",
+        "promptThai": "พูดว่า: เขาซื้อเต้าหู้แล้ว",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "とうふを", "kanji": [{ "text": "豆腐", "reading": "とうふ" }, { "text": "を" }], "romaji": "toufu wo" },
+          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }], "romaji": "kaimashita" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "とうふを",
+          "かいました"
+        ],
+        "romaji": "Kare wa toufu wo kaimashita.",
+        "thai": "เขาซื้อเต้าหู้แล้ว",
+        "explanation": "かう เปลี่ยนเสียงท้ายเป็น い ก่อนเติม ました"
+      },
+      {
+        "id": "past-15",
+        "promptThai": "พูดว่า: ฉันดื่มกาแฟที่ร้านกาแฟแล้ว",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
+          { "text": "コーヒーを", "romaji": "koohii wo" },
+          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }], "romaji": "nomimashita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "きっさてんで",
+          "コーヒーを",
+          "のみました"
+        ],
+        "romaji": "Watashi wa kissaten de koohii wo nomimashita.",
+        "thai": "ฉันดื่มกาแฟที่ร้านกาแฟแล้ว",
+        "explanation": "で บอกสถานที่ที่เกิดการกระทำ ใช้ได้ทั้งประโยครูปปัจจุบันและอดีต"
+      },
+      {
+        "id": "past-16",
+        "promptThai": "พูดว่า: เธอไปร้านขายยาแล้ว",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "やっきょくへ", "kanji": [{ "text": "薬局", "reading": "やっきょく" }, { "text": "へ" }], "romaji": "yakkyoku e" },
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "やっきょくへ",
+          "いきました"
+        ],
+        "romaji": "Kanojo wa yakkyoku e ikimashita.",
+        "thai": "เธอไปร้านขายยาแล้ว",
+        "explanation": "いく เปลี่ยนเป็นรูปอดีต いきました ไม่ว่าจุดหมายปลายทางจะเป็นที่ใด"
+      },
+      {
+        "id": "past-17",
+        "promptThai": "พูดว่า: ฉันทำงานพาร์ทไทม์แล้ว",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "アルバイトを", "romaji": "arubaito wo" },
+          { "text": "しました", "romaji": "shimashita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "アルバイトを",
+          "しました"
+        ],
+        "romaji": "Watashi wa arubaito wo shimashita.",
+        "thai": "ฉันทำงานพาร์ทไทม์แล้ว",
+        "explanation": "する เปลี่ยนเป็นรูปอดีต しました"
+      },
+      {
+        "id": "past-18",
+        "promptThai": "พูดว่า: พ่อทำงานที่โรงงานแล้ว",
+        "chunks": [
+          { "text": "ちちは", "kanji": [{ "text": "父", "reading": "ちち" }, { "text": "は" }], "romaji": "chichi wa" },
+          { "text": "こうじょうで", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "で" }], "romaji": "koujou de" },
+          { "text": "はたらきました", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きました" }], "romaji": "hatarakimashita" }
+        ],
+        "correctOrder": [
+          "ちちは",
+          "こうじょうで",
+          "はたらきました"
+        ],
+        "romaji": "Chichi wa koujou de hatarakimashita.",
+        "thai": "พ่อทำงานที่โรงงานแล้ว",
+        "explanation": "働く เปลี่ยนเสียงท้ายเป็น き ก่อนเติม ました"
+      },
+      {
+        "id": "past-19",
+        "promptThai": "พูดว่า: ฉันขึ้นรถไฟชินคันเซ็นแล้ว",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
+          { "text": "のりました", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りました" }], "romaji": "norimashita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "しんかんせんに",
+          "のりました"
+        ],
+        "romaji": "Watashi wa shinkansen ni norimashita.",
+        "thai": "ฉันขึ้นรถไฟชินคันเซ็นแล้ว",
+        "explanation": "の る เปลี่ยนเสียงท้ายเป็น り ก่อนเติม ました"
+      },
+      {
+        "id": "past-20",
+        "promptThai": "พูดว่า: ฉันช่วยแม่แล้ว",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ははを", "kanji": [{ "text": "母", "reading": "はは" }, { "text": "を" }], "romaji": "haha wo" },
+          { "text": "てつだいました", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いました" }], "romaji": "tetsudaimashita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ははを",
+          "てつだいました"
+        ],
+        "romaji": "Watashi wa haha wo tetsudaimashita.",
+        "thai": "ฉันช่วยแม่แล้ว",
+        "explanation": "てつだう เปลี่ยนเสียงท้ายเป็น い ก่อนเติม ました"
       }
     ],
     "formLabel": "ました",
@@ -1437,6 +2210,176 @@
         "romaji": "Watashi mo tabemasendeshita.",
         "thai": "ฉันก็ไม่ได้กินเหมือนกัน",
         "explanation": "も ใช้บอกว่า 'เช่นกัน/ก็เหมือนกัน' แทนที่ は"
+      },
+      {
+        "id": "past-negative-11",
+        "promptThai": "พูดว่า: เมื่อวานฉันไม่ได้กินนัตโตะ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "なっとうを", "romaji": "nattou wo" },
+          { "text": "たべませんでした", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }], "romaji": "tabemasendeshita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "きのう",
+          "なっとうを",
+          "たべませんでした"
+        ],
+        "romaji": "Watashi wa kinou nattou wo tabemasendeshita.",
+        "thai": "เมื่อวานฉันไม่ได้กินนัตโตะ",
+        "explanation": "ました → ませんでした เพื่อปฏิเสธเหตุการณ์ในอดีต"
+      },
+      {
+        "id": "past-negative-12",
+        "promptThai": "พูดว่า: เขาไม่ได้ซื้อเต้าหู้",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "とうふを", "kanji": [{ "text": "豆腐", "reading": "とうふ" }, { "text": "を" }], "romaji": "toufu wo" },
+          { "text": "かいませんでした", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いませんでした" }], "romaji": "kaimasendeshita" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "とうふを",
+          "かいませんでした"
+        ],
+        "romaji": "Kare wa toufu wo kaimasendeshita.",
+        "thai": "เขาไม่ได้ซื้อเต้าหู้",
+        "explanation": "かう เปลี่ยนเป็นรูปปฏิเสธอดีต かいませんでした"
+      },
+      {
+        "id": "past-negative-13",
+        "promptThai": "พูดว่า: ฉันไม่ได้ไปร้านกาแฟ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "きっさてんへ", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "へ" }], "romaji": "kissaten e" },
+          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }], "romaji": "ikimasendeshita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "きっさてんへ",
+          "いきませんでした"
+        ],
+        "romaji": "Watashi wa kissaten e ikimasendeshita.",
+        "thai": "ฉันไม่ได้ไปร้านกาแฟ",
+        "explanation": "へ ยังคงบอกทิศทางเหมือนเดิมในประโยคปฏิเสธอดีต"
+      },
+      {
+        "id": "past-negative-14",
+        "promptThai": "พูดว่า: เธอไม่ได้ทำงานพาร์ทไทม์",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "アルバイトを", "romaji": "arubaito wo" },
+          { "text": "しませんでした", "romaji": "shimasendeshita" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "アルバイトを",
+          "しませんでした"
+        ],
+        "romaji": "Kanojo wa arubaito wo shimasendeshita.",
+        "thai": "เธอไม่ได้ทำงานพาร์ทไทม์",
+        "explanation": "する เปลี่ยนเป็นรูปปฏิเสธอดีต しませんでした"
+      },
+      {
+        "id": "past-negative-15",
+        "promptThai": "พูดว่า: ฉันไม่ได้ซื้อพรม",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "じゅうたんを", "romaji": "juutan wo" },
+          { "text": "かいませんでした", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いませんでした" }], "romaji": "kaimasendeshita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "じゅうたんを",
+          "かいませんでした"
+        ],
+        "romaji": "Watashi wa juutan wo kaimasendeshita.",
+        "thai": "ฉันไม่ได้ซื้อพรม",
+        "explanation": "ประโยคปฏิเสธอดีตเรียงลำดับคำเหมือนประโยคบอกเล่า เปลี่ยนแค่ส่วนท้ายกริยา"
+      },
+      {
+        "id": "past-negative-16",
+        "promptThai": "พูดว่า: ฉันไม่ได้เรียนอย่างจริงจัง",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "まじめに", "kanji": [{ "text": "真面目", "reading": "まじめ" }, { "text": "に" }], "romaji": "majime ni" },
+          { "text": "べんきょうしませんでした", "romaji": "benkyou shimasendeshita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "まじめに",
+          "べんきょうしませんでした"
+        ],
+        "romaji": "Watashi wa majime ni benkyou shimasendeshita.",
+        "thai": "ฉันไม่ได้เรียนอย่างจริงจัง",
+        "explanation": "まじめに (อย่างจริงจัง) เป็นคำวิเศษณ์จากคำคุณศัพท์ な ยังคงใช้ได้ในประโยคอดีต"
+      },
+      {
+        "id": "past-negative-17",
+        "promptThai": "พูดว่า: พ่อไม่ได้ทำงานที่โรงงาน",
+        "chunks": [
+          { "text": "ちちは", "kanji": [{ "text": "父", "reading": "ちち" }, { "text": "は" }], "romaji": "chichi wa" },
+          { "text": "こうじょうで", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "で" }], "romaji": "koujou de" },
+          { "text": "はたらきませんでした", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きませんでした" }], "romaji": "hatarakimasendeshita" }
+        ],
+        "correctOrder": [
+          "ちちは",
+          "こうじょうで",
+          "はたらきませんでした"
+        ],
+        "romaji": "Chichi wa koujou de hatarakimasendeshita.",
+        "thai": "พ่อไม่ได้ทำงานที่โรงงาน",
+        "explanation": "働く เปลี่ยนเป็นรูปปฏิเสธอดีต はたらきませんでした"
+      },
+      {
+        "id": "past-negative-18",
+        "promptThai": "พูดว่า: ฉันไม่ได้ขึ้นรถไฟชินคันเซ็น",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
+          { "text": "のりませんでした", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りませんでした" }], "romaji": "norimasendeshita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "しんかんせんに",
+          "のりませんでした"
+        ],
+        "romaji": "Watashi wa shinkansen ni norimasendeshita.",
+        "thai": "ฉันไม่ได้ขึ้นรถไฟชินคันเซ็น",
+        "explanation": "に ยังคงบอกพาหนะที่จะขึ้นได้เหมือนเดิมในประโยคปฏิเสธอดีต"
+      },
+      {
+        "id": "past-negative-19",
+        "promptThai": "พูดว่า: ฉันไม่ได้ช่วยแม่",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ははを", "kanji": [{ "text": "母", "reading": "はは" }, { "text": "を" }], "romaji": "haha wo" },
+          { "text": "てつだいませんでした", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いませんでした" }], "romaji": "tetsudaimasendeshita" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ははを",
+          "てつだいませんでした"
+        ],
+        "romaji": "Watashi wa haha wo tetsudaimasendeshita.",
+        "thai": "ฉันไม่ได้ช่วยแม่",
+        "explanation": "てつだう เปลี่ยนเป็นรูปปฏิเสธอดีต てつだいませんでした"
+      },
+      {
+        "id": "past-negative-20",
+        "promptThai": "พูดว่า: ฉันก็ไม่ได้ขับรถเหมือนกัน",
+        "chunks": [
+          { "text": "わたしも", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }], "romaji": "watashi mo" },
+          { "text": "うんてんしませんでした", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しませんでした" }], "romaji": "unten shimasendeshita" }
+        ],
+        "correctOrder": [
+          "わたしも",
+          "うんてんしませんでした"
+        ],
+        "romaji": "Watashi mo unten shimasendeshita.",
+        "thai": "ฉันก็ไม่ได้ขับรถเหมือนกัน",
+        "explanation": "も ใช้บอกว่า 'เช่นกัน/ก็เหมือนกัน' แทนที่ は"
       }
     ],
     "formLabel": "ませんでした",
@@ -1627,6 +2570,156 @@
         "romaji": "Kouen de matte kudasai.",
         "thai": "กรุณารอที่สวนสาธารณะ",
         "explanation": "で บอกสถานที่ที่จะให้ทำการกระทำนั้น (รอ) เกิดขึ้น"
+      },
+      {
+        "id": "te-kudasai-11",
+        "promptThai": "พูดว่า: กรุณากินนัตโตะ",
+        "chunks": [
+          { "text": "なっとうを", "romaji": "nattou wo" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" }
+        ],
+        "correctOrder": [
+          "なっとうを",
+          "たべてください"
+        ],
+        "romaji": "Nattou wo tabete kudasai.",
+        "thai": "กรุณากินนัตโตะ",
+        "explanation": "たべる ตัด る แล้วเติม て ください"
+      },
+      {
+        "id": "te-kudasai-12",
+        "promptThai": "พูดว่า: กรุณาซื้อเต้าหู้",
+        "chunks": [
+          { "text": "とうふを", "kanji": [{ "text": "豆腐", "reading": "とうふ" }, { "text": "を" }], "romaji": "toufu wo" },
+          { "text": "かってください", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってください" }], "romaji": "katte kudasai" }
+        ],
+        "correctOrder": [
+          "とうふを",
+          "かってください"
+        ],
+        "romaji": "Toufu wo katte kudasai.",
+        "thai": "กรุณาซื้อเต้าหู้",
+        "explanation": "かう ลงท้ายด้วย う เปลี่ยนเป็น って ก่อนเติม ください"
+      },
+      {
+        "id": "te-kudasai-13",
+        "promptThai": "พูดว่า: กรุณาไปร้านสะดวกซื้อ",
+        "chunks": [
+          { "text": "コンビニへ", "romaji": "konbini e" },
+          { "text": "いってください", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってください" }], "romaji": "itte kudasai" }
+        ],
+        "correctOrder": [
+          "コンビニへ",
+          "いってください"
+        ],
+        "romaji": "Konbini e itte kudasai.",
+        "thai": "กรุณาไปร้านสะดวกซื้อ",
+        "explanation": "いく เป็นข้อยกเว้น เปลี่ยนเป็น いって ก่อนเติม ください"
+      },
+      {
+        "id": "te-kudasai-14",
+        "promptThai": "พูดว่า: กรุณารอที่ร้านกาแฟ",
+        "chunks": [
+          { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
+          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }], "romaji": "matte kudasai" }
+        ],
+        "correctOrder": [
+          "きっさてんで",
+          "まってください"
+        ],
+        "romaji": "Kissaten de matte kudasai.",
+        "thai": "กรุณารอที่ร้านกาแฟ",
+        "explanation": "で บอกสถานที่ที่จะให้ทำการกระทำนั้น (รอ) เกิดขึ้น"
+      },
+      {
+        "id": "te-kudasai-15",
+        "promptThai": "พูดว่า: กรุณาเรียนการเขียนพู่กัน",
+        "chunks": [
+          { "text": "しょどうを", "kanji": [{ "text": "書道", "reading": "しょどう" }, { "text": "を" }], "romaji": "shodou wo" },
+          { "text": "ならってください", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "ってください" }], "romaji": "naratte kudasai" }
+        ],
+        "correctOrder": [
+          "しょどうを",
+          "ならってください"
+        ],
+        "romaji": "Shodou wo naratte kudasai.",
+        "thai": "กรุณาเรียนการเขียนพู่กัน",
+        "explanation": "ならう ลงท้ายด้วย う เปลี่ยนเป็น って ก่อนเติม ください"
+      },
+      {
+        "id": "te-kudasai-16",
+        "promptThai": "พูดว่า: กรุณาช่วยฉัน",
+        "chunks": [
+          { "text": "わたしを", "romaji": "watashi wo" },
+          { "text": "てつだってください", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "ってください" }], "romaji": "tetsudatte kudasai" }
+        ],
+        "correctOrder": [
+          "わたしを",
+          "てつだってください"
+        ],
+        "romaji": "Watashi wo tetsudatte kudasai.",
+        "thai": "กรุณาช่วยฉัน",
+        "explanation": "てつだう ลงท้ายด้วย う เปลี่ยนเป็น って ก่อนเติม ください"
+      },
+      {
+        "id": "te-kudasai-17",
+        "promptThai": "พูดว่า: กรุณาสอนนักเรียน",
+        "chunks": [
+          { "text": "がくせいに", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "に" }], "romaji": "gakusei ni" },
+          { "text": "おしえてください", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えてください" }], "romaji": "oshiete kudasai" }
+        ],
+        "correctOrder": [
+          "がくせいに",
+          "おしえてください"
+        ],
+        "romaji": "Gakusei ni oshiete kudasai.",
+        "thai": "กรุณาสอนนักเรียน",
+        "explanation": "おしえる ตัด る แล้วเติม て ください, に บอกผู้รับของการสอน"
+      },
+      {
+        "id": "te-kudasai-18",
+        "promptThai": "พูดว่า: กรุณาขึ้นรถไฟชินคันเซ็น",
+        "chunks": [
+          { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
+          { "text": "のってください", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ってください" }], "romaji": "notte kudasai" }
+        ],
+        "correctOrder": [
+          "しんかんせんに",
+          "のってください"
+        ],
+        "romaji": "Shinkansen ni notte kudasai.",
+        "thai": "กรุณาขึ้นรถไฟชินคันเซ็น",
+        "explanation": "のる ลงท้ายด้วย る เปลี่ยนเป็น って ก่อนเติม ください"
+      },
+      {
+        "id": "te-kudasai-19",
+        "promptThai": "พูดว่า: กรุณาขับรถทุกวัน",
+        "chunks": [
+          { "text": "まいにち", "kanji": [{ "text": "毎日", "reading": "まいにち" }], "romaji": "mainichi" },
+          { "text": "うんてんしてください", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してください" }], "romaji": "unten shite kudasai" }
+        ],
+        "correctOrder": [
+          "まいにち",
+          "うんてんしてください"
+        ],
+        "romaji": "Mainichi unten shite kudasai.",
+        "thai": "กรุณาขับรถทุกวัน",
+        "explanation": "うんてんする เปลี่ยนเป็นรูปて คือ うんてんして ก่อนเติม ください"
+      },
+      {
+        "id": "te-kudasai-20",
+        "promptThai": "พูดว่า: กรุณากินพาสต้า",
+        "chunks": [
+          { "text": "パスタを", "romaji": "pasuta wo" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" }
+        ],
+        "correctOrder": [
+          "パスタを",
+          "たべてください"
+        ],
+        "romaji": "Pasuta wo tabete kudasai.",
+        "thai": "กรุณากินพาสต้า",
+        "explanation": "たべる ตัด る แล้วเติม て ください ได้เลยเหมือนเดิม"
       }
     ],
     "formLabel": "てください",
@@ -1831,6 +2924,154 @@
         "romaji": "Koohii mo nonde mo ii desu ka.",
         "thai": "ดื่มกาแฟด้วยได้ไหม (เช่นกัน)",
         "explanation": "も ใช้ถามขออนุญาตทำสิ่งนี้เพิ่มเติมด้วย เช่นกัน"
+      },
+      {
+        "id": "te-mo-ii-11",
+        "promptThai": "ถามขออนุญาตว่า: กินนัตโตะได้ไหม",
+        "chunks": [
+          { "text": "なっとうを", "romaji": "nattou wo" },
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "なっとうを",
+          "たべてもいいですか"
+        ],
+        "romaji": "Nattou wo tabete mo ii desu ka.",
+        "thai": "กินนัตโตะได้ไหม",
+        "explanation": "เปลี่ยนกริยาเป็นรูปて แล้วเติม もいいですか เพื่อขออนุญาต"
+      },
+      {
+        "id": "te-mo-ii-12",
+        "promptThai": "ถามขออนุญาตว่า: ซื้อเต้าหู้ได้ไหม",
+        "chunks": [
+          { "text": "とうふを", "kanji": [{ "text": "豆腐", "reading": "とうふ" }, { "text": "を" }], "romaji": "toufu wo" },
+          { "text": "かってもいいですか", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってもいいですか" }], "romaji": "katte mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "とうふを",
+          "かってもいいですか"
+        ],
+        "romaji": "Toufu wo katte mo ii desu ka.",
+        "thai": "ซื้อเต้าหู้ได้ไหม",
+        "explanation": "かう เปลี่ยนเป็นรูปて คือ かって ก่อนเติม もいいですか"
+      },
+      {
+        "id": "te-mo-ii-13",
+        "promptThai": "ถามขออนุญาตว่า: ไปร้านสะดวกซื้อได้ไหม",
+        "chunks": [
+          { "text": "コンビニへ", "romaji": "konbini e" },
+          { "text": "いってもいいですか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってもいいですか" }], "romaji": "itte mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "コンビニへ",
+          "いってもいいですか"
+        ],
+        "romaji": "Konbini e itte mo ii desu ka.",
+        "thai": "ไปร้านสะดวกซื้อได้ไหม",
+        "explanation": "いく เป็นข้อยกเว้น เปลี่ยนเป็น いって ก่อนเติม もいいですか"
+      },
+      {
+        "id": "te-mo-ii-14",
+        "promptThai": "ถามขออนุญาตว่า: รอที่ร้านกาแฟได้ไหม",
+        "chunks": [
+          { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
+          { "text": "まってもいいですか", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってもいいですか" }], "romaji": "matte mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "きっさてんで",
+          "まってもいいですか"
+        ],
+        "romaji": "Kissaten de matte mo ii desu ka.",
+        "thai": "รอที่ร้านกาแฟได้ไหม",
+        "explanation": "で บอกสถานที่ที่จะขออนุญาตทำกิจกรรมนั้น"
+      },
+      {
+        "id": "te-mo-ii-15",
+        "promptThai": "ถามขออนุญาตว่า: เรียนการเขียนพู่กันได้ไหม",
+        "chunks": [
+          { "text": "しょどうを", "kanji": [{ "text": "書道", "reading": "しょどう" }, { "text": "を" }], "romaji": "shodou wo" },
+          { "text": "ならってもいいですか", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "ってもいいですか" }], "romaji": "naratte mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "しょどうを",
+          "ならってもいいですか"
+        ],
+        "romaji": "Shodou wo naratte mo ii desu ka.",
+        "thai": "เรียนการเขียนพู่กันได้ไหม",
+        "explanation": "ならう เปลี่ยนเป็นรูปて คือ ならって ก่อนเติม もいいですか"
+      },
+      {
+        "id": "te-mo-ii-16",
+        "promptThai": "ถามขออนุญาตว่า: ช่วยคุณได้ไหม",
+        "chunks": [
+          { "text": "あなたを", "romaji": "anata wo" },
+          { "text": "てつだってもいいですか", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "ってもいいですか" }], "romaji": "tetsudatte mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "あなたを",
+          "てつだってもいいですか"
+        ],
+        "romaji": "Anata wo tetsudatte mo ii desu ka.",
+        "thai": "ช่วยคุณได้ไหม",
+        "explanation": "てつだう เปลี่ยนเป็นรูปて คือ てつだって ก่อนเติม もいいですか"
+      },
+      {
+        "id": "te-mo-ii-17",
+        "promptThai": "ถามขออนุญาตว่า: สอนนักเรียนได้ไหม",
+        "chunks": [
+          { "text": "がくせいに", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "に" }], "romaji": "gakusei ni" },
+          { "text": "おしえてもいいですか", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えてもいいですか" }], "romaji": "oshiete mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "がくせいに",
+          "おしえてもいいですか"
+        ],
+        "romaji": "Gakusei ni oshiete mo ii desu ka.",
+        "thai": "สอนนักเรียนได้ไหม",
+        "explanation": "おしえる ตัด る แล้วเติม て もいいですか, に บอกผู้รับของการสอน"
+      },
+      {
+        "id": "te-mo-ii-18",
+        "promptThai": "ถามขออนุญาตว่า: ขึ้นรถไฟชินคันเซ็นได้ไหม",
+        "chunks": [
+          { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
+          { "text": "のってもいいですか", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ってもいいですか" }], "romaji": "notte mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "しんかんせんに",
+          "のってもいいですか"
+        ],
+        "romaji": "Shinkansen ni notte mo ii desu ka.",
+        "thai": "ขึ้นรถไฟชินคันเซ็นได้ไหม",
+        "explanation": "のる เปลี่ยนเป็นรูปて คือ のって ก่อนเติม もいいですか"
+      },
+      {
+        "id": "te-mo-ii-19",
+        "promptThai": "ถามขออนุญาตว่า: ขับรถได้ไหม",
+        "chunks": [
+          { "text": "うんてんしてもいいですか", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してもいいですか" }], "romaji": "unten shite mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "うんてんしてもいいですか"
+        ],
+        "romaji": "Unten shite mo ii desu ka.",
+        "thai": "ขับรถได้ไหม",
+        "explanation": "うんてんする เปลี่ยนเป็นรูปて คือ うんてんして ก่อนเติม もいいですか"
+      },
+      {
+        "id": "te-mo-ii-20",
+        "promptThai": "ถามขออนุญาตว่า: กินพาสต้าได้ไหม",
+        "chunks": [
+          { "text": "パスタを", "romaji": "pasuta wo" },
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "パスタを",
+          "たべてもいいですか"
+        ],
+        "romaji": "Pasuta wo tabete mo ii desu ka.",
+        "thai": "กินพาสต้าได้ไหม",
+        "explanation": "たべる ตัด る แล้วเติม て もいいですか ได้เลยเหมือนเดิม"
       }
     ],
     "formLabel": "てもいいですか",
@@ -2037,6 +3278,162 @@
         "romaji": "Tomodachi no hon wo totte wa ikemasen.",
         "thai": "ห้ามหยิบหนังสือของเพื่อน",
         "explanation": "の ใช้บอกความเป็นเจ้าของ ในที่นี้บอกว่าหนังสือเป็นของเพื่อน ไม่ใช่ของตัวเอง"
+      },
+      {
+        "id": "te-wa-ikemasen-11",
+        "promptThai": "พูดว่า: ห้ามกินนัตโตะที่ห้องสมุด",
+        "chunks": [
+          { "text": "としょかんで", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "で" }], "romaji": "toshokan de" },
+          { "text": "なっとうを", "romaji": "nattou wo" },
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
+        ],
+        "correctOrder": [
+          "としょかんで",
+          "なっとうを",
+          "たべてはいけません"
+        ],
+        "romaji": "Toshokan de nattou wo tabete wa ikemasen.",
+        "thai": "ห้ามกินนัตโตะที่ห้องสมุด",
+        "explanation": "で บอกสถานที่ที่ห้ามทำกิจกรรมนั้น"
+      },
+      {
+        "id": "te-wa-ikemasen-12",
+        "promptThai": "พูดว่า: ห้ามเล่นเกมที่โรงเรียนมัธยมปลาย",
+        "chunks": [
+          { "text": "こうこうで", "kanji": [{ "text": "高校", "reading": "こうこう" }, { "text": "で" }], "romaji": "koukou de" },
+          { "text": "ゲームを", "romaji": "geemu wo" },
+          { "text": "してはいけません", "romaji": "shite wa ikemasen" }
+        ],
+        "correctOrder": [
+          "こうこうで",
+          "ゲームを",
+          "してはいけません"
+        ],
+        "romaji": "Koukou de geemu wo shite wa ikemasen.",
+        "thai": "ห้ามเล่นเกมที่โรงเรียนมัธยมปลาย",
+        "explanation": "する เปลี่ยนเป็นรูปて คือ して ก่อนเติม はいけません"
+      },
+      {
+        "id": "te-wa-ikemasen-13",
+        "promptThai": "พูดว่า: ห้ามวิ่งที่ร้านทำผม",
+        "chunks": [
+          { "text": "びよういんで", "kanji": [{ "text": "美容院", "reading": "びよういん" }, { "text": "で" }], "romaji": "biyouin de" },
+          { "text": "はしってはいけません", "kanji": [{ "text": "走", "reading": "はし" }, { "text": "ってはいけません" }], "romaji": "hashitte wa ikemasen" }
+        ],
+        "correctOrder": [
+          "びよういんで",
+          "はしってはいけません"
+        ],
+        "romaji": "Biyouin de hashitte wa ikemasen.",
+        "thai": "ห้ามวิ่งที่ร้านทำผม",
+        "explanation": "はしる ลงท้าย る เปลี่ยนเป็น って ก่อนเติม はいけません"
+      },
+      {
+        "id": "te-wa-ikemasen-14",
+        "promptThai": "พูดว่า: ห้ามเล่นที่ที่จอดรถ",
+        "chunks": [
+          { "text": "ちゅうしゃじょうで", "kanji": [{ "text": "駐車場", "reading": "ちゅうしゃじょう" }, { "text": "で" }], "romaji": "chuushajou de" },
+          { "text": "あそんではいけません", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "んではいけません" }], "romaji": "asonde wa ikemasen" }
+        ],
+        "correctOrder": [
+          "ちゅうしゃじょうで",
+          "あそんではいけません"
+        ],
+        "romaji": "Chuushajou de asonde wa ikemasen.",
+        "thai": "ห้ามเล่นที่ที่จอดรถ",
+        "explanation": "あそぶ ลงท้าย ぶ เปลี่ยนเป็น んで ก่อนเติม はいけません"
+      },
+      {
+        "id": "te-wa-ikemasen-15",
+        "promptThai": "พูดว่า: ห้ามรอที่ทางแยก",
+        "chunks": [
+          { "text": "こうさてんで", "kanji": [{ "text": "交差点", "reading": "こうさてん" }, { "text": "で" }], "romaji": "kousaten de" },
+          { "text": "まってはいけません", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってはいけません" }], "romaji": "matte wa ikemasen" }
+        ],
+        "correctOrder": [
+          "こうさてんで",
+          "まってはいけません"
+        ],
+        "romaji": "Kousaten de matte wa ikemasen.",
+        "thai": "ห้ามรอที่ทางแยก",
+        "explanation": "まつ ลงท้าย つ เปลี่ยนเป็น って ก่อนเติม はいけません"
+      },
+      {
+        "id": "te-wa-ikemasen-16",
+        "promptThai": "พูดว่า: ห้ามนอนที่ร้านกาแฟ",
+        "chunks": [
+          { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
+          { "text": "ねてはいけません", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "てはいけません" }], "romaji": "nete wa ikemasen" }
+        ],
+        "correctOrder": [
+          "きっさてんで",
+          "ねてはいけません"
+        ],
+        "romaji": "Kissaten de nete wa ikemasen.",
+        "thai": "ห้ามนอนที่ร้านกาแฟ",
+        "explanation": "ねる เป็นกริยากลุ่ม 2 ตัด る แล้วเติม て はいけません ได้เลย"
+      },
+      {
+        "id": "te-wa-ikemasen-17",
+        "promptThai": "พูดว่า: ห้ามถ่ายรูปที่ร้านขายยา",
+        "chunks": [
+          { "text": "やっきょくで", "kanji": [{ "text": "薬局", "reading": "やっきょく" }, { "text": "で" }], "romaji": "yakkyoku de" },
+          { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }], "romaji": "shashin wo" },
+          { "text": "とってはいけません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってはいけません" }], "romaji": "totte wa ikemasen" }
+        ],
+        "correctOrder": [
+          "やっきょくで",
+          "しゃしんを",
+          "とってはいけません"
+        ],
+        "romaji": "Yakkyoku de shashin wo totte wa ikemasen.",
+        "thai": "ห้ามถ่ายรูปที่ร้านขายยา",
+        "explanation": "で ใช้บอกสถานที่ที่ห้ามทำกิจกรรมนั้น ใช้ได้กับสถานที่ใหม่ๆ"
+      },
+      {
+        "id": "te-wa-ikemasen-18",
+        "promptThai": "พูดว่า: ห้ามเล่นที่โรงงาน",
+        "chunks": [
+          { "text": "こうじょうで", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "で" }], "romaji": "koujou de" },
+          { "text": "あそんではいけません", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "んではいけません" }], "romaji": "asonde wa ikemasen" }
+        ],
+        "correctOrder": [
+          "こうじょうで",
+          "あそんではいけません"
+        ],
+        "romaji": "Koujou de asonde wa ikemasen.",
+        "thai": "ห้ามเล่นที่โรงงาน",
+        "explanation": "あそぶ ลงท้าย ぶ เปลี่ยนเป็น んで ก่อนเติม はいけません"
+      },
+      {
+        "id": "te-wa-ikemasen-19",
+        "promptThai": "พูดว่า: ห้ามขับรถที่โรงเรียน",
+        "chunks": [
+          { "text": "がっこうで", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "で" }], "romaji": "gakkou de" },
+          { "text": "うんてんしてはいけません", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してはいけません" }], "romaji": "unten shite wa ikemasen" }
+        ],
+        "correctOrder": [
+          "がっこうで",
+          "うんてんしてはいけません"
+        ],
+        "romaji": "Gakkou de unten shite wa ikemasen.",
+        "thai": "ห้ามขับรถที่โรงเรียน",
+        "explanation": "うんてんする เปลี่ยนเป็นรูปて คือ うんてんして ก่อนเติม はいけません"
+      },
+      {
+        "id": "te-wa-ikemasen-20",
+        "promptThai": "พูดว่า: ห้ามกินบนโซฟา",
+        "chunks": [
+          { "text": "ソファーで", "romaji": "sofaa de" },
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
+        ],
+        "correctOrder": [
+          "ソファーで",
+          "たべてはいけません"
+        ],
+        "romaji": "Sofaa de tabete wa ikemasen.",
+        "thai": "ห้ามกินบนโซฟา",
+        "explanation": "で ยังใช้บอกสถานที่ที่ห้ามทำกิจกรรมนั้นได้เหมือนกับสถานที่อื่นๆ"
       }
     ],
     "formLabel": "てはいけません",
@@ -2260,6 +3657,161 @@
         "romaji": "Kuji kara goji made hatarakitai desu.",
         "thai": "ฉันอยากทำงานตั้งแต่ 9 โมงถึง 5 โมง",
         "explanation": "から~まで ใช้บอกช่วงเวลาตั้งแต่จุดเริ่มต้นถึงจุดสิ้นสุด"
+      },
+      {
+        "id": "tai-desu-12",
+        "promptThai": "พูดว่า: ฉันอยากกินนัตโตะ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "なっとうが", "romaji": "nattou ga" },
+          { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }], "romaji": "tabetai desu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "なっとうが",
+          "たべたいです"
+        ],
+        "romaji": "Watashi wa nattou ga tabetai desu.",
+        "thai": "ฉันอยากกินนัตโตะ",
+        "explanation": "ตัด ます ออกจากรูป ます แล้วเติม たいです และมักเปลี่ยน を เป็น が"
+      },
+      {
+        "id": "tai-desu-13",
+        "promptThai": "พูดว่า: ฉันอยากกินไก่ย่างเสียบไม้",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "やきとりが", "kanji": [{ "text": "焼", "reading": "や" }, { "text": "き" }, { "text": "鳥", "reading": "とり" }, { "text": "が" }], "romaji": "yakitori ga" },
+          { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }], "romaji": "tabetai desu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "やきとりが",
+          "たべたいです"
+        ],
+        "romaji": "Watashi wa yakitori ga tabetai desu.",
+        "thai": "ฉันอยากกินไก่ย่างเสียบไม้",
+        "explanation": "โครงสร้างเดียวกัน たいです เปลี่ยนแค่คำนามที่อยากกิน"
+      },
+      {
+        "id": "tai-desu-14",
+        "promptThai": "พูดว่า: ฉันอยากไปร้านกาแฟ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "きっさてんへ", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "へ" }], "romaji": "kissaten e" },
+          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }], "romaji": "ikitai desu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "きっさてんへ",
+          "いきたいです"
+        ],
+        "romaji": "Watashi wa kissaten e ikitai desu.",
+        "thai": "ฉันอยากไปร้านกาแฟ",
+        "explanation": "กริยาที่ใช้กับ へ (ทิศทาง) ไม่เปลี่ยนเป็น が แม้อยู่ในรูป たいです"
+      },
+      {
+        "id": "tai-desu-15",
+        "promptThai": "พูดว่า: ฉันอยากขึ้นรถไฟชินคันเซ็น",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
+          { "text": "のりたいです", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りたいです" }], "romaji": "noritai desu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "しんかんせんに",
+          "のりたいです"
+        ],
+        "romaji": "Watashi wa shinkansen ni noritai desu.",
+        "thai": "ฉันอยากขึ้นรถไฟชินคันเซ็น",
+        "explanation": "กริยาที่ใช้กับ に (พาหนะ/จุดหมาย) ไม่เปลี่ยนเป็น が แม้อยู่ในรูป たいです"
+      },
+      {
+        "id": "tai-desu-16",
+        "promptThai": "พูดว่า: ฉันอยากทำงานพาร์ทไทม์",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "アルバイトが", "romaji": "arubaito ga" },
+          { "text": "したいです", "romaji": "shitai desu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "アルバイトが",
+          "したいです"
+        ],
+        "romaji": "Watashi wa arubaito ga shitai desu.",
+        "thai": "ฉันอยากทำงานพาร์ทไทม์",
+        "explanation": "する ตัด ます ออก เหลือ し แล้วเติม たいです และเปลี่ยน を เป็น が"
+      },
+      {
+        "id": "tai-desu-17",
+        "promptThai": "พูดว่า: ฉันอยากเรียนการเขียนพู่กัน",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "しょどうが", "kanji": [{ "text": "書道", "reading": "しょどう" }, { "text": "が" }], "romaji": "shodou ga" },
+          { "text": "ならいたいです", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "いたいです" }], "romaji": "naraitai desu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "しょどうが",
+          "ならいたいです"
+        ],
+        "romaji": "Watashi wa shodou ga naraitai desu.",
+        "thai": "ฉันอยากเรียนการเขียนพู่กัน",
+        "explanation": "ならう ตัด ます ออก เหลือ なら い แล้วเติม たいです และเปลี่ยน を เป็น が"
+      },
+      {
+        "id": "tai-desu-18",
+        "promptThai": "พูดว่า: ฉันอยากสอนนักเรียน",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "がくせいに", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "に" }], "romaji": "gakusei ni" },
+          { "text": "おしえたいです", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えたいです" }], "romaji": "oshietai desu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "がくせいに",
+          "おしえたいです"
+        ],
+        "romaji": "Watashi wa gakusei ni oshietai desu.",
+        "thai": "ฉันอยากสอนนักเรียน",
+        "explanation": "に (ผู้รับของการกระทำ) ไม่เปลี่ยนเป็น が แม้อยู่ในรูป たいです"
+      },
+      {
+        "id": "tai-desu-19",
+        "promptThai": "พูดว่า: ฉันอยากช่วยแม่",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ははが", "kanji": [{ "text": "母", "reading": "はは" }, { "text": "が" }], "romaji": "haha ga" },
+          { "text": "てつだいたいです", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いたいです" }], "romaji": "tetsudaitai desu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ははが",
+          "てつだいたいです"
+        ],
+        "romaji": "Watashi wa haha ga tetsudaitai desu.",
+        "thai": "ฉันอยากช่วยแม่",
+        "explanation": "てつだう ตัด ます ออก เหลือ てつだい แล้วเติม たいです และเปลี่ยน を เป็น が"
+      },
+      {
+        "id": "tai-desu-20",
+        "promptThai": "พูดว่า: ฉันอยากขับรถทุกวัน",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "まいにち", "kanji": [{ "text": "毎日", "reading": "まいにち" }], "romaji": "mainichi" },
+          { "text": "うんてんが", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "が" }], "romaji": "unten ga" },
+          { "text": "したいです", "romaji": "shitai desu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "まいにち",
+          "うんてんが",
+          "したいです"
+        ],
+        "romaji": "Watashi wa mainichi unten ga shitai desu.",
+        "thai": "ฉันอยากขับรถทุกวัน",
+        "explanation": "คำนามที่มาจากกริยา する เช่น うんてん มักแยก が ออกจาก する ในรูป たいです"
       }
     ],
     "formLabel": "たいです",

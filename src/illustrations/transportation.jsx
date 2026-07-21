@@ -198,4 +198,43 @@ export const transportationIcons = {
       <rect x="90" y="94" width="20" height="16" rx="3" fill="#c9ccd6" stroke={INK} strokeWidth="2" />
     </Frame>
   ),
+  "transport-shinkansen": (id) => (
+    <Frame id={id}>
+      <path d="M 52 128 Q 52 96 90 92 L 140 92 Q 152 92 152 108 L 152 128 Z" fill="#8fcfff" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="66" y="102" width="24" height="14" rx="3" fill="#dff1ff" stroke={INK} strokeWidth="2" />
+      <rect x="100" y="102" width="24" height="14" rx="3" fill="#dff1ff" stroke={INK} strokeWidth="2" />
+      <circle cx="76" cy="128" r="8" fill="#3a3a3a" />
+      <circle cx="128" cy="128" r="8" fill="#3a3a3a" />
+      <path d="M 40 128 L 164 128" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
+  "transport-highway": (id) => (
+    <Frame id={id}>
+      <path d="M 30 146 Q 100 60 170 146" fill="none" stroke="#a6a6ae" strokeWidth="18" strokeLinecap="round" />
+      <path d="M 30 146 Q 100 60 170 146" fill="none" stroke="#fff8ea" strokeWidth="3" strokeDasharray="10 10" />
+    </Frame>
+  ),
+  "transport-parking": (id) => (
+    <Frame id={id}>
+      <rect x="58" y="58" width="84" height="88" rx="8" fill="#4c8df0" stroke={INK} strokeWidth="3" />
+      <text x="100" y="118" fontSize="52" fontWeight="800" fill="#ffffff" fontFamily="Baloo 2, sans-serif" textAnchor="middle">P</text>
+    </Frame>
+  ),
+  "transport-drive": (id) => (
+    <Frame id={id}>
+      <ellipse cx="100" cy="110" rx="46" ry="18" fill="#f45c5c" stroke={INK} strokeWidth="3" />
+      <rect x="76" y="82" width="48" height="28" rx="8" fill="#dff1ff" stroke={INK} strokeWidth="2.5" />
+      <circle cx="76" cy="126" r="10" fill="#3a3a3a" />
+      <circle cx="124" cy="126" r="10" fill="#3a3a3a" />
+      <circle cx="88" cy="96" r="9" fill="none" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
+  "transport-intersection": (id) => (
+    <Frame id={id}>
+      <rect x="0" y="88" width="200" height="24" fill="#a6a6ae" />
+      <rect x="88" y="0" width="24" height="200" fill="#a6a6ae" />
+      <path d="M 88 88 L 112 88 L 112 112 L 88 112 Z" fill="#8a8a92" />
+      <path d="M 0 96 L 200 96 M 0 104 L 200 104" stroke="#fff8ea" strokeWidth="2" strokeDasharray="8 8" opacity="0.7" />
+    </Frame>
+  ),
 };

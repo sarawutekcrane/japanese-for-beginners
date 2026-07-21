@@ -215,4 +215,45 @@ export const placesIcons = {
       <path d="M 132 90 L 140 100 L 124 100 Z" fill="#ffffff" stroke={INK} strokeWidth="1.5" strokeLinejoin="round" />
     </Frame>
   ),
+  "place-factory": (id) => (
+    <Frame id={id}>
+      <rect x="56" y="100" width="88" height="42" fill="#c9ccd6" stroke={INK} strokeWidth="3" />
+      <path d="M 68 100 L 68 74 L 88 90 L 88 74 L 108 90 L 108 74 L 128 90 L 128 100 Z" fill="#dfe0e5" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <rect x="116" y="50" width="12" height="26" fill="#a6a6ae" stroke={INK} strokeWidth="2" />
+      <ellipse cx="122" cy="46" rx="10" ry="6" fill="#e8e2e5" opacity="0.8" />
+    </Frame>
+  ),
+  "place-cafe": (id) => (
+    <Frame id={id}>
+      <rect x="58" y="92" width="84" height="50" rx="6" fill="#e8dcc8" stroke={INK} strokeWidth="3" />
+      <path d="M 54 92 Q 100 74 146 92 Z" fill="#a2704c" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M 84 108 Q 78 118 88 122 Q 98 126 96 116" fill="none" stroke={INK} strokeWidth="3" strokeLinecap="round" />
+      <path d="M 112 100 Q 108 90 116 84" stroke="#c7b6bd" strokeWidth="3" fill="none" strokeLinecap="round" opacity="0.6" />
+    </Frame>
+  ),
+  "place-highschool": (id) => (
+    <Frame id={id}>
+      <rect x="56" y="84" width="88" height="62" rx="6" fill="#dff1ff" stroke={INK} strokeWidth="3" />
+      <rect x="68" y="96" width="14" height="14" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <rect x="93" y="96" width="14" height="14" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <rect x="118" y="96" width="14" height="14" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <rect x="90" y="122" width="20" height="24" fill="#8fcfff" stroke={INK} strokeWidth="2" />
+      <path d="M 56 84 L 100 62 L 144 84" fill="none" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "place-hairsalon": (id) => (
+    <Frame id={id}>
+      <rect x="60" y="82" width="80" height="60" rx="6" fill="#ffd6e8" stroke={INK} strokeWidth="3" />
+      <circle cx="100" cy="108" r="22" fill="#ffffff" stroke={INK} strokeWidth="2.5" />
+      <path d="M 92 100 Q 100 96 108 100 M 92 116 Q 100 120 108 116" stroke="#e85d7a" strokeWidth="3" fill="none" strokeLinecap="round" />
+      <line x1="100" y1="102" x2="100" y2="114" stroke={INK} strokeWidth="2" opacity="0.5" />
+    </Frame>
+  ),
+  "place-pharmacy": (id) => (
+    <Frame id={id}>
+      <rect x="58" y="86" width="84" height="56" rx="6" fill="#ffffff" stroke={INK} strokeWidth="3" />
+      <rect x="88" y="98" width="24" height="10" fill="#5fbf77" stroke={INK} strokeWidth="2" />
+      <rect x="95" y="91" width="10" height="24" fill="#5fbf77" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
 };

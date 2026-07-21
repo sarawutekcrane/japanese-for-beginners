@@ -129,4 +129,112 @@ export const adjectivesIIcons = {
       <text x="150" y="64" fontSize="12" fontWeight="700" fill={INK} opacity="0.5">z</text>
     </Frame>
   ),
+  "adj-bright": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="104" r="30" fill="#ffe9a6" stroke={INK} strokeWidth="3.5" />
+      <g stroke="#ffcf6b" strokeWidth="4" strokeLinecap="round">
+        <path d="M 100 56 L 100 44 M 100 152 L 100 164 M 52 104 L 40 104 M 148 104 L 160 104" />
+        <path d="M 66 70 L 58 62 M 134 70 L 142 62 M 66 138 L 58 146 M 134 138 L 142 146" />
+      </g>
+    </Frame>
+  ),
+  "adj-dark": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="104" r="86" fill="#2f2b52" opacity="0.5" />
+      <circle cx="100" cy="104" r="30" fill="#5a4a52" stroke={INK} strokeWidth="3" />
+      <circle cx="140" cy="72" r="4" fill="#ffe9a6" />
+      <circle cx="60" cy="130" r="3" fill="#ffe9a6" />
+    </Frame>
+  ),
+  "adj-long": (id) => (
+    <Frame id={id}>
+      <rect x="66" y="94" width="68" height="20" rx="8" fill="#8fcfff" stroke={INK} strokeWidth="3" />
+      <path d="M 50 104 L 62 104 M 138 104 L 150 104" stroke={INK} strokeWidth="3" strokeLinecap="round" opacity="0.6" />
+    </Frame>
+  ),
+  "adj-short": (id) => (
+    <Frame id={id}>
+      <rect x="86" y="94" width="28" height="20" rx="8" fill="#ff9ec7" stroke={INK} strokeWidth="3" />
+      <path d="M 100 94 L 100 108 M 100 122 L 100 108" stroke={INK} strokeWidth="2" opacity="0.3" strokeDasharray="3 4" />
+    </Frame>
+  ),
+  "adj-heavy": (id) => (
+    <Frame id={id}>
+      <path d="M 74 90 L 126 90 L 134 138 L 66 138 Z" fill="#5a4a52" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <text x="100" y="118" fontSize="24" fontWeight="800" fill="#ffe9a6" textAnchor="middle">kg</text>
+    </Frame>
+  ),
+  "adj-light": (id) => (
+    <Frame id={id}>
+      <ellipse cx="100" cy="110" rx="26" ry="14" fill="#dff1ff" stroke={INK} strokeWidth="3" />
+      <path d="M 80 96 Q 90 76 100 90 Q 108 74 120 92" fill="none" stroke="#8fcfff" strokeWidth="3" strokeLinecap="round" opacity="0.7" />
+    </Frame>
+  ),
+  "adj-sweet": (id) => (
+    <Frame id={id}>
+      <path d="M 100 92 C 70 88 62 130 90 148 Q 100 154 110 148 C 138 130 130 88 100 92 Z" fill="#ff9ec7" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="97" y="76" width="6" height="18" rx="3" fill="#8a6a4a" />
+      <circle cx="90" cy="118" r="5" fill="#fff" opacity="0.6" />
+    </Frame>
+  ),
+  "adj-spicy": (id) => (
+    <Frame id={id}>
+      <path d="M 84 74 Q 68 84 70 106 Q 72 132 100 138 Q 128 132 130 106 Q 132 84 116 74 Q 108 88 100 82 Q 92 88 84 74 Z" fill="#f45c5c" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 116 74 Q 124 62 134 64" stroke="#5fbf77" strokeWidth="5" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "adj-strong": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="86" r="20" fill="#ffe9d6" stroke={INK} strokeWidth="3" />
+      <path d="M 70 110 Q 70 130 60 132 Q 76 148 100 132 Q 124 148 140 132 Q 130 130 130 110 Q 100 122 70 110 Z" fill="#f5924a" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <circle cx="70" cy="110" r="12" fill="#f5924a" stroke={INK} strokeWidth="2.5" />
+      <circle cx="130" cy="110" r="12" fill="#f5924a" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
+  "adj-weak": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="94" r="16" fill="#ffe9d6" stroke={INK} strokeWidth="3" />
+      <path d="M 78 116 Q 76 132 70 136 Q 84 148 100 138 Q 116 148 130 136 Q 124 132 122 116 Q 100 126 78 116 Z" fill="#c9ccd6" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "adj-wide": (id) => (
+    <Frame id={id}>
+      <rect x="46" y="90" width="108" height="30" rx="8" fill="#7bcf9e" stroke={INK} strokeWidth="3" />
+      <path d="M 34 105 L 44 105 M 156 105 L 166 105" stroke={INK} strokeWidth="3" strokeLinecap="round" opacity="0.5" />
+    </Frame>
+  ),
+  "adj-narrow": (id) => (
+    <Frame id={id}>
+      <rect x="90" y="70" width="20" height="70" rx="8" fill="#b07ae0" stroke={INK} strokeWidth="3" />
+      <path d="M 68 74 L 78 74 M 68 136 L 78 136 M 122 74 L 132 74 M 122 136 L 132 136" stroke={INK} strokeWidth="2.5" strokeLinecap="round" opacity="0.4" />
+    </Frame>
+  ),
+  "adj-cute": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="106" r="38" fill="#ffd6e8" stroke={INK} strokeWidth="3.5" />
+      <circle cx="86" cy="100" r="4" fill={INK} />
+      <circle cx="114" cy="100" r="4" fill={INK} />
+      <path d="M 92 114 Q 100 120 108 114" stroke={INK} strokeWidth="2.5" fill="none" strokeLinecap="round" />
+      <path d="M 60 70 L 64 80 L 74 82 L 64 86 L 60 96 L 56 86 L 46 82 L 56 80 Z" fill="#ff9ec7" />
+      <ellipse cx="76" cy="112" rx="6" ry="4" fill="#ffb6cf" opacity="0.85" />
+      <ellipse cx="124" cy="112" rx="6" ry="4" fill="#ffb6cf" opacity="0.85" />
+    </Frame>
+  ),
+  "adj-happy-feeling": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="106" r="42" fill="#ffe9a6" stroke={INK} strokeWidth="3.5" />
+      <path d="M 82 96 Q 88 88 94 96" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
+      <path d="M 106 96 Q 112 88 118 96" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
+      <path d="M 80 118 Q 100 136 120 118" stroke={INK} strokeWidth="3.5" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "adj-sad-feeling": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="106" r="42" fill="#8fd3f4" stroke={INK} strokeWidth="3.5" />
+      <circle cx="86" cy="98" r="4" fill={INK} />
+      <circle cx="114" cy="98" r="4" fill={INK} />
+      <path d="M 84 128 Q 100 112 116 128" stroke={INK} strokeWidth="3.5" fill="none" strokeLinecap="round" />
+      <path d="M 92 106 L 88 122" stroke="#4c8df0" strokeWidth="3" strokeLinecap="round" opacity="0.7" />
+    </Frame>
+  ),
 };

@@ -191,4 +191,41 @@ export const hobbiesIcons = {
       <rect x="116" y="70" width="20" height="50" fill="#f6d34c" stroke={INK} strokeWidth="2.5" />
     </Frame>
   ),
+  "hobby-surfing": (id) => (
+    <Frame id={id}>
+      <path d="M 40 130 Q 100 108 160 130" fill="none" stroke="#4c8df0" strokeWidth="10" strokeLinecap="round" />
+      <ellipse cx="100" cy="110" rx="16" ry="46" fill="#ffd166" stroke={INK} strokeWidth="3" transform="rotate(20 100 110)" />
+    </Frame>
+  ),
+  "hobby-boardgame": (id) => (
+    <Frame id={id}>
+      <rect x="56" y="70" width="88" height="72" rx="6" fill="#e8dcc8" stroke={INK} strokeWidth="3" />
+      <rect x="68" y="82" width="20" height="20" fill="#8fcfff" stroke={INK} strokeWidth="2" />
+      <rect x="90" y="102" width="20" height="20" fill="#ff9ec7" stroke={INK} strokeWidth="2" />
+      <rect x="112" y="82" width="20" height="20" fill="#7bcf9e" stroke={INK} strokeWidth="2" />
+      <circle cx="78" cy="122" r="6" fill="#f6d34c" stroke={INK} strokeWidth="1.5" />
+    </Frame>
+  ),
+  "hobby-jogging": (id) => (
+    <Frame id={id}>
+      <circle cx="94" cy="64" r="14" fill="#ffe9d6" stroke={INK} strokeWidth="2.5" />
+      <path d="M 94 78 L 100 108 M 100 108 L 76 128 M 100 108 L 122 96 M 94 92 L 70 84 M 94 92 L 116 78" stroke="#5fbf77" strokeWidth="7" fill="none" strokeLinecap="round" />
+      <path d="M 122 96 L 134 88" stroke={INK} strokeWidth="2" opacity="0.4" />
+    </Frame>
+  ),
+  "hobby-coding": (id) => (
+    <Frame id={id}>
+      <rect x="52" y="66" width="96" height="66" rx="6" fill="#2f2b52" stroke={INK} strokeWidth="3" />
+      <text x="100" y="108" fontSize="24" fontWeight="800" fill="#7bcf9e" fontFamily="Baloo 2, sans-serif" textAnchor="middle">&lt;/&gt;</text>
+      <rect x="70" y="132" width="60" height="10" rx="3" fill="#a6a6ae" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "hobby-cards": (id) => (
+    <Frame id={id}>
+      <rect x="60" y="70" width="46" height="64" rx="6" fill="#ffffff" stroke={INK} strokeWidth="3" transform="rotate(-10 83 102)" />
+      <rect x="94" y="70" width="46" height="64" rx="6" fill="#ffffff" stroke={INK} strokeWidth="3" transform="rotate(10 117 102)" />
+      <text x="83" y="108" fontSize="20" fontWeight="800" fill="#f45c5c" fontFamily="Baloo 2, sans-serif" textAnchor="middle" transform="rotate(-10 83 102)">♥</text>
+      <text x="117" y="108" fontSize="20" fontWeight="800" fill="#2f2b52" fontFamily="Baloo 2, sans-serif" textAnchor="middle" transform="rotate(10 117 102)">♠</text>
+    </Frame>
+  ),
 };

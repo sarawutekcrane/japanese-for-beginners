@@ -280,4 +280,53 @@ export const animalIcons = {
       <circle cx="109" cy="108" r="3" fill="#ffffff" />
     </Frame>
   ),
+  "animal-koala": (id) => (
+    <Frame id={id}>
+      <circle cx="60" cy="80" r="24" fill="#c9ccd6" stroke={INK} strokeWidth="3" />
+      <circle cx="140" cy="80" r="24" fill="#c9ccd6" stroke={INK} strokeWidth="3" />
+      <circle cx="100" cy="104" r="38" fill="#d9dce4" stroke={INK} strokeWidth="3.5" />
+      <ellipse cx="100" cy="114" rx="16" ry="12" fill="#5a4a52" stroke={INK} strokeWidth="2" />
+      <circle cx="87" cy="96" r="4" fill={INK} />
+      <circle cx="113" cy="96" r="4" fill={INK} />
+    </Frame>
+  ),
+  "animal-kangaroo": (id) => (
+    <Frame id={id}>
+      <path d="M 82 150 Q 70 100 100 88 Q 130 100 118 150 Z" fill="#e0b978" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <ellipse cx="82" cy="46" rx="10" ry="24" fill="#e0b978" stroke={INK} strokeWidth="2.5" transform="rotate(-10 82 46)" />
+      <ellipse cx="112" cy="42" rx="10" ry="24" fill="#e0b978" stroke={INK} strokeWidth="2.5" transform="rotate(6 112 42)" />
+      <circle cx="100" cy="80" r="30" fill="#f3d19c" stroke={INK} strokeWidth="3" />
+      <circle cx="90" cy="78" r="3.5" fill={INK} />
+      <circle cx="112" cy="78" r="3.5" fill={INK} />
+      <ellipse cx="100" cy="90" rx="6" ry="4" fill="#5a4a52" />
+    </Frame>
+  ),
+  "animal-crab": (id) => (
+    <Frame id={id}>
+      <ellipse cx="100" cy="110" rx="44" ry="30" fill="#f45c5c" stroke={INK} strokeWidth="3.5" />
+      <circle cx="76" cy="86" r="10" fill="#ffffff" stroke={INK} strokeWidth="2.5" />
+      <circle cx="124" cy="86" r="10" fill="#ffffff" stroke={INK} strokeWidth="2.5" />
+      <circle cx="76" cy="86" r="4" fill={INK} />
+      <circle cx="124" cy="86" r="4" fill={INK} />
+      <path d="M 56 100 Q 34 96 30 76 M 56 112 Q 32 116 26 132" stroke="#f45c5c" strokeWidth="8" fill="none" strokeLinecap="round" />
+      <path d="M 144 100 Q 166 96 170 76 M 144 112 Q 168 116 174 132" stroke="#f45c5c" strokeWidth="8" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "animal-octopus": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="92" r="42" fill="#e0876b" stroke={INK} strokeWidth="3.5" />
+      <circle cx="86" cy="86" r="4" fill={INK} />
+      <circle cx="114" cy="86" r="4" fill={INK} />
+      <path d="M 62 122 Q 58 148 70 154 M 80 130 Q 78 156 92 160 M 100 134 Q 100 160 100 162 M 120 130 Q 122 156 108 160 M 138 122 Q 142 148 130 154" stroke="#e0876b" strokeWidth="9" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "animal-penguin": (id) => (
+    <Frame id={id}>
+      <ellipse cx="100" cy="106" rx="38" ry="48" fill="#2f2b2e" stroke={INK} strokeWidth="3.5" />
+      <ellipse cx="100" cy="114" rx="22" ry="32" fill="#fff8ea" stroke={INK} strokeWidth="2.5" />
+      <circle cx="90" cy="76" r="3.5" fill={INK} />
+      <circle cx="110" cy="76" r="3.5" fill={INK} />
+      <path d="M 94 86 L 106 86 L 100 94 Z" fill="#f5924a" stroke={INK} strokeWidth="1.5" strokeLinejoin="round" />
+    </Frame>
+  ),
 };

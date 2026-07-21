@@ -27,7 +27,9 @@
     { "id": "gr-25", "japanese": "きをつけて", "reading": "きをつけて", "romaji": "ki wo tsukete", "thai": "ระวังตัวด้วยนะ / เดินทางปลอดภัย", "icon": "care-safe", "kanji": [{ "text": "気", "reading": "き" }, { "text": "をつけて" }] },
     { "id": "gr-26", "japanese": "どうぞ", "reading": "どうぞ", "romaji": "douzo", "thai": "เชิญค่ะ / เชิญเลย", "icon": "please-offer" },
     { "id": "gr-27", "japanese": "どうも", "reading": "どうも", "romaji": "doumo", "thai": "ขอบคุณ (ไม่เป็นทางการ)", "icon": "thanks-casual" },
-    { "id": "gr-28", "japanese": "またあとで", "reading": "またあとで", "romaji": "mata ato de", "thai": "แล้วเจอกันทีหลัง", "icon": "see-you-later", "kanji": [{ "text": "また" }, { "text": "後", "reading": "あと" }, { "text": "で" }] }
+    { "id": "gr-28", "japanese": "またあとで", "reading": "またあとで", "romaji": "mata ato de", "thai": "แล้วเจอกันทีหลัง", "icon": "see-you-later", "kanji": [{ "text": "また" }, { "text": "後", "reading": "あと" }, { "text": "で" }] },
+    { "id": "gr-29", "japanese": "いってらっしゃい", "reading": "いってらっしゃい", "romaji": "itterasshai", "thai": "ไปดีมาดี (บอกลาคนที่จะออกจากบ้าน)", "icon": "see-off-wave" },
+    { "id": "gr-30", "japanese": "おだいじに", "reading": "おだいじに", "romaji": "odaijini", "thai": "ขอให้หายไวๆ", "icon": "care-health", "kanji": [{ "text": "お" }, { "text": "大事", "reading": "だいじ" }, { "text": "に" }] }
   ],
   "numbers": [
     { "id": "nm-01", "japanese": "いち", "reading": "いち", "romaji": "ichi", "thai": "หนึ่ง (1)", "icon": "number", "value": 1, "kanji": [{ "text": "一", "reading": "いち" }] },
@@ -87,7 +89,11 @@
     { "id": "cl-23", "japanese": "あいいろ", "reading": "あいいろ", "romaji": "aiiro", "thai": "สีน้ำเงินคราม", "icon": "color", "hex": "#1F4E79" },
     { "id": "cl-24", "japanese": "サーモンピンク", "reading": "サーモンピンク", "romaji": "saamon pinku", "thai": "สีชมพูแซลมอน", "icon": "color", "hex": "#FA8072" },
     { "id": "cl-25", "japanese": "ライムグリーン", "reading": "ライムグリーン", "romaji": "raimu guriin", "thai": "สีเขียวมะนาวสด", "icon": "color", "hex": "#9ACD32" },
-    { "id": "cl-26", "japanese": "ターコイズ", "reading": "ターコイズ", "romaji": "taakoizu", "thai": "สีเทอร์ควอยซ์", "icon": "color", "hex": "#30D5C8" }
+    { "id": "cl-26", "japanese": "ターコイズ", "reading": "ターコイズ", "romaji": "taakoizu", "thai": "สีเทอร์ควอยซ์", "icon": "color", "hex": "#30D5C8" },
+    { "id": "cl-27", "japanese": "クリーム", "reading": "クリーム", "romaji": "kuriimu", "thai": "สีครีม", "icon": "color", "hex": "#FFF5D1" },
+    { "id": "cl-28", "japanese": "カーキ", "reading": "カーキ", "romaji": "kaaki", "thai": "สีกากี", "icon": "color", "hex": "#8B8557" },
+    { "id": "cl-29", "japanese": "こげちゃいろ", "reading": "こげちゃいろ", "romaji": "kogechairo", "thai": "สีน้ำตาลไหม้", "icon": "color", "hex": "#6B4226", "kanji": [{ "text": "焦", "reading": "こ" }, { "text": "げ" }, { "text": "茶色", "reading": "ちゃいろ" }] },
+    { "id": "cl-30", "japanese": "スカイブルー", "reading": "スカイブルー", "romaji": "sukai buruu", "thai": "สีฟ้าสดใส", "icon": "color", "hex": "#7EC8E3" }
   ],
   "foodDrinks": [
     { "id": "fd-01", "japanese": "ごはん", "reading": "ごはん", "romaji": "gohan", "thai": "ข้าว", "icon": "food-rice", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }] },
@@ -114,7 +120,12 @@
     { "id": "fd-22", "japanese": "アイス", "reading": "アイス", "romaji": "aisu", "thai": "ไอศกรีม", "icon": "food-icecream" },
     { "id": "fd-23", "japanese": "チョコレート", "reading": "チョコレート", "romaji": "chokoreeto", "thai": "ช็อกโกแลต", "icon": "food-chocolate" },
     { "id": "fd-24", "japanese": "たまごやき", "reading": "たまごやき", "romaji": "tamagoyaki", "thai": "ไข่ม้วน", "icon": "food-tamagoyaki", "kanji": [{ "text": "卵", "reading": "たまご" }, { "text": "焼", "reading": "や" }, { "text": "き" }] },
-    { "id": "fd-25", "japanese": "おかし", "reading": "おかし", "romaji": "okashi", "thai": "ขนม", "icon": "food-snack", "kanji": [{ "text": "お" }, { "text": "菓子", "reading": "かし" }] }
+    { "id": "fd-25", "japanese": "おかし", "reading": "おかし", "romaji": "okashi", "thai": "ขนม", "icon": "food-snack", "kanji": [{ "text": "お" }, { "text": "菓子", "reading": "かし" }] },
+    { "id": "fd-26", "japanese": "なっとう", "reading": "なっとう", "romaji": "nattou", "thai": "ถั่วหมักนัตโตะ", "icon": "food-natto" },
+    { "id": "fd-27", "japanese": "とうふ", "reading": "とうふ", "romaji": "toufu", "thai": "เต้าหู้", "icon": "food-tofu", "kanji": [{ "text": "豆腐", "reading": "とうふ" }] },
+    { "id": "fd-28", "japanese": "パスタ", "reading": "パスタ", "romaji": "pasuta", "thai": "พาสต้า", "icon": "food-pasta" },
+    { "id": "fd-29", "japanese": "ピザ", "reading": "ピザ", "romaji": "piza", "thai": "พิซซ่า", "icon": "food-pizza" },
+    { "id": "fd-30", "japanese": "やきとり", "reading": "やきとり", "romaji": "yakitori", "thai": "ไก่ย่างเสียบไม้", "icon": "food-yakitori", "kanji": [{ "text": "焼", "reading": "や" }, { "text": "き" }, { "text": "鳥", "reading": "とり" }] }
   ],
   "animals": [
     { "id": "an-01", "japanese": "いぬ", "reading": "いぬ", "romaji": "inu", "thai": "สุนัข", "icon": "animal-dog", "kanji": [{ "text": "犬", "reading": "いぬ" }] },
@@ -141,7 +152,12 @@
     { "id": "an-22", "japanese": "くじら", "reading": "くじら", "romaji": "kujira", "thai": "วาฬ", "icon": "animal-whale" },
     { "id": "an-23", "japanese": "いるか", "reading": "いるか", "romaji": "iruka", "thai": "โลมา", "icon": "animal-dolphin" },
     { "id": "an-24", "japanese": "ふくろう", "reading": "ふくろう", "romaji": "fukurou", "thai": "นกฮูก", "icon": "animal-owl" },
-    { "id": "an-25", "japanese": "ひつじ", "reading": "ひつじ", "romaji": "hitsuji", "thai": "แกะ", "icon": "animal-sheep" }
+    { "id": "an-25", "japanese": "ひつじ", "reading": "ひつじ", "romaji": "hitsuji", "thai": "แกะ", "icon": "animal-sheep" },
+    { "id": "an-26", "japanese": "コアラ", "reading": "コアラ", "romaji": "koara", "thai": "โคอาล่า", "icon": "animal-koala" },
+    { "id": "an-27", "japanese": "カンガルー", "reading": "カンガルー", "romaji": "kangaruu", "thai": "จิงโจ้", "icon": "animal-kangaroo" },
+    { "id": "an-28", "japanese": "かに", "reading": "かに", "romaji": "kani", "thai": "ปู", "icon": "animal-crab" },
+    { "id": "an-29", "japanese": "たこ", "reading": "たこ", "romaji": "tako", "thai": "ปลาหมึกยักษ์", "icon": "animal-octopus" },
+    { "id": "an-30", "japanese": "ペンギン", "reading": "ペンギン", "romaji": "pengin", "thai": "เพนกวิน", "icon": "animal-penguin" }
   ],
   "family": [
     { "id": "fm-01", "japanese": "おとうさん", "reading": "おとうさん", "romaji": "otousan", "thai": "พ่อ", "icon": "family-father", "kanji": [{ "text": "お" }, { "text": "父", "reading": "とう" }, { "text": "さん" }] },
@@ -168,7 +184,12 @@
     { "id": "fm-22", "japanese": "しゅじん", "reading": "しゅじん", "romaji": "shujin", "thai": "สามี (ของตัวเอง)", "icon": "family-husband", "kanji": [{ "text": "主人", "reading": "しゅじん" }] },
     { "id": "fm-23", "japanese": "ごしゅじん", "reading": "ごしゅじん", "romaji": "goshujin", "thai": "สามี (ของผู้อื่น)", "icon": "family-husband-formal", "kanji": [{ "text": "ご" }, { "text": "主人", "reading": "しゅじん" }] },
     { "id": "fm-24", "japanese": "おくさん", "reading": "おくさん", "romaji": "okusan", "thai": "ภรรยา (ของผู้อื่น)", "icon": "family-wife-formal", "kanji": [{ "text": "奥", "reading": "おく" }, { "text": "さん" }] },
-    { "id": "fm-25", "japanese": "ふうふ", "reading": "ふうふ", "romaji": "fuufu", "thai": "สามีภรรยาคู่หนึ่ง", "icon": "family-couple", "kanji": [{ "text": "夫婦", "reading": "ふうふ" }] }
+    { "id": "fm-25", "japanese": "ふうふ", "reading": "ふうふ", "romaji": "fuufu", "thai": "สามีภรรยาคู่หนึ่ง", "icon": "family-couple", "kanji": [{ "text": "夫婦", "reading": "ふうふ" }] },
+    { "id": "fm-26", "japanese": "あに", "reading": "あに", "romaji": "ani", "thai": "พี่ชาย (เรียกพี่ชายตัวเองกับคนนอก)", "icon": "family-ani", "kanji": [{ "text": "兄", "reading": "あに" }] },
+    { "id": "fm-27", "japanese": "あね", "reading": "あね", "romaji": "ane", "thai": "พี่สาว (เรียกพี่สาวตัวเองกับคนนอก)", "icon": "family-ane", "kanji": [{ "text": "姉", "reading": "あね" }] },
+    { "id": "fm-28", "japanese": "ちち", "reading": "ちち", "romaji": "chichi", "thai": "พ่อ (เรียกพ่อตัวเองกับคนนอก)", "icon": "family-chichi", "kanji": [{ "text": "父", "reading": "ちち" }] },
+    { "id": "fm-29", "japanese": "はは", "reading": "はは", "romaji": "haha", "thai": "แม่ (เรียกแม่ตัวเองกับคนนอก)", "icon": "family-haha", "kanji": [{ "text": "母", "reading": "はは" }] },
+    { "id": "fm-30", "japanese": "ふたご", "reading": "ふたご", "romaji": "futago", "thai": "ฝาแฝด", "icon": "family-twins", "kanji": [{ "text": "双子", "reading": "ふたご" }] }
   ],
   "bodyParts": [
     { "id": "bp-01", "japanese": "あたま", "reading": "あたま", "romaji": "atama", "thai": "ศีรษะ", "icon": "body-head", "kanji": [{ "text": "頭", "reading": "あたま" }] },
@@ -195,7 +216,12 @@
     { "id": "bp-22", "japanese": "あご", "reading": "あご", "romaji": "ago", "thai": "คาง", "icon": "body-chin" },
     { "id": "bp-23", "japanese": "かた", "reading": "かた", "romaji": "kata", "thai": "ไหล่", "icon": "body-shoulder", "kanji": [{ "text": "肩", "reading": "かた" }] },
     { "id": "bp-24", "japanese": "こし", "reading": "こし", "romaji": "koshi", "thai": "เอว / สะโพก", "icon": "body-waist" },
-    { "id": "bp-25", "japanese": "むね", "reading": "むね", "romaji": "mune", "thai": "หน้าอก", "icon": "body-chest", "kanji": [{ "text": "胸", "reading": "むね" }] }
+    { "id": "bp-25", "japanese": "むね", "reading": "むね", "romaji": "mune", "thai": "หน้าอก", "icon": "body-chest", "kanji": [{ "text": "胸", "reading": "むね" }] },
+    { "id": "bp-26", "japanese": "のど", "reading": "のど", "romaji": "nodo", "thai": "คอ (ลำคอ)", "icon": "body-throat", "kanji": [{ "text": "喉", "reading": "のど" }] },
+    { "id": "bp-27", "japanese": "ひたい", "reading": "ひたい", "romaji": "hitai", "thai": "หน้าผาก", "icon": "body-forehead", "kanji": [{ "text": "額", "reading": "ひたい" }] },
+    { "id": "bp-28", "japanese": "くちびる", "reading": "くちびる", "romaji": "kuchibiru", "thai": "ริมฝีปาก", "icon": "body-lips", "kanji": [{ "text": "唇", "reading": "くちびる" }] },
+    { "id": "bp-29", "japanese": "からだ", "reading": "からだ", "romaji": "karada", "thai": "ร่างกาย", "icon": "body-body", "kanji": [{ "text": "体", "reading": "からだ" }] },
+    { "id": "bp-30", "japanese": "ほね", "reading": "ほね", "romaji": "hone", "thai": "กระดูก", "icon": "body-bone", "kanji": [{ "text": "骨", "reading": "ほね" }] }
   ],
   "places": [
     { "id": "pl-01", "japanese": "がっこう", "reading": "がっこう", "romaji": "gakkou", "thai": "โรงเรียน", "icon": "place-school", "kanji": [{ "text": "学校", "reading": "がっこう" }] },
@@ -222,7 +248,12 @@
     { "id": "pl-22", "japanese": "すいぞくかん", "reading": "すいぞくかん", "romaji": "suizokukan", "thai": "พิพิธภัณฑ์สัตว์น้ำ", "icon": "place-aquarium", "kanji": [{ "text": "水族館", "reading": "すいぞくかん" }] },
     { "id": "pl-23", "japanese": "おんせん", "reading": "おんせん", "romaji": "onsen", "thai": "บ่อน้ำพุร้อน", "icon": "place-onsen", "kanji": [{ "text": "温泉", "reading": "おんせん" }] },
     { "id": "pl-24", "japanese": "かいがん", "reading": "かいがん", "romaji": "kaigan", "thai": "ชายหาด", "icon": "place-beach", "kanji": [{ "text": "海岸", "reading": "かいがん" }] },
-    { "id": "pl-25", "japanese": "やま", "reading": "やま", "romaji": "yama", "thai": "ภูเขา", "icon": "place-mountain", "kanji": [{ "text": "山", "reading": "やま" }] }
+    { "id": "pl-25", "japanese": "やま", "reading": "やま", "romaji": "yama", "thai": "ภูเขา", "icon": "place-mountain", "kanji": [{ "text": "山", "reading": "やま" }] },
+    { "id": "pl-26", "japanese": "こうじょう", "reading": "こうじょう", "romaji": "koujou", "thai": "โรงงาน", "icon": "place-factory", "kanji": [{ "text": "工場", "reading": "こうじょう" }] },
+    { "id": "pl-27", "japanese": "きっさてん", "reading": "きっさてん", "romaji": "kissaten", "thai": "ร้านกาแฟ / ร้านน้ำชา", "icon": "place-cafe", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }] },
+    { "id": "pl-28", "japanese": "こうこう", "reading": "こうこう", "romaji": "koukou", "thai": "โรงเรียนมัธยมปลาย", "icon": "place-highschool", "kanji": [{ "text": "高校", "reading": "こうこう" }] },
+    { "id": "pl-29", "japanese": "びよういん", "reading": "びよういん", "romaji": "biyouin", "thai": "ร้านทำผม", "icon": "place-hairsalon", "kanji": [{ "text": "美容院", "reading": "びよういん" }] },
+    { "id": "pl-30", "japanese": "やっきょく", "reading": "やっきょく", "romaji": "yakkyoku", "thai": "ร้านขายยา", "icon": "place-pharmacy", "kanji": [{ "text": "薬局", "reading": "やっきょく" }] }
   ],
   "timeDays": [
     { "id": "td-01", "japanese": "きょう", "reading": "きょう", "romaji": "kyou", "thai": "วันนี้", "icon": "time-today", "kanji": [{ "text": "今日", "reading": "きょう" }] },
@@ -282,7 +313,12 @@
     { "id": "hh-22", "japanese": "たな", "reading": "たな", "romaji": "tana", "thai": "ชั้นวางของ", "icon": "house-shelf", "kanji": [{ "text": "棚", "reading": "たな" }] },
     { "id": "hh-23", "japanese": "かがみ", "reading": "かがみ", "romaji": "kagami", "thai": "กระจก", "icon": "house-mirror", "kanji": [{ "text": "鏡", "reading": "かがみ" }] },
     { "id": "hh-24", "japanese": "でんき", "reading": "でんき", "romaji": "denki", "thai": "ไฟฟ้า / หลอดไฟ", "icon": "house-light", "kanji": [{ "text": "電気", "reading": "でんき" }] },
-    { "id": "hh-25", "japanese": "ごみばこ", "reading": "ごみばこ", "romaji": "gomibako", "thai": "ถังขยะ", "icon": "house-trashcan", "kanji": [{ "text": "ごみ" }, { "text": "箱", "reading": "ばこ" }] }
+    { "id": "hh-25", "japanese": "ごみばこ", "reading": "ごみばこ", "romaji": "gomibako", "thai": "ถังขยะ", "icon": "house-trashcan", "kanji": [{ "text": "ごみ" }, { "text": "箱", "reading": "ばこ" }] },
+    { "id": "hh-26", "japanese": "ソファー", "reading": "ソファー", "romaji": "sofaa", "thai": "โซฟา", "icon": "house-sofa" },
+    { "id": "hh-27", "japanese": "たんす", "reading": "たんす", "romaji": "tansu", "thai": "ตู้เสื้อผ้า", "icon": "house-wardrobe" },
+    { "id": "hh-28", "japanese": "せんぷうき", "reading": "せんぷうき", "romaji": "senpuuki", "thai": "พัดลม", "icon": "house-fan", "kanji": [{ "text": "扇風機", "reading": "せんぷうき" }] },
+    { "id": "hh-29", "japanese": "かびん", "reading": "かびん", "romaji": "kabin", "thai": "แจกัน", "icon": "house-vase", "kanji": [{ "text": "花瓶", "reading": "かびん" }] },
+    { "id": "hh-30", "japanese": "じゅうたん", "reading": "じゅうたん", "romaji": "juutan", "thai": "พรม", "icon": "house-carpet" }
   ],
   "work": [
     { "id": "wk-01", "japanese": "せんせい", "reading": "せんせい", "romaji": "sensei", "thai": "ครู", "icon": "job-teacher", "kanji": [{ "text": "先生", "reading": "せんせい" }] },
@@ -309,7 +345,12 @@
     { "id": "wk-22", "japanese": "つうやくしゃ", "reading": "つうやくしゃ", "romaji": "tsuuyakusha", "thai": "ล่าม", "icon": "job-interpreter", "kanji": [{ "text": "通訳者", "reading": "つうやくしゃ" }] },
     { "id": "wk-23", "japanese": "パイロット", "reading": "パイロット", "romaji": "pairotto", "thai": "นักบิน", "icon": "job-pilot" },
     { "id": "wk-24", "japanese": "きゅうりょう", "reading": "きゅうりょう", "romaji": "kyuuryou", "thai": "เงินเดือน", "icon": "job-salary", "kanji": [{ "text": "給料", "reading": "きゅうりょう" }] },
-    { "id": "wk-25", "japanese": "めんせつ", "reading": "めんせつ", "romaji": "mensetsu", "thai": "การสัมภาษณ์งาน", "icon": "job-interview", "kanji": [{ "text": "面接", "reading": "めんせつ" }] }
+    { "id": "wk-25", "japanese": "めんせつ", "reading": "めんせつ", "romaji": "mensetsu", "thai": "การสัมภาษณ์งาน", "icon": "job-interview", "kanji": [{ "text": "面接", "reading": "めんせつ" }] },
+    { "id": "wk-26", "japanese": "しゅふ", "reading": "しゅふ", "romaji": "shufu", "thai": "แม่บ้าน", "icon": "job-housewife", "kanji": [{ "text": "主婦", "reading": "しゅふ" }] },
+    { "id": "wk-27", "japanese": "てんちょう", "reading": "てんちょう", "romaji": "tenchou", "thai": "ผู้จัดการร้าน", "icon": "job-shop-manager", "kanji": [{ "text": "店長", "reading": "てんちょう" }] },
+    { "id": "wk-28", "japanese": "アルバイト", "reading": "アルバイト", "romaji": "arubaito", "thai": "งานพาร์ทไทม์", "icon": "job-parttime" },
+    { "id": "wk-29", "japanese": "つうきん", "reading": "つうきん", "romaji": "tsuukin", "thai": "การเดินทางไปทำงาน", "icon": "job-commute", "kanji": [{ "text": "通勤", "reading": "つうきん" }] },
+    { "id": "wk-30", "japanese": "きゅうけい", "reading": "きゅうけい", "romaji": "kyuukei", "thai": "การพักเบรก", "icon": "job-break", "kanji": [{ "text": "休憩", "reading": "きゅうけい" }] }
   ],
   "transportation": [
     { "id": "tr-01", "japanese": "でんしゃ", "reading": "でんしゃ", "romaji": "densha", "thai": "รถไฟ", "icon": "transport-train", "kanji": [{ "text": "電車", "reading": "でんしゃ" }] },
@@ -336,7 +377,12 @@
     { "id": "tr-22", "japanese": "のりかえ", "reading": "のりかえ", "romaji": "norikae", "thai": "เปลี่ยนขบวน / ต่อรถ", "icon": "transport-transfer", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "り" }, { "text": "換", "reading": "か" }, { "text": "え" }] },
     { "id": "tr-23", "japanese": "こうつう", "reading": "こうつう", "romaji": "koutsuu", "thai": "การจราจร / การคมนาคม", "icon": "transport-traffic", "kanji": [{ "text": "交通", "reading": "こうつう" }] },
     { "id": "tr-24", "japanese": "うんちん", "reading": "うんちん", "romaji": "unchin", "thai": "ค่าโดยสาร", "icon": "transport-fare", "kanji": [{ "text": "運賃", "reading": "うんちん" }] },
-    { "id": "tr-25", "japanese": "あんぜんベルト", "reading": "あんぜんベルト", "romaji": "anzen beruto", "thai": "เข็มขัดนิรภัย", "icon": "transport-seatbelt", "kanji": [{ "text": "安全", "reading": "あんぜん" }, { "text": "ベルト" }] }
+    { "id": "tr-25", "japanese": "あんぜんベルト", "reading": "あんぜんベルト", "romaji": "anzen beruto", "thai": "เข็มขัดนิรภัย", "icon": "transport-seatbelt", "kanji": [{ "text": "安全", "reading": "あんぜん" }, { "text": "ベルト" }] },
+    { "id": "tr-26", "japanese": "しんかんせん", "reading": "しんかんせん", "romaji": "shinkansen", "thai": "รถไฟชินคันเซ็น (รถไฟความเร็วสูง)", "icon": "transport-shinkansen", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }] },
+    { "id": "tr-27", "japanese": "こうそくどうろ", "reading": "こうそくどうろ", "romaji": "kousoku douro", "thai": "ทางด่วน", "icon": "transport-highway", "kanji": [{ "text": "高速道路", "reading": "こうそくどうろ" }] },
+    { "id": "tr-28", "japanese": "ちゅうしゃじょう", "reading": "ちゅうしゃじょう", "romaji": "chuushajou", "thai": "ที่จอดรถ", "icon": "transport-parking", "kanji": [{ "text": "駐車場", "reading": "ちゅうしゃじょう" }] },
+    { "id": "tr-29", "japanese": "うんてんする", "reading": "うんてんする", "romaji": "unten suru", "thai": "ขับรถ", "icon": "transport-drive", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "する" }] },
+    { "id": "tr-30", "japanese": "こうさてん", "reading": "こうさてん", "romaji": "kousaten", "thai": "สี่แยก / ทางแยก", "icon": "transport-intersection", "kanji": [{ "text": "交差点", "reading": "こうさてん" }] }
   ],
   "clothing": [
     { "id": "cw-01", "japanese": "シャツ", "reading": "シャツ", "romaji": "shatsu", "thai": "เสื้อเชิ้ต", "icon": "clothing-shirt" },
@@ -363,7 +409,12 @@
     { "id": "cw-22", "japanese": "サンダル", "reading": "サンダル", "romaji": "sandaru", "thai": "รองเท้าแตะ", "icon": "clothing-sandals" },
     { "id": "cw-23", "japanese": "ブーツ", "reading": "ブーツ", "romaji": "buutsu", "thai": "รองเท้าบูท", "icon": "clothing-boots" },
     { "id": "cw-24", "japanese": "ゆびわ", "reading": "ゆびわ", "romaji": "yubiwa", "thai": "แหวน", "icon": "clothing-ring", "kanji": [{ "text": "指輪", "reading": "ゆびわ" }] },
-    { "id": "cw-25", "japanese": "ネックレス", "reading": "ネックレス", "romaji": "nekkuresu", "thai": "สร้อยคอ", "icon": "clothing-necklace" }
+    { "id": "cw-25", "japanese": "ネックレス", "reading": "ネックレス", "romaji": "nekkuresu", "thai": "สร้อยคอ", "icon": "clothing-necklace" },
+    { "id": "cw-26", "japanese": "きもの", "reading": "きもの", "romaji": "kimono", "thai": "ชุดกิโมโน", "icon": "clothing-kimono", "kanji": [{ "text": "着物", "reading": "きもの" }] },
+    { "id": "cw-27", "japanese": "ゆかた", "reading": "ゆかた", "romaji": "yukata", "thai": "ชุดยูกาตะ", "icon": "clothing-yukata", "kanji": [{ "text": "浴衣", "reading": "ゆかた" }] },
+    { "id": "cw-28", "japanese": "パーカー", "reading": "パーカー", "romaji": "paakaa", "thai": "เสื้อฮู้ด", "icon": "clothing-hoodie" },
+    { "id": "cw-29", "japanese": "サングラス", "reading": "サングラス", "romaji": "sangurasu", "thai": "แว่นกันแดด", "icon": "clothing-sunglasses" },
+    { "id": "cw-30", "japanese": "ピアス", "reading": "ピアス", "romaji": "piasu", "thai": "ต่างหู", "icon": "clothing-earrings" }
   ],
   "hobbies": [
     { "id": "hb-01", "japanese": "どくしょ", "reading": "どくしょ", "romaji": "dokusho", "thai": "อ่านหนังสือ", "icon": "hobby-reading", "kanji": [{ "text": "読書", "reading": "どくしょ" }] },
@@ -390,7 +441,12 @@
     { "id": "hb-22", "japanese": "まんが", "reading": "まんが", "romaji": "manga", "thai": "การ์ตูนมังงะ", "icon": "hobby-manga", "kanji": [{ "text": "漫画", "reading": "まんが" }] },
     { "id": "hb-23", "japanese": "ピアノ", "reading": "ピアノ", "romaji": "piano", "thai": "เปียโน", "icon": "hobby-piano" },
     { "id": "hb-24", "japanese": "ギター", "reading": "ギター", "romaji": "gitaa", "thai": "กีตาร์", "icon": "hobby-guitar" },
-    { "id": "hb-25", "japanese": "コレクション", "reading": "コレクション", "romaji": "korekushon", "thai": "การสะสมของ", "icon": "hobby-collecting" }
+    { "id": "hb-25", "japanese": "コレクション", "reading": "コレクション", "romaji": "korekushon", "thai": "การสะสมของ", "icon": "hobby-collecting" },
+    { "id": "hb-26", "japanese": "サーフィン", "reading": "サーフィン", "romaji": "saafin", "thai": "เล่นเซิร์ฟ", "icon": "hobby-surfing" },
+    { "id": "hb-27", "japanese": "ボードゲーム", "reading": "ボードゲーム", "romaji": "boodo geemu", "thai": "บอร์ดเกม", "icon": "hobby-boardgame" },
+    { "id": "hb-28", "japanese": "ジョギング", "reading": "ジョギング", "romaji": "jogingu", "thai": "จ๊อกกิ้ง", "icon": "hobby-jogging" },
+    { "id": "hb-29", "japanese": "プログラミング", "reading": "プログラミング", "romaji": "puroguramingu", "thai": "การเขียนโปรแกรม", "icon": "hobby-coding" },
+    { "id": "hb-30", "japanese": "トランプ", "reading": "トランプ", "romaji": "toranpu", "thai": "เล่นไพ่", "icon": "hobby-cards" }
   ],
   "shopping": [
     { "id": "sh-01", "japanese": "おかね", "reading": "おかね", "romaji": "okane", "thai": "เงิน", "icon": "shop-money", "kanji": [{ "text": "お" }, { "text": "金", "reading": "かね" }] },
@@ -417,7 +473,12 @@
     { "id": "sh-22", "japanese": "ポイントカード", "reading": "ポイントカード", "romaji": "pointo kaado", "thai": "บัตรสะสมแต้ม", "icon": "shop-point-card" },
     { "id": "sh-23", "japanese": "しんぴん", "reading": "しんぴん", "romaji": "shinpin", "thai": "สินค้าใหม่", "icon": "shop-new-item", "kanji": [{ "text": "新品", "reading": "しんぴん" }] },
     { "id": "sh-24", "japanese": "ちゅうもん", "reading": "ちゅうもん", "romaji": "chuumon", "thai": "การสั่งซื้อ", "icon": "shop-order", "kanji": [{ "text": "注文", "reading": "ちゅうもん" }] },
-    { "id": "sh-25", "japanese": "はいそう", "reading": "はいそう", "romaji": "haisou", "thai": "การจัดส่ง", "icon": "shop-delivery", "kanji": [{ "text": "配送", "reading": "はいそう" }] }
+    { "id": "sh-25", "japanese": "はいそう", "reading": "はいそう", "romaji": "haisou", "thai": "การจัดส่ง", "icon": "shop-delivery", "kanji": [{ "text": "配送", "reading": "はいそう" }] },
+    { "id": "sh-26", "japanese": "いちば", "reading": "いちば", "romaji": "ichiba", "thai": "ตลาด", "icon": "shop-market", "kanji": [{ "text": "市場", "reading": "いちば" }] },
+    { "id": "sh-27", "japanese": "コンビニ", "reading": "コンビニ", "romaji": "konbini", "thai": "ร้านสะดวกซื้อ", "icon": "shop-konbini" },
+    { "id": "sh-28", "japanese": "ばいてん", "reading": "ばいてん", "romaji": "baiten", "thai": "ร้านค้าขนาดเล็ก / แผงขาย", "icon": "shop-stall", "kanji": [{ "text": "売店", "reading": "ばいてん" }] },
+    { "id": "sh-29", "japanese": "ショッピングモール", "reading": "ショッピングモール", "romaji": "shoppingu mooru", "thai": "ห้างสรรพสินค้า (ช้อปปิ้งมอลล์)", "icon": "shop-mall" },
+    { "id": "sh-30", "japanese": "わりびきけん", "reading": "わりびきけん", "romaji": "waribikiken", "thai": "คูปองส่วนลด", "icon": "shop-coupon", "kanji": [{ "text": "割引券", "reading": "わりびきけん" }] }
   ],
   "adjectivesI": [
     { "id": "ai-01", "japanese": "おおきい", "reading": "おおきい", "romaji": "ookii", "thai": "ใหญ่", "icon": "adj-big", "kanji": [{ "text": "大", "reading": "おお" }, { "text": "きい" }] },
@@ -434,7 +495,22 @@
     { "id": "ai-12", "japanese": "むずかしい", "reading": "むずかしい", "romaji": "muzukashii", "thai": "ยาก", "icon": "adj-difficult", "kanji": [{ "text": "難", "reading": "むずか" }, { "text": "しい" }] },
     { "id": "ai-13", "japanese": "やさしい", "reading": "やさしい", "romaji": "yasashii", "thai": "ง่าย", "icon": "adj-easy", "kanji": [{ "text": "易", "reading": "やさ" }, { "text": "しい" }] },
     { "id": "ai-14", "japanese": "たのしい", "reading": "たのしい", "romaji": "tanoshii", "thai": "สนุก", "icon": "adj-fun", "kanji": [{ "text": "楽", "reading": "たの" }, { "text": "しい" }] },
-    { "id": "ai-15", "japanese": "つまらない", "reading": "つまらない", "romaji": "tsumaranai", "thai": "น่าเบื่อ", "icon": "adj-boring" }
+    { "id": "ai-15", "japanese": "つまらない", "reading": "つまらない", "romaji": "tsumaranai", "thai": "น่าเบื่อ", "icon": "adj-boring" },
+    { "id": "ai-16", "japanese": "あかるい", "reading": "あかるい", "romaji": "akarui", "thai": "สว่าง / ร่าเริง", "icon": "adj-bright", "kanji": [{ "text": "明", "reading": "あか" }, { "text": "るい" }] },
+    { "id": "ai-17", "japanese": "くらい", "reading": "くらい", "romaji": "kurai", "thai": "มืด", "icon": "adj-dark", "kanji": [{ "text": "暗", "reading": "くら" }, { "text": "い" }] },
+    { "id": "ai-18", "japanese": "ながい", "reading": "ながい", "romaji": "nagai", "thai": "ยาว", "icon": "adj-long", "kanji": [{ "text": "長", "reading": "なが" }, { "text": "い" }] },
+    { "id": "ai-19", "japanese": "みじかい", "reading": "みじかい", "romaji": "mijikai", "thai": "สั้น", "icon": "adj-short", "kanji": [{ "text": "短", "reading": "みじか" }, { "text": "い" }] },
+    { "id": "ai-20", "japanese": "おもい", "reading": "おもい", "romaji": "omoi", "thai": "หนัก", "icon": "adj-heavy", "kanji": [{ "text": "重", "reading": "おも" }, { "text": "い" }] },
+    { "id": "ai-21", "japanese": "かるい", "reading": "かるい", "romaji": "karui", "thai": "เบา", "icon": "adj-light", "kanji": [{ "text": "軽", "reading": "かる" }, { "text": "い" }] },
+    { "id": "ai-22", "japanese": "あまい", "reading": "あまい", "romaji": "amai", "thai": "หวาน", "icon": "adj-sweet", "kanji": [{ "text": "甘", "reading": "あま" }, { "text": "い" }] },
+    { "id": "ai-23", "japanese": "からい", "reading": "からい", "romaji": "karai", "thai": "เผ็ด", "icon": "adj-spicy", "kanji": [{ "text": "辛", "reading": "から" }, { "text": "い" }] },
+    { "id": "ai-24", "japanese": "つよい", "reading": "つよい", "romaji": "tsuyoi", "thai": "แข็งแรง / เก่ง", "icon": "adj-strong", "kanji": [{ "text": "強", "reading": "つよ" }, { "text": "い" }] },
+    { "id": "ai-25", "japanese": "よわい", "reading": "よわい", "romaji": "yowai", "thai": "อ่อนแอ", "icon": "adj-weak", "kanji": [{ "text": "弱", "reading": "よわ" }, { "text": "い" }] },
+    { "id": "ai-26", "japanese": "ひろい", "reading": "ひろい", "romaji": "hiroi", "thai": "กว้าง", "icon": "adj-wide", "kanji": [{ "text": "広", "reading": "ひろ" }, { "text": "い" }] },
+    { "id": "ai-27", "japanese": "せまい", "reading": "せまい", "romaji": "semai", "thai": "แคบ", "icon": "adj-narrow", "kanji": [{ "text": "狭", "reading": "せま" }, { "text": "い" }] },
+    { "id": "ai-28", "japanese": "かわいい", "reading": "かわいい", "romaji": "kawaii", "thai": "น่ารัก", "icon": "adj-cute" },
+    { "id": "ai-29", "japanese": "うれしい", "reading": "うれしい", "romaji": "ureshii", "thai": "ดีใจ", "icon": "adj-happy-feeling", "kanji": [{ "text": "嬉", "reading": "うれ" }, { "text": "しい" }] },
+    { "id": "ai-30", "japanese": "かなしい", "reading": "かなしい", "romaji": "kanashii", "thai": "เศร้า", "icon": "adj-sad-feeling", "kanji": [{ "text": "悲", "reading": "かな" }, { "text": "しい" }] }
   ],
   "adjectivesNa": [
     { "id": "an-01", "japanese": "きれい", "reading": "きれい", "romaji": "kirei", "thai": "สวย / สะอาด", "icon": "adjna-pretty" },
@@ -451,7 +527,22 @@
     { "id": "an-12", "japanese": "へた", "reading": "へた", "romaji": "heta", "thai": "ไม่เก่ง / ทำได้ไม่ดี", "icon": "adjna-unskilled", "kanji": [{ "text": "下手", "reading": "へた" }] },
     { "id": "an-13", "japanese": "にぎやか", "reading": "にぎやか", "romaji": "nigiyaka", "thai": "คึกคัก", "icon": "adjna-lively" },
     { "id": "an-14", "japanese": "ふべん", "reading": "ふべん", "romaji": "fuben", "thai": "ไม่สะดวก", "icon": "adjna-inconvenient", "kanji": [{ "text": "不便", "reading": "ふべん" }] },
-    { "id": "an-15", "japanese": "だいじょうぶ", "reading": "だいじょうぶ", "romaji": "daijoubu", "thai": "ไม่เป็นไร / โอเค", "icon": "adjna-okay", "kanji": [{ "text": "大丈夫", "reading": "だいじょうぶ" }] }
+    { "id": "an-15", "japanese": "だいじょうぶ", "reading": "だいじょうぶ", "romaji": "daijoubu", "thai": "ไม่เป็นไร / โอเค", "icon": "adjna-okay", "kanji": [{ "text": "大丈夫", "reading": "だいじょうぶ" }] },
+    { "id": "an-16", "japanese": "しんせん", "reading": "しんせん", "romaji": "shinsen", "thai": "สด (อาหารสด)", "icon": "adjna-fresh", "kanji": [{ "text": "新鮮", "reading": "しんせん" }] },
+    { "id": "an-17", "japanese": "あんぜん", "reading": "あんぜん", "romaji": "anzen", "thai": "ปลอดภัย", "icon": "adjna-safe", "kanji": [{ "text": "安全", "reading": "あんぜん" }] },
+    { "id": "an-18", "japanese": "きけん", "reading": "きけん", "romaji": "kiken", "thai": "อันตราย", "icon": "adjna-dangerous", "kanji": [{ "text": "危険", "reading": "きけん" }] },
+    { "id": "an-19", "japanese": "ふくざつ", "reading": "ふくざつ", "romaji": "fukuzatsu", "thai": "ซับซ้อน", "icon": "adjna-complicated", "kanji": [{ "text": "複雑", "reading": "ふくざつ" }] },
+    { "id": "an-20", "japanese": "じゆう", "reading": "じゆう", "romaji": "jiyuu", "thai": "อิสระ", "icon": "adjna-free", "kanji": [{ "text": "自由", "reading": "じゆう" }] },
+    { "id": "an-21", "japanese": "とくい", "reading": "とくい", "romaji": "tokui", "thai": "ถนัด / ชำนาญ", "icon": "adjna-good-at", "kanji": [{ "text": "得意", "reading": "とくい" }] },
+    { "id": "an-22", "japanese": "にがて", "reading": "にがて", "romaji": "nigate", "thai": "ไม่ถนัด", "icon": "adjna-bad-at", "kanji": [{ "text": "苦手", "reading": "にがて" }] },
+    { "id": "an-23", "japanese": "まじめ", "reading": "まじめ", "romaji": "majime", "thai": "จริงจัง / ขยัน", "icon": "adjna-serious", "kanji": [{ "text": "真面目", "reading": "まじめ" }] },
+    { "id": "an-24", "japanese": "らく", "reading": "らく", "romaji": "raku", "thai": "สบาย / ง่าย", "icon": "adjna-comfortable", "kanji": [{ "text": "楽", "reading": "らく" }] },
+    { "id": "an-25", "japanese": "ふしぎ", "reading": "ふしぎ", "romaji": "fushigi", "thai": "แปลก / น่าประหลาดใจ", "icon": "adjna-mysterious", "kanji": [{ "text": "不思議", "reading": "ふしぎ" }] },
+    { "id": "an-26", "japanese": "おしゃれ", "reading": "おしゃれ", "romaji": "oshare", "thai": "แต่งตัวเก๋ / ทันสมัย", "icon": "adjna-stylish" },
+    { "id": "an-27", "japanese": "りっぱ", "reading": "りっぱ", "romaji": "rippa", "thai": "ยอดเยี่ยม / สง่างาม", "icon": "adjna-splendid", "kanji": [{ "text": "立派", "reading": "りっぱ" }] },
+    { "id": "an-28", "japanese": "じゅうぶん", "reading": "じゅうぶん", "romaji": "juubun", "thai": "เพียงพอ", "icon": "adjna-enough", "kanji": [{ "text": "十分", "reading": "じゅうぶん" }] },
+    { "id": "an-29", "japanese": "ざんねん", "reading": "ざんねん", "romaji": "zannen", "thai": "น่าเสียดาย", "icon": "adjna-regrettable", "kanji": [{ "text": "残念", "reading": "ざんねん" }] },
+    { "id": "an-30", "japanese": "しあわせ", "reading": "しあわせ", "romaji": "shiawase", "thai": "มีความสุข", "icon": "adjna-happy", "kanji": [{ "text": "幸", "reading": "しあわ" }, { "text": "せ" }] }
   ],
   "verbs": [
     { "id": "vb-01", "japanese": "たべる", "reading": "たべる", "romaji": "taberu", "thai": "กิน", "icon": "verb-eat", "verbGroup": 2, "kanji": [{ "text": "食", "reading": "た" }, { "text": "べる" }] },
@@ -478,6 +569,11 @@
     { "id": "vb-22", "japanese": "おくる", "reading": "おくる", "romaji": "okuru", "thai": "ส่ง", "icon": "verb-send", "verbGroup": 1, "kanji": [{ "text": "送", "reading": "おく" }, { "text": "る" }] },
     { "id": "vb-23", "japanese": "とる", "reading": "とる", "romaji": "toru", "thai": "หยิบ / รับ", "icon": "verb-take", "verbGroup": 1, "kanji": [{ "text": "取", "reading": "と" }, { "text": "る" }] },
     { "id": "vb-24", "japanese": "あける", "reading": "あける", "romaji": "akeru", "thai": "เปิด", "icon": "verb-open", "verbGroup": 2, "kanji": [{ "text": "開", "reading": "あ" }, { "text": "ける" }] },
-    { "id": "vb-25", "japanese": "しめる", "reading": "しめる", "romaji": "shimeru", "thai": "ปิด", "icon": "verb-close", "verbGroup": 2, "kanji": [{ "text": "閉", "reading": "し" }, { "text": "める" }] }
+    { "id": "vb-25", "japanese": "しめる", "reading": "しめる", "romaji": "shimeru", "thai": "ปิด", "icon": "verb-close", "verbGroup": 2, "kanji": [{ "text": "閉", "reading": "し" }, { "text": "める" }] },
+    { "id": "vb-26", "japanese": "わかる", "reading": "わかる", "romaji": "wakaru", "thai": "เข้าใจ", "icon": "verb-understand", "verbGroup": 1, "kanji": [{ "text": "分", "reading": "わ" }, { "text": "かる" }] },
+    { "id": "vb-27", "japanese": "おしえる", "reading": "おしえる", "romaji": "oshieru", "thai": "สอน", "icon": "verb-teach", "verbGroup": 2, "kanji": [{ "text": "教", "reading": "おし" }, { "text": "える" }] },
+    { "id": "vb-28", "japanese": "ならう", "reading": "ならう", "romaji": "narau", "thai": "เรียน (จากคนอื่น)", "icon": "verb-learn", "verbGroup": 1, "kanji": [{ "text": "習", "reading": "なら" }, { "text": "う" }] },
+    { "id": "vb-29", "japanese": "てつだう", "reading": "てつだう", "romaji": "tetsudau", "thai": "ช่วยเหลือ", "icon": "verb-help", "verbGroup": 1, "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "う" }] },
+    { "id": "vb-30", "japanese": "わすれる", "reading": "わすれる", "romaji": "wasureru", "thai": "ลืม", "icon": "verb-forget", "verbGroup": 2, "kanji": [{ "text": "忘", "reading": "わす" }, { "text": "れる" }] }
   ]
 }

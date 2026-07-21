@@ -210,4 +210,44 @@ export const clothingIcons = {
       <path d="M 90 116 L 100 134 L 110 116 Z" fill="#ff9ec7" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
     </Frame>
   ),
+  "clothing-kimono": (id) => (
+    <Frame id={id}>
+      <path d="M 74 62 L 58 84 L 72 100 L 82 90 L 78 150 L 122 150 L 118 90 L 128 100 L 142 84 L 126 62 Q 100 78 74 62 Z" fill="#ff9ec7" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 88 90 L 112 90 L 108 150 L 92 150 Z" fill="#e0bb4b" opacity="0.5" />
+      <rect x="86" y="98" width="28" height="14" fill="#f45c5c" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "clothing-yukata": (id) => (
+    <Frame id={id}>
+      <path d="M 74 62 L 58 84 L 72 100 L 82 90 L 78 150 L 122 150 L 118 90 L 128 100 L 142 84 L 126 62 Q 100 78 74 62 Z" fill="#8fcfff" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <circle cx="92" cy="112" r="4" fill="#ffffff" opacity="0.8" />
+      <circle cx="110" cy="128" r="4" fill="#ffffff" opacity="0.8" />
+      <rect x="86" y="98" width="28" height="14" fill="#5fbf77" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "clothing-hoodie": (id) => (
+    <Frame id={id}>
+      <path d="M 70 78 Q 100 54 130 78 L 122 96 L 118 90 L 118 148 L 82 148 L 82 90 L 78 96 Z" fill="#c9ccd6" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 84 78 Q 100 66 116 78 Q 108 88 100 88 Q 92 88 84 78 Z" fill="#a6a6ae" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+      <line x1="94" y1="90" x2="92" y2="120" stroke={INK} strokeWidth="2" opacity="0.4" />
+      <line x1="106" y1="90" x2="108" y2="120" stroke={INK} strokeWidth="2" opacity="0.4" />
+    </Frame>
+  ),
+  "clothing-sunglasses": (id) => (
+    <Frame id={id}>
+      <circle cx="76" cy="100" r="22" fill="#2f2b52" stroke={INK} strokeWidth="3" />
+      <circle cx="124" cy="100" r="22" fill="#2f2b52" stroke={INK} strokeWidth="3" />
+      <line x1="98" y1="98" x2="102" y2="98" stroke={INK} strokeWidth="3" />
+      <path d="M 54 96 L 40 90 M 146 96 L 160 90" stroke={INK} strokeWidth="3" strokeLinecap="round" />
+      <ellipse cx="68" cy="92" rx="6" ry="4" fill="#ffffff" opacity="0.4" />
+    </Frame>
+  ),
+  "clothing-earrings": (id) => (
+    <Frame id={id}>
+      <path d="M 74 70 Q 70 84 74 92" fill="none" stroke="#e0bb4b" strokeWidth="4" strokeLinecap="round" />
+      <circle cx="74" cy="100" r="8" fill="#ff9ec7" stroke={INK} strokeWidth="2" />
+      <path d="M 126 70 Q 130 84 126 92" fill="none" stroke="#e0bb4b" strokeWidth="4" strokeLinecap="round" />
+      <circle cx="126" cy="100" r="8" fill="#ff9ec7" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
 };

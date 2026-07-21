@@ -178,6 +178,19 @@ export const greetingIcons = {
       <Chibi shirt="#c9a0f5" armPose="wave" face="wink" flip />
     </Frame>
   ),
+  "see-off-wave": (id) => (
+    <Frame id={id}>
+      <House x={150} y={130} />
+      <Chibi shirt="#ffd6e8" armPose="wave" face="smile" flip />
+    </Frame>
+  ),
+  "care-health": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#8fd3a0" armPose="down" face="sad" />
+      <path d="M 148 56 L 158 68 L 178 42" fill="none" stroke="#4fae78" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" opacity="0.6" />
+      <Sparkle x="60" y="56" s="0.7" />
+    </Frame>
+  ),
 };
 
 export function GreetingIllustration({ icon, id }) {

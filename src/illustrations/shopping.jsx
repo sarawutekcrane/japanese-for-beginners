@@ -204,4 +204,44 @@ export const shoppingIcons = {
       <circle cx="132" cy="140" r="9" fill="#3a3a3a" />
     </Frame>
   ),
+  "shop-market": (id) => (
+    <Frame id={id}>
+      <path d="M 52 88 L 60 68 L 140 68 L 148 88 Z" fill="#f45c5c" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="56" y="88" width="88" height="54" fill="#fff3da" stroke={INK} strokeWidth="3" />
+      <rect x="72" y="100" width="20" height="20" fill="#7bcf9e" stroke={INK} strokeWidth="2" />
+      <rect x="108" y="100" width="20" height="20" fill="#f5924a" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "shop-konbini": (id) => (
+    <Frame id={id}>
+      <rect x="54" y="82" width="92" height="60" rx="6" fill="#7bcf9e" stroke={INK} strokeWidth="3" />
+      <rect x="54" y="82" width="92" height="16" fill="#5fbf77" stroke={INK} strokeWidth="2.5" />
+      <rect x="70" y="112" width="18" height="30" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <rect x="112" y="112" width="18" height="30" fill="#ffffff" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "shop-stall": (id) => (
+    <Frame id={id}>
+      <path d="M 54 90 L 68 66 L 132 66 L 146 90 Z" fill="#f6d34c" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 54 90 L 68 108 L 132 108 L 146 90" fill="none" stroke={INK} strokeWidth="2" opacity="0.4" />
+      <rect x="66" y="90" width="68" height="46" fill="#fff8ea" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
+  "shop-mall": (id) => (
+    <Frame id={id}>
+      <rect x="50" y="78" width="100" height="64" rx="6" fill="#c9a0f5" stroke={INK} strokeWidth="3" />
+      <rect x="62" y="90" width="22" height="24" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <rect x="90" y="90" width="22" height="24" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <rect x="118" y="90" width="22" height="24" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <rect x="88" y="120" width="24" height="22" fill="#fff3da" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "shop-coupon": (id) => (
+    <Frame id={id}>
+      <rect x="52" y="82" width="96" height="52" rx="8" fill="#ffd6e8" stroke={INK} strokeWidth="3" strokeDasharray="6 5" />
+      <text x="100" y="118" fontSize="26" fontWeight="800" fill="#e85d7a" fontFamily="Baloo 2, sans-serif" textAnchor="middle">%</text>
+      <circle cx="52" cy="108" r="6" fill="#fff" stroke={INK} strokeWidth="2" />
+      <circle cx="148" cy="108" r="6" fill="#fff" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
 };

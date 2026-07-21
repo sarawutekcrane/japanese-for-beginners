@@ -1,4 +1,4 @@
-import { Frame, INK } from "./shared";
+import { Frame, INK, Sparkle } from "./shared";
 
 /** Muted full-body silhouette used as context behind whole-region body parts
  * (chest, stomach, waist, back, shoulder, arm, leg) so an isolated colored
@@ -185,6 +185,36 @@ export const bodyPartsIcons = {
       <path d="M 78 60 L 122 60 L 119 90 L 81 90 Z" fill="#ff9ec7" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
       <circle cx="88" cy="80" r="3.5" fill={INK} opacity="0.4" />
       <circle cx="112" cy="80" r="3.5" fill={INK} opacity="0.4" />
+    </Frame>
+  ),
+  "body-throat": (id) => (
+    <Frame id={id}>
+      <BodyOutline />
+      <rect x="90" y="48" width="20" height="18" rx="6" fill="#e0876b" stroke={INK} strokeWidth="2.5" />
+      <path d="M 92 90 Q 100 96 108 90" stroke={INK} strokeWidth="2" opacity="0.4" fill="none" />
+    </Frame>
+  ),
+  "body-forehead": (id) => (
+    <Frame id={id}>
+      <path d="M 58 116 Q 54 62 100 58 Q 146 62 142 116 Z" fill="#ffe9d6" stroke={INK} strokeWidth="3.5" strokeLinejoin="round" />
+      <path d="M 74 92 Q 100 82 126 92" stroke={INK} strokeWidth="2" opacity="0.4" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "body-lips": (id) => (
+    <Frame id={id}>
+      <path d="M 56 100 Q 100 82 144 100 Q 100 118 56 100 Z" fill="#e0876b" stroke={INK} strokeWidth="3.5" strokeLinejoin="round" />
+      <path d="M 56 100 Q 100 116 144 100 Q 100 128 56 100 Z" fill="#c9605a" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "body-body": (id) => (
+    <Frame id={id}>
+      <BodyOutline />
+      <Sparkle x="146" y="60" s="0.7" />
+    </Frame>
+  ),
+  "body-bone": (id) => (
+    <Frame id={id}>
+      <path d="M 66 118 Q 54 118 54 104 Q 54 90 66 90 Q 78 84 84 96 L 116 104 Q 122 92 134 96 Q 146 96 146 110 Q 146 124 134 124 Q 122 130 116 118 L 84 110 Q 78 122 66 118 Z" fill="#fff8ea" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
     </Frame>
   ),
 };

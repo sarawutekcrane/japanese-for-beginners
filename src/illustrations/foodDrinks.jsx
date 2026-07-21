@@ -200,4 +200,41 @@ export const foodDrinksIcons = {
       <circle cx="118" cy="116" r="4" fill="#a2704c" />
     </Frame>
   ),
+  "food-natto": (id) => (
+    <Frame id={id}>
+      <rect x="64" y="82" width="72" height="52" rx="6" fill="#e0bb4b" stroke={INK} strokeWidth="3" />
+      <path d="M 78 98 Q 84 92 90 98 M 96 104 Q 102 96 108 104 M 112 98 Q 118 92 124 98" stroke="#fff8ea" strokeWidth="3" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "food-tofu": (id) => (
+    <Frame id={id}>
+      <rect x="66" y="80" width="68" height="56" rx="4" fill="#ffffff" stroke={INK} strokeWidth="3" />
+      <path d="M 66 80 L 78 68 L 146 68 L 134 80 Z" fill="#f5f5f5" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <path d="M 134 80 L 146 68 L 146 124 L 134 136 Z" fill="#e8e8e8" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "food-pasta": (id) => (
+    <Frame id={id}>
+      <ellipse cx="100" cy="120" rx="48" ry="18" fill="#ffffff" stroke={INK} strokeWidth="3" />
+      <path d="M 66 112 Q 80 100 94 112 Q 108 124 122 112 Q 134 102 144 110" stroke="#f6d34c" strokeWidth="5" fill="none" strokeLinecap="round" />
+      <circle cx="100" cy="108" r="10" fill="#f45c5c" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "food-pizza": (id) => (
+    <Frame id={id}>
+      <path d="M 100 62 L 148 138 L 52 138 Z" fill="#f3c988" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <path d="M 68 122 L 132 122 L 100 74 Z" fill="#f45c5c" opacity="0.6" />
+      <circle cx="92" cy="106" r="6" fill="#e0bb4b" />
+      <circle cx="112" cy="112" r="6" fill="#e0bb4b" />
+      <circle cx="100" cy="126" r="6" fill="#e0bb4b" />
+    </Frame>
+  ),
+  "food-yakitori": (id) => (
+    <Frame id={id}>
+      <line x1="60" y1="100" x2="150" y2="100" stroke="#c08a5e" strokeWidth="6" strokeLinecap="round" />
+      <circle cx="82" cy="100" r="16" fill="#c9822b" stroke={INK} strokeWidth="2.5" />
+      <circle cx="112" cy="100" r="16" fill="#e0876b" stroke={INK} strokeWidth="2.5" />
+      <circle cx="138" cy="100" r="14" fill="#c9822b" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
 };

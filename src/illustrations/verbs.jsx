@@ -193,4 +193,45 @@ export const verbsIcons = {
       <rect x="70" y="60" width="70" height="90" rx="4" fill="none" stroke={INK} strokeWidth="2" opacity="0.3" />
     </Frame>
   ),
+  "verb-understand": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#7bcf9e" armPose="up" face="happy" />
+      <text x="150" y="66" fontSize="36" fontWeight="800" fill="#ffd166" fontFamily="Baloo 2, sans-serif">!</text>
+    </Frame>
+  ),
+  "verb-teach": (id) => (
+    <Frame id={id}>
+      <rect x="56" y="86" width="70" height="46" rx="4" fill="#8fcfff" stroke={INK} strokeWidth="3" />
+      <line x1="66" y1="100" x2="116" y2="100" stroke={INK} strokeWidth="2" opacity="0.5" />
+      <line x1="66" y1="112" x2="104" y2="112" stroke={INK} strokeWidth="2" opacity="0.5" />
+      <g transform="translate(96,26) scale(0.6)">
+        <Chibi shirt="#f5924a" armPose="wave" face="smile" />
+      </g>
+    </Frame>
+  ),
+  "verb-learn": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#ffd166" armPose="down" face="smile" />
+      <path d="M 140 60 L 168 60 L 168 90 L 154 100 L 140 90 Z" fill="#ffffff" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+      <line x1="146" y1="70" x2="162" y2="70" stroke={INK} strokeWidth="2" opacity="0.4" />
+      <line x1="146" y1="80" x2="158" y2="80" stroke={INK} strokeWidth="2" opacity="0.4" />
+    </Frame>
+  ),
+  "verb-help": (id) => (
+    <Frame id={id}>
+      <g transform="translate(-8,20) scale(0.62)">
+        <Chibi shirt="#4c8df0" armPose="up" face="smile" />
+      </g>
+      <g transform="translate(60,20) scale(0.62)">
+        <Chibi shirt="#ff9ec7" armPose="up" face="happy" flip />
+      </g>
+      <Sparkle x="100" y="46" s="0.7" />
+    </Frame>
+  ),
+  "verb-forget": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#c9c2ce" armPose="down" face="surprised" />
+      <text x="150" y="60" fontSize="40" fontWeight="800" fill="#c9c2ce" fontFamily="Baloo 2, sans-serif">?</text>
+    </Frame>
+  ),
 };

@@ -187,4 +187,41 @@ export const workIcons = {
       </g>
     </Frame>
   ),
+  "job-housewife": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#f5924a" armPose="down" face="happy" />
+      <path d="M 66 70 Q 60 100 68 130" stroke="#6b4a57" strokeWidth="9" fill="none" strokeLinecap="round" />
+      <path d="M 134 70 Q 140 100 132 130" stroke="#6b4a57" strokeWidth="9" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "job-shop-manager": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#5fbf77" armPose="down" face="smile" />
+      <rect x="86" y="52" width="28" height="12" rx="3" fill="#f6d34c" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
+  "job-parttime": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#8fcfff" armPose="wave" face="smile" />
+      <rect x="132" y="46" width="28" height="20" rx="4" fill="#ffffff" stroke={INK} strokeWidth="2" />
+      <text x="146" y="61" fontSize="12" fontWeight="800" fill="#f45c5c" fontFamily="Baloo 2, sans-serif" textAnchor="middle">バ</text>
+    </Frame>
+  ),
+  "job-commute": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#33447a" armPose="down" face="smile" />
+      <rect x="82" y="76" width="16" height="10" rx="4" fill="none" stroke={INK} strokeWidth="2.5" />
+      <rect x="102" y="76" width="16" height="10" rx="4" fill="none" stroke={INK} strokeWidth="2.5" />
+      <path d="M 146 120 L 168 120 L 162 132 L 152 132 Z" fill="#c9ccd6" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+      <circle cx="153" cy="134" r="3" fill={INK} />
+      <circle cx="161" cy="134" r="3" fill={INK} />
+    </Frame>
+  ),
+  "job-break": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#ffd6e8" armPose="down" face="happy" />
+      <path d="M 132 60 Q 140 72 132 80" stroke="#c7b6bd" strokeWidth="3" fill="none" strokeLinecap="round" opacity="0.6" />
+      <ellipse cx="130" cy="86" rx="14" ry="10" fill="#fff8ea" stroke={INK} strokeWidth="2" />
+    </Frame>
+  ),
 };

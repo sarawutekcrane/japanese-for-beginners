@@ -192,4 +192,41 @@ export const familyIcons = {
       <Sparkle x="100" y="50" s="0.7" />
     </Frame>
   ),
+  "family-ani": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#5fbf77" armPose="up" face="smile" />
+    </Frame>
+  ),
+  "family-ane": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#f5924a" armPose="wave" face="smile" />
+      <path d="M 100 44 L 92 36 L 100 30 L 108 36 Z" fill="#ffd6e8" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+    </Frame>
+  ),
+  "family-chichi": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#33447a" armPose="down" face="smile" />
+      <rect x="82" y="76" width="16" height="10" rx="4" fill="none" stroke={INK} strokeWidth="2.5" />
+      <rect x="102" y="76" width="16" height="10" rx="4" fill="none" stroke={INK} strokeWidth="2.5" />
+      <line x1="98" y1="81" x2="102" y2="81" stroke={INK} strokeWidth="2.5" />
+    </Frame>
+  ),
+  "family-haha": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#e0876b" armPose="down" face="happy" />
+      <path d="M 70 70 Q 66 96 72 116" stroke="#6b4a57" strokeWidth="9" fill="none" strokeLinecap="round" />
+      <path d="M 130 70 Q 134 96 128 116" stroke="#6b4a57" strokeWidth="9" fill="none" strokeLinecap="round" />
+    </Frame>
+  ),
+  "family-twins": (id) => (
+    <Frame id={id}>
+      <g transform="translate(-6,20) scale(0.62)">
+        <Chibi shirt="#8fcfff" armPose="up" face="happy" />
+      </g>
+      <g transform="translate(58,20) scale(0.62)">
+        <Chibi shirt="#8fcfff" armPose="up" face="happy" flip />
+      </g>
+      <Sparkle x="100" y="46" s="0.6" />
+    </Frame>
+  ),
 };
