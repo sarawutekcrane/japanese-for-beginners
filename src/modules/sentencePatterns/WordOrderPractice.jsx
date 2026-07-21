@@ -127,7 +127,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
           </div>
 
           {!submitted ? (
-            <button className="btn btn-success" onClick={submit} disabled={poolItems.length > 0}>
+            <button className="btn btn-success" onClick={submit} disabled={answerItems.length === 0}>
               ตรวจคำตอบ
             </button>
           ) : (

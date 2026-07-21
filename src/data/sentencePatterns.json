@@ -113,7 +113,9 @@
         "chunks": [
           { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
           { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "のみません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みません" }], "romaji": "nomimasen" },
+          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }], "romaji": "nomimashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -131,7 +133,9 @@
           { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }], "romaji": "ashita" },
           { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
           { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "よみません", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みません" }], "romaji": "yomimasen" },
+          { "text": "よみました", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みました" }], "romaji": "yomimashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -149,7 +153,9 @@
         "chunks": [
           { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
           { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
-          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" }
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" },
+          { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }], "romaji": "gakkou ni" }
         ],
         "correctOrder": [
           "かれは",
@@ -167,7 +173,9 @@
           { "text": "いま", "kanji": [{ "text": "今", "reading": "いま" }], "romaji": "ima" },
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "テレビを", "romaji": "terebi wo" },
-          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" }
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "みません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ません" }], "romaji": "mimasen" },
+          { "text": "みました", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ました" }], "romaji": "mimashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -185,7 +193,9 @@
         "chunks": [
           { "text": "やさいを", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "を" }], "romaji": "yasai wo" },
           { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -202,7 +212,9 @@
         "chunks": [
           { "text": "びょういんへ", "kanji": [{ "text": "病院", "reading": "びょういん" }, { "text": "へ" }], "romaji": "byouin e" },
           { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" },
+          { "text": "びょういんに", "kanji": [{ "text": "病院", "reading": "びょういん" }, { "text": "に" }], "romaji": "byouin ni" }
         ],
         "correctOrder": [
           "わたしは",
@@ -219,7 +231,9 @@
         "chunks": [
           { "text": "しごとを", "kanji": [{ "text": "仕事", "reading": "しごと" }, { "text": "を" }], "romaji": "shigoto wo" },
           { "text": "します", "romaji": "shimasu" },
-          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" }
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "しません", "romaji": "shimasen" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "かれは",
@@ -237,7 +251,9 @@
           { "text": "あさ", "kanji": [{ "text": "朝", "reading": "あさ" }], "romaji": "asa" },
           { "text": "どくしょを", "kanji": [{ "text": "読書", "reading": "どくしょ" }, { "text": "を" }], "romaji": "dokusho wo" },
           { "text": "します", "romaji": "shimasu" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "しません", "romaji": "shimasen" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -254,7 +270,9 @@
         "promptThai": "พูดว่า: ฉันตื่นนอนตอน 6 โมง",
         "chunks": [
           { "text": "ろくじに", "kanji": [{ "text": "六", "reading": "ろく" }, { "text": "時", "reading": "じ" }, { "text": "に" }], "romaji": "rokuji ni" },
-          { "text": "おきます", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きます" }], "romaji": "okimasu" }
+          { "text": "おきます", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きます" }], "romaji": "okimasu" },
+          { "text": "おきません", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きません" }], "romaji": "okimasen" },
+          { "text": "ろくじで", "kanji": [{ "text": "六", "reading": "ろく" }, { "text": "時", "reading": "じ" }, { "text": "で" }], "romaji": "rokuji de" }
         ],
         "correctOrder": [
           "ろくじに",
@@ -269,7 +287,9 @@
         "promptThai": "พูดว่า: ฉันเล่นที่สวนสาธารณะ",
         "chunks": [
           { "text": "こうえんで", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "で" }], "romaji": "kouen de" },
-          { "text": "あそびます", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "びます" }], "romaji": "asobimasu" }
+          { "text": "あそびます", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "びます" }], "romaji": "asobimasu" },
+          { "text": "あそびません", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "びません" }], "romaji": "asobimasen" },
+          { "text": "こうえんに", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "に" }], "romaji": "kouen ni" }
         ],
         "correctOrder": [
           "こうえんで",
@@ -285,7 +305,9 @@
         "chunks": [
           { "text": "ともだちと", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "と" }], "romaji": "tomodachi to" },
           { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
-          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" }
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "みません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ません" }], "romaji": "mimasen" },
+          { "text": "ともだちも", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "も" }], "romaji": "tomodachi mo" }
         ],
         "correctOrder": [
           "ともだちと",
@@ -302,7 +324,9 @@
         "chunks": [
           { "text": "わたしの", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "の" }], "romaji": "watashi no" },
           { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
-          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" }
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" },
+          { "text": "よみません", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みません" }], "romaji": "yomimasen" },
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
         ],
         "correctOrder": [
           "わたしの",
@@ -320,7 +344,9 @@
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "まいにち", "kanji": [{ "text": "毎日", "reading": "まいにち" }], "romaji": "mainichi" },
           { "text": "なっとうを", "romaji": "nattou wo" },
-          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" }
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -338,7 +364,9 @@
         "chunks": [
           { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
           { "text": "がっこうで", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "で" }], "romaji": "gakkou de" },
-          { "text": "おしえます", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えます" }], "romaji": "oshiemasu" }
+          { "text": "おしえます", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えます" }], "romaji": "oshiemasu" },
+          { "text": "おしえません", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えません" }], "romaji": "oshiemasen" },
+          { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }], "romaji": "gakkou ni" }
         ],
         "correctOrder": [
           "せんせいは",
@@ -356,7 +384,9 @@
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "どうぶつえんで", "kanji": [{ "text": "動物園", "reading": "どうぶつえん" }, { "text": "で" }], "romaji": "doubutsuen de" },
           { "text": "ペンギンを", "romaji": "pengin wo" },
-          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" }
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "みません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ません" }], "romaji": "mimasen" },
+          { "text": "どうぶつえんに", "kanji": [{ "text": "動物園", "reading": "どうぶつえん" }, { "text": "に" }], "romaji": "doubutsuen ni" }
         ],
         "correctOrder": [
           "わたしは",
@@ -374,7 +404,9 @@
         "chunks": [
           { "text": "ちちは", "kanji": [{ "text": "父", "reading": "ちち" }, { "text": "は" }], "romaji": "chichi wa" },
           { "text": "こうじょうで", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "で" }], "romaji": "koujou de" },
-          { "text": "はたらきます", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きます" }], "romaji": "hatarakimasu" }
+          { "text": "はたらきます", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きます" }], "romaji": "hatarakimasu" },
+          { "text": "はたらきません", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きません" }], "romaji": "hatarakimasen" },
+          { "text": "こうじょうに", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "に" }], "romaji": "koujou ni" }
         ],
         "correctOrder": [
           "ちちは",
@@ -391,7 +423,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
-          { "text": "のります", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ります" }], "romaji": "norimasu" }
+          { "text": "のります", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ります" }], "romaji": "norimasu" },
+          { "text": "のりません", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りません" }], "romaji": "norimasen" },
+          { "text": "しんかんせんへ", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "へ" }], "romaji": "shinkansen e" }
         ],
         "correctOrder": [
           "わたしは",
@@ -409,7 +443,9 @@
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "かわいい", "romaji": "kawaii" },
           { "text": "ぼうしを", "kanji": [{ "text": "帽子", "reading": "ぼうし" }, { "text": "を" }], "romaji": "boushi wo" },
-          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" }
+          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" },
+          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" },
+          { "text": "かわいくない", "romaji": "kawaikunai" }
         ],
         "correctOrder": [
           "わたしは",
@@ -427,7 +463,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "ははを", "kanji": [{ "text": "母", "reading": "はは" }, { "text": "を" }], "romaji": "haha wo" },
-          { "text": "てつだいます", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "います" }], "romaji": "tetsudaimasu" }
+          { "text": "てつだいます", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "います" }], "romaji": "tetsudaimasu" },
+          { "text": "てつだいません", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いません" }], "romaji": "tetsudaimasen" },
+          { "text": "てつだいました", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いました" }], "romaji": "tetsudaimashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -445,7 +483,9 @@
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "クリームの", "romaji": "kuriimu no" },
           { "text": "かばんを", "romaji": "kaban wo" },
-          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" }
+          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" },
+          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" },
+          { "text": "クリームは", "romaji": "kuriimu wa" }
         ],
         "correctOrder": [
           "わたしは",
@@ -507,7 +547,9 @@
         "chunks": [
           { "text": "のみません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みません" }], "romaji": "nomimasen" },
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
-          { "text": "コーヒーを", "romaji": "koohii wo" }
+          { "text": "コーヒーを", "romaji": "koohii wo" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
+          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }], "romaji": "nomimashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -525,7 +567,9 @@
           { "text": "こんばん", "kanji": [{ "text": "今晩", "reading": "こんばん" }], "romaji": "konban" },
           { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
-          { "text": "よみません", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みません" }], "romaji": "yomimasen" }
+          { "text": "よみません", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みません" }], "romaji": "yomimasen" },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" },
+          { "text": "よみました", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みました" }], "romaji": "yomimashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -543,7 +587,9 @@
         "chunks": [
           { "text": "こうえんへ", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "へ" }], "romaji": "kouen e" },
           { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" },
-          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" }
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "こうえんに", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "に" }], "romaji": "kouen ni" }
         ],
         "correctOrder": [
           "かれは",
@@ -560,7 +606,9 @@
         "chunks": [
           { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
           { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" },
+          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }], "romaji": "kaimashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -577,7 +625,9 @@
         "chunks": [
           { "text": "くだものを", "kanji": [{ "text": "果物", "reading": "くだもの" }, { "text": "を" }], "romaji": "kudamono wo" },
           { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -594,7 +644,9 @@
         "chunks": [
           { "text": "スポーツを", "romaji": "supootsu wo" },
           { "text": "しません", "romaji": "shimasen" },
-          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" }
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "かれは",
@@ -611,7 +663,9 @@
         "chunks": [
           { "text": "えきへ", "kanji": [{ "text": "駅", "reading": "えき" }, { "text": "へ" }], "romaji": "eki e" },
           { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "えきに", "kanji": [{ "text": "駅", "reading": "えき" }, { "text": "に" }], "romaji": "eki ni" }
         ],
         "correctOrder": [
           "わたしは",
@@ -628,7 +682,9 @@
         "chunks": [
           { "text": "ゲームを", "romaji": "geemu wo" },
           { "text": "しません", "romaji": "shimasen" },
-          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" }
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "かのじょは",
@@ -645,7 +701,9 @@
         "chunks": [
           { "text": "わたしも", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }], "romaji": "watashi mo" },
           { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
-          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" }
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "わたしと", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "と" }], "romaji": "watashi to" }
         ],
         "correctOrder": [
           "わたしも",
@@ -662,7 +720,9 @@
         "chunks": [
           { "text": "にちようびは", "kanji": [{ "text": "日曜日", "reading": "にちようび" }, { "text": "は" }], "romaji": "nichiyoubi wa" },
           { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }], "romaji": "gakkou ni" },
-          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" }
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" }
         ],
         "correctOrder": [
           "にちようびは",
@@ -679,7 +739,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "なっとうを", "romaji": "nattou wo" },
-          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -696,7 +758,9 @@
         "chunks": [
           { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
           { "text": "とうふを", "kanji": [{ "text": "豆腐", "reading": "とうふ" }, { "text": "を" }], "romaji": "toufu wo" },
-          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" }
         ],
         "correctOrder": [
           "かれは",
@@ -713,7 +777,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "コンビニへ", "romaji": "konbini e" },
-          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" }
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "コンビニに", "romaji": "konbini ni" }
         ],
         "correctOrder": [
           "わたしは",
@@ -730,7 +796,9 @@
         "chunks": [
           { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
           { "text": "ジョギングを", "romaji": "jogingu wo" },
-          { "text": "しません", "romaji": "shimasen" }
+          { "text": "しません", "romaji": "shimasen" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "かのじょは",
@@ -747,7 +815,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "アルバイトを", "romaji": "arubaito wo" },
-          { "text": "しません", "romaji": "shimasen" }
+          { "text": "しません", "romaji": "shimasen" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -764,7 +834,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "じゅうたんを", "romaji": "juutan wo" },
-          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" }
+          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" },
+          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" },
+          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }], "romaji": "kaimashita" }
         ],
         "correctOrder": [
           "わたしは",
@@ -781,7 +853,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "まじめに", "kanji": [{ "text": "真面目", "reading": "まじめ" }, { "text": "に" }], "romaji": "majime ni" },
-          { "text": "べんきょうしません", "romaji": "benkyou shimasen" }
+          { "text": "べんきょうしません", "romaji": "benkyou shimasen" },
+          { "text": "べんきょうします", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "します" }], "romaji": "benkyou shimasu" },
+          { "text": "まじめな", "kanji": [{ "text": "真面目", "reading": "まじめ" }, { "text": "な" }], "romaji": "majime na" }
         ],
         "correctOrder": [
           "わたしは",
@@ -799,7 +873,9 @@
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "からい", "romaji": "karai" },
           { "text": "りょうりを", "kanji": [{ "text": "料理", "reading": "りょうり" }, { "text": "を" }], "romaji": "ryouri wo" },
-          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "からくない", "kanji": [{ "text": "辛", "reading": "から" }, { "text": "くない" }], "romaji": "karakunai" }
         ],
         "correctOrder": [
           "わたしは",
@@ -817,7 +893,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "やっきょくへ", "kanji": [{ "text": "薬局", "reading": "やっきょく" }, { "text": "へ" }], "romaji": "yakkyoku e" },
-          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" }
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "やっきょくに", "kanji": [{ "text": "薬局", "reading": "やっきょく" }, { "text": "に" }], "romaji": "yakkyoku ni" }
         ],
         "correctOrder": [
           "わたしは",
@@ -833,7 +911,9 @@
         "promptThai": "พูดว่า: ฉันก็ไม่ขับรถเหมือนกัน",
         "chunks": [
           { "text": "わたしも", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }], "romaji": "watashi mo" },
-          { "text": "うんてんしません", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しません" }], "romaji": "unten shimasen" }
+          { "text": "うんてんしません", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しません" }], "romaji": "unten shimasen" },
+          { "text": "うんてんします", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "します" }], "romaji": "unten shimasu" },
+          { "text": "わたしと", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "と" }], "romaji": "watashi to" }
         ],
         "correctOrder": [
           "わたしも",
@@ -897,7 +977,9 @@
         "chunks": [
           { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
           { "text": "のみますか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みますか" }], "romaji": "nomimasu ka" },
-          { "text": "あなたは", "romaji": "anata wa" }
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
+          { "text": "のみません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みません" }], "romaji": "nomimasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -915,7 +997,9 @@
           { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }], "romaji": "ashita" },
           { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
           { "text": "みますか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ますか" }], "romaji": "mimasu ka" },
-          { "text": "あなたは", "romaji": "anata wa" }
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "みません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ません" }], "romaji": "mimasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -933,7 +1017,9 @@
         "chunks": [
           { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }], "romaji": "ikimasu ka" },
           { "text": "あなたは", "romaji": "anata wa" },
-          { "text": "こうえんへ", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "へ" }], "romaji": "kouen e" }
+          { "text": "こうえんへ", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "へ" }], "romaji": "kouen e" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "こうえんに", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "に" }], "romaji": "kouen ni" }
         ],
         "correctOrder": [
           "あなたは",
@@ -950,7 +1036,9 @@
         "chunks": [
           { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
           { "text": "かきますか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きますか" }], "romaji": "kakimasu ka" },
-          { "text": "あなたは", "romaji": "anata wa" }
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "かきます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きます" }], "romaji": "kakimasu" },
+          { "text": "かきません", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きません" }], "romaji": "kakimasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -967,7 +1055,9 @@
         "chunks": [
           { "text": "やさいを", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "を" }], "romaji": "yasai wo" },
           { "text": "たべますか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べますか" }], "romaji": "tabemasu ka" },
-          { "text": "あなたは", "romaji": "anata wa" }
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -984,7 +1074,9 @@
         "chunks": [
           { "text": "くうこうへ", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "へ" }], "romaji": "kuukou e" },
           { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }], "romaji": "ikimasu ka" },
-          { "text": "あなたは", "romaji": "anata wa" }
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "くうこうに", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "に" }], "romaji": "kuukou ni" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1001,7 +1093,9 @@
         "chunks": [
           { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }], "romaji": "shashin wo" },
           { "text": "とりますか", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りますか" }], "romaji": "torimasu ka" },
-          { "text": "あなたは", "romaji": "anata wa" }
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "とります", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ります" }], "romaji": "torimasu" },
+          { "text": "とりません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りません" }], "romaji": "torimasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1019,7 +1113,9 @@
           { "text": "まいにち", "kanji": [{ "text": "毎日", "reading": "まいにち" }], "romaji": "mainichi" },
           { "text": "スポーツを", "romaji": "supootsu wo" },
           { "text": "しますか", "romaji": "shimasu ka" },
-          { "text": "あなたは", "romaji": "anata wa" }
+          { "text": "あなたは", "romaji": "anata wa" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しません", "romaji": "shimasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1036,7 +1132,9 @@
         "promptThai": "ถามว่า: คุณอ่านหนังสือที่ห้องสมุดไหม",
         "chunks": [
           { "text": "としょかんで", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "で" }], "romaji": "toshokan de" },
-          { "text": "べんきょうしますか", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "しますか" }], "romaji": "benkyou shimasu ka" }
+          { "text": "べんきょうしますか", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "しますか" }], "romaji": "benkyou shimasu ka" },
+          { "text": "べんきょうします", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "します" }], "romaji": "benkyou shimasu" },
+          { "text": "としょかんに", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "に" }], "romaji": "toshokan ni" }
         ],
         "correctOrder": [
           "としょかんで",
@@ -1051,7 +1149,9 @@
         "promptThai": "ถามว่า: คุณไปกับใคร",
         "chunks": [
           { "text": "だれと", "romaji": "dare to" },
-          { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }], "romaji": "ikimasu ka" }
+          { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }], "romaji": "ikimasu ka" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "だれも", "romaji": "dare mo" }
         ],
         "correctOrder": [
           "だれと",
@@ -1067,7 +1167,9 @@
         "chunks": [
           { "text": "なんじから", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "時", "reading": "じ" }, { "text": "から" }], "romaji": "nanji kara" },
           { "text": "なんじまで", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "時", "reading": "じ" }, { "text": "まで" }], "romaji": "nanji made" },
-          { "text": "はたらきますか", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きますか" }], "romaji": "hatarakimasu ka" }
+          { "text": "はたらきますか", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きますか" }], "romaji": "hatarakimasu ka" },
+          { "text": "はたらきます", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きます" }], "romaji": "hatarakimasu" },
+          { "text": "はたらきません", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きません" }], "romaji": "hatarakimasen" }
         ],
         "correctOrder": [
           "なんじから",
@@ -1084,7 +1186,9 @@
         "chunks": [
           { "text": "あなたは", "romaji": "anata wa" },
           { "text": "なっとうを", "romaji": "nattou wo" },
-          { "text": "たべますか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べますか" }], "romaji": "tabemasu ka" }
+          { "text": "たべますか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べますか" }], "romaji": "tabemasu ka" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1101,7 +1205,9 @@
         "chunks": [
           { "text": "あなたは", "romaji": "anata wa" },
           { "text": "やきとりを", "kanji": [{ "text": "焼", "reading": "や" }, { "text": "き" }, { "text": "鳥", "reading": "とり" }, { "text": "を" }], "romaji": "yakitori wo" },
-          { "text": "たべますか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べますか" }], "romaji": "tabemasu ka" }
+          { "text": "たべますか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べますか" }], "romaji": "tabemasu ka" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1118,7 +1224,9 @@
         "chunks": [
           { "text": "あなたは", "romaji": "anata wa" },
           { "text": "コンビニへ", "romaji": "konbini e" },
-          { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }], "romaji": "ikimasu ka" }
+          { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }], "romaji": "ikimasu ka" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "コンビニに", "romaji": "konbini ni" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1135,7 +1243,9 @@
         "chunks": [
           { "text": "あなたは", "romaji": "anata wa" },
           { "text": "アルバイトを", "romaji": "arubaito wo" },
-          { "text": "しますか", "romaji": "shimasu ka" }
+          { "text": "しますか", "romaji": "shimasu ka" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しません", "romaji": "shimasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1152,7 +1262,9 @@
         "chunks": [
           { "text": "あなたは", "romaji": "anata wa" },
           { "text": "ジョギングを", "romaji": "jogingu wo" },
-          { "text": "しますか", "romaji": "shimasu ka" }
+          { "text": "しますか", "romaji": "shimasu ka" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しません", "romaji": "shimasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1170,7 +1282,9 @@
           { "text": "あなたは", "romaji": "anata wa" },
           { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
           { "text": "コーヒーを", "romaji": "koohii wo" },
-          { "text": "のみますか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みますか" }], "romaji": "nomimasu ka" }
+          { "text": "のみますか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みますか" }], "romaji": "nomimasu ka" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
+          { "text": "きっさてんに", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "に" }], "romaji": "kissaten ni" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1188,7 +1302,9 @@
         "chunks": [
           { "text": "あなたは", "romaji": "anata wa" },
           { "text": "まいにち", "kanji": [{ "text": "毎日", "reading": "まいにち" }], "romaji": "mainichi" },
-          { "text": "うんてんしますか", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しますか" }], "romaji": "unten shimasu ka" }
+          { "text": "うんてんしますか", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しますか" }], "romaji": "unten shimasu ka" },
+          { "text": "うんてんします", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "します" }], "romaji": "unten shimasu" },
+          { "text": "うんてんしません", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しません" }], "romaji": "unten shimasen" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1205,7 +1321,9 @@
         "chunks": [
           { "text": "あなたは", "romaji": "anata wa" },
           { "text": "がくせいに", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "に" }], "romaji": "gakusei ni" },
-          { "text": "おしえますか", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えますか" }], "romaji": "oshiemasu ka" }
+          { "text": "おしえますか", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えますか" }], "romaji": "oshiemasu ka" },
+          { "text": "おしえます", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えます" }], "romaji": "oshiemasu" },
+          { "text": "がくせいを", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "を" }], "romaji": "gakusei wo" }
         ],
         "correctOrder": [
           "あなたは",
@@ -1220,7 +1338,9 @@
         "id": "question-masu-20",
         "promptThai": "ถามว่า: คุณเข้าใจไหม",
         "chunks": [
-          { "text": "わかりますか", "kanji": [{ "text": "分", "reading": "わ" }, { "text": "かりますか" }], "romaji": "wakarimasu ka" }
+          { "text": "わかりますか", "kanji": [{ "text": "分", "reading": "わ" }, { "text": "かりますか" }], "romaji": "wakarimasu ka" },
+          { "text": "わかります", "kanji": [{ "text": "分", "reading": "わ" }, { "text": "かります" }], "romaji": "wakarimasu" },
+          { "text": "わかりません", "kanji": [{ "text": "分", "reading": "わ" }, { "text": "かりません" }], "romaji": "wakarimasen" }
         ],
         "correctOrder": [
           "わかりますか"
@@ -1279,7 +1399,9 @@
         "chunks": [
           { "text": "コーヒーを", "romaji": "koohii wo" },
           { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }], "romaji": "nomimasen ka" },
-          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" }
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
+          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }], "romaji": "nomimashita" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1296,7 +1418,9 @@
         "chunks": [
           { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }], "romaji": "ashita" },
           { "text": "こうえんへ", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "へ" }], "romaji": "kouen e" },
-          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" }
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "こうえんに", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "に" }], "romaji": "kouen ni" }
         ],
         "correctOrder": [
           "あした",
@@ -1313,7 +1437,9 @@
         "chunks": [
           { "text": "テレビを", "romaji": "terebi wo" },
           { "text": "みませんか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんか" }], "romaji": "mimasen ka" },
-          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" }
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "みました", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ました" }], "romaji": "mimashita" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1330,7 +1456,9 @@
         "chunks": [
           { "text": "こんばん", "kanji": [{ "text": "今晩", "reading": "こんばん" }], "romaji": "konban" },
           { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
-          { "text": "よみませんか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みませんか" }], "romaji": "yomimasen ka" }
+          { "text": "よみませんか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みませんか" }], "romaji": "yomimasen ka" },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" },
+          { "text": "よみました", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みました" }], "romaji": "yomimashita" }
         ],
         "correctOrder": [
           "こんばん",
@@ -1347,7 +1475,9 @@
         "chunks": [
           { "text": "どくしょを", "kanji": [{ "text": "読書", "reading": "どくしょ" }, { "text": "を" }], "romaji": "dokusho wo" },
           { "text": "しませんか", "romaji": "shimasen ka" },
-          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" }
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1364,7 +1494,9 @@
         "chunks": [
           { "text": "スポーツを", "romaji": "supootsu wo" },
           { "text": "しませんか", "romaji": "shimasen ka" },
-          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" }
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1381,7 +1513,9 @@
         "chunks": [
           { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
           { "text": "みませんか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんか" }], "romaji": "mimasen ka" },
-          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" }
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "みました", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ました" }], "romaji": "mimashita" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1398,7 +1532,9 @@
         "chunks": [
           { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }], "romaji": "ashita" },
           { "text": "スーパーへ", "romaji": "suupaa e" },
-          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" }
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "スーパーに", "romaji": "suupaa ni" }
         ],
         "correctOrder": [
           "あした",
@@ -1415,7 +1551,9 @@
         "chunks": [
           { "text": "わたしと", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "と" }], "romaji": "watashi to" },
           { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
-          { "text": "みませんか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんか" }], "romaji": "mimasen ka" }
+          { "text": "みませんか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんか" }], "romaji": "mimasen ka" },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "わたしも", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }], "romaji": "watashi mo" }
         ],
         "correctOrder": [
           "わたしと",
@@ -1431,7 +1569,9 @@
         "promptThai": "ชวนว่า: ดื่มกาแฟด้วยกันไหม (เช่นกัน)",
         "chunks": [
           { "text": "コーヒーも", "romaji": "koohii mo" },
-          { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }], "romaji": "nomimasen ka" }
+          { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }], "romaji": "nomimasen ka" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
+          { "text": "コーヒーと", "romaji": "koohii to" }
         ],
         "correctOrder": [
           "コーヒーも",
@@ -1447,7 +1587,9 @@
         "chunks": [
           { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
           { "text": "なっとうを", "romaji": "nattou wo" },
-          { "text": "たべませんか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんか" }], "romaji": "tabemasen ka" }
+          { "text": "たべませんか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんか" }], "romaji": "tabemasen ka" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1464,7 +1606,9 @@
         "chunks": [
           { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
           { "text": "コンビニへ", "romaji": "konbini e" },
-          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" }
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "コンビニに", "romaji": "konbini ni" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1481,7 +1625,9 @@
         "chunks": [
           { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
           { "text": "ジョギングを", "romaji": "jogingu wo" },
-          { "text": "しませんか", "romaji": "shimasen ka" }
+          { "text": "しませんか", "romaji": "shimasen ka" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1498,7 +1644,9 @@
         "chunks": [
           { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
           { "text": "トランプを", "romaji": "toranpu wo" },
-          { "text": "しませんか", "romaji": "shimasen ka" }
+          { "text": "しませんか", "romaji": "shimasen ka" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1515,7 +1663,9 @@
         "chunks": [
           { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
           { "text": "サーフィンを", "romaji": "saafin wo" },
-          { "text": "しませんか", "romaji": "shimasen ka" }
+          { "text": "しませんか", "romaji": "shimasen ka" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しました", "romaji": "shimashita" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1532,7 +1682,9 @@
         "chunks": [
           { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
           { "text": "コーヒーを", "romaji": "koohii wo" },
-          { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }], "romaji": "nomimasen ka" }
+          { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }], "romaji": "nomimasen ka" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
+          { "text": "きっさてんに", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "に" }], "romaji": "kissaten ni" }
         ],
         "correctOrder": [
           "きっさてんで",
@@ -1549,7 +1701,9 @@
         "chunks": [
           { "text": "わたしと", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "と" }], "romaji": "watashi to" },
           { "text": "ボードゲームを", "romaji": "boodo geemu wo" },
-          { "text": "しませんか", "romaji": "shimasen ka" }
+          { "text": "しませんか", "romaji": "shimasen ka" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "わたしも", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }], "romaji": "watashi mo" }
         ],
         "correctOrder": [
           "わたしと",
@@ -1566,7 +1720,9 @@
         "chunks": [
           { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }], "romaji": "ashita" },
           { "text": "どうぶつえんへ", "kanji": [{ "text": "動物園", "reading": "どうぶつえん" }, { "text": "へ" }], "romaji": "doubutsuen e" },
-          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" }
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "どうぶつえんに", "kanji": [{ "text": "動物園", "reading": "どうぶつえん" }, { "text": "に" }], "romaji": "doubutsuen ni" }
         ],
         "correctOrder": [
           "あした",
@@ -1582,7 +1738,9 @@
         "promptThai": "ชวนว่า: กินนัตโตะด้วยกันไหม (เช่นกัน)",
         "chunks": [
           { "text": "なっとうも", "romaji": "nattou mo" },
-          { "text": "たべませんか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんか" }], "romaji": "tabemasen ka" }
+          { "text": "たべませんか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんか" }], "romaji": "tabemasen ka" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "なっとうと", "romaji": "nattou to" }
         ],
         "correctOrder": [
           "なっとうも",
@@ -1598,7 +1756,9 @@
         "chunks": [
           { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
           { "text": "プログラミングを", "romaji": "puroguramingu wo" },
-          { "text": "ならいませんか", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "いませんか" }], "romaji": "naraimasen ka" }
+          { "text": "ならいませんか", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "いませんか" }], "romaji": "naraimasen ka" },
+          { "text": "ならいます", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "います" }], "romaji": "naraimasu" },
+          { "text": "ならいました", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "いました" }], "romaji": "naraimashita" }
         ],
         "correctOrder": [
           "いっしょに",
@@ -1660,7 +1820,9 @@
           { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
           { "text": "コーヒーを", "romaji": "koohii wo" },
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
-          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }], "romaji": "nomimashita" }
+          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }], "romaji": "nomimashita" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
+          { "text": "のみません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みません" }], "romaji": "nomimasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -1678,7 +1840,9 @@
         "chunks": [
           { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
           { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
-          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" }
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }], "romaji": "gakkou ni" }
         ],
         "correctOrder": [
           "かれは",
@@ -1695,7 +1859,9 @@
         "chunks": [
           { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
           { "text": "みました", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ました" }], "romaji": "mimashita" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "みません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ません" }], "romaji": "mimasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -1713,7 +1879,9 @@
           { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
           { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
           { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
-          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }], "romaji": "kaimashita" }
+          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }], "romaji": "kaimashita" },
+          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" },
+          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" }
         ],
         "correctOrder": [
           "かのじょは",
@@ -1731,7 +1899,9 @@
         "chunks": [
           { "text": "くだものを", "kanji": [{ "text": "果物", "reading": "くだもの" }, { "text": "を" }], "romaji": "kudamono wo" },
           { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -1748,7 +1918,9 @@
         "chunks": [
           { "text": "くうこうへ", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "へ" }], "romaji": "kuukou e" },
           { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
-          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" }
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "くうこうに", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "に" }], "romaji": "kuukou ni" }
         ],
         "correctOrder": [
           "かれは",
@@ -1765,7 +1937,9 @@
         "chunks": [
           { "text": "スポーツを", "romaji": "supootsu wo" },
           { "text": "しました", "romaji": "shimashita" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しません", "romaji": "shimasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -1782,7 +1956,9 @@
         "chunks": [
           { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }], "romaji": "shashin wo" },
           { "text": "とりました", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りました" }], "romaji": "torimashita" },
-          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" }
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "とります", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ります" }], "romaji": "torimasu" },
+          { "text": "とりません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りません" }], "romaji": "torimasen" }
         ],
         "correctOrder": [
           "かのじょは",
@@ -1798,7 +1974,9 @@
         "promptThai": "พูดว่า: ฉันตื่นนอนตอน 6 โมง (แล้ว)",
         "chunks": [
           { "text": "ろくじに", "kanji": [{ "text": "六", "reading": "ろく" }, { "text": "時", "reading": "じ" }, { "text": "に" }], "romaji": "rokuji ni" },
-          { "text": "おきました", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きました" }], "romaji": "okimashita" }
+          { "text": "おきました", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きました" }], "romaji": "okimashita" },
+          { "text": "おきます", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きます" }], "romaji": "okimasu" },
+          { "text": "ろくじで", "kanji": [{ "text": "六", "reading": "ろく" }, { "text": "時", "reading": "じ" }, { "text": "で" }], "romaji": "rokuji de" }
         ],
         "correctOrder": [
           "ろくじに",
@@ -1813,7 +1991,9 @@
         "promptThai": "พูดว่า: ฉันเล่นที่สวนสาธารณะ (แล้ว)",
         "chunks": [
           { "text": "こうえんで", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "で" }], "romaji": "kouen de" },
-          { "text": "あそびました", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "びました" }], "romaji": "asobimashita" }
+          { "text": "あそびました", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "びました" }], "romaji": "asobimashita" },
+          { "text": "あそびます", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "びます" }], "romaji": "asobimasu" },
+          { "text": "こうえんに", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "に" }], "romaji": "kouen ni" }
         ],
         "correctOrder": [
           "こうえんで",
@@ -1829,7 +2009,9 @@
         "chunks": [
           { "text": "ともだちの", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "の" }], "romaji": "tomodachi no" },
           { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
-          { "text": "よみました", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みました" }], "romaji": "yomimashita" }
+          { "text": "よみました", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みました" }], "romaji": "yomimashita" },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" },
+          { "text": "ともだちは", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "は" }], "romaji": "tomodachi wa" }
         ],
         "correctOrder": [
           "ともだちの",
@@ -1846,7 +2028,9 @@
         "chunks": [
           { "text": "げつようびから", "kanji": [{ "text": "月曜日", "reading": "げつようび" }, { "text": "から" }], "romaji": "getsuyoubi kara" },
           { "text": "きんようびまで", "kanji": [{ "text": "金曜日", "reading": "きんようび" }, { "text": "まで" }], "romaji": "kin'youbi made" },
-          { "text": "はたらきました", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きました" }], "romaji": "hatarakimashita" }
+          { "text": "はたらきました", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きました" }], "romaji": "hatarakimashita" },
+          { "text": "はたらきます", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きます" }], "romaji": "hatarakimasu" },
+          { "text": "げつようびまで", "kanji": [{ "text": "月曜日", "reading": "げつようび" }, { "text": "まで" }], "romaji": "getsuyoubi made" }
         ],
         "correctOrder": [
           "げつようびから",
@@ -1864,7 +2048,9 @@
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
           { "text": "なっとうを", "romaji": "nattou wo" },
-          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" }
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -1882,7 +2068,9 @@
         "chunks": [
           { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
           { "text": "とうふを", "kanji": [{ "text": "豆腐", "reading": "とうふ" }, { "text": "を" }], "romaji": "toufu wo" },
-          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }], "romaji": "kaimashita" }
+          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }], "romaji": "kaimashita" },
+          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" },
+          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" }
         ],
         "correctOrder": [
           "かれは",
@@ -1900,7 +2088,9 @@
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
           { "text": "コーヒーを", "romaji": "koohii wo" },
-          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }], "romaji": "nomimashita" }
+          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }], "romaji": "nomimashita" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
+          { "text": "きっさてんに", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "に" }], "romaji": "kissaten ni" }
         ],
         "correctOrder": [
           "わたしは",
@@ -1918,7 +2108,9 @@
         "chunks": [
           { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
           { "text": "やっきょくへ", "kanji": [{ "text": "薬局", "reading": "やっきょく" }, { "text": "へ" }], "romaji": "yakkyoku e" },
-          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" }
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "やっきょくに", "kanji": [{ "text": "薬局", "reading": "やっきょく" }, { "text": "に" }], "romaji": "yakkyoku ni" }
         ],
         "correctOrder": [
           "かのじょは",
@@ -1935,7 +2127,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "アルバイトを", "romaji": "arubaito wo" },
-          { "text": "しました", "romaji": "shimashita" }
+          { "text": "しました", "romaji": "shimashita" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しません", "romaji": "shimasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -1952,7 +2146,9 @@
         "chunks": [
           { "text": "ちちは", "kanji": [{ "text": "父", "reading": "ちち" }, { "text": "は" }], "romaji": "chichi wa" },
           { "text": "こうじょうで", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "で" }], "romaji": "koujou de" },
-          { "text": "はたらきました", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きました" }], "romaji": "hatarakimashita" }
+          { "text": "はたらきました", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きました" }], "romaji": "hatarakimashita" },
+          { "text": "はたらきます", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きます" }], "romaji": "hatarakimasu" },
+          { "text": "こうじょうに", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "に" }], "romaji": "koujou ni" }
         ],
         "correctOrder": [
           "ちちは",
@@ -1969,7 +2165,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
-          { "text": "のりました", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りました" }], "romaji": "norimashita" }
+          { "text": "のりました", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りました" }], "romaji": "norimashita" },
+          { "text": "のります", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ります" }], "romaji": "norimasu" },
+          { "text": "しんかんせんへ", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "へ" }], "romaji": "shinkansen e" }
         ],
         "correctOrder": [
           "わたしは",
@@ -1986,7 +2184,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "ははを", "kanji": [{ "text": "母", "reading": "はは" }, { "text": "を" }], "romaji": "haha wo" },
-          { "text": "てつだいました", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いました" }], "romaji": "tetsudaimashita" }
+          { "text": "てつだいました", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いました" }], "romaji": "tetsudaimashita" },
+          { "text": "てつだいます", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "います" }], "romaji": "tetsudaimasu" },
+          { "text": "てつだいません", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いません" }], "romaji": "tetsudaimasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2048,7 +2248,9 @@
           { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "コーヒーを", "romaji": "koohii wo" },
-          { "text": "のみませんでした", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんでした" }], "romaji": "nomimasendeshita" }
+          { "text": "のみませんでした", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんでした" }], "romaji": "nomimasendeshita" },
+          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }], "romaji": "nomimashita" },
+          { "text": "のみません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みません" }], "romaji": "nomimasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2066,7 +2268,9 @@
         "chunks": [
           { "text": "テレビを", "romaji": "terebi wo" },
           { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
-          { "text": "みませんでした", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんでした" }], "romaji": "mimasendeshita" }
+          { "text": "みませんでした", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんでした" }], "romaji": "mimasendeshita" },
+          { "text": "みました", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ました" }], "romaji": "mimashita" },
+          { "text": "みません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ません" }], "romaji": "mimasen" }
         ],
         "correctOrder": [
           "かのじょは",
@@ -2083,7 +2287,9 @@
         "chunks": [
           { "text": "こうえんへ", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "へ" }], "romaji": "kouen e" },
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
-          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }], "romaji": "ikimasendeshita" }
+          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }], "romaji": "ikimasendeshita" },
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" },
+          { "text": "こうえんに", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "に" }], "romaji": "kouen ni" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2101,7 +2307,9 @@
           { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
           { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
           { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
-          { "text": "かいませんでした", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いませんでした" }], "romaji": "kaimasendeshita" }
+          { "text": "かいませんでした", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いませんでした" }], "romaji": "kaimasendeshita" },
+          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }], "romaji": "kaimashita" },
+          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" }
         ],
         "correctOrder": [
           "かれは",
@@ -2119,7 +2327,9 @@
         "chunks": [
           { "text": "やさいを", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "を" }], "romaji": "yasai wo" },
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
-          { "text": "たべませんでした", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }], "romaji": "tabemasendeshita" }
+          { "text": "たべませんでした", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }], "romaji": "tabemasendeshita" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2136,7 +2346,9 @@
         "chunks": [
           { "text": "くうこうへ", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "へ" }], "romaji": "kuukou e" },
           { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
-          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }], "romaji": "ikimasendeshita" }
+          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }], "romaji": "ikimasendeshita" },
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" },
+          { "text": "くうこうに", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "に" }], "romaji": "kuukou ni" }
         ],
         "correctOrder": [
           "かのじょは",
@@ -2153,7 +2365,9 @@
         "chunks": [
           { "text": "どくしょを", "kanji": [{ "text": "読書", "reading": "どくしょ" }, { "text": "を" }], "romaji": "dokusho wo" },
           { "text": "しませんでした", "romaji": "shimasendeshita" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "しました", "romaji": "shimashita" },
+          { "text": "しません", "romaji": "shimasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2170,7 +2384,9 @@
         "chunks": [
           { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }], "romaji": "shashin wo" },
           { "text": "とりませんでした", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りませんでした" }], "romaji": "torimasendeshita" },
-          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" }
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "とりました", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りました" }], "romaji": "torimashita" },
+          { "text": "とりません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りません" }], "romaji": "torimasen" }
         ],
         "correctOrder": [
           "かれは",
@@ -2186,7 +2402,9 @@
         "promptThai": "พูดว่า: ฉันไม่ได้ไปกับครอบครัว",
         "chunks": [
           { "text": "かぞくと", "kanji": [{ "text": "家族", "reading": "かぞく" }, { "text": "と" }], "romaji": "kazoku to" },
-          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }], "romaji": "ikimasendeshita" }
+          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }], "romaji": "ikimasendeshita" },
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" },
+          { "text": "かぞくも", "kanji": [{ "text": "家族", "reading": "かぞく" }, { "text": "も" }], "romaji": "kazoku mo" }
         ],
         "correctOrder": [
           "かぞくと",
@@ -2201,7 +2419,9 @@
         "promptThai": "พูดว่า: ฉันก็ไม่ได้กินเหมือนกัน",
         "chunks": [
           { "text": "わたしも", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }], "romaji": "watashi mo" },
-          { "text": "たべませんでした", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }], "romaji": "tabemasendeshita" }
+          { "text": "たべませんでした", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }], "romaji": "tabemasendeshita" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" },
+          { "text": "わたしと", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "と" }], "romaji": "watashi to" }
         ],
         "correctOrder": [
           "わたしも",
@@ -2218,7 +2438,9 @@
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
           { "text": "なっとうを", "romaji": "nattou wo" },
-          { "text": "たべませんでした", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }], "romaji": "tabemasendeshita" }
+          { "text": "たべませんでした", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }], "romaji": "tabemasendeshita" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2236,7 +2458,9 @@
         "chunks": [
           { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
           { "text": "とうふを", "kanji": [{ "text": "豆腐", "reading": "とうふ" }, { "text": "を" }], "romaji": "toufu wo" },
-          { "text": "かいませんでした", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いませんでした" }], "romaji": "kaimasendeshita" }
+          { "text": "かいませんでした", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いませんでした" }], "romaji": "kaimasendeshita" },
+          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }], "romaji": "kaimashita" },
+          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" }
         ],
         "correctOrder": [
           "かれは",
@@ -2253,7 +2477,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "きっさてんへ", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "へ" }], "romaji": "kissaten e" },
-          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }], "romaji": "ikimasendeshita" }
+          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }], "romaji": "ikimasendeshita" },
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" },
+          { "text": "きっさてんに", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "に" }], "romaji": "kissaten ni" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2270,7 +2496,9 @@
         "chunks": [
           { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
           { "text": "アルバイトを", "romaji": "arubaito wo" },
-          { "text": "しませんでした", "romaji": "shimasendeshita" }
+          { "text": "しませんでした", "romaji": "shimasendeshita" },
+          { "text": "しました", "romaji": "shimashita" },
+          { "text": "しません", "romaji": "shimasen" }
         ],
         "correctOrder": [
           "かのじょは",
@@ -2287,7 +2515,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "じゅうたんを", "romaji": "juutan wo" },
-          { "text": "かいませんでした", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いませんでした" }], "romaji": "kaimasendeshita" }
+          { "text": "かいませんでした", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いませんでした" }], "romaji": "kaimasendeshita" },
+          { "text": "かいました", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いました" }], "romaji": "kaimashita" },
+          { "text": "かいません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }], "romaji": "kaimasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2304,7 +2534,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "まじめに", "kanji": [{ "text": "真面目", "reading": "まじめ" }, { "text": "に" }], "romaji": "majime ni" },
-          { "text": "べんきょうしませんでした", "romaji": "benkyou shimasendeshita" }
+          { "text": "べんきょうしませんでした", "romaji": "benkyou shimasendeshita" },
+          { "text": "べんきょうしました", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "しました" }], "romaji": "benkyou shimashita" },
+          { "text": "まじめな", "kanji": [{ "text": "真面目", "reading": "まじめ" }, { "text": "な" }], "romaji": "majime na" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2321,7 +2553,9 @@
         "chunks": [
           { "text": "ちちは", "kanji": [{ "text": "父", "reading": "ちち" }, { "text": "は" }], "romaji": "chichi wa" },
           { "text": "こうじょうで", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "で" }], "romaji": "koujou de" },
-          { "text": "はたらきませんでした", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きませんでした" }], "romaji": "hatarakimasendeshita" }
+          { "text": "はたらきませんでした", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きませんでした" }], "romaji": "hatarakimasendeshita" },
+          { "text": "はたらきました", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きました" }], "romaji": "hatarakimashita" },
+          { "text": "こうじょうに", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "に" }], "romaji": "koujou ni" }
         ],
         "correctOrder": [
           "ちちは",
@@ -2338,7 +2572,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
-          { "text": "のりませんでした", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りませんでした" }], "romaji": "norimasendeshita" }
+          { "text": "のりませんでした", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りませんでした" }], "romaji": "norimasendeshita" },
+          { "text": "のりました", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りました" }], "romaji": "norimashita" },
+          { "text": "しんかんせんへ", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "へ" }], "romaji": "shinkansen e" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2355,7 +2591,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "ははを", "kanji": [{ "text": "母", "reading": "はは" }, { "text": "を" }], "romaji": "haha wo" },
-          { "text": "てつだいませんでした", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いませんでした" }], "romaji": "tetsudaimasendeshita" }
+          { "text": "てつだいませんでした", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いませんでした" }], "romaji": "tetsudaimasendeshita" },
+          { "text": "てつだいました", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いました" }], "romaji": "tetsudaimashita" },
+          { "text": "てつだいません", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いません" }], "romaji": "tetsudaimasen" }
         ],
         "correctOrder": [
           "わたしは",
@@ -2371,7 +2609,9 @@
         "promptThai": "พูดว่า: ฉันก็ไม่ได้ขับรถเหมือนกัน",
         "chunks": [
           { "text": "わたしも", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }], "romaji": "watashi mo" },
-          { "text": "うんてんしませんでした", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しませんでした" }], "romaji": "unten shimasendeshita" }
+          { "text": "うんてんしませんでした", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しませんでした" }], "romaji": "unten shimasendeshita" },
+          { "text": "うんてんしました", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "しました" }], "romaji": "unten shimashita" },
+          { "text": "わたしと", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "と" }], "romaji": "watashi to" }
         ],
         "correctOrder": [
           "わたしも",
@@ -2426,7 +2666,9 @@
         "promptThai": "พูดว่า: กรุณากินข้าว",
         "chunks": [
           { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
-          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" }
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" },
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
         ],
         "correctOrder": [
           "ごはんを",
@@ -2441,7 +2683,9 @@
         "promptThai": "พูดว่า: กรุณาดื่มน้ำ",
         "chunks": [
           { "text": "のんでください", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでください" }], "romaji": "nonde kudasai" },
-          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" }
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
+          { "text": "のんでもいいですか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでもいいですか" }], "romaji": "nonde mo ii desu ka" },
+          { "text": "のんではいけません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んではいけません" }], "romaji": "nonde wa ikemasen" }
         ],
         "correctOrder": [
           "みずを",
@@ -2456,7 +2700,9 @@
         "promptThai": "พูดว่า: กรุณารอตอนนี้",
         "chunks": [
           { "text": "いま", "kanji": [{ "text": "今", "reading": "いま" }], "romaji": "ima" },
-          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }], "romaji": "matte kudasai" }
+          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }], "romaji": "matte kudasai" },
+          { "text": "まってもいいですか", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってもいいですか" }], "romaji": "matte mo ii desu ka" },
+          { "text": "まってはいけません", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってはいけません" }], "romaji": "matte wa ikemasen" }
         ],
         "correctOrder": [
           "いま",
@@ -2471,7 +2717,9 @@
         "promptThai": "พูดว่า: กรุณาเขียนจดหมาย",
         "chunks": [
           { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
-          { "text": "かいてください", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてください" }], "romaji": "kaite kudasai" }
+          { "text": "かいてください", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてください" }], "romaji": "kaite kudasai" },
+          { "text": "かいてもいいですか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてもいいですか" }], "romaji": "kaite mo ii desu ka" },
+          { "text": "かいてはいけません", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてはいけません" }], "romaji": "kaite wa ikemasen" }
         ],
         "correctOrder": [
           "てがみを",
@@ -2486,7 +2734,9 @@
         "promptThai": "พูดว่า: กรุณากินผัก",
         "chunks": [
           { "text": "やさいを", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "を" }], "romaji": "yasai wo" },
-          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" }
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" },
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
         ],
         "correctOrder": [
           "やさいを",
@@ -2501,7 +2751,9 @@
         "promptThai": "พูดว่า: กรุณาเล่นกีฬา",
         "chunks": [
           { "text": "スポーツを", "romaji": "supootsu wo" },
-          { "text": "してください", "romaji": "shite kudasai" }
+          { "text": "してください", "romaji": "shite kudasai" },
+          { "text": "してもいいですか", "romaji": "shite mo ii desu ka" },
+          { "text": "してはいけません", "romaji": "shite wa ikemasen" }
         ],
         "correctOrder": [
           "スポーツを",
@@ -2516,7 +2768,9 @@
         "promptThai": "พูดว่า: กรุณาถ่ายรูป",
         "chunks": [
           { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }], "romaji": "shashin wo" },
-          { "text": "とってください", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってください" }], "romaji": "totte kudasai" }
+          { "text": "とってください", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってください" }], "romaji": "totte kudasai" },
+          { "text": "とってもいいですか", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってもいいですか" }], "romaji": "totte mo ii desu ka" },
+          { "text": "とってはいけません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってはいけません" }], "romaji": "totte wa ikemasen" }
         ],
         "correctOrder": [
           "しゃしんを",
@@ -2531,7 +2785,9 @@
         "promptThai": "พูดว่า: กรุณาอ่านหนังสือ (เป็นงานอดิเรก)",
         "chunks": [
           { "text": "どくしょを", "kanji": [{ "text": "読書", "reading": "どくしょ" }, { "text": "を" }], "romaji": "dokusho wo" },
-          { "text": "してください", "romaji": "shite kudasai" }
+          { "text": "してください", "romaji": "shite kudasai" },
+          { "text": "してもいいですか", "romaji": "shite mo ii desu ka" },
+          { "text": "してはいけません", "romaji": "shite wa ikemasen" }
         ],
         "correctOrder": [
           "どくしょを",
@@ -2546,7 +2802,9 @@
         "promptThai": "พูดว่า: กรุณามาตอน 7 โมง",
         "chunks": [
           { "text": "しちじに", "kanji": [{ "text": "七", "reading": "しち" }, { "text": "時", "reading": "じ" }, { "text": "に" }], "romaji": "shichiji ni" },
-          { "text": "きてください", "kanji": [{ "text": "来", "reading": "き" }, { "text": "てください" }], "romaji": "kite kudasai" }
+          { "text": "きてください", "kanji": [{ "text": "来", "reading": "き" }, { "text": "てください" }], "romaji": "kite kudasai" },
+          { "text": "きてもいいですか", "kanji": [{ "text": "来", "reading": "き" }, { "text": "てもいいですか" }], "romaji": "kite mo ii desu ka" },
+          { "text": "しちじで", "kanji": [{ "text": "七", "reading": "しち" }, { "text": "時", "reading": "じ" }, { "text": "で" }], "romaji": "shichiji de" }
         ],
         "correctOrder": [
           "しちじに",
@@ -2561,7 +2819,9 @@
         "promptThai": "พูดว่า: กรุณารอที่สวนสาธารณะ",
         "chunks": [
           { "text": "こうえんで", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "で" }], "romaji": "kouen de" },
-          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }], "romaji": "matte kudasai" }
+          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }], "romaji": "matte kudasai" },
+          { "text": "まってもいいですか", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってもいいですか" }], "romaji": "matte mo ii desu ka" },
+          { "text": "こうえんに", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "に" }], "romaji": "kouen ni" }
         ],
         "correctOrder": [
           "こうえんで",
@@ -2576,7 +2836,9 @@
         "promptThai": "พูดว่า: กรุณากินนัตโตะ",
         "chunks": [
           { "text": "なっとうを", "romaji": "nattou wo" },
-          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" }
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" },
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
         ],
         "correctOrder": [
           "なっとうを",
@@ -2591,7 +2853,9 @@
         "promptThai": "พูดว่า: กรุณาซื้อเต้าหู้",
         "chunks": [
           { "text": "とうふを", "kanji": [{ "text": "豆腐", "reading": "とうふ" }, { "text": "を" }], "romaji": "toufu wo" },
-          { "text": "かってください", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってください" }], "romaji": "katte kudasai" }
+          { "text": "かってください", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってください" }], "romaji": "katte kudasai" },
+          { "text": "かってもいいですか", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってもいいですか" }], "romaji": "katte mo ii desu ka" },
+          { "text": "かってはいけません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってはいけません" }], "romaji": "katte wa ikemasen" }
         ],
         "correctOrder": [
           "とうふを",
@@ -2606,7 +2870,9 @@
         "promptThai": "พูดว่า: กรุณาไปร้านสะดวกซื้อ",
         "chunks": [
           { "text": "コンビニへ", "romaji": "konbini e" },
-          { "text": "いってください", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってください" }], "romaji": "itte kudasai" }
+          { "text": "いってください", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってください" }], "romaji": "itte kudasai" },
+          { "text": "いってもいいですか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってもいいですか" }], "romaji": "itte mo ii desu ka" },
+          { "text": "コンビニに", "romaji": "konbini ni" }
         ],
         "correctOrder": [
           "コンビニへ",
@@ -2621,7 +2887,9 @@
         "promptThai": "พูดว่า: กรุณารอที่ร้านกาแฟ",
         "chunks": [
           { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
-          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }], "romaji": "matte kudasai" }
+          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }], "romaji": "matte kudasai" },
+          { "text": "まってもいいですか", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってもいいですか" }], "romaji": "matte mo ii desu ka" },
+          { "text": "きっさてんに", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "に" }], "romaji": "kissaten ni" }
         ],
         "correctOrder": [
           "きっさてんで",
@@ -2636,7 +2904,9 @@
         "promptThai": "พูดว่า: กรุณาเรียนการเขียนพู่กัน",
         "chunks": [
           { "text": "しょどうを", "kanji": [{ "text": "書道", "reading": "しょどう" }, { "text": "を" }], "romaji": "shodou wo" },
-          { "text": "ならってください", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "ってください" }], "romaji": "naratte kudasai" }
+          { "text": "ならってください", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "ってください" }], "romaji": "naratte kudasai" },
+          { "text": "ならってもいいですか", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "ってもいいですか" }], "romaji": "naratte mo ii desu ka" },
+          { "text": "ならってはいけません", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "ってはいけません" }], "romaji": "naratte wa ikemasen" }
         ],
         "correctOrder": [
           "しょどうを",
@@ -2651,7 +2921,9 @@
         "promptThai": "พูดว่า: กรุณาช่วยฉัน",
         "chunks": [
           { "text": "わたしを", "romaji": "watashi wo" },
-          { "text": "てつだってください", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "ってください" }], "romaji": "tetsudatte kudasai" }
+          { "text": "てつだってください", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "ってください" }], "romaji": "tetsudatte kudasai" },
+          { "text": "てつだってもいいですか", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "ってもいいですか" }], "romaji": "tetsudatte mo ii desu ka" },
+          { "text": "てつだってはいけません", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "ってはいけません" }], "romaji": "tetsudatte wa ikemasen" }
         ],
         "correctOrder": [
           "わたしを",
@@ -2666,7 +2938,9 @@
         "promptThai": "พูดว่า: กรุณาสอนนักเรียน",
         "chunks": [
           { "text": "がくせいに", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "に" }], "romaji": "gakusei ni" },
-          { "text": "おしえてください", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えてください" }], "romaji": "oshiete kudasai" }
+          { "text": "おしえてください", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えてください" }], "romaji": "oshiete kudasai" },
+          { "text": "おしえてもいいですか", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えてもいいですか" }], "romaji": "oshiete mo ii desu ka" },
+          { "text": "がくせいを", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "を" }], "romaji": "gakusei wo" }
         ],
         "correctOrder": [
           "がくせいに",
@@ -2681,7 +2955,9 @@
         "promptThai": "พูดว่า: กรุณาขึ้นรถไฟชินคันเซ็น",
         "chunks": [
           { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
-          { "text": "のってください", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ってください" }], "romaji": "notte kudasai" }
+          { "text": "のってください", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ってください" }], "romaji": "notte kudasai" },
+          { "text": "のってもいいですか", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ってもいいですか" }], "romaji": "notte mo ii desu ka" },
+          { "text": "しんかんせんへ", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "へ" }], "romaji": "shinkansen e" }
         ],
         "correctOrder": [
           "しんかんせんに",
@@ -2696,7 +2972,9 @@
         "promptThai": "พูดว่า: กรุณาขับรถทุกวัน",
         "chunks": [
           { "text": "まいにち", "kanji": [{ "text": "毎日", "reading": "まいにち" }], "romaji": "mainichi" },
-          { "text": "うんてんしてください", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してください" }], "romaji": "unten shite kudasai" }
+          { "text": "うんてんしてください", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してください" }], "romaji": "unten shite kudasai" },
+          { "text": "うんてんしてもいいですか", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してもいいですか" }], "romaji": "unten shite mo ii desu ka" },
+          { "text": "うんてんしてはいけません", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してはいけません" }], "romaji": "unten shite wa ikemasen" }
         ],
         "correctOrder": [
           "まいにち",
@@ -2711,7 +2989,9 @@
         "promptThai": "พูดว่า: กรุณากินพาสต้า",
         "chunks": [
           { "text": "パスタを", "romaji": "pasuta wo" },
-          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" }
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" },
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
         ],
         "correctOrder": [
           "パスタを",
@@ -2770,7 +3050,9 @@
         "promptThai": "ถามขออนุญาตว่า: กินตรงนี้ได้ไหม",
         "chunks": [
           { "text": "ここで", "romaji": "koko de" },
-          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" }
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "ここに", "romaji": "koko ni" }
         ],
         "correctOrder": [
           "ここで",
@@ -2785,7 +3067,9 @@
         "promptThai": "ถามขออนุญาตว่า: ดื่มน้ำได้ไหม",
         "chunks": [
           { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
-          { "text": "のんでもいいですか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでもいいですか" }], "romaji": "nonde mo ii desu ka" }
+          { "text": "のんでもいいですか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでもいいですか" }], "romaji": "nonde mo ii desu ka" },
+          { "text": "のんでください", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでください" }], "romaji": "nonde kudasai" },
+          { "text": "のんではいけません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んではいけません" }], "romaji": "nonde wa ikemasen" }
         ],
         "correctOrder": [
           "みずを",
@@ -2801,7 +3085,9 @@
         "chunks": [
           { "text": "いま", "kanji": [{ "text": "今", "reading": "いま" }], "romaji": "ima" },
           { "text": "テレビを", "romaji": "terebi wo" },
-          { "text": "みてもいいですか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てもいいですか" }], "romaji": "mite mo ii desu ka" }
+          { "text": "みてもいいですか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てもいいですか" }], "romaji": "mite mo ii desu ka" },
+          { "text": "みてください", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てください" }], "romaji": "mite kudasai" },
+          { "text": "みてはいけません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てはいけません" }], "romaji": "mite wa ikemasen" }
         ],
         "correctOrder": [
           "いま",
@@ -2817,7 +3103,9 @@
         "promptThai": "ถามขออนุญาตว่า: เขียนจดหมายได้ไหม",
         "chunks": [
           { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
-          { "text": "かいてもいいですか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてもいいですか" }], "romaji": "kaite mo ii desu ka" }
+          { "text": "かいてもいいですか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてもいいですか" }], "romaji": "kaite mo ii desu ka" },
+          { "text": "かいてください", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてください" }], "romaji": "kaite kudasai" },
+          { "text": "かいてはいけません", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてはいけません" }], "romaji": "kaite wa ikemasen" }
         ],
         "correctOrder": [
           "てがみを",
@@ -2833,7 +3121,9 @@
         "chunks": [
           { "text": "ここで", "romaji": "koko de" },
           { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }], "romaji": "shashin wo" },
-          { "text": "とってもいいですか", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってもいいですか" }], "romaji": "totte mo ii desu ka" }
+          { "text": "とってもいいですか", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってもいいですか" }], "romaji": "totte mo ii desu ka" },
+          { "text": "とってください", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってください" }], "romaji": "totte kudasai" },
+          { "text": "ここに", "romaji": "koko ni" }
         ],
         "correctOrder": [
           "ここで",
@@ -2850,7 +3140,9 @@
         "chunks": [
           { "text": "としょかんで", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "で" }], "romaji": "toshokan de" },
           { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
-          { "text": "よんでもいいですか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでもいいですか" }], "romaji": "yonde mo ii desu ka" }
+          { "text": "よんでもいいですか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでもいいですか" }], "romaji": "yonde mo ii desu ka" },
+          { "text": "よんでください", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでください" }], "romaji": "yonde kudasai" },
+          { "text": "としょかんに", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "に" }], "romaji": "toshokan ni" }
         ],
         "correctOrder": [
           "としょかんで",
@@ -2867,7 +3159,9 @@
         "chunks": [
           { "text": "こうえんで", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "で" }], "romaji": "kouen de" },
           { "text": "スポーツを", "romaji": "supootsu wo" },
-          { "text": "してもいいですか", "romaji": "shite mo ii desu ka" }
+          { "text": "してもいいですか", "romaji": "shite mo ii desu ka" },
+          { "text": "してください", "romaji": "shite kudasai" },
+          { "text": "こうえんに", "kanji": [{ "text": "公園", "reading": "こうえん" }, { "text": "に" }], "romaji": "kouen ni" }
         ],
         "correctOrder": [
           "こうえんで",
@@ -2884,7 +3178,9 @@
         "chunks": [
           { "text": "いえで", "kanji": [{ "text": "家", "reading": "いえ" }, { "text": "で" }], "romaji": "ie de" },
           { "text": "ゲームを", "romaji": "geemu wo" },
-          { "text": "してもいいですか", "romaji": "shite mo ii desu ka" }
+          { "text": "してもいいですか", "romaji": "shite mo ii desu ka" },
+          { "text": "してください", "romaji": "shite kudasai" },
+          { "text": "いえに", "kanji": [{ "text": "家", "reading": "いえ" }, { "text": "に" }], "romaji": "ie ni" }
         ],
         "correctOrder": [
           "いえで",
@@ -2900,7 +3196,9 @@
         "promptThai": "ถามขออนุญาตว่า: ไปกับเพื่อนได้ไหม",
         "chunks": [
           { "text": "ともだちと", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "と" }], "romaji": "tomodachi to" },
-          { "text": "いってもいいですか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってもいいですか" }], "romaji": "itte mo ii desu ka" }
+          { "text": "いってもいいですか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってもいいですか" }], "romaji": "itte mo ii desu ka" },
+          { "text": "いってください", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってください" }], "romaji": "itte kudasai" },
+          { "text": "ともだちも", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "も" }], "romaji": "tomodachi mo" }
         ],
         "correctOrder": [
           "ともだちと",
@@ -2915,7 +3213,9 @@
         "promptThai": "ถามขออนุญาตว่า: ดื่มกาแฟด้วยได้ไหม (เช่นกัน)",
         "chunks": [
           { "text": "コーヒーも", "romaji": "koohii mo" },
-          { "text": "のんでもいいですか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでもいいですか" }], "romaji": "nonde mo ii desu ka" }
+          { "text": "のんでもいいですか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでもいいですか" }], "romaji": "nonde mo ii desu ka" },
+          { "text": "のんでください", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでください" }], "romaji": "nonde kudasai" },
+          { "text": "コーヒーと", "romaji": "koohii to" }
         ],
         "correctOrder": [
           "コーヒーも",
@@ -2930,7 +3230,9 @@
         "promptThai": "ถามขออนุญาตว่า: กินนัตโตะได้ไหม",
         "chunks": [
           { "text": "なっとうを", "romaji": "nattou wo" },
-          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" }
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
         ],
         "correctOrder": [
           "なっとうを",
@@ -2945,7 +3247,9 @@
         "promptThai": "ถามขออนุญาตว่า: ซื้อเต้าหู้ได้ไหม",
         "chunks": [
           { "text": "とうふを", "kanji": [{ "text": "豆腐", "reading": "とうふ" }, { "text": "を" }], "romaji": "toufu wo" },
-          { "text": "かってもいいですか", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってもいいですか" }], "romaji": "katte mo ii desu ka" }
+          { "text": "かってもいいですか", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってもいいですか" }], "romaji": "katte mo ii desu ka" },
+          { "text": "かってください", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってください" }], "romaji": "katte kudasai" },
+          { "text": "かってはいけません", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってはいけません" }], "romaji": "katte wa ikemasen" }
         ],
         "correctOrder": [
           "とうふを",
@@ -2960,7 +3264,9 @@
         "promptThai": "ถามขออนุญาตว่า: ไปร้านสะดวกซื้อได้ไหม",
         "chunks": [
           { "text": "コンビニへ", "romaji": "konbini e" },
-          { "text": "いってもいいですか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってもいいですか" }], "romaji": "itte mo ii desu ka" }
+          { "text": "いってもいいですか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってもいいですか" }], "romaji": "itte mo ii desu ka" },
+          { "text": "いってください", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってください" }], "romaji": "itte kudasai" },
+          { "text": "コンビニに", "romaji": "konbini ni" }
         ],
         "correctOrder": [
           "コンビニへ",
@@ -2975,7 +3281,9 @@
         "promptThai": "ถามขออนุญาตว่า: รอที่ร้านกาแฟได้ไหม",
         "chunks": [
           { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
-          { "text": "まってもいいですか", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってもいいですか" }], "romaji": "matte mo ii desu ka" }
+          { "text": "まってもいいですか", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってもいいですか" }], "romaji": "matte mo ii desu ka" },
+          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }], "romaji": "matte kudasai" },
+          { "text": "きっさてんに", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "に" }], "romaji": "kissaten ni" }
         ],
         "correctOrder": [
           "きっさてんで",
@@ -2990,7 +3298,9 @@
         "promptThai": "ถามขออนุญาตว่า: เรียนการเขียนพู่กันได้ไหม",
         "chunks": [
           { "text": "しょどうを", "kanji": [{ "text": "書道", "reading": "しょどう" }, { "text": "を" }], "romaji": "shodou wo" },
-          { "text": "ならってもいいですか", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "ってもいいですか" }], "romaji": "naratte mo ii desu ka" }
+          { "text": "ならってもいいですか", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "ってもいいですか" }], "romaji": "naratte mo ii desu ka" },
+          { "text": "ならってください", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "ってください" }], "romaji": "naratte kudasai" },
+          { "text": "ならってはいけません", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "ってはいけません" }], "romaji": "naratte wa ikemasen" }
         ],
         "correctOrder": [
           "しょどうを",
@@ -3005,7 +3315,9 @@
         "promptThai": "ถามขออนุญาตว่า: ช่วยคุณได้ไหม",
         "chunks": [
           { "text": "あなたを", "romaji": "anata wo" },
-          { "text": "てつだってもいいですか", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "ってもいいですか" }], "romaji": "tetsudatte mo ii desu ka" }
+          { "text": "てつだってもいいですか", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "ってもいいですか" }], "romaji": "tetsudatte mo ii desu ka" },
+          { "text": "てつだってください", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "ってください" }], "romaji": "tetsudatte kudasai" },
+          { "text": "てつだってはいけません", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "ってはいけません" }], "romaji": "tetsudatte wa ikemasen" }
         ],
         "correctOrder": [
           "あなたを",
@@ -3020,7 +3332,9 @@
         "promptThai": "ถามขออนุญาตว่า: สอนนักเรียนได้ไหม",
         "chunks": [
           { "text": "がくせいに", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "に" }], "romaji": "gakusei ni" },
-          { "text": "おしえてもいいですか", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えてもいいですか" }], "romaji": "oshiete mo ii desu ka" }
+          { "text": "おしえてもいいですか", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えてもいいですか" }], "romaji": "oshiete mo ii desu ka" },
+          { "text": "おしえてください", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えてください" }], "romaji": "oshiete kudasai" },
+          { "text": "がくせいを", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "を" }], "romaji": "gakusei wo" }
         ],
         "correctOrder": [
           "がくせいに",
@@ -3035,7 +3349,9 @@
         "promptThai": "ถามขออนุญาตว่า: ขึ้นรถไฟชินคันเซ็นได้ไหม",
         "chunks": [
           { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
-          { "text": "のってもいいですか", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ってもいいですか" }], "romaji": "notte mo ii desu ka" }
+          { "text": "のってもいいですか", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ってもいいですか" }], "romaji": "notte mo ii desu ka" },
+          { "text": "のってください", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ってください" }], "romaji": "notte kudasai" },
+          { "text": "しんかんせんへ", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "へ" }], "romaji": "shinkansen e" }
         ],
         "correctOrder": [
           "しんかんせんに",
@@ -3049,7 +3365,9 @@
         "id": "te-mo-ii-19",
         "promptThai": "ถามขออนุญาตว่า: ขับรถได้ไหม",
         "chunks": [
-          { "text": "うんてんしてもいいですか", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してもいいですか" }], "romaji": "unten shite mo ii desu ka" }
+          { "text": "うんてんしてもいいですか", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してもいいですか" }], "romaji": "unten shite mo ii desu ka" },
+          { "text": "うんてんしてください", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してください" }], "romaji": "unten shite kudasai" },
+          { "text": "うんてんしてはいけません", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してはいけません" }], "romaji": "unten shite wa ikemasen" }
         ],
         "correctOrder": [
           "うんてんしてもいいですか"
@@ -3063,7 +3381,9 @@
         "promptThai": "ถามขออนุญาตว่า: กินพาสต้าได้ไหม",
         "chunks": [
           { "text": "パスタを", "romaji": "pasuta wo" },
-          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" }
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
         ],
         "correctOrder": [
           "パスタを",
@@ -3122,7 +3442,9 @@
         "promptThai": "พูดว่า: ห้ามกินตรงนี้",
         "chunks": [
           { "text": "ここで", "romaji": "koko de" },
-          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "ここに", "romaji": "koko ni" }
         ],
         "correctOrder": [
           "ここで",
@@ -3138,7 +3460,9 @@
         "chunks": [
           { "text": "ここで", "romaji": "koko de" },
           { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
-          { "text": "のんではいけません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んではいけません" }], "romaji": "nonde wa ikemasen" }
+          { "text": "のんではいけません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んではいけません" }], "romaji": "nonde wa ikemasen" },
+          { "text": "のんでください", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでください" }], "romaji": "nonde kudasai" },
+          { "text": "ここに", "romaji": "koko ni" }
         ],
         "correctOrder": [
           "ここで",
@@ -3155,7 +3479,9 @@
         "chunks": [
           { "text": "いま", "kanji": [{ "text": "今", "reading": "いま" }], "romaji": "ima" },
           { "text": "テレビを", "romaji": "terebi wo" },
-          { "text": "みてはいけません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てはいけません" }], "romaji": "mite wa ikemasen" }
+          { "text": "みてはいけません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てはいけません" }], "romaji": "mite wa ikemasen" },
+          { "text": "みてください", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てください" }], "romaji": "mite kudasai" },
+          { "text": "みてもいいですか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てもいいですか" }], "romaji": "mite mo ii desu ka" }
         ],
         "correctOrder": [
           "いま",
@@ -3172,7 +3498,9 @@
         "chunks": [
           { "text": "ここで", "romaji": "koko de" },
           { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }], "romaji": "shashin wo" },
-          { "text": "とってはいけません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってはいけません" }], "romaji": "totte wa ikemasen" }
+          { "text": "とってはいけません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってはいけません" }], "romaji": "totte wa ikemasen" },
+          { "text": "とってください", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってください" }], "romaji": "totte kudasai" },
+          { "text": "ここに", "romaji": "koko ni" }
         ],
         "correctOrder": [
           "ここで",
@@ -3189,7 +3517,9 @@
         "chunks": [
           { "text": "がっこうで", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "で" }], "romaji": "gakkou de" },
           { "text": "ゲームを", "romaji": "geemu wo" },
-          { "text": "してはいけません", "romaji": "shite wa ikemasen" }
+          { "text": "してはいけません", "romaji": "shite wa ikemasen" },
+          { "text": "してください", "romaji": "shite kudasai" },
+          { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }], "romaji": "gakkou ni" }
         ],
         "correctOrder": [
           "がっこうで",
@@ -3205,7 +3535,9 @@
         "promptThai": "พูดว่า: ห้ามพูดคุยที่ห้องสมุด",
         "chunks": [
           { "text": "としょかんで", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "で" }], "romaji": "toshokan de" },
-          { "text": "はなしてはいけません", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "してはいけません" }], "romaji": "hanashite wa ikemasen" }
+          { "text": "はなしてはいけません", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "してはいけません" }], "romaji": "hanashite wa ikemasen" },
+          { "text": "はなしてください", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "してください" }], "romaji": "hanashite kudasai" },
+          { "text": "としょかんに", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "に" }], "romaji": "toshokan ni" }
         ],
         "correctOrder": [
           "としょかんで",
@@ -3221,7 +3553,9 @@
         "chunks": [
           { "text": "びょういんで", "kanji": [{ "text": "病院", "reading": "びょういん" }, { "text": "で" }], "romaji": "byouin de" },
           { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }], "romaji": "shashin wo" },
-          { "text": "とってはいけません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってはいけません" }], "romaji": "totte wa ikemasen" }
+          { "text": "とってはいけません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってはいけません" }], "romaji": "totte wa ikemasen" },
+          { "text": "とってください", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってください" }], "romaji": "totte kudasai" },
+          { "text": "びょういんに", "kanji": [{ "text": "病院", "reading": "びょういん" }, { "text": "に" }], "romaji": "byouin ni" }
         ],
         "correctOrder": [
           "びょういんで",
@@ -3237,7 +3571,9 @@
         "promptThai": "พูดว่า: ห้ามกินที่ศาลเจ้า",
         "chunks": [
           { "text": "じんじゃで", "kanji": [{ "text": "神社", "reading": "じんじゃ" }, { "text": "で" }], "romaji": "jinja de" },
-          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "じんじゃに", "kanji": [{ "text": "神社", "reading": "じんじゃ" }, { "text": "に" }], "romaji": "jinja ni" }
         ],
         "correctOrder": [
           "じんじゃで",
@@ -3252,7 +3588,9 @@
         "promptThai": "พูดว่า: ห้ามไปห้องสมุด",
         "chunks": [
           { "text": "としょかんに", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "に" }], "romaji": "toshokan ni" },
-          { "text": "いってはいけません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってはいけません" }], "romaji": "itte wa ikemasen" }
+          { "text": "いってはいけません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってはいけません" }], "romaji": "itte wa ikemasen" },
+          { "text": "いってください", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってください" }], "romaji": "itte kudasai" },
+          { "text": "としょかんへ", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "へ" }], "romaji": "toshokan e" }
         ],
         "correctOrder": [
           "としょかんに",
@@ -3268,7 +3606,9 @@
         "chunks": [
           { "text": "ともだちの", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "の" }], "romaji": "tomodachi no" },
           { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
-          { "text": "とってはいけません", "kanji": [{ "text": "取", "reading": "と" }, { "text": "ってはいけません" }], "romaji": "totte wa ikemasen" }
+          { "text": "とってはいけません", "kanji": [{ "text": "取", "reading": "と" }, { "text": "ってはいけません" }], "romaji": "totte wa ikemasen" },
+          { "text": "とってください", "kanji": [{ "text": "取", "reading": "と" }, { "text": "ってください" }], "romaji": "totte kudasai" },
+          { "text": "ともだちは", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "は" }], "romaji": "tomodachi wa" }
         ],
         "correctOrder": [
           "ともだちの",
@@ -3285,7 +3625,9 @@
         "chunks": [
           { "text": "としょかんで", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "で" }], "romaji": "toshokan de" },
           { "text": "なっとうを", "romaji": "nattou wo" },
-          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "としょかんに", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "に" }], "romaji": "toshokan ni" }
         ],
         "correctOrder": [
           "としょかんで",
@@ -3302,7 +3644,9 @@
         "chunks": [
           { "text": "こうこうで", "kanji": [{ "text": "高校", "reading": "こうこう" }, { "text": "で" }], "romaji": "koukou de" },
           { "text": "ゲームを", "romaji": "geemu wo" },
-          { "text": "してはいけません", "romaji": "shite wa ikemasen" }
+          { "text": "してはいけません", "romaji": "shite wa ikemasen" },
+          { "text": "してください", "romaji": "shite kudasai" },
+          { "text": "こうこうに", "kanji": [{ "text": "高校", "reading": "こうこう" }, { "text": "に" }], "romaji": "koukou ni" }
         ],
         "correctOrder": [
           "こうこうで",
@@ -3318,7 +3662,9 @@
         "promptThai": "พูดว่า: ห้ามวิ่งที่ร้านทำผม",
         "chunks": [
           { "text": "びよういんで", "kanji": [{ "text": "美容院", "reading": "びよういん" }, { "text": "で" }], "romaji": "biyouin de" },
-          { "text": "はしってはいけません", "kanji": [{ "text": "走", "reading": "はし" }, { "text": "ってはいけません" }], "romaji": "hashitte wa ikemasen" }
+          { "text": "はしってはいけません", "kanji": [{ "text": "走", "reading": "はし" }, { "text": "ってはいけません" }], "romaji": "hashitte wa ikemasen" },
+          { "text": "はしってください", "kanji": [{ "text": "走", "reading": "はし" }, { "text": "ってください" }], "romaji": "hashitte kudasai" },
+          { "text": "びよういんに", "kanji": [{ "text": "美容院", "reading": "びよういん" }, { "text": "に" }], "romaji": "biyouin ni" }
         ],
         "correctOrder": [
           "びよういんで",
@@ -3333,7 +3679,9 @@
         "promptThai": "พูดว่า: ห้ามเล่นที่ที่จอดรถ",
         "chunks": [
           { "text": "ちゅうしゃじょうで", "kanji": [{ "text": "駐車場", "reading": "ちゅうしゃじょう" }, { "text": "で" }], "romaji": "chuushajou de" },
-          { "text": "あそんではいけません", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "んではいけません" }], "romaji": "asonde wa ikemasen" }
+          { "text": "あそんではいけません", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "んではいけません" }], "romaji": "asonde wa ikemasen" },
+          { "text": "あそんでください", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "んでください" }], "romaji": "asonde kudasai" },
+          { "text": "ちゅうしゃじょうに", "kanji": [{ "text": "駐車場", "reading": "ちゅうしゃじょう" }, { "text": "に" }], "romaji": "chuushajou ni" }
         ],
         "correctOrder": [
           "ちゅうしゃじょうで",
@@ -3348,7 +3696,9 @@
         "promptThai": "พูดว่า: ห้ามรอที่ทางแยก",
         "chunks": [
           { "text": "こうさてんで", "kanji": [{ "text": "交差点", "reading": "こうさてん" }, { "text": "で" }], "romaji": "kousaten de" },
-          { "text": "まってはいけません", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってはいけません" }], "romaji": "matte wa ikemasen" }
+          { "text": "まってはいけません", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってはいけません" }], "romaji": "matte wa ikemasen" },
+          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }], "romaji": "matte kudasai" },
+          { "text": "こうさてんに", "kanji": [{ "text": "交差点", "reading": "こうさてん" }, { "text": "に" }], "romaji": "kousaten ni" }
         ],
         "correctOrder": [
           "こうさてんで",
@@ -3363,7 +3713,9 @@
         "promptThai": "พูดว่า: ห้ามนอนที่ร้านกาแฟ",
         "chunks": [
           { "text": "きっさてんで", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "で" }], "romaji": "kissaten de" },
-          { "text": "ねてはいけません", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "てはいけません" }], "romaji": "nete wa ikemasen" }
+          { "text": "ねてはいけません", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "てはいけません" }], "romaji": "nete wa ikemasen" },
+          { "text": "ねてください", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "てください" }], "romaji": "nete kudasai" },
+          { "text": "きっさてんに", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "に" }], "romaji": "kissaten ni" }
         ],
         "correctOrder": [
           "きっさてんで",
@@ -3379,7 +3731,9 @@
         "chunks": [
           { "text": "やっきょくで", "kanji": [{ "text": "薬局", "reading": "やっきょく" }, { "text": "で" }], "romaji": "yakkyoku de" },
           { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }], "romaji": "shashin wo" },
-          { "text": "とってはいけません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってはいけません" }], "romaji": "totte wa ikemasen" }
+          { "text": "とってはいけません", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってはいけません" }], "romaji": "totte wa ikemasen" },
+          { "text": "とってください", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ってください" }], "romaji": "totte kudasai" },
+          { "text": "やっきょくに", "kanji": [{ "text": "薬局", "reading": "やっきょく" }, { "text": "に" }], "romaji": "yakkyoku ni" }
         ],
         "correctOrder": [
           "やっきょくで",
@@ -3395,7 +3749,9 @@
         "promptThai": "พูดว่า: ห้ามเล่นที่โรงงาน",
         "chunks": [
           { "text": "こうじょうで", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "で" }], "romaji": "koujou de" },
-          { "text": "あそんではいけません", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "んではいけません" }], "romaji": "asonde wa ikemasen" }
+          { "text": "あそんではいけません", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "んではいけません" }], "romaji": "asonde wa ikemasen" },
+          { "text": "あそんでください", "kanji": [{ "text": "遊", "reading": "あそ" }, { "text": "んでください" }], "romaji": "asonde kudasai" },
+          { "text": "こうじょうに", "kanji": [{ "text": "工場", "reading": "こうじょう" }, { "text": "に" }], "romaji": "koujou ni" }
         ],
         "correctOrder": [
           "こうじょうで",
@@ -3410,7 +3766,9 @@
         "promptThai": "พูดว่า: ห้ามขับรถที่โรงเรียน",
         "chunks": [
           { "text": "がっこうで", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "で" }], "romaji": "gakkou de" },
-          { "text": "うんてんしてはいけません", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してはいけません" }], "romaji": "unten shite wa ikemasen" }
+          { "text": "うんてんしてはいけません", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してはいけません" }], "romaji": "unten shite wa ikemasen" },
+          { "text": "うんてんしてください", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "してください" }], "romaji": "unten shite kudasai" },
+          { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }], "romaji": "gakkou ni" }
         ],
         "correctOrder": [
           "がっこうで",
@@ -3425,7 +3783,9 @@
         "promptThai": "พูดว่า: ห้ามกินบนโซฟา",
         "chunks": [
           { "text": "ソファーで", "romaji": "sofaa de" },
-          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" }
+          { "text": "たべてはいけません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてはいけません" }], "romaji": "tabete wa ikemasen" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "ソファーに", "romaji": "sofaa ni" }
         ],
         "correctOrder": [
           "ソファーで",
@@ -3485,7 +3845,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "ごはんが", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "が" }], "romaji": "gohan ga" },
-          { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }], "romaji": "tabetai desu" }
+          { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }], "romaji": "tabetai desu" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3502,7 +3864,9 @@
         "chunks": [
           { "text": "あした", "kanji": [{ "text": "明日", "reading": "あした" }], "romaji": "ashita" },
           { "text": "えいがが", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "が" }], "romaji": "eiga ga" },
-          { "text": "みたいです", "kanji": [{ "text": "見", "reading": "み" }, { "text": "たいです" }], "romaji": "mitai desu" }
+          { "text": "みたいです", "kanji": [{ "text": "見", "reading": "み" }, { "text": "たいです" }], "romaji": "mitai desu" },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" }
         ],
         "correctOrder": [
           "あした",
@@ -3518,7 +3882,9 @@
         "promptThai": "พูดว่า: อยากไปโรงเรียน",
         "chunks": [
           { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
-          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }], "romaji": "ikitai desu" }
+          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }], "romaji": "ikitai desu" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }], "romaji": "gakkou ni" }
         ],
         "correctOrder": [
           "がっこうへ",
@@ -3533,7 +3899,9 @@
         "promptThai": "พูดว่า: อยากอ่านหนังสือ",
         "chunks": [
           { "text": "ほんが", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "が" }], "romaji": "hon ga" },
-          { "text": "よみたいです", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みたいです" }], "romaji": "yomitai desu" }
+          { "text": "よみたいです", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みたいです" }], "romaji": "yomitai desu" },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" }
         ],
         "correctOrder": [
           "ほんが",
@@ -3549,7 +3917,9 @@
         "chunks": [
           { "text": "やさいが", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "が" }], "romaji": "yasai ga" },
           { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }], "romaji": "tabetai desu" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "やさいを", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "を" }], "romaji": "yasai wo" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3566,7 +3936,9 @@
         "chunks": [
           { "text": "くうこうへ", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "へ" }], "romaji": "kuukou e" },
           { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }], "romaji": "ikitai desu" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "くうこうに", "kanji": [{ "text": "空港", "reading": "くうこう" }, { "text": "に" }], "romaji": "kuukou ni" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3583,7 +3955,9 @@
         "chunks": [
           { "text": "スポーツが", "romaji": "supootsu ga" },
           { "text": "したいです", "romaji": "shitai desu" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "スポーツを", "romaji": "supootsu wo" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3600,7 +3974,9 @@
         "chunks": [
           { "text": "しゃしんが", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "が" }], "romaji": "shashin ga" },
           { "text": "とりたいです", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "りたいです" }], "romaji": "toritai desu" },
-          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" }
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "とります", "kanji": [{ "text": "撮", "reading": "と" }, { "text": "ります" }], "romaji": "torimasu" },
+          { "text": "しゃしんを", "kanji": [{ "text": "写真", "reading": "しゃしん" }, { "text": "を" }], "romaji": "shashin wo" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3616,7 +3992,9 @@
         "promptThai": "พูดว่า: ฉันอยากไปโรงเรียน",
         "chunks": [
           { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }], "romaji": "gakkou ni" },
-          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }], "romaji": "ikitai desu" }
+          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }], "romaji": "ikitai desu" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" }
         ],
         "correctOrder": [
           "がっこうに",
@@ -3631,7 +4009,9 @@
         "promptThai": "พูดว่า: ฉันอยากไปกับเพื่อน",
         "chunks": [
           { "text": "ともだちと", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "と" }], "romaji": "tomodachi to" },
-          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }], "romaji": "ikitai desu" }
+          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }], "romaji": "ikitai desu" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "ともだちも", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "も" }], "romaji": "tomodachi mo" }
         ],
         "correctOrder": [
           "ともだちと",
@@ -3647,7 +4027,9 @@
         "chunks": [
           { "text": "くじから", "kanji": [{ "text": "九", "reading": "く" }, { "text": "時", "reading": "じ" }, { "text": "から" }], "romaji": "kuji kara" },
           { "text": "ごじまで", "kanji": [{ "text": "五", "reading": "ご" }, { "text": "時", "reading": "じ" }, { "text": "まで" }], "romaji": "goji made" },
-          { "text": "はたらきたいです", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きたいです" }], "romaji": "hatarakitai desu" }
+          { "text": "はたらきたいです", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きたいです" }], "romaji": "hatarakitai desu" },
+          { "text": "はたらきます", "kanji": [{ "text": "働", "reading": "はたら" }, { "text": "きます" }], "romaji": "hatarakimasu" },
+          { "text": "くじまで", "kanji": [{ "text": "九", "reading": "く" }, { "text": "時", "reading": "じ" }, { "text": "まで" }], "romaji": "kuji made" }
         ],
         "correctOrder": [
           "くじから",
@@ -3664,7 +4046,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "なっとうが", "romaji": "nattou ga" },
-          { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }], "romaji": "tabetai desu" }
+          { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }], "romaji": "tabetai desu" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "なっとうを", "romaji": "nattou wo" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3681,7 +4065,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "やきとりが", "kanji": [{ "text": "焼", "reading": "や" }, { "text": "き" }, { "text": "鳥", "reading": "とり" }, { "text": "が" }], "romaji": "yakitori ga" },
-          { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }], "romaji": "tabetai desu" }
+          { "text": "たべたいです", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたいです" }], "romaji": "tabetai desu" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "やきとりを", "kanji": [{ "text": "焼", "reading": "や" }, { "text": "き" }, { "text": "鳥", "reading": "とり" }, { "text": "を" }], "romaji": "yakitori wo" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3698,7 +4084,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "きっさてんへ", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "へ" }], "romaji": "kissaten e" },
-          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }], "romaji": "ikitai desu" }
+          { "text": "いきたいです", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きたいです" }], "romaji": "ikitai desu" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "きっさてんに", "kanji": [{ "text": "喫茶店", "reading": "きっさてん" }, { "text": "に" }], "romaji": "kissaten ni" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3715,7 +4103,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "しんかんせんに", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "に" }], "romaji": "shinkansen ni" },
-          { "text": "のりたいです", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りたいです" }], "romaji": "noritai desu" }
+          { "text": "のりたいです", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "りたいです" }], "romaji": "noritai desu" },
+          { "text": "のります", "kanji": [{ "text": "乗", "reading": "の" }, { "text": "ります" }], "romaji": "norimasu" },
+          { "text": "しんかんせんへ", "kanji": [{ "text": "新幹線", "reading": "しんかんせん" }, { "text": "へ" }], "romaji": "shinkansen e" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3732,7 +4122,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "アルバイトが", "romaji": "arubaito ga" },
-          { "text": "したいです", "romaji": "shitai desu" }
+          { "text": "したいです", "romaji": "shitai desu" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "アルバイトを", "romaji": "arubaito wo" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3749,7 +4141,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "しょどうが", "kanji": [{ "text": "書道", "reading": "しょどう" }, { "text": "が" }], "romaji": "shodou ga" },
-          { "text": "ならいたいです", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "いたいです" }], "romaji": "naraitai desu" }
+          { "text": "ならいたいです", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "いたいです" }], "romaji": "naraitai desu" },
+          { "text": "ならいます", "kanji": [{ "text": "習", "reading": "なら" }, { "text": "います" }], "romaji": "naraimasu" },
+          { "text": "しょどうを", "kanji": [{ "text": "書道", "reading": "しょどう" }, { "text": "を" }], "romaji": "shodou wo" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3766,7 +4160,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "がくせいに", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "に" }], "romaji": "gakusei ni" },
-          { "text": "おしえたいです", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えたいです" }], "romaji": "oshietai desu" }
+          { "text": "おしえたいです", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えたいです" }], "romaji": "oshietai desu" },
+          { "text": "おしえます", "kanji": [{ "text": "教", "reading": "おし" }, { "text": "えます" }], "romaji": "oshiemasu" },
+          { "text": "がくせいを", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "を" }], "romaji": "gakusei wo" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3783,7 +4179,9 @@
         "chunks": [
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "ははが", "kanji": [{ "text": "母", "reading": "はは" }, { "text": "が" }], "romaji": "haha ga" },
-          { "text": "てつだいたいです", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いたいです" }], "romaji": "tetsudaitai desu" }
+          { "text": "てつだいたいです", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "いたいです" }], "romaji": "tetsudaitai desu" },
+          { "text": "てつだいます", "kanji": [{ "text": "手伝", "reading": "てつだ" }, { "text": "います" }], "romaji": "tetsudaimasu" },
+          { "text": "ははを", "kanji": [{ "text": "母", "reading": "はは" }, { "text": "を" }], "romaji": "haha wo" }
         ],
         "correctOrder": [
           "わたしは",
@@ -3801,7 +4199,9 @@
           { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
           { "text": "まいにち", "kanji": [{ "text": "毎日", "reading": "まいにち" }], "romaji": "mainichi" },
           { "text": "うんてんが", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "が" }], "romaji": "unten ga" },
-          { "text": "したいです", "romaji": "shitai desu" }
+          { "text": "したいです", "romaji": "shitai desu" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "うんてんを", "kanji": [{ "text": "運転", "reading": "うんてん" }, { "text": "を" }], "romaji": "unten wo" }
         ],
         "correctOrder": [
           "わたしは",
