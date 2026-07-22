@@ -105,6 +105,7 @@ function QuizView({ selection, onBack }) {
   const isCorrect = question && selectedId === question.answer.id;
   const answered = selectedId !== null;
   const finished = review.finished;
+  const showCountdown = timerOn && timeLeftMs !== null;
 
   // Auto-reveal the Japanese reading on a correct answer, as if the Romaji
   // toggle/reveal button were switched on (kana mode only).
@@ -139,7 +140,6 @@ function QuizView({ selection, onBack }) {
   const countdownDelayTimeoutRef = useRef(null);
   const countdownIntervalRef = useRef(null);
   const countdownDeadlineRef = useRef(null);
-  const autoAdvanceTimeoutRef = useRef(null);
   const onTimeoutRef = useRef(() => {});
 
   const clearCountdown = () => {
@@ -184,10 +184,6 @@ function QuizView({ selection, onBack }) {
     if (answeredRef.current) return;
     setSelectedId(TIMEOUT_SENTINEL);
     playIncorrect();
-    clearTimeout(autoAdvanceTimeoutRef.current);
-    autoAdvanceTimeoutRef.current = setTimeout(() => {
-      review.submit(false);
-    }, 500);
   };
 
   // Always points at the latest handleTimeout, since the ticking interval (once started) keeps
@@ -207,7 +203,6 @@ function QuizView({ selection, onBack }) {
   useEffect(
     () => () => {
       clearCountdown();
-      clearTimeout(autoAdvanceTimeoutRef.current);
       clearTimeout(speakTimeoutRef.current);
     },
     []
@@ -300,18 +295,6 @@ function QuizView({ selection, onBack }) {
             {isKana ? "ฟังเสียงแล้วเลือกตัวอักษรที่ตรงกัน" : "ฟังเสียงแล้วเลือกคำแปลที่ตรงกัน"}
           </p>
 
-          {timerOn && timeLeftMs !== null && (
-            <div className="countdown-wrap" aria-live="polite">
-              <div className="countdown-bar-track">
-                <div
-                  className="countdown-bar-fill"
-                  style={{ width: `${Math.max(0, Math.min(100, (timeLeftMs / (timerDuration * 1000)) * 100))}%` }}
-                />
-              </div>
-              <span className="countdown-seconds">{Math.ceil(timeLeftMs / 1000)}</span>
-            </div>
-          )}
-
           <div className="quiz-options">
             {question.options.map((opt) => {
               let cls = "quiz-option";
@@ -330,6 +313,18 @@ function QuizView({ selection, onBack }) {
                 </button>
               );
             })}
+          </div>
+
+          <div className={`countdown-wrap${showCountdown ? "" : " countdown-hidden"}`} aria-live="polite">
+            <div className="countdown-bar-track">
+              <div
+                className="countdown-bar-fill"
+                style={{
+                  width: `${showCountdown ? Math.max(0, Math.min(100, (timeLeftMs / (timerDuration * 1000)) * 100)) : 100}%`,
+                }}
+              />
+            </div>
+            <span className="countdown-seconds">{showCountdown ? Math.ceil(timeLeftMs / 1000) : ""}</span>
           </div>
 
           {answered && (
