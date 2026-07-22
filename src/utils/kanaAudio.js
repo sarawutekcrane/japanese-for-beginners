@@ -12,8 +12,8 @@ export function kanaAudioFile({ id, romaji }) {
   return romaji.toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
-/** Plays a kana character's pre-generated MP3; calls onFallback if it can't. */
-export function playKanaAudio(script, entry, { onFallback, rate = 1 } = {}) {
+/** Plays a kana character's pre-generated MP3; calls onFallback if it can't, onEnd when playback actually finishes. */
+export function playKanaAudio(script, entry, { onFallback, onEnd, rate = 1 } = {}) {
   const file = kanaAudioFile(entry);
   const src = `${import.meta.env.BASE_URL}audio/${script}/${file}.mp3`;
   const audio = new Audio(src);
@@ -25,5 +25,6 @@ export function playKanaAudio(script, entry, { onFallback, rate = 1 } = {}) {
     onFallback?.();
   };
   audio.addEventListener("error", fallback);
+  audio.addEventListener("ended", () => onEnd?.());
   audio.play().catch(fallback);
 }

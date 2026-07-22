@@ -588,6 +588,38 @@ button {
   text-align: center;
 }
 
+.countdown-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.countdown-bar-track {
+  flex: 1;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--cream-deep);
+  border: 2px solid var(--pink);
+  overflow: hidden;
+}
+
+.countdown-bar-fill {
+  height: 100%;
+  background: var(--error-deep);
+  border-radius: 999px;
+  transition: width 0.1s linear;
+}
+
+.countdown-seconds {
+  font-weight: 700;
+  color: var(--error-deep);
+  font-family: var(--font-en);
+  min-width: 22px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
 .quiz-options {
   width: 100%;
   display: grid;

@@ -40,8 +40,11 @@ export function useSpeak() {
   }, [supported]);
 
   const speak = useCallback(
-    (text, { rate = speechRate } = {}) => {
-      if (!supported || !text) return;
+    (text, { rate = speechRate, onEnd } = {}) => {
+      if (!supported || !text) {
+        onEnd?.();
+        return;
+      }
       window.speechSynthesis.cancel();
       const utter = new SpeechSynthesisUtterance(text);
       utter.lang = "ja-JP";
@@ -49,8 +52,14 @@ export function useSpeak() {
       const voice = pickJapaneseVoice();
       if (voice) utter.voice = voice;
       utter.onstart = () => setSpeaking(true);
-      utter.onend = () => setSpeaking(false);
-      utter.onerror = () => setSpeaking(false);
+      utter.onend = () => {
+        setSpeaking(false);
+        onEnd?.();
+      };
+      utter.onerror = () => {
+        setSpeaking(false);
+        onEnd?.();
+      };
       window.speechSynthesis.speak(utter);
     },
     [supported, speechRate]
