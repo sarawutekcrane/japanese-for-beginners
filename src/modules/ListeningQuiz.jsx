@@ -359,7 +359,7 @@ function QuizView({ selection, onBack }) {
             <div className="countdown-bar-track">
               <div
                 className={`countdown-bar-fill${instantBarUpdate ? " countdown-bar-fill-instant" : ""}`}
-                style={{ width: `${countdownPercent}%` }}
+                style={{ transform: `scaleX(${countdownPercent / 100})` }}
               />
             </div>
             <span className="countdown-seconds">{countdownSecondsText}</span>
