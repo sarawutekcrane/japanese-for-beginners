@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useImperativeHandle, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Toggle from "../components/Toggle";
 import JapaneseText from "../components/JapaneseText";
 import { PracticeProgress, PracticeResults } from "../components/PracticeSessionUI";
@@ -73,7 +73,12 @@ function buildVocabQuestion(pool, answer) {
 const TIMER_DURATION_DEFAULT = 3;
 const TIMER_DURATION_MIN = 1;
 const TIMER_DURATION_MAX = 10;
-const COUNTDOWN_TICK_MS = 100;
+// 1 tick/second (not 100ms): ported from the sister English app, confirmed stutter-free on real
+// mobile hardware there. The bar's smoothness no longer depends on JS-driven tick frequency at
+// all — see CountdownBar below — so there's nothing to gain from ticking faster than this, and
+// the previous 100ms interval was 10x more JS work (setState + re-render) than necessary every
+// second, on top of whatever render scope it touched.
+const COUNTDOWN_TICK_MS = 1000;
 const COUNTDOWN_REVEAL_DELAY_MS = 100;
 const TIMEOUT_SENTINEL = "__timeout__";
 // Fraction of the total duration remaining at which the bar moves to each stage — scales with
@@ -83,96 +88,70 @@ const COUNTDOWN_WARNING_RATIO = 0.5;
 const COUNTDOWN_CRITICAL_RATIO = 0.15;
 
 /**
- * Owns the countdown's own ticking state in an isolated subtree so the 100ms tick's setState only
- * re-renders this small bar/number, not the whole question card (options, audio button, feedback,
- * etc.) — that broader re-render, not the width-vs-transform choice, turned out to be the real
- * source of the remaining mobile jank: 10 re-renders/sec of the entire QuizView tree is much
- * heavier than 10 re-renders/sec of just this tiny component. QuizView drives it imperatively
- * (start/freeze/reset) via this ref instead of holding timeLeftMs itself.
+ * Long countdown bar. Ported from the sister English app's CountdownBar, which is confirmed
+ * stutter-free on real mobile hardware after its own investigation — the previous session's
+ * render-scope isolation (a separate ref-driven component owning its own setInterval) was a real
+ * improvement but insufficient on its own; the actual fix is this component's animation strategy.
+ *
+ * The fill's transform is set imperatively on a ref, and — critically — the effect that sets it
+ * depends on [active, answered, durationMs], NOT on the ticking timeLeftMs value. That means the
+ * transform is written exactly once per phase (countdown starts / learner answers or times out /
+ * countdown resets for a new question), never once per tick. When it starts, ONE continuous CSS
+ * transition spanning the entire duration is kicked off (`transform ${duration}s linear`) that
+ * drains the bar smoothly start-to-finish in the browser's own compositor, needing zero further JS
+ * involvement — the once-per-second setState in QuizView only ever touches the plain integer
+ * text and the (rare, threshold-crossing-only) color-stage class, not this transform. Freezing
+ * (early answer or timeout) captures how far the animation has *actually* visually progressed from
+ * elapsed wall-clock time since it started, then snaps instantly (no transform transition, only
+ * `background-color` is ever CSS-transitioned) to that exact point, so it can never appear to jump.
+ *
+ * transform-origin is pinned to the left edge so scaling shrinks the same direction the earlier
+ * width-based version did: anchored on the left, receding from the right as time runs out.
  */
-const CountdownBar = forwardRef(function CountdownBar({ durationSec, onTimeout }, ref) {
-  const [timeLeftMs, setTimeLeftMs] = useState(null);
-  const [instantUpdate, setInstantUpdate] = useState(true);
-  const deadlineRef = useRef(null);
-  const intervalRef = useRef(null);
-  const revealTimeoutRef = useRef(null);
-  const onTimeoutRef = useRef(onTimeout);
-
-  useEffect(() => {
-    onTimeoutRef.current = onTimeout;
-  });
-
-  const stopTimers = () => {
-    clearInterval(intervalRef.current);
-    intervalRef.current = null;
-    clearTimeout(revealTimeoutRef.current);
-    revealTimeoutRef.current = null;
-    deadlineRef.current = null;
-  };
-
-  useEffect(() => stopTimers, []);
-
-  useImperativeHandle(
-    ref,
-    () => ({
-      start() {
-        const durationMs = durationSec * 1000;
-        deadlineRef.current = Date.now() + durationMs;
-        setTimeLeftMs(durationMs);
-        intervalRef.current = setInterval(() => {
-          const remaining = deadlineRef.current - Date.now();
-          if (remaining <= 0) {
-            clearInterval(intervalRef.current);
-            intervalRef.current = null;
-            setTimeLeftMs(0);
-            revealTimeoutRef.current = setTimeout(() => {
-              revealTimeoutRef.current = null;
-              onTimeoutRef.current?.();
-            }, COUNTDOWN_REVEAL_DELAY_MS);
-          } else {
-            setTimeLeftMs(remaining);
-          }
-        }, COUNTDOWN_TICK_MS);
-      },
-      freeze() {
-        stopTimers();
-      },
-      reset() {
-        stopTimers();
-        setTimeLeftMs(null);
-        setInstantUpdate(true);
-      },
-    }),
-    [durationSec]
-  );
-
-  // Re-enables the transition one frame after a reset snaps the bar back to full, so that specific
-  // reset never visibly animates, while normal tick-by-tick draining still does.
-  useEffect(() => {
-    if (!instantUpdate) return;
-    const id = requestAnimationFrame(() => setInstantUpdate(false));
-    return () => cancelAnimationFrame(id);
-  }, [instantUpdate]);
-
+function CountdownBar({ timeLeft, durationSec, active, answered }) {
+  const fillRef = useRef(null);
+  const startTimeRef = useRef(null);
   const durationMs = durationSec * 1000;
-  const displayMs = timeLeftMs !== null ? timeLeftMs : durationMs;
-  const percent = Math.max(0, Math.min(100, (displayMs / durationMs) * 100));
-  const secondsText = Math.ceil(displayMs / 1000);
-  const remainingRatio = percent / 100;
+
+  useEffect(() => {
+    const el = fillRef.current;
+    if (!el) return;
+
+    if (!active) {
+      // Waiting for "hear example", timer toggle off, or freshly reset for a new question: full
+      // bar, no transform transition, so a reset never visibly "fills back up" — it's just
+      // already full.
+      startTimeRef.current = null;
+      el.style.transition = "background-color 0.2s ease";
+      el.style.transform = "scaleX(1)";
+      return;
+    }
+
+    if (answered) {
+      const elapsedMs = startTimeRef.current === null ? durationMs : Date.now() - startTimeRef.current;
+      const remainingFraction = Math.max(0, Math.min(1, 1 - elapsedMs / durationMs));
+      el.style.transition = "background-color 0.2s ease";
+      el.style.transform = `scaleX(${remainingFraction})`;
+      return;
+    }
+
+    startTimeRef.current = Date.now();
+    el.style.transition = `transform ${durationMs / 1000}s linear, background-color 0.2s ease`;
+    el.style.transform = "scaleX(0)";
+  }, [active, answered, durationMs]);
+
+  const remainingRatio = durationSec > 0 ? Math.max(0, Math.min(1, timeLeft / durationSec)) : 0;
   const stage = remainingRatio <= COUNTDOWN_CRITICAL_RATIO ? "critical" : remainingRatio <= COUNTDOWN_WARNING_RATIO ? "warning" : "normal";
 
   return (
     <div className={`countdown-wrap countdown-stage-${stage}`} aria-live="polite">
       <div className="countdown-bar-track">
-        <div
-          className={`countdown-bar-fill${instantUpdate ? " countdown-bar-fill-instant" : ""}`}
-          style={{ transform: `scaleX(${percent / 100})` }}
-        />
+        <div className="countdown-bar-fill" ref={fillRef} />
       </div>
-      <span className="countdown-seconds">{secondsText}</span>
+      <span className="countdown-seconds">{timeLeft}</span>
     </div>
   );
-});
+}
 
 function QuizView({ selection, onBack }) {
   const { speak } = useSpeak();
@@ -183,7 +162,6 @@ function QuizView({ selection, onBack }) {
   const [revealed, setRevealed] = useState(false);
   const [timerOn, setTimerOn] = useState(false);
   const [timerDuration, setTimerDuration] = useState(TIMER_DURATION_DEFAULT);
-  const countdownBarRef = useRef(null);
   const [pool] = useState(() => {
     const raw = isKana ? getKanaCombinedDeck(selection.script) : getVocab(selection.category);
     return raw.map(toCard);
@@ -222,37 +200,53 @@ function QuizView({ selection, onBack }) {
   };
 
   const speakTimeoutRef = useRef(null);
+  const timeoutRevealTimeoutRef = useRef(null);
   const answeredRef = useRef(answered);
   useEffect(() => {
     answeredRef.current = answered;
   });
 
   // ---- timed-answer countdown (only active while the "จับเวลา" toggle is on) ----
-  // The countdown never starts on its own: it starts the moment the first "ended" event fires for
-  // the learner's "hear example" tap on the current question (no extra artificial delay is added —
-  // see handleAudioEnded for why). Re-tapping to replay the audio afterward must NOT reset it
-  // (hasCountdownStartedRef guards that), or a learner could keep tapping replay for unlimited
-  // thinking time.
-  //
-  // The countdown's own ticking (interval, deadline tracking, reveal-delay timeout) now all lives
-  // inside CountdownBar so its 100ms setState doesn't re-render this whole question card — see the
-  // comment on CountdownBar above. QuizView only drives it imperatively via countdownBarRef and
-  // supplies the onTimeout callback, which still needs to be the freshest closure whenever it
-  // eventually fires (guarded by answeredRef, same as before).
+  // Ported wholesale from the sister English app's ListeningQuiz (see CountdownBar's comment for
+  // why): timeLeft is now a plain whole-seconds integer ticking once/second, kept directly in this
+  // component's own state rather than isolated behind a ref — that isolation from the previous
+  // session turned out not to be what actually fixes the stutter; the real fix is CountdownBar
+  // never touching its expensive transform on a per-tick basis, which holds regardless of where
+  // timeLeft's state lives. A once-per-second re-render of this whole question card is cheap.
+  const [timeLeft, setTimeLeft] = useState(TIMER_DURATION_DEFAULT);
+  const [countdownActive, setCountdownActive] = useState(false);
+  // Snapshot of timerDuration taken at the moment THIS question's countdown actually started —
+  // the stepper can still be adjusted while a countdown is running (applies "from the next start
+  // onward"), but the bar/number must keep dividing by the duration it actually started counting
+  // down from, not whatever the stepper currently reads.
+  const [activeDuration, setActiveDuration] = useState(TIMER_DURATION_DEFAULT);
+  const countdownStarted = timerOn && countdownActive;
+  const displayTimeLeft = countdownStarted ? timeLeft : timerDuration;
+  const displayDuration = countdownStarted ? activeDuration : timerDuration;
+
+  // Guards against a replay of "hear example" restarting the countdown — set once the countdown
+  // has been triggered for the CURRENT question, reset at every question-change reset point below.
   const hasCountdownStartedRef = useRef(false);
+  const timerOnRef = useRef(timerOn);
+  useEffect(() => {
+    timerOnRef.current = timerOn;
+  }, [timerOn]);
+  const timerDurationRef = useRef(timerDuration);
+  useEffect(() => {
+    timerDurationRef.current = timerDuration;
+  }, [timerDuration]);
 
   const handleAudioEnded = () => {
-    if (!timerOn) return;
-    if (answeredRef.current) return;
-    if (hasCountdownStartedRef.current) return;
+    // No artificial delay here: the pre-recorded kana clips have ~230ms of trailing silence baked
+    // in (confirmed via ffprobe/silencedetect), and the Web Speech API's utterances have their own
+    // well-known onend latency after audible speech actually stops — either way, that natural
+    // pause already serves as the buffer, so starting the instant "ended" fires (no extra delay
+    // added on top) is what actually feels snappy.
+    if (!timerOnRef.current || hasCountdownStartedRef.current || answeredRef.current) return;
     hasCountdownStartedRef.current = true;
-    // No artificial delay here: both the pre-recorded kana clips and the browser's speech
-    // synthesis already end with a couple hundred ms of trailing silence before this "ended"
-    // event fires (confirmed via ffprobe/silencedetect on the kana MP3 pack — ~230ms of silence
-    // baked into essentially every clip), so that natural pause already serves as the buffer.
-    // Adding another deliberate delay on top just compounded it and made the countdown feel like
-    // it started later than intended.
-    countdownBarRef.current?.start();
+    setTimeLeft(timerDurationRef.current);
+    setActiveDuration(timerDurationRef.current);
+    setCountdownActive(true);
   };
 
   const handleTimeout = () => {
@@ -261,17 +255,23 @@ function QuizView({ selection, onBack }) {
     playIncorrect();
   };
 
+  const resetCountdownForNewQuestion = () => {
+    setCountdownActive(false);
+    setTimeLeft(timerDuration);
+    setActiveDuration(timerDuration);
+    hasCountdownStartedRef.current = false;
+    clearTimeout(timeoutRevealTimeoutRef.current);
+  };
+
   useEffect(() => {
-    if (!timerOn) {
-      countdownBarRef.current?.reset();
-      hasCountdownStartedRef.current = false;
-    }
+    if (!timerOn) resetCountdownForNewQuestion();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timerOn]);
 
   useEffect(
     () => () => {
       clearTimeout(speakTimeoutRef.current);
+      clearTimeout(timeoutRevealTimeoutRef.current);
     },
     []
   );
@@ -279,14 +279,41 @@ function QuizView({ selection, onBack }) {
   useEffect(() => {
     setSelectedId(null);
     setRevealed(false);
-    countdownBarRef.current?.reset();
-    hasCountdownStartedRef.current = false;
+    resetCountdownForNewQuestion();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeAnswer]);
 
+  // Countdown ticking: starts once countdownActive flips true (from handleAudioEnded) and stops —
+  // via this effect's own cleanup — the moment the question becomes answered/finished, or
+  // countdownActive is reset for a new question. No lingering interval can ever fire into a
+  // question the learner has already left.
+  useEffect(() => {
+    if (!countdownActive || answered || finished) return;
+    const intervalId = setInterval(() => {
+      setTimeLeft((t) => Math.max(0, t - 1));
+    }, COUNTDOWN_TICK_MS);
+    return () => clearInterval(intervalId);
+  }, [countdownActive, answered, finished]);
+
+  // Split from the ticking effect above so the zero-detection isn't inside a useState updater
+  // function (React's Strict Mode can invoke updater functions twice in dev to check for purity,
+  // which would double-fire the scheduled reveal if this lived inside setTimeLeft's callback).
+  // Schedules the reveal after a short delay rather than firing it immediately, so "0" sits on
+  // screen for a beat first. timeLeft only ever transitions TO 0 once per question (further ticks
+  // clamp at the same value), so this won't re-schedule a second reveal.
+  useEffect(() => {
+    if (!countdownActive || answered || finished) return;
+    if (timeLeft === 0) {
+      clearTimeout(timeoutRevealTimeoutRef.current);
+      timeoutRevealTimeoutRef.current = setTimeout(handleTimeout, COUNTDOWN_REVEAL_DELAY_MS);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timeLeft]);
+
   const choose = (opt) => {
     if (answered) return;
-    countdownBarRef.current?.freeze();
+    // A genuine tap always wins over any in-flight timeout-reveal grace delay.
+    clearTimeout(timeoutRevealTimeoutRef.current);
     setSelectedId(opt.id);
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
@@ -363,7 +390,7 @@ function QuizView({ selection, onBack }) {
             {isKana ? "ฟังเสียงแล้วเลือกตัวอักษรที่ตรงกัน" : "ฟังเสียงแล้วเลือกคำแปลที่ตรงกัน"}
           </p>
 
-          <CountdownBar ref={countdownBarRef} durationSec={timerDuration} onTimeout={handleTimeout} />
+          <CountdownBar timeLeft={displayTimeLeft} durationSec={displayDuration} active={countdownStarted} answered={answered} />
 
           <div className="quiz-options">
             {question.options.map((opt) => {

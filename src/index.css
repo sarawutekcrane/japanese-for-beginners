@@ -612,18 +612,22 @@ button {
   height: 100%;
   background: var(--success-deep);
   border-radius: 999px;
+  /* Shrinks via transform: scaleX(), not width — width changes force a full layout recalculation
+     on every animation frame, while transform is handled entirely by the compositor thread.
+     Scales from the left edge (below) so it recedes from the right as time runs out. */
   transform-origin: left center;
-  /* transform (not width) so depleting the bar runs on the compositor thread — no layout/paint
-     recalculation on every tick, which is what made this stutter on weaker mobile hardware. */
-  transition:
-    transform 0.1s linear,
-    background-color 0.2s ease;
-}
-
-/* Suppressed for exactly one render when a new question resets the bar to full, so it snaps to
-   full instantly instead of visibly animating back up. */
-.countdown-bar-fill-instant {
-  transition: none;
+  /* Transform and its transition are set imperatively by CountdownBar (ListeningQuiz.jsx), not
+     declared here: the countdown needs ONE continuous transition spanning the whole (variable,
+     1-10s) duration for a smooth drain, plus the ability to freeze mid-animation exactly where it
+     visually was on an early answer or timeout — neither of which a single static CSS rule can
+     express. Ported from the sister English app's CountdownBar, confirmed stutter-free on real
+     mobile hardware there — a per-tick-retargeted transition (re-set every 100ms/1s from React's
+     style prop) was still enough JS/style work per frame to visibly stutter; a single
+     long-running transition kicked off once needs no further JS involvement at all until it ends.
+     scaleX(1) here is just the sensible default for the brief moment before that effect first
+     runs. Only the color transition is a plain, fixed, CSS-declared rule. */
+  transform: scaleX(1);
+  transition: background-color 0.2s ease;
 }
 
 .countdown-seconds {
