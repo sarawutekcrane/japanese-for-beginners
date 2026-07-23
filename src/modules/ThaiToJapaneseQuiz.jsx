@@ -145,6 +145,8 @@ function QuizView({ category, onBack }) {
     if (answeredRef.current) return;
     setSelectedId(TIMEOUT_SENTINEL);
     playIncorrect();
+    clearTimeout(speakTimeoutRef.current);
+    speakTimeoutRef.current = setTimeout(() => playOption(question.answer), 500);
   };
 
   useEffect(() => {

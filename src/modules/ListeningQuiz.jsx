@@ -179,6 +179,8 @@ function QuizView({ selection, onBack }) {
     if (answeredRef.current) return;
     setSelectedId(TIMEOUT_SENTINEL);
     playIncorrect();
+    clearTimeout(speakTimeoutRef.current);
+    speakTimeoutRef.current = setTimeout(play, 500);
   };
 
   const resetCountdownForNewQuestion = () => {
