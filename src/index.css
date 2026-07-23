@@ -603,14 +603,15 @@ button {
   height: 12px;
   border-radius: 999px;
   background: var(--cream-deep);
-  border: 2px solid var(--pink);
+  border: 2px solid var(--blue);
   overflow: hidden;
+  transition: border-color 0.2s ease;
 }
 
 .countdown-bar-fill {
   width: 100%;
   height: 100%;
-  background: var(--success-deep);
+  background: var(--blue-deep);
   border-radius: 999px;
   /* Shrinks via transform: scaleX(), not width — width changes force a full layout recalculation
      on every animation frame, while transform is handled entirely by the compositor thread.
@@ -632,7 +633,7 @@ button {
 
 .countdown-seconds {
   font-weight: 700;
-  color: var(--success-deep);
+  color: var(--ink);
   font-family: var(--font-en);
   min-width: 22px;
   text-align: center;
@@ -641,8 +642,12 @@ button {
 }
 
 /* Three-stage countdown coloring (scales with whatever duration is configured — see
-   COUNTDOWN_WARNING_RATIO / COUNTDOWN_CRITICAL_RATIO in ListeningQuiz.jsx): calm green while
-   plenty of time remains, amber as a mid-way warning, red once time is nearly/fully up. */
+   yellowThresholdFor in ListeningQuiz.jsx, ported from the sister English app): default blue while
+   plenty of time remains, amber as a mid-way warning, red once time is nearly/fully up. Same
+   design tokens the English app's own timer references, for visual consistency between the two. */
+.countdown-stage-warning .countdown-bar-track {
+  border-color: var(--warning);
+}
 .countdown-stage-warning .countdown-bar-fill {
   background: var(--warning-deep);
 }
@@ -650,6 +655,9 @@ button {
   color: var(--warning-deep);
 }
 
+.countdown-stage-critical .countdown-bar-track {
+  border-color: var(--error);
+}
 .countdown-stage-critical .countdown-bar-fill {
   background: var(--error-deep);
 }

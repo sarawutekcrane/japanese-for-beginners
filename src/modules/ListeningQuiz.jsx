@@ -79,13 +79,24 @@ const TIMER_DURATION_MAX = 10;
 // the previous 100ms interval was 10x more JS work (setState + re-render) than necessary every
 // second, on top of whatever render scope it touched.
 const COUNTDOWN_TICK_MS = 1000;
-const COUNTDOWN_REVEAL_DELAY_MS = 100;
+// The pause after the countdown reaches 0 before the reveal (feedback, highlighting, sound) fires
+// — gives "0"/empty a moment to sit on screen before the reveal appears. Matches the sister
+// English app's TIMEOUT_REVEAL_DELAY_MS exactly.
+const COUNTDOWN_REVEAL_DELAY_MS = 250;
 const TIMEOUT_SENTINEL = "__timeout__";
-// Fraction of the total duration remaining at which the bar moves to each stage — scales with
-// whatever duration (1-10s) is configured, rather than fixed absolute seconds, so the pacing feels
-// reasonable whether the countdown is short or long.
-const COUNTDOWN_WARNING_RATIO = 0.5;
-const COUNTDOWN_CRITICAL_RATIO = 0.15;
+
+/**
+ * Yellow warning stage kicks in at roughly the halfway point, red at the final second — scaled so
+ * it's not tuned only for the default 3s case. Ported exactly from the sister English app's
+ * yellowThresholdFor: a pure "halfway" cutoff (duration/2) would never actually show yellow at
+ * short durations, since the only ticks below halfway are already claimed by the red "final
+ * second" rule (e.g. duration=3's halfway is 1.5, but timeLeft=1 is already red) — the
+ * Math.max(2, ...) floor guarantees at least one genuinely yellow tick even at short durations,
+ * while long durations still land close to a true halfway split.
+ */
+function yellowThresholdFor(duration) {
+  return Math.max(2, Math.ceil(duration / 2));
+}
 
 /**
  * Long countdown bar. Ported from the sister English app's CountdownBar, which is confirmed
@@ -140,8 +151,9 @@ function CountdownBar({ timeLeft, durationSec, active, answered }) {
     el.style.transform = "scaleX(0)";
   }, [active, answered, durationMs]);
 
-  const remainingRatio = durationSec > 0 ? Math.max(0, Math.min(1, timeLeft / durationSec)) : 0;
-  const stage = remainingRatio <= COUNTDOWN_CRITICAL_RATIO ? "critical" : remainingRatio <= COUNTDOWN_WARNING_RATIO ? "warning" : "normal";
+  const critical = timeLeft <= 1;
+  const warning = !critical && timeLeft <= yellowThresholdFor(durationSec);
+  const stage = critical ? "critical" : warning ? "warning" : "normal";
 
   return (
     <div className={`countdown-wrap countdown-stage-${stage}`} aria-live="polite">
