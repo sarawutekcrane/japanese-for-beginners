@@ -596,10 +596,6 @@ button {
   height: 22px;
 }
 
-.countdown-hidden {
-  visibility: hidden;
-}
-
 .countdown-bar-track {
   flex: 1;
   height: 12px;

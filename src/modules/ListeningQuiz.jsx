@@ -106,7 +106,13 @@ function QuizView({ selection, onBack }) {
   const isCorrect = question && selectedId === question.answer.id;
   const answered = selectedId !== null;
   const finished = review.finished;
-  const showCountdown = timerOn && timeLeftMs !== null;
+  // The countdown bar/number is always rendered. Before it starts (or once reset for a new
+  // question), it shows the full bar at the configured duration — only once "จับเวลา" is on and
+  // ticking does it reflect the live remaining time. It freezes (rather than clears) at whatever
+  // value it held the moment the learner answers, and at 0 on a timeout.
+  const countdownDisplayMs = timeLeftMs !== null ? timeLeftMs : timerDuration * 1000;
+  const countdownPercent = Math.max(0, Math.min(100, (countdownDisplayMs / (timerDuration * 1000)) * 100));
+  const countdownSecondsText = Math.ceil(countdownDisplayMs / 1000);
 
   // Auto-reveal the Japanese reading on a correct answer, as if the Romaji
   // toggle/reveal button were switched on (kana mode only).
@@ -152,7 +158,10 @@ function QuizView({ selection, onBack }) {
   const countdownRevealTimeoutRef = useRef(null);
   const onTimeoutRef = useRef(() => {});
 
-  const clearCountdown = () => {
+  // Stops all pending/running countdown timers without touching the displayed value — used when
+  // the learner answers manually, so the bar/number stays frozen showing exactly what it read at
+  // the moment they answered, instead of disappearing or resetting.
+  const stopCountdownTimers = () => {
     clearTimeout(countdownDelayTimeoutRef.current);
     countdownDelayTimeoutRef.current = null;
     clearInterval(countdownIntervalRef.current);
@@ -160,7 +169,17 @@ function QuizView({ selection, onBack }) {
     clearTimeout(countdownRevealTimeoutRef.current);
     countdownRevealTimeoutRef.current = null;
     countdownDeadlineRef.current = null;
+  };
+
+  // Full reset back to the default (not-yet-started) display — used when moving to a new
+  // question, turning the timer toggle off, or unmounting.
+  const clearCountdown = () => {
+    stopCountdownTimers();
     setTimeLeftMs(null);
+  };
+
+  const freezeCountdown = () => {
+    stopCountdownTimers();
   };
 
   const startCountdownTicking = () => {
@@ -233,7 +252,7 @@ function QuizView({ selection, onBack }) {
 
   const choose = (opt) => {
     if (answered) return;
-    clearCountdown();
+    freezeCountdown();
     setSelectedId(opt.id);
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
@@ -330,16 +349,11 @@ function QuizView({ selection, onBack }) {
             })}
           </div>
 
-          <div className={`countdown-wrap${showCountdown ? "" : " countdown-hidden"}`} aria-live="polite">
+          <div className="countdown-wrap" aria-live="polite">
             <div className="countdown-bar-track">
-              <div
-                className="countdown-bar-fill"
-                style={{
-                  width: `${showCountdown ? Math.max(0, Math.min(100, (timeLeftMs / (timerDuration * 1000)) * 100)) : 100}%`,
-                }}
-              />
+              <div className="countdown-bar-fill" style={{ width: `${countdownPercent}%` }} />
             </div>
-            <span className="countdown-seconds">{showCountdown ? Math.ceil(timeLeftMs / 1000) : ""}</span>
+            <span className="countdown-seconds">{countdownSecondsText}</span>
           </div>
 
           {answered && (
