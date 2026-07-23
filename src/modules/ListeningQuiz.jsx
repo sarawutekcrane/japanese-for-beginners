@@ -73,8 +73,9 @@ function buildVocabQuestion(pool, answer) {
 const TIMER_DURATION_DEFAULT = 3;
 const TIMER_DURATION_MIN = 1;
 const TIMER_DURATION_MAX = 10;
-const COUNTDOWN_START_DELAY_MS = 250;
+const COUNTDOWN_START_DELAY_MS = 100;
 const COUNTDOWN_TICK_MS = 100;
+const COUNTDOWN_REVEAL_DELAY_MS = 100;
 const TIMEOUT_SENTINEL = "__timeout__";
 
 function QuizView({ selection, onBack }) {
@@ -132,14 +133,23 @@ function QuizView({ selection, onBack }) {
   });
 
   // ---- timed-answer countdown (only active while the "จับเวลา" toggle is on) ----
-  // The countdown never starts on its own: it starts once, ~250ms after the first time the
+  // The countdown never starts on its own: it starts once, 100ms after the first time the
   // learner's "hear example" tap finishes playing for the current question. Re-tapping to
   // replay the audio afterward must NOT reset it (hasCountdownStartedRef guards that), or a
   // learner could keep tapping replay for unlimited thinking time.
+  //
+  // A single interval (started in startCountdownTicking) is the one source of truth for both
+  // the visible countdown number/bar AND the reveal trigger — both are derived from the same
+  // countdownDeadlineRef on every tick, so they cannot drift apart. When the deadline is reached,
+  // the display is set to 0 and, after it has had a moment to actually be seen (and after any
+  // "time's up" bar color transition would have finished, if one existed), a single follow-up
+  // timeout fires the reveal. That follow-up is a strict continuation of this same detection
+  // point, not an independently-scheduled timer racing to land at the same moment as anything else.
   const hasCountdownStartedRef = useRef(false);
   const countdownDelayTimeoutRef = useRef(null);
   const countdownIntervalRef = useRef(null);
   const countdownDeadlineRef = useRef(null);
+  const countdownRevealTimeoutRef = useRef(null);
   const onTimeoutRef = useRef(() => {});
 
   const clearCountdown = () => {
@@ -147,6 +157,8 @@ function QuizView({ selection, onBack }) {
     countdownDelayTimeoutRef.current = null;
     clearInterval(countdownIntervalRef.current);
     countdownIntervalRef.current = null;
+    clearTimeout(countdownRevealTimeoutRef.current);
+    countdownRevealTimeoutRef.current = null;
     countdownDeadlineRef.current = null;
     setTimeLeftMs(null);
   };
@@ -161,7 +173,10 @@ function QuizView({ selection, onBack }) {
         clearInterval(countdownIntervalRef.current);
         countdownIntervalRef.current = null;
         setTimeLeftMs(0);
-        onTimeoutRef.current();
+        countdownRevealTimeoutRef.current = setTimeout(() => {
+          countdownRevealTimeoutRef.current = null;
+          onTimeoutRef.current();
+        }, COUNTDOWN_REVEAL_DELAY_MS);
       } else {
         setTimeLeftMs(remaining);
       }
