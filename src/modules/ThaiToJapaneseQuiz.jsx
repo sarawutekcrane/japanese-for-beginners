@@ -232,7 +232,7 @@ function QuizView({ category, onBack }) {
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
         <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
-        <Toggle emoji="🔁" label="สลับทิศทาง" checked={directionSwapped} onChange={setDirectionSwapped} />
+        <Toggle emoji="🔁" label="เปลี่ยนภาษา" checked={directionSwapped} onChange={setDirectionSwapped} />
         <Toggle emoji="⏱️" label="จับเวลา" checked={timerOn} onChange={setTimerOn} />
       </div>
 
@@ -280,8 +280,8 @@ function QuizView({ category, onBack }) {
               <p className="th-text quiz-instruction">คำนี้ภาษาไทยแปลว่าอะไร?</p>
               <p className="thai-prompt jp-text">
                 <JapaneseText kana={question.answer.display} kanji={question.answer.kanji} />
-                {showRomaji && <span className="quiz-option-hint">{question.answer.romaji}</span>}
               </p>
+              {showRomaji && <p className="quiz-option-hint">{question.answer.romaji}</p>}
             </>
           ) : (
             <>
