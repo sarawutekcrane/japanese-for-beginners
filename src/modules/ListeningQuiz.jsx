@@ -355,6 +355,16 @@ function QuizView({ selection, onBack }) {
             {isKana ? "ฟังเสียงแล้วเลือกตัวอักษรที่ตรงกัน" : "ฟังเสียงแล้วเลือกคำแปลที่ตรงกัน"}
           </p>
 
+          <div className={`countdown-wrap countdown-stage-${countdownStage}`} aria-live="polite">
+            <div className="countdown-bar-track">
+              <div
+                className={`countdown-bar-fill${instantBarUpdate ? " countdown-bar-fill-instant" : ""}`}
+                style={{ width: `${countdownPercent}%` }}
+              />
+            </div>
+            <span className="countdown-seconds">{countdownSecondsText}</span>
+          </div>
+
           <div className="quiz-options">
             {question.options.map((opt) => {
               let cls = "quiz-option";
@@ -373,16 +383,6 @@ function QuizView({ selection, onBack }) {
                 </button>
               );
             })}
-          </div>
-
-          <div className={`countdown-wrap countdown-stage-${countdownStage}`} aria-live="polite">
-            <div className="countdown-bar-track">
-              <div
-                className={`countdown-bar-fill${instantBarUpdate ? " countdown-bar-fill-instant" : ""}`}
-                style={{ width: `${countdownPercent}%` }}
-              />
-            </div>
-            <span className="countdown-seconds">{countdownSecondsText}</span>
           </div>
 
           {answered && (
