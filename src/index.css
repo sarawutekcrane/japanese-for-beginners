@@ -12,6 +12,8 @@
   --white: #ffffff;
   --success: #7bcf9e;
   --success-deep: #4fae78;
+  --warning: #ffe89e;
+  --warning-deep: #f0b429;
   --error: #ff8fa3;
   --error-deep: #e85d7a;
   --shadow-soft: 0 4px 14px rgba(180, 140, 160, 0.18);
@@ -607,18 +609,44 @@ button {
 
 .countdown-bar-fill {
   height: 100%;
-  background: var(--error-deep);
+  background: var(--success-deep);
   border-radius: 999px;
-  transition: width 0.1s linear;
+  transition:
+    width 0.1s linear,
+    background-color 0.2s ease;
+}
+
+/* Suppressed for exactly one render when a new question resets the bar to full, so it snaps to
+   full instantly instead of visibly animating back up. */
+.countdown-bar-fill-instant {
+  transition: none;
 }
 
 .countdown-seconds {
   font-weight: 700;
-  color: var(--error-deep);
+  color: var(--success-deep);
   font-family: var(--font-en);
   min-width: 22px;
   text-align: center;
   font-variant-numeric: tabular-nums;
+  transition: color 0.2s ease;
+}
+
+/* Three-stage countdown coloring (scales with whatever duration is configured — see
+   COUNTDOWN_WARNING_RATIO / COUNTDOWN_CRITICAL_RATIO in ListeningQuiz.jsx): calm green while
+   plenty of time remains, amber as a mid-way warning, red once time is nearly/fully up. */
+.countdown-stage-warning .countdown-bar-fill {
+  background: var(--warning-deep);
+}
+.countdown-stage-warning .countdown-seconds {
+  color: var(--warning-deep);
+}
+
+.countdown-stage-critical .countdown-bar-fill {
+  background: var(--error-deep);
+}
+.countdown-stage-critical .countdown-seconds {
+  color: var(--error-deep);
 }
 
 .quiz-options {
