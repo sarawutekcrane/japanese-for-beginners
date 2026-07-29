@@ -11,19 +11,28 @@ import { playClick } from "./utils/sound";
 
 const CLICKABLE_SELECTOR = "button, .topic-card, .reply-option, .quiz-option, .chunk-pill";
 
-// Left-edge swipe-to-go-back, mirroring iOS's native edge-swipe gesture.
-// Only starts tracking a touch that begins within this many px of the left edge,
-// so it can never interfere with normal taps/scrolls/drags elsewhere on screen.
-const SWIPE_EDGE_ZONE_PX = 24;
+// Whole-screen swipe-to-go-back: recognized starting from any point on screen,
+// not just a left-edge strip. Elements with their own competing horizontal
+// touch interaction (drag-reorder, horizontally-scrollable content) opt out via
+// data-swipe-exempt="true" - a touch starting inside one is never tracked as a
+// swipe-back candidate at all, so that element's own handling gets it untouched.
+const SWIPE_EXEMPT_SELECTOR = '[data-swipe-exempt="true"]';
 // Minimum horizontal travel before a swipe counts as a deliberate back gesture.
-const SWIPE_MIN_DISTANCE_PX = 60;
-// Horizontal movement must exceed vertical movement by at least this ratio to
-// count as a horizontal swipe rather than a vertical scroll.
-const SWIPE_DIRECTION_RATIO = 1.5;
+// Larger than the old edge-only version's threshold, since the gesture now has
+// to distinguish itself from ordinary content interaction anywhere on screen,
+// not just from the narrow band of touches that could start at the edge.
+const SWIPE_MIN_DISTANCE_PX = 70;
+// Horizontal movement must exceed vertical movement by at least this ratio -
+// roughly a ±26 degree cone around pure horizontal - to count as a horizontal
+// swipe rather than a vertical scroll. Tightened from the edge-only version's
+// 1.5x, since there's no longer a narrow detection zone doing part of that
+// disambiguation job for free.
+const SWIPE_DIRECTION_RATIO = 2;
 // Once movement looks like a real horizontal swipe-in-progress (past this small
-// intent threshold), we preventDefault() on touchmove so the page doesn't scroll
-// and so iOS Safari's own native edge-swipe-back doesn't also fire alongside ours.
-const SWIPE_INTENT_PX = 10;
+// intent threshold, using the same ratio), we preventDefault() on touchmove so
+// the page doesn't scroll and so iOS Safari's own native edge-swipe-back doesn't
+// also fire alongside ours.
+const SWIPE_INTENT_PX = 15;
 
 function triggerBackNavigation() {
   // Whichever back-styled button is currently mounted for the deepest active
@@ -80,7 +89,7 @@ function App() {
 
     const onTouchStart = (e) => {
       const t = e.touches[0];
-      if (!t || t.clientX > SWIPE_EDGE_ZONE_PX) {
+      if (!t || (e.target instanceof Element && e.target.closest(SWIPE_EXEMPT_SELECTOR))) {
         reset();
         return;
       }

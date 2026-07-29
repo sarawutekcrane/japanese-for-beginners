@@ -277,7 +277,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
         <div className="practice-card">
           <p className="th-text word-order-prompt">{question.promptThai}</p>
 
-          <div className="answer-slot" ref={answerSlotCallbackRef} onMouseDown={handleAnswerMouseDown}>
+          <div className="answer-slot" ref={answerSlotCallbackRef} onMouseDown={handleAnswerMouseDown} data-swipe-exempt="true">
             {answerItems.length === 0 && <span className="answer-slot-hint th-text">แตะคำด้านล่างตามลำดับ</span>}
             {answerItems.map((item) => (
               <button

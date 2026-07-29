@@ -25,7 +25,7 @@ export default function TopicComparison() {
       <h3 className="lesson-heading">📊 ตารางเปรียบเทียบทุกรูป</h3>
       <p className="th-text group-rule-explanation">แตะคำในตารางเพื่อฟังเสียง</p>
 
-      <div className="scroll-x-safe">
+      <div className="scroll-x-safe" data-swipe-exempt="true">
         <table className="comparison-table">
           <thead>
             <tr>

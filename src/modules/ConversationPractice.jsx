@@ -120,7 +120,7 @@ function DialogueView({ topic, onBack }) {
         <Toggle label="Romaji" checked={showRomaji} onChange={setShowRomaji} />
       </div>
 
-      <div className="conversation-history scroll-x-safe">
+      <div className="conversation-history scroll-x-safe" data-swipe-exempt="true">
         {history.map((h, i) => (
           <div key={i} className="history-turn">
             <div className="bubble bubble-system">
