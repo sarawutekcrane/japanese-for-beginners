@@ -8092,4 +8092,1605 @@
     "formLabel": "",
     "conjugationSuffixRomaji": ""
   }
+,
+  {
+    "id": "sentence-connectors",
+    "order": 20,
+    "level": "intermediate",
+    "title": "เชื่อมประโยค (そして/でも/から/ので)",
+    "structure": "[ประโยค1] + そして/でも + [ประโยค2] / [เหตุผล] + から/ので + [ผล]",
+    "particles": [
+      {
+        "particle": "そして",
+        "role": "เชื่อม 2 ประโยคที่เกิดขึ้นต่อเนื่องกัน แปลว่า 'และ/แล้วก็' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "particle": "でも",
+        "role": "เชื่อม 2 ประโยคที่ขัดแย้งกัน แปลว่า 'แต่' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "particle": "から",
+        "role": "ต่อท้ายประโยคเหตุผล แปลว่า '(เพราะ)...จึง' เป็นกันเองทั่วไป"
+      },
+      {
+        "particle": "ので",
+        "role": "ต่อท้ายประโยคเหตุผลเหมือน から แต่ฟังดูสุภาพ/นุ่มนวลกว่า"
+      }
+    ],
+    "timeNote": "そして และ でも เชื่อม 2 ประโยคที่แยกกันคนละประโยค (วางไว้ต้นประโยคที่ 2): そして = และ/แล้วก็ (ต่อเนื่อง), でも = แต่ (ขัดแย้ง) — から และ ので ต่อท้ายท้ายประโยคเหตุผลภายในประโยคเดียวกัน (Xから/ので、Y): から เป็นกันเองทั่วไป, ので ฟังดูสุภาพ/นุ่มนวลกว่า เหมาะกับสถานการณ์ทางการ ทั้งคู่แปลว่า 'เพราะ...จึง' เหมือนกัน",
+    "conjugationField": null,
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "ごはんを たべます。そして、テレビを みます。",
+        "romaji": "Gohan wo tabemasu. Soshite, terebi wo mimasu.",
+        "thai": "กินข้าว แล้วก็ดูทีวี",
+        "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べます" }, { "text": "。" }, { "text": "そして" }, { "text": "、" }, { "text": "テレビを" }, { "text": " " }, { "text": "みます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "ほんを かいます。でも、よみません。",
+        "romaji": "Hon wo kaimasu. Demo, yomimasen.",
+        "thai": "ซื้อหนังสือ แต่ไม่อ่าน",
+        "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "買", "reading": "か" }, { "text": "います" }, { "text": "。" }, { "text": "でも" }, { "text": "、" }, { "text": "読", "reading": "よ" }, { "text": "みません" }, { "text": "。" }]
+      },
+      {
+        "japanese": "あついから、みずを のみます。",
+        "romaji": "Atsui kara, mizu wo nomimasu.",
+        "thai": "เพราะร้อนเลยดื่มน้ำ",
+        "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いから" }, { "text": "、" }, { "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "あついので、みずを のみます。",
+        "romaji": "Atsui node, mizu wo nomimasu.",
+        "thai": "เพราะร้อนเลยดื่มน้ำ (แบบสุภาพ)",
+        "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いので" }, { "text": "、" }, { "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "sentence-connectors-1",
+        "promptThai": "พูดว่า: กินข้าว แล้วก็ดูทีวี",
+        "chunks": [
+          { "text": "ごはんを たべます。", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べます" }, { "text": "。" }], "romaji": "Gohan wo tabemasu." },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "テレビを みます。", "romaji": "Terebi wo mimasu." },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "から、", "romaji": "kara," },
+          { "text": "ので、", "romaji": "node," }
+        ],
+        "correctOrder": [
+          "ごはんを たべます。",
+          "そして、",
+          "テレビを みます。"
+        ],
+        "romaji": "Gohan wo tabemasu. Soshite, Terebi wo mimasu.",
+        "thai": "กินข้าว แล้วก็ดูทีวี",
+        "explanation": "そして ใช้เชื่อม 2 ประโยคที่เกิดขึ้นต่อเนื่องกัน แปลว่า 'และ/แล้วก็' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "id": "sentence-connectors-2",
+        "promptThai": "พูดว่า: อ่านหนังสือ แล้วก็นอน",
+        "chunks": [
+          { "text": "ほんを よみます。", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }], "romaji": "Hon wo yomimasu." },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "ねます。", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "ます" }, { "text": "。" }], "romaji": "Nemasu." },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "から、", "romaji": "kara," },
+          { "text": "ので、", "romaji": "node," }
+        ],
+        "correctOrder": [
+          "ほんを よみます。",
+          "そして、",
+          "ねます。"
+        ],
+        "romaji": "Hon wo yomimasu. Soshite, Nemasu.",
+        "thai": "อ่านหนังสือ แล้วก็นอน",
+        "explanation": "そして ใช้เชื่อม 2 ประโยคที่เกิดขึ้นต่อเนื่องกัน แปลว่า 'และ/แล้วก็' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "id": "sentence-connectors-3",
+        "promptThai": "พูดว่า: ไปโรงเรียน แล้วก็เรียน",
+        "chunks": [
+          { "text": "がっこうへ いきます。", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きます" }, { "text": "。" }], "romaji": "Gakkou e ikimasu." },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "べんきょうします。", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "します" }, { "text": "。" }], "romaji": "Benkyou shimasu." },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "から、", "romaji": "kara," },
+          { "text": "ので、", "romaji": "node," }
+        ],
+        "correctOrder": [
+          "がっこうへ いきます。",
+          "そして、",
+          "べんきょうします。"
+        ],
+        "romaji": "Gakkou e ikimasu. Soshite, Benkyou shimasu.",
+        "thai": "ไปโรงเรียน แล้วก็เรียน",
+        "explanation": "そして ใช้เชื่อม 2 ประโยคที่เกิดขึ้นต่อเนื่องกัน แปลว่า 'และ/แล้วก็' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "id": "sentence-connectors-4",
+        "promptThai": "พูดว่า: ออกกำลังกาย แล้วก็ดื่มน้ำ",
+        "chunks": [
+          { "text": "スポーツを します。", "romaji": "Supootsu wo shimasu." },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "みずを のみます。", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }], "romaji": "Mizu wo nomimasu." },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "から、", "romaji": "kara," },
+          { "text": "ので、", "romaji": "node," }
+        ],
+        "correctOrder": [
+          "スポーツを します。",
+          "そして、",
+          "みずを のみます。"
+        ],
+        "romaji": "Supootsu wo shimasu. Soshite, Mizu wo nomimasu.",
+        "thai": "ออกกำลังกาย แล้วก็ดื่มน้ำ",
+        "explanation": "そして ใช้เชื่อม 2 ประโยคที่เกิดขึ้นต่อเนื่องกัน แปลว่า 'และ/แล้วก็' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "id": "sentence-connectors-5",
+        "promptThai": "พูดว่า: ดื่มกาแฟ แล้วก็อ่านหนังสือ",
+        "chunks": [
+          { "text": "コーヒーを のみます。", "romaji": "Koohii wo nomimasu." },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "ほんを よみます。", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }], "romaji": "Hon wo yomimasu." },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "から、", "romaji": "kara," },
+          { "text": "ので、", "romaji": "node," }
+        ],
+        "correctOrder": [
+          "コーヒーを のみます。",
+          "そして、",
+          "ほんを よみます。"
+        ],
+        "romaji": "Koohii wo nomimasu. Soshite, Hon wo yomimasu.",
+        "thai": "ดื่มกาแฟ แล้วก็อ่านหนังสือ",
+        "explanation": "そして ใช้เชื่อม 2 ประโยคที่เกิดขึ้นต่อเนื่องกัน แปลว่า 'และ/แล้วก็' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "id": "sentence-connectors-6",
+        "promptThai": "พูดว่า: ซื้อหนังสือ แต่ไม่อ่าน",
+        "chunks": [
+          { "text": "ほんを かいます。", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "買", "reading": "か" }, { "text": "います" }, { "text": "。" }], "romaji": "Hon wo kaimasu." },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "よみません。", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みません" }, { "text": "。" }], "romaji": "Yomimasen." },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "から、", "romaji": "kara," },
+          { "text": "ので、", "romaji": "node," }
+        ],
+        "correctOrder": [
+          "ほんを かいます。",
+          "でも、",
+          "よみません。"
+        ],
+        "romaji": "Hon wo kaimasu. Demo, Yomimasen.",
+        "thai": "ซื้อหนังสือ แต่ไม่อ่าน",
+        "explanation": "でも ใช้เชื่อม 2 ประโยคที่ขัดแย้งกัน แปลว่า 'แต่' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "id": "sentence-connectors-7",
+        "promptThai": "พูดว่า: ออกกำลังกาย แต่ไม่สดชื่น",
+        "chunks": [
+          { "text": "スポーツを します。", "romaji": "Supootsu wo shimasu." },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "げんきじゃないです。", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "じゃないです" }, { "text": "。" }], "romaji": "Genki ja nai desu." },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "から、", "romaji": "kara," },
+          { "text": "ので、", "romaji": "node," }
+        ],
+        "correctOrder": [
+          "スポーツを します。",
+          "でも、",
+          "げんきじゃないです。"
+        ],
+        "romaji": "Supootsu wo shimasu. Demo, Genki ja nai desu.",
+        "thai": "ออกกำลังกาย แต่ไม่สดชื่น",
+        "explanation": "でも ใช้เชื่อม 2 ประโยคที่ขัดแย้งกัน แปลว่า 'แต่' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "id": "sentence-connectors-8",
+        "promptThai": "พูดว่า: นี่ถูก แต่ไม่อร่อย",
+        "chunks": [
+          { "text": "これは やすいです。", "romaji": "Kore wa yasui desu." },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "おいしくないです。", "kanji": [{ "text": "美味", "reading": "おい" }, { "text": "しくないです" }, { "text": "。" }], "romaji": "Oishikunai desu." },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "から、", "romaji": "kara," },
+          { "text": "ので、", "romaji": "node," }
+        ],
+        "correctOrder": [
+          "これは やすいです。",
+          "でも、",
+          "おいしくないです。"
+        ],
+        "romaji": "Kore wa yasui desu. Demo, Oishikunai desu.",
+        "thai": "นี่ถูก แต่ไม่อร่อย",
+        "explanation": "でも ใช้เชื่อม 2 ประโยคที่ขัดแย้งกัน แปลว่า 'แต่' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "id": "sentence-connectors-9",
+        "promptThai": "พูดว่า: นี่ใหม่ แต่แพง",
+        "chunks": [
+          { "text": "これは あたらしいです。", "kanji": [{ "text": "これ" }, { "text": "は" }, { "text": " " }, { "text": "新", "reading": "あたら" }, { "text": "しいです" }, { "text": "。" }], "romaji": "Kore wa atarashii desu." },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "たかいです。", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いです" }, { "text": "。" }], "romaji": "Takai desu." },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "から、", "romaji": "kara," },
+          { "text": "ので、", "romaji": "node," }
+        ],
+        "correctOrder": [
+          "これは あたらしいです。",
+          "でも、",
+          "たかいです。"
+        ],
+        "romaji": "Kore wa atarashii desu. Demo, Takai desu.",
+        "thai": "นี่ใหม่ แต่แพง",
+        "explanation": "でも ใช้เชื่อม 2 ประโยคที่ขัดแย้งกัน แปลว่า 'แต่' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "id": "sentence-connectors-10",
+        "promptThai": "พูดว่า: ไปโรงเรียน แต่ไม่เรียน",
+        "chunks": [
+          { "text": "がっこうへ いきます。", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きます" }, { "text": "。" }], "romaji": "Gakkou e ikimasu." },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "べんきょうしません。", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "しません" }, { "text": "。" }], "romaji": "Benkyou shimasen." },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "から、", "romaji": "kara," },
+          { "text": "ので、", "romaji": "node," }
+        ],
+        "correctOrder": [
+          "がっこうへ いきます。",
+          "でも、",
+          "べんきょうしません。"
+        ],
+        "romaji": "Gakkou e ikimasu. Demo, Benkyou shimasen.",
+        "thai": "ไปโรงเรียน แต่ไม่เรียน",
+        "explanation": "でも ใช้เชื่อม 2 ประโยคที่ขัดแย้งกัน แปลว่า 'แต่' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "id": "sentence-connectors-11",
+        "promptThai": "พูดว่า: เพราะร้อนเลยดื่มน้ำ",
+        "chunks": [
+          { "text": "あついから", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いから" }], "romaji": "atsui kara," },
+          { "text": "あついので", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いので" }], "romaji": "atsui node," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "みずを のみます。", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }], "romaji": "mizu wo nomimasu." }
+        ],
+        "correctOrder": [
+          "あついから",
+          "みずを のみます。"
+        ],
+        "romaji": "Atsui kara, mizu wo nomimasu.",
+        "thai": "เพราะร้อนเลยดื่มน้ำ",
+        "explanation": "から ต่อท้ายประโยคเหตุผล แปลว่า '(เพราะ)...จึง' เป็นคำเชื่อมที่เป็นกันเองทั่วไป"
+      },
+      {
+        "id": "sentence-connectors-12",
+        "promptThai": "พูดว่า: เพราะหนังสือถูกเลยซื้อ",
+        "chunks": [
+          { "text": "ほんが", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "が" }], "romaji": "hon ga" },
+          { "text": "やすいから", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "いから" }], "romaji": "yasui kara," },
+          { "text": "やすいので", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "いので" }], "romaji": "yasui node," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "かいます。", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }, { "text": "。" }], "romaji": "kaimasu." }
+        ],
+        "correctOrder": [
+          "ほんが",
+          "やすいから",
+          "かいます。"
+        ],
+        "romaji": "Hon ga yasui kara, kaimasu.",
+        "thai": "เพราะหนังสือถูกเลยซื้อ",
+        "explanation": "から ต่อท้ายประโยคเหตุผล แปลว่า '(เพราะ)...จึง' เป็นคำเชื่อมที่เป็นกันเองทั่วไป"
+      },
+      {
+        "id": "sentence-connectors-13",
+        "promptThai": "พูดว่า: เพราะหนาวเลยนอน",
+        "chunks": [
+          { "text": "さむいから", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "いから" }], "romaji": "samui kara," },
+          { "text": "さむいので", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "いので" }], "romaji": "samui node," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "ねます。", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "ます" }, { "text": "。" }], "romaji": "nemasu." }
+        ],
+        "correctOrder": [
+          "さむいから",
+          "ねます。"
+        ],
+        "romaji": "Samui kara, nemasu.",
+        "thai": "เพราะหนาวเลยนอน",
+        "explanation": "から ต่อท้ายประโยคเหตุผล แปลว่า '(เพราะ)...จึง' เป็นคำเชื่อมที่เป็นกันเองทั่วไป"
+      },
+      {
+        "id": "sentence-connectors-14",
+        "promptThai": "พูดว่า: เพราะแพงเลยไม่ซื้อ",
+        "chunks": [
+          { "text": "たかいから", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いから" }], "romaji": "takai kara," },
+          { "text": "たかいので", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いので" }], "romaji": "takai node," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "かいません。", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }, { "text": "。" }], "romaji": "kaimasen." }
+        ],
+        "correctOrder": [
+          "たかいから",
+          "かいません。"
+        ],
+        "romaji": "Takai kara, kaimasen.",
+        "thai": "เพราะแพงเลยไม่ซื้อ",
+        "explanation": "から ต่อท้ายประโยคเหตุผล แปลว่า '(เพราะ)...จึง' เป็นคำเชื่อมที่เป็นกันเองทั่วไป"
+      },
+      {
+        "id": "sentence-connectors-15",
+        "promptThai": "พูดว่า: เพราะใหม่เลยดี",
+        "chunks": [
+          { "text": "あたらしいから", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しいから" }], "romaji": "atarashii kara," },
+          { "text": "あたらしいので", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しいので" }], "romaji": "atarashii node," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "いいです。", "romaji": "ii desu." }
+        ],
+        "correctOrder": [
+          "あたらしいから",
+          "いいです。"
+        ],
+        "romaji": "Atarashii kara, ii desu.",
+        "thai": "เพราะใหม่เลยดี",
+        "explanation": "から ต่อท้ายประโยคเหตุผล แปลว่า '(เพราะ)...จึง' เป็นคำเชื่อมที่เป็นกันเองทั่วไป"
+      },
+      {
+        "id": "sentence-connectors-16",
+        "promptThai": "พูดว่า: เพราะร้อนเลยดื่มน้ำ (แบบสุภาพ)",
+        "chunks": [
+          { "text": "あついので", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いので" }], "romaji": "atsui node," },
+          { "text": "あついから", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いから" }], "romaji": "atsui kara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "みずを のみます。", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }], "romaji": "mizu wo nomimasu." }
+        ],
+        "correctOrder": [
+          "あついので",
+          "みずを のみます。"
+        ],
+        "romaji": "Atsui node, mizu wo nomimasu.",
+        "thai": "เพราะร้อนเลยดื่มน้ำ (แบบสุภาพ)",
+        "explanation": "ので ต่อท้ายประโยคเหตุผลเหมือน から แต่ฟังดูสุภาพ/นุ่มนวลกว่า มักใช้ในสถานการณ์ที่เป็นทางการกว่า"
+      },
+      {
+        "id": "sentence-connectors-17",
+        "promptThai": "พูดว่า: เพราะหนังสือถูกเลยซื้อ (แบบสุภาพ)",
+        "chunks": [
+          { "text": "ほんが", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "が" }], "romaji": "hon ga" },
+          { "text": "やすいので", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "いので" }], "romaji": "yasui node," },
+          { "text": "やすいから", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "いから" }], "romaji": "yasui kara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "かいます。", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }, { "text": "。" }], "romaji": "kaimasu." }
+        ],
+        "correctOrder": [
+          "ほんが",
+          "やすいので",
+          "かいます。"
+        ],
+        "romaji": "Hon ga yasui node, kaimasu.",
+        "thai": "เพราะหนังสือถูกเลยซื้อ (แบบสุภาพ)",
+        "explanation": "ので ต่อท้ายประโยคเหตุผลเหมือน から แต่ฟังดูสุภาพ/นุ่มนวลกว่า มักใช้ในสถานการณ์ที่เป็นทางการกว่า"
+      },
+      {
+        "id": "sentence-connectors-18",
+        "promptThai": "พูดว่า: เพราะหนาวเลยนอน (แบบสุภาพ)",
+        "chunks": [
+          { "text": "さむいので", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "いので" }], "romaji": "samui node," },
+          { "text": "さむいから", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "いから" }], "romaji": "samui kara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "ねます。", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "ます" }, { "text": "。" }], "romaji": "nemasu." }
+        ],
+        "correctOrder": [
+          "さむいので",
+          "ねます。"
+        ],
+        "romaji": "Samui node, nemasu.",
+        "thai": "เพราะหนาวเลยนอน (แบบสุภาพ)",
+        "explanation": "ので ต่อท้ายประโยคเหตุผลเหมือน から แต่ฟังดูสุภาพ/นุ่มนวลกว่า มักใช้ในสถานการณ์ที่เป็นทางการกว่า"
+      },
+      {
+        "id": "sentence-connectors-19",
+        "promptThai": "พูดว่า: เพราะแพงเลยไม่ซื้อ (แบบสุภาพ)",
+        "chunks": [
+          { "text": "たかいので", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いので" }], "romaji": "takai node," },
+          { "text": "たかいから", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いから" }], "romaji": "takai kara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "かいません。", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いません" }, { "text": "。" }], "romaji": "kaimasen." }
+        ],
+        "correctOrder": [
+          "たかいので",
+          "かいません。"
+        ],
+        "romaji": "Takai node, kaimasen.",
+        "thai": "เพราะแพงเลยไม่ซื้อ (แบบสุภาพ)",
+        "explanation": "ので ต่อท้ายประโยคเหตุผลเหมือน から แต่ฟังดูสุภาพ/นุ่มนวลกว่า มักใช้ในสถานการณ์ที่เป็นทางการกว่า"
+      },
+      {
+        "id": "sentence-connectors-20",
+        "promptThai": "พูดว่า: เพราะใหม่เลยดี (แบบสุภาพ)",
+        "chunks": [
+          { "text": "あたらしいので", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しいので" }], "romaji": "atarashii node," },
+          { "text": "あたらしいから", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しいから" }], "romaji": "atarashii kara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," },
+          { "text": "いいです。", "romaji": "ii desu." }
+        ],
+        "correctOrder": [
+          "あたらしいので",
+          "いいです。"
+        ],
+        "romaji": "Atarashii node, ii desu.",
+        "thai": "เพราะใหม่เลยดี (แบบสุภาพ)",
+        "explanation": "ので ต่อท้ายประโยคเหตุผลเหมือน から แต่ฟังดูสุภาพ/นุ่มนวลกว่า มักใช้ในสถานการณ์ที่เป็นทางการกว่า"
+      }
+    ],
+    "formLabel": "",
+    "conjugationSuffixRomaji": ""
+  },
+  {
+    "id": "sequencing-connectors",
+    "order": 21,
+    "level": "basic",
+    "title": "ลำดับเหตุการณ์ (それから/そのあと)",
+    "structure": "[ประโยค1] + それから/そのあと、+ [ประโยค2]",
+    "particles": [
+      {
+        "particle": "それから",
+        "role": "เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' วางไว้ต้นประโยคที่ 2"
+      },
+      {
+        "particle": "そのあと",
+        "role": "ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) ใช้แทนกันได้"
+      }
+    ],
+    "timeNote": "それから และ そのあと ทั้งคู่แปลว่า 'หลังจากนั้น/แล้วก็' ใช้เชื่อม 2 ประโยคที่เกิดขึ้นเรียงตามลำดับเวลา (ต่างจาก そして ที่เน้นการเพิ่มเติมข้อมูลทั่วไปมากกว่าลำดับเวลาชัดเจน) ทั้งสองคำใช้แทนกันได้ในระดับนี้ วางไว้ต้นประโยคที่ 2 เสมอ",
+    "conjugationField": null,
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "あさ おきます。それから、ごはんを たべます。",
+        "romaji": "Asa okimasu. Sorekara, gohan wo tabemasu.",
+        "thai": "ตื่นนอนตอนเช้า แล้วก็กินข้าว",
+        "kanji": [{ "text": "朝", "reading": "あさ" }, { "text": " " }, { "text": "起", "reading": "お" }, { "text": "きます" }, { "text": "。" }, { "text": "それから" }, { "text": "、" }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "がっこうへ いきます。そのあと、べんきょうします。",
+        "romaji": "Gakkou e ikimasu. Sono ato, benkyou shimasu.",
+        "thai": "ไปโรงเรียน หลังจากนั้นเรียน",
+        "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きます" }, { "text": "。" }, { "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }, { "text": "勉強", "reading": "べんきょう" }, { "text": "します" }, { "text": "。" }]
+      },
+      {
+        "japanese": "ほんを かいます。それから、よみます。",
+        "romaji": "Hon wo kaimasu. Sorekara, yomimasu.",
+        "thai": "ซื้อหนังสือ แล้วก็อ่าน",
+        "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "買", "reading": "か" }, { "text": "います" }, { "text": "。" }, { "text": "それから" }, { "text": "、" }, { "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "スポーツを します。そのあと、みずを のみます。",
+        "romaji": "Supootsu wo shimasu. Sono ato, mizu wo nomimasu.",
+        "thai": "ออกกำลังกาย หลังจากนั้นดื่มน้ำ",
+        "kanji": [{ "text": "スポーツを" }, { "text": " " }, { "text": "します" }, { "text": "。" }, { "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }, { "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "sequencing-connectors-1",
+        "promptThai": "พูดว่า: ตื่นนอน แล้วก็กินข้าว",
+        "chunks": [
+          { "text": "あさ おきます。", "kanji": [{ "text": "朝", "reading": "あさ" }, { "text": " " }, { "text": "起", "reading": "お" }, { "text": "きます" }, { "text": "。" }], "romaji": "Asa okimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "ごはんを たべます。", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べます" }, { "text": "。" }], "romaji": "Gohan wo tabemasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "あさ おきます。",
+          "それから、",
+          "ごはんを たべます。"
+        ],
+        "romaji": "Asa okimasu. Sorekara, Gohan wo tabemasu.",
+        "thai": "ตื่นนอน แล้วก็กินข้าว",
+        "explanation": "それから ใช้เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' เน้นลำดับก่อน-หลัง ไม่ใช่แค่การเพิ่มเติมข้อมูลทั่วไปแบบ そして"
+      },
+      {
+        "id": "sequencing-connectors-2",
+        "promptThai": "พูดว่า: ไปโรงเรียน แล้วก็เรียน",
+        "chunks": [
+          { "text": "がっこうへ いきます。", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きます" }, { "text": "。" }], "romaji": "Gakkou e ikimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "べんきょうします。", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "します" }, { "text": "。" }], "romaji": "Benkyou shimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "がっこうへ いきます。",
+          "それから、",
+          "べんきょうします。"
+        ],
+        "romaji": "Gakkou e ikimasu. Sorekara, Benkyou shimasu.",
+        "thai": "ไปโรงเรียน แล้วก็เรียน",
+        "explanation": "それから ใช้เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' เน้นลำดับก่อน-หลัง ไม่ใช่แค่การเพิ่มเติมข้อมูลทั่วไปแบบ そして"
+      },
+      {
+        "id": "sequencing-connectors-3",
+        "promptThai": "พูดว่า: ซื้อหนังสือ แล้วก็อ่าน",
+        "chunks": [
+          { "text": "ほんを かいます。", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "買", "reading": "か" }, { "text": "います" }, { "text": "。" }], "romaji": "Hon wo kaimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "よみます。", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }], "romaji": "Yomimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "ほんを かいます。",
+          "それから、",
+          "よみます。"
+        ],
+        "romaji": "Hon wo kaimasu. Sorekara, Yomimasu.",
+        "thai": "ซื้อหนังสือ แล้วก็อ่าน",
+        "explanation": "それから ใช้เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' เน้นลำดับก่อน-หลัง ไม่ใช่แค่การเพิ่มเติมข้อมูลทั่วไปแบบ そして"
+      },
+      {
+        "id": "sequencing-connectors-4",
+        "promptThai": "พูดว่า: ออกกำลังกาย แล้วก็ดื่มน้ำ",
+        "chunks": [
+          { "text": "スポーツを します。", "romaji": "Supootsu wo shimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "みずを のみます。", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }], "romaji": "Mizu wo nomimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "スポーツを します。",
+          "それから、",
+          "みずを のみます。"
+        ],
+        "romaji": "Supootsu wo shimasu. Sorekara, Mizu wo nomimasu.",
+        "thai": "ออกกำลังกาย แล้วก็ดื่มน้ำ",
+        "explanation": "それから ใช้เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' เน้นลำดับก่อน-หลัง ไม่ใช่แค่การเพิ่มเติมข้อมูลทั่วไปแบบ そして"
+      },
+      {
+        "id": "sequencing-connectors-5",
+        "promptThai": "พูดว่า: ดื่มกาแฟ แล้วก็อ่านหนังสือ",
+        "chunks": [
+          { "text": "コーヒーを のみます。", "romaji": "Koohii wo nomimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "ほんを よみます。", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }], "romaji": "Hon wo yomimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "コーヒーを のみます。",
+          "それから、",
+          "ほんを よみます。"
+        ],
+        "romaji": "Koohii wo nomimasu. Sorekara, Hon wo yomimasu.",
+        "thai": "ดื่มกาแฟ แล้วก็อ่านหนังสือ",
+        "explanation": "それから ใช้เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' เน้นลำดับก่อน-หลัง ไม่ใช่แค่การเพิ่มเติมข้อมูลทั่วไปแบบ そして"
+      },
+      {
+        "id": "sequencing-connectors-6",
+        "promptThai": "พูดว่า: เขียนจดหมาย แล้วก็รอ",
+        "chunks": [
+          { "text": "てがみを かきます。", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }, { "text": " " }, { "text": "書", "reading": "か" }, { "text": "きます" }, { "text": "。" }], "romaji": "Tegami wo kakimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "まちます。", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ちます" }, { "text": "。" }], "romaji": "Machimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "てがみを かきます。",
+          "それから、",
+          "まちます。"
+        ],
+        "romaji": "Tegami wo kakimasu. Sorekara, Machimasu.",
+        "thai": "เขียนจดหมาย แล้วก็รอ",
+        "explanation": "それから ใช้เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' เน้นลำดับก่อน-หลัง ไม่ใช่แค่การเพิ่มเติมข้อมูลทั่วไปแบบ そして"
+      },
+      {
+        "id": "sequencing-connectors-7",
+        "promptThai": "พูดว่า: พูดภาษาญี่ปุ่น แล้วก็เขียน",
+        "chunks": [
+          { "text": "にほんごを はなします。", "kanji": [{ "text": "日本語", "reading": "にほんご" }, { "text": "を" }, { "text": " " }, { "text": "話", "reading": "はな" }, { "text": "します" }, { "text": "。" }], "romaji": "Nihongo wo hanashimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "かきます。", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きます" }, { "text": "。" }], "romaji": "Kakimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "にほんごを はなします。",
+          "それから、",
+          "かきます。"
+        ],
+        "romaji": "Nihongo wo hanashimasu. Sorekara, Kakimasu.",
+        "thai": "พูดภาษาญี่ปุ่น แล้วก็เขียน",
+        "explanation": "それから ใช้เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' เน้นลำดับก่อน-หลัง ไม่ใช่แค่การเพิ่มเติมข้อมูลทั่วไปแบบ そして"
+      },
+      {
+        "id": "sequencing-connectors-8",
+        "promptThai": "พูดว่า: ทานากะมา แล้วก็คุยกัน",
+        "chunks": [
+          { "text": "たなかが きます。", "romaji": "Tanaka ga kimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "はなします。", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "します" }, { "text": "。" }], "romaji": "Hanashimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "たなかが きます。",
+          "それから、",
+          "はなします。"
+        ],
+        "romaji": "Tanaka ga kimasu. Sorekara, Hanashimasu.",
+        "thai": "ทานากะมา แล้วก็คุยกัน",
+        "explanation": "それから ใช้เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' เน้นลำดับก่อน-หลัง ไม่ใช่แค่การเพิ่มเติมข้อมูลทั่วไปแบบ そして"
+      },
+      {
+        "id": "sequencing-connectors-9",
+        "promptThai": "พูดว่า: ดื่มน้ำ แล้วก็นอน",
+        "chunks": [
+          { "text": "みずを のみます。", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }], "romaji": "Mizu wo nomimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "ねます。", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "ます" }, { "text": "。" }], "romaji": "Nemasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "みずを のみます。",
+          "それから、",
+          "ねます。"
+        ],
+        "romaji": "Mizu wo nomimasu. Sorekara, Nemasu.",
+        "thai": "ดื่มน้ำ แล้วก็นอน",
+        "explanation": "それから ใช้เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' เน้นลำดับก่อน-หลัง ไม่ใช่แค่การเพิ่มเติมข้อมูลทั่วไปแบบ そして"
+      },
+      {
+        "id": "sequencing-connectors-10",
+        "promptThai": "พูดว่า: นักเรียนอ่าน แล้วก็เขียน",
+        "chunks": [
+          { "text": "がくせいは よみます。", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }, { "text": " " }, { "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }], "romaji": "Gakusei wa yomimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "かきます。", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きます" }, { "text": "。" }], "romaji": "Kakimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "がくせいは よみます。",
+          "それから、",
+          "かきます。"
+        ],
+        "romaji": "Gakusei wa yomimasu. Sorekara, Kakimasu.",
+        "thai": "นักเรียนอ่าน แล้วก็เขียน",
+        "explanation": "それから ใช้เชื่อมเหตุการณ์ที่เกิดขึ้นตามลำดับเวลา แปลว่า 'หลังจากนั้น/แล้วก็' เน้นลำดับก่อน-หลัง ไม่ใช่แค่การเพิ่มเติมข้อมูลทั่วไปแบบ そして"
+      },
+      {
+        "id": "sequencing-connectors-11",
+        "promptThai": "พูดว่า: กินข้าว หลังจากนั้นดูทีวี",
+        "chunks": [
+          { "text": "ごはんを たべます。", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べます" }, { "text": "。" }], "romaji": "Gohan wo tabemasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "テレビを みます。", "romaji": "Terebi wo mimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "ごはんを たべます。",
+          "そのあと、",
+          "テレビを みます。"
+        ],
+        "romaji": "Gohan wo tabemasu. Sono ato, Terebi wo mimasu.",
+        "thai": "กินข้าว หลังจากนั้นดูทีวี",
+        "explanation": "そのあと ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) เน้นจุดเวลาที่ตามมาชัดเจน ใช้แทนกันกับ それから ได้ในระดับนี้"
+      },
+      {
+        "id": "sequencing-connectors-12",
+        "promptThai": "พูดว่า: ไปโรงเรียน หลังจากนั้นซื้อหนังสือ",
+        "chunks": [
+          { "text": "がっこうへ いきます。", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きます" }, { "text": "。" }], "romaji": "Gakkou e ikimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "ほんを かいます。", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "買", "reading": "か" }, { "text": "います" }, { "text": "。" }], "romaji": "Hon wo kaimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "がっこうへ いきます。",
+          "そのあと、",
+          "ほんを かいます。"
+        ],
+        "romaji": "Gakkou e ikimasu. Sono ato, Hon wo kaimasu.",
+        "thai": "ไปโรงเรียน หลังจากนั้นซื้อหนังสือ",
+        "explanation": "そのあと ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) เน้นจุดเวลาที่ตามมาชัดเจน ใช้แทนกันกับ それから ได้ในระดับนี้"
+      },
+      {
+        "id": "sequencing-connectors-13",
+        "promptThai": "พูดว่า: ออกกำลังกาย หลังจากนั้นนอน",
+        "chunks": [
+          { "text": "スポーツを します。", "romaji": "Supootsu wo shimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "ねます。", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "ます" }, { "text": "。" }], "romaji": "Nemasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "スポーツを します。",
+          "そのあと、",
+          "ねます。"
+        ],
+        "romaji": "Supootsu wo shimasu. Sono ato, Nemasu.",
+        "thai": "ออกกำลังกาย หลังจากนั้นนอน",
+        "explanation": "そのあと ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) เน้นจุดเวลาที่ตามมาชัดเจน ใช้แทนกันกับ それから ได้ในระดับนี้"
+      },
+      {
+        "id": "sequencing-connectors-14",
+        "promptThai": "พูดว่า: อ่านหนังสือ หลังจากนั้นเขียน",
+        "chunks": [
+          { "text": "ほんを よみます。", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }], "romaji": "Hon wo yomimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "かきます。", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きます" }, { "text": "。" }], "romaji": "Kakimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "ほんを よみます。",
+          "そのあと、",
+          "かきます。"
+        ],
+        "romaji": "Hon wo yomimasu. Sono ato, Kakimasu.",
+        "thai": "อ่านหนังสือ หลังจากนั้นเขียน",
+        "explanation": "そのあと ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) เน้นจุดเวลาที่ตามมาชัดเจน ใช้แทนกันกับ それから ได้ในระดับนี้"
+      },
+      {
+        "id": "sequencing-connectors-15",
+        "promptThai": "พูดว่า: ดื่มกาแฟ หลังจากนั้นคุยกัน",
+        "chunks": [
+          { "text": "コーヒーを のみます。", "romaji": "Koohii wo nomimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "はなします。", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "します" }, { "text": "。" }], "romaji": "Hanashimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "コーヒーを のみます。",
+          "そのあと、",
+          "はなします。"
+        ],
+        "romaji": "Koohii wo nomimasu. Sono ato, Hanashimasu.",
+        "thai": "ดื่มกาแฟ หลังจากนั้นคุยกัน",
+        "explanation": "そのあと ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) เน้นจุดเวลาที่ตามมาชัดเจน ใช้แทนกันกับ それから ได้ในระดับนี้"
+      },
+      {
+        "id": "sequencing-connectors-16",
+        "promptThai": "พูดว่า: เขียนจดหมาย หลังจากนั้นอ่าน",
+        "chunks": [
+          { "text": "てがみを かきます。", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }, { "text": " " }, { "text": "書", "reading": "か" }, { "text": "きます" }, { "text": "。" }], "romaji": "Tegami wo kakimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "よみます。", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }], "romaji": "Yomimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "てがみを かきます。",
+          "そのあと、",
+          "よみます。"
+        ],
+        "romaji": "Tegami wo kakimasu. Sono ato, Yomimasu.",
+        "thai": "เขียนจดหมาย หลังจากนั้นอ่าน",
+        "explanation": "そのあと ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) เน้นจุดเวลาที่ตามมาชัดเจน ใช้แทนกันกับ それから ได้ในระดับนี้"
+      },
+      {
+        "id": "sequencing-connectors-17",
+        "promptThai": "พูดว่า: รอเธอ หลังจากนั้นคุยกัน",
+        "chunks": [
+          { "text": "かのじょを まちます。", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "を" }, { "text": " " }, { "text": "待", "reading": "ま" }, { "text": "ちます" }, { "text": "。" }], "romaji": "Kanojo wo machimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "はなします。", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "します" }, { "text": "。" }], "romaji": "Hanashimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "かのじょを まちます。",
+          "そのあと、",
+          "はなします。"
+        ],
+        "romaji": "Kanojo wo machimasu. Sono ato, Hanashimasu.",
+        "thai": "รอเธอ หลังจากนั้นคุยกัน",
+        "explanation": "そのあと ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) เน้นจุดเวลาที่ตามมาชัดเจน ใช้แทนกันกับ それから ได้ในระดับนี้"
+      },
+      {
+        "id": "sequencing-connectors-18",
+        "promptThai": "พูดว่า: ออกกำลังกาย หลังจากนั้นดื่มน้ำ",
+        "chunks": [
+          { "text": "スポーツを します。", "romaji": "Supootsu wo shimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "みずを のみます。", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }], "romaji": "Mizu wo nomimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "スポーツを します。",
+          "そのあと、",
+          "みずを のみます。"
+        ],
+        "romaji": "Supootsu wo shimasu. Sono ato, Mizu wo nomimasu.",
+        "thai": "ออกกำลังกาย หลังจากนั้นดื่มน้ำ",
+        "explanation": "そのあと ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) เน้นจุดเวลาที่ตามมาชัดเจน ใช้แทนกันกับ それから ได้ในระดับนี้"
+      },
+      {
+        "id": "sequencing-connectors-19",
+        "promptThai": "พูดว่า: นักเรียนเรียน หลังจากนั้นนอน",
+        "chunks": [
+          { "text": "がくせいは べんきょうします。", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }, { "text": " " }, { "text": "勉強", "reading": "べんきょう" }, { "text": "します" }, { "text": "。" }], "romaji": "Gakusei wa benkyou shimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "ねます。", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "ます" }, { "text": "。" }], "romaji": "Nemasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "がくせいは べんきょうします。",
+          "そのあと、",
+          "ねます。"
+        ],
+        "romaji": "Gakusei wa benkyou shimasu. Sono ato, Nemasu.",
+        "thai": "นักเรียนเรียน หลังจากนั้นนอน",
+        "explanation": "そのあと ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) เน้นจุดเวลาที่ตามมาชัดเจน ใช้แทนกันกับ それから ได้ในระดับนี้"
+      },
+      {
+        "id": "sequencing-connectors-20",
+        "promptThai": "พูดว่า: ครูเขียนหนังสือ หลังจากนั้นอ่าน",
+        "chunks": [
+          { "text": "せんせいは ほんを かきます。", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "書", "reading": "か" }, { "text": "きます" }, { "text": "。" }], "romaji": "Sensei wa hon wo kakimasu." },
+          { "text": "そのあと、", "kanji": [{ "text": "その" }, { "text": "後", "reading": "あと" }, { "text": "、" }], "romaji": "sono ato," },
+          { "text": "よみます。", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }], "romaji": "Yomimasu." },
+          { "text": "それから、", "romaji": "sorekara," },
+          { "text": "そして、", "romaji": "soshite," },
+          { "text": "でも、", "romaji": "demo," }
+        ],
+        "correctOrder": [
+          "せんせいは ほんを かきます。",
+          "そのあと、",
+          "よみます。"
+        ],
+        "romaji": "Sensei wa hon wo kakimasu. Sono ato, Yomimasu.",
+        "thai": "ครูเขียนหนังสือ หลังจากนั้นอ่าน",
+        "explanation": "そのあと ความหมายเหมือน それから (หลังจากนั้น) มาจาก その (นั้น) + あと (หลังจาก) เน้นจุดเวลาที่ตามมาชัดเจน ใช้แทนกันกับ それから ได้ในระดับนี้"
+      }
+    ],
+    "formLabel": "",
+    "conjugationSuffixRomaji": ""
+  },
+  {
+    "id": "deshou",
+    "order": 22,
+    "level": "intermediate",
+    "title": "คาดเดา/ขอความเห็นชอบ (でしょう)",
+    "structure": "[รูปพจนานุกรม/คำคุณศัพท์/คำนาม] + でしょう",
+    "particles": [
+      {
+        "particle": "でしょう",
+        "role": "ใช้คาดเดาว่า 'คงจะ...' (อ่านเสียงลง) หรือใช้ขอความเห็นชอบ/ยืนยัน '...ใช่ไหม' (อ่านเสียงขึ้น) ขึ้นอยู่กับน้ำเสียง"
+      }
+    ],
+    "timeNote": "でしょう ต่อท้ายรูปพจนานุกรมของกริยา, รูปธรรมดาของคำคุณศัพท์ い, หรือคำนาม/な-adjective โดยตรง (ไม่ต้องมี です นำหน้า) มี 2 การใช้งานหลัก: (1) คาดเดาอย่างไม่มั่นใจ 100% แปลว่า 'คงจะ...' เช่น あめでしょう (คงจะฝนตก) (2) ขอความเห็นชอบ/ยืนยันจากผู้ฟัง (อ่านเสียงสูงขึ้นท้ายประโยค หรือเขียน ?) แปลว่า '...ใช่ไหม/...นะ' เช่น きれいでしょう? (สวยใช่ไหม)",
+    "conjugationField": null,
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "あしたは あめでしょう。",
+        "romaji": "Ashita wa ame deshou.",
+        "thai": "พรุ่งนี้คงจะฝนตก",
+        "kanji": [{ "text": "明日", "reading": "あした" }, { "text": "は" }, { "text": " " }, { "text": "雨", "reading": "あめ" }, { "text": "でしょう" }, { "text": "。" }]
+      },
+      {
+        "japanese": "これは たかいでしょう。",
+        "romaji": "Kore wa takai deshou.",
+        "thai": "อันนี้คงจะแพง",
+        "kanji": [{ "text": "これ" }, { "text": "は" }, { "text": " " }, { "text": "高", "reading": "たか" }, { "text": "いでしょう" }, { "text": "。" }]
+      },
+      {
+        "japanese": "かれは くるでしょう。",
+        "romaji": "Kare wa kuru deshou.",
+        "thai": "เขาคงจะมา",
+        "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }, { "text": " " }, { "text": "来", "reading": "く" }, { "text": "るでしょう" }, { "text": "。" }]
+      },
+      {
+        "japanese": "これは きれいでしょう？",
+        "romaji": "Kore wa kirei deshou?",
+        "thai": "อันนี้สวยใช่ไหม",
+        "kanji": [{ "text": "これ" }, { "text": "は" }, { "text": " " }, { "text": "きれいでしょう" }, { "text": "？" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "deshou-1",
+        "promptThai": "พูดว่า: พรุ่งนี้คงจะฝนตก",
+        "chunks": [
+          { "text": "あしたは", "kanji": [{ "text": "明日", "reading": "あした" }, { "text": "は" }], "romaji": "ashita wa" },
+          { "text": "あめでしょう", "kanji": [{ "text": "雨でしょう" }], "romaji": "ame deshou" },
+          { "text": "あめです", "kanji": [{ "text": "雨", "reading": "あめ" }, { "text": "です" }], "romaji": "ame desu." },
+          { "text": "あめでしょうか", "kanji": [{ "text": "雨でしょうか" }], "romaji": "ame deshou ka" }
+        ],
+        "correctOrder": [
+          "あしたは",
+          "あめでしょう"
+        ],
+        "romaji": "Ashita wa ame deshou.",
+        "thai": "พรุ่งนี้คงจะฝนตก",
+        "explanation": "でしょう ต่อท้ายรูปพจนานุกรม (กริยา)/รูปธรรมดา (คำคุณศัพท์ い)/คำนามหรือ な-adjective โดยตรง (ไม่ต้องมี です) ใช้คาดเดาว่า 'คงจะ...' อย่างไม่มั่นใจ 100%"
+      },
+      {
+        "id": "deshou-2",
+        "promptThai": "พูดว่า: พรุ่งนี้คงจะหนาว",
+        "chunks": [
+          { "text": "あしたは", "kanji": [{ "text": "明日", "reading": "あした" }, { "text": "は" }], "romaji": "ashita wa" },
+          { "text": "さむいでしょう", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "いでしょう" }], "romaji": "samui deshou" },
+          { "text": "さむいです", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "いです" }], "romaji": "samui desu." },
+          { "text": "さむいでしょうか", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "いでしょうか" }], "romaji": "samui deshou ka" }
+        ],
+        "correctOrder": [
+          "あしたは",
+          "さむいでしょう"
+        ],
+        "romaji": "Ashita wa samui deshou.",
+        "thai": "พรุ่งนี้คงจะหนาว",
+        "explanation": "でしょう ต่อท้ายรูปพจนานุกรม (กริยา)/รูปธรรมดา (คำคุณศัพท์ い)/คำนามหรือ な-adjective โดยตรง (ไม่ต้องมี です) ใช้คาดเดาว่า 'คงจะ...' อย่างไม่มั่นใจ 100%"
+      },
+      {
+        "id": "deshou-3",
+        "promptThai": "พูดว่า: อันนี้คงจะแพง",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "たかいでしょう", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いでしょう" }], "romaji": "takai deshou" },
+          { "text": "たかいです", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いです" }], "romaji": "takai desu." },
+          { "text": "たかいでしょうか", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いでしょうか" }], "romaji": "takai deshou ka" }
+        ],
+        "correctOrder": [
+          "これは",
+          "たかいでしょう"
+        ],
+        "romaji": "Kore wa takai deshou.",
+        "thai": "อันนี้คงจะแพง",
+        "explanation": "でしょう ต่อท้ายรูปพจนานุกรม (กริยา)/รูปธรรมดา (คำคุณศัพท์ い)/คำนามหรือ な-adjective โดยตรง (ไม่ต้องมี です) ใช้คาดเดาว่า 'คงจะ...' อย่างไม่มั่นใจ 100%"
+      },
+      {
+        "id": "deshou-4",
+        "promptThai": "พูดว่า: เขาคงจะมา",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "くるでしょう", "kanji": [{ "text": "来", "reading": "く" }, { "text": "るでしょう" }], "romaji": "kuru deshou" },
+          { "text": "きます", "kanji": [{ "text": "来", "reading": "き" }, { "text": "ます" }], "romaji": "kimasu." },
+          { "text": "くるでしょうか", "kanji": [{ "text": "来", "reading": "く" }, { "text": "るでしょうか" }], "romaji": "kuru deshou ka" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "くるでしょう"
+        ],
+        "romaji": "Kare wa kuru deshou.",
+        "thai": "เขาคงจะมา",
+        "explanation": "でしょう ต่อท้ายรูปพจนานุกรม (กริยา)/รูปธรรมดา (คำคุณศัพท์ い)/คำนามหรือ な-adjective โดยตรง (ไม่ต้องมี です) ใช้คาดเดาว่า 'คงจะ...' อย่างไม่มั่นใจ 100%"
+      },
+      {
+        "id": "deshou-5",
+        "promptThai": "พูดว่า: ทานากะคงจะไป",
+        "chunks": [
+          { "text": "たなかは", "romaji": "Tanaka wa" },
+          { "text": "いくでしょう", "kanji": [{ "text": "行", "reading": "い" }, { "text": "くでしょう" }], "romaji": "iku deshou" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu." },
+          { "text": "いくでしょうか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "くでしょうか" }], "romaji": "iku deshou ka" }
+        ],
+        "correctOrder": [
+          "たなかは",
+          "いくでしょう"
+        ],
+        "romaji": "Tanaka wa iku deshou.",
+        "thai": "ทานากะคงจะไป",
+        "explanation": "でしょう ต่อท้ายรูปพจนานุกรม (กริยา)/รูปธรรมดา (คำคุณศัพท์ い)/คำนามหรือ な-adjective โดยตรง (ไม่ต้องมี です) ใช้คาดเดาว่า 'คงจะ...' อย่างไม่มั่นใจ 100%"
+      },
+      {
+        "id": "deshou-6",
+        "promptThai": "พูดว่า: พรุ่งนี้คงจะร้อน",
+        "chunks": [
+          { "text": "あしたは", "kanji": [{ "text": "明日", "reading": "あした" }, { "text": "は" }], "romaji": "ashita wa" },
+          { "text": "あついでしょう", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いでしょう" }], "romaji": "atsui deshou" },
+          { "text": "あついです", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いです" }], "romaji": "atsui desu." },
+          { "text": "あついでしょうか", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いでしょうか" }], "romaji": "atsui deshou ka" }
+        ],
+        "correctOrder": [
+          "あしたは",
+          "あついでしょう"
+        ],
+        "romaji": "Ashita wa atsui deshou.",
+        "thai": "พรุ่งนี้คงจะร้อน",
+        "explanation": "でしょう ต่อท้ายรูปพจนานุกรม (กริยา)/รูปธรรมดา (คำคุณศัพท์ い)/คำนามหรือ な-adjective โดยตรง (ไม่ต้องมี です) ใช้คาดเดาว่า 'คงจะ...' อย่างไม่มั่นใจ 100%"
+      },
+      {
+        "id": "deshou-7",
+        "promptThai": "พูดว่า: อันนี้สวยใช่ไหม",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "きれいでしょう", "romaji": "kirei deshou" },
+          { "text": "きれいです", "romaji": "kirei desu." },
+          { "text": "きれいでしょうか", "romaji": "kirei deshou ka" }
+        ],
+        "correctOrder": [
+          "これは",
+          "きれいでしょう"
+        ],
+        "romaji": "Kore wa kirei deshou.",
+        "thai": "อันนี้สวยใช่ไหม",
+        "explanation": "でしょう ที่ลงท้ายด้วยเสียงสูง (หรือเขียน ? ) ใช้ขอความเห็นชอบ/ยืนยันจากผู้ฟัง แปลว่า '...ใช่ไหม/...นะ'"
+      },
+      {
+        "id": "deshou-8",
+        "promptThai": "พูดว่า: นักเรียนคงจะเรียน",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "べんきょうするでしょう", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "するでしょう" }], "romaji": "benkyou suru deshou" },
+          { "text": "べんきょうします", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "します" }], "romaji": "benkyou shimasu." },
+          { "text": "べんきょうするでしょうか", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "するでしょうか" }], "romaji": "benkyou suru deshou ka" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "べんきょうするでしょう"
+        ],
+        "romaji": "Gakusei wa benkyou suru deshou.",
+        "thai": "นักเรียนคงจะเรียน",
+        "explanation": "でしょう ต่อท้ายรูปพจนานุกรม (กริยา)/รูปธรรมดา (คำคุณศัพท์ い)/คำนามหรือ な-adjective โดยตรง (ไม่ต้องมี です) ใช้คาดเดาว่า 'คงจะ...' อย่างไม่มั่นใจ 100%"
+      },
+      {
+        "id": "deshou-9",
+        "promptThai": "พูดว่า: ครูคงจะสบายดี",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "げんきでしょう", "kanji": [{ "text": "元気でしょう" }], "romaji": "genki deshou" },
+          { "text": "げんきです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }], "romaji": "genki desu." },
+          { "text": "げんきでしょうか", "kanji": [{ "text": "元気でしょうか" }], "romaji": "genki deshou ka" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "げんきでしょう"
+        ],
+        "romaji": "Sensei wa genki deshou.",
+        "thai": "ครูคงจะสบายดี",
+        "explanation": "でしょう ต่อท้ายรูปพจนานุกรม (กริยา)/รูปธรรมดา (คำคุณศัพท์ い)/คำนามหรือ な-adjective โดยตรง (ไม่ต้องมี です) ใช้คาดเดาว่า 'คงจะ...' อย่างไม่มั่นใจ 100%"
+      },
+      {
+        "id": "deshou-10",
+        "promptThai": "พูดว่า: เธอคงจะอ่านหนังสือ",
+        "chunks": [
+          { "text": "かのじょは ほんを", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "kanojo wa hon wo" },
+          { "text": "よむでしょう", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "むでしょう" }], "romaji": "yomu deshou" },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu." },
+          { "text": "よむでしょうか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "むでしょうか" }], "romaji": "yomu deshou ka" }
+        ],
+        "correctOrder": [
+          "かのじょは ほんを",
+          "よむでしょう"
+        ],
+        "romaji": "Kanojo wa hon wo yomu deshou.",
+        "thai": "เธอคงจะอ่านหนังสือ",
+        "explanation": "でしょう ต่อท้ายรูปพจนานุกรม (กริยา)/รูปธรรมดา (คำคุณศัพท์ い)/คำนามหรือ な-adjective โดยตรง (ไม่ต้องมี です) ใช้คาดเดาว่า 'คงจะ...' อย่างไม่มั่นใจ 100%"
+      },
+      {
+        "id": "deshou-11",
+        "promptThai": "พูดว่า: อันนี้ถูกใช่ไหม",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "やすいでしょう", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "いでしょう" }], "romaji": "yasui deshou" },
+          { "text": "やすいです", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "いです" }], "romaji": "yasui desu." },
+          { "text": "やすいでしょうか", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "いでしょうか" }], "romaji": "yasui deshou ka" }
+        ],
+        "correctOrder": [
+          "これは",
+          "やすいでしょう"
+        ],
+        "romaji": "Kore wa yasui deshou.",
+        "thai": "อันนี้ถูกใช่ไหม",
+        "explanation": "でしょう ที่ลงท้ายด้วยเสียงสูง (หรือเขียน ? ) ใช้ขอความเห็นชอบ/ยืนยันจากผู้ฟัง แปลว่า '...ใช่ไหม/...นะ'"
+      },
+      {
+        "id": "deshou-12",
+        "promptThai": "พูดว่า: อากาศพรุ่งนี้คงจะดี",
+        "chunks": [
+          { "text": "あしたの てんきは", "kanji": [{ "text": "明日", "reading": "あした" }, { "text": "の" }, { "text": " " }, { "text": "天気", "reading": "てんき" }, { "text": "は" }], "romaji": "ashita no tenki wa" },
+          { "text": "いいでしょう", "romaji": "ii deshou" },
+          { "text": "いいです", "romaji": "ii desu." },
+          { "text": "いいでしょうか", "romaji": "ii deshou ka" }
+        ],
+        "correctOrder": [
+          "あしたの てんきは",
+          "いいでしょう"
+        ],
+        "romaji": "Ashita no tenki wa ii deshou.",
+        "thai": "อากาศพรุ่งนี้คงจะดี",
+        "explanation": "でしょう ต่อท้ายรูปพจนานุกรม (กริยา)/รูปธรรมดา (คำคุณศัพท์ い)/คำนามหรือ な-adjective โดยตรง (ไม่ต้องมี です) ใช้คาดเดาว่า 'คงจะ...' อย่างไม่มั่นใจ 100%"
+      }
+    ],
+    "formLabel": "",
+    "conjugationSuffixRomaji": ""
+  },
+  {
+    "id": "conditionals",
+    "order": 23,
+    "level": "advanced",
+    "title": "เงื่อนไข (と/たら/ば/なら)",
+    "structure": "[เงื่อนไข] + と/たら/ば/なら + [ผลลัพธ์]",
+    "particles": [
+      {
+        "particle": "と",
+        "role": "แปลว่า 'ถ้า...แล้ว' ใช้กับผลลัพธ์อัตโนมัติ/แน่นอนเสมอ (เช่นกฎทั่วไป) ตามด้วยรูปพจนานุกรม + と"
+      },
+      {
+        "particle": "たら",
+        "role": "แปลว่า 'พอ...แล้วก็' ใช้ได้ทั่วไปกับเงื่อนไขทุกแบบ ผันจากรูปอดีต (た) + ら"
+      },
+      {
+        "particle": "ば",
+        "role": "แปลว่า 'ถ้า...แล้ว' ใช้ในโทนที่เป็นทางการ/ลายลักษณ์อักษรมากกว่า เน้นคำแนะนำทั่วไป"
+      },
+      {
+        "particle": "なら",
+        "role": "แปลว่า 'ถ้า...ล่ะก็' ใช้ตอบสนองต่อเรื่องที่มีคนอื่นพูดถึงมาก่อน วางไว้หลังหัวข้อที่กำลังพูดถึง"
+      }
+    ],
+    "timeNote": "ภาษาญี่ปุ่นมีรูปเงื่อนไข 4 แบบที่ความหมายใกล้เคียงกันแต่ใช้ต่างสถานการณ์: と ใช้กับผลลัพธ์ที่เกิดขึ้นอัตโนมัติ/แน่นอนเสมอ (เหมือนกฎ) — たら ใช้ทั่วไปที่สุด เหมาะกับ 'พอ...แล้วก็ทำ...' มักตามด้วยแผนการหรือคำแนะนำ — ば ใช้ในโทนที่เป็นทางการ/ลายลักษณ์อักษรมากกว่า เน้นคำแนะนำทั่วไปว่า 'ถ้าทำแบบนี้ก็โอเค' — なら ใช้ตอบสนองต่อสิ่งที่มีคนอื่นพูดถึงมาก่อน (topic-based) ไม่ใช่แค่เงื่อนไขทั่วไป แต่เป็นการตอบกลับเรื่องที่ยกขึ้นมาแล้ว ทั้ง 4 แบบแปลเป็นไทยว่า 'ถ้า...' ได้เหมือนกัน แต่เลือกใช้ต่างกันตามบริบท",
+    "conjugationField": null,
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "はやく おきると、げんきです。",
+        "romaji": "Hayaku okiru to, genki desu.",
+        "thai": "ถ้าตื่นเช้าก็จะสดชื่น (เป็นความจริงทั่วไป)",
+        "kanji": [{ "text": "はやく" }, { "text": " " }, { "text": "起", "reading": "お" }, { "text": "きると" }, { "text": "、" }, { "text": "元気", "reading": "げんき" }, { "text": "です" }, { "text": "。" }]
+      },
+      {
+        "japanese": "ほんを よんだら、ねましょう。",
+        "romaji": "Hon wo yondara, nemashou.",
+        "thai": "พออ่านหนังสือเสร็จแล้วนอนกันเถอะ",
+        "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "読", "reading": "よ" }, { "text": "んだら" }, { "text": "、" }, { "text": "寝", "reading": "ね" }, { "text": "ましょう" }, { "text": "。" }]
+      },
+      {
+        "japanese": "はやく おきれば、げんきです。",
+        "romaji": "Hayaku okireba, genki desu.",
+        "thai": "ถ้าตื่นเช้าก็จะสดชื่น (โทนทางการกว่าประโยคแรก)",
+        "kanji": [{ "text": "はやく" }, { "text": " " }, { "text": "起", "reading": "お" }, { "text": "きれば" }, { "text": "、" }, { "text": "元気", "reading": "げんき" }, { "text": "です" }, { "text": "。" }]
+      },
+      {
+        "japanese": "たなかが いくなら、わたしも いきます。",
+        "romaji": "Tanaka ga iku nara, watashi mo ikimasu.",
+        "thai": "ถ้าทานากะจะไปล่ะก็ ฉันจะไปด้วย",
+        "kanji": [{ "text": "たなか" }, { "text": "が" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "くなら" }, { "text": "、" }, { "text": "私", "reading": "わたし" }, { "text": "も" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きます" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "conditionals-1",
+        "promptThai": "พูดว่า: ถ้าตื่นเช้าก็จะสดชื่น",
+        "chunks": [
+          { "text": "はやく", "romaji": "hayaku" },
+          { "text": "おきると", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きると" }], "romaji": "okiru to" },
+          { "text": "おきたら", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きたら" }], "romaji": "okitara" },
+          { "text": "おきれば", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きれば" }], "romaji": "okireba" },
+          { "text": "おきるなら", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きるなら" }], "romaji": "okiru nara" },
+          { "text": "げんきです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }], "romaji": "genki desu" }
+        ],
+        "correctOrder": [
+          "はやく",
+          "おきると",
+          "げんきです"
+        ],
+        "romaji": "Hayaku okiru to genki desu.",
+        "thai": "ถ้าตื่นเช้าก็จะสดชื่น",
+        "explanation": "と ใช้บอกผลลัพธ์ที่เกิดขึ้นโดยอัตโนมัติ/แน่นอนเสมอเมื่อเงื่อนไขนั้นเกิดขึ้น (เหมือนกฎทั่วไป) ตามด้วยรูปพจนานุกรม + と"
+      },
+      {
+        "id": "conditionals-2",
+        "promptThai": "พูดว่า: ถ้าออกกำลังกายก็จะสดชื่น",
+        "chunks": [
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "すると", "romaji": "suru to" },
+          { "text": "したら", "romaji": "shitara" },
+          { "text": "すれば", "romaji": "sureba" },
+          { "text": "するなら", "romaji": "suru nara" },
+          { "text": "げんきです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }], "romaji": "genki desu" }
+        ],
+        "correctOrder": [
+          "スポーツを",
+          "すると",
+          "げんきです"
+        ],
+        "romaji": "Supootsu wo suru to genki desu.",
+        "thai": "ถ้าออกกำลังกายก็จะสดชื่น",
+        "explanation": "と ใช้บอกผลลัพธ์ที่เกิดขึ้นโดยอัตโนมัติ/แน่นอนเสมอเมื่อเงื่อนไขนั้นเกิดขึ้น (เหมือนกฎทั่วไป) ตามด้วยรูปพจนานุกรม + と"
+      },
+      {
+        "id": "conditionals-3",
+        "promptThai": "พูดว่า: ถ้าดื่มกาแฟก็จะสดชื่น",
+        "chunks": [
+          { "text": "コーヒーを", "romaji": "koohii wo" },
+          { "text": "のむと", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "むと" }], "romaji": "nomu to" },
+          { "text": "のんだら", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んだら" }], "romaji": "nondara" },
+          { "text": "のめば", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "めば" }], "romaji": "nomeba" },
+          { "text": "のむなら", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "むなら" }], "romaji": "nomu nara" },
+          { "text": "げんきです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }], "romaji": "genki desu" }
+        ],
+        "correctOrder": [
+          "コーヒーを",
+          "のむと",
+          "げんきです"
+        ],
+        "romaji": "Koohii wo nomu to genki desu.",
+        "thai": "ถ้าดื่มกาแฟก็จะสดชื่น",
+        "explanation": "と ใช้บอกผลลัพธ์ที่เกิดขึ้นโดยอัตโนมัติ/แน่นอนเสมอเมื่อเงื่อนไขนั้นเกิดขึ้น (เหมือนกฎทั่วไป) ตามด้วยรูปพจนานุกรม + と"
+      },
+      {
+        "id": "conditionals-4",
+        "promptThai": "พูดว่า: ถ้ากินผักก็จะสดชื่น",
+        "chunks": [
+          { "text": "やさいを", "kanji": [{ "text": "野菜", "reading": "やさい" }, { "text": "を" }], "romaji": "yasai wo" },
+          { "text": "たべると", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べると" }], "romaji": "taberu to" },
+          { "text": "たべたら", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたら" }], "romaji": "tabetara" },
+          { "text": "たべれば", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べれば" }], "romaji": "tabereba" },
+          { "text": "たべるなら", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べるなら" }], "romaji": "taberu nara" },
+          { "text": "げんきです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }], "romaji": "genki desu" }
+        ],
+        "correctOrder": [
+          "やさいを",
+          "たべると",
+          "げんきです"
+        ],
+        "romaji": "Yasai wo taberu to genki desu.",
+        "thai": "ถ้ากินผักก็จะสดชื่น",
+        "explanation": "と ใช้บอกผลลัพธ์ที่เกิดขึ้นโดยอัตโนมัติ/แน่นอนเสมอเมื่อเงื่อนไขนั้นเกิดขึ้น (เหมือนกฎทั่วไป) ตามด้วยรูปพจนานุกรม + と"
+      },
+      {
+        "id": "conditionals-5",
+        "promptThai": "พูดว่า: ถ้าเขียนจดหมายก็ดี",
+        "chunks": [
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "かくと", "kanji": [{ "text": "書", "reading": "か" }, { "text": "くと" }], "romaji": "kaku to" },
+          { "text": "かいたら", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いたら" }], "romaji": "kaitara" },
+          { "text": "かけば", "kanji": [{ "text": "書", "reading": "か" }, { "text": "けば" }], "romaji": "kakeba" },
+          { "text": "かくなら", "kanji": [{ "text": "書", "reading": "か" }, { "text": "くなら" }], "romaji": "kaku nara" },
+          { "text": "いいです", "romaji": "ii desu" }
+        ],
+        "correctOrder": [
+          "てがみを",
+          "かくと",
+          "いいです"
+        ],
+        "romaji": "Tegami wo kaku to ii desu.",
+        "thai": "ถ้าเขียนจดหมายก็ดี",
+        "explanation": "と ใช้บอกผลลัพธ์ที่เกิดขึ้นโดยอัตโนมัติ/แน่นอนเสมอเมื่อเงื่อนไขนั้นเกิดขึ้น (เหมือนกฎทั่วไป) ตามด้วยรูปพจนานุกรม + と"
+      },
+      {
+        "id": "conditionals-6",
+        "promptThai": "พูดว่า: พออ่านหนังสือเสร็จแล้วนอนกันเถอะ",
+        "chunks": [
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よんだら", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んだら" }], "romaji": "yondara" },
+          { "text": "よむと", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "むと" }], "romaji": "yomu to" },
+          { "text": "よめば", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "めば" }], "romaji": "yomeba" },
+          { "text": "よむなら", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "むなら" }], "romaji": "yomu nara" },
+          { "text": "ねましょう", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "ましょう" }], "romaji": "nemashou" }
+        ],
+        "correctOrder": [
+          "ほんを",
+          "よんだら",
+          "ねましょう"
+        ],
+        "romaji": "Hon wo yondara nemashou.",
+        "thai": "พออ่านหนังสือเสร็จแล้วนอนกันเถอะ",
+        "explanation": "たら ใช้ได้ทั่วไปกับเงื่อนไขแบบ 'พอ...แล้วก็...' มักตามด้วยคำแนะนำ/แผนการในอนาคต ผันจากรูปอดีต (た) + ら"
+      },
+      {
+        "id": "conditionals-7",
+        "promptThai": "พูดว่า: พอถึงโรงเรียนแล้วเรียนกันเถอะ",
+        "chunks": [
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
+          { "text": "いったら", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ったら" }], "romaji": "ittara" },
+          { "text": "いくと", "kanji": [{ "text": "行", "reading": "い" }, { "text": "くと" }], "romaji": "iku to" },
+          { "text": "いけば", "kanji": [{ "text": "行", "reading": "い" }, { "text": "けば" }], "romaji": "ikeba" },
+          { "text": "いくなら", "kanji": [{ "text": "行", "reading": "い" }, { "text": "くなら" }], "romaji": "iku nara" },
+          { "text": "べんきょうしましょう", "kanji": [{ "text": "勉強", "reading": "べんきょう" }, { "text": "しましょう" }], "romaji": "benkyou shimashou" }
+        ],
+        "correctOrder": [
+          "がっこうへ",
+          "いったら",
+          "べんきょうしましょう"
+        ],
+        "romaji": "Gakkou e ittara benkyou shimashou.",
+        "thai": "พอถึงโรงเรียนแล้วเรียนกันเถอะ",
+        "explanation": "たら ใช้ได้ทั่วไปกับเงื่อนไขแบบ 'พอ...แล้วก็...' มักตามด้วยคำแนะนำ/แผนการในอนาคต ผันจากรูปอดีต (た) + ら"
+      },
+      {
+        "id": "conditionals-8",
+        "promptThai": "พูดว่า: พอกินข้าวเสร็จแล้วดูทีวีกันเถอะ",
+        "chunks": [
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべたら", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたら" }], "romaji": "tabetara" },
+          { "text": "たべると", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べると" }], "romaji": "taberu to" },
+          { "text": "たべれば", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べれば" }], "romaji": "tabereba" },
+          { "text": "たべるなら", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べるなら" }], "romaji": "taberu nara" },
+          { "text": "テレビを みましょう", "romaji": "terebi wo mimashou" }
+        ],
+        "correctOrder": [
+          "ごはんを",
+          "たべたら",
+          "テレビを みましょう"
+        ],
+        "romaji": "Gohan wo tabetara terebi wo mimashou.",
+        "thai": "พอกินข้าวเสร็จแล้วดูทีวีกันเถอะ",
+        "explanation": "たら ใช้ได้ทั่วไปกับเงื่อนไขแบบ 'พอ...แล้วก็...' มักตามด้วยคำแนะนำ/แผนการในอนาคต ผันจากรูปอดีต (た) + ら"
+      },
+      {
+        "id": "conditionals-9",
+        "promptThai": "พูดว่า: พอดื่มน้ำเสร็จแล้วไปกันเถอะ",
+        "chunks": [
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
+          { "text": "のんだら", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んだら" }], "romaji": "nondara" },
+          { "text": "のむと", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "むと" }], "romaji": "nomu to" },
+          { "text": "のめば", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "めば" }], "romaji": "nomeba" },
+          { "text": "のむなら", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "むなら" }], "romaji": "nomu nara" },
+          { "text": "いきましょう", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きましょう" }], "romaji": "ikimashou" }
+        ],
+        "correctOrder": [
+          "みずを",
+          "のんだら",
+          "いきましょう"
+        ],
+        "romaji": "Mizu wo nondara ikimashou.",
+        "thai": "พอดื่มน้ำเสร็จแล้วไปกันเถอะ",
+        "explanation": "たら ใช้ได้ทั่วไปกับเงื่อนไขแบบ 'พอ...แล้วก็...' มักตามด้วยคำแนะนำ/แผนการในอนาคต ผันจากรูปอดีต (た) + ら"
+      },
+      {
+        "id": "conditionals-10",
+        "promptThai": "พูดว่า: พอออกกำลังกายเสร็จแล้วดื่มน้ำกันเถอะ",
+        "chunks": [
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "したら", "romaji": "shitara" },
+          { "text": "すると", "romaji": "suru to" },
+          { "text": "すれば", "romaji": "sureba" },
+          { "text": "するなら", "romaji": "suru nara" },
+          { "text": "みずを のみましょう", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みましょう" }], "romaji": "mizu wo nomimashou" }
+        ],
+        "correctOrder": [
+          "スポーツを",
+          "したら",
+          "みずを のみましょう"
+        ],
+        "romaji": "Supootsu wo shitara mizu wo nomimashou.",
+        "thai": "พอออกกำลังกายเสร็จแล้วดื่มน้ำกันเถอะ",
+        "explanation": "たら ใช้ได้ทั่วไปกับเงื่อนไขแบบ 'พอ...แล้วก็...' มักตามด้วยคำแนะนำ/แผนการในอนาคต ผันจากรูปอดีต (た) + ら"
+      },
+      {
+        "id": "conditionals-11",
+        "promptThai": "พูดว่า: ถ้าตื่นเช้าก็จะสดชื่น (แบบทางการ)",
+        "chunks": [
+          { "text": "はやく", "romaji": "hayaku" },
+          { "text": "おきれば", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きれば" }], "romaji": "okireba" },
+          { "text": "おきると", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きると" }], "romaji": "okiru to" },
+          { "text": "おきたら", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きたら" }], "romaji": "okitara" },
+          { "text": "おきるなら", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きるなら" }], "romaji": "okiru nara" },
+          { "text": "げんきです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }], "romaji": "genki desu" }
+        ],
+        "correctOrder": [
+          "はやく",
+          "おきれば",
+          "げんきです"
+        ],
+        "romaji": "Hayaku okireba genki desu.",
+        "thai": "ถ้าตื่นเช้าก็จะสดชื่น (แบบทางการ)",
+        "explanation": "ば ใช้ในโทนที่เป็นทางการ/ลายลักษณ์อักษรมากกว่า มักให้คำแนะนำทั่วไปว่า 'ถ้าทำ...ก็โอเค/ดี' ผันจากเปลี่ยนเสียงท้ายแถว อุ เป็นแถว เอะ แล้วเติม ば (กลุ่ม 2 ตัด る เติม れば)"
+      },
+      {
+        "id": "conditionals-12",
+        "promptThai": "พูดว่า: ถ้าพูดภาษาญี่ปุ่นก็ดี",
+        "chunks": [
+          { "text": "にほんごを", "kanji": [{ "text": "日本語", "reading": "にほんご" }, { "text": "を" }], "romaji": "nihongo wo" },
+          { "text": "はなせば", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "せば" }], "romaji": "hanaseba" },
+          { "text": "はなすと", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "すと" }], "romaji": "hanasu to" },
+          { "text": "はなしたら", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "したら" }], "romaji": "hanashitara" },
+          { "text": "はなすなら", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "すなら" }], "romaji": "hanasu nara" },
+          { "text": "いいです", "romaji": "ii desu" }
+        ],
+        "correctOrder": [
+          "にほんごを",
+          "はなせば",
+          "いいです"
+        ],
+        "romaji": "Nihongo wo hanaseba ii desu.",
+        "thai": "ถ้าพูดภาษาญี่ปุ่นก็ดี",
+        "explanation": "ば ใช้ในโทนที่เป็นทางการ/ลายลักษณ์อักษรมากกว่า มักให้คำแนะนำทั่วไปว่า 'ถ้าทำ...ก็โอเค/ดี' ผันจากเปลี่ยนเสียงท้ายแถว อุ เป็นแถว เอะ แล้วเติม ば (กลุ่ม 2 ตัด る เติม れば)"
+      },
+      {
+        "id": "conditionals-13",
+        "promptThai": "พูดว่า: ถ้าซื้อหนังสือก็ดี",
+        "chunks": [
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "かえば", "kanji": [{ "text": "買", "reading": "か" }, { "text": "えば" }], "romaji": "kaeba" },
+          { "text": "かうと", "kanji": [{ "text": "買", "reading": "か" }, { "text": "うと" }], "romaji": "kau to" },
+          { "text": "かったら", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ったら" }], "romaji": "kattara" },
+          { "text": "かうなら", "kanji": [{ "text": "買", "reading": "か" }, { "text": "うなら" }], "romaji": "kau nara" },
+          { "text": "いいです", "romaji": "ii desu" }
+        ],
+        "correctOrder": [
+          "ほんを",
+          "かえば",
+          "いいです"
+        ],
+        "romaji": "Hon wo kaeba ii desu.",
+        "thai": "ถ้าซื้อหนังสือก็ดี",
+        "explanation": "ば ใช้ในโทนที่เป็นทางการ/ลายลักษณ์อักษรมากกว่า มักให้คำแนะนำทั่วไปว่า 'ถ้าทำ...ก็โอเค/ดี' ผันจากเปลี่ยนเสียงท้ายแถว อุ เป็นแถว เอะ แล้วเติม ば (กลุ่ม 2 ตัด る เติม れば)"
+      },
+      {
+        "id": "conditionals-14",
+        "promptThai": "พูดว่า: ถ้าออกกำลังกายก็จะสดชื่น (แบบทางการ)",
+        "chunks": [
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "すれば", "romaji": "sureba" },
+          { "text": "すると", "romaji": "suru to" },
+          { "text": "したら", "romaji": "shitara" },
+          { "text": "するなら", "romaji": "suru nara" },
+          { "text": "げんきです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }], "romaji": "genki desu" }
+        ],
+        "correctOrder": [
+          "スポーツを",
+          "すれば",
+          "げんきです"
+        ],
+        "romaji": "Supootsu wo sureba genki desu.",
+        "thai": "ถ้าออกกำลังกายก็จะสดชื่น (แบบทางการ)",
+        "explanation": "ば ใช้ในโทนที่เป็นทางการ/ลายลักษณ์อักษรมากกว่า มักให้คำแนะนำทั่วไปว่า 'ถ้าทำ...ก็โอเค/ดี' ผันจากเปลี่ยนเสียงท้ายแถว อุ เป็นแถว เอะ แล้วเติม ば (กลุ่ม 2 ตัด る เติม れば)"
+      },
+      {
+        "id": "conditionals-15",
+        "promptThai": "พูดว่า: ถ้าเขียนจดหมายก็ดี (แบบทางการ)",
+        "chunks": [
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "かけば", "kanji": [{ "text": "書", "reading": "か" }, { "text": "けば" }], "romaji": "kakeba" },
+          { "text": "かくと", "kanji": [{ "text": "書", "reading": "か" }, { "text": "くと" }], "romaji": "kaku to" },
+          { "text": "かいたら", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いたら" }], "romaji": "kaitara" },
+          { "text": "かくなら", "kanji": [{ "text": "書", "reading": "か" }, { "text": "くなら" }], "romaji": "kaku nara" },
+          { "text": "いいです", "romaji": "ii desu" }
+        ],
+        "correctOrder": [
+          "てがみを",
+          "かけば",
+          "いいです"
+        ],
+        "romaji": "Tegami wo kakeba ii desu.",
+        "thai": "ถ้าเขียนจดหมายก็ดี (แบบทางการ)",
+        "explanation": "ば ใช้ในโทนที่เป็นทางการ/ลายลักษณ์อักษรมากกว่า มักให้คำแนะนำทั่วไปว่า 'ถ้าทำ...ก็โอเค/ดี' ผันจากเปลี่ยนเสียงท้ายแถว อุ เป็นแถว เอะ แล้วเติม ば (กลุ่ม 2 ตัด る เติม れば)"
+      },
+      {
+        "id": "conditionals-16",
+        "promptThai": "พูดว่า: ถ้าทานากะจะไปล่ะก็ ฉันจะไปด้วย",
+        "chunks": [
+          { "text": "たなかが", "romaji": "Tanaka ga" },
+          { "text": "いくなら", "kanji": [{ "text": "行", "reading": "い" }, { "text": "くなら" }], "romaji": "iku nara" },
+          { "text": "いくと", "kanji": [{ "text": "行", "reading": "い" }, { "text": "くと" }], "romaji": "iku to" },
+          { "text": "いったら", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ったら" }], "romaji": "ittara" },
+          { "text": "いけば", "kanji": [{ "text": "行", "reading": "い" }, { "text": "けば" }], "romaji": "ikeba" },
+          { "text": "わたしも いきます", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "watashi mo ikimasu" }
+        ],
+        "correctOrder": [
+          "たなかが",
+          "いくなら",
+          "わたしも いきます"
+        ],
+        "romaji": "Tanaka ga iku nara watashi mo ikimasu.",
+        "thai": "ถ้าทานากะจะไปล่ะก็ ฉันจะไปด้วย",
+        "explanation": "なら ใช้ตอบสนองต่อเรื่องที่มีคนอื่นพูดถึงมาก่อน (topic-based) แปลว่า 'ถ้า...ล่ะก็' วางไว้หลังหัวข้อที่กำลังพูดถึง ตามด้วยรูปพจนานุกรม + なら"
+      },
+      {
+        "id": "conditionals-17",
+        "promptThai": "พูดว่า: ถ้าเขาจะกินล่ะก็ ฉันจะกินด้วย",
+        "chunks": [
+          { "text": "かれが", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "が" }], "romaji": "kare ga" },
+          { "text": "たべるなら", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べるなら" }], "romaji": "taberu nara" },
+          { "text": "たべると", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べると" }], "romaji": "taberu to" },
+          { "text": "たべたら", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べたら" }], "romaji": "tabetara" },
+          { "text": "たべれば", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べれば" }], "romaji": "tabereba" },
+          { "text": "わたしも たべます", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "watashi mo tabemasu" }
+        ],
+        "correctOrder": [
+          "かれが",
+          "たべるなら",
+          "わたしも たべます"
+        ],
+        "romaji": "Kare ga taberu nara watashi mo tabemasu.",
+        "thai": "ถ้าเขาจะกินล่ะก็ ฉันจะกินด้วย",
+        "explanation": "なら ใช้ตอบสนองต่อเรื่องที่มีคนอื่นพูดถึงมาก่อน (topic-based) แปลว่า 'ถ้า...ล่ะก็' วางไว้หลังหัวข้อที่กำลังพูดถึง ตามด้วยรูปพจนานุกรม + なら"
+      },
+      {
+        "id": "conditionals-18",
+        "promptThai": "พูดว่า: ถ้าเธอจะดื่มล่ะก็ ฉันจะดื่มด้วย",
+        "chunks": [
+          { "text": "かのじょが", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "が" }], "romaji": "kanojo ga" },
+          { "text": "のむなら", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "むなら" }], "romaji": "nomu nara" },
+          { "text": "のむと", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "むと" }], "romaji": "nomu to" },
+          { "text": "のんだら", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んだら" }], "romaji": "nondara" },
+          { "text": "のめば", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "めば" }], "romaji": "nomeba" },
+          { "text": "わたしも のみます", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "watashi mo nomimasu" }
+        ],
+        "correctOrder": [
+          "かのじょが",
+          "のむなら",
+          "わたしも のみます"
+        ],
+        "romaji": "Kanojo ga nomu nara watashi mo nomimasu.",
+        "thai": "ถ้าเธอจะดื่มล่ะก็ ฉันจะดื่มด้วย",
+        "explanation": "なら ใช้ตอบสนองต่อเรื่องที่มีคนอื่นพูดถึงมาก่อน (topic-based) แปลว่า 'ถ้า...ล่ะก็' วางไว้หลังหัวข้อที่กำลังพูดถึง ตามด้วยรูปพจนานุกรม + なら"
+      },
+      {
+        "id": "conditionals-19",
+        "promptThai": "พูดว่า: ถ้านักเรียนจะอ่านล่ะก็ ฉันจะอ่านด้วย",
+        "chunks": [
+          { "text": "がくせいが", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "が" }], "romaji": "gakusei ga" },
+          { "text": "よむなら", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "むなら" }], "romaji": "yomu nara" },
+          { "text": "よむと", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "むと" }], "romaji": "yomu to" },
+          { "text": "よんだら", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んだら" }], "romaji": "yondara" },
+          { "text": "よめば", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "めば" }], "romaji": "yomeba" },
+          { "text": "わたしも よみます", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }, { "text": " " }, { "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "watashi mo yomimasu" }
+        ],
+        "correctOrder": [
+          "がくせいが",
+          "よむなら",
+          "わたしも よみます"
+        ],
+        "romaji": "Gakusei ga yomu nara watashi mo yomimasu.",
+        "thai": "ถ้านักเรียนจะอ่านล่ะก็ ฉันจะอ่านด้วย",
+        "explanation": "なら ใช้ตอบสนองต่อเรื่องที่มีคนอื่นพูดถึงมาก่อน (topic-based) แปลว่า 'ถ้า...ล่ะก็' วางไว้หลังหัวข้อที่กำลังพูดถึง ตามด้วยรูปพจนานุกรม + なら"
+      },
+      {
+        "id": "conditionals-20",
+        "promptThai": "พูดว่า: ถ้าทานากะจะซื้อล่ะก็ ฉันจะซื้อด้วย",
+        "chunks": [
+          { "text": "たなかが", "romaji": "Tanaka ga" },
+          { "text": "かうなら", "kanji": [{ "text": "買", "reading": "か" }, { "text": "うなら" }], "romaji": "kau nara" },
+          { "text": "かうと", "kanji": [{ "text": "買", "reading": "か" }, { "text": "うと" }], "romaji": "kau to" },
+          { "text": "かったら", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ったら" }], "romaji": "kattara" },
+          { "text": "かえば", "kanji": [{ "text": "買", "reading": "か" }, { "text": "えば" }], "romaji": "kaeba" },
+          { "text": "わたしも かいます", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "も" }, { "text": " " }, { "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "watashi mo kaimasu" }
+        ],
+        "correctOrder": [
+          "たなかが",
+          "かうなら",
+          "わたしも かいます"
+        ],
+        "romaji": "Tanaka ga kau nara watashi mo kaimasu.",
+        "thai": "ถ้าทานากะจะซื้อล่ะก็ ฉันจะซื้อด้วย",
+        "explanation": "なら ใช้ตอบสนองต่อเรื่องที่มีคนอื่นพูดถึงมาก่อน (topic-based) แปลว่า 'ถ้า...ล่ะก็' วางไว้หลังหัวข้อที่กำลังพูดถึง ตามด้วยรูปพจนานุกรม + なら"
+      }
+    ],
+    "formLabel": "",
+    "conjugationSuffixRomaji": ""
+  }
 ]
