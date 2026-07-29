@@ -6,7 +6,7 @@ export default function LessonView({ pattern, onBack }) {
 
   return (
     <div className="lesson-view">
-      <button className="btn btn-outline btn-sm" onClick={onBack}>
+      <button className="btn btn-outline btn-sm" onClick={onBack} data-swipe-back="true">
         ← เปลี่ยนแพทเทิร์น
       </button>
 

@@ -107,7 +107,7 @@ function DialogueView({ topic, onBack }) {
 
   return (
     <div className="conversation-view">
-      <button className="btn btn-outline btn-sm" onClick={onBack}>
+      <button className="btn btn-outline btn-sm" onClick={onBack} data-swipe-back="true">
         ← เปลี่ยนสถานการณ์
       </button>
 

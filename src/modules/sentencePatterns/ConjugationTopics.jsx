@@ -22,7 +22,7 @@ const TOPICS = [
 function TopicList({ onPick, onBack }) {
   return (
     <div className="picker">
-      <button className="btn btn-outline btn-sm" onClick={onBack}>
+      <button className="btn btn-outline btn-sm" onClick={onBack} data-swipe-back="true">
         ← เปลี่ยนหมวดหมู่
       </button>
 
@@ -48,7 +48,7 @@ function TopicDetail({ index, onBackToList, onNext }) {
 
   return (
     <div className="lesson-view">
-      <button className="btn btn-outline btn-sm" onClick={onBackToList}>
+      <button className="btn btn-outline btn-sm" onClick={onBackToList} data-swipe-back="true">
         ← หัวข้อทั้งหมด
       </button>
       <Component />

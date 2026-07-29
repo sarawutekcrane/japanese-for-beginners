@@ -9,7 +9,7 @@ export default function SettingsPanel({ onClose }) {
       <div className="settings-panel" onClick={(e) => e.stopPropagation()}>
         <div className="settings-panel-header">
           <h3 className="th-text">⚙️ ตั้งค่า</h3>
-          <button className="btn btn-outline btn-sm" onClick={onClose}>
+          <button className="btn btn-outline btn-sm" onClick={onClose} data-swipe-back="true">
             ปิด
           </button>
         </div>

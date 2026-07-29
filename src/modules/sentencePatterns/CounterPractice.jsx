@@ -53,7 +53,7 @@ export default function CounterPractice({ onBack }) {
   return (
     <div className="practice-view">
       <div className="practice-topbar">
-        <button className="btn btn-outline blue btn-sm" onClick={onBack}>
+        <button className="btn btn-outline blue btn-sm" onClick={onBack} data-swipe-back="true">
           ← กลับ
         </button>
         <PracticeProgress current={review.answeredCount} total={review.totalCount} correct={review.correctCount} />

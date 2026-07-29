@@ -249,7 +249,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
   return (
     <div className="practice-view">
       <div className="practice-topbar">
-        <button className="btn btn-outline btn-sm" onClick={onBack}>
+        <button className="btn btn-outline btn-sm" onClick={onBack} data-swipe-back="true">
           ← เปลี่ยนแพทเทิร์น
         </button>
         <h3 className="pattern-detail-title">
