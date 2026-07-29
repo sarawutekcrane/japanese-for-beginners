@@ -62,6 +62,9 @@ export function explanationFor(verb, field) {
   if (field === "nakatta") {
     return "ผันจากรูปปฏิเสธธรรมดา (ない) โดยเปลี่ยน い ท้ายเป็น かった เช่น " + verb.nai + " → " + verb.nakatta;
   }
+  if (field === "dict") {
+    return "ใช้รูปพจนานุกรมของกริยาเดิม (ไม่ต้องผัน) แล้วเติม ことができます ต่อท้ายเพื่อบอกว่าทำสิ่งนั้นได้ เช่น " + verb.dict + " → " + verb.dict + "ことができます";
+  }
   if (verb.group === 1) {
     return "กริยากลุ่ม 1 (godan): เปลี่ยนเสียงท้ายจากแถว อุ เป็นแถว อิ แล้วเติมส่วนขยาย เช่น " + verb.dict + " → " + verb.masu;
   }

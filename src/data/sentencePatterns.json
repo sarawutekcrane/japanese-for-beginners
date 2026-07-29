@@ -1316,8 +1316,484 @@
     "conjugationSuffixRomaji": ""
   },
   {
-    "id": "question-masu",
+    "id": "frequency-adverbs",
     "order": 4,
+    "level": "basic",
+    "title": "ความถี่ (いつも/よく/ときどき/あまり/ぜんぜん)",
+    "structure": "[ประธาน] + は + [ความถี่] + [กรรม] + を + [กริยา]",
+    "particles": [
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค"
+      },
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      }
+    ],
+    "timeNote": "คำวิเศษณ์บอกความถี่วางไว้หลัง หัวข้อ+は และก่อนกรรม กฎสำคัญ: あまり และ ぜんぜん ต้องใช้คู่กับรูปปฏิเสธ (ません) เสมอ ใช้กับประโยคบอกเล่าไม่ได้ ส่วน いつも (เป็นประจำ), よく (บ่อยๆ), ときどき (บางครั้ง) ใช้กับประโยคบอกเล่าปกติ あまり (ไม่ค่อย) เบากว่า ぜんぜん (ไม่...เลย)",
+    "conjugationField": null,
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "わたしは いつも コーヒーを のみます。",
+        "romaji": "Watashi wa itsumo koohii wo nomimasu.",
+        "thai": "ฉันดื่มกาแฟเป็นประจำ",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "いつも" }, { "text": " " }, { "text": "コーヒーを" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "かれは よく ほんを よみます。",
+        "romaji": "Kare wa yoku hon wo yomimasu.",
+        "thai": "เขาอ่านหนังสือบ่อยๆ",
+        "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }, { "text": " " }, { "text": "よく" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "読", "reading": "よ" }, { "text": "みます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "かのじょは ときどき えいがを みます。",
+        "romaji": "Kanojo wa tokidoki eiga wo mimasu.",
+        "thai": "เธอดูหนังบางครั้ง",
+        "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }, { "text": " " }, { "text": "ときどき" }, { "text": " " }, { "text": "映画", "reading": "えいが" }, { "text": "を" }, { "text": " " }, { "text": "みます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "わたしは あまり ぎゅうにゅうを のみません。",
+        "romaji": "Watashi wa amari gyuunyuu wo nomimasen.",
+        "thai": "ฉันไม่ค่อยดื่มนม",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "あまり" }, { "text": " " }, { "text": "牛乳", "reading": "ぎゅうにゅう" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "みません" }, { "text": "。" }]
+      },
+      {
+        "japanese": "かれは ぜんぜん スポーツを しません。",
+        "romaji": "Kare wa zenzen supootsu wo shimasen.",
+        "thai": "เขาไม่เล่นกีฬาเลย",
+        "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }, { "text": " " }, { "text": "ぜんぜん" }, { "text": " " }, { "text": "スポーツを" }, { "text": " " }, { "text": "しません" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "frequency-adverbs-1",
+        "promptThai": "พูดว่า: ฉันดื่มกาแฟเป็นประจำ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "よく", "romaji": "yoku" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "コーヒーを", "romaji": "koohii wo" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "いつも",
+          "コーヒーを",
+          "のみます"
+        ],
+        "romaji": "Watashi wa itsumo koohii wo nomimasu.",
+        "thai": "ฉันดื่มกาแฟเป็นประจำ",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-2",
+        "promptThai": "พูดว่า: เขาดูหนังเป็นประจำ",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "よく", "romaji": "yoku" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みます", "romaji": "mimasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "いつも",
+          "えいがを",
+          "みます"
+        ],
+        "romaji": "Kare wa itsumo eiga wo mimasu.",
+        "thai": "เขาดูหนังเป็นประจำ",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-3",
+        "promptThai": "พูดว่า: เธออ่านหนังสือเป็นประจำ",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "よく", "romaji": "yoku" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "いつも",
+          "ほんを",
+          "よみます"
+        ],
+        "romaji": "Kanojo wa itsumo hon wo yomimasu.",
+        "thai": "เธออ่านหนังสือเป็นประจำ",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-4",
+        "promptThai": "พูดว่า: ครูเขียนจดหมายเป็นประจำ",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "よく", "romaji": "yoku" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "かきます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きます" }], "romaji": "kakimasu" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "いつも",
+          "てがみを",
+          "かきます"
+        ],
+        "romaji": "Sensei wa itsumo tegami wo kakimasu.",
+        "thai": "ครูเขียนจดหมายเป็นประจำ",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-5",
+        "promptThai": "พูดว่า: เขาอ่านหนังสือบ่อยๆ",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "よく", "romaji": "yoku" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "よく",
+          "ほんを",
+          "よみます"
+        ],
+        "romaji": "Kare wa yoku hon wo yomimasu.",
+        "thai": "เขาอ่านหนังสือบ่อยๆ",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-6",
+        "promptThai": "พูดว่า: ฉันดื่มกาแฟบ่อยๆ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "よく", "romaji": "yoku" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "コーヒーを", "romaji": "koohii wo" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "よく",
+          "コーヒーを",
+          "のみます"
+        ],
+        "romaji": "Watashi wa yoku koohii wo nomimasu.",
+        "thai": "ฉันดื่มกาแฟบ่อยๆ",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-7",
+        "promptThai": "พูดว่า: นักเรียนเล่นกีฬาบ่อยๆ",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "よく", "romaji": "yoku" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "します", "romaji": "shimasu" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "よく",
+          "スポーツを",
+          "します"
+        ],
+        "romaji": "Gakusei wa yoku supootsu wo shimasu.",
+        "thai": "นักเรียนเล่นกีฬาบ่อยๆ",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-8",
+        "promptThai": "พูดว่า: เธอดูหนังบ่อยๆ",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "よく", "romaji": "yoku" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みます", "romaji": "mimasu" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "よく",
+          "えいがを",
+          "みます"
+        ],
+        "romaji": "Kanojo wa yoku eiga wo mimasu.",
+        "thai": "เธอดูหนังบ่อยๆ",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-9",
+        "promptThai": "พูดว่า: เธอดูหนังบางครั้ง",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "ときどき", "romaji": "tokidoki" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みます", "romaji": "mimasu" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "ときどき",
+          "えいがを",
+          "みます"
+        ],
+        "romaji": "Kanojo wa tokidoki eiga wo mimasu.",
+        "thai": "เธอดูหนังบางครั้ง",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-10",
+        "promptThai": "พูดว่า: ฉันดื่มกาแฟบางครั้ง",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ときどき", "romaji": "tokidoki" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "コーヒーを", "romaji": "koohii wo" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ときどき",
+          "コーヒーを",
+          "のみます"
+        ],
+        "romaji": "Watashi wa tokidoki koohii wo nomimasu.",
+        "thai": "ฉันดื่มกาแฟบางครั้ง",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-11",
+        "promptThai": "พูดว่า: เขาเล่นกีฬาบางครั้ง",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "ときどき", "romaji": "tokidoki" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "します", "romaji": "shimasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "ときどき",
+          "スポーツを",
+          "します"
+        ],
+        "romaji": "Kare wa tokidoki supootsu wo shimasu.",
+        "thai": "เขาเล่นกีฬาบางครั้ง",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-12",
+        "promptThai": "พูดว่า: นักเรียนอ่านหนังสือบางครั้ง",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "ときどき", "romaji": "tokidoki" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "ときどき",
+          "ほんを",
+          "よみます"
+        ],
+        "romaji": "Gakusei wa tokidoki hon wo yomimasu.",
+        "thai": "นักเรียนอ่านหนังสือบางครั้ง",
+        "explanation": "いつも/よく/ときどき ใช้กับประโยคบอกเล่าปกติ วางไว้หลัง หัวข้อ+は และก่อนกรรม"
+      },
+      {
+        "id": "frequency-adverbs-13",
+        "promptThai": "พูดว่า: ฉันไม่ค่อยดื่มนม",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "ぜんぜん", "romaji": "zenzen" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "ぎゅうにゅうを", "kanji": [{ "text": "牛乳", "reading": "ぎゅうにゅう" }, { "text": "を" }], "romaji": "gyuunyuu wo" },
+          { "text": "のみません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みません" }], "romaji": "nomimasen" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "あまり",
+          "ぎゅうにゅうを",
+          "のみません"
+        ],
+        "romaji": "Watashi wa amari gyuunyuu wo nomimasen.",
+        "thai": "ฉันไม่ค่อยดื่มนม",
+        "explanation": "あまり และ ぜんぜん ต้องใช้คู่กับกริยารูปปฏิเสธ (ません) เสมอ ใช้กับประโยคบอกเล่าไม่ได้"
+      },
+      {
+        "id": "frequency-adverbs-14",
+        "promptThai": "พูดว่า: เขาไม่ค่อยอ่านหนังสือ",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "ぜんぜん", "romaji": "zenzen" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よみません", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みません" }], "romaji": "yomimasen" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "あまり",
+          "ほんを",
+          "よみません"
+        ],
+        "romaji": "Kare wa amari hon wo yomimasen.",
+        "thai": "เขาไม่ค่อยอ่านหนังสือ",
+        "explanation": "あまり และ ぜんぜん ต้องใช้คู่กับกริยารูปปฏิเสธ (ません) เสมอ ใช้กับประโยคบอกเล่าไม่ได้"
+      },
+      {
+        "id": "frequency-adverbs-15",
+        "promptThai": "พูดว่า: เธอไม่ค่อยดูหนัง",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "ぜんぜん", "romaji": "zenzen" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みません", "romaji": "mimasen" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "あまり",
+          "えいがを",
+          "みません"
+        ],
+        "romaji": "Kanojo wa amari eiga wo mimasen.",
+        "thai": "เธอไม่ค่อยดูหนัง",
+        "explanation": "あまり และ ぜんぜん ต้องใช้คู่กับกริยารูปปฏิเสธ (ません) เสมอ ใช้กับประโยคบอกเล่าไม่ได้"
+      },
+      {
+        "id": "frequency-adverbs-16",
+        "promptThai": "พูดว่า: นักเรียนไม่ค่อยเล่นกีฬา",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "ぜんぜん", "romaji": "zenzen" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "しません", "romaji": "shimasen" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "あまり",
+          "スポーツを",
+          "しません"
+        ],
+        "romaji": "Gakusei wa amari supootsu wo shimasen.",
+        "thai": "นักเรียนไม่ค่อยเล่นกีฬา",
+        "explanation": "あまり และ ぜんぜん ต้องใช้คู่กับกริยารูปปฏิเสธ (ません) เสมอ ใช้กับประโยคบอกเล่าไม่ได้"
+      },
+      {
+        "id": "frequency-adverbs-17",
+        "promptThai": "พูดว่า: เขาไม่เล่นกีฬาเลย",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "ぜんぜん", "romaji": "zenzen" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "しません", "romaji": "shimasen" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "ぜんぜん",
+          "スポーツを",
+          "しません"
+        ],
+        "romaji": "Kare wa zenzen supootsu wo shimasen.",
+        "thai": "เขาไม่เล่นกีฬาเลย",
+        "explanation": "あまり และ ぜんぜん ต้องใช้คู่กับกริยารูปปฏิเสธ (ません) เสมอ ใช้กับประโยคบอกเล่าไม่ได้"
+      },
+      {
+        "id": "frequency-adverbs-18",
+        "promptThai": "พูดว่า: ฉันไม่ดื่มนมเลย",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ぜんぜん", "romaji": "zenzen" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "ぎゅうにゅうを", "kanji": [{ "text": "牛乳", "reading": "ぎゅうにゅう" }, { "text": "を" }], "romaji": "gyuunyuu wo" },
+          { "text": "のみません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みません" }], "romaji": "nomimasen" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ぜんぜん",
+          "ぎゅうにゅうを",
+          "のみません"
+        ],
+        "romaji": "Watashi wa zenzen gyuunyuu wo nomimasen.",
+        "thai": "ฉันไม่ดื่มนมเลย",
+        "explanation": "あまり และ ぜんぜん ต้องใช้คู่กับกริยารูปปฏิเสธ (ません) เสมอ ใช้กับประโยคบอกเล่าไม่ได้"
+      },
+      {
+        "id": "frequency-adverbs-19",
+        "promptThai": "พูดว่า: เธอไม่กินข้าวเลย",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "ぜんぜん", "romaji": "zenzen" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "ぜんぜん",
+          "ごはんを",
+          "たべません"
+        ],
+        "romaji": "Kanojo wa zenzen gohan wo tabemasen.",
+        "thai": "เธอไม่กินข้าวเลย",
+        "explanation": "あまり และ ぜんぜん ต้องใช้คู่กับกริยารูปปฏิเสธ (ません) เสมอ ใช้กับประโยคบอกเล่าไม่ได้"
+      },
+      {
+        "id": "frequency-adverbs-20",
+        "promptThai": "พูดว่า: ครูไม่ดูหนังเลย",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "ぜんぜん", "romaji": "zenzen" },
+          { "text": "あまり", "romaji": "amari" },
+          { "text": "いつも", "romaji": "itsumo" },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みません", "romaji": "mimasen" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "ぜんぜん",
+          "えいがを",
+          "みません"
+        ],
+        "romaji": "Sensei wa zenzen eiga wo mimasen.",
+        "thai": "ครูไม่ดูหนังเลย",
+        "explanation": "あまり และ ぜんぜん ต้องใช้คู่กับกริยารูปปฏิเสธ (ません) เสมอ ใช้กับประโยคบอกเล่าไม่ได้"
+      }
+    ],
+    "formLabel": "",
+    "conjugationSuffixRomaji": ""
+  },
+  {
+    "id": "question-masu",
+    "order": 5,
     "level": "basic",
     "title": "ประโยคคำถาม (ますか)",
     "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ますか",
@@ -1742,8 +2218,432 @@
     "conjugationSuffixRomaji": " ka"
   },
   {
+    "id": "question-words",
+    "order": 6,
+    "level": "basic",
+    "title": "คำถาม 5W1H (なに/どこ/いつ/だれ/どうして/いくつ/いくら)",
+    "structure": "[หัวข้อ] + は + [คำถาม] + ですか / [คำถาม] + [ส่วนที่เหลือของประโยค] + ますか",
+    "particles": [
+      {
+        "particle": "か",
+        "role": "ตัวบ่งชี้คำถาม เติมท้ายประโยคเพื่อทำเป็นประโยคคำถาม"
+      },
+      {
+        "particle": "の",
+        "role": "ตัวบ่งชี้ความเป็นเจ้าของ แปลว่า 'ของ'"
+      }
+    ],
+    "timeNote": "คำถามภาษาญี่ปุ่นสร้างโดยแทนที่ข้อมูลที่ไม่รู้ด้วยคำถาม แล้ววางไว้ในตำแหน่งเดิมของประโยค (ไม่สลับคำเหมือนภาษาอังกฤษ) จากนั้นเติม か ท้ายประโยคเสมอ: なに/なん = อะไร (なん ใช้หน้า です หรือคำที่ขึ้นต้นด้วยเสียง だ/な/た), どこ = ที่ไหน, いつ = เมื่อไหร่, だれ = ใคร, どうして = ทำไม, いくつ = กี่ชิ้น/กี่อัน, いくら = เท่าไหร่ (ราคา)",
+    "conjugationField": null,
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "これは なんですか。",
+        "romaji": "Kore wa nan desu ka.",
+        "thai": "นี่คืออะไร",
+        "kanji": [{ "text": "これ" }, { "text": "は" }, { "text": " " }, { "text": "何", "reading": "なん" }, { "text": "ですか" }, { "text": "。" }]
+      },
+      {
+        "japanese": "トイレは どこですか。",
+        "romaji": "Toire wa doko desu ka.",
+        "thai": "ห้องน้ำอยู่ที่ไหน",
+        "kanji": [{ "text": "トイレ" }, { "text": "は" }, { "text": " " }, { "text": "どこですか" }, { "text": "。" }]
+      },
+      {
+        "japanese": "いつ がっこうへ いきますか。",
+        "romaji": "Itsu gakkou e ikimasu ka.",
+        "thai": "จะไปโรงเรียนเมื่อไหร่",
+        "kanji": [{ "text": "いつ" }, { "text": " " }, { "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きますか" }, { "text": "。" }]
+      },
+      {
+        "japanese": "これは いくらですか。",
+        "romaji": "Kore wa ikura desu ka.",
+        "thai": "นี่ราคาเท่าไหร่",
+        "kanji": [{ "text": "これ" }, { "text": "は" }, { "text": " " }, { "text": "いくらですか" }, { "text": "。" }]
+      },
+      {
+        "japanese": "どうして がっこうへ いきませんか。",
+        "romaji": "Doushite gakkou e ikimasen ka.",
+        "thai": "ทำไมไม่ไปโรงเรียน",
+        "kanji": [{ "text": "どうして" }, { "text": " " }, { "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "きませんか" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "question-words-1",
+        "promptThai": "พูดว่า: นี่คืออะไร",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" }
+        ],
+        "correctOrder": [
+          "これは",
+          "なんですか"
+        ],
+        "romaji": "Kore wa nan desu ka.",
+        "thai": "นี่คืออะไร",
+        "explanation": "なん ใช้ถามว่า 'อะไร' แทนที่คำนามที่ไม่รู้ แล้ววางไว้หน้า です เหมือนคำนามปกติ"
+      },
+      {
+        "id": "question-words-2",
+        "promptThai": "พูดว่า: นั่นคืออะไร",
+        "chunks": [
+          { "text": "それは", "romaji": "sore wa" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" }
+        ],
+        "correctOrder": [
+          "それは",
+          "なんですか"
+        ],
+        "romaji": "Sore wa nan desu ka.",
+        "thai": "นั่นคืออะไร",
+        "explanation": "なん ใช้ถามว่า 'อะไร' แทนที่คำนามที่ไม่รู้ แล้ววางไว้หน้า です เหมือนคำนามปกติ"
+      },
+      {
+        "id": "question-words-3",
+        "promptThai": "พูดว่า: โน่นคืออะไร",
+        "chunks": [
+          { "text": "あれは", "romaji": "are wa" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" }
+        ],
+        "correctOrder": [
+          "あれは",
+          "なんですか"
+        ],
+        "romaji": "Are wa nan desu ka.",
+        "thai": "โน่นคืออะไร",
+        "explanation": "なん ใช้ถามว่า 'อะไร' แทนที่คำนามที่ไม่รู้ แล้ววางไว้หน้า です เหมือนคำนามปกติ"
+      },
+      {
+        "id": "question-words-4",
+        "promptThai": "พูดว่า: นี่คือใคร",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" }
+        ],
+        "correctOrder": [
+          "これは",
+          "だれですか"
+        ],
+        "romaji": "Kore wa dare desu ka.",
+        "thai": "นี่คือใคร",
+        "explanation": "だれ ใช้ถามคน 'ใคร' แทนที่ชื่อคนในตำแหน่งเดิม"
+      },
+      {
+        "id": "question-words-5",
+        "promptThai": "พูดว่า: นั่นคือใคร",
+        "chunks": [
+          { "text": "それは", "romaji": "sore wa" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" }
+        ],
+        "correctOrder": [
+          "それは",
+          "だれですか"
+        ],
+        "romaji": "Sore wa dare desu ka.",
+        "thai": "นั่นคือใคร",
+        "explanation": "だれ ใช้ถามคน 'ใคร' แทนที่ชื่อคนในตำแหน่งเดิม"
+      },
+      {
+        "id": "question-words-6",
+        "promptThai": "พูดว่า: โน่นคือใคร",
+        "chunks": [
+          { "text": "あれは", "romaji": "are wa" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" }
+        ],
+        "correctOrder": [
+          "あれは",
+          "だれですか"
+        ],
+        "romaji": "Are wa dare desu ka.",
+        "thai": "โน่นคือใคร",
+        "explanation": "だれ ใช้ถามคน 'ใคร' แทนที่ชื่อคนในตำแหน่งเดิม"
+      },
+      {
+        "id": "question-words-7",
+        "promptThai": "พูดว่า: นี่ราคาเท่าไหร่",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" }
+        ],
+        "correctOrder": [
+          "これは",
+          "いくらですか"
+        ],
+        "romaji": "Kore wa ikura desu ka.",
+        "thai": "นี่ราคาเท่าไหร่",
+        "explanation": "いくら ใช้ถามราคา 'เท่าไหร่' แทนที่ราคาในตำแหน่งเดิม"
+      },
+      {
+        "id": "question-words-8",
+        "promptThai": "พูดว่า: นั่นราคาเท่าไหร่",
+        "chunks": [
+          { "text": "それは", "romaji": "sore wa" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" }
+        ],
+        "correctOrder": [
+          "それは",
+          "いくらですか"
+        ],
+        "romaji": "Sore wa ikura desu ka.",
+        "thai": "นั่นราคาเท่าไหร่",
+        "explanation": "いくら ใช้ถามราคา 'เท่าไหร่' แทนที่ราคาในตำแหน่งเดิม"
+      },
+      {
+        "id": "question-words-9",
+        "promptThai": "พูดว่า: โน่นราคาเท่าไหร่",
+        "chunks": [
+          { "text": "あれは", "romaji": "are wa" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" }
+        ],
+        "correctOrder": [
+          "あれは",
+          "いくらですか"
+        ],
+        "romaji": "Are wa ikura desu ka.",
+        "thai": "โน่นราคาเท่าไหร่",
+        "explanation": "いくら ใช้ถามราคา 'เท่าไหร่' แทนที่ราคาในตำแหน่งเดิม"
+      },
+      {
+        "id": "question-words-10",
+        "promptThai": "พูดว่า: ห้องน้ำอยู่ที่ไหน",
+        "chunks": [
+          { "text": "トイレは", "romaji": "toire wa" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" }
+        ],
+        "correctOrder": [
+          "トイレは",
+          "どこですか"
+        ],
+        "romaji": "Toire wa doko desu ka.",
+        "thai": "ห้องน้ำอยู่ที่ไหน",
+        "explanation": "どこ ใช้ถามสถานที่ 'ที่ไหน' แทนที่ชื่อสถานที่ในตำแหน่งเดิม"
+      },
+      {
+        "id": "question-words-11",
+        "promptThai": "พูดว่า: โรงเรียนอยู่ที่ไหน",
+        "chunks": [
+          { "text": "がっこうは", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "は" }], "romaji": "gakkou wa" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" }
+        ],
+        "correctOrder": [
+          "がっこうは",
+          "どこですか"
+        ],
+        "romaji": "Gakkou wa doko desu ka.",
+        "thai": "โรงเรียนอยู่ที่ไหน",
+        "explanation": "どこ ใช้ถามสถานที่ 'ที่ไหน' แทนที่ชื่อสถานที่ในตำแหน่งเดิม"
+      },
+      {
+        "id": "question-words-12",
+        "promptThai": "พูดว่า: โรงแรมอยู่ที่ไหน",
+        "chunks": [
+          { "text": "ホテルは", "romaji": "hoteru wa" },
+          { "text": "どこですか", "romaji": "doko desu ka" },
+          { "text": "なんですか", "kanji": [{ "text": "何", "reading": "なん" }, { "text": "ですか" }], "romaji": "nan desu ka" },
+          { "text": "だれですか", "kanji": [{ "text": "誰", "reading": "だれ" }, { "text": "ですか" }], "romaji": "dare desu ka" },
+          { "text": "いくらですか", "romaji": "ikura desu ka" }
+        ],
+        "correctOrder": [
+          "ホテルは",
+          "どこですか"
+        ],
+        "romaji": "Hoteru wa doko desu ka.",
+        "thai": "โรงแรมอยู่ที่ไหน",
+        "explanation": "どこ ใช้ถามสถานที่ 'ที่ไหน' แทนที่ชื่อสถานที่ในตำแหน่งเดิม"
+      },
+      {
+        "id": "question-words-13",
+        "promptThai": "พูดว่า: จะไปโรงเรียนเมื่อไหร่",
+        "chunks": [
+          { "text": "いつ", "romaji": "itsu" },
+          { "text": "どうして", "romaji": "doushite" },
+          { "text": "いくつ", "romaji": "ikutsu" },
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
+          { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }], "romaji": "ikimasu ka" }
+        ],
+        "correctOrder": [
+          "いつ",
+          "がっこうへ",
+          "いきますか"
+        ],
+        "romaji": "Itsu gakkou e ikimasu ka.",
+        "thai": "จะไปโรงเรียนเมื่อไหร่",
+        "explanation": "いつ ใช้ถามเวลา 'เมื่อไหร่' มักวางไว้ต้นประโยคก่อนส่วนที่เหลือของประโยค"
+      },
+      {
+        "id": "question-words-14",
+        "promptThai": "พูดว่า: จะไปญี่ปุ่นเมื่อไหร่",
+        "chunks": [
+          { "text": "いつ", "romaji": "itsu" },
+          { "text": "どうして", "romaji": "doushite" },
+          { "text": "いくつ", "romaji": "ikutsu" },
+          { "text": "にほんへ", "kanji": [{ "text": "日本", "reading": "にほん" }, { "text": "へ" }], "romaji": "nihon e" },
+          { "text": "いきますか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますか" }], "romaji": "ikimasu ka" }
+        ],
+        "correctOrder": [
+          "いつ",
+          "にほんへ",
+          "いきますか"
+        ],
+        "romaji": "Itsu nihon e ikimasu ka.",
+        "thai": "จะไปญี่ปุ่นเมื่อไหร่",
+        "explanation": "いつ ใช้ถามเวลา 'เมื่อไหร่' มักวางไว้ต้นประโยคก่อนส่วนที่เหลือของประโยค"
+      },
+      {
+        "id": "question-words-15",
+        "promptThai": "พูดว่า: จะอ่านหนังสือเมื่อไหร่",
+        "chunks": [
+          { "text": "いつ", "romaji": "itsu" },
+          { "text": "どうして", "romaji": "doushite" },
+          { "text": "いくつ", "romaji": "ikutsu" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よみますか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みますか" }], "romaji": "yomimasu ka" }
+        ],
+        "correctOrder": [
+          "いつ",
+          "ほんを",
+          "よみますか"
+        ],
+        "romaji": "Itsu hon wo yomimasu ka.",
+        "thai": "จะอ่านหนังสือเมื่อไหร่",
+        "explanation": "いつ ใช้ถามเวลา 'เมื่อไหร่' มักวางไว้ต้นประโยคก่อนส่วนที่เหลือของประโยค"
+      },
+      {
+        "id": "question-words-16",
+        "promptThai": "พูดว่า: ทำไมไม่ไปโรงเรียน",
+        "chunks": [
+          { "text": "どうして", "romaji": "doushite" },
+          { "text": "いつ", "romaji": "itsu" },
+          { "text": "いくつ", "romaji": "ikutsu" },
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" }
+        ],
+        "correctOrder": [
+          "どうして",
+          "がっこうへ",
+          "いきませんか"
+        ],
+        "romaji": "Doushite gakkou e ikimasen ka.",
+        "thai": "ทำไมไม่ไปโรงเรียน",
+        "explanation": "どうして ใช้ถามเหตุผล 'ทำไม' มักใช้คู่กับประโยคปฏิเสธเพื่อถามว่าทำไมไม่ทำสิ่งนั้น"
+      },
+      {
+        "id": "question-words-17",
+        "promptThai": "พูดว่า: ทำไมไม่กินข้าว",
+        "chunks": [
+          { "text": "どうして", "romaji": "doushite" },
+          { "text": "いつ", "romaji": "itsu" },
+          { "text": "いくつ", "romaji": "ikutsu" },
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべませんか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんか" }], "romaji": "tabemasen ka" }
+        ],
+        "correctOrder": [
+          "どうして",
+          "ごはんを",
+          "たべませんか"
+        ],
+        "romaji": "Doushite gohan wo tabemasen ka.",
+        "thai": "ทำไมไม่กินข้าว",
+        "explanation": "どうして ใช้ถามเหตุผล 'ทำไม' มักใช้คู่กับประโยคปฏิเสธเพื่อถามว่าทำไมไม่ทำสิ่งนั้น"
+      },
+      {
+        "id": "question-words-18",
+        "promptThai": "พูดว่า: ทำไมไม่ดื่มน้ำ",
+        "chunks": [
+          { "text": "どうして", "romaji": "doushite" },
+          { "text": "いつ", "romaji": "itsu" },
+          { "text": "いくつ", "romaji": "ikutsu" },
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
+          { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }], "romaji": "nomimasen ka" }
+        ],
+        "correctOrder": [
+          "どうして",
+          "みずを",
+          "のみませんか"
+        ],
+        "romaji": "Doushite mizu wo nomimasen ka.",
+        "thai": "ทำไมไม่ดื่มน้ำ",
+        "explanation": "どうして ใช้ถามเหตุผล 'ทำไม' มักใช้คู่กับประโยคปฏิเสธเพื่อถามว่าทำไมไม่ทำสิ่งนั้น"
+      },
+      {
+        "id": "question-words-19",
+        "promptThai": "พูดว่า: ต้องการแอปเปิ้ลกี่ลูก",
+        "chunks": [
+          { "text": "りんごは", "romaji": "ringo wa" },
+          { "text": "いくつ", "romaji": "ikutsu" },
+          { "text": "いつ", "romaji": "itsu" },
+          { "text": "どうして", "romaji": "doushite" },
+          { "text": "ほしいですか", "kanji": [{ "text": "欲", "reading": "ほ" }, { "text": "しいですか" }], "romaji": "hoshii desu ka" }
+        ],
+        "correctOrder": [
+          "りんごは",
+          "いくつ",
+          "ほしいですか"
+        ],
+        "romaji": "Ringo wa ikutsu hoshii desu ka.",
+        "thai": "ต้องการแอปเปิ้ลกี่ลูก",
+        "explanation": "いくつ ใช้ถามจำนวน 'กี่ชิ้น/กี่อัน' วางไว้หลังคำนามที่ถาม"
+      },
+      {
+        "id": "question-words-20",
+        "promptThai": "พูดว่า: ต้องการหนังสือกี่เล่ม",
+        "chunks": [
+          { "text": "ほんは", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "は" }], "romaji": "hon wa" },
+          { "text": "いくつ", "romaji": "ikutsu" },
+          { "text": "いつ", "romaji": "itsu" },
+          { "text": "どうして", "romaji": "doushite" },
+          { "text": "ほしいですか", "kanji": [{ "text": "欲", "reading": "ほ" }, { "text": "しいですか" }], "romaji": "hoshii desu ka" }
+        ],
+        "correctOrder": [
+          "ほんは",
+          "いくつ",
+          "ほしいですか"
+        ],
+        "romaji": "Hon wa ikutsu hoshii desu ka.",
+        "thai": "ต้องการหนังสือกี่เล่ม",
+        "explanation": "いくつ ใช้ถามจำนวน 'กี่ชิ้น/กี่อัน' วางไว้หลังคำนามที่ถาม"
+      }
+    ],
+    "formLabel": "",
+    "conjugationSuffixRomaji": ""
+  },
+  {
     "id": "invitation",
-    "order": 5,
+    "order": 7,
     "level": "basic",
     "title": "ชักชวนอย่างสุภาพ (ませんか)",
     "structure": "([ประธานมักละไว้]) + [กรรม] + を + [กริยา]ませんか",
@@ -2162,8 +3062,404 @@
     "conjugationSuffixRomaji": " ka"
   },
   {
+    "id": "volitional-mashou",
+    "order": 8,
+    "level": "basic",
+    "title": "ชักชวน/เสนอตัว (ましょう/ましょうか)",
+    "structure": "[กริยา ます-stem] + ましょう / ましょうか",
+    "particles": [
+      {
+        "particle": "か",
+        "role": "ตัวบ่งชี้คำถาม ใช้เติมท้าย ましょう เพื่อเสนอตัวหรือถามความเห็นเบาๆ"
+      }
+    ],
+    "timeNote": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ' ส่วน ましょうか ใช้เสนอตัวจะทำให้ หรือชวนแบบถามความเห็นเบาๆ กว่า 'จะ...ดีไหม' ต่างจาก ませんか (ชักชวนอย่างสุภาพ) ตรงที่ ましょう ออกจะมั่นใจ/ตรงไปตรงมากว่าว่าจะทำร่วมกัน",
+    "conjugationField": null,
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "いっしょに ごはんを たべましょう。",
+        "romaji": "Issho ni gohan wo tabemashou.",
+        "thai": "กินข้าวด้วยกันเถอะ",
+        "kanji": [{ "text": "一緒に", "reading": "いっしょに" }, { "text": " " }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べましょう" }, { "text": "。" }]
+      },
+      {
+        "japanese": "えいがを みましょう。",
+        "romaji": "Eiga wo mimashou.",
+        "thai": "ดูหนังกันเถอะ",
+        "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }, { "text": " " }, { "text": "みましょう" }, { "text": "。" }]
+      },
+      {
+        "japanese": "ちょっと まちましょうか。",
+        "romaji": "Chotto machimashou ka.",
+        "thai": "รอสักครู่ดีไหม",
+        "kanji": [{ "text": "ちょっと" }, { "text": " " }, { "text": "待", "reading": "ま" }, { "text": "ちましょうか" }, { "text": "。" }]
+      },
+      {
+        "japanese": "スポーツを しましょう。",
+        "romaji": "Supootsu wo shimashou.",
+        "thai": "เล่นกีฬากันเถอะ",
+        "kanji": [{ "text": "スポーツを" }, { "text": " " }, { "text": "しましょう" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "volitional-mashou-1",
+        "promptThai": "พูดว่า: กินข้าวด้วยกันเถอะ",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべましょう", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べましょう" }], "romaji": "tabemashou" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべませんか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんか" }], "romaji": "tabemasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "ごはんを",
+          "たべましょう"
+        ],
+        "romaji": "Issho ni gohan wo tabemashou.",
+        "thai": "กินข้าวด้วยกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-2",
+        "promptThai": "พูดว่า: ดูหนังกันเถอะ",
+        "chunks": [
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みましょう", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ましょう" }], "romaji": "mimashou" },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "みませんか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんか" }], "romaji": "mimasen ka" }
+        ],
+        "correctOrder": [
+          "えいがを",
+          "みましょう"
+        ],
+        "romaji": "Eiga wo mimashou.",
+        "thai": "ดูหนังกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-3",
+        "promptThai": "พูดว่า: อ่านหนังสือกันเถอะ",
+        "chunks": [
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よみましょう", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みましょう" }], "romaji": "yomimashou" },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" },
+          { "text": "よみませんか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みませんか" }], "romaji": "yomimasen ka" }
+        ],
+        "correctOrder": [
+          "ほんを",
+          "よみましょう"
+        ],
+        "romaji": "Hon wo yomimashou.",
+        "thai": "อ่านหนังสือกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-4",
+        "promptThai": "พูดว่า: ดื่มน้ำด้วยกันเถอะ",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
+          { "text": "のみましょう", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みましょう" }], "romaji": "nomimashou" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
+          { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }], "romaji": "nomimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "みずを",
+          "のみましょう"
+        ],
+        "romaji": "Issho ni mizu wo nomimashou.",
+        "thai": "ดื่มน้ำด้วยกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-5",
+        "promptThai": "พูดว่า: เล่นกีฬากันเถอะ",
+        "chunks": [
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "しましょう", "romaji": "shimashou" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しませんか", "romaji": "shimasen ka" }
+        ],
+        "correctOrder": [
+          "スポーツを",
+          "しましょう"
+        ],
+        "romaji": "Supootsu wo shimashou.",
+        "thai": "เล่นกีฬากันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-6",
+        "promptThai": "พูดว่า: ไปญี่ปุ่นด้วยกันเถอะ",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "いきましょう", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きましょう" }], "romaji": "ikimashou" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "いきましょう"
+        ],
+        "romaji": "Issho ni ikimashou.",
+        "thai": "ไปญี่ปุ่นด้วยกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-7",
+        "promptThai": "พูดว่า: เขียนจดหมายกันเถอะ",
+        "chunks": [
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "かきましょう", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きましょう" }], "romaji": "kakimashou" },
+          { "text": "かきます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きます" }], "romaji": "kakimasu" },
+          { "text": "かきませんか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きませんか" }], "romaji": "kakimasen ka" }
+        ],
+        "correctOrder": [
+          "てがみを",
+          "かきましょう"
+        ],
+        "romaji": "Tegami wo kakimashou.",
+        "thai": "เขียนจดหมายกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-8",
+        "promptThai": "พูดว่า: พูดภาษาญี่ปุ่นกันเถอะ",
+        "chunks": [
+          { "text": "にほんごを", "kanji": [{ "text": "日本語", "reading": "にほんご" }, { "text": "を" }], "romaji": "nihongo wo" },
+          { "text": "はなしましょう", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "しましょう" }], "romaji": "hanashimashou" },
+          { "text": "はなします", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "します" }], "romaji": "hanashimasu" },
+          { "text": "はなしませんか", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "しませんか" }], "romaji": "hanashimasen ka" }
+        ],
+        "correctOrder": [
+          "にほんごを",
+          "はなしましょう"
+        ],
+        "romaji": "Nihongo wo hanashimashou.",
+        "thai": "พูดภาษาญี่ปุ่นกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-9",
+        "promptThai": "พูดว่า: ซื้อหนังสือด้วยกันเถอะ",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "かいましょう", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いましょう" }], "romaji": "kaimashou" },
+          { "text": "かいます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "います" }], "romaji": "kaimasu" },
+          { "text": "かいませんか", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いませんか" }], "romaji": "kaimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "ほんを",
+          "かいましょう"
+        ],
+        "romaji": "Issho ni hon wo kaimashou.",
+        "thai": "ซื้อหนังสือด้วยกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-10",
+        "promptThai": "พูดว่า: รอสักครู่กันเถอะ",
+        "chunks": [
+          { "text": "ちょっと", "romaji": "chotto" },
+          { "text": "まちましょう", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ちましょう" }], "romaji": "machimashou" },
+          { "text": "まちます", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ちます" }], "romaji": "machimasu" },
+          { "text": "まちませんか", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ちませんか" }], "romaji": "machimasen ka" }
+        ],
+        "correctOrder": [
+          "ちょっと",
+          "まちましょう"
+        ],
+        "romaji": "Chotto machimashou.",
+        "thai": "รอสักครู่กันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-11",
+        "promptThai": "พูดว่า: มาโรงเรียนด้วยกันเถอะ",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "きましょう", "kanji": [{ "text": "来", "reading": "き" }, { "text": "ましょう" }], "romaji": "kimashou" },
+          { "text": "ききます", "kanji": [{ "text": "来", "reading": "き" }, { "text": "きます" }], "romaji": "kimasu" },
+          { "text": "ききませんか", "kanji": [{ "text": "来", "reading": "き" }, { "text": "きませんか" }], "romaji": "kimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "きましょう"
+        ],
+        "romaji": "Issho ni kimashou.",
+        "thai": "มาโรงเรียนด้วยกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-12",
+        "promptThai": "พูดว่า: กินข้าวกันเถอะ",
+        "chunks": [
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべましょう", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べましょう" }], "romaji": "tabemashou" },
+          { "text": "たべます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べます" }], "romaji": "tabemasu" },
+          { "text": "たべませんか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんか" }], "romaji": "tabemasen ka" }
+        ],
+        "correctOrder": [
+          "ごはんを",
+          "たべましょう"
+        ],
+        "romaji": "Gohan wo tabemashou.",
+        "thai": "กินข้าวกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-13",
+        "promptThai": "พูดว่า: อ่านหนังสือด้วยกันเถอะ",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よみましょう", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みましょう" }], "romaji": "yomimashou" },
+          { "text": "よみます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みます" }], "romaji": "yomimasu" },
+          { "text": "よみませんか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みませんか" }], "romaji": "yomimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "ほんを",
+          "よみましょう"
+        ],
+        "romaji": "Issho ni hon wo yomimashou.",
+        "thai": "อ่านหนังสือด้วยกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-14",
+        "promptThai": "พูดว่า: เล่นกีฬาด้วยกันเถอะ",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "しましょう", "romaji": "shimashou" },
+          { "text": "します", "romaji": "shimasu" },
+          { "text": "しませんか", "romaji": "shimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "スポーツを",
+          "しましょう"
+        ],
+        "romaji": "Issho ni supootsu wo shimashou.",
+        "thai": "เล่นกีฬาด้วยกันเถอะ",
+        "explanation": "ましょう ต่อท้าย ます-stem ของกริยา (ตัด ます ออกแล้วเติม ましょう) ใช้ชวนทำสิ่งใดสิ่งหนึ่งร่วมกัน 'ไปกันเถอะ/ทำกันเถอะ'"
+      },
+      {
+        "id": "volitional-mashou-15",
+        "promptThai": "พูดว่า: จะรอสักครู่ดีไหม",
+        "chunks": [
+          { "text": "ちょっと", "romaji": "chotto" },
+          { "text": "まちましょうか", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ちましょうか" }], "romaji": "machimashou ka" },
+          { "text": "まちます", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ちます" }], "romaji": "machimasu" },
+          { "text": "まちませんか", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ちませんか" }], "romaji": "machimasen ka" }
+        ],
+        "correctOrder": [
+          "ちょっと",
+          "まちましょうか"
+        ],
+        "romaji": "Chotto machimashou ka.",
+        "thai": "จะรอสักครู่ดีไหม",
+        "explanation": "ましょうか ใช้เสนอตัวจะทำสิ่งใดสิ่งหนึ่งให้ หรือชวนแบบถามความเห็นเบาๆ 'จะ...ดีไหม'"
+      },
+      {
+        "id": "volitional-mashou-16",
+        "promptThai": "พูดว่า: จะดื่มน้ำดีไหม",
+        "chunks": [
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
+          { "text": "のみましょうか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みましょうか" }], "romaji": "nomimashou ka" },
+          { "text": "のみます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みます" }], "romaji": "nomimasu" },
+          { "text": "のみませんか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんか" }], "romaji": "nomimasen ka" }
+        ],
+        "correctOrder": [
+          "みずを",
+          "のみましょうか"
+        ],
+        "romaji": "Mizu wo nomimashou ka.",
+        "thai": "จะดื่มน้ำดีไหม",
+        "explanation": "ましょうか ใช้เสนอตัวจะทำสิ่งใดสิ่งหนึ่งให้ หรือชวนแบบถามความเห็นเบาๆ 'จะ...ดีไหม'"
+      },
+      {
+        "id": "volitional-mashou-17",
+        "promptThai": "พูดว่า: จะเขียนจดหมายดีไหม",
+        "chunks": [
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "かきましょうか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きましょうか" }], "romaji": "kakimashou ka" },
+          { "text": "かきます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きます" }], "romaji": "kakimasu" },
+          { "text": "かきませんか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きませんか" }], "romaji": "kakimasen ka" }
+        ],
+        "correctOrder": [
+          "てがみを",
+          "かきましょうか"
+        ],
+        "romaji": "Tegami wo kakimashou ka.",
+        "thai": "จะเขียนจดหมายดีไหม",
+        "explanation": "ましょうか ใช้เสนอตัวจะทำสิ่งใดสิ่งหนึ่งให้ หรือชวนแบบถามความเห็นเบาๆ 'จะ...ดีไหม'"
+      },
+      {
+        "id": "volitional-mashou-18",
+        "promptThai": "พูดว่า: จะพูดภาษาญี่ปุ่นดีไหม",
+        "chunks": [
+          { "text": "にほんごを", "kanji": [{ "text": "日本語", "reading": "にほんご" }, { "text": "を" }], "romaji": "nihongo wo" },
+          { "text": "はなしましょうか", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "しましょうか" }], "romaji": "hanashimashou ka" },
+          { "text": "はなします", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "します" }], "romaji": "hanashimasu" },
+          { "text": "はなしませんか", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "しませんか" }], "romaji": "hanashimasen ka" }
+        ],
+        "correctOrder": [
+          "にほんごを",
+          "はなしましょうか"
+        ],
+        "romaji": "Nihongo wo hanashimashou ka.",
+        "thai": "จะพูดภาษาญี่ปุ่นดีไหม",
+        "explanation": "ましょうか ใช้เสนอตัวจะทำสิ่งใดสิ่งหนึ่งให้ หรือชวนแบบถามความเห็นเบาๆ 'จะ...ดีไหม'"
+      },
+      {
+        "id": "volitional-mashou-19",
+        "promptThai": "พูดว่า: จะดูหนังดีไหม",
+        "chunks": [
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みましょうか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ましょうか" }], "romaji": "mimashou ka" },
+          { "text": "みます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ます" }], "romaji": "mimasu" },
+          { "text": "みませんか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ませんか" }], "romaji": "mimasen ka" }
+        ],
+        "correctOrder": [
+          "えいがを",
+          "みましょうか"
+        ],
+        "romaji": "Eiga wo mimashou ka.",
+        "thai": "จะดูหนังดีไหม",
+        "explanation": "ましょうか ใช้เสนอตัวจะทำสิ่งใดสิ่งหนึ่งให้ หรือชวนแบบถามความเห็นเบาๆ 'จะ...ดีไหม'"
+      },
+      {
+        "id": "volitional-mashou-20",
+        "promptThai": "พูดว่า: จะไปญี่ปุ่นดีไหม",
+        "chunks": [
+          { "text": "いっしょに", "kanji": [{ "text": "一緒に", "reading": "いっしょに" }], "romaji": "issho ni" },
+          { "text": "いきましょうか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きましょうか" }], "romaji": "ikimashou ka" },
+          { "text": "いきます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きます" }], "romaji": "ikimasu" },
+          { "text": "いきませんか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんか" }], "romaji": "ikimasen ka" }
+        ],
+        "correctOrder": [
+          "いっしょに",
+          "いきましょうか"
+        ],
+        "romaji": "Issho ni ikimashou ka.",
+        "thai": "จะไปญี่ปุ่นดีไหม",
+        "explanation": "ましょうか ใช้เสนอตัวจะทำสิ่งใดสิ่งหนึ่งให้ หรือชวนแบบถามความเห็นเบาๆ 'จะ...ดีไหม'"
+      }
+    ],
+    "formLabel": "",
+    "conjugationSuffixRomaji": ""
+  },
+  {
     "id": "past",
-    "order": 6,
+    "order": 9,
     "level": "basic",
     "title": "อดีต (ました)",
     "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ました",
@@ -2591,7 +3887,7 @@
   },
   {
     "id": "past-negative",
-    "order": 7,
+    "order": 10,
     "level": "basic",
     "title": "อดีตปฏิเสธ (ませんでした)",
     "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ませんでした",
@@ -3015,7 +4311,7 @@
   },
   {
     "id": "plain-forms",
-    "order": 8,
+    "order": 11,
     "level": "intermediate",
     "title": "พูดแบบกันเอง (ない/た/なかった)",
     "structure": "[ประธาน] + は + [กรรม] + を + [กริยา] (ない / た / なかった)",
@@ -3465,7 +4761,7 @@
   },
   {
     "id": "te-kudasai",
-    "order": 9,
+    "order": 12,
     "level": "intermediate",
     "title": "ขอร้อง/สั่ง (てください)",
     "structure": "[กรรม] + を + [กริยารูปて] + ください",
@@ -3845,7 +5141,7 @@
   },
   {
     "id": "te-iru",
-    "order": 10,
+    "order": 13,
     "level": "intermediate",
     "title": "กำลังทำ/สภาพที่เป็นอยู่ (ています)",
     "structure": "[ประธาน] + は + [กรรม] + を + [กริยารูปて]います",
@@ -4273,7 +5569,7 @@
   },
   {
     "id": "te-mo-ii",
-    "order": 11,
+    "order": 14,
     "level": "intermediate",
     "title": "ขออนุญาต (てもいいですか)",
     "structure": "[กรรม] + を + [กริยารูปて] + もいいですか",
@@ -4665,7 +5961,7 @@
   },
   {
     "id": "te-wa-ikemasen",
-    "order": 12,
+    "order": 15,
     "level": "intermediate",
     "title": "ข้อห้าม (てはいけません)",
     "structure": "[กรรม] + を + [กริยารูปて] + はいけません",
@@ -5067,7 +6363,7 @@
   },
   {
     "id": "tai-desu",
-    "order": 13,
+    "order": 16,
     "level": "intermediate",
     "title": "บอกความต้องการ (たいです)",
     "structure": "[ประธาน] + は + [กรรม] + が + [กริยาราก]たいです",
@@ -5482,5 +6778,1318 @@
     ],
     "formLabel": "たいです",
     "conjugationSuffixRomaji": " desu"
+  }
+,
+  {
+    "id": "potential",
+    "order": 17,
+    "level": "intermediate",
+    "title": "ความสามารถ (ことができます)",
+    "structure": "[ประธาน] + は + [กรรม] + が + [กริยาพจนานุกรม]ことができます",
+    "particles": [
+      {
+        "particle": "が",
+        "role": "มักใช้แทน を เพื่อบอกสิ่งที่สามารถทำได้"
+      },
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค"
+      }
+    ],
+    "timeNote": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกความสามารถ 'ทำ...ได้' มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้ (เหมือนกับรูป たいです) ส่วนกริยาการเคลื่อนที่ที่ใช้ へ/に อยู่แล้วไม่ต้องเปลี่ยนเป็น が",
+    "conjugationField": "dict",
+    "conjugationSuffix": "ことができます",
+    "examples": [
+      {
+        "japanese": "わたしは にほんごが はなすことができます。",
+        "romaji": "Watashi wa nihongo ga hanasu koto ga dekimasu.",
+        "thai": "ฉันพูดภาษาญี่ปุ่นได้",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "日本語", "reading": "にほんご" }, { "text": "が" }, { "text": " " }, { "text": "話", "reading": "はな" }, { "text": "すことができます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "かれは かんじが かくことができます。",
+        "romaji": "Kare wa kanji ga kaku koto ga dekimasu.",
+        "thai": "เขาเขียนคันจิได้",
+        "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }, { "text": " " }, { "text": "漢字", "reading": "かんじ" }, { "text": "が" }, { "text": " " }, { "text": "書", "reading": "か" }, { "text": "くことができます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "かのじょは ほんが よむことができます。",
+        "romaji": "Kanojo wa hon ga yomu koto ga dekimasu.",
+        "thai": "เธออ่านหนังสือได้",
+        "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "が" }, { "text": " " }, { "text": "読", "reading": "よ" }, { "text": "むことができます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "わたしは にほんへ いくことができます。",
+        "romaji": "Watashi wa nihon e iku koto ga dekimasu.",
+        "thai": "ฉันไปญี่ปุ่นได้",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "日本", "reading": "にほん" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "くことができます" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "potential-1",
+        "promptThai": "พูดว่า: ฉันพูดภาษาญี่ปุ่นได้",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "にほんごが", "kanji": [{ "text": "日本語", "reading": "にほんご" }], "romaji": "nihongo ga" },
+          { "text": "はなすことができます", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "すことができます" }], "romaji": "hanasu koto ga dekimasu" },
+          { "text": "はなしますことができます", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "しますことができます" }], "romaji": "hanashimasu koto ga dekimasu" },
+          { "text": "はなしてことができます", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "してことができます" }], "romaji": "hanashite koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "にほんごが",
+          "はなすことができます"
+        ],
+        "romaji": "Watashi wa nihongo ga hanasu koto ga dekimasu.",
+        "thai": "ฉันพูดภาษาญี่ปุ่นได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-2",
+        "promptThai": "พูดว่า: เขาเขียนคันจิได้",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "かんじが", "kanji": [{ "text": "漢字", "reading": "かんじ" }], "romaji": "kanji ga" },
+          { "text": "かくことができます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "くことができます" }], "romaji": "kaku koto ga dekimasu" },
+          { "text": "かきますことができます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きますことができます" }], "romaji": "kakimasu koto ga dekimasu" },
+          { "text": "かいてことができます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてことができます" }], "romaji": "kaite koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "かんじが",
+          "かくことができます"
+        ],
+        "romaji": "Kare wa kanji ga kaku koto ga dekimasu.",
+        "thai": "เขาเขียนคันจิได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-3",
+        "promptThai": "พูดว่า: เธออ่านหนังสือได้",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "ほんが", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "が" }], "romaji": "hon ga" },
+          { "text": "よむことができます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "むことができます" }], "romaji": "yomu koto ga dekimasu" },
+          { "text": "よみますことができます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みますことができます" }], "romaji": "yomimasu koto ga dekimasu" },
+          { "text": "よんでことができます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでことができます" }], "romaji": "yonde koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "ほんが",
+          "よむことができます"
+        ],
+        "romaji": "Kanojo wa hon ga yomu koto ga dekimasu.",
+        "thai": "เธออ่านหนังสือได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-4",
+        "promptThai": "พูดว่า: ฉันไปญี่ปุ่นได้",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "にほんへ", "kanji": [{ "text": "日本", "reading": "にほん" }, { "text": "へ" }], "romaji": "nihon e" },
+          { "text": "いくことができます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "くことができます" }], "romaji": "iku koto ga dekimasu" },
+          { "text": "いきますことができます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きますことができます" }], "romaji": "ikimasu koto ga dekimasu" },
+          { "text": "いってことができます", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってことができます" }], "romaji": "itte koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "にほんへ",
+          "いくことができます"
+        ],
+        "romaji": "Watashi wa nihon e iku koto ga dekimasu.",
+        "thai": "ฉันไปญี่ปุ่นได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-5",
+        "promptThai": "พูดว่า: ฉันดื่มน้ำได้",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "みずが", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "が" }], "romaji": "mizu ga" },
+          { "text": "のむことができます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "むことができます" }], "romaji": "nomu koto ga dekimasu" },
+          { "text": "のみますことができます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みますことができます" }], "romaji": "nomimasu koto ga dekimasu" },
+          { "text": "のんでことができます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでことができます" }], "romaji": "nonde koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "みずが",
+          "のむことができます"
+        ],
+        "romaji": "Watashi wa mizu ga nomu koto ga dekimasu.",
+        "thai": "ฉันดื่มน้ำได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-6",
+        "promptThai": "พูดว่า: ครูเขียนจดหมายได้",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "てがみが", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "が" }], "romaji": "tegami ga" },
+          { "text": "かくことができます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "くことができます" }], "romaji": "kaku koto ga dekimasu" },
+          { "text": "かきますことができます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きますことができます" }], "romaji": "kakimasu koto ga dekimasu" },
+          { "text": "かいてことができます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてことができます" }], "romaji": "kaite koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "てがみが",
+          "かくことができます"
+        ],
+        "romaji": "Sensei wa tegami ga kaku koto ga dekimasu.",
+        "thai": "ครูเขียนจดหมายได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-7",
+        "promptThai": "พูดว่า: นักเรียนซื้อหนังสือได้",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "ほんが", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "が" }], "romaji": "hon ga" },
+          { "text": "かうことができます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "うことができます" }], "romaji": "kau koto ga dekimasu" },
+          { "text": "かいますことができます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "いますことができます" }], "romaji": "kaimasu koto ga dekimasu" },
+          { "text": "かってことができます", "kanji": [{ "text": "買", "reading": "か" }, { "text": "ってことができます" }], "romaji": "katte koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "ほんが",
+          "かうことができます"
+        ],
+        "romaji": "Gakusei wa hon ga kau koto ga dekimasu.",
+        "thai": "นักเรียนซื้อหนังสือได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-8",
+        "promptThai": "พูดว่า: เขารอเพื่อนได้",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "ともだちが", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "が" }], "romaji": "tomodachi ga" },
+          { "text": "まつことができます", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "つことができます" }], "romaji": "matsu koto ga dekimasu" },
+          { "text": "まちますことができます", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ちますことができます" }], "romaji": "machimasu koto ga dekimasu" },
+          { "text": "まってことができます", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってことができます" }], "romaji": "matte koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "ともだちが",
+          "まつことができます"
+        ],
+        "romaji": "Kare wa tomodachi ga matsu koto ga dekimasu.",
+        "thai": "เขารอเพื่อนได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-9",
+        "promptThai": "พูดว่า: นักเรียนเล่นกีฬาได้",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "スポーツが", "romaji": "supootsu ga" },
+          { "text": "することができます", "romaji": "suru koto ga dekimasu" },
+          { "text": "しますことができます", "romaji": "shimasu koto ga dekimasu" },
+          { "text": "してことができます", "romaji": "shite koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "スポーツが",
+          "することができます"
+        ],
+        "romaji": "Gakusei wa supootsu ga suru koto ga dekimasu.",
+        "thai": "นักเรียนเล่นกีฬาได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-10",
+        "promptThai": "พูดว่า: เขามาโรงเรียนได้",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
+          { "text": "くることができます", "kanji": [{ "text": "来", "reading": "く" }, { "text": "ることができます" }], "romaji": "kuru koto ga dekimasu" },
+          { "text": "くきますことができます", "kanji": [{ "text": "来", "reading": "く" }, { "text": "きますことができます" }], "romaji": "kimasu koto ga dekimasu" },
+          { "text": "くきてことができます", "kanji": [{ "text": "来", "reading": "く" }, { "text": "きてことができます" }], "romaji": "kite koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "がっこうへ",
+          "くることができます"
+        ],
+        "romaji": "Kare wa gakkou e kuru koto ga dekimasu.",
+        "thai": "เขามาโรงเรียนได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-11",
+        "promptThai": "พูดว่า: ฉันตื่นเช้าได้",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "おきることができます", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きることができます" }], "romaji": "okiru koto ga dekimasu" },
+          { "text": "おきますことができます", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きますことができます" }], "romaji": "okimasu koto ga dekimasu" },
+          { "text": "おきてことができます", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きてことができます" }], "romaji": "okite koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "おきることができます"
+        ],
+        "romaji": "Watashi wa okiru koto ga dekimasu.",
+        "thai": "ฉันตื่นเช้าได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-12",
+        "promptThai": "พูดว่า: เธอนอนได้",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "ねることができます", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "ることができます" }], "romaji": "neru koto ga dekimasu" },
+          { "text": "ねますことができます", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "ますことができます" }], "romaji": "nemasu koto ga dekimasu" },
+          { "text": "ねてことができます", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "てことができます" }], "romaji": "nete koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "ねることができます"
+        ],
+        "romaji": "Kanojo wa neru koto ga dekimasu.",
+        "thai": "เธอนอนได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-13",
+        "promptThai": "พูดว่า: เขารีบได้",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "いそぐことができます", "kanji": [{ "text": "急", "reading": "いそ" }, { "text": "ぐことができます" }], "romaji": "isogu koto ga dekimasu" },
+          { "text": "いそぎますことができます", "kanji": [{ "text": "急", "reading": "いそ" }, { "text": "ぎますことができます" }], "romaji": "isogimasu koto ga dekimasu" },
+          { "text": "いそいでことができます", "kanji": [{ "text": "急", "reading": "いそ" }, { "text": "いでことができます" }], "romaji": "isoide koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "いそぐことができます"
+        ],
+        "romaji": "Kare wa isogu koto ga dekimasu.",
+        "thai": "เขารีบได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-14",
+        "promptThai": "พูดว่า: ครูกินข้าวได้",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "ごはんが", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "が" }], "romaji": "gohan ga" },
+          { "text": "たべることができます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べることができます" }], "romaji": "taberu koto ga dekimasu" },
+          { "text": "たべますことができます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べますことができます" }], "romaji": "tabemasu koto ga dekimasu" },
+          { "text": "たべてことができます", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてことができます" }], "romaji": "tabete koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "ごはんが",
+          "たべることができます"
+        ],
+        "romaji": "Sensei wa gohan ga taberu koto ga dekimasu.",
+        "thai": "ครูกินข้าวได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-15",
+        "promptThai": "พูดว่า: เธอดูหนังได้",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "えいがが", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "が" }], "romaji": "eiga ga" },
+          { "text": "みることができます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ることができます" }], "romaji": "miru koto ga dekimasu" },
+          { "text": "みますことができます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ますことができます" }], "romaji": "mimasu koto ga dekimasu" },
+          { "text": "みてことができます", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てことができます" }], "romaji": "mite koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "えいがが",
+          "みることができます"
+        ],
+        "romaji": "Kanojo wa eiga ga miru koto ga dekimasu.",
+        "thai": "เธอดูหนังได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-16",
+        "promptThai": "พูดว่า: เธอพูดภาษาญี่ปุ่นได้",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "にほんごが", "kanji": [{ "text": "日本語", "reading": "にほんご" }], "romaji": "nihongo ga" },
+          { "text": "はなすことができます", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "すことができます" }], "romaji": "hanasu koto ga dekimasu" },
+          { "text": "はなしますことができます", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "しますことができます" }], "romaji": "hanashimasu koto ga dekimasu" },
+          { "text": "はなしてことができます", "kanji": [{ "text": "話", "reading": "はな" }, { "text": "してことができます" }], "romaji": "hanashite koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "にほんごが",
+          "はなすことができます"
+        ],
+        "romaji": "Kanojo wa nihongo ga hanasu koto ga dekimasu.",
+        "thai": "เธอพูดภาษาญี่ปุ่นได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-17",
+        "promptThai": "พูดว่า: ฉันเขียนคันจิได้",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "かんじが", "kanji": [{ "text": "漢字", "reading": "かんじ" }], "romaji": "kanji ga" },
+          { "text": "かくことができます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "くことができます" }], "romaji": "kaku koto ga dekimasu" },
+          { "text": "かきますことができます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きますことができます" }], "romaji": "kakimasu koto ga dekimasu" },
+          { "text": "かいてことができます", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてことができます" }], "romaji": "kaite koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "かんじが",
+          "かくことができます"
+        ],
+        "romaji": "Watashi wa kanji ga kaku koto ga dekimasu.",
+        "thai": "ฉันเขียนคันจิได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-18",
+        "promptThai": "พูดว่า: นักเรียนอ่านหนังสือได้",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "ほんが", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "が" }], "romaji": "hon ga" },
+          { "text": "よむことができます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "むことができます" }], "romaji": "yomu koto ga dekimasu" },
+          { "text": "よみますことができます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みますことができます" }], "romaji": "yomimasu koto ga dekimasu" },
+          { "text": "よんでことができます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでことができます" }], "romaji": "yonde koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "ほんが",
+          "よむことができます"
+        ],
+        "romaji": "Gakusei wa hon ga yomu koto ga dekimasu.",
+        "thai": "นักเรียนอ่านหนังสือได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-19",
+        "promptThai": "พูดว่า: เขาดื่มกาแฟได้",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "コーヒーが", "romaji": "koohii ga" },
+          { "text": "のむことができます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "むことができます" }], "romaji": "nomu koto ga dekimasu" },
+          { "text": "のみますことができます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みますことができます" }], "romaji": "nomimasu koto ga dekimasu" },
+          { "text": "のんでことができます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでことができます" }], "romaji": "nonde koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "コーヒーが",
+          "のむことができます"
+        ],
+        "romaji": "Kare wa koohii ga nomu koto ga dekimasu.",
+        "thai": "เขาดื่มกาแฟได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      },
+      {
+        "id": "potential-20",
+        "promptThai": "พูดว่า: ครูเล่นกีฬาได้",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "スポーツが", "romaji": "supootsu ga" },
+          { "text": "することができます", "romaji": "suru koto ga dekimasu" },
+          { "text": "しますことができます", "romaji": "shimasu koto ga dekimasu" },
+          { "text": "してことができます", "romaji": "shite koto ga dekimasu" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "スポーツが",
+          "することができます"
+        ],
+        "romaji": "Sensei wa supootsu ga suru koto ga dekimasu.",
+        "thai": "ครูเล่นกีฬาได้",
+        "explanation": "ことができます ต่อท้ายรูปพจนานุกรมของกริยา (ไม่ใช่รูป ます หรือ て) เพื่อบอกว่าทำสิ่งนั้นได้ มักเปลี่ยน を เป็น が ในกรรมของสิ่งที่ทำได้"
+      }
+    ],
+    "formLabel": "ことができます",
+    "conjugationSuffixRomaji": " koto ga dekimasu"
+  },
+  {
+    "id": "giving-receiving",
+    "order": 18,
+    "level": "intermediate",
+    "title": "ให้และรับ (あげる/もらう/くれる)",
+    "structure": "[ผู้ให้] + は + [ผู้รับ] + に + [สิ่งของ] + を + あげます/もらいます/くれます",
+    "particles": [
+      {
+        "particle": "に",
+        "role": "ตัวบ่งชี้ผู้รับ (ให้แก่ใคร / รับจากใคร)"
+      },
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง (สิ่งของที่ให้/รับ)"
+      },
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค (ประธาน)"
+      }
+    ],
+    "timeNote": "การเลือกกริยาให้/รับขึ้นอยู่กับว่าใครเป็นผู้ให้และใครเป็นผู้รับ: あげる ใช้เมื่อ 'ฉัน' เป็นผู้ให้กับคนอื่น หรือคนอื่นให้กับคนอื่นอีกคน (ผู้รับไม่ใช่ฉัน) — くれる ใช้เฉพาะเมื่อผู้รับคือ 'ฉัน' (หรือคนในครอบครัว/กลุ่มของฉัน) เท่านั้น ถ้าฉันเป็นผู้ให้ ต้องใช้ あげる ไม่ใช่ くれる เด็ดขาด — もらう เปลี่ยนมุมมองมาที่ผู้รับ (ประธานของประโยคคือผู้รับ ไม่ว่าจะเป็นฉันหรือคนอื่น) ผู้ให้ตามด้วย に หรือ から กฎจำง่าย: ถ้าประธานคือผู้ให้และผู้รับไม่ใช่ฉัน ใช้ あげる, ถ้าผู้รับคือฉันและมีคนอื่นให้ ใช้ くれる, ถ้าต้องการเน้นว่าประธานคือผู้รับ ใช้ もらう",
+    "conjugationField": null,
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "わたしは たなかに ほんを あげます。",
+        "romaji": "Watashi wa Tanaka ni hon wo agemasu.",
+        "thai": "ฉันให้หนังสือกับทานากะ",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "たなか" }, { "text": "に" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "あげます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "たなかは わたしに ほんを くれます。",
+        "romaji": "Tanaka wa watashi ni hon wo kuremasu.",
+        "thai": "ทานากะให้หนังสือกับฉัน",
+        "kanji": [{ "text": "たなか" }, { "text": "は" }, { "text": " " }, { "text": "私", "reading": "わたし" }, { "text": "に" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "くれます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "わたしは たなかに ほんを もらいます。",
+        "romaji": "Watashi wa Tanaka ni hon wo moraimasu.",
+        "thai": "ฉันได้รับหนังสือจากทานากะ",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "たなか" }, { "text": "に" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "もらいます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "かれは ともだちに てがみを もらいます。",
+        "romaji": "Kare wa tomodachi ni tegami wo moraimasu.",
+        "thai": "เขาได้รับจดหมายจากเพื่อน",
+        "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }, { "text": " " }, { "text": "友達", "reading": "ともだち" }, { "text": "に" }, { "text": " " }, { "text": "手紙", "reading": "てがみ" }, { "text": "を" }, { "text": " " }, { "text": "もらいます" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "giving-receiving-1",
+        "promptThai": "พูดว่า: ฉันให้หนังสือกับทานากะ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "たなかに", "romaji": "Tanaka ni" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "たなかに",
+          "ほんを",
+          "あげます"
+        ],
+        "romaji": "Watashi wa Tanaka ni hon wo agemasu.",
+        "thai": "ฉันให้หนังสือกับทานากะ",
+        "explanation": "あげる ใช้เมื่อ 'ฉัน' เป็นผู้ให้กับคนอื่น (ประธาน = ผู้ให้ = ฉัน)"
+      },
+      {
+        "id": "giving-receiving-2",
+        "promptThai": "พูดว่า: ทานากะให้หนังสือกับฉัน",
+        "chunks": [
+          { "text": "たなかは", "romaji": "Tanaka wa" },
+          { "text": "わたしに", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "に" }], "romaji": "watashi ni" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "くれます", "romaji": "kuremasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" }
+        ],
+        "correctOrder": [
+          "たなかは",
+          "わたしに",
+          "ほんを",
+          "くれます"
+        ],
+        "romaji": "Tanaka wa watashi ni hon wo kuremasu.",
+        "thai": "ทานากะให้หนังสือกับฉัน",
+        "explanation": "くれる ใช้เฉพาะเมื่อผู้รับคือ 'ฉัน' (หรือคนในกลุ่มฉัน) เท่านั้น ถ้าฉันเป็นผู้ให้ต้องใช้ あげる ไม่ใช่ くれる"
+      },
+      {
+        "id": "giving-receiving-3",
+        "promptThai": "พูดว่า: ฉันได้รับหนังสือจากทานากะ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "たなかに", "romaji": "Tanaka ni" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "たなかに",
+          "ほんを",
+          "もらいます"
+        ],
+        "romaji": "Watashi wa Tanaka ni hon wo moraimasu.",
+        "thai": "ฉันได้รับหนังสือจากทานากะ",
+        "explanation": "もらう เปลี่ยนมุมมองมาที่ผู้รับ (ประธาน = ผู้รับ) ผู้ให้ตามด้วย に เหตุการณ์เดียวกับ くれる แต่พูดจากมุมมองผู้รับ"
+      },
+      {
+        "id": "giving-receiving-4",
+        "promptThai": "พูดว่า: ฉันให้จดหมายกับเพื่อน",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ともだちに", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "に" }], "romaji": "tomodachi ni" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ともだちに",
+          "てがみを",
+          "あげます"
+        ],
+        "romaji": "Watashi wa tomodachi ni tegami wo agemasu.",
+        "thai": "ฉันให้จดหมายกับเพื่อน",
+        "explanation": "あげる ใช้เมื่อ 'ฉัน' เป็นผู้ให้กับคนอื่น (ประธาน = ผู้ให้ = ฉัน)"
+      },
+      {
+        "id": "giving-receiving-5",
+        "promptThai": "พูดว่า: เพื่อนให้จดหมายกับฉัน",
+        "chunks": [
+          { "text": "ともだちは", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "は" }], "romaji": "tomodachi wa" },
+          { "text": "わたしに", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "に" }], "romaji": "watashi ni" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "くれます", "romaji": "kuremasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" }
+        ],
+        "correctOrder": [
+          "ともだちは",
+          "わたしに",
+          "てがみを",
+          "くれます"
+        ],
+        "romaji": "Tomodachi wa watashi ni tegami wo kuremasu.",
+        "thai": "เพื่อนให้จดหมายกับฉัน",
+        "explanation": "くれる ใช้เฉพาะเมื่อผู้รับคือ 'ฉัน' (หรือคนในกลุ่มฉัน) เท่านั้น ถ้าฉันเป็นผู้ให้ต้องใช้ あげる ไม่ใช่ くれる"
+      },
+      {
+        "id": "giving-receiving-6",
+        "promptThai": "พูดว่า: ฉันได้รับจดหมายจากเพื่อน",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ともだちに", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "に" }], "romaji": "tomodachi ni" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ともだちに",
+          "てがみを",
+          "もらいます"
+        ],
+        "romaji": "Watashi wa tomodachi ni tegami wo moraimasu.",
+        "thai": "ฉันได้รับจดหมายจากเพื่อน",
+        "explanation": "もらう เปลี่ยนมุมมองมาที่ผู้รับ (ประธาน = ผู้รับ) ผู้ให้ตามด้วย に เหตุการณ์เดียวกับ くれる แต่พูดจากมุมมองผู้รับ"
+      },
+      {
+        "id": "giving-receiving-7",
+        "promptThai": "พูดว่า: เขาให้ปากกากับเพื่อน",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "ともだちに", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "に" }], "romaji": "tomodachi ni" },
+          { "text": "ペンを", "romaji": "pen wo" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "ともだちに",
+          "ペンを",
+          "あげます"
+        ],
+        "romaji": "Kare wa tomodachi ni pen wo agemasu.",
+        "thai": "เขาให้ปากกากับเพื่อน",
+        "explanation": "あげる ใช้เมื่อคนอื่นให้กับคนอื่นอีกคน (ผู้รับไม่ใช่ฉัน) เช่นเดียวกับตอนฉันเป็นผู้ให้"
+      },
+      {
+        "id": "giving-receiving-8",
+        "promptThai": "พูดว่า: เธอให้หนังสือกับทานากะ",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "たなかに", "romaji": "Tanaka ni" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "たなかに",
+          "ほんを",
+          "あげます"
+        ],
+        "romaji": "Kanojo wa Tanaka ni hon wo agemasu.",
+        "thai": "เธอให้หนังสือกับทานากะ",
+        "explanation": "あげる ใช้เมื่อคนอื่นให้กับคนอื่นอีกคน (ผู้รับไม่ใช่ฉัน) เช่นเดียวกับตอนฉันเป็นผู้ให้"
+      },
+      {
+        "id": "giving-receiving-9",
+        "promptThai": "พูดว่า: ครูให้จดหมายกับฉัน",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "わたしに", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "に" }], "romaji": "watashi ni" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "くれます", "romaji": "kuremasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "わたしに",
+          "てがみを",
+          "くれます"
+        ],
+        "romaji": "Sensei wa watashi ni tegami wo kuremasu.",
+        "thai": "ครูให้จดหมายกับฉัน",
+        "explanation": "くれる ใช้เฉพาะเมื่อผู้รับคือ 'ฉัน' (หรือคนในกลุ่มฉัน) เท่านั้น ถ้าฉันเป็นผู้ให้ต้องใช้ あげる ไม่ใช่ くれる"
+      },
+      {
+        "id": "giving-receiving-10",
+        "promptThai": "พูดว่า: เพื่อนให้ปากกากับฉัน",
+        "chunks": [
+          { "text": "ともだちは", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "は" }], "romaji": "tomodachi wa" },
+          { "text": "わたしに", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "に" }], "romaji": "watashi ni" },
+          { "text": "ペンを", "romaji": "pen wo" },
+          { "text": "くれます", "romaji": "kuremasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" }
+        ],
+        "correctOrder": [
+          "ともだちは",
+          "わたしに",
+          "ペンを",
+          "くれます"
+        ],
+        "romaji": "Tomodachi wa watashi ni pen wo kuremasu.",
+        "thai": "เพื่อนให้ปากกากับฉัน",
+        "explanation": "くれる ใช้เฉพาะเมื่อผู้รับคือ 'ฉัน' (หรือคนในกลุ่มฉัน) เท่านั้น ถ้าฉันเป็นผู้ให้ต้องใช้ あげる ไม่ใช่ くれる"
+      },
+      {
+        "id": "giving-receiving-11",
+        "promptThai": "พูดว่า: ฉันได้รับปากกาจากครู",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "せんせいに", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "に" }], "romaji": "sensei ni" },
+          { "text": "ペンを", "romaji": "pen wo" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "せんせいに",
+          "ペンを",
+          "もらいます"
+        ],
+        "romaji": "Watashi wa sensei ni pen wo moraimasu.",
+        "thai": "ฉันได้รับปากกาจากครู",
+        "explanation": "もらう เปลี่ยนมุมมองมาที่ผู้รับ (ประธาน = ผู้รับ) ผู้ให้ตามด้วย に เหตุการณ์เดียวกับ くれる แต่พูดจากมุมมองผู้รับ"
+      },
+      {
+        "id": "giving-receiving-12",
+        "promptThai": "พูดว่า: เขาได้รับหนังสือจากเพื่อน",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "ともだちに", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "に" }], "romaji": "tomodachi ni" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "ともだちに",
+          "ほんを",
+          "もらいます"
+        ],
+        "romaji": "Kare wa tomodachi ni hon wo moraimasu.",
+        "thai": "เขาได้รับหนังสือจากเพื่อน",
+        "explanation": "もらう ใช้ได้แม้ผู้รับไม่ใช่ฉัน ตราบใดที่ประธานของประโยคคือผู้รับ"
+      },
+      {
+        "id": "giving-receiving-13",
+        "promptThai": "พูดว่า: เธอได้รับจดหมายจากทานากะ",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "たなかに", "romaji": "Tanaka ni" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "たなかに",
+          "てがみを",
+          "もらいます"
+        ],
+        "romaji": "Kanojo wa Tanaka ni tegami wo moraimasu.",
+        "thai": "เธอได้รับจดหมายจากทานากะ",
+        "explanation": "もらう ใช้ได้แม้ผู้รับไม่ใช่ฉัน ตราบใดที่ประธานของประโยคคือผู้รับ"
+      },
+      {
+        "id": "giving-receiving-14",
+        "promptThai": "พูดว่า: ฉันให้ปากกากับครู",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "せんせいに", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "に" }], "romaji": "sensei ni" },
+          { "text": "ペンを", "romaji": "pen wo" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "せんせいに",
+          "ペンを",
+          "あげます"
+        ],
+        "romaji": "Watashi wa sensei ni pen wo agemasu.",
+        "thai": "ฉันให้ปากกากับครู",
+        "explanation": "あげる ใช้เมื่อ 'ฉัน' เป็นผู้ให้กับคนอื่น (ประธาน = ผู้ให้ = ฉัน)"
+      },
+      {
+        "id": "giving-receiving-15",
+        "promptThai": "พูดว่า: นักเรียนให้หนังสือกับครู",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "せんせいに", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "に" }], "romaji": "sensei ni" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "せんせいに",
+          "ほんを",
+          "あげます"
+        ],
+        "romaji": "Gakusei wa sensei ni hon wo agemasu.",
+        "thai": "นักเรียนให้หนังสือกับครู",
+        "explanation": "あげる ใช้เมื่อคนอื่นให้กับคนอื่นอีกคน (ผู้รับไม่ใช่ฉัน) เช่นเดียวกับตอนฉันเป็นผู้ให้"
+      },
+      {
+        "id": "giving-receiving-16",
+        "promptThai": "พูดว่า: ทานากะให้ปากกากับฉัน",
+        "chunks": [
+          { "text": "たなかは", "romaji": "Tanaka wa" },
+          { "text": "わたしに", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "に" }], "romaji": "watashi ni" },
+          { "text": "ペンを", "romaji": "pen wo" },
+          { "text": "くれます", "romaji": "kuremasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" }
+        ],
+        "correctOrder": [
+          "たなかは",
+          "わたしに",
+          "ペンを",
+          "くれます"
+        ],
+        "romaji": "Tanaka wa watashi ni pen wo kuremasu.",
+        "thai": "ทานากะให้ปากกากับฉัน",
+        "explanation": "くれる ใช้เฉพาะเมื่อผู้รับคือ 'ฉัน' (หรือคนในกลุ่มฉัน) เท่านั้น ถ้าฉันเป็นผู้ให้ต้องใช้ あげる ไม่ใช่ くれる"
+      },
+      {
+        "id": "giving-receiving-17",
+        "promptThai": "พูดว่า: เขาให้หนังสือกับเธอ",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "かのじょに", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "に" }], "romaji": "kanojo ni" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "かのじょに",
+          "ほんを",
+          "あげます"
+        ],
+        "romaji": "Kare wa kanojo ni hon wo agemasu.",
+        "thai": "เขาให้หนังสือกับเธอ",
+        "explanation": "あげる ใช้เมื่อคนอื่นให้กับคนอื่นอีกคน (ผู้รับไม่ใช่ฉัน) เช่นเดียวกับตอนฉันเป็นผู้ให้"
+      },
+      {
+        "id": "giving-receiving-18",
+        "promptThai": "พูดว่า: เธอให้ปากกากับเขา",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "かれに", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "に" }], "romaji": "kare ni" },
+          { "text": "ペンを", "romaji": "pen wo" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "かれに",
+          "ペンを",
+          "あげます"
+        ],
+        "romaji": "Kanojo wa kare ni pen wo agemasu.",
+        "thai": "เธอให้ปากกากับเขา",
+        "explanation": "あげる ใช้เมื่อคนอื่นให้กับคนอื่นอีกคน (ผู้รับไม่ใช่ฉัน) เช่นเดียวกับตอนฉันเป็นผู้ให้"
+      },
+      {
+        "id": "giving-receiving-19",
+        "promptThai": "พูดว่า: ฉันได้รับปากกาจากเพื่อน",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ともだちに", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "に" }], "romaji": "tomodachi ni" },
+          { "text": "ペンを", "romaji": "pen wo" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ともだちに",
+          "ペンを",
+          "もらいます"
+        ],
+        "romaji": "Watashi wa tomodachi ni pen wo moraimasu.",
+        "thai": "ฉันได้รับปากกาจากเพื่อน",
+        "explanation": "もらう เปลี่ยนมุมมองมาที่ผู้รับ (ประธาน = ผู้รับ) ผู้ให้ตามด้วย に เหตุการณ์เดียวกับ くれる แต่พูดจากมุมมองผู้รับ"
+      },
+      {
+        "id": "giving-receiving-20",
+        "promptThai": "พูดว่า: ครูให้หนังสือกับนักเรียน",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "がくせいに", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "に" }], "romaji": "gakusei ni" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "あげます", "romaji": "agemasu" },
+          { "text": "もらいます", "romaji": "moraimasu" },
+          { "text": "くれます", "romaji": "kuremasu" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "がくせいに",
+          "ほんを",
+          "あげます"
+        ],
+        "romaji": "Sensei wa gakusei ni hon wo agemasu.",
+        "thai": "ครูให้หนังสือกับนักเรียน",
+        "explanation": "あげる ใช้เมื่อคนอื่นให้กับคนอื่นอีกคน (ผู้รับไม่ใช่ฉัน) เช่นเดียวกับตอนฉันเป็นผู้ให้"
+      }
+    ],
+    "formLabel": "",
+    "conjugationSuffixRomaji": ""
+  },
+  {
+    "id": "adjective-comparison",
+    "order": 19,
+    "level": "intermediate",
+    "title": "เปรียบเทียบ (~より/~のほうが)",
+    "structure": "[A] + は + [B] + より + [คำคุณศัพท์]です / [A] + のほうが + [คำคุณศัพท์]です",
+    "particles": [
+      {
+        "particle": "より",
+        "role": "ตัวบ่งชี้การเปรียบเทียบ แปลว่า 'มากกว่า' วางไว้หลังสิ่งที่เอาไปเทียบด้วย"
+      },
+      {
+        "particle": "の",
+        "role": "ใช้ในวลี ~のほうが (ฝั่งของ...) เพื่อเน้นว่าตัวเลือกไหนดีกว่า/มากกว่า"
+      }
+    ],
+    "timeNote": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです หมายถึง X ADJ กว่า Y — ~のほうが ใช้เน้นว่าตัวเลือกไหนดีกว่า/ชอบกว่า โครงสร้าง Xのほうが (Yより) ADJです หมายถึง X ADJ กว่า (เมื่อเทียบกับ Y ถ้าระบุ) มักใช้ตอบคำถามเปรียบเทียบ ทั้งสองโครงสร้างใช้รูปคำคุณศัพท์แบบบอกเล่าปกติเท่านั้น (ไม่ใช่รูปปฏิเสธหรืออดีต)",
+    "conjugationField": null,
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "これは あれより おおきいです。",
+        "romaji": "Kore wa are yori ookii desu.",
+        "thai": "นี่ใหญ่กว่าโน่น",
+        "kanji": [{ "text": "これ" }, { "text": "は" }, { "text": " " }, { "text": "あれ" }, { "text": "より" }, { "text": " " }, { "text": "大", "reading": "おお" }, { "text": "きいです" }, { "text": "。" }]
+      },
+      {
+        "japanese": "きょうは きのうより あついです。",
+        "romaji": "Kyou wa kinou yori atsui desu.",
+        "thai": "วันนี้ร้อนกว่าเมื่อวาน",
+        "kanji": [{ "text": "今日", "reading": "きょう" }, { "text": "は" }, { "text": " " }, { "text": "昨日", "reading": "きのう" }, { "text": "より" }, { "text": " " }, { "text": "暑", "reading": "あつ" }, { "text": "いです" }, { "text": "。" }]
+      },
+      {
+        "japanese": "としょかんの ほうが しずかです。",
+        "romaji": "Toshokan no hou ga shizuka desu.",
+        "thai": "ห้องสมุดเงียบกว่า",
+        "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "の" }, { "text": " " }, { "text": "ほうが" }, { "text": " " }, { "text": "静", "reading": "しず" }, { "text": "かです" }, { "text": "。" }]
+      },
+      {
+        "japanese": "これの ほうが あれより やすいです。",
+        "romaji": "Kore no hou ga are yori yasui desu.",
+        "thai": "อันนี้ถูกกว่าอันโน้น",
+        "kanji": [{ "text": "これ" }, { "text": "の" }, { "text": " " }, { "text": "ほうが" }, { "text": " " }, { "text": "あれ" }, { "text": "より" }, { "text": " " }, { "text": "安", "reading": "やす" }, { "text": "いです" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "adjective-comparison-1",
+        "promptThai": "พูดว่า: นี่ใหญ่กว่านั่น",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "それより", "romaji": "sore yori" },
+          { "text": "おおきいです", "kanji": [{ "text": "大", "reading": "おお" }, { "text": "きいです" }], "romaji": "ookii desu" },
+          { "text": "おおきくないです", "kanji": [{ "text": "大", "reading": "おお" }, { "text": "きくないです" }], "romaji": "ookiku nai desu" },
+          { "text": "おおきかったです", "kanji": [{ "text": "大", "reading": "おお" }, { "text": "きかったです" }], "romaji": "ookikatta desu" }
+        ],
+        "correctOrder": [
+          "これは",
+          "それより",
+          "おおきいです"
+        ],
+        "romaji": "Kore wa sore yori ookii desu.",
+        "thai": "นี่ใหญ่กว่านั่น",
+        "explanation": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです = X ADJ กว่า Y"
+      },
+      {
+        "id": "adjective-comparison-2",
+        "promptThai": "พูดว่า: โน่นเล็กกว่านี่",
+        "chunks": [
+          { "text": "あれは", "romaji": "are wa" },
+          { "text": "これより", "romaji": "kore yori" },
+          { "text": "ちいさいです", "kanji": [{ "text": "小", "reading": "ちい" }, { "text": "さいです" }], "romaji": "chiisai desu" },
+          { "text": "ちいさくないです", "kanji": [{ "text": "小", "reading": "ちい" }, { "text": "さくないです" }], "romaji": "chiisaku nai desu" },
+          { "text": "ちいさかったです", "kanji": [{ "text": "小", "reading": "ちい" }, { "text": "さかったです" }], "romaji": "chiisakatta desu" }
+        ],
+        "correctOrder": [
+          "あれは",
+          "これより",
+          "ちいさいです"
+        ],
+        "romaji": "Are wa kore yori chiisai desu.",
+        "thai": "โน่นเล็กกว่านี่",
+        "explanation": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです = X ADJ กว่า Y"
+      },
+      {
+        "id": "adjective-comparison-3",
+        "promptThai": "พูดว่า: นี่แพงกว่าโน่น",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "あれより", "romaji": "are yori" },
+          { "text": "たかいです", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "いです" }], "romaji": "takai desu" },
+          { "text": "たかくないです", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "くないです" }], "romaji": "takaku nai desu" },
+          { "text": "たかかったです", "kanji": [{ "text": "高", "reading": "たか" }, { "text": "かったです" }], "romaji": "takakatta desu" }
+        ],
+        "correctOrder": [
+          "これは",
+          "あれより",
+          "たかいです"
+        ],
+        "romaji": "Kore wa are yori takai desu.",
+        "thai": "นี่แพงกว่าโน่น",
+        "explanation": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです = X ADJ กว่า Y"
+      },
+      {
+        "id": "adjective-comparison-4",
+        "promptThai": "พูดว่า: นั่นถูกกว่านี่",
+        "chunks": [
+          { "text": "それは", "romaji": "sore wa" },
+          { "text": "これより", "romaji": "kore yori" },
+          { "text": "やすいです", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "いです" }], "romaji": "yasui desu" },
+          { "text": "やすくないです", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "くないです" }], "romaji": "yasuku nai desu" },
+          { "text": "やすかったです", "kanji": [{ "text": "安", "reading": "やす" }, { "text": "かったです" }], "romaji": "yasukatta desu" }
+        ],
+        "correctOrder": [
+          "それは",
+          "これより",
+          "やすいです"
+        ],
+        "romaji": "Sore wa kore yori yasui desu.",
+        "thai": "นั่นถูกกว่านี่",
+        "explanation": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです = X ADJ กว่า Y"
+      },
+      {
+        "id": "adjective-comparison-5",
+        "promptThai": "พูดว่า: วันนี้ร้อนกว่าเมื่อวาน",
+        "chunks": [
+          { "text": "きょうは", "kanji": [{ "text": "今日", "reading": "きょう" }, { "text": "は" }], "romaji": "kyou wa" },
+          { "text": "きのうより", "kanji": [{ "text": "昨日", "reading": "きのう" }, { "text": "より" }], "romaji": "kinou yori" },
+          { "text": "あついです", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "いです" }], "romaji": "atsui desu" },
+          { "text": "あつくないです", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "くないです" }], "romaji": "atsuku nai desu" },
+          { "text": "あつかったです", "kanji": [{ "text": "暑", "reading": "あつ" }, { "text": "かったです" }], "romaji": "atsukatta desu" }
+        ],
+        "correctOrder": [
+          "きょうは",
+          "きのうより",
+          "あついです"
+        ],
+        "romaji": "Kyou wa kinou yori atsui desu.",
+        "thai": "วันนี้ร้อนกว่าเมื่อวาน",
+        "explanation": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです = X ADJ กว่า Y"
+      },
+      {
+        "id": "adjective-comparison-6",
+        "promptThai": "พูดว่า: เมื่อวานหนาวกว่าวันนี้",
+        "chunks": [
+          { "text": "きのうは", "kanji": [{ "text": "昨日", "reading": "きのう" }, { "text": "は" }], "romaji": "kinou wa" },
+          { "text": "きょうより", "kanji": [{ "text": "今日", "reading": "きょう" }, { "text": "より" }], "romaji": "kyou yori" },
+          { "text": "さむいです", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "いです" }], "romaji": "samui desu" },
+          { "text": "さむくないです", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "くないです" }], "romaji": "samuku nai desu" },
+          { "text": "さむかったです", "kanji": [{ "text": "寒", "reading": "さむ" }, { "text": "かったです" }], "romaji": "samukatta desu" }
+        ],
+        "correctOrder": [
+          "きのうは",
+          "きょうより",
+          "さむいです"
+        ],
+        "romaji": "Kinou wa kyou yori samui desu.",
+        "thai": "เมื่อวานหนาวกว่าวันนี้",
+        "explanation": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです = X ADJ กว่า Y"
+      },
+      {
+        "id": "adjective-comparison-7",
+        "promptThai": "พูดว่า: นี่ใหม่กว่านั่น",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "それより", "romaji": "sore yori" },
+          { "text": "あたらしいです", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しいです" }], "romaji": "atarashii desu" },
+          { "text": "あたらしくないです", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しくないです" }], "romaji": "atarashiku nai desu" },
+          { "text": "あたらしかったです", "kanji": [{ "text": "新", "reading": "あたら" }, { "text": "しかったです" }], "romaji": "atarashikatta desu" }
+        ],
+        "correctOrder": [
+          "これは",
+          "それより",
+          "あたらしいです"
+        ],
+        "romaji": "Kore wa sore yori atarashii desu.",
+        "thai": "นี่ใหม่กว่านั่น",
+        "explanation": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです = X ADJ กว่า Y"
+      },
+      {
+        "id": "adjective-comparison-8",
+        "promptThai": "พูดว่า: โน่นเก่ากว่านี่",
+        "chunks": [
+          { "text": "あれは", "romaji": "are wa" },
+          { "text": "これより", "romaji": "kore yori" },
+          { "text": "ふるいです", "kanji": [{ "text": "古", "reading": "ふる" }, { "text": "いです" }], "romaji": "furui desu" },
+          { "text": "ふるくないです", "kanji": [{ "text": "古", "reading": "ふる" }, { "text": "くないです" }], "romaji": "furuku nai desu" },
+          { "text": "ふるかったです", "kanji": [{ "text": "古", "reading": "ふる" }, { "text": "かったです" }], "romaji": "furukatta desu" }
+        ],
+        "correctOrder": [
+          "あれは",
+          "これより",
+          "ふるいです"
+        ],
+        "romaji": "Are wa kore yori furui desu.",
+        "thai": "โน่นเก่ากว่านี่",
+        "explanation": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです = X ADJ กว่า Y"
+      },
+      {
+        "id": "adjective-comparison-9",
+        "promptThai": "พูดว่า: เขาแข็งแรงกว่าฉัน",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "わたしより", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "より" }], "romaji": "watashi yori" },
+          { "text": "げんきです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }], "romaji": "genki desu" },
+          { "text": "げんきじゃないです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "じゃないです" }], "romaji": "genki ja nai desu" },
+          { "text": "げんきでした", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "でした" }], "romaji": "genki deshita" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "わたしより",
+          "げんきです"
+        ],
+        "romaji": "Kare wa watashi yori genki desu.",
+        "thai": "เขาแข็งแรงกว่าฉัน",
+        "explanation": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです = X ADJ กว่า Y"
+      },
+      {
+        "id": "adjective-comparison-10",
+        "promptThai": "พูดว่า: ทานากะเร็วกว่าเขา",
+        "chunks": [
+          { "text": "たなかは", "romaji": "Tanaka wa" },
+          { "text": "かれより", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "より" }], "romaji": "kare yori" },
+          { "text": "はやいです", "kanji": [{ "text": "早", "reading": "はや" }, { "text": "いです" }], "romaji": "hayai desu" },
+          { "text": "はやくないです", "kanji": [{ "text": "早", "reading": "はや" }, { "text": "くないです" }], "romaji": "hayaku nai desu" },
+          { "text": "はやかったです", "kanji": [{ "text": "早", "reading": "はや" }, { "text": "かったです" }], "romaji": "hayakatta desu" }
+        ],
+        "correctOrder": [
+          "たなかは",
+          "かれより",
+          "はやいです"
+        ],
+        "romaji": "Tanaka wa kare yori hayai desu.",
+        "thai": "ทานากะเร็วกว่าเขา",
+        "explanation": "より แปลว่า 'มากกว่า' ใช้เปรียบเทียบ 2 สิ่ง โครงสร้าง Xは Yより ADJです = X ADJ กว่า Y"
+      },
+      {
+        "id": "adjective-comparison-11",
+        "promptThai": "พูดว่า: ห้องสมุดเงียบกว่า",
+        "chunks": [
+          { "text": "としょかんのほうが", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "のほうが" }], "romaji": "toshokan no hou ga" },
+          { "text": "しずかです", "kanji": [{ "text": "静", "reading": "しず" }, { "text": "かです" }], "romaji": "shizuka desu" },
+          { "text": "しずかじゃないです", "kanji": [{ "text": "静", "reading": "しず" }, { "text": "かじゃないです" }], "romaji": "shizuka ja nai desu" },
+          { "text": "しずかでした", "kanji": [{ "text": "静", "reading": "しず" }, { "text": "かでした" }], "romaji": "shizuka deshita" }
+        ],
+        "correctOrder": [
+          "としょかんのほうが",
+          "しずかです"
+        ],
+        "romaji": "Toshokan no hou ga shizuka desu.",
+        "thai": "ห้องสมุดเงียบกว่า",
+        "explanation": "Xのほうが ADJです ใช้เน้นว่า X ADJ กว่า (เมื่อเทียบกับตัวเลือกอื่น) มักใช้ตอบคำถามเปรียบเทียบ"
+      },
+      {
+        "id": "adjective-comparison-12",
+        "promptThai": "พูดว่า: อันนี้อร่อยกว่า",
+        "chunks": [
+          { "text": "これのほうが", "romaji": "kore no hou ga" },
+          { "text": "おいしいです", "romaji": "oishii desu" },
+          { "text": "おいしくないです", "romaji": "oishiku nai desu" },
+          { "text": "おいしかったです", "romaji": "oishikatta desu" }
+        ],
+        "correctOrder": [
+          "これのほうが",
+          "おいしいです"
+        ],
+        "romaji": "Kore no hou ga oishii desu.",
+        "thai": "อันนี้อร่อยกว่า",
+        "explanation": "Xのほうが ADJです ใช้เน้นว่า X ADJ กว่า (เมื่อเทียบกับตัวเลือกอื่น) มักใช้ตอบคำถามเปรียบเทียบ"
+      },
+      {
+        "id": "adjective-comparison-13",
+        "promptThai": "พูดว่า: ทานากะใจดีกว่า",
+        "chunks": [
+          { "text": "たなかのほうが", "romaji": "Tanaka no hou ga" },
+          { "text": "しんせつです", "kanji": [{ "text": "親切", "reading": "しんせつ" }, { "text": "です" }], "romaji": "shinsetsu desu" },
+          { "text": "しんせつじゃないです", "kanji": [{ "text": "親切", "reading": "しんせつ" }, { "text": "じゃないです" }], "romaji": "shinsetsu ja nai desu" },
+          { "text": "しんせつでした", "kanji": [{ "text": "親切", "reading": "しんせつ" }, { "text": "でした" }], "romaji": "shinsetsu deshita" }
+        ],
+        "correctOrder": [
+          "たなかのほうが",
+          "しんせつです"
+        ],
+        "romaji": "Tanaka no hou ga shinsetsu desu.",
+        "thai": "ทานากะใจดีกว่า",
+        "explanation": "Xのほうが ADJです ใช้เน้นว่า X ADJ กว่า (เมื่อเทียบกับตัวเลือกอื่น) มักใช้ตอบคำถามเปรียบเทียบ"
+      },
+      {
+        "id": "adjective-comparison-14",
+        "promptThai": "พูดว่า: อันนี้สะดวกกว่า",
+        "chunks": [
+          { "text": "これのほうが", "romaji": "kore no hou ga" },
+          { "text": "べんりです", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "です" }], "romaji": "benri desu" },
+          { "text": "べんりじゃないです", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "じゃないです" }], "romaji": "benri ja nai desu" },
+          { "text": "べんりでした", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "でした" }], "romaji": "benri deshita" }
+        ],
+        "correctOrder": [
+          "これのほうが",
+          "べんりです"
+        ],
+        "romaji": "Kore no hou ga benri desu.",
+        "thai": "อันนี้สะดวกกว่า",
+        "explanation": "Xのほうが ADJです ใช้เน้นว่า X ADJ กว่า (เมื่อเทียบกับตัวเลือกอื่น) มักใช้ตอบคำถามเปรียบเทียบ"
+      },
+      {
+        "id": "adjective-comparison-15",
+        "promptThai": "พูดว่า: เขามีชื่อเสียงกว่า",
+        "chunks": [
+          { "text": "かれのほうが", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "のほうが" }], "romaji": "kare no hou ga" },
+          { "text": "ゆうめいです", "kanji": [{ "text": "有名", "reading": "ゆうめい" }, { "text": "です" }], "romaji": "yuumei desu" },
+          { "text": "ゆうめいじゃないです", "kanji": [{ "text": "有名", "reading": "ゆうめい" }, { "text": "じゃないです" }], "romaji": "yuumei ja nai desu" },
+          { "text": "ゆうめいでした", "kanji": [{ "text": "有名", "reading": "ゆうめい" }, { "text": "でした" }], "romaji": "yuumei deshita" }
+        ],
+        "correctOrder": [
+          "かれのほうが",
+          "ゆうめいです"
+        ],
+        "romaji": "Kare no hou ga yuumei desu.",
+        "thai": "เขามีชื่อเสียงกว่า",
+        "explanation": "Xのほうが ADJです ใช้เน้นว่า X ADJ กว่า (เมื่อเทียบกับตัวเลือกอื่น) มักใช้ตอบคำถามเปรียบเทียบ"
+      },
+      {
+        "id": "adjective-comparison-16",
+        "promptThai": "พูดว่า: อันนี้สวยกว่า",
+        "chunks": [
+          { "text": "これのほうが", "romaji": "kore no hou ga" },
+          { "text": "きれいです", "romaji": "kirei desu" },
+          { "text": "きれいじゃないです", "romaji": "kirei ja nai desu" },
+          { "text": "きれいでした", "romaji": "kirei deshita" }
+        ],
+        "correctOrder": [
+          "これのほうが",
+          "きれいです"
+        ],
+        "romaji": "Kore no hou ga kirei desu.",
+        "thai": "อันนี้สวยกว่า",
+        "explanation": "Xのほうが ADJです ใช้เน้นว่า X ADJ กว่า (เมื่อเทียบกับตัวเลือกอื่น) มักใช้ตอบคำถามเปรียบเทียบ"
+      },
+      {
+        "id": "adjective-comparison-17",
+        "promptThai": "พูดว่า: อันนี้ดีกว่าโน่น",
+        "chunks": [
+          { "text": "これのほうが", "romaji": "kore no hou ga" },
+          { "text": "あれより", "romaji": "are yori" },
+          { "text": "いいです", "romaji": "ii desu" },
+          { "text": "よくないです", "romaji": "yoku nai desu" },
+          { "text": "よかったです", "romaji": "yokatta desu" }
+        ],
+        "correctOrder": [
+          "これのほうが",
+          "あれより",
+          "いいです"
+        ],
+        "romaji": "Kore no hou ga are yori ii desu.",
+        "thai": "อันนี้ดีกว่าโน่น",
+        "explanation": "Xのほうが ADJです ใช้เน้นว่า X ADJ กว่า (เมื่อเทียบกับตัวเลือกอื่น) มักใช้ตอบคำถามเปรียบเทียบ"
+      },
+      {
+        "id": "adjective-comparison-18",
+        "promptThai": "พูดว่า: โรงเรียนสะดวกกว่าห้องสมุด",
+        "chunks": [
+          { "text": "がっこうのほうが", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "のほうが" }], "romaji": "gakkou no hou ga" },
+          { "text": "としょかんより", "kanji": [{ "text": "図書館", "reading": "としょかん" }, { "text": "より" }], "romaji": "toshokan yori" },
+          { "text": "べんりです", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "です" }], "romaji": "benri desu" },
+          { "text": "べんりじゃないです", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "じゃないです" }], "romaji": "benri ja nai desu" },
+          { "text": "べんりでした", "kanji": [{ "text": "便利", "reading": "べんり" }, { "text": "でした" }], "romaji": "benri deshita" }
+        ],
+        "correctOrder": [
+          "がっこうのほうが",
+          "としょかんより",
+          "べんりです"
+        ],
+        "romaji": "Gakkou no hou ga toshokan yori benri desu.",
+        "thai": "โรงเรียนสะดวกกว่าห้องสมุด",
+        "explanation": "Xのほうが ADJです ใช้เน้นว่า X ADJ กว่า (เมื่อเทียบกับตัวเลือกอื่น) มักใช้ตอบคำถามเปรียบเทียบ"
+      },
+      {
+        "id": "adjective-comparison-19",
+        "promptThai": "พูดว่า: เธอสวยกว่า",
+        "chunks": [
+          { "text": "かのじょのほうが", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "のほうが" }], "romaji": "kanojo no hou ga" },
+          { "text": "きれいです", "romaji": "kirei desu" },
+          { "text": "きれいじゃないです", "romaji": "kirei ja nai desu" },
+          { "text": "きれいでした", "romaji": "kirei deshita" }
+        ],
+        "correctOrder": [
+          "かのじょのほうが",
+          "きれいです"
+        ],
+        "romaji": "Kanojo no hou ga kirei desu.",
+        "thai": "เธอสวยกว่า",
+        "explanation": "Xのほうが ADJです ใช้เน้นว่า X ADJ กว่า (เมื่อเทียบกับตัวเลือกอื่น) มักใช้ตอบคำถามเปรียบเทียบ"
+      },
+      {
+        "id": "adjective-comparison-20",
+        "promptThai": "พูดว่า: ครูแข็งแรงกว่า",
+        "chunks": [
+          { "text": "せんせいのほうが", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "のほうが" }], "romaji": "sensei no hou ga" },
+          { "text": "げんきです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "です" }], "romaji": "genki desu" },
+          { "text": "げんきじゃないです", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "じゃないです" }], "romaji": "genki ja nai desu" },
+          { "text": "げんきでした", "kanji": [{ "text": "元気", "reading": "げんき" }, { "text": "でした" }], "romaji": "genki deshita" }
+        ],
+        "correctOrder": [
+          "せんせいのほうが",
+          "げんきです"
+        ],
+        "romaji": "Sensei no hou ga genki desu.",
+        "thai": "ครูแข็งแรงกว่า",
+        "explanation": "Xのほうが ADJです ใช้เน้นว่า X ADJ กว่า (เมื่อเทียบกับตัวเลือกอื่น) มักใช้ตอบคำถามเปรียบเทียบ"
+      }
+    ],
+    "formLabel": "",
+    "conjugationSuffixRomaji": ""
   }
 ]
