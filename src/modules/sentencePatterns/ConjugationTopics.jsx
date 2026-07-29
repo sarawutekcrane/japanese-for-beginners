@@ -5,6 +5,7 @@ import TopicMasen from "./topics/TopicMasen";
 import TopicPast from "./topics/TopicPast";
 import TopicTe from "./topics/TopicTe";
 import TopicTai from "./topics/TopicTai";
+import TopicPlain from "./topics/TopicPlain";
 import TopicComparison from "./topics/TopicComparison";
 
 const TOPICS = [
@@ -14,6 +15,7 @@ const TOPICS = [
   { id: "past", emoji: "⏪", title: "ました / ませんでした (อดีต)", Component: TopicPast },
   { id: "te", emoji: "🔗", title: "て-form (5 กฎ + ข้อยกเว้น)", Component: TopicTe },
   { id: "tai", emoji: "💭", title: "たい-form (อยากทำ)", Component: TopicTai },
+  { id: "plain", emoji: "🗣️", title: "รูปธรรมดา (ない/た/なかった)", Component: TopicPlain },
   { id: "comparison", emoji: "📊", title: "ตารางเปรียบเทียบทุกรูป", Component: TopicComparison },
 ];
 

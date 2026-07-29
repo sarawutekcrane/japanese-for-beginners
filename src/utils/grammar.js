@@ -2,7 +2,7 @@ import verbs from "../data/verbs.json";
 import patterns from "../data/sentencePatterns.json";
 import { shuffle } from "./content";
 
-export const CONJUGATION_FIELDS = ["masu", "masen", "mashita", "masendeshita", "te", "tai"];
+export const CONJUGATION_FIELDS = ["masu", "masen", "mashita", "masendeshita", "te", "tai", "nai", "ta", "nakatta"];
 
 const KANJI_MAP = new Map();
 for (const verb of verbs) {
@@ -43,6 +43,25 @@ export function explanationFor(verb, field) {
   if (field === "te") {
     return TE_RULE_TH[verb.teGroup] || "";
   }
+  if (field === "nai") {
+    if (verb.group === 1) {
+      const exception = verb.dict.endsWith("う") ? " (ข้อยกเว้น: ลงท้ายด้วย う เปลี่ยนเป็น わ ไม่ใช่ あ)" : "";
+      return "กริยากลุ่ม 1 (godan): เปลี่ยนเสียงท้ายจากแถว อุ เป็นแถว อะ แล้วเติม ない" + exception + " เช่น " + verb.dict + " → " + verb.nai;
+    }
+    if (verb.group === 2) {
+      return "กริยากลุ่ม 2 (ichidan): ตัด る ออกแล้วเติม ない เช่น " + verb.dict + " → " + verb.nai;
+    }
+    return "กริยากลุ่ม 3 ผันไม่ตามกฎ ต้องจำรูปปฏิเสธธรรมดาของ " + verb.dict + " ไว้เป็นพิเศษ";
+  }
+  if (field === "ta") {
+    if (verb.group === 3) {
+      return "กริยากลุ่ม 3 ผันไม่ตามกฎ ต้องจำรูปอดีตธรรมดาของ " + verb.dict + " ไว้เป็นพิเศษ";
+    }
+    return "เปลี่ยนเสียงท้ายแบบเดียวกับรูปて (" + (TE_RULE_TH[verb.teGroup] || "") + ") แต่ลงท้ายด้วย だ/た แทน で/て เช่น " + verb.te + " → " + verb.ta;
+  }
+  if (field === "nakatta") {
+    return "ผันจากรูปปฏิเสธธรรมดา (ない) โดยเปลี่ยน い ท้ายเป็น かった เช่น " + verb.nai + " → " + verb.nakatta;
+  }
   if (verb.group === 1) {
     return "กริยากลุ่ม 1 (godan): เปลี่ยนเสียงท้ายจากแถว อุ เป็นแถว อิ แล้วเติมส่วนขยาย เช่น " + verb.dict + " → " + verb.masu;
   }
@@ -78,12 +97,15 @@ export function buildConjugationQuestion(verb, pattern) {
 
 /** All conjugation questions (one per verb) for a given sentence pattern. */
 export function getConjugationQuestions(pattern) {
+  if (!pattern.conjugationField) return [];
   return verbs.map((v) => buildConjugationQuestion(v, pattern));
 }
 
 /** Combined pool: every verb x every sentence pattern's target form (used by practice mode). */
 export function getAllConjugationQuestions() {
-  return patterns.flatMap((pattern) => verbs.map((v) => buildConjugationQuestion(v, pattern)));
+  return patterns
+    .filter((pattern) => pattern.conjugationField)
+    .flatMap((pattern) => verbs.map((v) => buildConjugationQuestion(v, pattern)));
 }
 
 /** One representative worked example per verb group (1/2/3) for a { conjugationField, conjugationSuffix } shape. */

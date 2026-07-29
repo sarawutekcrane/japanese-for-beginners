@@ -9,6 +9,9 @@ const COLUMNS = [
   { field: "masendeshita", label: "ませんでした" },
   { field: "te", label: "て" },
   { field: "tai", label: "たい" },
+  { field: "nai", label: "ない" },
+  { field: "ta", label: "た" },
+  { field: "nakatta", label: "なかった" },
 ];
 
 const SAMPLE_IDS = ["nomu", "taberu", "suru", "kuru"];

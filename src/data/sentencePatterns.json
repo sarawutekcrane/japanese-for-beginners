@@ -1,7 +1,395 @@
 [
   {
-    "id": "affirmative",
+    "id": "noun-copula",
     "order": 1,
+    "level": "basic",
+    "title": "แนะนำตัวเอง/บอกว่าเป็นอะไร (です)",
+    "structure": "[ประธาน] + は + [คำนาม] + です",
+    "particles": [
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค (topic marker) - บอกว่ากำลังพูดถึงใคร/อะไร"
+      }
+    ],
+    "timeNote": "です ใช้บอกว่าสิ่งที่พูดถึงคือใคร/อะไร ทำหน้าที่คล้ายกริยา 'เป็น/คือ' แต่ไม่ผันแบบ ます รูปปฏิเสธคือเติม じゃないです ต่อท้ายคำนาม (พูดทั่วไป) หรือเปลี่ยนเป็น ではありません (แบบเป็นทางการกว่า) ความหมายเหมือนกัน",
+    "conjugationField": null,
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "これは ほんです。",
+        "romaji": "Kore wa hon desu.",
+        "thai": "นี่คือหนังสือ",
+        "kanji": [{ "text": "これ" }, { "text": "は" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "です" }, { "text": "。" }]
+      },
+      {
+        "japanese": "わたしは たなかです。よろしく おねがいします。",
+        "romaji": "Watashi wa Tanaka desu. Yoroshiku onegaishimasu.",
+        "thai": "ฉันชื่อทานากะ ยินดีที่ได้รู้จักค่ะ",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "たなかです" }, { "text": "。" }, { "text": "よろしく" }, { "text": " " }, { "text": "お" }, { "text": "願", "reading": "ねが" }, { "text": "いします" }, { "text": "。" }]
+      },
+      {
+        "japanese": "わたしは がくせいです。",
+        "romaji": "Watashi wa gakusei desu.",
+        "thai": "ฉันเป็นนักเรียน",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "学生", "reading": "がくせい" }, { "text": "です" }, { "text": "。" }]
+      },
+      {
+        "japanese": "わたしは せんせいじゃないです。",
+        "romaji": "Watashi wa sensei ja nai desu.",
+        "thai": "ฉันไม่ใช่ครู",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "先生", "reading": "せんせい" }, { "text": "じゃないです" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "noun-copula-1",
+        "promptThai": "พูดว่า: นี่คือหนังสือ",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "ほんです", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "です" }], "romaji": "hon desu" },
+          { "text": "ほんじゃないです", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "じゃないです" }], "romaji": "hon ja nai desu" },
+          { "text": "ほんですか", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "ですか" }], "romaji": "hon desu ka" }
+        ],
+        "correctOrder": [
+          "これは",
+          "ほんです"
+        ],
+        "romaji": "Kore wa hon desu.",
+        "thai": "นี่คือหนังสือ",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-2",
+        "promptThai": "พูดว่า: นั่นคือปากกา",
+        "chunks": [
+          { "text": "それは", "romaji": "sore wa" },
+          { "text": "ペンです", "romaji": "pen desu" },
+          { "text": "ペンじゃないです", "romaji": "pen ja nai desu" },
+          { "text": "ペンですか", "romaji": "pen desu ka" }
+        ],
+        "correctOrder": [
+          "それは",
+          "ペンです"
+        ],
+        "romaji": "Sore wa pen desu.",
+        "thai": "นั่นคือปากกา",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-3",
+        "promptThai": "พูดว่า: โน่นคือหนังสือ",
+        "chunks": [
+          { "text": "あれは", "romaji": "are wa" },
+          { "text": "ほんです", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "です" }], "romaji": "hon desu" },
+          { "text": "ほんじゃないです", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "じゃないです" }], "romaji": "hon ja nai desu" },
+          { "text": "ほんですか", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "ですか" }], "romaji": "hon desu ka" }
+        ],
+        "correctOrder": [
+          "あれは",
+          "ほんです"
+        ],
+        "romaji": "Are wa hon desu.",
+        "thai": "โน่นคือหนังสือ",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-4",
+        "promptThai": "พูดว่า: ฉันเป็นนักเรียน",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "がくせいです", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "です" }], "romaji": "gakusei desu" },
+          { "text": "がくせいじゃないです", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "じゃないです" }], "romaji": "gakusei ja nai desu" },
+          { "text": "がくせいですか", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "ですか" }], "romaji": "gakusei desu ka" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "がくせいです"
+        ],
+        "romaji": "Watashi wa gakusei desu.",
+        "thai": "ฉันเป็นนักเรียน",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-5",
+        "promptThai": "พูดว่า: เขาเป็นครู",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "せんせいです", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "です" }], "romaji": "sensei desu" },
+          { "text": "せんせいじゃないです", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "じゃないです" }], "romaji": "sensei ja nai desu" },
+          { "text": "せんせいですか", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "ですか" }], "romaji": "sensei desu ka" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "せんせいです"
+        ],
+        "romaji": "Kare wa sensei desu.",
+        "thai": "เขาเป็นครู",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-6",
+        "promptThai": "พูดว่า: เธอเป็นพนักงานบริษัท",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "かいしゃいんです", "kanji": [{ "text": "会社員", "reading": "かいしゃいん" }, { "text": "です" }], "romaji": "kaishain desu" },
+          { "text": "かいしゃいんじゃないです", "kanji": [{ "text": "会社員", "reading": "かいしゃいん" }, { "text": "じゃないです" }], "romaji": "kaishain ja nai desu" },
+          { "text": "かいしゃいんですか", "kanji": [{ "text": "会社員", "reading": "かいしゃいん" }, { "text": "ですか" }], "romaji": "kaishain desu ka" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "かいしゃいんです"
+        ],
+        "romaji": "Kanojo wa kaishain desu.",
+        "thai": "เธอเป็นพนักงานบริษัท",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-7",
+        "promptThai": "พูดว่า: ฉันเป็นคนญี่ปุ่น",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "にほんじんです", "kanji": [{ "text": "日本人", "reading": "にほんじん" }, { "text": "です" }], "romaji": "nihonjin desu" },
+          { "text": "にほんじんじゃないです", "kanji": [{ "text": "日本人", "reading": "にほんじん" }, { "text": "じゃないです" }], "romaji": "nihonjin ja nai desu" },
+          { "text": "にほんじんですか", "kanji": [{ "text": "日本人", "reading": "にほんじん" }, { "text": "ですか" }], "romaji": "nihonjin desu ka" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "にほんじんです"
+        ],
+        "romaji": "Watashi wa nihonjin desu.",
+        "thai": "ฉันเป็นคนญี่ปุ่น",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-8",
+        "promptThai": "พูดว่า: ทานากะเป็นพนักงานบริษัท",
+        "chunks": [
+          { "text": "たなかは", "romaji": "tanaka wa" },
+          { "text": "かいしゃいんです", "kanji": [{ "text": "会社員", "reading": "かいしゃいん" }, { "text": "です" }], "romaji": "kaishain desu" },
+          { "text": "かいしゃいんじゃないです", "kanji": [{ "text": "会社員", "reading": "かいしゃいん" }, { "text": "じゃないです" }], "romaji": "kaishain ja nai desu" },
+          { "text": "かいしゃいんですか", "kanji": [{ "text": "会社員", "reading": "かいしゃいん" }, { "text": "ですか" }], "romaji": "kaishain desu ka" }
+        ],
+        "correctOrder": [
+          "たなかは",
+          "かいしゃいんです"
+        ],
+        "romaji": "Tanaka wa kaishain desu.",
+        "thai": "ทานากะเป็นพนักงานบริษัท",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-9",
+        "promptThai": "พูดว่า: นี่คือปากกา",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "ペンです", "romaji": "pen desu" },
+          { "text": "ペンじゃないです", "romaji": "pen ja nai desu" },
+          { "text": "ペンですか", "romaji": "pen desu ka" }
+        ],
+        "correctOrder": [
+          "これは",
+          "ペンです"
+        ],
+        "romaji": "Kore wa pen desu.",
+        "thai": "นี่คือปากกา",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-10",
+        "promptThai": "พูดว่า: นั่นคือหนังสือ",
+        "chunks": [
+          { "text": "それは", "romaji": "sore wa" },
+          { "text": "ほんです", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "です" }], "romaji": "hon desu" },
+          { "text": "ほんじゃないです", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "じゃないです" }], "romaji": "hon ja nai desu" },
+          { "text": "ほんですか", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "ですか" }], "romaji": "hon desu ka" }
+        ],
+        "correctOrder": [
+          "それは",
+          "ほんです"
+        ],
+        "romaji": "Sore wa hon desu.",
+        "thai": "นั่นคือหนังสือ",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-11",
+        "promptThai": "พูดว่า: ฉันไม่ใช่นักเรียน",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "がくせいじゃないです", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "じゃないです" }], "romaji": "gakusei ja nai desu" },
+          { "text": "がくせいです", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "です" }], "romaji": "gakusei desu" },
+          { "text": "がくせいですか", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "ですか" }], "romaji": "gakusei desu ka" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "がくせいじゃないです"
+        ],
+        "romaji": "Watashi wa gakusei ja nai desu.",
+        "thai": "ฉันไม่ใช่นักเรียน",
+        "explanation": "รูปปฏิเสธของ です ทำได้ง่ายๆ โดยเปลี่ยน です ท้ายคำนามเป็น じゃないです (พูดทั่วไป)"
+      },
+      {
+        "id": "noun-copula-12",
+        "promptThai": "พูดว่า: เขาไม่ใช่ครู",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "せんせいじゃないです", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "じゃないです" }], "romaji": "sensei ja nai desu" },
+          { "text": "せんせいです", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "です" }], "romaji": "sensei desu" },
+          { "text": "せんせいですか", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "ですか" }], "romaji": "sensei desu ka" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "せんせいじゃないです"
+        ],
+        "romaji": "Kare wa sensei ja nai desu.",
+        "thai": "เขาไม่ใช่ครู",
+        "explanation": "รูปปฏิเสธของ です ทำได้ง่ายๆ โดยเปลี่ยน です ท้ายคำนามเป็น じゃないです (พูดทั่วไป)"
+      },
+      {
+        "id": "noun-copula-13",
+        "promptThai": "พูดว่า: เธอไม่ใช่คนญี่ปุ่น",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "にほんじんじゃないです", "kanji": [{ "text": "日本人", "reading": "にほんじん" }, { "text": "じゃないです" }], "romaji": "nihonjin ja nai desu" },
+          { "text": "にほんじんです", "kanji": [{ "text": "日本人", "reading": "にほんじん" }, { "text": "です" }], "romaji": "nihonjin desu" },
+          { "text": "にほんじんですか", "kanji": [{ "text": "日本人", "reading": "にほんじん" }, { "text": "ですか" }], "romaji": "nihonjin desu ka" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "にほんじんじゃないです"
+        ],
+        "romaji": "Kanojo wa nihonjin ja nai desu.",
+        "thai": "เธอไม่ใช่คนญี่ปุ่น",
+        "explanation": "รูปปฏิเสธของ です ทำได้ง่ายๆ โดยเปลี่ยน です ท้ายคำนามเป็น じゃないです (พูดทั่วไป)"
+      },
+      {
+        "id": "noun-copula-14",
+        "promptThai": "พูดว่า: นี่ไม่ใช่หนังสือ",
+        "chunks": [
+          { "text": "これは", "romaji": "kore wa" },
+          { "text": "ほんじゃないです", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "じゃないです" }], "romaji": "hon ja nai desu" },
+          { "text": "ほんです", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "です" }], "romaji": "hon desu" },
+          { "text": "ほんですか", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "ですか" }], "romaji": "hon desu ka" }
+        ],
+        "correctOrder": [
+          "これは",
+          "ほんじゃないです"
+        ],
+        "romaji": "Kore wa hon ja nai desu.",
+        "thai": "นี่ไม่ใช่หนังสือ",
+        "explanation": "รูปปฏิเสธของ です ทำได้ง่ายๆ โดยเปลี่ยน です ท้ายคำนามเป็น じゃないです (พูดทั่วไป)"
+      },
+      {
+        "id": "noun-copula-15",
+        "promptThai": "พูดว่า: นั่นไม่ใช่ปากกา",
+        "chunks": [
+          { "text": "それは", "romaji": "sore wa" },
+          { "text": "ペンじゃないです", "romaji": "pen ja nai desu" },
+          { "text": "ペンです", "romaji": "pen desu" },
+          { "text": "ペンですか", "romaji": "pen desu ka" }
+        ],
+        "correctOrder": [
+          "それは",
+          "ペンじゃないです"
+        ],
+        "romaji": "Sore wa pen ja nai desu.",
+        "thai": "นั่นไม่ใช่ปากกา",
+        "explanation": "รูปปฏิเสธของ です ทำได้ง่ายๆ โดยเปลี่ยน です ท้ายคำนามเป็น じゃないです (พูดทั่วไป)"
+      },
+      {
+        "id": "noun-copula-16",
+        "promptThai": "พูดว่า: ฉันไม่ใช่พนักงานบริษัท (แบบทางการ)",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "かいしゃいんではありません", "kanji": [{ "text": "会社員", "reading": "かいしゃいん" }, { "text": "ではありません" }], "romaji": "kaishain de wa arimasen" },
+          { "text": "かいしゃいんです", "kanji": [{ "text": "会社員", "reading": "かいしゃいん" }, { "text": "です" }], "romaji": "kaishain desu" },
+          { "text": "かいしゃいんじゃないです", "kanji": [{ "text": "会社員", "reading": "かいしゃいん" }, { "text": "じゃないです" }], "romaji": "kaishain ja nai desu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "かいしゃいんではありません"
+        ],
+        "romaji": "Watashi wa kaishain de wa arimasen.",
+        "thai": "ฉันไม่ใช่พนักงานบริษัท",
+        "explanation": "ではありません คือรูปปฏิเสธของ です แบบเป็นทางการ ความหมายเหมือน じゃないです แต่ฟังดูสุภาพ/เป็นทางการกว่า"
+      },
+      {
+        "id": "noun-copula-17",
+        "promptThai": "พูดว่า: เขาไม่ใช่นักเรียน (แบบทางการ)",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "がくせいではありません", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "ではありません" }], "romaji": "gakusei de wa arimasen" },
+          { "text": "がくせいです", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "です" }], "romaji": "gakusei desu" },
+          { "text": "がくせいじゃないです", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "じゃないです" }], "romaji": "gakusei ja nai desu" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "がくせいではありません"
+        ],
+        "romaji": "Kare wa gakusei de wa arimasen.",
+        "thai": "เขาไม่ใช่นักเรียน",
+        "explanation": "ではありません คือรูปปฏิเสธของ です แบบเป็นทางการ ความหมายเหมือน じゃないです แต่ฟังดูสุภาพ/เป็นทางการกว่า"
+      },
+      {
+        "id": "noun-copula-18",
+        "promptThai": "พูดว่า: ทานากะเป็นคนญี่ปุ่น",
+        "chunks": [
+          { "text": "たなかは", "romaji": "tanaka wa" },
+          { "text": "にほんじんです", "kanji": [{ "text": "日本人", "reading": "にほんじん" }, { "text": "です" }], "romaji": "nihonjin desu" },
+          { "text": "にほんじんじゃないです", "kanji": [{ "text": "日本人", "reading": "にほんじん" }, { "text": "じゃないです" }], "romaji": "nihonjin ja nai desu" },
+          { "text": "にほんじんですか", "kanji": [{ "text": "日本人", "reading": "にほんじん" }, { "text": "ですか" }], "romaji": "nihonjin desu ka" }
+        ],
+        "correctOrder": [
+          "たなかは",
+          "にほんじんです"
+        ],
+        "romaji": "Tanaka wa nihonjin desu.",
+        "thai": "ทานากะเป็นคนญี่ปุ่น",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-19",
+        "promptThai": "พูดว่า: โน่นคือปากกา",
+        "chunks": [
+          { "text": "あれは", "romaji": "are wa" },
+          { "text": "ペンです", "romaji": "pen desu" },
+          { "text": "ペンじゃないです", "romaji": "pen ja nai desu" },
+          { "text": "ペンですか", "romaji": "pen desu ka" }
+        ],
+        "correctOrder": [
+          "あれは",
+          "ペンです"
+        ],
+        "romaji": "Are wa pen desu.",
+        "thai": "โน่นคือปากกา",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      },
+      {
+        "id": "noun-copula-20",
+        "promptThai": "พูดว่า: ฉันเป็นครู ยินดีที่ได้รู้จัก",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "せんせいです", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "です" }], "romaji": "sensei desu" },
+          { "text": "せんせいじゃないです", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "じゃないです" }], "romaji": "sensei ja nai desu" },
+          { "text": "せんせいですか", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "ですか" }], "romaji": "sensei desu ka" },
+          { "text": "よろしくおねがいします", "kanji": [{ "text": "よろしく" }, { "text": "お" }, { "text": "願", "reading": "ねが" }, { "text": "いします" }], "romaji": "yoroshiku onegaishimasu" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "せんせいです",
+          "よろしくおねがいします"
+        ],
+        "romaji": "Watashi wa sensei desu. Yoroshiku onegaishimasu.",
+        "thai": "ฉันเป็นครู ยินดีที่ได้รู้จัก",
+        "explanation": "は บอกหัวข้อของประโยค แล้วตามด้วยคำนาม + です เพื่อบอกว่าเป็นอะไร/ใคร です ไม่ผันเหมือนกริยา ます"
+      }
+    ],
+    "formLabel": "",
+    "conjugationSuffixRomaji": ""
+  },
+  {
+    "id": "affirmative",
+    "order": 2,
     "level": "basic",
     "title": "ประโยคบอกเล่า (ます)",
     "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ます",
@@ -503,7 +891,7 @@
   },
   {
     "id": "negative",
-    "order": 2,
+    "order": 3,
     "level": "basic",
     "title": "ประโยคปฏิเสธ (ません)",
     "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ません",
@@ -929,7 +1317,7 @@
   },
   {
     "id": "question-masu",
-    "order": 3,
+    "order": 4,
     "level": "basic",
     "title": "ประโยคคำถาม (ますか)",
     "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ますか",
@@ -1355,7 +1743,7 @@
   },
   {
     "id": "invitation",
-    "order": 4,
+    "order": 5,
     "level": "basic",
     "title": "ชักชวนอย่างสุภาพ (ませんか)",
     "structure": "([ประธานมักละไว้]) + [กรรม] + を + [กริยา]ませんか",
@@ -1775,7 +2163,7 @@
   },
   {
     "id": "past",
-    "order": 5,
+    "order": 6,
     "level": "basic",
     "title": "อดีต (ました)",
     "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ました",
@@ -2203,7 +2591,7 @@
   },
   {
     "id": "past-negative",
-    "order": 6,
+    "order": 7,
     "level": "basic",
     "title": "อดีตปฏิเสธ (ませんでした)",
     "structure": "[ประธาน] + は + [กรรม] + を + [กริยา]ませんでした",
@@ -2626,8 +3014,458 @@
     "conjugationSuffixRomaji": ""
   },
   {
+    "id": "plain-forms",
+    "order": 8,
+    "level": "intermediate",
+    "title": "พูดแบบกันเอง (ない/た/なかった)",
+    "structure": "[ประธาน] + は + [กรรม] + を + [กริยา] (ない / た / なかった)",
+    "particles": [
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค"
+      },
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      }
+    ],
+    "timeNote": "รูปธรรมดา (plain form) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว ต่างจากรูป ます ที่ใช้ในสถานการณ์ส่วนใหญ่ (คนแปลกหน้า คนที่ทำงาน คนที่อาวุโสกว่า) เทียบรูปสุภาพกับรูปธรรมดา: ます (ปัจจุบัน/อนาคต) ↔ รูปพจนานุกรม เช่น たべる, ません (ปฏิเสธ) ↔ ない เช่น たべない, ました (อดีต) ↔ た เช่น たべた, ませんでした (อดีตปฏิเสธ) ↔ なかった เช่น たべなかった",
+    "conjugationField": "nai",
+    "conjugationSuffix": "",
+    "examples": [
+      {
+        "japanese": "わたしは ごはんを たべない。",
+        "romaji": "Watashi wa gohan wo tabenai.",
+        "thai": "ฉันไม่กินข้าว (พูดกับเพื่อน)",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べない" }, { "text": "。" }]
+      },
+      {
+        "japanese": "きのう てがみを かいた。",
+        "romaji": "Kinou tegami wo kaita.",
+        "thai": "เมื่อวานเขียนจดหมายแล้ว (พูดกับเพื่อน)",
+        "kanji": [{ "text": "昨日", "reading": "きのう" }, { "text": " " }, { "text": "手紙", "reading": "てがみ" }, { "text": "を" }, { "text": " " }, { "text": "かいた" }, { "text": "。" }]
+      },
+      {
+        "japanese": "きのう がっこうへ いかなかった。",
+        "romaji": "Kinou gakkou e ikanakatta.",
+        "thai": "เมื่อวานไม่ได้ไปโรงเรียน (พูดกับเพื่อน)",
+        "kanji": [{ "text": "昨日", "reading": "きのう" }, { "text": " " }, { "text": "学校", "reading": "がっこう" }, { "text": "へ" }, { "text": " " }, { "text": "行", "reading": "い" }, { "text": "かなかった" }, { "text": "。" }]
+      },
+      {
+        "japanese": "かれは みずを のまなかった。",
+        "romaji": "Kare wa mizu wo nomanakatta.",
+        "thai": "เขาไม่ได้ดื่มน้ำ (พูดกับเพื่อน)",
+        "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }, { "text": " " }, { "text": "水", "reading": "みず" }, { "text": "を" }, { "text": " " }, { "text": "飲", "reading": "の" }, { "text": "まなかった" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "plain-forms-1",
+        "promptThai": "พูดว่า: ฉันไม่กินข้าว (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべない", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べない" }], "romaji": "tabenai" },
+          { "text": "たべません", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べません" }], "romaji": "tabemasen" },
+          { "text": "たべた", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べた" }], "romaji": "tabeta" },
+          { "text": "たべなかった", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べなかった" }], "romaji": "tabenakatta" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ごはんを",
+          "たべない"
+        ],
+        "romaji": "Watashi wa gohan wo tabenai.",
+        "thai": "ฉันไม่กินข้าว (พูดกับเพื่อน)",
+        "explanation": "รูปปฏิเสธธรรมดา (แทน ません) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-2",
+        "promptThai": "พูดว่า: เขาไม่ดื่มน้ำ (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
+          { "text": "のまない", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "まない" }], "romaji": "nomanai" },
+          { "text": "のみません", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みません" }], "romaji": "nomimasen" },
+          { "text": "のんだ", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んだ" }], "romaji": "nonda" },
+          { "text": "のまなかった", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "まなかった" }], "romaji": "nomanakatta" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "みずを",
+          "のまない"
+        ],
+        "romaji": "Kare wa mizu wo nomanai.",
+        "thai": "เขาไม่ดื่มน้ำ (พูดกับเพื่อน)",
+        "explanation": "รูปปฏิเสธธรรมดา (แทน ません) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-3",
+        "promptThai": "พูดว่า: เธอไม่อ่านหนังสือ (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よまない", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "まない" }], "romaji": "yomanai" },
+          { "text": "よみません", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みません" }], "romaji": "yomimasen" },
+          { "text": "よんだ", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んだ" }], "romaji": "yonda" },
+          { "text": "よまなかった", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "まなかった" }], "romaji": "yomanakatta" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "ほんを",
+          "よまない"
+        ],
+        "romaji": "Kanojo wa hon wo yomanai.",
+        "thai": "เธอไม่อ่านหนังสือ (พูดกับเพื่อน)",
+        "explanation": "รูปปฏิเสธธรรมดา (แทน ません) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-4",
+        "promptThai": "พูดว่า: ครูไม่เขียนจดหมาย (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "かかない", "kanji": [{ "text": "書", "reading": "か" }, { "text": "かない" }], "romaji": "kakanai" },
+          { "text": "かきません", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きません" }], "romaji": "kakimasen" },
+          { "text": "かいた", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いた" }], "romaji": "kaita" },
+          { "text": "かかなかった", "kanji": [{ "text": "書", "reading": "か" }, { "text": "かなかった" }], "romaji": "kakanakatta" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "てがみを",
+          "かかない"
+        ],
+        "romaji": "Sensei wa tegami wo kakanai.",
+        "thai": "ครูไม่เขียนจดหมาย (พูดกับเพื่อน)",
+        "explanation": "รูปปฏิเสธธรรมดา (แทน ません) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-5",
+        "promptThai": "พูดว่า: นักเรียนไม่ดูหนัง (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みない", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ない" }], "romaji": "minai" },
+          { "text": "みません", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ません" }], "romaji": "mimasen" },
+          { "text": "みた", "kanji": [{ "text": "見", "reading": "み" }, { "text": "た" }], "romaji": "mita" },
+          { "text": "みなかった", "kanji": [{ "text": "見", "reading": "み" }, { "text": "なかった" }], "romaji": "minakatta" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "えいがを",
+          "みない"
+        ],
+        "romaji": "Gakusei wa eiga wo minai.",
+        "thai": "นักเรียนไม่ดูหนัง (พูดกับเพื่อน)",
+        "explanation": "รูปปฏิเสธธรรมดา (แทน ません) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-6",
+        "promptThai": "พูดว่า: ฉันไม่ไปโรงเรียน (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
+          { "text": "いかない", "kanji": [{ "text": "行", "reading": "い" }, { "text": "かない" }], "romaji": "ikanai" },
+          { "text": "いきません", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きません" }], "romaji": "ikimasen" },
+          { "text": "いった", "kanji": [{ "text": "行", "reading": "い" }, { "text": "った" }], "romaji": "itta" },
+          { "text": "いかなかった", "kanji": [{ "text": "行", "reading": "い" }, { "text": "かなかった" }], "romaji": "ikanakatta" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "がっこうへ",
+          "いかない"
+        ],
+        "romaji": "Watashi wa gakkou e ikanai.",
+        "thai": "ฉันไม่ไปโรงเรียน (พูดกับเพื่อน)",
+        "explanation": "รูปปฏิเสธธรรมดา (แทน ません) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-7",
+        "promptThai": "พูดว่า: เขาไม่เล่นกีฬา (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "しない", "romaji": "shinai" },
+          { "text": "しません", "romaji": "shimasen" },
+          { "text": "した", "romaji": "shita" },
+          { "text": "しなかった", "romaji": "shinakatta" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "スポーツを",
+          "しない"
+        ],
+        "romaji": "Kare wa supootsu wo shinai.",
+        "thai": "เขาไม่เล่นกีฬา (พูดกับเพื่อน)",
+        "explanation": "รูปปฏิเสธธรรมดา (แทน ません) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-8",
+        "promptThai": "พูดว่า: เมื่อวานกินข้าวแล้ว (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべた", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べた" }], "romaji": "tabeta" },
+          { "text": "たべました", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べました" }], "romaji": "tabemashita" },
+          { "text": "たべない", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べない" }], "romaji": "tabenai" },
+          { "text": "たべなかった", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べなかった" }], "romaji": "tabenakatta" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "ごはんを",
+          "たべた"
+        ],
+        "romaji": "Kinou gohan wo tabeta.",
+        "thai": "เมื่อวานกินข้าวแล้ว (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตธรรมดา (แทน ました) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-9",
+        "promptThai": "พูดว่า: เมื่อวานดื่มน้ำแล้ว (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
+          { "text": "のんだ", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んだ" }], "romaji": "nonda" },
+          { "text": "のみました", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みました" }], "romaji": "nomimashita" },
+          { "text": "のまない", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "まない" }], "romaji": "nomanai" },
+          { "text": "のまなかった", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "まなかった" }], "romaji": "nomanakatta" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "みずを",
+          "のんだ"
+        ],
+        "romaji": "Kinou mizu wo nonda.",
+        "thai": "เมื่อวานดื่มน้ำแล้ว (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตธรรมดา (แทน ました) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-10",
+        "promptThai": "พูดว่า: เมื่อวานอ่านหนังสือแล้ว (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よんだ", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んだ" }], "romaji": "yonda" },
+          { "text": "よみました", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みました" }], "romaji": "yomimashita" },
+          { "text": "よまない", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "まない" }], "romaji": "yomanai" },
+          { "text": "よまなかった", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "まなかった" }], "romaji": "yomanakatta" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "ほんを",
+          "よんだ"
+        ],
+        "romaji": "Kinou hon wo yonda.",
+        "thai": "เมื่อวานอ่านหนังสือแล้ว (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตธรรมดา (แทน ました) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-11",
+        "promptThai": "พูดว่า: เมื่อวานเขียนจดหมายแล้ว (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "かいた", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いた" }], "romaji": "kaita" },
+          { "text": "かきました", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きました" }], "romaji": "kakimashita" },
+          { "text": "かかない", "kanji": [{ "text": "書", "reading": "か" }, { "text": "かない" }], "romaji": "kakanai" },
+          { "text": "かかなかった", "kanji": [{ "text": "書", "reading": "か" }, { "text": "かなかった" }], "romaji": "kakanakatta" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "てがみを",
+          "かいた"
+        ],
+        "romaji": "Kinou tegami wo kaita.",
+        "thai": "เมื่อวานเขียนจดหมายแล้ว (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตธรรมดา (แทน ました) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-12",
+        "promptThai": "พูดว่า: เมื่อวานไปโรงเรียนแล้ว (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
+          { "text": "いった", "kanji": [{ "text": "行", "reading": "い" }, { "text": "った" }], "romaji": "itta" },
+          { "text": "いきました", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きました" }], "romaji": "ikimashita" },
+          { "text": "いかない", "kanji": [{ "text": "行", "reading": "い" }, { "text": "かない" }], "romaji": "ikanai" },
+          { "text": "いかなかった", "kanji": [{ "text": "行", "reading": "い" }, { "text": "かなかった" }], "romaji": "ikanakatta" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "がっこうへ",
+          "いった"
+        ],
+        "romaji": "Kinou gakkou e itta.",
+        "thai": "เมื่อวานไปโรงเรียนแล้ว (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตธรรมดา (แทน ました) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-13",
+        "promptThai": "พูดว่า: เมื่อวานเล่นกีฬาแล้ว (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "した", "romaji": "shita" },
+          { "text": "しました", "romaji": "shimashita" },
+          { "text": "しない", "romaji": "shinai" },
+          { "text": "しなかった", "romaji": "shinakatta" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "スポーツを",
+          "した"
+        ],
+        "romaji": "Kinou supootsu wo shita.",
+        "thai": "เมื่อวานเล่นกีฬาแล้ว (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตธรรมดา (แทน ました) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-14",
+        "promptThai": "พูดว่า: เมื่อวานดูหนังแล้ว (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みた", "kanji": [{ "text": "見", "reading": "み" }, { "text": "た" }], "romaji": "mita" },
+          { "text": "みました", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ました" }], "romaji": "mimashita" },
+          { "text": "みない", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ない" }], "romaji": "minai" },
+          { "text": "みなかった", "kanji": [{ "text": "見", "reading": "み" }, { "text": "なかった" }], "romaji": "minakatta" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "えいがを",
+          "みた"
+        ],
+        "romaji": "Kinou eiga wo mita.",
+        "thai": "เมื่อวานดูหนังแล้ว (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตธรรมดา (แทน ました) ใช้พูดกับเพื่อนสนิทหรือคนในครอบครัว"
+      },
+      {
+        "id": "plain-forms-15",
+        "promptThai": "พูดว่า: เมื่อวานไม่ได้กินข้าว (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべなかった", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べなかった" }], "romaji": "tabenakatta" },
+          { "text": "たべませんでした", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べませんでした" }], "romaji": "tabemasendeshita" },
+          { "text": "たべない", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べない" }], "romaji": "tabenai" },
+          { "text": "たべた", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べた" }], "romaji": "tabeta" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "ごはんを",
+          "たべなかった"
+        ],
+        "romaji": "Kinou gohan wo tabenakatta.",
+        "thai": "เมื่อวานไม่ได้กินข้าว (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตปฏิเสธธรรมดา (แทน ませんでした) ผันจาก ない โดยเปลี่ยน い ท้ายเป็น かった"
+      },
+      {
+        "id": "plain-forms-16",
+        "promptThai": "พูดว่า: เมื่อวานไม่ได้ดื่มน้ำ (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
+          { "text": "のまなかった", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "まなかった" }], "romaji": "nomanakatta" },
+          { "text": "のみませんでした", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "みませんでした" }], "romaji": "nomimasendeshita" },
+          { "text": "のまない", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "まない" }], "romaji": "nomanai" },
+          { "text": "のんだ", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んだ" }], "romaji": "nonda" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "みずを",
+          "のまなかった"
+        ],
+        "romaji": "Kinou mizu wo nomanakatta.",
+        "thai": "เมื่อวานไม่ได้ดื่มน้ำ (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตปฏิเสธธรรมดา (แทน ませんでした) ผันจาก ない โดยเปลี่ยน い ท้ายเป็น かった"
+      },
+      {
+        "id": "plain-forms-17",
+        "promptThai": "พูดว่า: เมื่อวานไม่ได้อ่านหนังสือ (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よまなかった", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "まなかった" }], "romaji": "yomanakatta" },
+          { "text": "よみませんでした", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "みませんでした" }], "romaji": "yomimasendeshita" },
+          { "text": "よまない", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "まない" }], "romaji": "yomanai" },
+          { "text": "よんだ", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んだ" }], "romaji": "yonda" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "ほんを",
+          "よまなかった"
+        ],
+        "romaji": "Kinou hon wo yomanakatta.",
+        "thai": "เมื่อวานไม่ได้อ่านหนังสือ (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตปฏิเสธธรรมดา (แทน ませんでした) ผันจาก ない โดยเปลี่ยน い ท้ายเป็น かった"
+      },
+      {
+        "id": "plain-forms-18",
+        "promptThai": "พูดว่า: เมื่อวานไม่ได้ไปโรงเรียน (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "がっこうへ", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "へ" }], "romaji": "gakkou e" },
+          { "text": "いかなかった", "kanji": [{ "text": "行", "reading": "い" }, { "text": "かなかった" }], "romaji": "ikanakatta" },
+          { "text": "いきませんでした", "kanji": [{ "text": "行", "reading": "い" }, { "text": "きませんでした" }], "romaji": "ikimasendeshita" },
+          { "text": "いかない", "kanji": [{ "text": "行", "reading": "い" }, { "text": "かない" }], "romaji": "ikanai" },
+          { "text": "いった", "kanji": [{ "text": "行", "reading": "い" }, { "text": "った" }], "romaji": "itta" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "がっこうへ",
+          "いかなかった"
+        ],
+        "romaji": "Kinou gakkou e ikanakatta.",
+        "thai": "เมื่อวานไม่ได้ไปโรงเรียน (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตปฏิเสธธรรมดา (แทน ませんでした) ผันจาก ない โดยเปลี่ยน い ท้ายเป็น かった"
+      },
+      {
+        "id": "plain-forms-19",
+        "promptThai": "พูดว่า: เมื่อวานไม่ได้เขียนจดหมาย (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "かかなかった", "kanji": [{ "text": "書", "reading": "か" }, { "text": "かなかった" }], "romaji": "kakanakatta" },
+          { "text": "かきませんでした", "kanji": [{ "text": "書", "reading": "か" }, { "text": "きませんでした" }], "romaji": "kakimasendeshita" },
+          { "text": "かかない", "kanji": [{ "text": "書", "reading": "か" }, { "text": "かない" }], "romaji": "kakanai" },
+          { "text": "かいた", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いた" }], "romaji": "kaita" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "てがみを",
+          "かかなかった"
+        ],
+        "romaji": "Kinou tegami wo kakanakatta.",
+        "thai": "เมื่อวานไม่ได้เขียนจดหมาย (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตปฏิเสธธรรมดา (แทน ませんでした) ผันจาก ない โดยเปลี่ยน い ท้ายเป็น かった"
+      },
+      {
+        "id": "plain-forms-20",
+        "promptThai": "พูดว่า: เมื่อวานไม่ได้เล่นกีฬา (พูดกับเพื่อน)",
+        "chunks": [
+          { "text": "きのう", "kanji": [{ "text": "昨日", "reading": "きのう" }], "romaji": "kinou" },
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "しなかった", "romaji": "shinakatta" },
+          { "text": "しませんでした", "romaji": "shimasendeshita" },
+          { "text": "しない", "romaji": "shinai" },
+          { "text": "した", "romaji": "shita" }
+        ],
+        "correctOrder": [
+          "きのう",
+          "スポーツを",
+          "しなかった"
+        ],
+        "romaji": "Kinou supootsu wo shinakatta.",
+        "thai": "เมื่อวานไม่ได้เล่นกีฬา (พูดกับเพื่อน)",
+        "explanation": "รูปอดีตปฏิเสธธรรมดา (แทน ませんでした) ผันจาก ない โดยเปลี่ยน い ท้ายเป็น かった"
+      }
+    ],
+    "formLabel": "ない (ปฏิเสธธรรมดา)",
+    "conjugationSuffixRomaji": ""
+  },
+  {
     "id": "te-kudasai",
-    "order": 7,
+    "order": 9,
     "level": "intermediate",
     "title": "ขอร้อง/สั่ง (てください)",
     "structure": "[กรรม] + を + [กริยารูปて] + ください",
@@ -3006,8 +3844,436 @@
     "conjugationSuffixRomaji": " kudasai"
   },
   {
+    "id": "te-iru",
+    "order": 10,
+    "level": "intermediate",
+    "title": "กำลังทำ/สภาพที่เป็นอยู่ (ています)",
+    "structure": "[ประธาน] + は + [กรรม] + を + [กริยารูปて]います",
+    "particles": [
+      {
+        "particle": "は",
+        "role": "ตัวบ่งชี้หัวข้อของประโยค"
+      },
+      {
+        "particle": "を",
+        "role": "ตัวบ่งชี้กรรมตรง"
+      },
+      {
+        "particle": "に",
+        "role": "ตัวบ่งชี้จุดหมายปลายทาง (ใช้กับกริยาการเคลื่อนที่ เช่น いく、くる)"
+      }
+    ],
+    "timeNote": "て-form + います มี 2 ความหมาย: (1) กำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive) เช่น たべています = กำลังกิน (2) อยู่ในสภาพที่เป็นผลจากการกระทำที่ทำเสร็จแล้ว (resulting state) เช่น いっています = ไปแล้วและตอนนี้ยังอยู่ที่นั่น, きています = มาแล้วและตอนนี้อยู่ที่นี่ ความหมายไหนขึ้นอยู่กับชนิดของกริยา",
+    "conjugationField": "te",
+    "conjugationSuffix": "います",
+    "examples": [
+      {
+        "japanese": "わたしは ごはんを たべています。",
+        "romaji": "Watashi wa gohan wo tabeteimasu.",
+        "thai": "ฉันกำลังกินข้าว",
+        "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }, { "text": " " }, { "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }, { "text": " " }, { "text": "食", "reading": "た" }, { "text": "べています" }, { "text": "。" }]
+      },
+      {
+        "japanese": "かれは ほんを よんでいます。",
+        "romaji": "Kare wa hon wo yondeimasu.",
+        "thai": "เขากำลังอ่านหนังสือ",
+        "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }, { "text": " " }, { "text": "本", "reading": "ほん" }, { "text": "を" }, { "text": " " }, { "text": "よんでいます" }, { "text": "。" }]
+      },
+      {
+        "japanese": "かのじょは にほんに いっています。",
+        "romaji": "Kanojo wa nihon ni itteimasu.",
+        "thai": "เธอไปญี่ปุ่นแล้ว (ตอนนี้ยังอยู่ที่นั่น)",
+        "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }, { "text": " " }, { "text": "日本", "reading": "にほん" }, { "text": "に" }, { "text": " " }, { "text": "いっています" }, { "text": "。" }]
+      },
+      {
+        "japanese": "せんせいは がっこうに きています。",
+        "romaji": "Sensei wa gakkou ni kiteimasu.",
+        "thai": "ครูมาโรงเรียนแล้ว (ตอนนี้อยู่ที่นั่น)",
+        "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }, { "text": " " }, { "text": "学校", "reading": "がっこう" }, { "text": "に" }, { "text": " " }, { "text": "来", "reading": "き" }, { "text": "ています" }, { "text": "。" }]
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "te-iru-1",
+        "promptThai": "พูดว่า: ฉันกำลังกินข้าว",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべています", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べています" }], "romaji": "tabete imasu" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ごはんを",
+          "たべています"
+        ],
+        "romaji": "Watashi wa gohan wo tabete imasu.",
+        "thai": "ฉันกำลังกินข้าว",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-2",
+        "promptThai": "พูดว่า: เขากำลังดื่มน้ำ",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
+          { "text": "のんでいます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでいます" }], "romaji": "nonde imasu" },
+          { "text": "のんでください", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでください" }], "romaji": "nonde kudasai" },
+          { "text": "のんでもいいですか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでもいいですか" }], "romaji": "nonde mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "みずを",
+          "のんでいます"
+        ],
+        "romaji": "Kare wa mizu wo nonde imasu.",
+        "thai": "เขากำลังดื่มน้ำ",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-3",
+        "promptThai": "พูดว่า: เธอกำลังอ่านหนังสือ",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よんでいます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでいます" }], "romaji": "yonde imasu" },
+          { "text": "よんでください", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでください" }], "romaji": "yonde kudasai" },
+          { "text": "よんでもいいですか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでもいいですか" }], "romaji": "yonde mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "ほんを",
+          "よんでいます"
+        ],
+        "romaji": "Kanojo wa hon wo yonde imasu.",
+        "thai": "เธอกำลังอ่านหนังสือ",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-4",
+        "promptThai": "พูดว่า: ครูกำลังเขียนจดหมาย",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "かいています", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いています" }], "romaji": "kaite imasu" },
+          { "text": "かいてください", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてください" }], "romaji": "kaite kudasai" },
+          { "text": "かいてもいいですか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてもいいですか" }], "romaji": "kaite mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "てがみを",
+          "かいています"
+        ],
+        "romaji": "Sensei wa tegami wo kaite imasu.",
+        "thai": "ครูกำลังเขียนจดหมาย",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-5",
+        "promptThai": "พูดว่า: นักเรียนกำลังดูหนัง",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みています", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ています" }], "romaji": "mite imasu" },
+          { "text": "みてください", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てください" }], "romaji": "mite kudasai" },
+          { "text": "みてもいいですか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てもいいですか" }], "romaji": "mite mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "えいがを",
+          "みています"
+        ],
+        "romaji": "Gakusei wa eiga wo mite imasu.",
+        "thai": "นักเรียนกำลังดูหนัง",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-6",
+        "promptThai": "พูดว่า: ฉันกำลังอ่านหนังสือ (เป็นงานอดิเรก)",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "どくしょを", "kanji": [{ "text": "読書", "reading": "どくしょ" }, { "text": "を" }], "romaji": "dokusho wo" },
+          { "text": "しています", "romaji": "shite imasu" },
+          { "text": "してください", "romaji": "shite kudasai" },
+          { "text": "してもいいですか", "romaji": "shite mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "どくしょを",
+          "しています"
+        ],
+        "romaji": "Watashi wa dokusho wo shite imasu.",
+        "thai": "ฉันกำลังอ่านหนังสือ (เป็นงานอดิเรก)",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-7",
+        "promptThai": "พูดว่า: เขากำลังเล่นกีฬา",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "スポーツを", "romaji": "supootsu wo" },
+          { "text": "しています", "romaji": "shite imasu" },
+          { "text": "してください", "romaji": "shite kudasai" },
+          { "text": "してもいいですか", "romaji": "shite mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "スポーツを",
+          "しています"
+        ],
+        "romaji": "Kare wa supootsu wo shite imasu.",
+        "thai": "เขากำลังเล่นกีฬา",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-8",
+        "promptThai": "พูดว่า: เธอไปญี่ปุ่นแล้ว (ตอนนี้ยังอยู่ที่นั่น)",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "にほんに", "kanji": [{ "text": "日本", "reading": "にほん" }, { "text": "に" }], "romaji": "nihon ni" },
+          { "text": "いっています", "kanji": [{ "text": "行", "reading": "い" }, { "text": "っています" }], "romaji": "itte imasu" },
+          { "text": "いってください", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってください" }], "romaji": "itte kudasai" },
+          { "text": "いってもいいですか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってもいいですか" }], "romaji": "itte mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "にほんに",
+          "いっています"
+        ],
+        "romaji": "Kanojo wa nihon ni itte imasu.",
+        "thai": "เธอไปญี่ปุ่นแล้ว (ตอนนี้ยังอยู่ที่นั่น)",
+        "explanation": "て-form + います ในที่นี้แสดงสภาพที่เป็นผลจากการกระทำ (resulting state) ไม่ใช่กำลังทำอยู่ขณะนี้"
+      },
+      {
+        "id": "te-iru-9",
+        "promptThai": "พูดว่า: ครูมาโรงเรียนแล้ว (ตอนนี้อยู่ที่นั่น)",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }], "romaji": "gakkou ni" },
+          { "text": "きています", "kanji": [{ "text": "来", "reading": "き" }, { "text": "ています" }], "romaji": "kite imasu" },
+          { "text": "きてください", "kanji": [{ "text": "来", "reading": "き" }, { "text": "てください" }], "romaji": "kite kudasai" },
+          { "text": "きてもいいですか", "kanji": [{ "text": "来", "reading": "き" }, { "text": "てもいいですか" }], "romaji": "kite mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "がっこうに",
+          "きています"
+        ],
+        "romaji": "Sensei wa gakkou ni kite imasu.",
+        "thai": "ครูมาโรงเรียนแล้ว (ตอนนี้อยู่ที่นั่น)",
+        "explanation": "て-form + います ในที่นี้แสดงสภาพที่เป็นผลจากการกระทำ (resulting state) ไม่ใช่กำลังทำอยู่ขณะนี้"
+      },
+      {
+        "id": "te-iru-10",
+        "promptThai": "พูดว่า: ฉันกำลังนอนหลับอยู่",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ねています", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "ています" }], "romaji": "nete imasu" },
+          { "text": "ねてください", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "てください" }], "romaji": "nete kudasai" },
+          { "text": "ねてもいいですか", "kanji": [{ "text": "寝", "reading": "ね" }, { "text": "てもいいですか" }], "romaji": "nete mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ねています"
+        ],
+        "romaji": "Watashi wa nete imasu.",
+        "thai": "ฉันกำลังนอนหลับอยู่",
+        "explanation": "て-form + います ในที่นี้แสดงสภาพที่เป็นผลจากการกระทำ (resulting state) ไม่ใช่กำลังทำอยู่ขณะนี้"
+      },
+      {
+        "id": "te-iru-11",
+        "promptThai": "พูดว่า: เขาตื่นอยู่แล้ว",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "おきています", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きています" }], "romaji": "okite imasu" },
+          { "text": "おきてください", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きてください" }], "romaji": "okite kudasai" },
+          { "text": "おきてもいいですか", "kanji": [{ "text": "起", "reading": "お" }, { "text": "きてもいいですか" }], "romaji": "okite mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "おきています"
+        ],
+        "romaji": "Kare wa okite imasu.",
+        "thai": "เขาตื่นอยู่แล้ว",
+        "explanation": "て-form + います ในที่นี้แสดงสภาพที่เป็นผลจากการกระทำ (resulting state) ไม่ใช่กำลังทำอยู่ขณะนี้"
+      },
+      {
+        "id": "te-iru-12",
+        "promptThai": "พูดว่า: นักเรียนกำลังรอเพื่อนอยู่",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "ともだちを", "kanji": [{ "text": "友達", "reading": "ともだち" }, { "text": "を" }], "romaji": "tomodachi wo" },
+          { "text": "まっています", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "っています" }], "romaji": "matte imasu" },
+          { "text": "まってください", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってください" }], "romaji": "matte kudasai" },
+          { "text": "まってもいいですか", "kanji": [{ "text": "待", "reading": "ま" }, { "text": "ってもいいですか" }], "romaji": "matte mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "ともだちを",
+          "まっています"
+        ],
+        "romaji": "Gakusei wa tomodachi wo matte imasu.",
+        "thai": "นักเรียนกำลังรอเพื่อนอยู่",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-13",
+        "promptThai": "พูดว่า: เธอกำลังรีบอยู่",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "いそいでいます", "kanji": [{ "text": "急", "reading": "いそ" }, { "text": "いでいます" }], "romaji": "isoide imasu" },
+          { "text": "いそいでください", "kanji": [{ "text": "急", "reading": "いそ" }, { "text": "いでください" }], "romaji": "isoide kudasai" },
+          { "text": "いそいでもいいですか", "kanji": [{ "text": "急", "reading": "いそ" }, { "text": "いでもいいですか" }], "romaji": "isoide mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "いそいでいます"
+        ],
+        "romaji": "Kanojo wa isoide imasu.",
+        "thai": "เธอกำลังรีบอยู่",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-14",
+        "promptThai": "พูดว่า: ฉันกำลังอ่านหนังสือ",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "ほんを", "kanji": [{ "text": "本", "reading": "ほん" }, { "text": "を" }], "romaji": "hon wo" },
+          { "text": "よんでいます", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでいます" }], "romaji": "yonde imasu" },
+          { "text": "よんでください", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでください" }], "romaji": "yonde kudasai" },
+          { "text": "よんでもいいですか", "kanji": [{ "text": "読", "reading": "よ" }, { "text": "んでもいいですか" }], "romaji": "yonde mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "ほんを",
+          "よんでいます"
+        ],
+        "romaji": "Watashi wa hon wo yonde imasu.",
+        "thai": "ฉันกำลังอ่านหนังสือ",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-15",
+        "promptThai": "พูดว่า: เขากำลังกินข้าว",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "ごはんを", "kanji": [{ "text": "ご" }, { "text": "飯", "reading": "はん" }, { "text": "を" }], "romaji": "gohan wo" },
+          { "text": "たべています", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べています" }], "romaji": "tabete imasu" },
+          { "text": "たべてください", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてください" }], "romaji": "tabete kudasai" },
+          { "text": "たべてもいいですか", "kanji": [{ "text": "食", "reading": "た" }, { "text": "べてもいいですか" }], "romaji": "tabete mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "ごはんを",
+          "たべています"
+        ],
+        "romaji": "Kare wa gohan wo tabete imasu.",
+        "thai": "เขากำลังกินข้าว",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-16",
+        "promptThai": "พูดว่า: นักเรียนกำลังดื่มน้ำ",
+        "chunks": [
+          { "text": "がくせいは", "kanji": [{ "text": "学生", "reading": "がくせい" }, { "text": "は" }], "romaji": "gakusei wa" },
+          { "text": "みずを", "kanji": [{ "text": "水", "reading": "みず" }, { "text": "を" }], "romaji": "mizu wo" },
+          { "text": "のんでいます", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでいます" }], "romaji": "nonde imasu" },
+          { "text": "のんでください", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでください" }], "romaji": "nonde kudasai" },
+          { "text": "のんでもいいですか", "kanji": [{ "text": "飲", "reading": "の" }, { "text": "んでもいいですか" }], "romaji": "nonde mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "がくせいは",
+          "みずを",
+          "のんでいます"
+        ],
+        "romaji": "Gakusei wa mizu wo nonde imasu.",
+        "thai": "นักเรียนกำลังดื่มน้ำ",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-17",
+        "promptThai": "พูดว่า: ครูกำลังดูหนัง",
+        "chunks": [
+          { "text": "せんせいは", "kanji": [{ "text": "先生", "reading": "せんせい" }, { "text": "は" }], "romaji": "sensei wa" },
+          { "text": "えいがを", "kanji": [{ "text": "映画", "reading": "えいが" }, { "text": "を" }], "romaji": "eiga wo" },
+          { "text": "みています", "kanji": [{ "text": "見", "reading": "み" }, { "text": "ています" }], "romaji": "mite imasu" },
+          { "text": "みてください", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てください" }], "romaji": "mite kudasai" },
+          { "text": "みてもいいですか", "kanji": [{ "text": "見", "reading": "み" }, { "text": "てもいいですか" }], "romaji": "mite mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "せんせいは",
+          "えいがを",
+          "みています"
+        ],
+        "romaji": "Sensei wa eiga wo mite imasu.",
+        "thai": "ครูกำลังดูหนัง",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-18",
+        "promptThai": "พูดว่า: เธอกำลังเขียนจดหมาย",
+        "chunks": [
+          { "text": "かのじょは", "kanji": [{ "text": "彼女", "reading": "かのじょ" }, { "text": "は" }], "romaji": "kanojo wa" },
+          { "text": "てがみを", "kanji": [{ "text": "手紙", "reading": "てがみ" }, { "text": "を" }], "romaji": "tegami wo" },
+          { "text": "かいています", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いています" }], "romaji": "kaite imasu" },
+          { "text": "かいてください", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてください" }], "romaji": "kaite kudasai" },
+          { "text": "かいてもいいですか", "kanji": [{ "text": "書", "reading": "か" }, { "text": "いてもいいですか" }], "romaji": "kaite mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "かのじょは",
+          "てがみを",
+          "かいています"
+        ],
+        "romaji": "Kanojo wa tegami wo kaite imasu.",
+        "thai": "เธอกำลังเขียนจดหมาย",
+        "explanation": "て-form + います แสดงว่ากำลังทำสิ่งนั้นอยู่ตอนนี้ (progressive)"
+      },
+      {
+        "id": "te-iru-19",
+        "promptThai": "พูดว่า: ฉันไปญี่ปุ่นแล้ว (ตอนนี้ยังอยู่ที่นั่น)",
+        "chunks": [
+          { "text": "わたしは", "kanji": [{ "text": "私", "reading": "わたし" }, { "text": "は" }], "romaji": "watashi wa" },
+          { "text": "にほんに", "kanji": [{ "text": "日本", "reading": "にほん" }, { "text": "に" }], "romaji": "nihon ni" },
+          { "text": "いっています", "kanji": [{ "text": "行", "reading": "い" }, { "text": "っています" }], "romaji": "itte imasu" },
+          { "text": "いってください", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってください" }], "romaji": "itte kudasai" },
+          { "text": "いってもいいですか", "kanji": [{ "text": "行", "reading": "い" }, { "text": "ってもいいですか" }], "romaji": "itte mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "わたしは",
+          "にほんに",
+          "いっています"
+        ],
+        "romaji": "Watashi wa nihon ni itte imasu.",
+        "thai": "ฉันไปญี่ปุ่นแล้ว (ตอนนี้ยังอยู่ที่นั่น)",
+        "explanation": "て-form + います ในที่นี้แสดงสภาพที่เป็นผลจากการกระทำ (resulting state) ไม่ใช่กำลังทำอยู่ขณะนี้"
+      },
+      {
+        "id": "te-iru-20",
+        "promptThai": "พูดว่า: เขามาโรงเรียนแล้ว (ตอนนี้อยู่ที่นั่น)",
+        "chunks": [
+          { "text": "かれは", "kanji": [{ "text": "彼", "reading": "かれ" }, { "text": "は" }], "romaji": "kare wa" },
+          { "text": "がっこうに", "kanji": [{ "text": "学校", "reading": "がっこう" }, { "text": "に" }], "romaji": "gakkou ni" },
+          { "text": "きています", "kanji": [{ "text": "来", "reading": "き" }, { "text": "ています" }], "romaji": "kite imasu" },
+          { "text": "きてください", "kanji": [{ "text": "来", "reading": "き" }, { "text": "てください" }], "romaji": "kite kudasai" },
+          { "text": "きてもいいですか", "kanji": [{ "text": "来", "reading": "き" }, { "text": "てもいいですか" }], "romaji": "kite mo ii desu ka" }
+        ],
+        "correctOrder": [
+          "かれは",
+          "がっこうに",
+          "きています"
+        ],
+        "romaji": "Kare wa gakkou ni kite imasu.",
+        "thai": "เขามาโรงเรียนแล้ว (ตอนนี้อยู่ที่นั่น)",
+        "explanation": "て-form + います ในที่นี้แสดงสภาพที่เป็นผลจากการกระทำ (resulting state) ไม่ใช่กำลังทำอยู่ขณะนี้"
+      }
+    ],
+    "formLabel": "ています",
+    "conjugationSuffixRomaji": " imasu"
+  },
+  {
     "id": "te-mo-ii",
-    "order": 8,
+    "order": 11,
     "level": "intermediate",
     "title": "ขออนุญาต (てもいいですか)",
     "structure": "[กรรม] + を + [กริยารูปて] + もいいですか",
@@ -3399,7 +4665,7 @@
   },
   {
     "id": "te-wa-ikemasen",
-    "order": 9,
+    "order": 12,
     "level": "intermediate",
     "title": "ข้อห้าม (てはいけません)",
     "structure": "[กรรม] + を + [กริยารูปて] + はいけません",
@@ -3801,7 +5067,7 @@
   },
   {
     "id": "tai-desu",
-    "order": 10,
+    "order": 13,
     "level": "intermediate",
     "title": "บอกความต้องการ (たいです)",
     "structure": "[ประธาน] + は + [กรรม] + が + [กริยาราก]たいです",
